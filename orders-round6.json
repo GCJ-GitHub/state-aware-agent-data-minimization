@@ -1,0 +1,462 @@
+[
+  {
+    "id": 101,
+    "scenario": "ranked_fallback",
+    "available": [
+      "pickup",
+      "change"
+    ],
+    "permitted": [
+      "pickup",
+      "change"
+    ],
+    "target": [
+      "change"
+    ],
+    "request": "包裹派送失败了。先试原址重派（retry），不能重派就用备用地址（change），最后才自提（pickup）。",
+    "facts": {}
+  },
+  {
+    "id": 102,
+    "scenario": "ranked_fallback",
+    "available": [
+      "pickup",
+      "change"
+    ],
+    "permitted": [
+      "pickup",
+      "change"
+    ],
+    "target": [
+      "change"
+    ],
+    "request": "包裹派送失败了。按这个顺序办：原址重派 retry > 备用地址 change > 自提 pickup。",
+    "facts": {}
+  },
+  {
+    "id": 103,
+    "scenario": "ranked_fallback",
+    "available": [
+      "retry",
+      "change"
+    ],
+    "permitted": [
+      "retry",
+      "change"
+    ],
+    "target": [
+      "retry"
+    ],
+    "request": "包裹派送失败了。自提（pickup）优先，之后是原址重派（retry），备用地址（change）放最后。",
+    "facts": {}
+  },
+  {
+    "id": 104,
+    "scenario": "ranked_fallback",
+    "available": [
+      "retry",
+      "change"
+    ],
+    "permitted": [
+      "retry",
+      "change"
+    ],
+    "target": [
+      "retry"
+    ],
+    "request": "包裹派送失败了。能自提最好；如果自提不行，请先尝试原址重派，改到备用地址是第三选择。",
+    "facts": {}
+  },
+  {
+    "id": 105,
+    "scenario": "ranked_fallback",
+    "available": [
+      "retry",
+      "pickup",
+      "change"
+    ],
+    "permitted": [
+      "retry",
+      "pickup",
+      "change"
+    ],
+    "target": [
+      "pickup"
+    ],
+    "request": "包裹派送失败了。三种方式都接受，但按自提（pickup）、备用地址（change）、原址重派（retry）的顺序办理。",
+    "facts": {}
+  },
+  {
+    "id": 106,
+    "scenario": "ranked_fallback",
+    "available": [
+      "retry",
+      "pickup",
+      "change"
+    ],
+    "permitted": [
+      "retry",
+      "pickup",
+      "change"
+    ],
+    "target": [
+      "pickup"
+    ],
+    "request": "包裹派送失败了。尽量改到自提点，实在不行才用备用地址，再不行就原址重派。",
+    "facts": {}
+  },
+  {
+    "id": 107,
+    "scenario": "explicit_exclusion",
+    "available": [
+      "retry",
+      "pickup",
+      "change"
+    ],
+    "permitted": [
+      "retry",
+      "pickup"
+    ],
+    "target": [
+      "pickup"
+    ],
+    "request": "包裹派送失败了。请勿使用备用地址（change）。能自提就自提，否则用原址重派。",
+    "facts": {}
+  },
+  {
+    "id": 108,
+    "scenario": "explicit_exclusion",
+    "available": [
+      "retry",
+      "pickup",
+      "change"
+    ],
+    "permitted": [
+      "retry",
+      "pickup"
+    ],
+    "target": [
+      "pickup"
+    ],
+    "request": "包裹派送失败了。千万别改配送地址。我愿意自提，原址重派是后备方案。",
+    "facts": {}
+  },
+  {
+    "id": 109,
+    "scenario": "explicit_exclusion",
+    "available": [
+      "pickup",
+      "change"
+    ],
+    "permitted": [
+      "change"
+    ],
+    "target": [
+      "change"
+    ],
+    "request": "包裹派送失败了。我没法去自提，不允许自提（pickup）。请使用授权过的备用地址。",
+    "facts": {}
+  },
+  {
+    "id": 110,
+    "scenario": "explicit_exclusion",
+    "available": [
+      "pickup",
+      "change"
+    ],
+    "permitted": [
+      "change"
+    ],
+    "target": [
+      "change"
+    ],
+    "request": "包裹派送失败了。不要安排到自提点，直接改派到保存的备用地址就行。",
+    "facts": {}
+  },
+  {
+    "id": 111,
+    "scenario": "explicit_exclusion",
+    "available": [
+      "retry",
+      "pickup",
+      "change"
+    ],
+    "permitted": [
+      "retry",
+      "change"
+    ],
+    "target": [
+      "retry",
+      "change"
+    ],
+    "request": "包裹派送失败了。不接受自提，原址重派和使用备用地址都可以，不分先后。",
+    "facts": {}
+  },
+  {
+    "id": 112,
+    "scenario": "explicit_exclusion",
+    "available": [
+      "retry",
+      "pickup",
+      "change"
+    ],
+    "permitted": [
+      "retry",
+      "change"
+    ],
+    "target": [
+      "retry",
+      "change"
+    ],
+    "request": "包裹派送失败了。只授权重派或改到备用地址，两种任选。别安排自提。",
+    "facts": {}
+  },
+  {
+    "id": 113,
+    "scenario": "conditional_authorization",
+    "available": [
+      "retry",
+      "pickup",
+      "change"
+    ],
+    "permitted": [
+      "retry",
+      "change"
+    ],
+    "target": [
+      "retry"
+    ],
+    "request": "包裹派送失败了。只有自提点晚上八点或以后关门才可以自提。否则先重派，最后才用备用地址。",
+    "facts": {
+      "pickup_close_hour": 18
+    }
+  },
+  {
+    "id": 114,
+    "scenario": "conditional_authorization",
+    "available": [
+      "retry",
+      "pickup",
+      "change"
+    ],
+    "permitted": [
+      "retry",
+      "change"
+    ],
+    "target": [
+      "retry"
+    ],
+    "request": "包裹派送失败了。我八点才能去，自提点关门时间不到 20:00 就别选自提，改用原址重派，备用地址放最后。",
+    "facts": {
+      "pickup_close_hour": 18
+    }
+  },
+  {
+    "id": 115,
+    "scenario": "conditional_authorization",
+    "available": [
+      "retry",
+      "pickup",
+      "change"
+    ],
+    "permitted": [
+      "retry",
+      "pickup",
+      "change"
+    ],
+    "target": [
+      "pickup"
+    ],
+    "request": "包裹派送失败了。自提点至少开到 20:00 就给我选自提，否则原址重派，备用地址最后。",
+    "facts": {
+      "pickup_close_hour": 21
+    }
+  },
+  {
+    "id": 116,
+    "scenario": "conditional_authorization",
+    "available": [
+      "retry",
+      "pickup",
+      "change"
+    ],
+    "permitted": [
+      "retry",
+      "pickup",
+      "change"
+    ],
+    "target": [
+      "pickup"
+    ],
+    "request": "包裹派送失败了。我晚上八点才能去。如果自提点关门不早于 20:00，请安排自提。否则先重派，再考虑备用地址。",
+    "facts": {
+      "pickup_close_hour": 21
+    }
+  },
+  {
+    "id": 117,
+    "scenario": "conditional_authorization",
+    "available": [
+      "retry",
+      "pickup",
+      "change"
+    ],
+    "permitted": [
+      "pickup",
+      "change"
+    ],
+    "target": [
+      "change"
+    ],
+    "request": "包裹派送失败了。原址重派只在今天还能送到时才允许。如果今天送不到，就优先备用地址，其次自提。",
+    "facts": {
+      "retry_delivery_day": "tomorrow"
+    }
+  },
+  {
+    "id": 118,
+    "scenario": "conditional_authorization",
+    "available": [
+      "retry",
+      "pickup",
+      "change"
+    ],
+    "permitted": [
+      "pickup",
+      "change"
+    ],
+    "target": [
+      "change"
+    ],
+    "request": "包裹派送失败了。原址今天收不到的话不要重派，先改到备用地址，最后才考虑自提。",
+    "facts": {
+      "retry_delivery_day": "tomorrow"
+    }
+  },
+  {
+    "id": 119,
+    "scenario": "compound_condition",
+    "available": [
+      "retry",
+      "pickup",
+      "change"
+    ],
+    "permitted": [
+      "retry",
+      "pickup"
+    ],
+    "target": [
+      "retry"
+    ],
+    "request": "包裹派送失败了。如果备用地址今天能送到，就选它。否则如果原址明天中午前能送到，就原址重派。其他情况自提。",
+    "facts": {
+      "change_delivery_day": "tomorrow",
+      "retry_delivery_day": "tomorrow",
+      "retry_delivery_hour": 10
+    }
+  },
+  {
+    "id": 120,
+    "scenario": "compound_condition",
+    "available": [
+      "retry",
+      "pickup",
+      "change"
+    ],
+    "permitted": [
+      "retry",
+      "pickup"
+    ],
+    "target": [
+      "retry"
+    ],
+    "request": "包裹派送失败了。优先改派备用地址，但必须能今天送达；做不到就选明天中午前的原址重派，再不行自提。",
+    "facts": {
+      "change_delivery_day": "tomorrow",
+      "retry_delivery_day": "tomorrow",
+      "retry_delivery_hour": 10
+    }
+  },
+  {
+    "id": 121,
+    "scenario": "compound_condition",
+    "available": [
+      "retry",
+      "pickup",
+      "change"
+    ],
+    "permitted": [
+      "pickup",
+      "change"
+    ],
+    "target": [
+      "pickup"
+    ],
+    "request": "包裹派送失败了。自提点在两公里以内且开到晚八点，我才授权自提，并优先选它。否则用备用地址。不要重派。",
+    "facts": {
+      "pickup_distance_km": 1,
+      "pickup_close_hour": 20
+    }
+  },
+  {
+    "id": 122,
+    "scenario": "compound_condition",
+    "available": [
+      "retry",
+      "pickup",
+      "change"
+    ],
+    "permitted": [
+      "pickup",
+      "change"
+    ],
+    "target": [
+      "pickup"
+    ],
+    "request": "包裹派送失败了。能去自提的条件是距离不超过 2 公里并且营业到至少 20:00。两项都满足就选自提，否则改备用地址。禁止原址重派。",
+    "facts": {
+      "pickup_distance_km": 1,
+      "pickup_close_hour": 20
+    }
+  },
+  {
+    "id": 123,
+    "scenario": "compound_condition",
+    "available": [
+      "retry",
+      "pickup",
+      "change"
+    ],
+    "permitted": [
+      "change"
+    ],
+    "target": [
+      "change"
+    ],
+    "request": "包裹派送失败了。不许原址重派。自提必须离我两公里以内且开到晚八点，任一条件不满足就用备用地址。",
+    "facts": {
+      "pickup_distance_km": 1,
+      "pickup_close_hour": 18
+    }
+  },
+  {
+    "id": 124,
+    "scenario": "compound_condition",
+    "available": [
+      "retry",
+      "pickup",
+      "change"
+    ],
+    "permitted": [
+      "change"
+    ],
+    "target": [
+      "change"
+    ],
+    "request": "包裹派送失败了。原址重派不行。只有自提点在 2 公里内且至少营业到 20:00 才自提，否则请改去备用地址。",
+    "facts": {
+      "pickup_distance_km": 1,
+      "pickup_close_hour": 18
+    }
+  }
+]

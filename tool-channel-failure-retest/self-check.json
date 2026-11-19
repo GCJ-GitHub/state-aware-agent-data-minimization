@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "replayed_episodes": 162,
+  "checks": [
+    "No profile values in system message",
+    "Same initial tool envelope and role in all arms",
+    "Native Qwen tool_response rendering verified",
+    "No fabricated assistant calls",
+    "Original action/recovery histories identical for identical model outputs"
+  ],
+  "included_in_model_results": false
+}

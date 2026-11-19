@@ -1,0 +1,39 @@
+BATCH 12 new_prompt_tokens 9514 generated_tokens 180 wall 12.3
+BATCH 12 new_prompt_tokens 1747 generated_tokens 237 wall 16.3
+BATCH 12 new_prompt_tokens 695 generated_tokens 266 wall 19.3
+BATCH 12 new_prompt_tokens 1591 generated_tokens 452 wall 25.1
+BATCH 12 new_prompt_tokens 1117 generated_tokens 283 wall 29.2
+13 /1080 single-16-1 agent_only 421 terminal True tools 4 wall 29.2
+BATCH 12 new_prompt_tokens 2221 generated_tokens 246 wall 37.6
+BATCH 12 new_prompt_tokens 989 generated_tokens 257 wall 43.1
+BATCH 12 new_prompt_tokens 1062 generated_tokens 472 wall 50.7
+BATCH 12 new_prompt_tokens 1388 generated_tokens 351 wall 58.5
+14 /1080 switch-05-0 state_guard 19 terminal True tools 8 wall 58.5
+15 /1080 switch-11-0 agent_only 421 terminal True tools 8 wall 58.5
+BATCH 12 new_prompt_tokens 2437 generated_tokens 318 wall 86.8
+16 /1080 switch-16-1 upfront 421 terminal True tools 9 wall 86.9
+17 /1080 switch-10-1 agent_only 113 terminal True tools 9 wall 86.9
+18 /1080 switch-07-1 upfront 113 terminal True tools 9 wall 86.9
+19 /1080 switch-13-1 upfront 19 terminal True tools 9 wall 86.9
+20 /1080 switch-17-1 upfront 19 terminal True tools 9 wall 86.9
+BATCH 12 new_prompt_tokens 4757 generated_tokens 292 wall 101.5
+21 /1080 multi-16-0 upfront 19 terminal True tools 10 wall 101.6
+BATCH 12 new_prompt_tokens 2116 generated_tokens 324 wall 111.2
+Traceback (most recent call last):
+  File "${REPO}/blind_three_arm_batch.py", line 151, in <module>
+    main()
+  File "${REPO}/blind_three_arm_batch.py", line 127, in main
+    while responses := gen.next_generated():
+                       ^^^^^^^^^^^^^^^^^^^^
+  File "/private/tmp/logistics-mlx-direct/lib/python3.11/site-packages/mlx_lm/generate.py", line 1910, in next_generated
+    prompt_responses, generation_responses = self._next()
+                                             ^^^^^^^^^^^^
+  File "/private/tmp/logistics-mlx-direct/lib/python3.11/site-packages/mlx_lm/generate.py", line 1819, in _next
+    generation_responses = self._generation_batch.next()
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/tmp/logistics-mlx-direct/lib/python3.11/site-packages/mlx_lm/generate.py", line 1478, in next
+    tokens, logprobs = self._step()
+                       ^^^^^^^^^^^^
+  File "/private/tmp/logistics-mlx-direct/lib/python3.11/site-packages/mlx_lm/generate.py", line 1434, in _step
+    mx.async_eval(self._next_tokens, self._next_logprobs, token_context)
+RuntimeError: [METAL] Command buffer execution failed: Insufficient Memory (00000008:kIOGPUCommandBufferCallbackErrorOutOfMemory).

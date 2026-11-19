@@ -1,0 +1,21 @@
+{
+  "secondary_audit": true,
+  "groups": {
+    "upfront": {
+      "unused_prose_cases": 0,
+      "any_personal_prose_cases": 1,
+      "unused_execution_cases": 11
+    },
+    "agent_only": {
+      "unused_prose_cases": 0,
+      "any_personal_prose_cases": 0,
+      "unused_execution_cases": 3
+    },
+    "state_guard": {
+      "unused_prose_cases": 0,
+      "any_personal_prose_cases": 1,
+      "unused_execution_cases": 0
+    }
+  },
+  "note": "Case-insensitive full-value shadow audit; frozen primary scores unchanged."
+}

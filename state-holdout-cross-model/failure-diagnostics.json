@@ -1,0 +1,23 @@
+{
+  "posthoc_heuristic_categories": {
+    "local-qwen3-1.7b": {
+      "upfront": {
+        "other_execution_or_turn_limit": 16,
+        "stopped_or_malformed_output": 5
+      },
+      "agent_only": {
+        "required_fields_not_observed": 76,
+        "stopped_or_malformed_output": 16
+      },
+      "state_guard": {
+        "required_fields_not_observed": 76,
+        "stopped_or_malformed_output": 16
+      }
+    },
+    "qwen3.8-flash": {
+      "upfront": {},
+      "agent_only": {},
+      "state_guard": {}
+    }
+  }
+}

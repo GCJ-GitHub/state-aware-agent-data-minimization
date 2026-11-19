@@ -1,0 +1,70 @@
+{
+  "round5": {
+    "n": 24,
+    "success": 12,
+    "legal_completion": 16,
+    "success_without_excess": 12,
+    "any_sensitive_seen": 14,
+    "any_excess_seen": 0,
+    "excess_address": 0,
+    "excess_phone": 0,
+    "excess_postal": 0,
+    "excess_requested": 5,
+    "mean_calls": 3.375,
+    "median_ms": 2932.07,
+    "by_completed_route": {
+      "retry": 2,
+      "pickup": 7,
+      "change": 7
+    },
+    "excess_relative_to_expected_route": 4,
+    "total_calls": 81,
+    "total_model_turns": 90
+  },
+  "round7": {
+    "n": 24,
+    "success": 16,
+    "legal_completion": 16,
+    "success_without_excess": 16,
+    "any_sensitive_seen": 11,
+    "any_excess_seen": 0,
+    "excess_address": 0,
+    "excess_phone": 0,
+    "excess_postal": 0,
+    "excess_requested": 1,
+    "mean_calls": 3.125,
+    "median_ms": 3237.34,
+    "by_completed_route": {
+      "retry": 5,
+      "pickup": 6,
+      "change": 5
+    },
+    "excess_relative_to_expected_route": 0,
+    "total_calls": 75,
+    "total_model_turns": 84
+  },
+  "paired": {
+    "recovered_cases": [
+      120,
+      106,
+      114,
+      119
+    ],
+    "regressed_cases": [],
+    "cases_with_more_calls": 1,
+    "cases_with_fewer_calls": 6,
+    "cases_with_same_calls": 17,
+    "total_call_delta": -6
+  },
+  "route_feedback_cases": [
+    120,
+    106,
+    123,
+    101,
+    114,
+    113,
+    117,
+    124,
+    119
+  ]
+}

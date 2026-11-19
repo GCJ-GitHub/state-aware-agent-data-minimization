@@ -1,0 +1,2 @@
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+TRACE_REPLAY_OK 1080 {'upfront': defaultdict(<class 'int'>, {'episodes': 360, 'input_tokens': 3600344, 'output_tokens': 71257, 'model_calls': 2849}), 'agent_only': defaultdict(<class 'int'>, {'episodes': 360, 'input_tokens': 6291975, 'output_tokens': 130876, 'model_calls': 4156}), 'state_guard': defaultdict(<class 'int'>, {'episodes': 360, 'input_tokens': 6369421, 'output_tokens': 133389, 'model_calls': 4209})}

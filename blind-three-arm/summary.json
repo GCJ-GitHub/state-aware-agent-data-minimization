@@ -1,0 +1,665 @@
+{
+  "completed_episodes": 1080,
+  "expected_episodes": 1080,
+  "reasoning_leakage": "not evaluated (thinking disabled)",
+  "groups": {
+    "all": {
+      "upfront": {
+        "n": 360,
+        "totals": {
+          "success": 359,
+          "read_fields": 1800,
+          "extra_fields": 1053,
+          "premature_fields": 1800,
+          "any_leak": 17,
+          "final_leak_fields": 0,
+          "execution_leak_fields": 27,
+          "tool_calls": 2492,
+          "model_calls": 2849,
+          "confirmation_calls": 161,
+          "recovery_prompts": 2,
+          "output_tokens": 71257,
+          "elapsed_s": 1626.700303122867,
+          "denied_field_requests": 0
+        },
+        "means": {
+          "success": 0.9972222222222222,
+          "read_fields": 5.0,
+          "extra_fields": 2.925,
+          "premature_fields": 5.0,
+          "any_leak": 0.04722222222222222,
+          "final_leak_fields": 0.0,
+          "execution_leak_fields": 0.075,
+          "tool_calls": 6.9222222222222225,
+          "model_calls": 7.913888888888889,
+          "confirmation_calls": 0.44722222222222224,
+          "recovery_prompts": 0.005555555555555556,
+          "output_tokens": 197.9361111111111,
+          "elapsed_s": 4.518611953119075,
+          "denied_field_requests": 0.0
+        }
+      },
+      "agent_only": {
+        "n": 360,
+        "totals": {
+          "success": 309,
+          "read_fields": 650,
+          "extra_fields": 5,
+          "premature_fields": 5,
+          "any_leak": 54,
+          "final_leak_fields": 0,
+          "execution_leak_fields": 55,
+          "tool_calls": 3861,
+          "model_calls": 4156,
+          "confirmation_calls": 149,
+          "recovery_prompts": 2,
+          "output_tokens": 130876,
+          "elapsed_s": 2250.511340495199,
+          "denied_field_requests": 0
+        },
+        "means": {
+          "success": 0.8583333333333333,
+          "read_fields": 1.8055555555555556,
+          "extra_fields": 0.013888888888888888,
+          "premature_fields": 0.013888888888888888,
+          "any_leak": 0.15,
+          "final_leak_fields": 0.0,
+          "execution_leak_fields": 0.1527777777777778,
+          "tool_calls": 10.725,
+          "model_calls": 11.544444444444444,
+          "confirmation_calls": 0.41388888888888886,
+          "recovery_prompts": 0.005555555555555556,
+          "output_tokens": 363.5444444444444,
+          "elapsed_s": 6.251420390264442,
+          "denied_field_requests": 0.0
+        }
+      },
+      "state_guard": {
+        "n": 360,
+        "totals": {
+          "success": 310,
+          "read_fields": 649,
+          "extra_fields": 0,
+          "premature_fields": 0,
+          "any_leak": 53,
+          "final_leak_fields": 0,
+          "execution_leak_fields": 54,
+          "tool_calls": 3915,
+          "model_calls": 4209,
+          "confirmation_calls": 151,
+          "recovery_prompts": 3,
+          "output_tokens": 133389,
+          "elapsed_s": 1979.2738079978153,
+          "denied_field_requests": 1
+        },
+        "means": {
+          "success": 0.8611111111111112,
+          "read_fields": 1.8027777777777778,
+          "extra_fields": 0.0,
+          "premature_fields": 0.0,
+          "any_leak": 0.14722222222222223,
+          "final_leak_fields": 0.0,
+          "execution_leak_fields": 0.15,
+          "tool_calls": 10.875,
+          "model_calls": 11.691666666666666,
+          "confirmation_calls": 0.41944444444444445,
+          "recovery_prompts": 0.008333333333333333,
+          "output_tokens": 370.525,
+          "elapsed_s": 5.497982799993931,
+          "denied_field_requests": 0.002777777777777778
+        }
+      }
+    },
+    "single": {
+      "upfront": {
+        "n": 120,
+        "totals": {
+          "success": 120,
+          "read_fields": 600,
+          "extra_fields": 453,
+          "premature_fields": 600,
+          "any_leak": 5,
+          "final_leak_fields": 0,
+          "execution_leak_fields": 5,
+          "tool_calls": 487,
+          "model_calls": 605,
+          "confirmation_calls": 27,
+          "recovery_prompts": 0,
+          "output_tokens": 14796,
+          "elapsed_s": 265.43726979289204,
+          "denied_field_requests": 0
+        },
+        "means": {
+          "success": 1.0,
+          "read_fields": 5.0,
+          "extra_fields": 3.775,
+          "premature_fields": 5.0,
+          "any_leak": 0.041666666666666664,
+          "final_leak_fields": 0.0,
+          "execution_leak_fields": 0.041666666666666664,
+          "tool_calls": 4.058333333333334,
+          "model_calls": 5.041666666666667,
+          "confirmation_calls": 0.225,
+          "recovery_prompts": 0.0,
+          "output_tokens": 123.3,
+          "elapsed_s": 2.2119772482741005,
+          "denied_field_requests": 0.0
+        }
+      },
+      "agent_only": {
+        "n": 120,
+        "totals": {
+          "success": 119,
+          "read_fields": 145,
+          "extra_fields": 0,
+          "premature_fields": 0,
+          "any_leak": 15,
+          "final_leak_fields": 0,
+          "execution_leak_fields": 15,
+          "tool_calls": 873,
+          "model_calls": 978,
+          "confirmation_calls": 27,
+          "recovery_prompts": 1,
+          "output_tokens": 29231,
+          "elapsed_s": 632.0152613339014,
+          "denied_field_requests": 0
+        },
+        "means": {
+          "success": 0.9916666666666667,
+          "read_fields": 1.2083333333333333,
+          "extra_fields": 0.0,
+          "premature_fields": 0.0,
+          "any_leak": 0.125,
+          "final_leak_fields": 0.0,
+          "execution_leak_fields": 0.125,
+          "tool_calls": 7.275,
+          "model_calls": 8.15,
+          "confirmation_calls": 0.225,
+          "recovery_prompts": 0.008333333333333333,
+          "output_tokens": 243.59166666666667,
+          "elapsed_s": 5.266793844449179,
+          "denied_field_requests": 0.0
+        }
+      },
+      "state_guard": {
+        "n": 120,
+        "totals": {
+          "success": 120,
+          "read_fields": 147,
+          "extra_fields": 0,
+          "premature_fields": 0,
+          "any_leak": 19,
+          "final_leak_fields": 0,
+          "execution_leak_fields": 19,
+          "tool_calls": 933,
+          "model_calls": 1034,
+          "confirmation_calls": 27,
+          "recovery_prompts": 0,
+          "output_tokens": 31703,
+          "elapsed_s": 457.73318545427173,
+          "denied_field_requests": 0
+        },
+        "means": {
+          "success": 1.0,
+          "read_fields": 1.225,
+          "extra_fields": 0.0,
+          "premature_fields": 0.0,
+          "any_leak": 0.15833333333333333,
+          "final_leak_fields": 0.0,
+          "execution_leak_fields": 0.15833333333333333,
+          "tool_calls": 7.775,
+          "model_calls": 8.616666666666667,
+          "confirmation_calls": 0.225,
+          "recovery_prompts": 0.0,
+          "output_tokens": 264.19166666666666,
+          "elapsed_s": 3.814443212118931,
+          "denied_field_requests": 0.0
+        }
+      }
+    },
+    "switch": {
+      "upfront": {
+        "n": 120,
+        "totals": {
+          "success": 119,
+          "read_fields": 600,
+          "extra_fields": 300,
+          "premature_fields": 600,
+          "any_leak": 7,
+          "final_leak_fields": 0,
+          "execution_leak_fields": 14,
+          "tool_calls": 983,
+          "model_calls": 1104,
+          "confirmation_calls": 64,
+          "recovery_prompts": 2,
+          "output_tokens": 28207,
+          "elapsed_s": 795.3495168811642,
+          "denied_field_requests": 0
+        },
+        "means": {
+          "success": 0.9916666666666667,
+          "read_fields": 5.0,
+          "extra_fields": 2.5,
+          "premature_fields": 5.0,
+          "any_leak": 0.058333333333333334,
+          "final_leak_fields": 0.0,
+          "execution_leak_fields": 0.11666666666666667,
+          "tool_calls": 8.191666666666666,
+          "model_calls": 9.2,
+          "confirmation_calls": 0.5333333333333333,
+          "recovery_prompts": 0.016666666666666666,
+          "output_tokens": 235.05833333333334,
+          "elapsed_s": 6.627912640676368,
+          "denied_field_requests": 0.0
+        }
+      },
+      "agent_only": {
+        "n": 120,
+        "totals": {
+          "success": 96,
+          "read_fields": 252,
+          "extra_fields": 0,
+          "premature_fields": 0,
+          "any_leak": 19,
+          "final_leak_fields": 0,
+          "execution_leak_fields": 20,
+          "tool_calls": 1490,
+          "model_calls": 1586,
+          "confirmation_calls": 62,
+          "recovery_prompts": 1,
+          "output_tokens": 51440,
+          "elapsed_s": 888.2407213682309,
+          "denied_field_requests": 0
+        },
+        "means": {
+          "success": 0.8,
+          "read_fields": 2.1,
+          "extra_fields": 0.0,
+          "premature_fields": 0.0,
+          "any_leak": 0.15833333333333333,
+          "final_leak_fields": 0.0,
+          "execution_leak_fields": 0.16666666666666666,
+          "tool_calls": 12.416666666666666,
+          "model_calls": 13.216666666666667,
+          "confirmation_calls": 0.5166666666666667,
+          "recovery_prompts": 0.008333333333333333,
+          "output_tokens": 428.6666666666667,
+          "elapsed_s": 7.402006011401924,
+          "denied_field_requests": 0.0
+        }
+      },
+      "state_guard": {
+        "n": 120,
+        "totals": {
+          "success": 96,
+          "read_fields": 252,
+          "extra_fields": 0,
+          "premature_fields": 0,
+          "any_leak": 19,
+          "final_leak_fields": 0,
+          "execution_leak_fields": 20,
+          "tool_calls": 1490,
+          "model_calls": 1586,
+          "confirmation_calls": 62,
+          "recovery_prompts": 1,
+          "output_tokens": 51724,
+          "elapsed_s": 773.8360636276193,
+          "denied_field_requests": 0
+        },
+        "means": {
+          "success": 0.8,
+          "read_fields": 2.1,
+          "extra_fields": 0.0,
+          "premature_fields": 0.0,
+          "any_leak": 0.15833333333333333,
+          "final_leak_fields": 0.0,
+          "execution_leak_fields": 0.16666666666666666,
+          "tool_calls": 12.416666666666666,
+          "model_calls": 13.216666666666667,
+          "confirmation_calls": 0.5166666666666667,
+          "recovery_prompts": 0.008333333333333333,
+          "output_tokens": 431.03333333333336,
+          "elapsed_s": 6.4486338635634946,
+          "denied_field_requests": 0.0
+        }
+      }
+    },
+    "multi": {
+      "upfront": {
+        "n": 120,
+        "totals": {
+          "success": 120,
+          "read_fields": 600,
+          "extra_fields": 300,
+          "premature_fields": 600,
+          "any_leak": 5,
+          "final_leak_fields": 0,
+          "execution_leak_fields": 8,
+          "tool_calls": 1022,
+          "model_calls": 1140,
+          "confirmation_calls": 70,
+          "recovery_prompts": 0,
+          "output_tokens": 28254,
+          "elapsed_s": 565.9135164488107,
+          "denied_field_requests": 0
+        },
+        "means": {
+          "success": 1.0,
+          "read_fields": 5.0,
+          "extra_fields": 2.5,
+          "premature_fields": 5.0,
+          "any_leak": 0.041666666666666664,
+          "final_leak_fields": 0.0,
+          "execution_leak_fields": 0.06666666666666667,
+          "tool_calls": 8.516666666666667,
+          "model_calls": 9.5,
+          "confirmation_calls": 0.5833333333333334,
+          "recovery_prompts": 0.0,
+          "output_tokens": 235.45,
+          "elapsed_s": 4.7159459704067554,
+          "denied_field_requests": 0.0
+        }
+      },
+      "agent_only": {
+        "n": 120,
+        "totals": {
+          "success": 94,
+          "read_fields": 253,
+          "extra_fields": 5,
+          "premature_fields": 5,
+          "any_leak": 20,
+          "final_leak_fields": 0,
+          "execution_leak_fields": 20,
+          "tool_calls": 1498,
+          "model_calls": 1592,
+          "confirmation_calls": 60,
+          "recovery_prompts": 0,
+          "output_tokens": 50205,
+          "elapsed_s": 730.2553577930667,
+          "denied_field_requests": 0
+        },
+        "means": {
+          "success": 0.7833333333333333,
+          "read_fields": 2.1083333333333334,
+          "extra_fields": 0.041666666666666664,
+          "premature_fields": 0.041666666666666664,
+          "any_leak": 0.16666666666666666,
+          "final_leak_fields": 0.0,
+          "execution_leak_fields": 0.16666666666666666,
+          "tool_calls": 12.483333333333333,
+          "model_calls": 13.266666666666667,
+          "confirmation_calls": 0.5,
+          "recovery_prompts": 0.0,
+          "output_tokens": 418.375,
+          "elapsed_s": 6.085461314942222,
+          "denied_field_requests": 0.0
+        }
+      },
+      "state_guard": {
+        "n": 120,
+        "totals": {
+          "success": 94,
+          "read_fields": 250,
+          "extra_fields": 0,
+          "premature_fields": 0,
+          "any_leak": 15,
+          "final_leak_fields": 0,
+          "execution_leak_fields": 15,
+          "tool_calls": 1492,
+          "model_calls": 1589,
+          "confirmation_calls": 62,
+          "recovery_prompts": 2,
+          "output_tokens": 49962,
+          "elapsed_s": 747.7045589159243,
+          "denied_field_requests": 1
+        },
+        "means": {
+          "success": 0.7833333333333333,
+          "read_fields": 2.0833333333333335,
+          "extra_fields": 0.0,
+          "premature_fields": 0.0,
+          "any_leak": 0.125,
+          "final_leak_fields": 0.0,
+          "execution_leak_fields": 0.125,
+          "tool_calls": 12.433333333333334,
+          "model_calls": 13.241666666666667,
+          "confirmation_calls": 0.5166666666666667,
+          "recovery_prompts": 0.016666666666666666,
+          "output_tokens": 416.35,
+          "elapsed_s": 6.230871324299369,
+          "denied_field_requests": 0.008333333333333333
+        }
+      }
+    }
+  },
+  "paired": {
+    "state_guard_minus_upfront": {
+      "success": {
+        "mean_guard_minus_baseline": -0.13611111111111113,
+        "cluster_bootstrap_95ci": [
+          -0.19444444444444445,
+          -0.08055555555555555
+        ],
+        "clusters": 60
+      },
+      "read_fields": {
+        "mean_guard_minus_baseline": -3.1972222222222224,
+        "cluster_bootstrap_95ci": [
+          -3.341666666666667,
+          -3.0416666666666665
+        ],
+        "clusters": 60
+      },
+      "extra_fields": {
+        "mean_guard_minus_baseline": -2.925,
+        "cluster_bootstrap_95ci": [
+          -3.091666666666667,
+          -2.775
+        ],
+        "clusters": 60
+      },
+      "premature_fields": {
+        "mean_guard_minus_baseline": -5.0,
+        "cluster_bootstrap_95ci": [
+          -5.0,
+          -5.0
+        ],
+        "clusters": 60
+      },
+      "any_leak": {
+        "mean_guard_minus_baseline": 0.1,
+        "cluster_bootstrap_95ci": [
+          0.041666666666666664,
+          0.16111111111111104
+        ],
+        "clusters": 60
+      },
+      "final_leak_fields": {
+        "mean_guard_minus_baseline": 0.0,
+        "cluster_bootstrap_95ci": [
+          0.0,
+          0.0
+        ],
+        "clusters": 60
+      },
+      "execution_leak_fields": {
+        "mean_guard_minus_baseline": 0.07499999999999998,
+        "cluster_bootstrap_95ci": [
+          0.008333333333333328,
+          0.14166666666666666
+        ],
+        "clusters": 60
+      },
+      "tool_calls": {
+        "mean_guard_minus_baseline": 3.9527777777777784,
+        "cluster_bootstrap_95ci": [
+          2.9916666666666676,
+          4.919444444444445
+        ],
+        "clusters": 60
+      },
+      "model_calls": {
+        "mean_guard_minus_baseline": 3.777777777777778,
+        "cluster_bootstrap_95ci": [
+          2.869444444444446,
+          4.691666666666667
+        ],
+        "clusters": 60
+      },
+      "confirmation_calls": {
+        "mean_guard_minus_baseline": -0.027777777777777776,
+        "cluster_bootstrap_95ci": [
+          -0.06944444444444443,
+          0.005555555555555554
+        ],
+        "clusters": 60
+      },
+      "recovery_prompts": {
+        "mean_guard_minus_baseline": 0.0027777777777777775,
+        "cluster_bootstrap_95ci": [
+          -0.013888888888888888,
+          0.01944444444444444
+        ],
+        "clusters": 60
+      },
+      "output_tokens": {
+        "mean_guard_minus_baseline": 172.5888888888889,
+        "cluster_bootstrap_95ci": [
+          127.5583333333334,
+          217.48888888888885
+        ],
+        "clusters": 60
+      },
+      "elapsed_s": {
+        "mean_guard_minus_baseline": 0.9793708468748574,
+        "cluster_bootstrap_95ci": [
+          -0.36030832013736175,
+          2.218160659828895
+        ],
+        "clusters": 60
+      },
+      "denied_field_requests": {
+        "mean_guard_minus_baseline": 0.0027777777777777775,
+        "cluster_bootstrap_95ci": [
+          0.0,
+          0.008333333333333333
+        ],
+        "clusters": 60
+      }
+    },
+    "state_guard_minus_agent_only": {
+      "success": {
+        "mean_guard_minus_baseline": 0.0027777777777777775,
+        "cluster_bootstrap_95ci": [
+          -0.005555555555555556,
+          0.01111111111111111
+        ],
+        "clusters": 60
+      },
+      "read_fields": {
+        "mean_guard_minus_baseline": -0.0027777777777777775,
+        "cluster_bootstrap_95ci": [
+          -0.01944444444444444,
+          0.013888888888888888
+        ],
+        "clusters": 60
+      },
+      "extra_fields": {
+        "mean_guard_minus_baseline": -0.013888888888888888,
+        "cluster_bootstrap_95ci": [
+          -0.03888888888888889,
+          0.0
+        ],
+        "clusters": 60
+      },
+      "premature_fields": {
+        "mean_guard_minus_baseline": -0.013888888888888888,
+        "cluster_bootstrap_95ci": [
+          -0.03888888888888889,
+          0.0
+        ],
+        "clusters": 60
+      },
+      "any_leak": {
+        "mean_guard_minus_baseline": -0.0027777777777777766,
+        "cluster_bootstrap_95ci": [
+          -0.025000000000000005,
+          0.01944444444444444
+        ],
+        "clusters": 60
+      },
+      "final_leak_fields": {
+        "mean_guard_minus_baseline": 0.0,
+        "cluster_bootstrap_95ci": [
+          0.0,
+          0.0
+        ],
+        "clusters": 60
+      },
+      "execution_leak_fields": {
+        "mean_guard_minus_baseline": -0.0027777777777777766,
+        "cluster_bootstrap_95ci": [
+          -0.025,
+          0.01944444444444444
+        ],
+        "clusters": 60
+      },
+      "tool_calls": {
+        "mean_guard_minus_baseline": 0.15,
+        "cluster_bootstrap_95ci": [
+          -0.17777777777777773,
+          0.5305555555555556
+        ],
+        "clusters": 60
+      },
+      "model_calls": {
+        "mean_guard_minus_baseline": 0.14722222222222223,
+        "cluster_bootstrap_95ci": [
+          -0.17500000000000007,
+          0.5000000000000001
+        ],
+        "clusters": 60
+      },
+      "confirmation_calls": {
+        "mean_guard_minus_baseline": 0.005555555555555555,
+        "cluster_bootstrap_95ci": [
+          0.0,
+          0.013888888888888888
+        ],
+        "clusters": 60
+      },
+      "recovery_prompts": {
+        "mean_guard_minus_baseline": 0.0027777777777777775,
+        "cluster_bootstrap_95ci": [
+          -0.008333333333333333,
+          0.016666666666666666
+        ],
+        "clusters": 60
+      },
+      "output_tokens": {
+        "mean_guard_minus_baseline": 6.980555555555558,
+        "cluster_bootstrap_95ci": [
+          -7.641666666666665,
+          22.79444444444444
+        ],
+        "clusters": 60
+      },
+      "elapsed_s": {
+        "mean_guard_minus_baseline": -0.7534375902705102,
+        "cluster_bootstrap_95ci": [
+          -1.9920634876173502,
+          0.24115870488134944
+        ],
+        "clusters": 60
+      },
+      "denied_field_requests": {
+        "mean_guard_minus_baseline": 0.0027777777777777775,
+        "cluster_bootstrap_95ci": [
+          0.0,
+          0.008333333333333333
+        ],
+        "clusters": 60
+      }
+    }
+  }
+}

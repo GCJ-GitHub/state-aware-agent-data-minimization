@@ -1,0 +1,16 @@
+{
+  "at": "2026-11-19T14:57:13+0800",
+  "sha256": {
+    "${LOCAL_HOME}/Documents/ChatGPT/\u5b66\u4e60/agent-logistics-minimization/state_holdout_cross_model.py": "4cd89dbb213d75030c6b8ed5d294c7f1253b7dcad2195717a84984c4bc5aae29",
+    "${LOCAL_HOME}/Documents/ChatGPT/\u5b66\u4e60/agent-logistics-minimization/blind_three_arm.py": "d01347e0f7765e7cfe0688c9306457eba1ff96b8d1ed71343e2e1c9d3bac1b16",
+    "${LOCAL_HOME}/Documents/ChatGPT/\u5b66\u4e60/agent-logistics-minimization/state-holdout-cross-model/tasks.json": "a24e3cec07a64457e19da0136ffbd79ab4dbef308b9511d436beb2fc3307f5aa",
+    "${LOCAL_HOME}/Documents/ChatGPT/\u5b66\u4e60/agent-logistics-minimization/state-holdout-cross-model/gold.json": "b9b430b4d9b9a64133f885cf0f6bd796317ad17564335411c095631c37ae78da",
+    "${LOCAL_HOME}/Documents/ChatGPT/\u5b66\u4e60/agent-logistics-minimization/state-holdout-cross-model/canonical-system.txt": "e632f5506298c2185b7b182543b855da3e9aab79990423de3a3272087370566b",
+    "${LOCAL_HOME}/Documents/ChatGPT/\u5b66\u4e60/agent-logistics-minimization/state-holdout-cross-model/protocol.json": "128ae3343526331eca110d46d90fbcdfd2bd0d3e42cb96d5c9af35ef78ebec7e",
+    "${LOCAL_HOME}/Documents/ChatGPT/\u5b66\u4e60/agent-logistics-minimization/state-holdout-cross-model/maas-preflight.json": "16cb62939647d4db521246c57876e1183a20eea3d24de997aedbfeeb2a37363f",
+    "/tmp/logistics-qwen3-17-ready/config.json": "507a6701220524eb8b283425bf0856a9ae4f21f4052e563896ddd668994b1dc7",
+    "/tmp/logistics-qwen3-17-ready/model.safetensors": "0e86d9677e519323849eac1bc272caae88567a481ff188c431f70be543d9995f",
+    "/tmp/logistics-qwen3-17-ready/tokenizer_config.json": "253153d0738ceb4c668d2eff957714dd2bea0b56de772a9fdccd96cbf517e6a0",
+    "/tmp/logistics-qwen3-17-ready/tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4"
+  }
+}

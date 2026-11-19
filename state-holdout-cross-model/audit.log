@@ -1,0 +1,2 @@
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+AUDIT_OK {'local-qwen3-1.7b': {'episodes': 1080, 'model_inputs_verified': 17834, 'passed': True}, 'qwen3.8-flash': {'episodes': 1080, 'model_inputs_verified': 9231, 'passed': True}}

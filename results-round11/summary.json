@@ -1,0 +1,88 @@
+{
+  "human_rules": {
+    "n": 24,
+    "success": 24,
+    "legal_completion": 24,
+    "success_without_excess": 24,
+    "any_sensitive_seen": 17,
+    "any_excess_seen": 0,
+    "excess_address": 0,
+    "excess_phone": 0,
+    "excess_postal": 0,
+    "excess_requested": 4,
+    "mean_calls": 4.417,
+    "median_ms": 3159.77,
+    "by_completed_route": {
+      "retry": 7,
+      "pickup": 9,
+      "change": 8
+    },
+    "excess_relative_to_expected_route": 0,
+    "total_calls": 106,
+    "total_model_turns": 108
+  },
+  "extracted_rules": {
+    "n": 24,
+    "success": 4,
+    "legal_completion": 7,
+    "success_without_excess": 4,
+    "any_sensitive_seen": 5,
+    "any_excess_seen": 0,
+    "excess_address": 0,
+    "excess_phone": 0,
+    "excess_postal": 0,
+    "excess_requested": 16,
+    "mean_calls": 7.583,
+    "median_ms": 8578.96,
+    "by_completed_route": {
+      "retry": 2,
+      "pickup": 5,
+      "change": 0
+    },
+    "excess_relative_to_expected_route": 2,
+    "total_calls": 182,
+    "total_model_turns": 188
+  },
+  "extraction": {
+    "valid": 9,
+    "authorization_rules_match": 1,
+    "priority_rules_match": 3,
+    "permitted_set_match": 4,
+    "eligible_set_match": 3,
+    "complete_rule_match": 1,
+    "extra_authorization_cases": 2,
+    "completed_unauthorized": 1
+  },
+  "extra_extraction_turns": 24,
+  "median_extraction_ms": 642.44,
+  "median_total_ms": 9098.97,
+  "paired": {
+    "recovered_cases": [],
+    "regressed_cases": [
+      207,
+      210,
+      224,
+      220,
+      214,
+      222,
+      211,
+      221,
+      219,
+      216,
+      223,
+      217,
+      202,
+      205,
+      213,
+      215,
+      209,
+      212,
+      208,
+      201
+    ],
+    "cases_with_more_calls": 17,
+    "cases_with_fewer_calls": 2,
+    "cases_with_same_calls": 5,
+    "total_call_delta": 76
+  }
+}

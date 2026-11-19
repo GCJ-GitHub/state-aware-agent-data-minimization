@@ -1,0 +1,51 @@
+{
+  "upfront_policy_union": {
+    "n": 24,
+    "success": 23,
+    "mean_calls": 4.417,
+    "median_ms": 4284.8,
+    "completed_by_route": {
+      "original": 7,
+      "bank": 8,
+      "voucher": 8
+    },
+    "orders_with_extra_fields": 16,
+    "extra_fields_total": 16,
+    "total_calls": 106,
+    "total_model_turns": 108,
+    "detail_calls": 17,
+    "confirmation_requests": 0,
+    "confirmation_approvals": 0
+  },
+  "state_gated": {
+    "n": 24,
+    "success": 19,
+    "mean_calls": 5.667,
+    "median_ms": 4865.12,
+    "completed_by_route": {
+      "original": 4,
+      "bank": 7,
+      "voucher": 8
+    },
+    "orders_with_extra_fields": 0,
+    "extra_fields_total": 0,
+    "total_calls": 136,
+    "total_model_turns": 139,
+    "detail_calls": 29,
+    "confirmation_requests": 0,
+    "confirmation_approvals": 0
+  },
+  "paired": {
+    "recovered_cases": [],
+    "regressed_cases": [
+      520,
+      550,
+      531,
+      511
+    ],
+    "cases_with_more_calls": 5,
+    "cases_with_fewer_calls": 2,
+    "cases_with_same_calls": 17,
+    "total_call_delta": 30
+  }
+}

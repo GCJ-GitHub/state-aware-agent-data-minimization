@@ -1,0 +1,353 @@
+{
+  "multi-00-1": {
+    "expected_attempt_routes": [
+      "redirect",
+      "pickup"
+    ],
+    "expected_success_routes": [
+      "redirect",
+      "pickup"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "backup_address",
+        "contact_ref"
+      ],
+      [
+        "postal_code"
+      ]
+    ],
+    "expected_confirmations": 1
+  },
+  "multi-04-1": {
+    "expected_attempt_routes": [
+      "redeliver",
+      "redirect"
+    ],
+    "expected_success_routes": [
+      "redeliver",
+      "redirect"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "delivery_ref"
+      ],
+      [
+        "backup_address",
+        "contact_ref"
+      ]
+    ],
+    "expected_confirmations": 1
+  },
+  "multi-05-0": {
+    "expected_attempt_routes": [
+      "wallet",
+      "original_payment"
+    ],
+    "expected_success_routes": [
+      "wallet",
+      "original_payment"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "wallet_ref"
+      ],
+      [
+        "payment_ref"
+      ]
+    ],
+    "expected_confirmations": 0
+  },
+  "multi-05-1": {
+    "expected_attempt_routes": [
+      "store_credit",
+      "bank_transfer"
+    ],
+    "expected_success_routes": [
+      "store_credit",
+      "bank_transfer"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "member_ref"
+      ],
+      [
+        "account_ref",
+        "account_name_ref"
+      ]
+    ],
+    "expected_confirmations": 1
+  },
+  "multi-08-1": {
+    "expected_attempt_routes": [
+      "pickup",
+      "redirect"
+    ],
+    "expected_success_routes": [
+      "pickup",
+      "redirect"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "postal_code"
+      ],
+      [
+        "backup_address",
+        "contact_ref"
+      ]
+    ],
+    "expected_confirmations": 1
+  },
+  "multi-09-1": {
+    "expected_attempt_routes": [
+      "wallet",
+      "bank_transfer"
+    ],
+    "expected_success_routes": [
+      "wallet",
+      "bank_transfer"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "wallet_ref"
+      ],
+      [
+        "account_ref",
+        "account_name_ref"
+      ]
+    ],
+    "expected_confirmations": 1
+  },
+  "multi-10-0": {
+    "expected_attempt_routes": [
+      "pickup",
+      "redirect"
+    ],
+    "expected_success_routes": [
+      "pickup",
+      "redirect"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "postal_code"
+      ],
+      [
+        "backup_address",
+        "contact_ref"
+      ]
+    ],
+    "expected_confirmations": 1
+  },
+  "multi-11-0": {
+    "expected_attempt_routes": [
+      "original_payment",
+      "bank_transfer"
+    ],
+    "expected_success_routes": [
+      "original_payment",
+      "bank_transfer"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "payment_ref"
+      ],
+      [
+        "account_ref",
+        "account_name_ref"
+      ]
+    ],
+    "expected_confirmations": 1
+  },
+  "multi-18-1": {
+    "expected_attempt_routes": [
+      "pickup",
+      "redirect"
+    ],
+    "expected_success_routes": [
+      "pickup",
+      "redirect"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "postal_code"
+      ],
+      [
+        "backup_address",
+        "contact_ref"
+      ]
+    ],
+    "expected_confirmations": 1
+  },
+  "multi-19-1": {
+    "expected_attempt_routes": [
+      "store_credit",
+      "bank_transfer"
+    ],
+    "expected_success_routes": [
+      "store_credit",
+      "bank_transfer"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "member_ref"
+      ],
+      [
+        "account_ref",
+        "account_name_ref"
+      ]
+    ],
+    "expected_confirmations": 1
+  },
+  "switch-01-1": {
+    "expected_attempt_routes": [
+      "wallet",
+      "bank_transfer"
+    ],
+    "expected_success_routes": [
+      "bank_transfer"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "wallet_ref"
+      ],
+      [
+        "account_ref",
+        "account_name_ref"
+      ]
+    ],
+    "expected_confirmations": 1
+  },
+  "switch-05-1": {
+    "expected_attempt_routes": [
+      "wallet",
+      "bank_transfer"
+    ],
+    "expected_success_routes": [
+      "bank_transfer"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "wallet_ref"
+      ],
+      [
+        "account_ref",
+        "account_name_ref"
+      ]
+    ],
+    "expected_confirmations": 1
+  },
+  "switch-07-0": {
+    "expected_attempt_routes": [
+      "store_credit",
+      "bank_transfer"
+    ],
+    "expected_success_routes": [
+      "bank_transfer"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "member_ref"
+      ],
+      [
+        "account_ref",
+        "account_name_ref"
+      ]
+    ],
+    "expected_confirmations": 1
+  },
+  "switch-08-1": {
+    "expected_attempt_routes": [
+      "locker",
+      "redirect"
+    ],
+    "expected_success_routes": [
+      "redirect"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "locker_ref"
+      ],
+      [
+        "backup_address",
+        "contact_ref"
+      ]
+    ],
+    "expected_confirmations": 1
+  },
+  "switch-09-1": {
+    "expected_attempt_routes": [
+      "original_payment",
+      "bank_transfer"
+    ],
+    "expected_success_routes": [
+      "bank_transfer"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "payment_ref"
+      ],
+      [
+        "account_ref",
+        "account_name_ref"
+      ]
+    ],
+    "expected_confirmations": 1
+  },
+  "switch-11-1": {
+    "expected_attempt_routes": [
+      "original_payment",
+      "bank_transfer"
+    ],
+    "expected_success_routes": [
+      "bank_transfer"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "payment_ref"
+      ],
+      [
+        "account_ref",
+        "account_name_ref"
+      ]
+    ],
+    "expected_confirmations": 1
+  },
+  "switch-12-0": {
+    "expected_attempt_routes": [
+      "locker",
+      "redirect"
+    ],
+    "expected_success_routes": [
+      "redirect"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "locker_ref"
+      ],
+      [
+        "backup_address",
+        "contact_ref"
+      ]
+    ],
+    "expected_confirmations": 1
+  },
+  "switch-16-0": {
+    "expected_attempt_routes": [
+      "locker",
+      "redirect"
+    ],
+    "expected_success_routes": [
+      "redirect"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "locker_ref"
+      ],
+      [
+        "backup_address",
+        "contact_ref"
+      ]
+    ],
+    "expected_confirmations": 1
+  }
+}

@@ -1,0 +1,236 @@
+{
+  "agent_only": {
+    "n": 24,
+    "success": 20,
+    "legal_completion": 20,
+    "success_without_excess": 11,
+    "any_sensitive_seen": 21,
+    "any_excess_seen": 11,
+    "excess_address": 11,
+    "excess_phone": 11,
+    "excess_postal": 11,
+    "excess_requested": 11,
+    "mean_calls": 4.042,
+    "median_ms": 2949.82,
+    "by_completed_route": {
+      "retry": 10,
+      "pickup": 6,
+      "change": 4
+    },
+    "by_preference": {
+      "available": {
+        "n": 12,
+        "success": 12,
+        "legal_completion": 12,
+        "success_without_excess": 8,
+        "any_sensitive_seen": 12,
+        "any_excess_seen": 4,
+        "excess_address": 4,
+        "excess_phone": 4,
+        "excess_postal": 4,
+        "excess_requested": 4,
+        "mean_calls": 4,
+        "median_ms": 2928.45,
+        "by_completed_route": {
+          "retry": 4,
+          "pickup": 4,
+          "change": 4
+        }
+      },
+      "unavailable": {
+        "n": 6,
+        "success": 2,
+        "legal_completion": 2,
+        "success_without_excess": 1,
+        "any_sensitive_seen": 3,
+        "any_excess_seen": 3,
+        "excess_address": 3,
+        "excess_phone": 3,
+        "excess_postal": 3,
+        "excess_requested": 3,
+        "mean_calls": 4.167,
+        "median_ms": 3383.62,
+        "by_completed_route": {
+          "retry": 2,
+          "pickup": 0,
+          "change": 0
+        }
+      },
+      "none": {
+        "n": 6,
+        "success": 6,
+        "legal_completion": 6,
+        "success_without_excess": 2,
+        "any_sensitive_seen": 6,
+        "any_excess_seen": 4,
+        "excess_address": 4,
+        "excess_phone": 4,
+        "excess_postal": 4,
+        "excess_requested": 4,
+        "mean_calls": 4,
+        "median_ms": 2950.16,
+        "by_completed_route": {
+          "retry": 4,
+          "pickup": 2,
+          "change": 0
+        }
+      }
+    }
+  },
+  "fixed_fields": {
+    "n": 24,
+    "success": 15,
+    "legal_completion": 15,
+    "success_without_excess": 11,
+    "any_sensitive_seen": 21,
+    "any_excess_seen": 11,
+    "excess_address": 11,
+    "excess_phone": 0,
+    "excess_postal": 11,
+    "excess_requested": 11,
+    "mean_calls": 3.667,
+    "median_ms": 2922.97,
+    "by_completed_route": {
+      "retry": 5,
+      "pickup": 6,
+      "change": 4
+    },
+    "by_preference": {
+      "available": {
+        "n": 12,
+        "success": 8,
+        "legal_completion": 8,
+        "success_without_excess": 8,
+        "any_sensitive_seen": 12,
+        "any_excess_seen": 4,
+        "excess_address": 4,
+        "excess_phone": 0,
+        "excess_postal": 4,
+        "excess_requested": 4,
+        "mean_calls": 3.667,
+        "median_ms": 2919.24,
+        "by_completed_route": {
+          "retry": 0,
+          "pickup": 4,
+          "change": 4
+        }
+      },
+      "unavailable": {
+        "n": 6,
+        "success": 1,
+        "legal_completion": 1,
+        "success_without_excess": 1,
+        "any_sensitive_seen": 3,
+        "any_excess_seen": 3,
+        "excess_address": 3,
+        "excess_phone": 0,
+        "excess_postal": 3,
+        "excess_requested": 3,
+        "mean_calls": 3.333,
+        "median_ms": 3296.25,
+        "by_completed_route": {
+          "retry": 1,
+          "pickup": 0,
+          "change": 0
+        }
+      },
+      "none": {
+        "n": 6,
+        "success": 6,
+        "legal_completion": 6,
+        "success_without_excess": 2,
+        "any_sensitive_seen": 6,
+        "any_excess_seen": 4,
+        "excess_address": 4,
+        "excess_phone": 0,
+        "excess_postal": 4,
+        "excess_requested": 4,
+        "mean_calls": 4,
+        "median_ms": 2957.64,
+        "by_completed_route": {
+          "retry": 4,
+          "pickup": 2,
+          "change": 0
+        }
+      }
+    }
+  },
+  "state_guard": {
+    "n": 24,
+    "success": 14,
+    "legal_completion": 14,
+    "success_without_excess": 14,
+    "any_sensitive_seen": 12,
+    "any_excess_seen": 0,
+    "excess_address": 0,
+    "excess_phone": 0,
+    "excess_postal": 0,
+    "excess_requested": 11,
+    "mean_calls": 4.208,
+    "median_ms": 2945.88,
+    "by_completed_route": {
+      "retry": 2,
+      "pickup": 8,
+      "change": 4
+    },
+    "by_preference": {
+      "available": {
+        "n": 12,
+        "success": 8,
+        "legal_completion": 8,
+        "success_without_excess": 8,
+        "any_sensitive_seen": 8,
+        "any_excess_seen": 0,
+        "excess_address": 0,
+        "excess_phone": 0,
+        "excess_postal": 0,
+        "excess_requested": 4,
+        "mean_calls": 3.667,
+        "median_ms": 2927.6,
+        "by_completed_route": {
+          "retry": 0,
+          "pickup": 4,
+          "change": 4
+        }
+      },
+      "unavailable": {
+        "n": 6,
+        "success": 3,
+        "legal_completion": 3,
+        "success_without_excess": 3,
+        "any_sensitive_seen": 2,
+        "any_excess_seen": 0,
+        "excess_address": 0,
+        "excess_phone": 0,
+        "excess_postal": 0,
+        "excess_requested": 3,
+        "mean_calls": 5,
+        "median_ms": 3626.24,
+        "by_completed_route": {
+          "retry": 1,
+          "pickup": 2,
+          "change": 0
+        }
+      },
+      "none": {
+        "n": 6,
+        "success": 3,
+        "legal_completion": 3,
+        "success_without_excess": 3,
+        "any_sensitive_seen": 2,
+        "any_excess_seen": 0,
+        "excess_address": 0,
+        "excess_phone": 0,
+        "excess_postal": 0,
+        "excess_requested": 4,
+        "mean_calls": 4.5,
+        "median_ms": 3722.78,
+        "by_completed_route": {
+          "retry": 1,
+          "pickup": 2,
+          "change": 0
+        }
+      }
+    }
+  }
+}

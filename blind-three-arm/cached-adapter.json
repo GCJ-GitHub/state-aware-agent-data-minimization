@@ -1,0 +1,8 @@
+{
+  "adapter": "blind_three_arm_cached.py",
+  "sha256": "5e39b836655b09784b2f5b47dd8ef676630b302f68e261dd97e9e5cee51ae1ad",
+  "at": "2026-11-19T11:31:32+0800",
+  "completed_before_adapter": 21,
+  "rule_changes": false,
+  "note": "Exact prompt prefix caching only; same frozen workflow, prompts, tools, limits, temperature, seeds and model. Batch engine stopped on GPU OOM; incomplete episodes excluded."
+}

@@ -1,0 +1,9 @@
+{"model": "qwen3.8-flash", "id": "fresh-single-00-v1", "arm": "state_guard", "seed": 421, "round": 0, "error": "HTTP_429"}
+{"model": "qwen3.8-flash", "id": "fresh-switch-03-v0", "arm": "upfront", "seed": 113, "round": 0, "error": "HTTP_429"}
+{"model": "qwen3.8-flash", "id": "fresh-single-02-v0", "arm": "state_guard", "seed": 113, "round": 0, "error": "HTTP_429"}
+{"model": "qwen3.8-flash", "id": "fresh-switch-12-v1", "arm": "agent_only", "seed": 421, "round": 0, "error": "HTTP_429"}
+{"model": "qwen3.8-flash", "id": "fresh-single-16-v1", "arm": "upfront", "seed": 19, "round": 0, "error": "HTTP_429"}
+{"model": "qwen3.8-flash", "id": "fresh-single-05-v1", "arm": "upfront", "seed": 113, "round": 0, "error": "HTTP_429"}
+{"model": "qwen3.8-flash", "id": "fresh-switch-01-v1", "arm": "upfront", "seed": 421, "round": 0, "error": "HTTP_429"}
+{"model": "qwen3.8-flash", "id": "fresh-multi-02-v1", "arm": "agent_only", "seed": 113, "round": 0, "error": "HTTP_429"}
+{"model": "qwen3.8-flash", "id": "fresh-single-08-v0", "arm": "agent_only", "seed": 19, "round": 0, "error": "HTTP_429"}

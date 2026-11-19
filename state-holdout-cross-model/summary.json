@@ -1,0 +1,908 @@
+{
+  "local-qwen3-1.7b": {
+    "groups": {
+      "upfront": {
+        "n": 360,
+        "success": 339,
+        "read_fields": 2382,
+        "extra_fields": 1605,
+        "premature_fields": 2382,
+        "final_leak_fields": 8,
+        "execution_leak_fields": 173,
+        "any_leak": 117,
+        "denied_field_requests": 0,
+        "tool_calls": 4201,
+        "model_calls": 4504,
+        "confirmation_calls": 214,
+        "recovery_prompts": 16,
+        "output_tokens": 120790,
+        "unused_prose_cases": 2,
+        "any_personal_prose_cases": 8,
+        "unused_execution_cases": 56,
+        "stale_execution_cases": 53,
+        "total_tool_responses": 4561,
+        "input_tokens": 7323924,
+        "state_denied_requests": 0,
+        "visible_reasoning_calls": 0,
+        "truncated_calls": 0
+      },
+      "agent_only": {
+        "n": 360,
+        "success": 268,
+        "read_fields": 583,
+        "extra_fields": 0,
+        "premature_fields": 0,
+        "final_leak_fields": 0,
+        "execution_leak_fields": 105,
+        "any_leak": 89,
+        "denied_field_requests": 0,
+        "tool_calls": 6371,
+        "model_calls": 6665,
+        "confirmation_calls": 313,
+        "recovery_prompts": 105,
+        "output_tokens": 219674,
+        "unused_prose_cases": 0,
+        "any_personal_prose_cases": 22,
+        "unused_execution_cases": 0,
+        "stale_execution_cases": 89,
+        "total_tool_responses": 6731,
+        "input_tokens": 12060734,
+        "state_denied_requests": 0,
+        "visible_reasoning_calls": 0,
+        "truncated_calls": 76
+      },
+      "state_guard": {
+        "n": 360,
+        "success": 268,
+        "read_fields": 583,
+        "extra_fields": 0,
+        "premature_fields": 0,
+        "final_leak_fields": 0,
+        "execution_leak_fields": 105,
+        "any_leak": 89,
+        "denied_field_requests": 0,
+        "tool_calls": 6371,
+        "model_calls": 6665,
+        "confirmation_calls": 313,
+        "recovery_prompts": 105,
+        "output_tokens": 219674,
+        "unused_prose_cases": 0,
+        "any_personal_prose_cases": 22,
+        "unused_execution_cases": 0,
+        "stale_execution_cases": 89,
+        "total_tool_responses": 6731,
+        "input_tokens": 12060734,
+        "state_denied_requests": 0,
+        "visible_reasoning_calls": 0,
+        "truncated_calls": 76
+      }
+    },
+    "by_kind": {
+      "multi": {
+        "upfront": {
+          "n": 120,
+          "success": 108,
+          "extra_fields": 930,
+          "unused_prose_cases": 0,
+          "unused_execution_cases": 35,
+          "tool_calls": 1640,
+          "model_calls": 1734,
+          "confirmation_calls": 91
+        },
+        "agent_only": {
+          "n": 120,
+          "success": 82,
+          "extra_fields": 0,
+          "unused_prose_cases": 0,
+          "unused_execution_cases": 0,
+          "tool_calls": 2011,
+          "model_calls": 2117,
+          "confirmation_calls": 130
+        },
+        "state_guard": {
+          "n": 120,
+          "success": 82,
+          "extra_fields": 0,
+          "unused_prose_cases": 0,
+          "unused_execution_cases": 0,
+          "tool_calls": 2011,
+          "model_calls": 2117,
+          "confirmation_calls": 130
+        }
+      },
+      "single": {
+        "upfront": {
+          "n": 120,
+          "success": 120,
+          "extra_fields": 414,
+          "unused_prose_cases": 2,
+          "unused_execution_cases": 19,
+          "tool_calls": 1421,
+          "model_calls": 1503,
+          "confirmation_calls": 43
+        },
+        "agent_only": {
+          "n": 120,
+          "success": 96,
+          "extra_fields": 0,
+          "unused_prose_cases": 0,
+          "unused_execution_cases": 0,
+          "tool_calls": 2536,
+          "model_calls": 2610,
+          "confirmation_calls": 72
+        },
+        "state_guard": {
+          "n": 120,
+          "success": 96,
+          "extra_fields": 0,
+          "unused_prose_cases": 0,
+          "unused_execution_cases": 0,
+          "tool_calls": 2536,
+          "model_calls": 2610,
+          "confirmation_calls": 72
+        }
+      },
+      "switch": {
+        "upfront": {
+          "n": 120,
+          "success": 111,
+          "extra_fields": 261,
+          "unused_prose_cases": 0,
+          "unused_execution_cases": 2,
+          "tool_calls": 1140,
+          "model_calls": 1267,
+          "confirmation_calls": 80
+        },
+        "agent_only": {
+          "n": 120,
+          "success": 90,
+          "extra_fields": 0,
+          "unused_prose_cases": 0,
+          "unused_execution_cases": 0,
+          "tool_calls": 1824,
+          "model_calls": 1938,
+          "confirmation_calls": 111
+        },
+        "state_guard": {
+          "n": 120,
+          "success": 90,
+          "extra_fields": 0,
+          "unused_prose_cases": 0,
+          "unused_execution_cases": 0,
+          "tool_calls": 1824,
+          "model_calls": 1938,
+          "confirmation_calls": 111
+        }
+      }
+    },
+    "by_domain": {
+      "appointment": {
+        "upfront": {
+          "n": 120,
+          "success": 113,
+          "extra_fields": 546,
+          "unused_prose_cases": 0,
+          "unused_execution_cases": 15,
+          "tool_calls": 1410,
+          "model_calls": 1508,
+          "confirmation_calls": 81
+        },
+        "agent_only": {
+          "n": 120,
+          "success": 104,
+          "extra_fields": 0,
+          "unused_prose_cases": 0,
+          "unused_execution_cases": 0,
+          "tool_calls": 1887,
+          "model_calls": 2003,
+          "confirmation_calls": 109
+        },
+        "state_guard": {
+          "n": 120,
+          "success": 104,
+          "extra_fields": 0,
+          "unused_prose_cases": 0,
+          "unused_execution_cases": 0,
+          "tool_calls": 1887,
+          "model_calls": 2003,
+          "confirmation_calls": 109
+        }
+      },
+      "logistics": {
+        "upfront": {
+          "n": 120,
+          "success": 114,
+          "extra_fields": 555,
+          "unused_prose_cases": 0,
+          "unused_execution_cases": 17,
+          "tool_calls": 1413,
+          "model_calls": 1514,
+          "confirmation_calls": 63
+        },
+        "agent_only": {
+          "n": 120,
+          "success": 88,
+          "extra_fields": 0,
+          "unused_prose_cases": 0,
+          "unused_execution_cases": 0,
+          "tool_calls": 2185,
+          "model_calls": 2293,
+          "confirmation_calls": 98
+        },
+        "state_guard": {
+          "n": 120,
+          "success": 88,
+          "extra_fields": 0,
+          "unused_prose_cases": 0,
+          "unused_execution_cases": 0,
+          "tool_calls": 2185,
+          "model_calls": 2293,
+          "confirmation_calls": 98
+        }
+      },
+      "refund": {
+        "upfront": {
+          "n": 120,
+          "success": 112,
+          "extra_fields": 504,
+          "unused_prose_cases": 2,
+          "unused_execution_cases": 24,
+          "tool_calls": 1378,
+          "model_calls": 1482,
+          "confirmation_calls": 70
+        },
+        "agent_only": {
+          "n": 120,
+          "success": 76,
+          "extra_fields": 0,
+          "unused_prose_cases": 0,
+          "unused_execution_cases": 0,
+          "tool_calls": 2299,
+          "model_calls": 2369,
+          "confirmation_calls": 106
+        },
+        "state_guard": {
+          "n": 120,
+          "success": 76,
+          "extra_fields": 0,
+          "unused_prose_cases": 0,
+          "unused_execution_cases": 0,
+          "tool_calls": 2299,
+          "model_calls": 2369,
+          "confirmation_calls": 106
+        }
+      }
+    },
+    "by_seed": {
+      "upfront": {
+        "19": 113,
+        "113": 113,
+        "421": 113
+      },
+      "agent_only": {
+        "19": 91,
+        "113": 86,
+        "421": 91
+      },
+      "state_guard": {
+        "19": 91,
+        "113": 86,
+        "421": 91
+      }
+    },
+    "paired": {
+      "state_guard_minus_upfront": {
+        "success": {
+          "mean": -0.19722222222222222,
+          "ci95": [
+            -0.26666666666666666,
+            -0.13333333333333333
+          ]
+        },
+        "extra_fields": {
+          "mean": -4.458333333333333,
+          "ci95": [
+            -5.175,
+            -3.7916666666666665
+          ]
+        },
+        "unused_prose_cases": {
+          "mean": -0.005555555555555555,
+          "ci95": [
+            -0.016666666666666666,
+            0.0
+          ]
+        },
+        "unused_execution_cases": {
+          "mean": -0.15555555555555556,
+          "ci95": [
+            -0.21944444444444441,
+            -0.09722222222222224
+          ]
+        },
+        "tool_calls": {
+          "mean": 6.027777777777775,
+          "ci95": [
+            4.655555555555556,
+            7.419444444444443
+          ]
+        },
+        "model_calls": {
+          "mean": 6.002777777777777,
+          "ci95": [
+            4.766666666666666,
+            7.261111111111111
+          ]
+        },
+        "confirmation_calls": {
+          "mean": 0.2750000000000001,
+          "ci95": [
+            0.16944444444444445,
+            0.3777777777777777
+          ]
+        }
+      },
+      "agent_only_minus_upfront": {
+        "success": {
+          "mean": -0.19722222222222222,
+          "ci95": [
+            -0.26666666666666666,
+            -0.13333333333333333
+          ]
+        },
+        "extra_fields": {
+          "mean": -4.458333333333333,
+          "ci95": [
+            -5.191666666666666,
+            -3.783333333333333
+          ]
+        },
+        "unused_prose_cases": {
+          "mean": -0.005555555555555555,
+          "ci95": [
+            -0.016666666666666666,
+            0.0
+          ]
+        },
+        "unused_execution_cases": {
+          "mean": -0.15555555555555556,
+          "ci95": [
+            -0.2166666666666666,
+            -0.09722222222222224
+          ]
+        },
+        "tool_calls": {
+          "mean": 6.027777777777775,
+          "ci95": [
+            4.616666666666668,
+            7.4194444444444425
+          ]
+        },
+        "model_calls": {
+          "mean": 6.002777777777777,
+          "ci95": [
+            4.722222222222224,
+            7.236111111111112
+          ]
+        },
+        "confirmation_calls": {
+          "mean": 0.2750000000000001,
+          "ci95": [
+            0.17222222222222222,
+            0.38333333333333325
+          ]
+        }
+      },
+      "state_guard_minus_agent_only": {
+        "success": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "extra_fields": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "unused_prose_cases": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "unused_execution_cases": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "tool_calls": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "model_calls": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "confirmation_calls": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "versions": [
+      "local-qwen3-1.7b"
+    ]
+  },
+  "qwen3.8-flash": {
+    "groups": {
+      "upfront": {
+        "n": 360,
+        "success": 360,
+        "read_fields": 2382,
+        "extra_fields": 1605,
+        "premature_fields": 2382,
+        "final_leak_fields": 0,
+        "execution_leak_fields": 0,
+        "any_leak": 0,
+        "denied_field_requests": 0,
+        "tool_calls": 2362,
+        "model_calls": 2728,
+        "confirmation_calls": 219,
+        "recovery_prompts": 6,
+        "output_tokens": 45856,
+        "unused_prose_cases": 0,
+        "any_personal_prose_cases": 0,
+        "unused_execution_cases": 0,
+        "stale_execution_cases": 0,
+        "total_tool_responses": 2722,
+        "input_tokens": 3710820,
+        "state_denied_requests": 0,
+        "visible_reasoning_calls": 0,
+        "truncated_calls": 2
+      },
+      "agent_only": {
+        "n": 360,
+        "success": 360,
+        "read_fields": 777,
+        "extra_fields": 0,
+        "premature_fields": 0,
+        "final_leak_fields": 0,
+        "execution_leak_fields": 0,
+        "any_leak": 0,
+        "denied_field_requests": 1,
+        "tool_calls": 2884,
+        "model_calls": 3251,
+        "confirmation_calls": 219,
+        "recovery_prompts": 7,
+        "output_tokens": 54520,
+        "unused_prose_cases": 0,
+        "any_personal_prose_cases": 0,
+        "unused_execution_cases": 0,
+        "stale_execution_cases": 0,
+        "total_tool_responses": 3244,
+        "input_tokens": 4238432,
+        "state_denied_requests": 0,
+        "visible_reasoning_calls": 0,
+        "truncated_calls": 0
+      },
+      "state_guard": {
+        "n": 360,
+        "success": 360,
+        "read_fields": 777,
+        "extra_fields": 0,
+        "premature_fields": 0,
+        "final_leak_fields": 0,
+        "execution_leak_fields": 0,
+        "any_leak": 0,
+        "denied_field_requests": 0,
+        "tool_calls": 2889,
+        "model_calls": 3252,
+        "confirmation_calls": 219,
+        "recovery_prompts": 3,
+        "output_tokens": 54681,
+        "unused_prose_cases": 0,
+        "any_personal_prose_cases": 0,
+        "unused_execution_cases": 0,
+        "stale_execution_cases": 0,
+        "total_tool_responses": 3249,
+        "input_tokens": 4244361,
+        "state_denied_requests": 0,
+        "visible_reasoning_calls": 0,
+        "truncated_calls": 1
+      }
+    },
+    "by_kind": {
+      "multi": {
+        "upfront": {
+          "n": 120,
+          "success": 120,
+          "extra_fields": 930,
+          "unused_prose_cases": 0,
+          "unused_execution_cases": 0,
+          "tool_calls": 1079,
+          "model_calls": 1204,
+          "confirmation_calls": 90
+        },
+        "agent_only": {
+          "n": 120,
+          "success": 120,
+          "extra_fields": 0,
+          "unused_prose_cases": 0,
+          "unused_execution_cases": 0,
+          "tool_calls": 1272,
+          "model_calls": 1393,
+          "confirmation_calls": 90
+        },
+        "state_guard": {
+          "n": 120,
+          "success": 120,
+          "extra_fields": 0,
+          "unused_prose_cases": 0,
+          "unused_execution_cases": 0,
+          "tool_calls": 1276,
+          "model_calls": 1396,
+          "confirmation_calls": 90
+        }
+      },
+      "single": {
+        "upfront": {
+          "n": 120,
+          "success": 120,
+          "extra_fields": 414,
+          "unused_prose_cases": 0,
+          "unused_execution_cases": 0,
+          "tool_calls": 435,
+          "model_calls": 555,
+          "confirmation_calls": 42
+        },
+        "agent_only": {
+          "n": 120,
+          "success": 120,
+          "extra_fields": 0,
+          "unused_prose_cases": 0,
+          "unused_execution_cases": 0,
+          "tool_calls": 550,
+          "model_calls": 673,
+          "confirmation_calls": 42
+        },
+        "state_guard": {
+          "n": 120,
+          "success": 120,
+          "extra_fields": 0,
+          "unused_prose_cases": 0,
+          "unused_execution_cases": 0,
+          "tool_calls": 550,
+          "model_calls": 672,
+          "confirmation_calls": 42
+        }
+      },
+      "switch": {
+        "upfront": {
+          "n": 120,
+          "success": 120,
+          "extra_fields": 261,
+          "unused_prose_cases": 0,
+          "unused_execution_cases": 0,
+          "tool_calls": 848,
+          "model_calls": 969,
+          "confirmation_calls": 87
+        },
+        "agent_only": {
+          "n": 120,
+          "success": 120,
+          "extra_fields": 0,
+          "unused_prose_cases": 0,
+          "unused_execution_cases": 0,
+          "tool_calls": 1062,
+          "model_calls": 1185,
+          "confirmation_calls": 87
+        },
+        "state_guard": {
+          "n": 120,
+          "success": 120,
+          "extra_fields": 0,
+          "unused_prose_cases": 0,
+          "unused_execution_cases": 0,
+          "tool_calls": 1063,
+          "model_calls": 1184,
+          "confirmation_calls": 87
+        }
+      }
+    },
+    "by_domain": {
+      "appointment": {
+        "upfront": {
+          "n": 120,
+          "success": 120,
+          "extra_fields": 546,
+          "unused_prose_cases": 0,
+          "unused_execution_cases": 0,
+          "tool_calls": 804,
+          "model_calls": 925,
+          "confirmation_calls": 81
+        },
+        "agent_only": {
+          "n": 120,
+          "success": 120,
+          "extra_fields": 0,
+          "unused_prose_cases": 0,
+          "unused_execution_cases": 0,
+          "tool_calls": 994,
+          "model_calls": 1117,
+          "confirmation_calls": 81
+        },
+        "state_guard": {
+          "n": 120,
+          "success": 120,
+          "extra_fields": 0,
+          "unused_prose_cases": 0,
+          "unused_execution_cases": 0,
+          "tool_calls": 997,
+          "model_calls": 1118,
+          "confirmation_calls": 81
+        }
+      },
+      "logistics": {
+        "upfront": {
+          "n": 120,
+          "success": 120,
+          "extra_fields": 555,
+          "unused_prose_cases": 0,
+          "unused_execution_cases": 0,
+          "tool_calls": 784,
+          "model_calls": 906,
+          "confirmation_calls": 66
+        },
+        "agent_only": {
+          "n": 120,
+          "success": 120,
+          "extra_fields": 0,
+          "unused_prose_cases": 0,
+          "unused_execution_cases": 0,
+          "tool_calls": 950,
+          "model_calls": 1073,
+          "confirmation_calls": 66
+        },
+        "state_guard": {
+          "n": 120,
+          "success": 120,
+          "extra_fields": 0,
+          "unused_prose_cases": 0,
+          "unused_execution_cases": 0,
+          "tool_calls": 952,
+          "model_calls": 1074,
+          "confirmation_calls": 66
+        }
+      },
+      "refund": {
+        "upfront": {
+          "n": 120,
+          "success": 120,
+          "extra_fields": 504,
+          "unused_prose_cases": 0,
+          "unused_execution_cases": 0,
+          "tool_calls": 774,
+          "model_calls": 897,
+          "confirmation_calls": 72
+        },
+        "agent_only": {
+          "n": 120,
+          "success": 120,
+          "extra_fields": 0,
+          "unused_prose_cases": 0,
+          "unused_execution_cases": 0,
+          "tool_calls": 940,
+          "model_calls": 1061,
+          "confirmation_calls": 72
+        },
+        "state_guard": {
+          "n": 120,
+          "success": 120,
+          "extra_fields": 0,
+          "unused_prose_cases": 0,
+          "unused_execution_cases": 0,
+          "tool_calls": 940,
+          "model_calls": 1060,
+          "confirmation_calls": 72
+        }
+      }
+    },
+    "by_seed": {
+      "upfront": {
+        "19": 120,
+        "113": 120,
+        "421": 120
+      },
+      "agent_only": {
+        "19": 120,
+        "113": 120,
+        "421": 120
+      },
+      "state_guard": {
+        "19": 120,
+        "113": 120,
+        "421": 120
+      }
+    },
+    "paired": {
+      "state_guard_minus_upfront": {
+        "success": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "extra_fields": {
+          "mean": -4.458333333333333,
+          "ci95": [
+            -5.183333333333334,
+            -3.775
+          ]
+        },
+        "unused_prose_cases": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "unused_execution_cases": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "tool_calls": {
+          "mean": 1.4638888888888892,
+          "ci95": [
+            1.2916666666666667,
+            1.6194444444444447
+          ]
+        },
+        "model_calls": {
+          "mean": 1.4555555555555557,
+          "ci95": [
+            1.2888888888888888,
+            1.6166666666666667
+          ]
+        },
+        "confirmation_calls": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "agent_only_minus_upfront": {
+        "success": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "extra_fields": {
+          "mean": -4.458333333333333,
+          "ci95": [
+            -5.191666666666666,
+            -3.775
+          ]
+        },
+        "unused_prose_cases": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "unused_execution_cases": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "tool_calls": {
+          "mean": 1.4499999999999993,
+          "ci95": [
+            1.2833333333333337,
+            1.6111111111111112
+          ]
+        },
+        "model_calls": {
+          "mean": 1.4527777777777777,
+          "ci95": [
+            1.2944444444444445,
+            1.6083333333333336
+          ]
+        },
+        "confirmation_calls": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "state_guard_minus_agent_only": {
+        "success": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "extra_fields": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "unused_prose_cases": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "unused_execution_cases": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "tool_calls": {
+          "mean": 0.013888888888888893,
+          "ci95": [
+            -0.025000000000000005,
+            0.05833333333333333
+          ]
+        },
+        "model_calls": {
+          "mean": 0.0027777777777777766,
+          "ci95": [
+            -0.03888888888888888,
+            0.04722222222222223
+          ]
+        },
+        "confirmation_calls": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "versions": [
+      "qwen3.8-flash"
+    ]
+  },
+  "transport": {
+    "http_attempts": 10015,
+    "failed_http_attempts": 751,
+    "provider_prompt_tokens": 12513126,
+    "provider_completion_tokens": 155700
+  }
+}

@@ -1,0 +1,547 @@
+[
+  {
+    "pair": 1,
+    "scenario": "pickup_hours",
+    "request": "这单派送失败了，请按下面的要求处理。自提点如果开到晚上九点，请优先自提。否则改送到我授权的备用地址。",
+    "available": [
+      "pickup",
+      "change"
+    ],
+    "rules": {
+      "pickup": [
+        [
+          "pickup_close_hour",
+          "gte",
+          21
+        ]
+      ],
+      "change": []
+    },
+    "priority": [
+      [
+        "pickup"
+      ],
+      [
+        "change"
+      ]
+    ],
+    "states": [
+      {
+        "facts": {
+          "pickup_close_hour": 21
+        },
+        "target": [
+          "pickup"
+        ]
+      },
+      {
+        "facts": {
+          "pickup_close_hour": 19
+        },
+        "target": [
+          "change"
+        ]
+      }
+    ]
+  },
+  {
+    "pair": 2,
+    "scenario": "pickup_distance",
+    "request": "这单派送失败了，请按下面的要求处理。自提点不超过三公里就去自提，超过就用我已授权的备用地址。",
+    "available": [
+      "pickup",
+      "change"
+    ],
+    "rules": {
+      "pickup": [
+        [
+          "pickup_km",
+          "lte",
+          3
+        ]
+      ],
+      "change": []
+    },
+    "priority": [
+      [
+        "pickup"
+      ],
+      [
+        "change"
+      ]
+    ],
+    "states": [
+      {
+        "facts": {
+          "pickup_km": 3
+        },
+        "target": [
+          "pickup"
+        ]
+      },
+      {
+        "facts": {
+          "pickup_km": 5
+        },
+        "target": [
+          "change"
+        ]
+      }
+    ]
+  },
+  {
+    "pair": 3,
+    "scenario": "address_eta",
+    "request": "这单派送失败了，请按下面的要求处理。备用地址明天中午十二点前能送到的话优先改送那里，地址已经授权。否则安排自提。",
+    "available": [
+      "change",
+      "pickup"
+    ],
+    "rules": {
+      "change": [
+        [
+          "backup_arrival_hour",
+          "lte",
+          11
+        ]
+      ],
+      "pickup": []
+    },
+    "priority": [
+      [
+        "change"
+      ],
+      [
+        "pickup"
+      ]
+    ],
+    "states": [
+      {
+        "facts": {
+          "backup_arrival_hour": 10
+        },
+        "target": [
+          "change"
+        ]
+      },
+      {
+        "facts": {
+          "backup_arrival_hour": 14
+        },
+        "target": [
+          "pickup"
+        ]
+      }
+    ]
+  },
+  {
+    "pair": 4,
+    "scenario": "pickup_access",
+    "request": "这单派送失败了，请按下面的要求处理。自提点支持轮椅通行就优先自提。不支持的话，用我授权过的备用地址。",
+    "available": [
+      "pickup",
+      "change"
+    ],
+    "rules": {
+      "pickup": [
+        [
+          "wheelchair_access",
+          "eq",
+          true
+        ]
+      ],
+      "change": []
+    },
+    "priority": [
+      [
+        "pickup"
+      ],
+      [
+        "change"
+      ]
+    ],
+    "states": [
+      {
+        "facts": {
+          "wheelchair_access": true
+        },
+        "target": [
+          "pickup"
+        ]
+      },
+      {
+        "facts": {
+          "wheelchair_access": false
+        },
+        "target": [
+          "change"
+        ]
+      }
+    ]
+  },
+  {
+    "pair": 5,
+    "scenario": "redelivery_capacity",
+    "request": "这单派送失败了，请按下面的要求处理。优先原址重派，但只有今天还有配送名额才这样办，否则请安排自提。",
+    "available": [
+      "retry",
+      "pickup"
+    ],
+    "rules": {
+      "retry": [
+        [
+          "retry_slots_today",
+          "gte",
+          1
+        ]
+      ],
+      "pickup": []
+    },
+    "priority": [
+      [
+        "retry"
+      ],
+      [
+        "pickup"
+      ]
+    ],
+    "states": [
+      {
+        "facts": {
+          "retry_slots_today": 1
+        },
+        "target": [
+          "retry"
+        ]
+      },
+      {
+        "facts": {
+          "retry_slots_today": 0
+        },
+        "target": [
+          "pickup"
+        ]
+      }
+    ]
+  },
+  {
+    "pair": 6,
+    "scenario": "pickup_hold",
+    "request": "这单派送失败了，请按下面的要求处理。如果自提至少能保管三天，就安排自提。否则在原址尝试重派。",
+    "available": [
+      "pickup",
+      "retry"
+    ],
+    "rules": {
+      "pickup": [
+        [
+          "pickup_hold_days",
+          "gte",
+          3
+        ]
+      ],
+      "retry": []
+    },
+    "priority": [
+      [
+        "pickup"
+      ],
+      [
+        "retry"
+      ]
+    ],
+    "states": [
+      {
+        "facts": {
+          "pickup_hold_days": 4
+        },
+        "target": [
+          "pickup"
+        ]
+      },
+      {
+        "facts": {
+          "pickup_hold_days": 2
+        },
+        "target": [
+          "retry"
+        ]
+      }
+    ]
+  },
+  {
+    "pair": 7,
+    "scenario": "pickup_fee",
+    "request": "这单派送失败了，请按下面的要求处理。自提免费就选自提，要收费就按原址重派。",
+    "available": [
+      "pickup",
+      "retry"
+    ],
+    "rules": {
+      "pickup": [
+        [
+          "pickup_fee",
+          "eq",
+          0
+        ]
+      ],
+      "retry": []
+    },
+    "priority": [
+      [
+        "pickup"
+      ],
+      [
+        "retry"
+      ]
+    ],
+    "states": [
+      {
+        "facts": {
+          "pickup_fee": 0
+        },
+        "target": [
+          "pickup"
+        ]
+      },
+      {
+        "facts": {
+          "pickup_fee": 8
+        },
+        "target": [
+          "retry"
+        ]
+      }
+    ]
+  },
+  {
+    "pair": 8,
+    "scenario": "redelivery_eta",
+    "request": "这单派送失败了，请按下面的要求处理。原址如果能在下午五点前重派送到就优先重派，否则我接受自提。",
+    "available": [
+      "retry",
+      "pickup"
+    ],
+    "rules": {
+      "retry": [
+        [
+          "retry_delivery_hour",
+          "lte",
+          16
+        ]
+      ],
+      "pickup": []
+    },
+    "priority": [
+      [
+        "retry"
+      ],
+      [
+        "pickup"
+      ]
+    ],
+    "states": [
+      {
+        "facts": {
+          "retry_delivery_hour": 16
+        },
+        "target": [
+          "retry"
+        ]
+      },
+      {
+        "facts": {
+          "retry_delivery_hour": 18
+        },
+        "target": [
+          "pickup"
+        ]
+      }
+    ]
+  },
+  {
+    "pair": 9,
+    "scenario": "address_fee",
+    "request": "这单派送失败了，请按下面的要求处理。备用地址改派如果免费就用，地址已经授权。收费的话帮我原址重派。",
+    "available": [
+      "change",
+      "retry"
+    ],
+    "rules": {
+      "change": [
+        [
+          "backup_delivery_fee",
+          "eq",
+          0
+        ]
+      ],
+      "retry": []
+    },
+    "priority": [
+      [
+        "change"
+      ],
+      [
+        "retry"
+      ]
+    ],
+    "states": [
+      {
+        "facts": {
+          "backup_delivery_fee": 0
+        },
+        "target": [
+          "change"
+        ]
+      },
+      {
+        "facts": {
+          "backup_delivery_fee": 10
+        },
+        "target": [
+          "retry"
+        ]
+      }
+    ]
+  },
+  {
+    "pair": 10,
+    "scenario": "redelivery_eta",
+    "request": "这单派送失败了，请按下面的要求处理。原址重新派送最好，但我只接受晚上七点前送到，否则可以改送已授权的备用地址。",
+    "available": [
+      "retry",
+      "change"
+    ],
+    "rules": {
+      "retry": [
+        [
+          "retry_delivery_hour",
+          "lte",
+          18
+        ]
+      ],
+      "change": []
+    },
+    "priority": [
+      [
+        "retry"
+      ],
+      [
+        "change"
+      ]
+    ],
+    "states": [
+      {
+        "facts": {
+          "retry_delivery_hour": 18
+        },
+        "target": [
+          "retry"
+        ]
+      },
+      {
+        "facts": {
+          "retry_delivery_hour": 21
+        },
+        "target": [
+          "change"
+        ]
+      }
+    ]
+  },
+  {
+    "pair": 11,
+    "scenario": "address_signature",
+    "request": "这单派送失败了，请按下面的要求处理。可以由本人签收就改用已授权的备用地址，不行就原址重派。",
+    "available": [
+      "change",
+      "retry"
+    ],
+    "rules": {
+      "change": [
+        [
+          "backup_in_person_signature",
+          "eq",
+          true
+        ]
+      ],
+      "retry": []
+    },
+    "priority": [
+      [
+        "change"
+      ],
+      [
+        "retry"
+      ]
+    ],
+    "states": [
+      {
+        "facts": {
+          "backup_in_person_signature": true
+        },
+        "target": [
+          "change"
+        ]
+      },
+      {
+        "facts": {
+          "backup_in_person_signature": false
+        },
+        "target": [
+          "retry"
+        ]
+      }
+    ]
+  },
+  {
+    "pair": 12,
+    "scenario": "redelivery_window",
+    "request": "这单派送失败了，请按下面的要求处理。优先安排原址重派，但必须在上午九点到十一点之间送到。时间不合适就改送我授权的备用地址。",
+    "available": [
+      "retry",
+      "change"
+    ],
+    "rules": {
+      "retry": [
+        [
+          "retry_delivery_hour",
+          "gte",
+          9
+        ],
+        [
+          "retry_delivery_hour",
+          "lte",
+          11
+        ]
+      ],
+      "change": []
+    },
+    "priority": [
+      [
+        "retry"
+      ],
+      [
+        "change"
+      ]
+    ],
+    "states": [
+      {
+        "facts": {
+          "retry_delivery_hour": 10
+        },
+        "target": [
+          "retry"
+        ]
+      },
+      {
+        "facts": {
+          "retry_delivery_hour": 8
+        },
+        "target": [
+          "change"
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,106 @@
+{
+  "agent_only": {
+    "overall": {
+      "runs": 18,
+      "successful": 0,
+      "any_sensitive": 0,
+      "any_excess": 0,
+      "full_address": 0,
+      "excess_address": 0,
+      "avg_calls": 6,
+      "invalid_turns": 0,
+      "median_ms": 881.86,
+      "median_backend_ms": 0.0117
+    },
+    "by_route": {
+      "retry": {
+        "runs": 6,
+        "successful": 0,
+        "any_sensitive": 0,
+        "any_excess": 0,
+        "full_address": 0,
+        "excess_address": 0,
+        "avg_calls": 6,
+        "invalid_turns": 0,
+        "median_ms": 872.08,
+        "median_backend_ms": 0.0101
+      },
+      "pickup": {
+        "runs": 6,
+        "successful": 0,
+        "any_sensitive": 0,
+        "any_excess": 0,
+        "full_address": 0,
+        "excess_address": 0,
+        "avg_calls": 6,
+        "invalid_turns": 0,
+        "median_ms": 900.96,
+        "median_backend_ms": 0.0118
+      },
+      "change": {
+        "runs": 6,
+        "successful": 0,
+        "any_sensitive": 0,
+        "any_excess": 0,
+        "full_address": 0,
+        "excess_address": 0,
+        "avg_calls": 6,
+        "invalid_turns": 0,
+        "median_ms": 852.74,
+        "median_backend_ms": 0.0123
+      }
+    }
+  },
+  "backend_guard": {
+    "overall": {
+      "runs": 18,
+      "successful": 0,
+      "any_sensitive": 0,
+      "any_excess": 0,
+      "full_address": 0,
+      "excess_address": 0,
+      "avg_calls": 6,
+      "invalid_turns": 0,
+      "median_ms": 845.65,
+      "median_backend_ms": 0.0095
+    },
+    "by_route": {
+      "retry": {
+        "runs": 6,
+        "successful": 0,
+        "any_sensitive": 0,
+        "any_excess": 0,
+        "full_address": 0,
+        "excess_address": 0,
+        "avg_calls": 6,
+        "invalid_turns": 0,
+        "median_ms": 844.76,
+        "median_backend_ms": 0.0106
+      },
+      "pickup": {
+        "runs": 6,
+        "successful": 0,
+        "any_sensitive": 0,
+        "any_excess": 0,
+        "full_address": 0,
+        "excess_address": 0,
+        "avg_calls": 6,
+        "invalid_turns": 0,
+        "median_ms": 839.65,
+        "median_backend_ms": 0.0101
+      },
+      "change": {
+        "runs": 6,
+        "successful": 0,
+        "any_sensitive": 0,
+        "any_excess": 0,
+        "full_address": 0,
+        "excess_address": 0,
+        "avg_calls": 6,
+        "invalid_turns": 0,
+        "median_ms": 855.14,
+        "median_backend_ms": 0.0092
+      }
+    }
+  }
+}

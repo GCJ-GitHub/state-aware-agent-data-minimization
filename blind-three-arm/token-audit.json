@@ -1,0 +1,7585 @@
+{
+  "totals": {
+    "upfront": {
+      "episodes": 360,
+      "input_tokens": 3600344,
+      "output_tokens": 71257,
+      "model_calls": 2849
+    },
+    "agent_only": {
+      "episodes": 360,
+      "input_tokens": 6291975,
+      "output_tokens": 130876,
+      "model_calls": 4156
+    },
+    "state_guard": {
+      "episodes": 360,
+      "input_tokens": 6369421,
+      "output_tokens": 133389,
+      "model_calls": 4209
+    }
+  },
+  "details": [
+    {
+      "id": "multi-07-0",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 9529,
+      "output_tokens": 202
+    },
+    {
+      "id": "switch-14-1",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 23450,
+      "output_tokens": 511
+    },
+    {
+      "id": "single-08-1",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 7318,
+      "output_tokens": 192
+    },
+    {
+      "id": "single-01-0",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 7347,
+      "output_tokens": 186
+    },
+    {
+      "id": "multi-18-0",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 10484,
+      "output_tokens": 210
+    },
+    {
+      "id": "single-01-0",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 5204,
+      "output_tokens": 120
+    },
+    {
+      "id": "single-13-1",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 4775,
+      "output_tokens": 107
+    },
+    {
+      "id": "single-14-0",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 4758,
+      "output_tokens": 106
+    },
+    {
+      "id": "single-09-1",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 5176,
+      "output_tokens": 121
+    },
+    {
+      "id": "multi-10-0",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 50999,
+      "output_tokens": 1055
+    },
+    {
+      "id": "single-05-1",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 4765,
+      "output_tokens": 106
+    },
+    {
+      "id": "single-18-1",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 7306,
+      "output_tokens": 190
+    },
+    {
+      "id": "single-16-1",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 4768,
+      "output_tokens": 108
+    },
+    {
+      "id": "switch-05-0",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 10556,
+      "output_tokens": 210
+    },
+    {
+      "id": "switch-11-0",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 10557,
+      "output_tokens": 210
+    },
+    {
+      "id": "switch-16-1",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 13270,
+      "output_tokens": 232
+    },
+    {
+      "id": "switch-10-1",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 11775,
+      "output_tokens": 216
+    },
+    {
+      "id": "switch-07-1",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 13306,
+      "output_tokens": 231
+    },
+    {
+      "id": "switch-13-1",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 13455,
+      "output_tokens": 249
+    },
+    {
+      "id": "switch-17-1",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 13295,
+      "output_tokens": 230
+    },
+    {
+      "id": "multi-16-0",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 14899,
+      "output_tokens": 248
+    },
+    {
+      "id": "single-09-0",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 40862,
+      "output_tokens": 946
+    },
+    {
+      "id": "switch-07-0",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 51435,
+      "output_tokens": 1039
+    },
+    {
+      "id": "switch-11-1",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 51452,
+      "output_tokens": 1055
+    },
+    {
+      "id": "multi-17-1",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 13886,
+      "output_tokens": 261
+    },
+    {
+      "id": "multi-10-1",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 10478,
+      "output_tokens": 208
+    },
+    {
+      "id": "switch-03-0",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 13313,
+      "output_tokens": 232
+    },
+    {
+      "id": "switch-17-1",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 10532,
+      "output_tokens": 207
+    },
+    {
+      "id": "single-01-0",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 5204,
+      "output_tokens": 120
+    },
+    {
+      "id": "multi-01-0",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 16210,
+      "output_tokens": 335
+    },
+    {
+      "id": "single-12-1",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 4745,
+      "output_tokens": 105
+    },
+    {
+      "id": "single-01-1",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 5333,
+      "output_tokens": 108
+    },
+    {
+      "id": "multi-16-1",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 15933,
+      "output_tokens": 343
+    },
+    {
+      "id": "multi-04-1",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 13103,
+      "output_tokens": 248
+    },
+    {
+      "id": "single-01-0",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 5204,
+      "output_tokens": 120
+    },
+    {
+      "id": "switch-06-1",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 10483,
+      "output_tokens": 206
+    },
+    {
+      "id": "multi-13-0",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 18202,
+      "output_tokens": 350
+    },
+    {
+      "id": "single-00-1",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 7292,
+      "output_tokens": 186
+    },
+    {
+      "id": "multi-15-1",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 10502,
+      "output_tokens": 206
+    },
+    {
+      "id": "single-17-0",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 6085,
+      "output_tokens": 142
+    },
+    {
+      "id": "multi-12-1",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 10488,
+      "output_tokens": 208
+    },
+    {
+      "id": "multi-07-0",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 18211,
+      "output_tokens": 341
+    },
+    {
+      "id": "multi-01-1",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 10527,
+      "output_tokens": 209
+    },
+    {
+      "id": "multi-16-0",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 10462,
+      "output_tokens": 206
+    },
+    {
+      "id": "multi-11-1",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 11522,
+      "output_tokens": 207
+    },
+    {
+      "id": "single-14-1",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 4759,
+      "output_tokens": 107
+    },
+    {
+      "id": "switch-16-1",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 10506,
+      "output_tokens": 209
+    },
+    {
+      "id": "single-02-0",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 4753,
+      "output_tokens": 107
+    },
+    {
+      "id": "single-15-1",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 7341,
+      "output_tokens": 184
+    },
+    {
+      "id": "single-14-1",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 4759,
+      "output_tokens": 107
+    },
+    {
+      "id": "switch-04-1",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 8111,
+      "output_tokens": 168
+    },
+    {
+      "id": "multi-12-1",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 10488,
+      "output_tokens": 208
+    },
+    {
+      "id": "multi-05-0",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 8091,
+      "output_tokens": 163
+    },
+    {
+      "id": "switch-01-1",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 11450,
+      "output_tokens": 224
+    },
+    {
+      "id": "switch-14-0",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 9471,
+      "output_tokens": 199
+    },
+    {
+      "id": "single-00-0",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 40067,
+      "output_tokens": 978
+    },
+    {
+      "id": "single-01-0",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 7341,
+      "output_tokens": 184
+    },
+    {
+      "id": "switch-12-1",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 44196,
+      "output_tokens": 850
+    },
+    {
+      "id": "multi-05-0",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 8091,
+      "output_tokens": 163
+    },
+    {
+      "id": "multi-04-1",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 50729,
+      "output_tokens": 1006
+    },
+    {
+      "id": "switch-16-1",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 10506,
+      "output_tokens": 209
+    },
+    {
+      "id": "multi-01-0",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 16210,
+      "output_tokens": 335
+    },
+    {
+      "id": "multi-09-1",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 51078,
+      "output_tokens": 1019
+    },
+    {
+      "id": "multi-10-1",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 13226,
+      "output_tokens": 237
+    },
+    {
+      "id": "switch-14-1",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 23423,
+      "output_tokens": 505
+    },
+    {
+      "id": "multi-15-1",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 13210,
+      "output_tokens": 229
+    },
+    {
+      "id": "single-08-1",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 7318,
+      "output_tokens": 192
+    },
+    {
+      "id": "switch-15-0",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 16257,
+      "output_tokens": 347
+    },
+    {
+      "id": "single-15-0",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 6060,
+      "output_tokens": 137
+    },
+    {
+      "id": "switch-01-1",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 52918,
+      "output_tokens": 1240
+    },
+    {
+      "id": "multi-01-1",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 13261,
+      "output_tokens": 232
+    },
+    {
+      "id": "switch-07-0",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 9654,
+      "output_tokens": 205
+    },
+    {
+      "id": "multi-02-0",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 17880,
+      "output_tokens": 342
+    },
+    {
+      "id": "single-10-0",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 4756,
+      "output_tokens": 106
+    },
+    {
+      "id": "switch-06-1",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 10483,
+      "output_tokens": 206
+    },
+    {
+      "id": "switch-04-0",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 15975,
+      "output_tokens": 343
+    },
+    {
+      "id": "switch-04-0",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 9485,
+      "output_tokens": 200
+    },
+    {
+      "id": "single-00-0",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 4774,
+      "output_tokens": 110
+    },
+    {
+      "id": "multi-10-0",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 50999,
+      "output_tokens": 1055
+    },
+    {
+      "id": "multi-07-0",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 16231,
+      "output_tokens": 335
+    },
+    {
+      "id": "multi-17-0",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 10512,
+      "output_tokens": 207
+    },
+    {
+      "id": "multi-01-0",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 16240,
+      "output_tokens": 341
+    },
+    {
+      "id": "multi-04-1",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 13103,
+      "output_tokens": 248
+    },
+    {
+      "id": "switch-12-1",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 10509,
+      "output_tokens": 210
+    },
+    {
+      "id": "single-15-1",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 7341,
+      "output_tokens": 184
+    },
+    {
+      "id": "single-08-1",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 7318,
+      "output_tokens": 190
+    },
+    {
+      "id": "switch-16-0",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 50585,
+      "output_tokens": 1002
+    },
+    {
+      "id": "multi-12-0",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 15850,
+      "output_tokens": 331
+    },
+    {
+      "id": "single-04-0",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 4745,
+      "output_tokens": 105
+    },
+    {
+      "id": "multi-12-1",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 10488,
+      "output_tokens": 208
+    },
+    {
+      "id": "switch-05-1",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 52605,
+      "output_tokens": 1205
+    },
+    {
+      "id": "switch-13-1",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 13455,
+      "output_tokens": 249
+    },
+    {
+      "id": "switch-03-0",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 10545,
+      "output_tokens": 209
+    },
+    {
+      "id": "multi-05-0",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 20478,
+      "output_tokens": 354
+    },
+    {
+      "id": "multi-13-1",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 10504,
+      "output_tokens": 208
+    },
+    {
+      "id": "single-06-0",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 7321,
+      "output_tokens": 193
+    },
+    {
+      "id": "single-02-1",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 4049,
+      "output_tokens": 89
+    },
+    {
+      "id": "single-14-0",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 16027,
+      "output_tokens": 389
+    },
+    {
+      "id": "multi-03-0",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 12940,
+      "output_tokens": 272
+    },
+    {
+      "id": "multi-07-0",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 18203,
+      "output_tokens": 342
+    },
+    {
+      "id": "single-17-0",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 6067,
+      "output_tokens": 156
+    },
+    {
+      "id": "switch-13-0",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 10556,
+      "output_tokens": 210
+    },
+    {
+      "id": "multi-18-1",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 49521,
+      "output_tokens": 907
+    },
+    {
+      "id": "switch-14-0",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 15982,
+      "output_tokens": 342
+    },
+    {
+      "id": "switch-15-1",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 10551,
+      "output_tokens": 208
+    },
+    {
+      "id": "multi-08-1",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 50121,
+      "output_tokens": 987
+    },
+    {
+      "id": "switch-08-1",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 9537,
+      "output_tokens": 199
+    },
+    {
+      "id": "multi-17-0",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 13203,
+      "output_tokens": 230
+    },
+    {
+      "id": "single-15-1",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 7347,
+      "output_tokens": 186
+    },
+    {
+      "id": "single-16-0",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 4745,
+      "output_tokens": 105
+    },
+    {
+      "id": "switch-09-0",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 8161,
+      "output_tokens": 167
+    },
+    {
+      "id": "switch-12-0",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 50503,
+      "output_tokens": 1000
+    },
+    {
+      "id": "single-12-0",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 5172,
+      "output_tokens": 119
+    },
+    {
+      "id": "single-14-0",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 5313,
+      "output_tokens": 106
+    },
+    {
+      "id": "single-12-0",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 5172,
+      "output_tokens": 119
+    },
+    {
+      "id": "single-00-0",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 5329,
+      "output_tokens": 110
+    },
+    {
+      "id": "single-02-1",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 4049,
+      "output_tokens": 89
+    },
+    {
+      "id": "switch-08-1",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 9537,
+      "output_tokens": 199
+    },
+    {
+      "id": "switch-16-1",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 10506,
+      "output_tokens": 209
+    },
+    {
+      "id": "single-07-0",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 7356,
+      "output_tokens": 189
+    },
+    {
+      "id": "single-19-1",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 6079,
+      "output_tokens": 139
+    },
+    {
+      "id": "switch-19-1",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 10537,
+      "output_tokens": 206
+    },
+    {
+      "id": "switch-10-0",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 16015,
+      "output_tokens": 342
+    },
+    {
+      "id": "switch-01-0",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 8192,
+      "output_tokens": 170
+    },
+    {
+      "id": "single-02-1",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 4774,
+      "output_tokens": 133
+    },
+    {
+      "id": "single-18-0",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 3999,
+      "output_tokens": 83
+    },
+    {
+      "id": "switch-15-0",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 9556,
+      "output_tokens": 203
+    },
+    {
+      "id": "multi-08-1",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 16823,
+      "output_tokens": 340
+    },
+    {
+      "id": "switch-09-0",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 14162,
+      "output_tokens": 288
+    },
+    {
+      "id": "single-15-0",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 6048,
+      "output_tokens": 154
+    },
+    {
+      "id": "single-01-0",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 7347,
+      "output_tokens": 186
+    },
+    {
+      "id": "switch-00-0",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 11050,
+      "output_tokens": 224
+    },
+    {
+      "id": "switch-19-1",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 10537,
+      "output_tokens": 206
+    },
+    {
+      "id": "switch-01-0",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 8192,
+      "output_tokens": 170
+    },
+    {
+      "id": "switch-12-1",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 10509,
+      "output_tokens": 210
+    },
+    {
+      "id": "switch-17-0",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 9575,
+      "output_tokens": 205
+    },
+    {
+      "id": "switch-08-0",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 41376,
+      "output_tokens": 1002
+    },
+    {
+      "id": "switch-17-1",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 10532,
+      "output_tokens": 207
+    },
+    {
+      "id": "single-10-0",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 41012,
+      "output_tokens": 959
+    },
+    {
+      "id": "switch-11-1",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 11403,
+      "output_tokens": 221
+    },
+    {
+      "id": "switch-07-0",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 53339,
+      "output_tokens": 1277
+    },
+    {
+      "id": "single-07-0",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 5229,
+      "output_tokens": 125
+    },
+    {
+      "id": "switch-03-0",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 10545,
+      "output_tokens": 209
+    },
+    {
+      "id": "single-11-0",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 6057,
+      "output_tokens": 136
+    },
+    {
+      "id": "single-16-0",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 4010,
+      "output_tokens": 108
+    },
+    {
+      "id": "single-03-0",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 4778,
+      "output_tokens": 108
+    },
+    {
+      "id": "single-14-1",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 4019,
+      "output_tokens": 88
+    },
+    {
+      "id": "multi-01-1",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 10527,
+      "output_tokens": 209
+    },
+    {
+      "id": "single-08-0",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 4744,
+      "output_tokens": 102
+    },
+    {
+      "id": "multi-06-1",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 10449,
+      "output_tokens": 205
+    },
+    {
+      "id": "single-06-0",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 7321,
+      "output_tokens": 193
+    },
+    {
+      "id": "single-14-1",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 4018,
+      "output_tokens": 110
+    },
+    {
+      "id": "single-16-0",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 4745,
+      "output_tokens": 105
+    },
+    {
+      "id": "multi-11-0",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 11419,
+      "output_tokens": 224
+    },
+    {
+      "id": "single-19-0",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 41095,
+      "output_tokens": 966
+    },
+    {
+      "id": "multi-13-0",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 9508,
+      "output_tokens": 201
+    },
+    {
+      "id": "single-17-0",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 6067,
+      "output_tokens": 133
+    },
+    {
+      "id": "single-18-1",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 7303,
+      "output_tokens": 189
+    },
+    {
+      "id": "switch-00-1",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 43005,
+      "output_tokens": 834
+    },
+    {
+      "id": "multi-05-0",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 8091,
+      "output_tokens": 163
+    },
+    {
+      "id": "switch-06-0",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 9535,
+      "output_tokens": 206
+    },
+    {
+      "id": "single-12-0",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 5172,
+      "output_tokens": 119
+    },
+    {
+      "id": "multi-02-0",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 17880,
+      "output_tokens": 342
+    },
+    {
+      "id": "switch-01-1",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 51059,
+      "output_tokens": 1005
+    },
+    {
+      "id": "multi-17-1",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 13268,
+      "output_tokens": 242
+    },
+    {
+      "id": "single-07-1",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 4768,
+      "output_tokens": 107
+    },
+    {
+      "id": "multi-06-0",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 15978,
+      "output_tokens": 346
+    },
+    {
+      "id": "multi-10-1",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 10478,
+      "output_tokens": 208
+    },
+    {
+      "id": "switch-00-1",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 10517,
+      "output_tokens": 210
+    },
+    {
+      "id": "switch-08-0",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 11477,
+      "output_tokens": 208
+    },
+    {
+      "id": "single-10-0",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 4756,
+      "output_tokens": 106
+    },
+    {
+      "id": "single-02-0",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 4753,
+      "output_tokens": 107
+    },
+    {
+      "id": "switch-06-1",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 10483,
+      "output_tokens": 206
+    },
+    {
+      "id": "switch-08-1",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 11069,
+      "output_tokens": 222
+    },
+    {
+      "id": "multi-03-1",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 10487,
+      "output_tokens": 205
+    },
+    {
+      "id": "multi-19-0",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 10513,
+      "output_tokens": 207
+    },
+    {
+      "id": "multi-03-0",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 16222,
+      "output_tokens": 339
+    },
+    {
+      "id": "single-06-1",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 4756,
+      "output_tokens": 106
+    },
+    {
+      "id": "multi-00-0",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 8087,
+      "output_tokens": 167
+    },
+    {
+      "id": "multi-06-0",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 15978,
+      "output_tokens": 346
+    },
+    {
+      "id": "single-11-0",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 4024,
+      "output_tokens": 83
+    },
+    {
+      "id": "switch-12-1",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 10509,
+      "output_tokens": 210
+    },
+    {
+      "id": "switch-17-0",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 9575,
+      "output_tokens": 205
+    },
+    {
+      "id": "multi-16-0",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 13177,
+      "output_tokens": 229
+    },
+    {
+      "id": "multi-06-0",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 15978,
+      "output_tokens": 346
+    },
+    {
+      "id": "switch-02-0",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 9518,
+      "output_tokens": 205
+    },
+    {
+      "id": "multi-12-0",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 15850,
+      "output_tokens": 331
+    },
+    {
+      "id": "multi-03-1",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 12070,
+      "output_tokens": 220
+    },
+    {
+      "id": "switch-09-0",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 14183,
+      "output_tokens": 280
+    },
+    {
+      "id": "multi-06-1",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 13210,
+      "output_tokens": 234
+    },
+    {
+      "id": "single-11-0",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 6057,
+      "output_tokens": 136
+    },
+    {
+      "id": "single-15-0",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 6060,
+      "output_tokens": 137
+    },
+    {
+      "id": "switch-00-1",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 38080,
+      "output_tokens": 797
+    },
+    {
+      "id": "multi-15-0",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 16220,
+      "output_tokens": 342
+    },
+    {
+      "id": "single-05-1",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 4765,
+      "output_tokens": 106
+    },
+    {
+      "id": "multi-17-1",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 12191,
+      "output_tokens": 256
+    },
+    {
+      "id": "single-16-1",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 4768,
+      "output_tokens": 108
+    },
+    {
+      "id": "multi-03-1",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 12070,
+      "output_tokens": 220
+    },
+    {
+      "id": "switch-05-0",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 11582,
+      "output_tokens": 233
+    },
+    {
+      "id": "single-09-0",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 4007,
+      "output_tokens": 87
+    },
+    {
+      "id": "multi-19-1",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 52954,
+      "output_tokens": 1242
+    },
+    {
+      "id": "multi-11-0",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 51363,
+      "output_tokens": 1039
+    },
+    {
+      "id": "switch-13-0",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 8187,
+      "output_tokens": 168
+    },
+    {
+      "id": "multi-17-1",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 13886,
+      "output_tokens": 261
+    },
+    {
+      "id": "switch-02-0",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 16048,
+      "output_tokens": 354
+    },
+    {
+      "id": "switch-13-1",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 12278,
+      "output_tokens": 252
+    },
+    {
+      "id": "single-11-1",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 39728,
+      "output_tokens": 940
+    },
+    {
+      "id": "switch-05-1",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 52605,
+      "output_tokens": 1205
+    },
+    {
+      "id": "multi-02-1",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 13079,
+      "output_tokens": 214
+    },
+    {
+      "id": "switch-03-1",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 12263,
+      "output_tokens": 250
+    },
+    {
+      "id": "switch-12-0",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 50503,
+      "output_tokens": 1000
+    },
+    {
+      "id": "switch-06-0",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 16012,
+      "output_tokens": 343
+    },
+    {
+      "id": "switch-12-1",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 10509,
+      "output_tokens": 210
+    },
+    {
+      "id": "single-07-0",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 7356,
+      "output_tokens": 189
+    },
+    {
+      "id": "switch-10-0",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 13036,
+      "output_tokens": 275
+    },
+    {
+      "id": "switch-19-1",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 10537,
+      "output_tokens": 206
+    },
+    {
+      "id": "switch-04-0",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 9485,
+      "output_tokens": 200
+    },
+    {
+      "id": "multi-18-0",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 11477,
+      "output_tokens": 219
+    },
+    {
+      "id": "switch-11-1",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 11403,
+      "output_tokens": 221
+    },
+    {
+      "id": "multi-14-1",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 10456,
+      "output_tokens": 206
+    },
+    {
+      "id": "multi-11-0",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 11419,
+      "output_tokens": 224
+    },
+    {
+      "id": "switch-08-0",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 10487,
+      "output_tokens": 208
+    },
+    {
+      "id": "switch-05-0",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 13316,
+      "output_tokens": 233
+    },
+    {
+      "id": "multi-01-1",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 10527,
+      "output_tokens": 209
+    },
+    {
+      "id": "multi-15-1",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 12110,
+      "output_tokens": 229
+    },
+    {
+      "id": "switch-11-1",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 49639,
+      "output_tokens": 831
+    },
+    {
+      "id": "multi-01-1",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 10527,
+      "output_tokens": 209
+    },
+    {
+      "id": "switch-10-1",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 11521,
+      "output_tokens": 212
+    },
+    {
+      "id": "switch-10-0",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 15996,
+      "output_tokens": 342
+    },
+    {
+      "id": "switch-01-0",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 14233,
+      "output_tokens": 302
+    },
+    {
+      "id": "single-16-1",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 17926,
+      "output_tokens": 446
+    },
+    {
+      "id": "switch-19-1",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 10537,
+      "output_tokens": 206
+    },
+    {
+      "id": "switch-06-0",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 16012,
+      "output_tokens": 343
+    },
+    {
+      "id": "single-08-1",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 5146,
+      "output_tokens": 120
+    },
+    {
+      "id": "switch-12-1",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 18184,
+      "output_tokens": 278
+    },
+    {
+      "id": "multi-00-0",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 10457,
+      "output_tokens": 209
+    },
+    {
+      "id": "switch-08-0",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 12076,
+      "output_tokens": 223
+    },
+    {
+      "id": "switch-10-0",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 16016,
+      "output_tokens": 350
+    },
+    {
+      "id": "switch-03-0",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 13313,
+      "output_tokens": 232
+    },
+    {
+      "id": "single-03-0",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 4778,
+      "output_tokens": 108
+    },
+    {
+      "id": "single-19-0",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 41095,
+      "output_tokens": 966
+    },
+    {
+      "id": "switch-17-1",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 13295,
+      "output_tokens": 230
+    },
+    {
+      "id": "multi-10-1",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 10478,
+      "output_tokens": 208
+    },
+    {
+      "id": "multi-09-1",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 11395,
+      "output_tokens": 223
+    },
+    {
+      "id": "multi-18-1",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 16665,
+      "output_tokens": 285
+    },
+    {
+      "id": "multi-06-1",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 10449,
+      "output_tokens": 205
+    },
+    {
+      "id": "multi-18-0",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 10484,
+      "output_tokens": 210
+    },
+    {
+      "id": "single-10-1",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 4749,
+      "output_tokens": 103
+    },
+    {
+      "id": "multi-06-0",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 12946,
+      "output_tokens": 264
+    },
+    {
+      "id": "switch-02-1",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 8113,
+      "output_tokens": 165
+    },
+    {
+      "id": "single-19-0",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 41095,
+      "output_tokens": 966
+    },
+    {
+      "id": "single-00-1",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 5171,
+      "output_tokens": 118
+    },
+    {
+      "id": "switch-05-0",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 10556,
+      "output_tokens": 210
+    },
+    {
+      "id": "single-05-1",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 4765,
+      "output_tokens": 129
+    },
+    {
+      "id": "single-07-0",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 5229,
+      "output_tokens": 125
+    },
+    {
+      "id": "switch-16-1",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 10506,
+      "output_tokens": 209
+    },
+    {
+      "id": "single-19-1",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 5332,
+      "output_tokens": 106
+    },
+    {
+      "id": "switch-16-1",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 13270,
+      "output_tokens": 232
+    },
+    {
+      "id": "single-12-0",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 7303,
+      "output_tokens": 189
+    },
+    {
+      "id": "switch-07-1",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 10531,
+      "output_tokens": 208
+    },
+    {
+      "id": "single-06-1",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 39517,
+      "output_tokens": 934
+    },
+    {
+      "id": "single-06-0",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 7321,
+      "output_tokens": 193
+    },
+    {
+      "id": "switch-12-0",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 50503,
+      "output_tokens": 1000
+    },
+    {
+      "id": "single-14-1",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 4759,
+      "output_tokens": 107
+    },
+    {
+      "id": "switch-11-0",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 10557,
+      "output_tokens": 210
+    },
+    {
+      "id": "multi-17-1",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 12191,
+      "output_tokens": 256
+    },
+    {
+      "id": "single-18-0",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 3999,
+      "output_tokens": 83
+    },
+    {
+      "id": "switch-00-1",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 10517,
+      "output_tokens": 210
+    },
+    {
+      "id": "multi-04-0",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 10463,
+      "output_tokens": 207
+    },
+    {
+      "id": "multi-08-0",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 8106,
+      "output_tokens": 166
+    },
+    {
+      "id": "single-19-1",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 4772,
+      "output_tokens": 106
+    },
+    {
+      "id": "multi-10-0",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 12991,
+      "output_tokens": 242
+    },
+    {
+      "id": "single-09-0",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 4774,
+      "output_tokens": 108
+    },
+    {
+      "id": "multi-02-1",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 10432,
+      "output_tokens": 202
+    },
+    {
+      "id": "multi-00-0",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 8087,
+      "output_tokens": 167
+    },
+    {
+      "id": "single-05-1",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 6048,
+      "output_tokens": 154
+    },
+    {
+      "id": "single-08-0",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 4744,
+      "output_tokens": 102
+    },
+    {
+      "id": "single-09-0",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 40862,
+      "output_tokens": 946
+    },
+    {
+      "id": "multi-11-1",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 11522,
+      "output_tokens": 218
+    },
+    {
+      "id": "switch-00-0",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 11050,
+      "output_tokens": 221
+    },
+    {
+      "id": "switch-05-1",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 11402,
+      "output_tokens": 222
+    },
+    {
+      "id": "switch-09-1",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 11474,
+      "output_tokens": 226
+    },
+    {
+      "id": "single-19-0",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 4035,
+      "output_tokens": 88
+    },
+    {
+      "id": "switch-06-0",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 16015,
+      "output_tokens": 350
+    },
+    {
+      "id": "multi-17-0",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 10512,
+      "output_tokens": 207
+    },
+    {
+      "id": "multi-08-1",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 50121,
+      "output_tokens": 987
+    },
+    {
+      "id": "multi-08-0",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 8106,
+      "output_tokens": 166
+    },
+    {
+      "id": "multi-06-0",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 15978,
+      "output_tokens": 346
+    },
+    {
+      "id": "single-03-1",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 4009,
+      "output_tokens": 84
+    },
+    {
+      "id": "multi-05-1",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 11411,
+      "output_tokens": 224
+    },
+    {
+      "id": "multi-19-0",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 13263,
+      "output_tokens": 230
+    },
+    {
+      "id": "switch-15-0",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 18246,
+      "output_tokens": 344
+    },
+    {
+      "id": "multi-00-1",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 15902,
+      "output_tokens": 331
+    },
+    {
+      "id": "multi-17-0",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 10512,
+      "output_tokens": 207
+    },
+    {
+      "id": "switch-07-1",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 13306,
+      "output_tokens": 231
+    },
+    {
+      "id": "single-03-0",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 4018,
+      "output_tokens": 87
+    },
+    {
+      "id": "multi-09-1",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 51078,
+      "output_tokens": 1019
+    },
+    {
+      "id": "multi-02-1",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 13065,
+      "output_tokens": 215
+    },
+    {
+      "id": "single-18-0",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 5289,
+      "output_tokens": 104
+    },
+    {
+      "id": "single-03-0",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 4778,
+      "output_tokens": 108
+    },
+    {
+      "id": "single-08-0",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 4744,
+      "output_tokens": 102
+    },
+    {
+      "id": "single-16-1",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 39605,
+      "output_tokens": 936
+    },
+    {
+      "id": "switch-09-1",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 11474,
+      "output_tokens": 226
+    },
+    {
+      "id": "multi-19-1",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 11419,
+      "output_tokens": 225
+    },
+    {
+      "id": "single-19-1",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 4772,
+      "output_tokens": 106
+    },
+    {
+      "id": "single-05-0",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 6061,
+      "output_tokens": 154
+    },
+    {
+      "id": "switch-07-0",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 53339,
+      "output_tokens": 1277
+    },
+    {
+      "id": "single-09-0",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 4007,
+      "output_tokens": 87
+    },
+    {
+      "id": "single-00-0",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 4774,
+      "output_tokens": 110
+    },
+    {
+      "id": "multi-07-0",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 16231,
+      "output_tokens": 335
+    },
+    {
+      "id": "switch-02-0",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 16048,
+      "output_tokens": 354
+    },
+    {
+      "id": "multi-13-0",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 9508,
+      "output_tokens": 201
+    },
+    {
+      "id": "multi-11-0",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 51227,
+      "output_tokens": 1022
+    },
+    {
+      "id": "single-14-0",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 5313,
+      "output_tokens": 106
+    },
+    {
+      "id": "single-17-0",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 4036,
+      "output_tokens": 85
+    },
+    {
+      "id": "multi-02-0",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 17884,
+      "output_tokens": 343
+    },
+    {
+      "id": "switch-12-0",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 9531,
+      "output_tokens": 197
+    },
+    {
+      "id": "multi-09-1",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 11395,
+      "output_tokens": 223
+    },
+    {
+      "id": "single-07-1",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 4768,
+      "output_tokens": 107
+    },
+    {
+      "id": "single-10-0",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 4756,
+      "output_tokens": 106
+    },
+    {
+      "id": "switch-04-0",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 15975,
+      "output_tokens": 343
+    },
+    {
+      "id": "single-06-1",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 4756,
+      "output_tokens": 106
+    },
+    {
+      "id": "single-19-0",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 4035,
+      "output_tokens": 88
+    },
+    {
+      "id": "single-18-0",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 4744,
+      "output_tokens": 104
+    },
+    {
+      "id": "multi-14-1",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 14700,
+      "output_tokens": 244
+    },
+    {
+      "id": "multi-13-0",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 18202,
+      "output_tokens": 350
+    },
+    {
+      "id": "switch-17-1",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 12122,
+      "output_tokens": 222
+    },
+    {
+      "id": "single-00-1",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 7292,
+      "output_tokens": 186
+    },
+    {
+      "id": "single-17-1",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 4038,
+      "output_tokens": 87
+    },
+    {
+      "id": "switch-18-0",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 10443,
+      "output_tokens": 202
+    },
+    {
+      "id": "switch-08-1",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 50544,
+      "output_tokens": 1001
+    },
+    {
+      "id": "multi-15-0",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 18130,
+      "output_tokens": 337
+    },
+    {
+      "id": "single-03-1",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 6057,
+      "output_tokens": 136
+    },
+    {
+      "id": "single-04-1",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 4762,
+      "output_tokens": 106
+    },
+    {
+      "id": "multi-15-0",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 16220,
+      "output_tokens": 342
+    },
+    {
+      "id": "switch-11-1",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 49684,
+      "output_tokens": 834
+    },
+    {
+      "id": "multi-15-1",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 10502,
+      "output_tokens": 206
+    },
+    {
+      "id": "switch-07-1",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 10531,
+      "output_tokens": 208
+    },
+    {
+      "id": "multi-01-1",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 10527,
+      "output_tokens": 209
+    },
+    {
+      "id": "single-08-1",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 5146,
+      "output_tokens": 120
+    },
+    {
+      "id": "single-04-1",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 4762,
+      "output_tokens": 106
+    },
+    {
+      "id": "switch-18-0",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 10443,
+      "output_tokens": 202
+    },
+    {
+      "id": "switch-15-0",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 9556,
+      "output_tokens": 203
+    },
+    {
+      "id": "multi-12-1",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 10488,
+      "output_tokens": 208
+    },
+    {
+      "id": "multi-04-0",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 8103,
+      "output_tokens": 165
+    },
+    {
+      "id": "single-10-0",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 4005,
+      "output_tokens": 109
+    },
+    {
+      "id": "single-09-1",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 7344,
+      "output_tokens": 187
+    },
+    {
+      "id": "switch-00-0",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 16007,
+      "output_tokens": 349
+    },
+    {
+      "id": "single-13-1",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 39631,
+      "output_tokens": 935
+    },
+    {
+      "id": "single-17-1",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 4778,
+      "output_tokens": 131
+    },
+    {
+      "id": "switch-13-1",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 12278,
+      "output_tokens": 252
+    },
+    {
+      "id": "switch-06-1",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 10483,
+      "output_tokens": 206
+    },
+    {
+      "id": "switch-04-0",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 9485,
+      "output_tokens": 200
+    },
+    {
+      "id": "multi-02-0",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 15952,
+      "output_tokens": 344
+    },
+    {
+      "id": "multi-04-1",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 50729,
+      "output_tokens": 1006
+    },
+    {
+      "id": "multi-09-0",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 10537,
+      "output_tokens": 221
+    },
+    {
+      "id": "switch-03-1",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 12263,
+      "output_tokens": 250
+    },
+    {
+      "id": "single-14-1",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 4759,
+      "output_tokens": 107
+    },
+    {
+      "id": "multi-16-0",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 10462,
+      "output_tokens": 206
+    },
+    {
+      "id": "single-12-1",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 4010,
+      "output_tokens": 85
+    },
+    {
+      "id": "single-00-1",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 7292,
+      "output_tokens": 186
+    },
+    {
+      "id": "multi-07-1",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 10516,
+      "output_tokens": 219
+    },
+    {
+      "id": "single-16-1",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 4768,
+      "output_tokens": 108
+    },
+    {
+      "id": "multi-19-1",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 52891,
+      "output_tokens": 1239
+    },
+    {
+      "id": "switch-15-1",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 13306,
+      "output_tokens": 231
+    },
+    {
+      "id": "single-13-1",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 39631,
+      "output_tokens": 935
+    },
+    {
+      "id": "switch-10-0",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 16015,
+      "output_tokens": 342
+    },
+    {
+      "id": "single-18-1",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 7298,
+      "output_tokens": 188
+    },
+    {
+      "id": "multi-01-1",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 10527,
+      "output_tokens": 209
+    },
+    {
+      "id": "multi-01-0",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 9510,
+      "output_tokens": 200
+    },
+    {
+      "id": "multi-06-0",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 15953,
+      "output_tokens": 346
+    },
+    {
+      "id": "switch-07-1",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 13306,
+      "output_tokens": 231
+    },
+    {
+      "id": "single-17-1",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 4778,
+      "output_tokens": 108
+    },
+    {
+      "id": "multi-03-1",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 10487,
+      "output_tokens": 205
+    },
+    {
+      "id": "single-01-0",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 7344,
+      "output_tokens": 187
+    },
+    {
+      "id": "multi-09-0",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 15439,
+      "output_tokens": 280
+    },
+    {
+      "id": "switch-09-1",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 50801,
+      "output_tokens": 959
+    },
+    {
+      "id": "multi-07-0",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 9529,
+      "output_tokens": 202
+    },
+    {
+      "id": "multi-15-0",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 16220,
+      "output_tokens": 342
+    },
+    {
+      "id": "switch-18-1",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 11049,
+      "output_tokens": 229
+    },
+    {
+      "id": "switch-09-0",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 16015,
+      "output_tokens": 297
+    },
+    {
+      "id": "multi-18-0",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 10484,
+      "output_tokens": 210
+    },
+    {
+      "id": "switch-08-1",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 50544,
+      "output_tokens": 1001
+    },
+    {
+      "id": "multi-19-0",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 10513,
+      "output_tokens": 207
+    },
+    {
+      "id": "single-17-0",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 6085,
+      "output_tokens": 142
+    },
+    {
+      "id": "single-04-1",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 4762,
+      "output_tokens": 106
+    },
+    {
+      "id": "multi-16-0",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 10462,
+      "output_tokens": 206
+    },
+    {
+      "id": "single-16-0",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 4010,
+      "output_tokens": 85
+    },
+    {
+      "id": "multi-11-0",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 51363,
+      "output_tokens": 1039
+    },
+    {
+      "id": "single-04-0",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 4745,
+      "output_tokens": 105
+    },
+    {
+      "id": "single-01-1",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 39862,
+      "output_tokens": 956
+    },
+    {
+      "id": "single-03-0",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 4778,
+      "output_tokens": 108
+    },
+    {
+      "id": "single-11-0",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 6057,
+      "output_tokens": 136
+    },
+    {
+      "id": "single-11-1",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 39728,
+      "output_tokens": 940
+    },
+    {
+      "id": "multi-08-1",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 16823,
+      "output_tokens": 340
+    },
+    {
+      "id": "switch-10-1",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 10477,
+      "output_tokens": 204
+    },
+    {
+      "id": "switch-12-1",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 14506,
+      "output_tokens": 250
+    },
+    {
+      "id": "multi-04-0",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 10463,
+      "output_tokens": 207
+    },
+    {
+      "id": "single-04-0",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 4745,
+      "output_tokens": 105
+    },
+    {
+      "id": "single-04-1",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 4017,
+      "output_tokens": 85
+    },
+    {
+      "id": "single-19-0",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 41095,
+      "output_tokens": 966
+    },
+    {
+      "id": "multi-02-1",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 13099,
+      "output_tokens": 223
+    },
+    {
+      "id": "switch-10-0",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 13036,
+      "output_tokens": 275
+    },
+    {
+      "id": "single-08-0",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 5917,
+      "output_tokens": 117
+    },
+    {
+      "id": "single-19-0",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 4035,
+      "output_tokens": 88
+    },
+    {
+      "id": "switch-01-1",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 52963,
+      "output_tokens": 1243
+    },
+    {
+      "id": "multi-18-1",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 49521,
+      "output_tokens": 907
+    },
+    {
+      "id": "switch-11-1",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 49684,
+      "output_tokens": 834
+    },
+    {
+      "id": "multi-10-0",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 50439,
+      "output_tokens": 986
+    },
+    {
+      "id": "multi-13-1",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 12093,
+      "output_tokens": 223
+    },
+    {
+      "id": "switch-15-1",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 10551,
+      "output_tokens": 208
+    },
+    {
+      "id": "multi-15-1",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 10502,
+      "output_tokens": 206
+    },
+    {
+      "id": "single-13-1",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 4033,
+      "output_tokens": 86
+    },
+    {
+      "id": "single-10-1",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 4749,
+      "output_tokens": 103
+    },
+    {
+      "id": "switch-10-1",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 11775,
+      "output_tokens": 216
+    },
+    {
+      "id": "single-12-0",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 7306,
+      "output_tokens": 192
+    },
+    {
+      "id": "single-13-0",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 6066,
+      "output_tokens": 139
+    },
+    {
+      "id": "multi-14-0",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 17884,
+      "output_tokens": 344
+    },
+    {
+      "id": "switch-09-1",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 50801,
+      "output_tokens": 959
+    },
+    {
+      "id": "multi-13-1",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 12093,
+      "output_tokens": 223
+    },
+    {
+      "id": "multi-12-0",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 9400,
+      "output_tokens": 196
+    },
+    {
+      "id": "multi-18-0",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 11477,
+      "output_tokens": 219
+    },
+    {
+      "id": "multi-05-1",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 50601,
+      "output_tokens": 949
+    },
+    {
+      "id": "multi-16-0",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 10462,
+      "output_tokens": 206
+    },
+    {
+      "id": "switch-19-1",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 11500,
+      "output_tokens": 206
+    },
+    {
+      "id": "switch-13-0",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 10556,
+      "output_tokens": 210
+    },
+    {
+      "id": "switch-13-1",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 12278,
+      "output_tokens": 252
+    },
+    {
+      "id": "single-13-0",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 4027,
+      "output_tokens": 86
+    },
+    {
+      "id": "single-14-1",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 4759,
+      "output_tokens": 107
+    },
+    {
+      "id": "multi-15-0",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 9492,
+      "output_tokens": 201
+    },
+    {
+      "id": "switch-02-1",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 10460,
+      "output_tokens": 205
+    },
+    {
+      "id": "single-13-1",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 39631,
+      "output_tokens": 935
+    },
+    {
+      "id": "multi-17-0",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 10512,
+      "output_tokens": 207
+    },
+    {
+      "id": "switch-16-0",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 50585,
+      "output_tokens": 1002
+    },
+    {
+      "id": "multi-15-1",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 11492,
+      "output_tokens": 217
+    },
+    {
+      "id": "multi-04-1",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 50729,
+      "output_tokens": 1006
+    },
+    {
+      "id": "multi-10-1",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 13226,
+      "output_tokens": 237
+    },
+    {
+      "id": "single-17-0",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 40465,
+      "output_tokens": 906
+    },
+    {
+      "id": "multi-14-1",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 12937,
+      "output_tokens": 221
+    },
+    {
+      "id": "single-05-0",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 6061,
+      "output_tokens": 131
+    },
+    {
+      "id": "switch-17-0",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 18297,
+      "output_tokens": 348
+    },
+    {
+      "id": "switch-05-1",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 11402,
+      "output_tokens": 222
+    },
+    {
+      "id": "switch-00-0",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 15983,
+      "output_tokens": 344
+    },
+    {
+      "id": "single-06-1",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 4022,
+      "output_tokens": 87
+    },
+    {
+      "id": "single-14-1",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 4759,
+      "output_tokens": 107
+    },
+    {
+      "id": "multi-02-0",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 15952,
+      "output_tokens": 344
+    },
+    {
+      "id": "single-17-0",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 4036,
+      "output_tokens": 85
+    },
+    {
+      "id": "switch-14-1",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 15620,
+      "output_tokens": 342
+    },
+    {
+      "id": "switch-02-0",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 11065,
+      "output_tokens": 228
+    },
+    {
+      "id": "multi-12-0",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 9400,
+      "output_tokens": 196
+    },
+    {
+      "id": "multi-16-1",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 10976,
+      "output_tokens": 223
+    },
+    {
+      "id": "switch-06-1",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 10483,
+      "output_tokens": 206
+    },
+    {
+      "id": "multi-11-1",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 10505,
+      "output_tokens": 207
+    },
+    {
+      "id": "multi-05-1",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 50724,
+      "output_tokens": 955
+    },
+    {
+      "id": "multi-04-1",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 50729,
+      "output_tokens": 1006
+    },
+    {
+      "id": "multi-10-1",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 10478,
+      "output_tokens": 208
+    },
+    {
+      "id": "multi-19-0",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 10513,
+      "output_tokens": 207
+    },
+    {
+      "id": "single-07-0",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 7356,
+      "output_tokens": 189
+    },
+    {
+      "id": "switch-12-1",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 10509,
+      "output_tokens": 210
+    },
+    {
+      "id": "multi-03-1",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 13173,
+      "output_tokens": 228
+    },
+    {
+      "id": "multi-06-1",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 10449,
+      "output_tokens": 205
+    },
+    {
+      "id": "switch-01-0",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 14226,
+      "output_tokens": 301
+    },
+    {
+      "id": "switch-16-0",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 50585,
+      "output_tokens": 1002
+    },
+    {
+      "id": "single-16-1",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 5323,
+      "output_tokens": 108
+    },
+    {
+      "id": "multi-14-1",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 10456,
+      "output_tokens": 206
+    },
+    {
+      "id": "switch-05-0",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 13316,
+      "output_tokens": 233
+    },
+    {
+      "id": "switch-11-1",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 51316,
+      "output_tokens": 1038
+    },
+    {
+      "id": "switch-01-0",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 14233,
+      "output_tokens": 302
+    },
+    {
+      "id": "switch-02-0",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 16012,
+      "output_tokens": 345
+    },
+    {
+      "id": "multi-02-1",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 10432,
+      "output_tokens": 202
+    },
+    {
+      "id": "switch-00-0",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 11050,
+      "output_tokens": 224
+    },
+    {
+      "id": "single-02-1",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 4774,
+      "output_tokens": 110
+    },
+    {
+      "id": "switch-15-1",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 11577,
+      "output_tokens": 208
+    },
+    {
+      "id": "switch-07-0",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 9654,
+      "output_tokens": 205
+    },
+    {
+      "id": "switch-10-1",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 10477,
+      "output_tokens": 204
+    },
+    {
+      "id": "switch-17-0",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 9575,
+      "output_tokens": 205
+    },
+    {
+      "id": "switch-09-1",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 50801,
+      "output_tokens": 959
+    },
+    {
+      "id": "switch-08-1",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 50544,
+      "output_tokens": 1001
+    },
+    {
+      "id": "multi-11-0",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 11419,
+      "output_tokens": 224
+    },
+    {
+      "id": "multi-04-0",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 10463,
+      "output_tokens": 207
+    },
+    {
+      "id": "multi-12-1",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 13177,
+      "output_tokens": 231
+    },
+    {
+      "id": "multi-16-1",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 15933,
+      "output_tokens": 343
+    },
+    {
+      "id": "multi-04-1",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 13103,
+      "output_tokens": 248
+    },
+    {
+      "id": "multi-11-1",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 10505,
+      "output_tokens": 207
+    },
+    {
+      "id": "single-18-0",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 4744,
+      "output_tokens": 104
+    },
+    {
+      "id": "switch-06-1",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 10483,
+      "output_tokens": 206
+    },
+    {
+      "id": "single-12-0",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 7303,
+      "output_tokens": 189
+    },
+    {
+      "id": "single-07-0",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 7359,
+      "output_tokens": 190
+    },
+    {
+      "id": "single-17-1",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 4038,
+      "output_tokens": 87
+    },
+    {
+      "id": "switch-02-1",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 10460,
+      "output_tokens": 205
+    },
+    {
+      "id": "switch-11-0",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 10557,
+      "output_tokens": 210
+    },
+    {
+      "id": "single-10-0",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 41012,
+      "output_tokens": 959
+    },
+    {
+      "id": "single-14-0",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 40881,
+      "output_tokens": 961
+    },
+    {
+      "id": "multi-09-1",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 51078,
+      "output_tokens": 1019
+    },
+    {
+      "id": "switch-16-0",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 11115,
+      "output_tokens": 216
+    },
+    {
+      "id": "switch-01-0",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 14233,
+      "output_tokens": 302
+    },
+    {
+      "id": "switch-13-0",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 10556,
+      "output_tokens": 210
+    },
+    {
+      "id": "multi-06-0",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 15978,
+      "output_tokens": 346
+    },
+    {
+      "id": "switch-09-1",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 50801,
+      "output_tokens": 959
+    },
+    {
+      "id": "single-06-1",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 4756,
+      "output_tokens": 106
+    },
+    {
+      "id": "switch-10-1",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 10477,
+      "output_tokens": 204
+    },
+    {
+      "id": "single-04-0",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 4745,
+      "output_tokens": 105
+    },
+    {
+      "id": "multi-02-0",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 9425,
+      "output_tokens": 201
+    },
+    {
+      "id": "switch-14-0",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 15982,
+      "output_tokens": 342
+    },
+    {
+      "id": "single-01-1",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 39862,
+      "output_tokens": 956
+    },
+    {
+      "id": "multi-15-0",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 16250,
+      "output_tokens": 348
+    },
+    {
+      "id": "switch-08-0",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 10487,
+      "output_tokens": 208
+    },
+    {
+      "id": "switch-18-1",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 11049,
+      "output_tokens": 229
+    },
+    {
+      "id": "multi-12-1",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 10488,
+      "output_tokens": 208
+    },
+    {
+      "id": "multi-17-0",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 13203,
+      "output_tokens": 230
+    },
+    {
+      "id": "single-04-0",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 4745,
+      "output_tokens": 105
+    },
+    {
+      "id": "multi-06-0",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 12949,
+      "output_tokens": 267
+    },
+    {
+      "id": "single-05-0",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 6061,
+      "output_tokens": 154
+    },
+    {
+      "id": "switch-18-1",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 16051,
+      "output_tokens": 367
+    },
+    {
+      "id": "multi-08-1",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 49521,
+      "output_tokens": 907
+    },
+    {
+      "id": "single-11-0",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 4024,
+      "output_tokens": 83
+    },
+    {
+      "id": "single-19-1",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 4032,
+      "output_tokens": 108
+    },
+    {
+      "id": "multi-14-0",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 15971,
+      "output_tokens": 347
+    },
+    {
+      "id": "single-00-0",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 4774,
+      "output_tokens": 110
+    },
+    {
+      "id": "switch-14-0",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 9471,
+      "output_tokens": 199
+    },
+    {
+      "id": "switch-15-0",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 18246,
+      "output_tokens": 344
+    },
+    {
+      "id": "switch-17-1",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 13295,
+      "output_tokens": 230
+    },
+    {
+      "id": "single-01-1",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 39992,
+      "output_tokens": 963
+    },
+    {
+      "id": "switch-12-0",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 50503,
+      "output_tokens": 1000
+    },
+    {
+      "id": "switch-04-1",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 10475,
+      "output_tokens": 211
+    },
+    {
+      "id": "multi-10-0",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 50439,
+      "output_tokens": 986
+    },
+    {
+      "id": "single-04-1",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 4017,
+      "output_tokens": 108
+    },
+    {
+      "id": "single-02-1",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 4049,
+      "output_tokens": 89
+    },
+    {
+      "id": "multi-16-0",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 14899,
+      "output_tokens": 248
+    },
+    {
+      "id": "multi-15-1",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 10502,
+      "output_tokens": 206
+    },
+    {
+      "id": "switch-09-1",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 11474,
+      "output_tokens": 226
+    },
+    {
+      "id": "switch-13-0",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 10556,
+      "output_tokens": 210
+    },
+    {
+      "id": "switch-08-1",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 50544,
+      "output_tokens": 1001
+    },
+    {
+      "id": "multi-14-0",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 17866,
+      "output_tokens": 341
+    },
+    {
+      "id": "multi-13-0",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 18202,
+      "output_tokens": 350
+    },
+    {
+      "id": "single-06-0",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 7321,
+      "output_tokens": 193
+    },
+    {
+      "id": "multi-08-0",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 10470,
+      "output_tokens": 208
+    },
+    {
+      "id": "single-03-1",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 6057,
+      "output_tokens": 136
+    },
+    {
+      "id": "multi-12-1",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 45014,
+      "output_tokens": 873
+    },
+    {
+      "id": "switch-05-1",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 52605,
+      "output_tokens": 1205
+    },
+    {
+      "id": "switch-03-1",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 12263,
+      "output_tokens": 250
+    },
+    {
+      "id": "single-18-0",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 4744,
+      "output_tokens": 104
+    },
+    {
+      "id": "multi-12-0",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 15850,
+      "output_tokens": 331
+    },
+    {
+      "id": "multi-16-1",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 15933,
+      "output_tokens": 343
+    },
+    {
+      "id": "switch-19-0",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 16201,
+      "output_tokens": 331
+    },
+    {
+      "id": "single-15-1",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 5179,
+      "output_tokens": 120
+    },
+    {
+      "id": "multi-00-1",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 9460,
+      "output_tokens": 199
+    },
+    {
+      "id": "multi-19-0",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 10513,
+      "output_tokens": 207
+    },
+    {
+      "id": "single-02-1",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 4774,
+      "output_tokens": 110
+    },
+    {
+      "id": "multi-09-0",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 10537,
+      "output_tokens": 221
+    },
+    {
+      "id": "switch-04-0",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 15975,
+      "output_tokens": 343
+    },
+    {
+      "id": "switch-19-0",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 13271,
+      "output_tokens": 245
+    },
+    {
+      "id": "single-14-0",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 4758,
+      "output_tokens": 106
+    },
+    {
+      "id": "single-04-1",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 4762,
+      "output_tokens": 106
+    },
+    {
+      "id": "switch-16-1",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 10506,
+      "output_tokens": 209
+    },
+    {
+      "id": "switch-00-1",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 11561,
+      "output_tokens": 210
+    },
+    {
+      "id": "single-12-1",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 4745,
+      "output_tokens": 105
+    },
+    {
+      "id": "multi-07-1",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 13258,
+      "output_tokens": 231
+    },
+    {
+      "id": "single-08-1",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 7306,
+      "output_tokens": 186
+    },
+    {
+      "id": "single-00-1",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 7303,
+      "output_tokens": 191
+    },
+    {
+      "id": "single-09-0",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 4774,
+      "output_tokens": 131
+    },
+    {
+      "id": "single-07-1",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 4039,
+      "output_tokens": 86
+    },
+    {
+      "id": "multi-02-1",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 10432,
+      "output_tokens": 202
+    },
+    {
+      "id": "switch-18-1",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 16051,
+      "output_tokens": 355
+    },
+    {
+      "id": "multi-02-1",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 10432,
+      "output_tokens": 202
+    },
+    {
+      "id": "switch-07-0",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 9654,
+      "output_tokens": 205
+    },
+    {
+      "id": "switch-01-1",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 52918,
+      "output_tokens": 1240
+    },
+    {
+      "id": "switch-17-0",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 18288,
+      "output_tokens": 347
+    },
+    {
+      "id": "single-17-1",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 40885,
+      "output_tokens": 946
+    },
+    {
+      "id": "multi-09-1",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 51078,
+      "output_tokens": 1019
+    },
+    {
+      "id": "switch-14-1",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 8101,
+      "output_tokens": 169
+    },
+    {
+      "id": "multi-10-0",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 16597,
+      "output_tokens": 282
+    },
+    {
+      "id": "multi-18-1",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 49641,
+      "output_tokens": 923
+    },
+    {
+      "id": "single-12-0",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 7303,
+      "output_tokens": 189
+    },
+    {
+      "id": "multi-03-0",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 16222,
+      "output_tokens": 339
+    },
+    {
+      "id": "single-08-0",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 5917,
+      "output_tokens": 117
+    },
+    {
+      "id": "single-15-0",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 4001,
+      "output_tokens": 84
+    },
+    {
+      "id": "multi-19-0",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 13263,
+      "output_tokens": 230
+    },
+    {
+      "id": "switch-14-0",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 9471,
+      "output_tokens": 199
+    },
+    {
+      "id": "multi-11-0",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 51227,
+      "output_tokens": 1022
+    },
+    {
+      "id": "single-05-1",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 5300,
+      "output_tokens": 129
+    },
+    {
+      "id": "multi-09-0",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 15439,
+      "output_tokens": 280
+    },
+    {
+      "id": "multi-03-1",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 13173,
+      "output_tokens": 228
+    },
+    {
+      "id": "multi-13-1",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 11512,
+      "output_tokens": 208
+    },
+    {
+      "id": "multi-00-1",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 15886,
+      "output_tokens": 329
+    },
+    {
+      "id": "single-13-0",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 6066,
+      "output_tokens": 139
+    },
+    {
+      "id": "switch-12-0",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 9517,
+      "output_tokens": 195
+    },
+    {
+      "id": "switch-16-1",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 13270,
+      "output_tokens": 232
+    },
+    {
+      "id": "single-02-1",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 4774,
+      "output_tokens": 133
+    },
+    {
+      "id": "single-01-1",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 5333,
+      "output_tokens": 108
+    },
+    {
+      "id": "switch-06-0",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 11085,
+      "output_tokens": 229
+    },
+    {
+      "id": "multi-00-0",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 10457,
+      "output_tokens": 209
+    },
+    {
+      "id": "switch-05-1",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 52605,
+      "output_tokens": 1205
+    },
+    {
+      "id": "multi-08-0",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 10470,
+      "output_tokens": 208
+    },
+    {
+      "id": "switch-19-1",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 10537,
+      "output_tokens": 206
+    },
+    {
+      "id": "multi-12-0",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 15850,
+      "output_tokens": 331
+    },
+    {
+      "id": "switch-13-1",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 12278,
+      "output_tokens": 252
+    },
+    {
+      "id": "single-08-1",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 7318,
+      "output_tokens": 190
+    },
+    {
+      "id": "multi-13-1",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 13236,
+      "output_tokens": 231
+    },
+    {
+      "id": "single-00-0",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 4774,
+      "output_tokens": 110
+    },
+    {
+      "id": "multi-17-1",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 13886,
+      "output_tokens": 261
+    },
+    {
+      "id": "switch-07-1",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 10531,
+      "output_tokens": 208
+    },
+    {
+      "id": "switch-03-1",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 15248,
+      "output_tokens": 273
+    },
+    {
+      "id": "single-02-0",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 4753,
+      "output_tokens": 107
+    },
+    {
+      "id": "switch-01-0",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 14233,
+      "output_tokens": 302
+    },
+    {
+      "id": "switch-19-0",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 15089,
+      "output_tokens": 268
+    },
+    {
+      "id": "multi-19-0",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 10513,
+      "output_tokens": 207
+    },
+    {
+      "id": "switch-03-0",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 10545,
+      "output_tokens": 209
+    },
+    {
+      "id": "multi-01-0",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 18196,
+      "output_tokens": 346
+    },
+    {
+      "id": "single-01-1",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 5333,
+      "output_tokens": 108
+    },
+    {
+      "id": "multi-14-1",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 10456,
+      "output_tokens": 206
+    },
+    {
+      "id": "multi-16-0",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 10462,
+      "output_tokens": 206
+    },
+    {
+      "id": "multi-12-0",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 15871,
+      "output_tokens": 337
+    },
+    {
+      "id": "multi-10-1",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 12086,
+      "output_tokens": 231
+    },
+    {
+      "id": "multi-12-0",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 15871,
+      "output_tokens": 337
+    },
+    {
+      "id": "switch-13-0",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 10556,
+      "output_tokens": 210
+    },
+    {
+      "id": "multi-13-1",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 12093,
+      "output_tokens": 223
+    },
+    {
+      "id": "multi-02-0",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 10958,
+      "output_tokens": 224
+    },
+    {
+      "id": "single-12-0",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 7303,
+      "output_tokens": 189
+    },
+    {
+      "id": "single-16-0",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 4745,
+      "output_tokens": 105
+    },
+    {
+      "id": "multi-05-1",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 50724,
+      "output_tokens": 955
+    },
+    {
+      "id": "switch-18-0",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 8086,
+      "output_tokens": 160
+    },
+    {
+      "id": "switch-10-1",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 11521,
+      "output_tokens": 212
+    },
+    {
+      "id": "single-15-0",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 4001,
+      "output_tokens": 107
+    },
+    {
+      "id": "single-13-0",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 6066,
+      "output_tokens": 139
+    },
+    {
+      "id": "multi-01-0",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 16240,
+      "output_tokens": 341
+    },
+    {
+      "id": "switch-08-0",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 10487,
+      "output_tokens": 208
+    },
+    {
+      "id": "single-18-0",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 4744,
+      "output_tokens": 104
+    },
+    {
+      "id": "single-13-0",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 4027,
+      "output_tokens": 109
+    },
+    {
+      "id": "switch-15-0",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 9556,
+      "output_tokens": 203
+    },
+    {
+      "id": "single-17-1",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 4778,
+      "output_tokens": 108
+    },
+    {
+      "id": "switch-14-0",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 15982,
+      "output_tokens": 342
+    },
+    {
+      "id": "multi-06-1",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 13210,
+      "output_tokens": 234
+    },
+    {
+      "id": "single-06-0",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 5186,
+      "output_tokens": 120
+    },
+    {
+      "id": "switch-05-1",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 52605,
+      "output_tokens": 1205
+    },
+    {
+      "id": "single-11-0",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 6054,
+      "output_tokens": 133
+    },
+    {
+      "id": "multi-05-0",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 51624,
+      "output_tokens": 875
+    },
+    {
+      "id": "single-03-1",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 6045,
+      "output_tokens": 130
+    },
+    {
+      "id": "multi-16-1",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 15933,
+      "output_tokens": 343
+    },
+    {
+      "id": "single-13-1",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 40675,
+      "output_tokens": 926
+    },
+    {
+      "id": "single-05-0",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 6061,
+      "output_tokens": 154
+    },
+    {
+      "id": "switch-15-0",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 16257,
+      "output_tokens": 335
+    },
+    {
+      "id": "switch-02-0",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 9518,
+      "output_tokens": 205
+    },
+    {
+      "id": "multi-19-1",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 11419,
+      "output_tokens": 225
+    },
+    {
+      "id": "single-12-1",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 4010,
+      "output_tokens": 85
+    },
+    {
+      "id": "single-04-0",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 4745,
+      "output_tokens": 105
+    },
+    {
+      "id": "switch-05-1",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 11402,
+      "output_tokens": 222
+    },
+    {
+      "id": "multi-00-1",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 9460,
+      "output_tokens": 199
+    },
+    {
+      "id": "switch-01-0",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 10570,
+      "output_tokens": 212
+    },
+    {
+      "id": "single-09-1",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 7341,
+      "output_tokens": 188
+    },
+    {
+      "id": "single-08-0",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 3985,
+      "output_tokens": 105
+    },
+    {
+      "id": "single-03-1",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 6045,
+      "output_tokens": 153
+    },
+    {
+      "id": "switch-09-1",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 50759,
+      "output_tokens": 956
+    },
+    {
+      "id": "single-17-1",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 4778,
+      "output_tokens": 108
+    },
+    {
+      "id": "single-01-1",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 4778,
+      "output_tokens": 108
+    },
+    {
+      "id": "switch-08-0",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 11477,
+      "output_tokens": 208
+    },
+    {
+      "id": "multi-16-0",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 10462,
+      "output_tokens": 206
+    },
+    {
+      "id": "switch-11-0",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 10557,
+      "output_tokens": 210
+    },
+    {
+      "id": "single-15-0",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 6048,
+      "output_tokens": 154
+    },
+    {
+      "id": "switch-02-1",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 10460,
+      "output_tokens": 205
+    },
+    {
+      "id": "switch-06-0",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 9535,
+      "output_tokens": 206
+    },
+    {
+      "id": "single-11-1",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 4775,
+      "output_tokens": 107
+    },
+    {
+      "id": "switch-00-1",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 10517,
+      "output_tokens": 210
+    },
+    {
+      "id": "switch-19-1",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 10537,
+      "output_tokens": 206
+    },
+    {
+      "id": "multi-12-0",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 9400,
+      "output_tokens": 196
+    },
+    {
+      "id": "multi-08-0",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 8106,
+      "output_tokens": 166
+    },
+    {
+      "id": "multi-07-1",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 10516,
+      "output_tokens": 219
+    },
+    {
+      "id": "switch-04-1",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 10493,
+      "output_tokens": 208
+    },
+    {
+      "id": "multi-03-0",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 12940,
+      "output_tokens": 272
+    },
+    {
+      "id": "multi-04-0",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 10463,
+      "output_tokens": 207
+    },
+    {
+      "id": "switch-09-0",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 8161,
+      "output_tokens": 167
+    },
+    {
+      "id": "multi-11-0",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 51227,
+      "output_tokens": 1022
+    },
+    {
+      "id": "multi-19-0",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 13263,
+      "output_tokens": 230
+    },
+    {
+      "id": "switch-14-1",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 8101,
+      "output_tokens": 169
+    },
+    {
+      "id": "single-15-1",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 7341,
+      "output_tokens": 184
+    },
+    {
+      "id": "single-07-1",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 4039,
+      "output_tokens": 86
+    },
+    {
+      "id": "switch-04-1",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 10475,
+      "output_tokens": 211
+    },
+    {
+      "id": "multi-08-1",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 16823,
+      "output_tokens": 340
+    },
+    {
+      "id": "single-13-1",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 39631,
+      "output_tokens": 935
+    },
+    {
+      "id": "single-07-1",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 4039,
+      "output_tokens": 86
+    },
+    {
+      "id": "multi-08-0",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 10470,
+      "output_tokens": 208
+    },
+    {
+      "id": "switch-13-0",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 8187,
+      "output_tokens": 168
+    },
+    {
+      "id": "single-13-1",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 4033,
+      "output_tokens": 86
+    },
+    {
+      "id": "single-15-1",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 5179,
+      "output_tokens": 120
+    },
+    {
+      "id": "single-09-1",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 5176,
+      "output_tokens": 121
+    },
+    {
+      "id": "multi-18-1",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 49521,
+      "output_tokens": 907
+    },
+    {
+      "id": "switch-19-0",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 18167,
+      "output_tokens": 337
+    },
+    {
+      "id": "switch-11-0",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 8149,
+      "output_tokens": 168
+    },
+    {
+      "id": "switch-00-1",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 10517,
+      "output_tokens": 210
+    },
+    {
+      "id": "multi-10-0",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 48960,
+      "output_tokens": 829
+    },
+    {
+      "id": "switch-10-0",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 15996,
+      "output_tokens": 342
+    },
+    {
+      "id": "multi-06-0",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 12946,
+      "output_tokens": 264
+    },
+    {
+      "id": "switch-16-0",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 9576,
+      "output_tokens": 201
+    },
+    {
+      "id": "multi-10-0",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 12991,
+      "output_tokens": 242
+    },
+    {
+      "id": "multi-09-0",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 10537,
+      "output_tokens": 210
+    },
+    {
+      "id": "single-16-1",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 5323,
+      "output_tokens": 108
+    },
+    {
+      "id": "multi-01-0",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 16210,
+      "output_tokens": 335
+    },
+    {
+      "id": "switch-17-0",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 18288,
+      "output_tokens": 347
+    },
+    {
+      "id": "multi-09-0",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 15439,
+      "output_tokens": 280
+    },
+    {
+      "id": "single-10-1",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 5289,
+      "output_tokens": 103
+    },
+    {
+      "id": "multi-06-1",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 13176,
+      "output_tokens": 224
+    },
+    {
+      "id": "switch-07-0",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 53339,
+      "output_tokens": 1277
+    },
+    {
+      "id": "switch-08-0",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 10487,
+      "output_tokens": 208
+    },
+    {
+      "id": "single-02-0",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 4034,
+      "output_tokens": 109
+    },
+    {
+      "id": "switch-16-0",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 50585,
+      "output_tokens": 1002
+    },
+    {
+      "id": "single-01-0",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 7341,
+      "output_tokens": 184
+    },
+    {
+      "id": "multi-11-1",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 10505,
+      "output_tokens": 207
+    },
+    {
+      "id": "multi-00-0",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 8087,
+      "output_tokens": 167
+    },
+    {
+      "id": "multi-08-1",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 49521,
+      "output_tokens": 907
+    },
+    {
+      "id": "switch-00-0",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 15983,
+      "output_tokens": 344
+    },
+    {
+      "id": "multi-15-1",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 13210,
+      "output_tokens": 229
+    },
+    {
+      "id": "switch-18-1",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 16030,
+      "output_tokens": 349
+    },
+    {
+      "id": "multi-11-1",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 10505,
+      "output_tokens": 207
+    },
+    {
+      "id": "single-05-0",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 4010,
+      "output_tokens": 83
+    },
+    {
+      "id": "switch-10-1",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 10477,
+      "output_tokens": 204
+    },
+    {
+      "id": "multi-13-0",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 18202,
+      "output_tokens": 350
+    },
+    {
+      "id": "switch-11-0",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 10557,
+      "output_tokens": 210
+    },
+    {
+      "id": "switch-14-0",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 15982,
+      "output_tokens": 342
+    },
+    {
+      "id": "multi-07-1",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 10516,
+      "output_tokens": 208
+    },
+    {
+      "id": "multi-10-1",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 10478,
+      "output_tokens": 208
+    },
+    {
+      "id": "switch-15-1",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 10551,
+      "output_tokens": 208
+    },
+    {
+      "id": "switch-14-0",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 15982,
+      "output_tokens": 342
+    },
+    {
+      "id": "switch-04-1",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 8116,
+      "output_tokens": 170
+    },
+    {
+      "id": "multi-11-1",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 10505,
+      "output_tokens": 207
+    },
+    {
+      "id": "switch-03-1",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 12263,
+      "output_tokens": 250
+    },
+    {
+      "id": "multi-07-0",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 18211,
+      "output_tokens": 341
+    },
+    {
+      "id": "single-18-1",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 5163,
+      "output_tokens": 120
+    },
+    {
+      "id": "switch-11-0",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 10557,
+      "output_tokens": 210
+    },
+    {
+      "id": "single-08-1",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 7309,
+      "output_tokens": 189
+    },
+    {
+      "id": "switch-15-1",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 10551,
+      "output_tokens": 208
+    },
+    {
+      "id": "switch-05-1",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 52605,
+      "output_tokens": 1205
+    },
+    {
+      "id": "multi-19-1",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 52954,
+      "output_tokens": 1242
+    },
+    {
+      "id": "single-11-0",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 6057,
+      "output_tokens": 136
+    },
+    {
+      "id": "single-18-1",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 51531,
+      "output_tokens": 976
+    },
+    {
+      "id": "single-10-1",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 4749,
+      "output_tokens": 103
+    },
+    {
+      "id": "switch-19-0",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 15089,
+      "output_tokens": 268
+    },
+    {
+      "id": "single-02-0",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 4753,
+      "output_tokens": 107
+    },
+    {
+      "id": "switch-11-0",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 8149,
+      "output_tokens": 168
+    },
+    {
+      "id": "multi-03-1",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 10487,
+      "output_tokens": 205
+    },
+    {
+      "id": "multi-14-1",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 10456,
+      "output_tokens": 206
+    },
+    {
+      "id": "multi-16-1",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 15917,
+      "output_tokens": 341
+    },
+    {
+      "id": "single-12-1",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 4745,
+      "output_tokens": 105
+    },
+    {
+      "id": "switch-18-0",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 10443,
+      "output_tokens": 202
+    },
+    {
+      "id": "multi-04-0",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 10463,
+      "output_tokens": 207
+    },
+    {
+      "id": "multi-01-0",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 9510,
+      "output_tokens": 200
+    },
+    {
+      "id": "multi-18-0",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 10484,
+      "output_tokens": 210
+    },
+    {
+      "id": "multi-18-1",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 49641,
+      "output_tokens": 923
+    },
+    {
+      "id": "single-15-0",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 6048,
+      "output_tokens": 154
+    },
+    {
+      "id": "switch-12-0",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 9531,
+      "output_tokens": 197
+    },
+    {
+      "id": "multi-17-1",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 13886,
+      "output_tokens": 261
+    },
+    {
+      "id": "single-14-0",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 40881,
+      "output_tokens": 961
+    },
+    {
+      "id": "single-04-0",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 4006,
+      "output_tokens": 85
+    },
+    {
+      "id": "multi-04-0",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 9570,
+      "output_tokens": 188
+    },
+    {
+      "id": "multi-13-1",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 13236,
+      "output_tokens": 231
+    },
+    {
+      "id": "single-02-0",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 4753,
+      "output_tokens": 107
+    },
+    {
+      "id": "switch-18-0",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 10443,
+      "output_tokens": 202
+    },
+    {
+      "id": "single-15-1",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 7347,
+      "output_tokens": 186
+    },
+    {
+      "id": "multi-05-1",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 50724,
+      "output_tokens": 955
+    },
+    {
+      "id": "switch-12-0",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 50503,
+      "output_tokens": 1000
+    },
+    {
+      "id": "multi-00-0",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 10457,
+      "output_tokens": 209
+    },
+    {
+      "id": "switch-16-1",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 10506,
+      "output_tokens": 209
+    },
+    {
+      "id": "switch-07-1",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 10531,
+      "output_tokens": 208
+    },
+    {
+      "id": "multi-09-1",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 51078,
+      "output_tokens": 1019
+    },
+    {
+      "id": "single-14-0",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 4758,
+      "output_tokens": 106
+    },
+    {
+      "id": "multi-19-1",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 51186,
+      "output_tokens": 1021
+    },
+    {
+      "id": "switch-19-0",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 16219,
+      "output_tokens": 337
+    },
+    {
+      "id": "multi-07-0",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 18203,
+      "output_tokens": 342
+    },
+    {
+      "id": "multi-04-0",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 10463,
+      "output_tokens": 207
+    },
+    {
+      "id": "single-00-0",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 31597,
+      "output_tokens": 367
+    },
+    {
+      "id": "multi-05-0",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 20467,
+      "output_tokens": 353
+    },
+    {
+      "id": "multi-04-1",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 50729,
+      "output_tokens": 1006
+    },
+    {
+      "id": "single-01-1",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 39992,
+      "output_tokens": 963
+    },
+    {
+      "id": "single-11-1",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 4775,
+      "output_tokens": 107
+    },
+    {
+      "id": "single-10-1",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 5289,
+      "output_tokens": 103
+    },
+    {
+      "id": "switch-09-0",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 14162,
+      "output_tokens": 288
+    },
+    {
+      "id": "multi-00-1",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 17880,
+      "output_tokens": 340
+    },
+    {
+      "id": "single-15-0",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 4001,
+      "output_tokens": 84
+    },
+    {
+      "id": "multi-11-1",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 11522,
+      "output_tokens": 207
+    },
+    {
+      "id": "multi-00-0",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 10457,
+      "output_tokens": 209
+    },
+    {
+      "id": "single-12-0",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 7306,
+      "output_tokens": 192
+    },
+    {
+      "id": "switch-03-0",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 10545,
+      "output_tokens": 209
+    },
+    {
+      "id": "single-03-0",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 4018,
+      "output_tokens": 87
+    },
+    {
+      "id": "switch-15-0",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 16257,
+      "output_tokens": 335
+    },
+    {
+      "id": "multi-18-0",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 10484,
+      "output_tokens": 210
+    },
+    {
+      "id": "multi-05-0",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 47828,
+      "output_tokens": 680
+    },
+    {
+      "id": "switch-18-0",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 8086,
+      "output_tokens": 160
+    },
+    {
+      "id": "switch-15-1",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 10551,
+      "output_tokens": 208
+    },
+    {
+      "id": "multi-06-1",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 10449,
+      "output_tokens": 205
+    },
+    {
+      "id": "multi-02-1",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 10432,
+      "output_tokens": 202
+    },
+    {
+      "id": "multi-05-1",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 11411,
+      "output_tokens": 224
+    },
+    {
+      "id": "multi-14-1",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 10456,
+      "output_tokens": 206
+    },
+    {
+      "id": "single-05-1",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 5300,
+      "output_tokens": 129
+    },
+    {
+      "id": "single-09-0",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 4774,
+      "output_tokens": 108
+    },
+    {
+      "id": "single-16-0",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 4745,
+      "output_tokens": 105
+    },
+    {
+      "id": "single-06-0",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 7321,
+      "output_tokens": 193
+    },
+    {
+      "id": "multi-04-1",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 50729,
+      "output_tokens": 1006
+    },
+    {
+      "id": "switch-02-1",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 8113,
+      "output_tokens": 165
+    },
+    {
+      "id": "single-04-1",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 4762,
+      "output_tokens": 106
+    },
+    {
+      "id": "multi-00-1",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 9460,
+      "output_tokens": 199
+    },
+    {
+      "id": "single-05-1",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 4006,
+      "output_tokens": 108
+    },
+    {
+      "id": "switch-16-0",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 50585,
+      "output_tokens": 1002
+    },
+    {
+      "id": "single-10-0",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 4756,
+      "output_tokens": 106
+    },
+    {
+      "id": "multi-00-0",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 10457,
+      "output_tokens": 209
+    },
+    {
+      "id": "multi-09-0",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 10537,
+      "output_tokens": 221
+    },
+    {
+      "id": "switch-12-1",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 10509,
+      "output_tokens": 210
+    },
+    {
+      "id": "switch-13-1",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 12278,
+      "output_tokens": 252
+    },
+    {
+      "id": "multi-05-1",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 11411,
+      "output_tokens": 224
+    },
+    {
+      "id": "switch-07-0",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 53339,
+      "output_tokens": 1277
+    },
+    {
+      "id": "multi-03-0",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 16222,
+      "output_tokens": 339
+    },
+    {
+      "id": "multi-19-0",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 10513,
+      "output_tokens": 207
+    },
+    {
+      "id": "switch-02-0",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 16015,
+      "output_tokens": 346
+    },
+    {
+      "id": "multi-08-0",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 10470,
+      "output_tokens": 208
+    },
+    {
+      "id": "switch-06-1",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 11536,
+      "output_tokens": 214
+    },
+    {
+      "id": "single-14-1",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 4019,
+      "output_tokens": 111
+    },
+    {
+      "id": "single-09-1",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 7344,
+      "output_tokens": 187
+    },
+    {
+      "id": "single-10-0",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 4756,
+      "output_tokens": 106
+    },
+    {
+      "id": "single-03-1",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 4009,
+      "output_tokens": 84
+    },
+    {
+      "id": "single-03-0",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 4778,
+      "output_tokens": 108
+    },
+    {
+      "id": "single-18-0",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 4744,
+      "output_tokens": 104
+    },
+    {
+      "id": "single-02-0",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 4753,
+      "output_tokens": 107
+    },
+    {
+      "id": "switch-07-1",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 10531,
+      "output_tokens": 208
+    },
+    {
+      "id": "single-09-1",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 7344,
+      "output_tokens": 187
+    },
+    {
+      "id": "switch-03-0",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 10545,
+      "output_tokens": 209
+    },
+    {
+      "id": "multi-17-0",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 10512,
+      "output_tokens": 207
+    },
+    {
+      "id": "multi-05-1",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 50724,
+      "output_tokens": 955
+    },
+    {
+      "id": "switch-14-1",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 9698,
+      "output_tokens": 245
+    },
+    {
+      "id": "multi-17-1",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 13271,
+      "output_tokens": 245
+    },
+    {
+      "id": "multi-01-1",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 13261,
+      "output_tokens": 232
+    },
+    {
+      "id": "single-15-1",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 7341,
+      "output_tokens": 184
+    },
+    {
+      "id": "switch-14-1",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 23423,
+      "output_tokens": 505
+    },
+    {
+      "id": "single-05-0",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 40045,
+      "output_tokens": 866
+    },
+    {
+      "id": "switch-03-0",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 13313,
+      "output_tokens": 232
+    },
+    {
+      "id": "switch-18-0",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 10443,
+      "output_tokens": 202
+    },
+    {
+      "id": "single-19-1",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 6079,
+      "output_tokens": 139
+    },
+    {
+      "id": "single-06-0",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 5186,
+      "output_tokens": 120
+    },
+    {
+      "id": "multi-13-0",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 18202,
+      "output_tokens": 350
+    },
+    {
+      "id": "multi-14-0",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 15971,
+      "output_tokens": 347
+    },
+    {
+      "id": "switch-01-1",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 52963,
+      "output_tokens": 1243
+    },
+    {
+      "id": "single-16-0",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 4010,
+      "output_tokens": 85
+    },
+    {
+      "id": "switch-03-1",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 15248,
+      "output_tokens": 273
+    },
+    {
+      "id": "multi-12-1",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 46188,
+      "output_tokens": 896
+    },
+    {
+      "id": "switch-08-1",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 50544,
+      "output_tokens": 1001
+    },
+    {
+      "id": "single-19-0",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 6076,
+      "output_tokens": 159
+    },
+    {
+      "id": "multi-08-0",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 10470,
+      "output_tokens": 208
+    },
+    {
+      "id": "switch-04-0",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 15975,
+      "output_tokens": 343
+    },
+    {
+      "id": "multi-05-0",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 51435,
+      "output_tokens": 1050
+    },
+    {
+      "id": "single-07-1",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 4768,
+      "output_tokens": 107
+    },
+    {
+      "id": "switch-10-1",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 11521,
+      "output_tokens": 204
+    },
+    {
+      "id": "multi-13-0",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 9508,
+      "output_tokens": 201
+    },
+    {
+      "id": "single-02-1",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 4774,
+      "output_tokens": 133
+    },
+    {
+      "id": "multi-19-1",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 52891,
+      "output_tokens": 1239
+    },
+    {
+      "id": "switch-06-0",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 16015,
+      "output_tokens": 346
+    },
+    {
+      "id": "single-04-0",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 4006,
+      "output_tokens": 108
+    },
+    {
+      "id": "single-06-0",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 5186,
+      "output_tokens": 120
+    },
+    {
+      "id": "single-04-0",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 4006,
+      "output_tokens": 85
+    },
+    {
+      "id": "multi-18-1",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 49521,
+      "output_tokens": 907
+    },
+    {
+      "id": "switch-06-0",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 16015,
+      "output_tokens": 350
+    },
+    {
+      "id": "multi-04-0",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 9570,
+      "output_tokens": 188
+    },
+    {
+      "id": "single-00-0",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 40067,
+      "output_tokens": 978
+    },
+    {
+      "id": "single-09-0",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 4774,
+      "output_tokens": 131
+    },
+    {
+      "id": "single-03-0",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 4778,
+      "output_tokens": 108
+    },
+    {
+      "id": "single-19-1",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 5332,
+      "output_tokens": 106
+    },
+    {
+      "id": "single-16-1",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 4768,
+      "output_tokens": 108
+    },
+    {
+      "id": "multi-07-1",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 10516,
+      "output_tokens": 208
+    },
+    {
+      "id": "single-18-1",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 5163,
+      "output_tokens": 120
+    },
+    {
+      "id": "switch-03-0",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 10545,
+      "output_tokens": 209
+    },
+    {
+      "id": "single-12-1",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 4745,
+      "output_tokens": 105
+    },
+    {
+      "id": "multi-07-1",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 10516,
+      "output_tokens": 219
+    },
+    {
+      "id": "single-09-1",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 7344,
+      "output_tokens": 210
+    },
+    {
+      "id": "switch-00-0",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 16007,
+      "output_tokens": 349
+    },
+    {
+      "id": "switch-00-0",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 15983,
+      "output_tokens": 344
+    },
+    {
+      "id": "multi-07-1",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 10516,
+      "output_tokens": 219
+    },
+    {
+      "id": "multi-09-1",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 51078,
+      "output_tokens": 1019
+    },
+    {
+      "id": "multi-00-1",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 15934,
+      "output_tokens": 335
+    },
+    {
+      "id": "multi-06-1",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 10449,
+      "output_tokens": 205
+    },
+    {
+      "id": "switch-09-0",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 14137,
+      "output_tokens": 271
+    },
+    {
+      "id": "multi-17-1",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 13268,
+      "output_tokens": 242
+    },
+    {
+      "id": "single-07-1",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 4765,
+      "output_tokens": 104
+    },
+    {
+      "id": "switch-17-1",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 10532,
+      "output_tokens": 207
+    },
+    {
+      "id": "switch-13-1",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 12278,
+      "output_tokens": 252
+    },
+    {
+      "id": "single-12-1",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 4010,
+      "output_tokens": 108
+    },
+    {
+      "id": "multi-07-0",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 9529,
+      "output_tokens": 202
+    },
+    {
+      "id": "single-09-1",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 7341,
+      "output_tokens": 188
+    },
+    {
+      "id": "multi-10-0",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 50999,
+      "output_tokens": 1055
+    },
+    {
+      "id": "multi-16-1",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 10976,
+      "output_tokens": 223
+    },
+    {
+      "id": "switch-03-1",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 12263,
+      "output_tokens": 250
+    },
+    {
+      "id": "multi-02-0",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 9425,
+      "output_tokens": 201
+    },
+    {
+      "id": "single-11-1",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 39728,
+      "output_tokens": 940
+    },
+    {
+      "id": "multi-00-1",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 17880,
+      "output_tokens": 340
+    },
+    {
+      "id": "multi-14-0",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 9487,
+      "output_tokens": 204
+    },
+    {
+      "id": "multi-03-1",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 12070,
+      "output_tokens": 220
+    },
+    {
+      "id": "switch-17-0",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 18288,
+      "output_tokens": 347
+    },
+    {
+      "id": "single-05-0",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 4010,
+      "output_tokens": 83
+    },
+    {
+      "id": "single-11-0",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 4024,
+      "output_tokens": 83
+    },
+    {
+      "id": "single-13-0",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 6054,
+      "output_tokens": 133
+    },
+    {
+      "id": "single-15-0",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 6048,
+      "output_tokens": 154
+    },
+    {
+      "id": "single-15-1",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 5179,
+      "output_tokens": 120
+    },
+    {
+      "id": "single-07-0",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 7356,
+      "output_tokens": 189
+    },
+    {
+      "id": "switch-05-0",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 10556,
+      "output_tokens": 210
+    },
+    {
+      "id": "switch-03-1",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 12263,
+      "output_tokens": 250
+    },
+    {
+      "id": "switch-02-0",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 16015,
+      "output_tokens": 346
+    },
+    {
+      "id": "multi-03-0",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 16222,
+      "output_tokens": 339
+    },
+    {
+      "id": "single-16-1",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 39605,
+      "output_tokens": 936
+    },
+    {
+      "id": "multi-07-1",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 13258,
+      "output_tokens": 231
+    },
+    {
+      "id": "single-06-1",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 4021,
+      "output_tokens": 86
+    },
+    {
+      "id": "single-04-1",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 4762,
+      "output_tokens": 106
+    },
+    {
+      "id": "switch-07-1",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 10531,
+      "output_tokens": 208
+    },
+    {
+      "id": "switch-15-1",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 10551,
+      "output_tokens": 208
+    },
+    {
+      "id": "multi-07-1",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 13258,
+      "output_tokens": 231
+    },
+    {
+      "id": "single-18-1",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 5163,
+      "output_tokens": 120
+    },
+    {
+      "id": "switch-16-0",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 11115,
+      "output_tokens": 224
+    },
+    {
+      "id": "switch-00-0",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 16001,
+      "output_tokens": 347
+    },
+    {
+      "id": "switch-04-1",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 10493,
+      "output_tokens": 208
+    },
+    {
+      "id": "single-11-1",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 5335,
+      "output_tokens": 107
+    },
+    {
+      "id": "single-17-0",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 6067,
+      "output_tokens": 133
+    },
+    {
+      "id": "switch-17-0",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 18297,
+      "output_tokens": 348
+    },
+    {
+      "id": "multi-09-1",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 11395,
+      "output_tokens": 223
+    },
+    {
+      "id": "multi-01-0",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 9510,
+      "output_tokens": 200
+    },
+    {
+      "id": "single-10-1",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 4749,
+      "output_tokens": 103
+    },
+    {
+      "id": "multi-19-1",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 11419,
+      "output_tokens": 225
+    },
+    {
+      "id": "multi-05-0",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 20478,
+      "output_tokens": 354
+    },
+    {
+      "id": "single-03-0",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 4018,
+      "output_tokens": 110
+    },
+    {
+      "id": "switch-04-0",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 15975,
+      "output_tokens": 343
+    },
+    {
+      "id": "switch-14-1",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 15620,
+      "output_tokens": 342
+    },
+    {
+      "id": "multi-08-1",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 50001,
+      "output_tokens": 971
+    },
+    {
+      "id": "multi-13-1",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 10504,
+      "output_tokens": 208
+    },
+    {
+      "id": "single-02-0",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 4034,
+      "output_tokens": 86
+    },
+    {
+      "id": "single-01-0",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 7347,
+      "output_tokens": 188
+    },
+    {
+      "id": "multi-03-0",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 16222,
+      "output_tokens": 339
+    },
+    {
+      "id": "switch-04-1",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 8116,
+      "output_tokens": 170
+    },
+    {
+      "id": "single-18-1",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 7298,
+      "output_tokens": 211
+    },
+    {
+      "id": "single-17-1",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 4038,
+      "output_tokens": 87
+    },
+    {
+      "id": "single-00-1",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 7292,
+      "output_tokens": 186
+    },
+    {
+      "id": "switch-18-1",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 11049,
+      "output_tokens": 229
+    },
+    {
+      "id": "multi-14-1",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 12940,
+      "output_tokens": 222
+    },
+    {
+      "id": "single-11-0",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 6057,
+      "output_tokens": 136
+    },
+    {
+      "id": "single-10-1",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 5289,
+      "output_tokens": 103
+    },
+    {
+      "id": "single-19-0",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 41095,
+      "output_tokens": 966
+    },
+    {
+      "id": "switch-04-1",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 10493,
+      "output_tokens": 208
+    },
+    {
+      "id": "single-01-1",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 4778,
+      "output_tokens": 108
+    },
+    {
+      "id": "multi-15-0",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 9492,
+      "output_tokens": 201
+    },
+    {
+      "id": "switch-10-0",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 13036,
+      "output_tokens": 275
+    },
+    {
+      "id": "multi-01-1",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 13261,
+      "output_tokens": 232
+    },
+    {
+      "id": "switch-19-1",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 13218,
+      "output_tokens": 229
+    },
+    {
+      "id": "multi-02-1",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 10432,
+      "output_tokens": 202
+    },
+    {
+      "id": "switch-02-1",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 10460,
+      "output_tokens": 205
+    },
+    {
+      "id": "multi-12-1",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 10488,
+      "output_tokens": 208
+    },
+    {
+      "id": "single-19-1",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 6079,
+      "output_tokens": 139
+    },
+    {
+      "id": "multi-09-0",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 10537,
+      "output_tokens": 221
+    },
+    {
+      "id": "switch-14-0",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 15982,
+      "output_tokens": 342
+    },
+    {
+      "id": "switch-15-0",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 16257,
+      "output_tokens": 347
+    },
+    {
+      "id": "switch-05-0",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 10556,
+      "output_tokens": 210
+    },
+    {
+      "id": "switch-14-1",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 23450,
+      "output_tokens": 511
+    },
+    {
+      "id": "multi-08-0",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 10470,
+      "output_tokens": 208
+    },
+    {
+      "id": "single-06-0",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 7321,
+      "output_tokens": 193
+    },
+    {
+      "id": "multi-14-0",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 15905,
+      "output_tokens": 335
+    },
+    {
+      "id": "single-03-1",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 4009,
+      "output_tokens": 84
+    },
+    {
+      "id": "single-05-1",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 4765,
+      "output_tokens": 106
+    },
+    {
+      "id": "switch-03-1",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 15248,
+      "output_tokens": 273
+    },
+    {
+      "id": "single-12-1",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 4745,
+      "output_tokens": 105
+    },
+    {
+      "id": "single-07-1",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 39795,
+      "output_tokens": 955
+    },
+    {
+      "id": "switch-00-1",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 43005,
+      "output_tokens": 834
+    },
+    {
+      "id": "single-18-0",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 4744,
+      "output_tokens": 104
+    },
+    {
+      "id": "switch-07-0",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 53339,
+      "output_tokens": 1277
+    },
+    {
+      "id": "switch-12-0",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 50503,
+      "output_tokens": 1000
+    },
+    {
+      "id": "single-00-0",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 5329,
+      "output_tokens": 110
+    },
+    {
+      "id": "single-19-1",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 4772,
+      "output_tokens": 106
+    },
+    {
+      "id": "single-18-1",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 7309,
+      "output_tokens": 193
+    },
+    {
+      "id": "switch-06-1",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 11536,
+      "output_tokens": 214
+    },
+    {
+      "id": "multi-00-1",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 24049,
+      "output_tokens": 486
+    },
+    {
+      "id": "multi-00-0",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 10457,
+      "output_tokens": 209
+    },
+    {
+      "id": "switch-11-1",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 49639,
+      "output_tokens": 831
+    },
+    {
+      "id": "switch-04-1",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 10493,
+      "output_tokens": 208
+    },
+    {
+      "id": "switch-09-1",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 50759,
+      "output_tokens": 956
+    },
+    {
+      "id": "single-12-1",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 4745,
+      "output_tokens": 105
+    },
+    {
+      "id": "switch-18-0",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 10443,
+      "output_tokens": 202
+    },
+    {
+      "id": "switch-02-0",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 16012,
+      "output_tokens": 345
+    },
+    {
+      "id": "single-02-0",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 4034,
+      "output_tokens": 109
+    },
+    {
+      "id": "single-05-0",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 4010,
+      "output_tokens": 83
+    },
+    {
+      "id": "switch-18-1",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 16030,
+      "output_tokens": 349
+    },
+    {
+      "id": "switch-01-1",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 11450,
+      "output_tokens": 224
+    },
+    {
+      "id": "single-13-0",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 6054,
+      "output_tokens": 133
+    },
+    {
+      "id": "single-08-0",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 4744,
+      "output_tokens": 102
+    },
+    {
+      "id": "multi-14-0",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 9487,
+      "output_tokens": 204
+    },
+    {
+      "id": "single-11-1",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 5335,
+      "output_tokens": 107
+    },
+    {
+      "id": "switch-17-1",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 10532,
+      "output_tokens": 207
+    },
+    {
+      "id": "switch-00-1",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 38080,
+      "output_tokens": 797
+    },
+    {
+      "id": "switch-01-0",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 8192,
+      "output_tokens": 170
+    },
+    {
+      "id": "multi-14-1",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 10456,
+      "output_tokens": 206
+    },
+    {
+      "id": "switch-19-0",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 16201,
+      "output_tokens": 331
+    },
+    {
+      "id": "single-13-0",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 4027,
+      "output_tokens": 86
+    },
+    {
+      "id": "switch-17-0",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 16305,
+      "output_tokens": 352
+    },
+    {
+      "id": "multi-15-0",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 16223,
+      "output_tokens": 339
+    },
+    {
+      "id": "multi-16-1",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 9445,
+      "output_tokens": 200
+    },
+    {
+      "id": "switch-01-1",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 51059,
+      "output_tokens": 1005
+    },
+    {
+      "id": "switch-08-1",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 50544,
+      "output_tokens": 1001
+    },
+    {
+      "id": "single-13-0",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 6066,
+      "output_tokens": 139
+    },
+    {
+      "id": "single-03-1",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 6045,
+      "output_tokens": 130
+    },
+    {
+      "id": "single-06-1",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 4021,
+      "output_tokens": 109
+    },
+    {
+      "id": "multi-19-1",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 52954,
+      "output_tokens": 1242
+    },
+    {
+      "id": "single-07-1",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 4768,
+      "output_tokens": 107
+    },
+    {
+      "id": "switch-13-0",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 10556,
+      "output_tokens": 210
+    },
+    {
+      "id": "switch-13-1",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 15300,
+      "output_tokens": 275
+    },
+    {
+      "id": "single-03-1",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 6045,
+      "output_tokens": 153
+    },
+    {
+      "id": "single-02-1",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 40227,
+      "output_tokens": 986
+    },
+    {
+      "id": "multi-16-1",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 15933,
+      "output_tokens": 343
+    },
+    {
+      "id": "switch-05-0",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 10556,
+      "output_tokens": 210
+    },
+    {
+      "id": "single-05-1",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 4765,
+      "output_tokens": 106
+    },
+    {
+      "id": "single-09-0",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 8916,
+      "output_tokens": 134
+    },
+    {
+      "id": "switch-08-0",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 10487,
+      "output_tokens": 208
+    },
+    {
+      "id": "multi-14-0",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 9487,
+      "output_tokens": 204
+    },
+    {
+      "id": "switch-06-1",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 11536,
+      "output_tokens": 214
+    },
+    {
+      "id": "switch-18-0",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 9548,
+      "output_tokens": 183
+    },
+    {
+      "id": "switch-18-1",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 16051,
+      "output_tokens": 355
+    },
+    {
+      "id": "switch-05-0",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 10556,
+      "output_tokens": 210
+    },
+    {
+      "id": "single-14-0",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 4758,
+      "output_tokens": 106
+    },
+    {
+      "id": "multi-03-0",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 16222,
+      "output_tokens": 339
+    },
+    {
+      "id": "single-17-0",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 4036,
+      "output_tokens": 85
+    },
+    {
+      "id": "switch-15-1",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 13306,
+      "output_tokens": 231
+    },
+    {
+      "id": "multi-06-1",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 10449,
+      "output_tokens": 205
+    },
+    {
+      "id": "single-06-1",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 39517,
+      "output_tokens": 934
+    },
+    {
+      "id": "switch-19-0",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 16219,
+      "output_tokens": 337
+    },
+    {
+      "id": "switch-10-0",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 16016,
+      "output_tokens": 350
+    },
+    {
+      "id": "switch-11-0",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 8149,
+      "output_tokens": 168
+    },
+    {
+      "id": "multi-17-0",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 11484,
+      "output_tokens": 218
+    },
+    {
+      "id": "multi-13-0",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 18202,
+      "output_tokens": 350
+    },
+    {
+      "id": "single-00-1",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 7292,
+      "output_tokens": 186
+    },
+    {
+      "id": "multi-18-1",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 16665,
+      "output_tokens": 285
+    },
+    {
+      "id": "switch-19-1",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 13218,
+      "output_tokens": 229
+    },
+    {
+      "id": "single-07-0",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 7362,
+      "output_tokens": 191
+    },
+    {
+      "id": "switch-19-0",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 18167,
+      "output_tokens": 337
+    },
+    {
+      "id": "multi-10-1",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 13226,
+      "output_tokens": 237
+    },
+    {
+      "id": "multi-03-0",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 12940,
+      "output_tokens": 272
+    },
+    {
+      "id": "switch-11-1",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 13073,
+      "output_tokens": 244
+    },
+    {
+      "id": "switch-02-1",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 8113,
+      "output_tokens": 165
+    },
+    {
+      "id": "switch-16-0",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 50585,
+      "output_tokens": 1002
+    },
+    {
+      "id": "single-13-1",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 4033,
+      "output_tokens": 86
+    },
+    {
+      "id": "multi-11-0",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 51227,
+      "output_tokens": 1022
+    },
+    {
+      "id": "multi-03-1",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 13173,
+      "output_tokens": 228
+    },
+    {
+      "id": "multi-05-1",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 50601,
+      "output_tokens": 949
+    },
+    {
+      "id": "single-10-1",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 4749,
+      "output_tokens": 103
+    },
+    {
+      "id": "multi-18-0",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 8118,
+      "output_tokens": 168
+    },
+    {
+      "id": "multi-18-0",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 10484,
+      "output_tokens": 210
+    },
+    {
+      "id": "single-10-1",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 4749,
+      "output_tokens": 103
+    },
+    {
+      "id": "switch-09-0",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 8161,
+      "output_tokens": 167
+    },
+    {
+      "id": "single-00-1",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 5171,
+      "output_tokens": 118
+    },
+    {
+      "id": "single-08-1",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 5146,
+      "output_tokens": 120
+    },
+    {
+      "id": "single-16-0",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 4745,
+      "output_tokens": 105
+    },
+    {
+      "id": "single-08-0",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 3985,
+      "output_tokens": 105
+    },
+    {
+      "id": "switch-01-1",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 11450,
+      "output_tokens": 224
+    },
+    {
+      "id": "multi-13-1",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 12093,
+      "output_tokens": 223
+    },
+    {
+      "id": "switch-13-0",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 8187,
+      "output_tokens": 168
+    },
+    {
+      "id": "single-05-0",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 6061,
+      "output_tokens": 131
+    },
+    {
+      "id": "single-08-0",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 3985,
+      "output_tokens": 82
+    },
+    {
+      "id": "single-11-1",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 5335,
+      "output_tokens": 107
+    },
+    {
+      "id": "single-16-0",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 4745,
+      "output_tokens": 105
+    },
+    {
+      "id": "multi-18-1",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 16665,
+      "output_tokens": 285
+    },
+    {
+      "id": "switch-02-1",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 10460,
+      "output_tokens": 205
+    },
+    {
+      "id": "multi-08-1",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 50001,
+      "output_tokens": 971
+    },
+    {
+      "id": "switch-06-0",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 16015,
+      "output_tokens": 346
+    },
+    {
+      "id": "multi-15-0",
+      "arm": "upfront",
+      "seed": 113,
+      "input_tokens": 9492,
+      "output_tokens": 201
+    },
+    {
+      "id": "multi-17-0",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 10512,
+      "output_tokens": 207
+    },
+    {
+      "id": "single-07-0",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 5229,
+      "output_tokens": 125
+    },
+    {
+      "id": "single-06-1",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 4756,
+      "output_tokens": 106
+    },
+    {
+      "id": "switch-18-1",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 16051,
+      "output_tokens": 355
+    },
+    {
+      "id": "multi-11-1",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 10505,
+      "output_tokens": 207
+    },
+    {
+      "id": "single-09-1",
+      "arm": "upfront",
+      "seed": 19,
+      "input_tokens": 5176,
+      "output_tokens": 121
+    },
+    {
+      "id": "single-11-1",
+      "arm": "agent_only",
+      "seed": 421,
+      "input_tokens": 39728,
+      "output_tokens": 940
+    },
+    {
+      "id": "single-04-1",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 4017,
+      "output_tokens": 85
+    },
+    {
+      "id": "multi-15-1",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 10502,
+      "output_tokens": 206
+    },
+    {
+      "id": "single-17-1",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 40885,
+      "output_tokens": 946
+    },
+    {
+      "id": "multi-09-0",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 10537,
+      "output_tokens": 210
+    },
+    {
+      "id": "multi-14-0",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 17884,
+      "output_tokens": 344
+    },
+    {
+      "id": "switch-17-1",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 10532,
+      "output_tokens": 207
+    },
+    {
+      "id": "switch-02-1",
+      "arm": "state_guard",
+      "seed": 421,
+      "input_tokens": 10460,
+      "output_tokens": 205
+    },
+    {
+      "id": "single-10-0",
+      "arm": "agent_only",
+      "seed": 19,
+      "input_tokens": 4756,
+      "output_tokens": 106
+    },
+    {
+      "id": "switch-04-0",
+      "arm": "state_guard",
+      "seed": 19,
+      "input_tokens": 15975,
+      "output_tokens": 343
+    },
+    {
+      "id": "multi-02-0",
+      "arm": "state_guard",
+      "seed": 113,
+      "input_tokens": 15952,
+      "output_tokens": 344
+    },
+    {
+      "id": "switch-09-0",
+      "arm": "agent_only",
+      "seed": 113,
+      "input_tokens": 14183,
+      "output_tokens": 280
+    },
+    {
+      "id": "single-00-1",
+      "arm": "upfront",
+      "seed": 421,
+      "input_tokens": 5171,
+      "output_tokens": 118
+    }
+  ],
+  "note": "CPU replay of exact stored model outputs and frozen backend; no new model inference. Full logical prompt token counts, before prefix caching."
+}

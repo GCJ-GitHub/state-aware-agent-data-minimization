@@ -1,0 +1,24 @@
+{
+  "publication_date": "2026-11-19",
+  "repository_visibility": "private",
+  "checks": {
+    "known_session_credential_matches": 0,
+    "credential_and_internal_endpoint_scan": "passed",
+    "python_source_syntax": "passed",
+    "latest_headline_recomputation": "passed",
+    "latest_replayed_episodes": 2160,
+    "latest_model_inputs_verified": 27065,
+    "upstream_dataset_rows": 4160,
+    "upstream_dataset_original_hash": "verified"
+  },
+  "excluded": [
+    "API credentials",
+    "real internal API endpoints",
+    "personal home paths",
+    "model weights",
+    "virtual environments",
+    "bytecode caches",
+    "original workspace git history"
+  ],
+  "limitations": "Rule-based scan does not prove absence of every possible secret. Historical interrupted MaaS flows still lack complete action logs. Publication fingerprints are separate from original execution freezes."
+}

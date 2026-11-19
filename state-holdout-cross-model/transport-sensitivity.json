@@ -1,0 +1,28 @@
+{
+  "by_arm": {
+    "upfront": {
+      "http_attempts": 2954,
+      "failed_http_attempts": 213,
+      "interrupted_jobs": 4,
+      "first_episode_success_without_restart": 356,
+      "jobs_exceeding_24_successful_responses_including_restarts": 0
+    },
+    "agent_only": {
+      "http_attempts": 3547,
+      "failed_http_attempts": 278,
+      "interrupted_jobs": 3,
+      "first_episode_success_without_restart": 357,
+      "jobs_exceeding_24_successful_responses_including_restarts": 0
+    },
+    "state_guard": {
+      "http_attempts": 3514,
+      "failed_http_attempts": 260,
+      "interrupted_jobs": 2,
+      "first_episode_success_without_restart": 358,
+      "jobs_exceeding_24_successful_responses_including_restarts": 0
+    }
+  },
+  "interrupted_episodes": 9,
+  "extra_successful_responses_in_aborted_episodes": 33,
+  "partial_trace_limitation": "Interrupted episode action histories were not retained; completed-trajectory privacy scores do not audit all partial episodes or all physical HTTP bodies."
+}

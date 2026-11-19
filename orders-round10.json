@@ -1,0 +1,798 @@
+[
+  {
+    "id": 201,
+    "scenario": "fees",
+    "available": [
+      "retry",
+      "pickup",
+      "change"
+    ],
+    "request": "这单派送失败了，请直接处理。如果备用地址改派免费就优先改派，有费用就重派；不要自提。",
+    "facts": {
+      "change_fee_yuan": 6
+    },
+    "rules": {
+      "change": [
+        [
+          "change_fee_yuan",
+          "eq",
+          0
+        ]
+      ],
+      "retry": []
+    },
+    "priority": [
+      [
+        "change"
+      ],
+      [
+        "retry"
+      ]
+    ],
+    "target": [
+      "retry"
+    ]
+  },
+  {
+    "id": 202,
+    "scenario": "fees",
+    "available": [
+      "retry",
+      "pickup",
+      "change"
+    ],
+    "request": "这单派送失败了，请直接处理。我只接受免费改到备用地址。若收费，帮我按原址再派一次，不去自提。",
+    "facts": {
+      "change_fee_yuan": 6
+    },
+    "rules": {
+      "change": [
+        [
+          "change_fee_yuan",
+          "eq",
+          0
+        ]
+      ],
+      "retry": []
+    },
+    "priority": [
+      [
+        "change"
+      ],
+      [
+        "retry"
+      ]
+    ],
+    "target": [
+      "retry"
+    ]
+  },
+  {
+    "id": 203,
+    "scenario": "fees",
+    "available": [
+      "retry",
+      "pickup",
+      "change"
+    ],
+    "request": "这单派送失败了，请直接处理。自提停车费最多 5 元才可以优先自提，超出就原址重派。禁止改地址。",
+    "facts": {
+      "pickup_parking_fee_yuan": 5
+    },
+    "rules": {
+      "pickup": [
+        [
+          "pickup_parking_fee_yuan",
+          "lte",
+          5
+        ]
+      ],
+      "retry": []
+    },
+    "priority": [
+      [
+        "pickup"
+      ],
+      [
+        "retry"
+      ]
+    ],
+    "target": [
+      "pickup"
+    ]
+  },
+  {
+    "id": 204,
+    "scenario": "fees",
+    "available": [
+      "retry",
+      "pickup",
+      "change"
+    ],
+    "request": "这单派送失败了，请直接处理。如果自提停车收费不超过五块就自提，否则重派原地址；不能用备用地址。",
+    "facts": {
+      "pickup_parking_fee_yuan": 5
+    },
+    "rules": {
+      "pickup": [
+        [
+          "pickup_parking_fee_yuan",
+          "lte",
+          5
+        ]
+      ],
+      "retry": []
+    },
+    "priority": [
+      [
+        "pickup"
+      ],
+      [
+        "retry"
+      ]
+    ],
+    "target": [
+      "pickup"
+    ]
+  },
+  {
+    "id": 205,
+    "scenario": "fees",
+    "available": [
+      "retry",
+      "pickup",
+      "change"
+    ],
+    "request": "这单派送失败了，请直接处理。免费原址重派或免费自提都行，不分先后。改地址不接受。",
+    "facts": {
+      "retry_fee_yuan": 0,
+      "pickup_fee_yuan": 0
+    },
+    "rules": {
+      "retry": [
+        [
+          "retry_fee_yuan",
+          "eq",
+          0
+        ]
+      ],
+      "pickup": [
+        [
+          "pickup_fee_yuan",
+          "eq",
+          0
+        ]
+      ]
+    },
+    "priority": [
+      [
+        "retry",
+        "pickup"
+      ]
+    ],
+    "target": [
+      "retry",
+      "pickup"
+    ]
+  },
+  {
+    "id": 206,
+    "scenario": "fees",
+    "available": [
+      "retry",
+      "pickup",
+      "change"
+    ],
+    "request": "这单派送失败了，请直接处理。自提和重派任选一个免费的就行，不允许改派地址。",
+    "facts": {
+      "retry_fee_yuan": 0,
+      "pickup_fee_yuan": 0
+    },
+    "rules": {
+      "retry": [
+        [
+          "retry_fee_yuan",
+          "eq",
+          0
+        ]
+      ],
+      "pickup": [
+        [
+          "pickup_fee_yuan",
+          "eq",
+          0
+        ]
+      ]
+    },
+    "priority": [
+      [
+        "retry",
+        "pickup"
+      ]
+    ],
+    "target": [
+      "retry",
+      "pickup"
+    ]
+  },
+  {
+    "id": 207,
+    "scenario": "delivery_window",
+    "available": [
+      "retry",
+      "pickup",
+      "change"
+    ],
+    "request": "这单派送失败了，请直接处理。原址重派只有能在 9 点到 12 点之间送到才接受，否则改用备用地址。",
+    "facts": {
+      "retry_delivery_hour": 8
+    },
+    "rules": {
+      "retry": [
+        [
+          "retry_delivery_hour",
+          "gte",
+          9
+        ],
+        [
+          "retry_delivery_hour",
+          "lte",
+          12
+        ]
+      ],
+      "change": []
+    },
+    "priority": [
+      [
+        "retry"
+      ],
+      [
+        "change"
+      ]
+    ],
+    "target": [
+      "change"
+    ]
+  },
+  {
+    "id": 208,
+    "scenario": "delivery_window",
+    "available": [
+      "retry",
+      "pickup",
+      "change"
+    ],
+    "request": "这单派送失败了，请直接处理。请优先原址重派，但送到时间不得早于 9 点或晚于 12 点。超出时用备用地址。",
+    "facts": {
+      "retry_delivery_hour": 8
+    },
+    "rules": {
+      "retry": [
+        [
+          "retry_delivery_hour",
+          "gte",
+          9
+        ],
+        [
+          "retry_delivery_hour",
+          "lte",
+          12
+        ]
+      ],
+      "change": []
+    },
+    "priority": [
+      [
+        "retry"
+      ],
+      [
+        "change"
+      ]
+    ],
+    "target": [
+      "change"
+    ]
+  },
+  {
+    "id": 209,
+    "scenario": "delivery_window",
+    "available": [
+      "retry",
+      "pickup",
+      "change"
+    ],
+    "request": "这单派送失败了，请直接处理。备用地址有人签收只到 16 点。能在 16 点前送到就选备用地址，否则选自提，禁止原址重派。",
+    "facts": {
+      "change_delivery_hour": 15
+    },
+    "rules": {
+      "change": [
+        [
+          "change_delivery_hour",
+          "lte",
+          15
+        ]
+      ],
+      "pickup": []
+    },
+    "priority": [
+      [
+        "change"
+      ],
+      [
+        "pickup"
+      ]
+    ],
+    "target": [
+      "change"
+    ]
+  },
+  {
+    "id": 210,
+    "scenario": "delivery_window",
+    "available": [
+      "retry",
+      "pickup",
+      "change"
+    ],
+    "request": "这单派送失败了，请直接处理。别原址重派。备用地址可优先使用，但务必不晚于 15 点送达，否则自提。",
+    "facts": {
+      "change_delivery_hour": 15
+    },
+    "rules": {
+      "change": [
+        [
+          "change_delivery_hour",
+          "lte",
+          15
+        ]
+      ],
+      "pickup": []
+    },
+    "priority": [
+      [
+        "change"
+      ],
+      [
+        "pickup"
+      ]
+    ],
+    "target": [
+      "change"
+    ]
+  },
+  {
+    "id": 211,
+    "scenario": "delivery_window",
+    "available": [
+      "retry",
+      "pickup",
+      "change"
+    ],
+    "request": "这单派送失败了，请直接处理。今天下午 18 点前原址能收到就重派，不能就去自提；不允许改地址。",
+    "facts": {
+      "retry_delivery_hour": 17
+    },
+    "rules": {
+      "retry": [
+        [
+          "retry_delivery_hour",
+          "lte",
+          17
+        ]
+      ],
+      "pickup": []
+    },
+    "priority": [
+      [
+        "retry"
+      ],
+      [
+        "pickup"
+      ]
+    ],
+    "target": [
+      "retry"
+    ]
+  },
+  {
+    "id": 212,
+    "scenario": "delivery_window",
+    "available": [
+      "retry",
+      "pickup",
+      "change"
+    ],
+    "request": "这单派送失败了，请直接处理。在 17 点或之前可以送到原址的话优先重派。否则自提。不要用备用地址。",
+    "facts": {
+      "retry_delivery_hour": 17
+    },
+    "rules": {
+      "retry": [
+        [
+          "retry_delivery_hour",
+          "lte",
+          17
+        ]
+      ],
+      "pickup": []
+    },
+    "priority": [
+      [
+        "retry"
+      ],
+      [
+        "pickup"
+      ]
+    ],
+    "target": [
+      "retry"
+    ]
+  },
+  {
+    "id": 213,
+    "scenario": "service_constraints",
+    "available": [
+      "retry",
+      "pickup",
+      "change"
+    ],
+    "request": "这单派送失败了，请直接处理。只有自提柜可无障碍到达且能保存至少两天，才优先自提。否则用备用地址。禁止原址重派。",
+    "facts": {
+      "pickup_accessible": true,
+      "pickup_hold_days": 1
+    },
+    "rules": {
+      "pickup": [
+        [
+          "pickup_accessible",
+          "eq",
+          true
+        ],
+        [
+          "pickup_hold_days",
+          "gte",
+          2
+        ]
+      ],
+      "change": []
+    },
+    "priority": [
+      [
+        "pickup"
+      ],
+      [
+        "change"
+      ]
+    ],
+    "target": [
+      "change"
+    ]
+  },
+  {
+    "id": 214,
+    "scenario": "service_constraints",
+    "available": [
+      "retry",
+      "pickup",
+      "change"
+    ],
+    "request": "这单派送失败了，请直接处理。我要无障碍通行，还要至少留两天。两项都满足才去自提，否则改去备用地址，别重派。",
+    "facts": {
+      "pickup_accessible": true,
+      "pickup_hold_days": 1
+    },
+    "rules": {
+      "pickup": [
+        [
+          "pickup_accessible",
+          "eq",
+          true
+        ],
+        [
+          "pickup_hold_days",
+          "gte",
+          2
+        ]
+      ],
+      "change": []
+    },
+    "priority": [
+      [
+        "pickup"
+      ],
+      [
+        "change"
+      ]
+    ],
+    "target": [
+      "change"
+    ]
+  },
+  {
+    "id": 215,
+    "scenario": "service_constraints",
+    "available": [
+      "retry",
+      "pickup",
+      "change"
+    ],
+    "request": "这单派送失败了，请直接处理。备用地址需要签收，能安排本人签收就优先改址，否则去自提。禁止原址重派。",
+    "facts": {
+      "change_in_person_signature": true
+    },
+    "rules": {
+      "change": [
+        [
+          "change_in_person_signature",
+          "eq",
+          true
+        ]
+      ],
+      "pickup": []
+    },
+    "priority": [
+      [
+        "change"
+      ],
+      [
+        "pickup"
+      ]
+    ],
+    "target": [
+      "change"
+    ]
+  },
+  {
+    "id": 216,
+    "scenario": "service_constraints",
+    "available": [
+      "retry",
+      "pickup",
+      "change"
+    ],
+    "request": "这单派送失败了，请直接处理。优先备用地址，但必须支持本人签收；如果没有这个服务我就自提，不要重派。",
+    "facts": {
+      "change_in_person_signature": true
+    },
+    "rules": {
+      "change": [
+        [
+          "change_in_person_signature",
+          "eq",
+          true
+        ]
+      ],
+      "pickup": []
+    },
+    "priority": [
+      [
+        "change"
+      ],
+      [
+        "pickup"
+      ]
+    ],
+    "target": [
+      "change"
+    ]
+  },
+  {
+    "id": 217,
+    "scenario": "service_constraints",
+    "available": [
+      "retry",
+      "pickup",
+      "change"
+    ],
+    "request": "这单派送失败了，请直接处理。密封件只接受有室内自提柜的网点，有就在网点自提，否则原址重派。不许改地址。",
+    "facts": {
+      "pickup_indoor_locker": false
+    },
+    "rules": {
+      "pickup": [
+        [
+          "pickup_indoor_locker",
+          "eq",
+          true
+        ]
+      ],
+      "retry": []
+    },
+    "priority": [
+      [
+        "pickup"
+      ],
+      [
+        "retry"
+      ]
+    ],
+    "target": [
+      "retry"
+    ]
+  },
+  {
+    "id": 218,
+    "scenario": "service_constraints",
+    "available": [
+      "retry",
+      "pickup",
+      "change"
+    ],
+    "request": "这单派送失败了，请直接处理。要是有室内柜就帮我选自提，没有就重派到原地址。禁止使用备用地址。",
+    "facts": {
+      "pickup_indoor_locker": false
+    },
+    "rules": {
+      "pickup": [
+        [
+          "pickup_indoor_locker",
+          "eq",
+          true
+        ]
+      ],
+      "retry": []
+    },
+    "priority": [
+      [
+        "pickup"
+      ],
+      [
+        "retry"
+      ]
+    ],
+    "target": [
+      "retry"
+    ]
+  },
+  {
+    "id": 219,
+    "scenario": "rank_and_exclusion",
+    "available": [
+      "retry",
+      "pickup"
+    ],
+    "request": "这单派送失败了，请直接处理。我优先用备用地址；不可用就自提。不要原址重派。",
+    "facts": {},
+    "rules": {
+      "change": [],
+      "pickup": []
+    },
+    "priority": [
+      [
+        "change"
+      ],
+      [
+        "pickup"
+      ]
+    ],
+    "target": [
+      "pickup"
+    ]
+  },
+  {
+    "id": 220,
+    "scenario": "rank_and_exclusion",
+    "available": [
+      "retry",
+      "pickup"
+    ],
+    "request": "这单派送失败了，请直接处理。请不要重派。改派到保存的备用地址是第一选择，改不了就安排自提。",
+    "facts": {},
+    "rules": {
+      "change": [],
+      "pickup": []
+    },
+    "priority": [
+      [
+        "change"
+      ],
+      [
+        "pickup"
+      ]
+    ],
+    "target": [
+      "pickup"
+    ]
+  },
+  {
+    "id": 221,
+    "scenario": "rank_and_exclusion",
+    "available": [
+      "pickup",
+      "change"
+    ],
+    "request": "这单派送失败了，请直接处理。不准用备用地址。原址重新派送优先于自提；如果不能重派就自提。",
+    "facts": {},
+    "rules": {
+      "retry": [],
+      "pickup": []
+    },
+    "priority": [
+      [
+        "retry"
+      ],
+      [
+        "pickup"
+      ]
+    ],
+    "target": [
+      "pickup"
+    ]
+  },
+  {
+    "id": 222,
+    "scenario": "rank_and_exclusion",
+    "available": [
+      "pickup",
+      "change"
+    ],
+    "request": "这单派送失败了，请直接处理。别改配送地址，能原址重派就重派，不能重派才自提。",
+    "facts": {},
+    "rules": {
+      "retry": [],
+      "pickup": []
+    },
+    "priority": [
+      [
+        "retry"
+      ],
+      [
+        "pickup"
+      ]
+    ],
+    "target": [
+      "pickup"
+    ]
+  },
+  {
+    "id": 223,
+    "scenario": "rank_and_exclusion",
+    "available": [
+      "retry",
+      "pickup",
+      "change"
+    ],
+    "request": "这单派送失败了，请直接处理。自提和使用备用地址都可以，不分先后。禁止原址重新派送。",
+    "facts": {},
+    "rules": {
+      "pickup": [],
+      "change": []
+    },
+    "priority": [
+      [
+        "pickup",
+        "change"
+      ]
+    ],
+    "target": [
+      "pickup",
+      "change"
+    ]
+  },
+  {
+    "id": 224,
+    "scenario": "rank_and_exclusion",
+    "available": [
+      "retry",
+      "pickup",
+      "change"
+    ],
+    "request": "这单派送失败了，请直接处理。我授权自提或改派到备用地址，任选其一；原址不再收件。",
+    "facts": {},
+    "rules": {
+      "pickup": [],
+      "change": []
+    },
+    "priority": [
+      [
+        "pickup",
+        "change"
+      ]
+    ],
+    "target": [
+      "pickup",
+      "change"
+    ]
+  }
+]

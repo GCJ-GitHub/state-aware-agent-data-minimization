@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+.venv/
+venv/
+models/
+runs/
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+credentials*
+secrets*
+*token-cache*

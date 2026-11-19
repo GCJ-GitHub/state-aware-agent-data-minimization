@@ -1,0 +1,8 @@
+{
+  "sha256": "ea39d9a543de4fcc5b43fe7d3528a131cf58b4bac10f93914fa1344d3403f6a4",
+  "at": "2026-11-19T11:27:45+0800",
+  "existing_serial_episodes": 12,
+  "batch_size": 12,
+  "rule_changes": false,
+  "note": "Execution adapter only. Same frozen run_episode, model, tokenizer, prompts, tools, seeds, temperature, limits, backend and scorer. Batching may change floating point rounding; wall latency includes batch queueing and is not directly comparable with serial traces."
+}

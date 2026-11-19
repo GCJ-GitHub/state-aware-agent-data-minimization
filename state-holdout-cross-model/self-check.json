@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "scripted_workflows": 360,
+  "included_in_model_results": false,
+  "checks": [
+    "Fresh requests",
+    "Paired user/profile/authorization identity",
+    "Independent unit-specific oracle",
+    "No system personal values",
+    "Initial state gate",
+    "Cross-unit exact values",
+    "Confirmation",
+    "Terminal flag alone rejected"
+  ]
+}

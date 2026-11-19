@@ -1,0 +1,4820 @@
+{
+  "fresh-single-00-v0": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "LOG-000-1",
+        "route": "redeliver",
+        "fields": [
+          "unit1_delivery_ref"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "redeliver"
+    ],
+    "expected_success_routes": [
+      "redeliver"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_delivery_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "LOG-000-1"
+    ]
+  },
+  "fresh-single-00-v1": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "LOG-000-1",
+        "route": "locker",
+        "fields": [
+          "unit1_locker_ref"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "locker"
+    ],
+    "expected_success_routes": [
+      "locker"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_locker_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "LOG-000-1"
+    ]
+  },
+  "fresh-single-01-v0": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "REF-001-1",
+        "route": "original_payment",
+        "fields": [
+          "unit1_payment_ref"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "original_payment"
+    ],
+    "expected_success_routes": [
+      "original_payment"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_payment_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "REF-001-1"
+    ]
+  },
+  "fresh-single-01-v1": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "REF-001-1",
+        "route": "bank_transfer",
+        "fields": [
+          "unit1_account_ref",
+          "unit1_account_name_ref"
+        ],
+        "confirmation_required": true,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "bank_transfer"
+    ],
+    "expected_success_routes": [
+      "bank_transfer"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_account_ref",
+        "unit1_account_name_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "REF-001-1"
+    ]
+  },
+  "fresh-single-02-v0": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "APP-002-1",
+        "route": "home_visit",
+        "fields": [
+          "unit1_service_address",
+          "unit1_contact_ref"
+        ],
+        "confirmation_required": true,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "home_visit"
+    ],
+    "expected_success_routes": [
+      "home_visit"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_service_address",
+        "unit1_contact_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "APP-002-1"
+    ]
+  },
+  "fresh-single-02-v1": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "APP-002-1",
+        "route": "online",
+        "fields": [
+          "unit1_member_ref"
+        ],
+        "confirmation_required": true,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "online"
+    ],
+    "expected_success_routes": [
+      "online"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_member_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "APP-002-1"
+    ]
+  },
+  "fresh-single-03-v0": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "LOG-003-1",
+        "route": "pickup",
+        "fields": [
+          "unit1_postal_code"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "pickup"
+    ],
+    "expected_success_routes": [
+      "pickup"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_postal_code"
+      ]
+    ],
+    "expected_successful_items": [
+      "LOG-003-1"
+    ]
+  },
+  "fresh-single-03-v1": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "LOG-003-1",
+        "route": "redeliver",
+        "fields": [
+          "unit1_delivery_ref"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "redeliver"
+    ],
+    "expected_success_routes": [
+      "redeliver"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_delivery_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "LOG-003-1"
+    ]
+  },
+  "fresh-single-04-v0": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "REF-004-1",
+        "route": "store_credit",
+        "fields": [
+          "unit1_member_ref"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "store_credit"
+    ],
+    "expected_success_routes": [
+      "store_credit"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_member_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "REF-004-1"
+    ]
+  },
+  "fresh-single-04-v1": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "REF-004-1",
+        "route": "original_payment",
+        "fields": [
+          "unit1_payment_ref"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "original_payment"
+    ],
+    "expected_success_routes": [
+      "original_payment"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_payment_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "REF-004-1"
+    ]
+  },
+  "fresh-single-05-v0": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "APP-005-1",
+        "route": "phone",
+        "fields": [
+          "unit1_phone_number"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "phone"
+    ],
+    "expected_success_routes": [
+      "phone"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_phone_number"
+      ]
+    ],
+    "expected_successful_items": [
+      "APP-005-1"
+    ]
+  },
+  "fresh-single-05-v1": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "APP-005-1",
+        "route": "home_visit",
+        "fields": [
+          "unit1_service_address",
+          "unit1_contact_ref"
+        ],
+        "confirmation_required": true,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "home_visit"
+    ],
+    "expected_success_routes": [
+      "home_visit"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_service_address",
+        "unit1_contact_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "APP-005-1"
+    ]
+  },
+  "fresh-single-06-v0": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "LOG-006-1",
+        "route": "locker",
+        "fields": [
+          "unit1_locker_ref"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "locker"
+    ],
+    "expected_success_routes": [
+      "locker"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_locker_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "LOG-006-1"
+    ]
+  },
+  "fresh-single-06-v1": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "LOG-006-1",
+        "route": "redeliver",
+        "fields": [
+          "unit1_delivery_ref"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "redeliver"
+    ],
+    "expected_success_routes": [
+      "redeliver"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_delivery_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "LOG-006-1"
+    ]
+  },
+  "fresh-single-07-v0": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "REF-007-1",
+        "route": "original_payment",
+        "fields": [
+          "unit1_payment_ref"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "original_payment"
+    ],
+    "expected_success_routes": [
+      "original_payment"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_payment_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "REF-007-1"
+    ]
+  },
+  "fresh-single-07-v1": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "REF-007-1",
+        "route": "store_credit",
+        "fields": [
+          "unit1_member_ref"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "store_credit"
+    ],
+    "expected_success_routes": [
+      "store_credit"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_member_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "REF-007-1"
+    ]
+  },
+  "fresh-single-08-v0": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "APP-008-1",
+        "route": "home_visit",
+        "fields": [
+          "unit1_service_address",
+          "unit1_contact_ref"
+        ],
+        "confirmation_required": true,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "home_visit"
+    ],
+    "expected_success_routes": [
+      "home_visit"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_service_address",
+        "unit1_contact_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "APP-008-1"
+    ]
+  },
+  "fresh-single-08-v1": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "APP-008-1",
+        "route": "onsite",
+        "fields": [
+          "unit1_postal_code"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "onsite"
+    ],
+    "expected_success_routes": [
+      "onsite"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_postal_code"
+      ]
+    ],
+    "expected_successful_items": [
+      "APP-008-1"
+    ]
+  },
+  "fresh-single-09-v0": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "LOG-009-1",
+        "route": "redirect",
+        "fields": [
+          "unit1_backup_address",
+          "unit1_contact_ref"
+        ],
+        "confirmation_required": true,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "redirect"
+    ],
+    "expected_success_routes": [
+      "redirect"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_backup_address",
+        "unit1_contact_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "LOG-009-1"
+    ]
+  },
+  "fresh-single-09-v1": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "LOG-009-1",
+        "route": "redeliver",
+        "fields": [
+          "unit1_delivery_ref"
+        ],
+        "confirmation_required": true,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "redeliver"
+    ],
+    "expected_success_routes": [
+      "redeliver"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_delivery_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "LOG-009-1"
+    ]
+  },
+  "fresh-single-10-v0": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "REF-010-1",
+        "route": "store_credit",
+        "fields": [
+          "unit1_member_ref"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "store_credit"
+    ],
+    "expected_success_routes": [
+      "store_credit"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_member_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "REF-010-1"
+    ]
+  },
+  "fresh-single-10-v1": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "REF-010-1",
+        "route": "bank_transfer",
+        "fields": [
+          "unit1_account_ref",
+          "unit1_account_name_ref"
+        ],
+        "confirmation_required": true,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "bank_transfer"
+    ],
+    "expected_success_routes": [
+      "bank_transfer"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_account_ref",
+        "unit1_account_name_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "REF-010-1"
+    ]
+  },
+  "fresh-single-11-v0": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "APP-011-1",
+        "route": "online",
+        "fields": [
+          "unit1_member_ref"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "online"
+    ],
+    "expected_success_routes": [
+      "online"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_member_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "APP-011-1"
+    ]
+  },
+  "fresh-single-11-v1": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "APP-011-1",
+        "route": "phone",
+        "fields": [
+          "unit1_phone_number"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "phone"
+    ],
+    "expected_success_routes": [
+      "phone"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_phone_number"
+      ]
+    ],
+    "expected_successful_items": [
+      "APP-011-1"
+    ]
+  },
+  "fresh-single-12-v0": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "LOG-012-1",
+        "route": "redirect",
+        "fields": [
+          "unit1_backup_address",
+          "unit1_contact_ref"
+        ],
+        "confirmation_required": true,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "redirect"
+    ],
+    "expected_success_routes": [
+      "redirect"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_backup_address",
+        "unit1_contact_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "LOG-012-1"
+    ]
+  },
+  "fresh-single-12-v1": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "LOG-012-1",
+        "route": "locker",
+        "fields": [
+          "unit1_locker_ref"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "locker"
+    ],
+    "expected_success_routes": [
+      "locker"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_locker_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "LOG-012-1"
+    ]
+  },
+  "fresh-single-13-v0": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "REF-013-1",
+        "route": "store_credit",
+        "fields": [
+          "unit1_member_ref"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "store_credit"
+    ],
+    "expected_success_routes": [
+      "store_credit"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_member_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "REF-013-1"
+    ]
+  },
+  "fresh-single-13-v1": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "REF-013-1",
+        "route": "bank_transfer",
+        "fields": [
+          "unit1_account_ref",
+          "unit1_account_name_ref"
+        ],
+        "confirmation_required": true,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "bank_transfer"
+    ],
+    "expected_success_routes": [
+      "bank_transfer"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_account_ref",
+        "unit1_account_name_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "REF-013-1"
+    ]
+  },
+  "fresh-single-14-v0": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "APP-014-1",
+        "route": "home_visit",
+        "fields": [
+          "unit1_service_address",
+          "unit1_contact_ref"
+        ],
+        "confirmation_required": true,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "home_visit"
+    ],
+    "expected_success_routes": [
+      "home_visit"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_service_address",
+        "unit1_contact_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "APP-014-1"
+    ]
+  },
+  "fresh-single-14-v1": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "APP-014-1",
+        "route": "phone",
+        "fields": [
+          "unit1_phone_number"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "phone"
+    ],
+    "expected_success_routes": [
+      "phone"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_phone_number"
+      ]
+    ],
+    "expected_successful_items": [
+      "APP-014-1"
+    ]
+  },
+  "fresh-single-15-v0": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "LOG-015-1",
+        "route": "redeliver",
+        "fields": [
+          "unit1_delivery_ref"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "redeliver"
+    ],
+    "expected_success_routes": [
+      "redeliver"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_delivery_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "LOG-015-1"
+    ]
+  },
+  "fresh-single-15-v1": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "LOG-015-1",
+        "route": "redirect",
+        "fields": [
+          "unit1_backup_address",
+          "unit1_contact_ref"
+        ],
+        "confirmation_required": true,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "redirect"
+    ],
+    "expected_success_routes": [
+      "redirect"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_backup_address",
+        "unit1_contact_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "LOG-015-1"
+    ]
+  },
+  "fresh-single-16-v0": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "REF-016-1",
+        "route": "store_credit",
+        "fields": [
+          "unit1_member_ref"
+        ],
+        "confirmation_required": true,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "store_credit"
+    ],
+    "expected_success_routes": [
+      "store_credit"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_member_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "REF-016-1"
+    ]
+  },
+  "fresh-single-16-v1": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "REF-016-1",
+        "route": "wallet",
+        "fields": [
+          "unit1_wallet_ref"
+        ],
+        "confirmation_required": true,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "wallet"
+    ],
+    "expected_success_routes": [
+      "wallet"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_wallet_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "REF-016-1"
+    ]
+  },
+  "fresh-single-17-v0": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "APP-017-1",
+        "route": "phone",
+        "fields": [
+          "unit1_phone_number"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "phone"
+    ],
+    "expected_success_routes": [
+      "phone"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_phone_number"
+      ]
+    ],
+    "expected_successful_items": [
+      "APP-017-1"
+    ]
+  },
+  "fresh-single-17-v1": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "APP-017-1",
+        "route": "onsite",
+        "fields": [
+          "unit1_postal_code"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "onsite"
+    ],
+    "expected_success_routes": [
+      "onsite"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_postal_code"
+      ]
+    ],
+    "expected_successful_items": [
+      "APP-017-1"
+    ]
+  },
+  "fresh-single-18-v0": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "LOG-018-1",
+        "route": "pickup",
+        "fields": [
+          "unit1_postal_code"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "pickup"
+    ],
+    "expected_success_routes": [
+      "pickup"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_postal_code"
+      ]
+    ],
+    "expected_successful_items": [
+      "LOG-018-1"
+    ]
+  },
+  "fresh-single-18-v1": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "LOG-018-1",
+        "route": "redeliver",
+        "fields": [
+          "unit1_delivery_ref"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "redeliver"
+    ],
+    "expected_success_routes": [
+      "redeliver"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_delivery_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "LOG-018-1"
+    ]
+  },
+  "fresh-single-19-v0": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "REF-019-1",
+        "route": "store_credit",
+        "fields": [
+          "unit1_member_ref"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "store_credit"
+    ],
+    "expected_success_routes": [
+      "store_credit"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_member_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "REF-019-1"
+    ]
+  },
+  "fresh-single-19-v1": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "REF-019-1",
+        "route": "wallet",
+        "fields": [
+          "unit1_wallet_ref"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "wallet"
+    ],
+    "expected_success_routes": [
+      "wallet"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_wallet_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "REF-019-1"
+    ]
+  },
+  "fresh-switch-00-v0": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "REF-100-1",
+        "route": "wallet",
+        "fields": [
+          "unit1_wallet_ref"
+        ],
+        "confirmation_required": false,
+        "success": false
+      },
+      {
+        "stage": 1,
+        "item_id": "REF-100-1",
+        "route": "bank_transfer",
+        "fields": [
+          "unit1_account_ref",
+          "unit1_account_name_ref"
+        ],
+        "confirmation_required": true,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "wallet",
+      "bank_transfer"
+    ],
+    "expected_success_routes": [
+      "bank_transfer"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_wallet_ref"
+      ],
+      [
+        "unit1_account_ref",
+        "unit1_account_name_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "REF-100-1"
+    ]
+  },
+  "fresh-switch-00-v1": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "REF-100-1",
+        "route": "store_credit",
+        "fields": [
+          "unit1_member_ref"
+        ],
+        "confirmation_required": false,
+        "success": false
+      },
+      {
+        "stage": 1,
+        "item_id": "REF-100-1",
+        "route": "original_payment",
+        "fields": [
+          "unit1_payment_ref"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "store_credit",
+      "original_payment"
+    ],
+    "expected_success_routes": [
+      "original_payment"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_member_ref"
+      ],
+      [
+        "unit1_payment_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "REF-100-1"
+    ]
+  },
+  "fresh-switch-01-v0": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "APP-101-1",
+        "route": "home_visit",
+        "fields": [
+          "unit1_service_address",
+          "unit1_contact_ref"
+        ],
+        "confirmation_required": true,
+        "success": false
+      },
+      {
+        "stage": 1,
+        "item_id": "APP-101-1",
+        "route": "onsite",
+        "fields": [
+          "unit1_postal_code"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "home_visit",
+      "onsite"
+    ],
+    "expected_success_routes": [
+      "onsite"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_service_address",
+        "unit1_contact_ref"
+      ],
+      [
+        "unit1_postal_code"
+      ]
+    ],
+    "expected_successful_items": [
+      "APP-101-1"
+    ]
+  },
+  "fresh-switch-01-v1": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "APP-101-1",
+        "route": "online",
+        "fields": [
+          "unit1_member_ref"
+        ],
+        "confirmation_required": false,
+        "success": false
+      },
+      {
+        "stage": 1,
+        "item_id": "APP-101-1",
+        "route": "onsite",
+        "fields": [
+          "unit1_postal_code"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "online",
+      "onsite"
+    ],
+    "expected_success_routes": [
+      "onsite"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_member_ref"
+      ],
+      [
+        "unit1_postal_code"
+      ]
+    ],
+    "expected_successful_items": [
+      "APP-101-1"
+    ]
+  },
+  "fresh-switch-02-v0": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "LOG-102-1",
+        "route": "pickup",
+        "fields": [
+          "unit1_postal_code"
+        ],
+        "confirmation_required": true,
+        "success": false
+      },
+      {
+        "stage": 1,
+        "item_id": "LOG-102-1",
+        "route": "locker",
+        "fields": [
+          "unit1_locker_ref"
+        ],
+        "confirmation_required": true,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "pickup",
+      "locker"
+    ],
+    "expected_success_routes": [
+      "locker"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_postal_code"
+      ],
+      [
+        "unit1_locker_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "LOG-102-1"
+    ]
+  },
+  "fresh-switch-02-v1": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "LOG-102-1",
+        "route": "redeliver",
+        "fields": [
+          "unit1_delivery_ref"
+        ],
+        "confirmation_required": true,
+        "success": false
+      },
+      {
+        "stage": 1,
+        "item_id": "LOG-102-1",
+        "route": "redirect",
+        "fields": [
+          "unit1_backup_address",
+          "unit1_contact_ref"
+        ],
+        "confirmation_required": true,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "redeliver",
+      "redirect"
+    ],
+    "expected_success_routes": [
+      "redirect"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_delivery_ref"
+      ],
+      [
+        "unit1_backup_address",
+        "unit1_contact_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "LOG-102-1"
+    ]
+  },
+  "fresh-switch-03-v0": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "REF-103-1",
+        "route": "original_payment",
+        "fields": [
+          "unit1_payment_ref"
+        ],
+        "confirmation_required": false,
+        "success": false
+      },
+      {
+        "stage": 1,
+        "item_id": "REF-103-1",
+        "route": "wallet",
+        "fields": [
+          "unit1_wallet_ref"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "original_payment",
+      "wallet"
+    ],
+    "expected_success_routes": [
+      "wallet"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_payment_ref"
+      ],
+      [
+        "unit1_wallet_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "REF-103-1"
+    ]
+  },
+  "fresh-switch-03-v1": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "REF-103-1",
+        "route": "store_credit",
+        "fields": [
+          "unit1_member_ref"
+        ],
+        "confirmation_required": false,
+        "success": false
+      },
+      {
+        "stage": 1,
+        "item_id": "REF-103-1",
+        "route": "bank_transfer",
+        "fields": [
+          "unit1_account_ref",
+          "unit1_account_name_ref"
+        ],
+        "confirmation_required": true,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "store_credit",
+      "bank_transfer"
+    ],
+    "expected_success_routes": [
+      "bank_transfer"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_member_ref"
+      ],
+      [
+        "unit1_account_ref",
+        "unit1_account_name_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "REF-103-1"
+    ]
+  },
+  "fresh-switch-04-v0": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "APP-104-1",
+        "route": "home_visit",
+        "fields": [
+          "unit1_service_address",
+          "unit1_contact_ref"
+        ],
+        "confirmation_required": true,
+        "success": false
+      },
+      {
+        "stage": 1,
+        "item_id": "APP-104-1",
+        "route": "phone",
+        "fields": [
+          "unit1_phone_number"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "home_visit",
+      "phone"
+    ],
+    "expected_success_routes": [
+      "phone"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_service_address",
+        "unit1_contact_ref"
+      ],
+      [
+        "unit1_phone_number"
+      ]
+    ],
+    "expected_successful_items": [
+      "APP-104-1"
+    ]
+  },
+  "fresh-switch-04-v1": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "APP-104-1",
+        "route": "onsite",
+        "fields": [
+          "unit1_postal_code"
+        ],
+        "confirmation_required": false,
+        "success": false
+      },
+      {
+        "stage": 1,
+        "item_id": "APP-104-1",
+        "route": "online",
+        "fields": [
+          "unit1_member_ref"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "onsite",
+      "online"
+    ],
+    "expected_success_routes": [
+      "online"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_postal_code"
+      ],
+      [
+        "unit1_member_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "APP-104-1"
+    ]
+  },
+  "fresh-switch-05-v0": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "LOG-105-1",
+        "route": "redeliver",
+        "fields": [
+          "unit1_delivery_ref"
+        ],
+        "confirmation_required": false,
+        "success": false
+      },
+      {
+        "stage": 1,
+        "item_id": "LOG-105-1",
+        "route": "redirect",
+        "fields": [
+          "unit1_backup_address",
+          "unit1_contact_ref"
+        ],
+        "confirmation_required": true,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "redeliver",
+      "redirect"
+    ],
+    "expected_success_routes": [
+      "redirect"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_delivery_ref"
+      ],
+      [
+        "unit1_backup_address",
+        "unit1_contact_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "LOG-105-1"
+    ]
+  },
+  "fresh-switch-05-v1": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "LOG-105-1",
+        "route": "locker",
+        "fields": [
+          "unit1_locker_ref"
+        ],
+        "confirmation_required": false,
+        "success": false
+      },
+      {
+        "stage": 1,
+        "item_id": "LOG-105-1",
+        "route": "redirect",
+        "fields": [
+          "unit1_backup_address",
+          "unit1_contact_ref"
+        ],
+        "confirmation_required": true,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "locker",
+      "redirect"
+    ],
+    "expected_success_routes": [
+      "redirect"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_locker_ref"
+      ],
+      [
+        "unit1_backup_address",
+        "unit1_contact_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "LOG-105-1"
+    ]
+  },
+  "fresh-switch-06-v0": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "REF-106-1",
+        "route": "bank_transfer",
+        "fields": [
+          "unit1_account_ref",
+          "unit1_account_name_ref"
+        ],
+        "confirmation_required": true,
+        "success": false
+      },
+      {
+        "stage": 1,
+        "item_id": "REF-106-1",
+        "route": "wallet",
+        "fields": [
+          "unit1_wallet_ref"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "bank_transfer",
+      "wallet"
+    ],
+    "expected_success_routes": [
+      "wallet"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_account_ref",
+        "unit1_account_name_ref"
+      ],
+      [
+        "unit1_wallet_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "REF-106-1"
+    ]
+  },
+  "fresh-switch-06-v1": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "REF-106-1",
+        "route": "store_credit",
+        "fields": [
+          "unit1_member_ref"
+        ],
+        "confirmation_required": false,
+        "success": false
+      },
+      {
+        "stage": 1,
+        "item_id": "REF-106-1",
+        "route": "original_payment",
+        "fields": [
+          "unit1_payment_ref"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "store_credit",
+      "original_payment"
+    ],
+    "expected_success_routes": [
+      "original_payment"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_member_ref"
+      ],
+      [
+        "unit1_payment_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "REF-106-1"
+    ]
+  },
+  "fresh-switch-07-v0": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "APP-107-1",
+        "route": "online",
+        "fields": [
+          "unit1_member_ref"
+        ],
+        "confirmation_required": false,
+        "success": false
+      },
+      {
+        "stage": 1,
+        "item_id": "APP-107-1",
+        "route": "home_visit",
+        "fields": [
+          "unit1_service_address",
+          "unit1_contact_ref"
+        ],
+        "confirmation_required": true,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "online",
+      "home_visit"
+    ],
+    "expected_success_routes": [
+      "home_visit"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_member_ref"
+      ],
+      [
+        "unit1_service_address",
+        "unit1_contact_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "APP-107-1"
+    ]
+  },
+  "fresh-switch-07-v1": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "APP-107-1",
+        "route": "onsite",
+        "fields": [
+          "unit1_postal_code"
+        ],
+        "confirmation_required": false,
+        "success": false
+      },
+      {
+        "stage": 1,
+        "item_id": "APP-107-1",
+        "route": "phone",
+        "fields": [
+          "unit1_phone_number"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "onsite",
+      "phone"
+    ],
+    "expected_success_routes": [
+      "phone"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_postal_code"
+      ],
+      [
+        "unit1_phone_number"
+      ]
+    ],
+    "expected_successful_items": [
+      "APP-107-1"
+    ]
+  },
+  "fresh-switch-08-v0": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "LOG-108-1",
+        "route": "redirect",
+        "fields": [
+          "unit1_backup_address",
+          "unit1_contact_ref"
+        ],
+        "confirmation_required": true,
+        "success": false
+      },
+      {
+        "stage": 1,
+        "item_id": "LOG-108-1",
+        "route": "pickup",
+        "fields": [
+          "unit1_postal_code"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "redirect",
+      "pickup"
+    ],
+    "expected_success_routes": [
+      "pickup"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_backup_address",
+        "unit1_contact_ref"
+      ],
+      [
+        "unit1_postal_code"
+      ]
+    ],
+    "expected_successful_items": [
+      "LOG-108-1"
+    ]
+  },
+  "fresh-switch-08-v1": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "LOG-108-1",
+        "route": "redeliver",
+        "fields": [
+          "unit1_delivery_ref"
+        ],
+        "confirmation_required": false,
+        "success": false
+      },
+      {
+        "stage": 1,
+        "item_id": "LOG-108-1",
+        "route": "locker",
+        "fields": [
+          "unit1_locker_ref"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "redeliver",
+      "locker"
+    ],
+    "expected_success_routes": [
+      "locker"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_delivery_ref"
+      ],
+      [
+        "unit1_locker_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "LOG-108-1"
+    ]
+  },
+  "fresh-switch-09-v0": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "REF-109-1",
+        "route": "wallet",
+        "fields": [
+          "unit1_wallet_ref"
+        ],
+        "confirmation_required": true,
+        "success": false
+      },
+      {
+        "stage": 1,
+        "item_id": "REF-109-1",
+        "route": "bank_transfer",
+        "fields": [
+          "unit1_account_ref",
+          "unit1_account_name_ref"
+        ],
+        "confirmation_required": true,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "wallet",
+      "bank_transfer"
+    ],
+    "expected_success_routes": [
+      "bank_transfer"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_wallet_ref"
+      ],
+      [
+        "unit1_account_ref",
+        "unit1_account_name_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "REF-109-1"
+    ]
+  },
+  "fresh-switch-09-v1": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "REF-109-1",
+        "route": "original_payment",
+        "fields": [
+          "unit1_payment_ref"
+        ],
+        "confirmation_required": true,
+        "success": false
+      },
+      {
+        "stage": 1,
+        "item_id": "REF-109-1",
+        "route": "bank_transfer",
+        "fields": [
+          "unit1_account_ref",
+          "unit1_account_name_ref"
+        ],
+        "confirmation_required": true,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "original_payment",
+      "bank_transfer"
+    ],
+    "expected_success_routes": [
+      "bank_transfer"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_payment_ref"
+      ],
+      [
+        "unit1_account_ref",
+        "unit1_account_name_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "REF-109-1"
+    ]
+  },
+  "fresh-switch-10-v0": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "APP-110-1",
+        "route": "home_visit",
+        "fields": [
+          "unit1_service_address",
+          "unit1_contact_ref"
+        ],
+        "confirmation_required": true,
+        "success": false
+      },
+      {
+        "stage": 1,
+        "item_id": "APP-110-1",
+        "route": "phone",
+        "fields": [
+          "unit1_phone_number"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "home_visit",
+      "phone"
+    ],
+    "expected_success_routes": [
+      "phone"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_service_address",
+        "unit1_contact_ref"
+      ],
+      [
+        "unit1_phone_number"
+      ]
+    ],
+    "expected_successful_items": [
+      "APP-110-1"
+    ]
+  },
+  "fresh-switch-10-v1": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "APP-110-1",
+        "route": "onsite",
+        "fields": [
+          "unit1_postal_code"
+        ],
+        "confirmation_required": false,
+        "success": false
+      },
+      {
+        "stage": 1,
+        "item_id": "APP-110-1",
+        "route": "online",
+        "fields": [
+          "unit1_member_ref"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "onsite",
+      "online"
+    ],
+    "expected_success_routes": [
+      "online"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_postal_code"
+      ],
+      [
+        "unit1_member_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "APP-110-1"
+    ]
+  },
+  "fresh-switch-11-v0": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "LOG-111-1",
+        "route": "pickup",
+        "fields": [
+          "unit1_postal_code"
+        ],
+        "confirmation_required": false,
+        "success": false
+      },
+      {
+        "stage": 1,
+        "item_id": "LOG-111-1",
+        "route": "locker",
+        "fields": [
+          "unit1_locker_ref"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "pickup",
+      "locker"
+    ],
+    "expected_success_routes": [
+      "locker"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_postal_code"
+      ],
+      [
+        "unit1_locker_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "LOG-111-1"
+    ]
+  },
+  "fresh-switch-11-v1": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "LOG-111-1",
+        "route": "redeliver",
+        "fields": [
+          "unit1_delivery_ref"
+        ],
+        "confirmation_required": false,
+        "success": false
+      },
+      {
+        "stage": 1,
+        "item_id": "LOG-111-1",
+        "route": "redirect",
+        "fields": [
+          "unit1_backup_address",
+          "unit1_contact_ref"
+        ],
+        "confirmation_required": true,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "redeliver",
+      "redirect"
+    ],
+    "expected_success_routes": [
+      "redirect"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_delivery_ref"
+      ],
+      [
+        "unit1_backup_address",
+        "unit1_contact_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "LOG-111-1"
+    ]
+  },
+  "fresh-switch-12-v0": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "REF-112-1",
+        "route": "wallet",
+        "fields": [
+          "unit1_wallet_ref"
+        ],
+        "confirmation_required": false,
+        "success": false
+      },
+      {
+        "stage": 1,
+        "item_id": "REF-112-1",
+        "route": "store_credit",
+        "fields": [
+          "unit1_member_ref"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "wallet",
+      "store_credit"
+    ],
+    "expected_success_routes": [
+      "store_credit"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_wallet_ref"
+      ],
+      [
+        "unit1_member_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "REF-112-1"
+    ]
+  },
+  "fresh-switch-12-v1": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "REF-112-1",
+        "route": "bank_transfer",
+        "fields": [
+          "unit1_account_ref",
+          "unit1_account_name_ref"
+        ],
+        "confirmation_required": true,
+        "success": false
+      },
+      {
+        "stage": 1,
+        "item_id": "REF-112-1",
+        "route": "original_payment",
+        "fields": [
+          "unit1_payment_ref"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "bank_transfer",
+      "original_payment"
+    ],
+    "expected_success_routes": [
+      "original_payment"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_account_ref",
+        "unit1_account_name_ref"
+      ],
+      [
+        "unit1_payment_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "REF-112-1"
+    ]
+  },
+  "fresh-switch-13-v0": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "APP-113-1",
+        "route": "phone",
+        "fields": [
+          "unit1_phone_number"
+        ],
+        "confirmation_required": false,
+        "success": false
+      },
+      {
+        "stage": 1,
+        "item_id": "APP-113-1",
+        "route": "online",
+        "fields": [
+          "unit1_member_ref"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "phone",
+      "online"
+    ],
+    "expected_success_routes": [
+      "online"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_phone_number"
+      ],
+      [
+        "unit1_member_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "APP-113-1"
+    ]
+  },
+  "fresh-switch-13-v1": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "APP-113-1",
+        "route": "onsite",
+        "fields": [
+          "unit1_postal_code"
+        ],
+        "confirmation_required": false,
+        "success": false
+      },
+      {
+        "stage": 1,
+        "item_id": "APP-113-1",
+        "route": "online",
+        "fields": [
+          "unit1_member_ref"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "onsite",
+      "online"
+    ],
+    "expected_success_routes": [
+      "online"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_postal_code"
+      ],
+      [
+        "unit1_member_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "APP-113-1"
+    ]
+  },
+  "fresh-switch-14-v0": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "LOG-114-1",
+        "route": "redeliver",
+        "fields": [
+          "unit1_delivery_ref"
+        ],
+        "confirmation_required": false,
+        "success": false
+      },
+      {
+        "stage": 1,
+        "item_id": "LOG-114-1",
+        "route": "redirect",
+        "fields": [
+          "unit1_backup_address",
+          "unit1_contact_ref"
+        ],
+        "confirmation_required": true,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "redeliver",
+      "redirect"
+    ],
+    "expected_success_routes": [
+      "redirect"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_delivery_ref"
+      ],
+      [
+        "unit1_backup_address",
+        "unit1_contact_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "LOG-114-1"
+    ]
+  },
+  "fresh-switch-14-v1": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "LOG-114-1",
+        "route": "pickup",
+        "fields": [
+          "unit1_postal_code"
+        ],
+        "confirmation_required": false,
+        "success": false
+      },
+      {
+        "stage": 1,
+        "item_id": "LOG-114-1",
+        "route": "locker",
+        "fields": [
+          "unit1_locker_ref"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "pickup",
+      "locker"
+    ],
+    "expected_success_routes": [
+      "locker"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_postal_code"
+      ],
+      [
+        "unit1_locker_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "LOG-114-1"
+    ]
+  },
+  "fresh-switch-15-v0": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "REF-115-1",
+        "route": "wallet",
+        "fields": [
+          "unit1_wallet_ref"
+        ],
+        "confirmation_required": false,
+        "success": false
+      },
+      {
+        "stage": 1,
+        "item_id": "REF-115-1",
+        "route": "original_payment",
+        "fields": [
+          "unit1_payment_ref"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "wallet",
+      "original_payment"
+    ],
+    "expected_success_routes": [
+      "original_payment"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_wallet_ref"
+      ],
+      [
+        "unit1_payment_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "REF-115-1"
+    ]
+  },
+  "fresh-switch-15-v1": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "REF-115-1",
+        "route": "store_credit",
+        "fields": [
+          "unit1_member_ref"
+        ],
+        "confirmation_required": false,
+        "success": false
+      },
+      {
+        "stage": 1,
+        "item_id": "REF-115-1",
+        "route": "bank_transfer",
+        "fields": [
+          "unit1_account_ref",
+          "unit1_account_name_ref"
+        ],
+        "confirmation_required": true,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "store_credit",
+      "bank_transfer"
+    ],
+    "expected_success_routes": [
+      "bank_transfer"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_member_ref"
+      ],
+      [
+        "unit1_account_ref",
+        "unit1_account_name_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "REF-115-1"
+    ]
+  },
+  "fresh-switch-16-v0": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "APP-116-1",
+        "route": "online",
+        "fields": [
+          "unit1_member_ref"
+        ],
+        "confirmation_required": true,
+        "success": false
+      },
+      {
+        "stage": 1,
+        "item_id": "APP-116-1",
+        "route": "phone",
+        "fields": [
+          "unit1_phone_number"
+        ],
+        "confirmation_required": true,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "online",
+      "phone"
+    ],
+    "expected_success_routes": [
+      "phone"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_member_ref"
+      ],
+      [
+        "unit1_phone_number"
+      ]
+    ],
+    "expected_successful_items": [
+      "APP-116-1"
+    ]
+  },
+  "fresh-switch-16-v1": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "APP-116-1",
+        "route": "onsite",
+        "fields": [
+          "unit1_postal_code"
+        ],
+        "confirmation_required": true,
+        "success": false
+      },
+      {
+        "stage": 1,
+        "item_id": "APP-116-1",
+        "route": "home_visit",
+        "fields": [
+          "unit1_service_address",
+          "unit1_contact_ref"
+        ],
+        "confirmation_required": true,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "onsite",
+      "home_visit"
+    ],
+    "expected_success_routes": [
+      "home_visit"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_postal_code"
+      ],
+      [
+        "unit1_service_address",
+        "unit1_contact_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "APP-116-1"
+    ]
+  },
+  "fresh-switch-17-v0": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "LOG-117-1",
+        "route": "redirect",
+        "fields": [
+          "unit1_backup_address",
+          "unit1_contact_ref"
+        ],
+        "confirmation_required": true,
+        "success": false
+      },
+      {
+        "stage": 1,
+        "item_id": "LOG-117-1",
+        "route": "redeliver",
+        "fields": [
+          "unit1_delivery_ref"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "redirect",
+      "redeliver"
+    ],
+    "expected_success_routes": [
+      "redeliver"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_backup_address",
+        "unit1_contact_ref"
+      ],
+      [
+        "unit1_delivery_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "LOG-117-1"
+    ]
+  },
+  "fresh-switch-17-v1": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "LOG-117-1",
+        "route": "locker",
+        "fields": [
+          "unit1_locker_ref"
+        ],
+        "confirmation_required": false,
+        "success": false
+      },
+      {
+        "stage": 1,
+        "item_id": "LOG-117-1",
+        "route": "redeliver",
+        "fields": [
+          "unit1_delivery_ref"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "locker",
+      "redeliver"
+    ],
+    "expected_success_routes": [
+      "redeliver"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_locker_ref"
+      ],
+      [
+        "unit1_delivery_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "LOG-117-1"
+    ]
+  },
+  "fresh-switch-18-v0": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "REF-118-1",
+        "route": "original_payment",
+        "fields": [
+          "unit1_payment_ref"
+        ],
+        "confirmation_required": false,
+        "success": false
+      },
+      {
+        "stage": 1,
+        "item_id": "REF-118-1",
+        "route": "store_credit",
+        "fields": [
+          "unit1_member_ref"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "original_payment",
+      "store_credit"
+    ],
+    "expected_success_routes": [
+      "store_credit"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_payment_ref"
+      ],
+      [
+        "unit1_member_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "REF-118-1"
+    ]
+  },
+  "fresh-switch-18-v1": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "REF-118-1",
+        "route": "wallet",
+        "fields": [
+          "unit1_wallet_ref"
+        ],
+        "confirmation_required": false,
+        "success": false
+      },
+      {
+        "stage": 1,
+        "item_id": "REF-118-1",
+        "route": "bank_transfer",
+        "fields": [
+          "unit1_account_ref",
+          "unit1_account_name_ref"
+        ],
+        "confirmation_required": true,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "wallet",
+      "bank_transfer"
+    ],
+    "expected_success_routes": [
+      "bank_transfer"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_wallet_ref"
+      ],
+      [
+        "unit1_account_ref",
+        "unit1_account_name_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "REF-118-1"
+    ]
+  },
+  "fresh-switch-19-v0": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "APP-119-1",
+        "route": "home_visit",
+        "fields": [
+          "unit1_service_address",
+          "unit1_contact_ref"
+        ],
+        "confirmation_required": true,
+        "success": false
+      },
+      {
+        "stage": 1,
+        "item_id": "APP-119-1",
+        "route": "online",
+        "fields": [
+          "unit1_member_ref"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "home_visit",
+      "online"
+    ],
+    "expected_success_routes": [
+      "online"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_service_address",
+        "unit1_contact_ref"
+      ],
+      [
+        "unit1_member_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "APP-119-1"
+    ]
+  },
+  "fresh-switch-19-v1": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "APP-119-1",
+        "route": "onsite",
+        "fields": [
+          "unit1_postal_code"
+        ],
+        "confirmation_required": false,
+        "success": false
+      },
+      {
+        "stage": 1,
+        "item_id": "APP-119-1",
+        "route": "phone",
+        "fields": [
+          "unit1_phone_number"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "onsite",
+      "phone"
+    ],
+    "expected_success_routes": [
+      "phone"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_postal_code"
+      ],
+      [
+        "unit1_phone_number"
+      ]
+    ],
+    "expected_successful_items": [
+      "APP-119-1"
+    ]
+  },
+  "fresh-multi-00-v0": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "APP-200-1",
+        "route": "online",
+        "fields": [
+          "unit1_member_ref"
+        ],
+        "confirmation_required": false,
+        "success": true
+      },
+      {
+        "stage": 1,
+        "item_id": "APP-200-2",
+        "route": "phone",
+        "fields": [
+          "unit2_phone_number"
+        ],
+        "confirmation_required": false,
+        "success": true
+      },
+      {
+        "stage": 2,
+        "item_id": "APP-200-3",
+        "route": "onsite",
+        "fields": [
+          "unit3_postal_code"
+        ],
+        "confirmation_required": true,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "online",
+      "phone",
+      "onsite"
+    ],
+    "expected_success_routes": [
+      "online",
+      "phone",
+      "onsite"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_member_ref"
+      ],
+      [
+        "unit2_phone_number"
+      ],
+      [
+        "unit3_postal_code"
+      ]
+    ],
+    "expected_successful_items": [
+      "APP-200-1",
+      "APP-200-2",
+      "APP-200-3"
+    ]
+  },
+  "fresh-multi-00-v1": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "APP-200-1",
+        "route": "home_visit",
+        "fields": [
+          "unit1_service_address",
+          "unit1_contact_ref"
+        ],
+        "confirmation_required": true,
+        "success": true
+      },
+      {
+        "stage": 1,
+        "item_id": "APP-200-2",
+        "route": "home_visit",
+        "fields": [
+          "unit2_service_address",
+          "unit2_contact_ref"
+        ],
+        "confirmation_required": true,
+        "success": true
+      },
+      {
+        "stage": 2,
+        "item_id": "APP-200-3",
+        "route": "online",
+        "fields": [
+          "unit3_member_ref"
+        ],
+        "confirmation_required": true,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "home_visit",
+      "home_visit",
+      "online"
+    ],
+    "expected_success_routes": [
+      "home_visit",
+      "home_visit",
+      "online"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_service_address",
+        "unit1_contact_ref"
+      ],
+      [
+        "unit2_service_address",
+        "unit2_contact_ref"
+      ],
+      [
+        "unit3_member_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "APP-200-1",
+      "APP-200-2",
+      "APP-200-3"
+    ]
+  },
+  "fresh-multi-01-v0": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "LOG-201-1",
+        "route": "pickup",
+        "fields": [
+          "unit1_postal_code"
+        ],
+        "confirmation_required": false,
+        "success": true
+      },
+      {
+        "stage": 1,
+        "item_id": "LOG-201-2",
+        "route": "locker",
+        "fields": [
+          "unit2_locker_ref"
+        ],
+        "confirmation_required": true,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "pickup",
+      "locker"
+    ],
+    "expected_success_routes": [
+      "pickup",
+      "locker"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_postal_code"
+      ],
+      [
+        "unit2_locker_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "LOG-201-1",
+      "LOG-201-2"
+    ]
+  },
+  "fresh-multi-01-v1": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "LOG-201-1",
+        "route": "redirect",
+        "fields": [
+          "unit1_backup_address",
+          "unit1_contact_ref"
+        ],
+        "confirmation_required": true,
+        "success": true
+      },
+      {
+        "stage": 1,
+        "item_id": "LOG-201-2",
+        "route": "redeliver",
+        "fields": [
+          "unit2_delivery_ref"
+        ],
+        "confirmation_required": true,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "redirect",
+      "redeliver"
+    ],
+    "expected_success_routes": [
+      "redirect",
+      "redeliver"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_backup_address",
+        "unit1_contact_ref"
+      ],
+      [
+        "unit2_delivery_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "LOG-201-1",
+      "LOG-201-2"
+    ]
+  },
+  "fresh-multi-02-v0": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "REF-202-1",
+        "route": "store_credit",
+        "fields": [
+          "unit1_member_ref"
+        ],
+        "confirmation_required": true,
+        "success": true
+      },
+      {
+        "stage": 1,
+        "item_id": "REF-202-2",
+        "route": "original_payment",
+        "fields": [
+          "unit2_payment_ref"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "store_credit",
+      "original_payment"
+    ],
+    "expected_success_routes": [
+      "store_credit",
+      "original_payment"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_member_ref"
+      ],
+      [
+        "unit2_payment_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "REF-202-1",
+      "REF-202-2"
+    ]
+  },
+  "fresh-multi-02-v1": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "REF-202-1",
+        "route": "original_payment",
+        "fields": [
+          "unit1_payment_ref"
+        ],
+        "confirmation_required": true,
+        "success": true
+      },
+      {
+        "stage": 1,
+        "item_id": "REF-202-2",
+        "route": "wallet",
+        "fields": [
+          "unit2_wallet_ref"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "original_payment",
+      "wallet"
+    ],
+    "expected_success_routes": [
+      "original_payment",
+      "wallet"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_payment_ref"
+      ],
+      [
+        "unit2_wallet_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "REF-202-1",
+      "REF-202-2"
+    ]
+  },
+  "fresh-multi-03-v0": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "APP-203-1",
+        "route": "home_visit",
+        "fields": [
+          "unit1_service_address",
+          "unit1_contact_ref"
+        ],
+        "confirmation_required": true,
+        "success": true
+      },
+      {
+        "stage": 1,
+        "item_id": "APP-203-2",
+        "route": "onsite",
+        "fields": [
+          "unit2_postal_code"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "home_visit",
+      "onsite"
+    ],
+    "expected_success_routes": [
+      "home_visit",
+      "onsite"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_service_address",
+        "unit1_contact_ref"
+      ],
+      [
+        "unit2_postal_code"
+      ]
+    ],
+    "expected_successful_items": [
+      "APP-203-1",
+      "APP-203-2"
+    ]
+  },
+  "fresh-multi-03-v1": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "APP-203-1",
+        "route": "phone",
+        "fields": [
+          "unit1_phone_number"
+        ],
+        "confirmation_required": false,
+        "success": true
+      },
+      {
+        "stage": 1,
+        "item_id": "APP-203-2",
+        "route": "online",
+        "fields": [
+          "unit2_member_ref"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "phone",
+      "online"
+    ],
+    "expected_success_routes": [
+      "phone",
+      "online"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_phone_number"
+      ],
+      [
+        "unit2_member_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "APP-203-1",
+      "APP-203-2"
+    ]
+  },
+  "fresh-multi-04-v0": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "LOG-204-1",
+        "route": "pickup",
+        "fields": [
+          "unit1_postal_code"
+        ],
+        "confirmation_required": false,
+        "success": true
+      },
+      {
+        "stage": 1,
+        "item_id": "LOG-204-2",
+        "route": "locker",
+        "fields": [
+          "unit2_locker_ref"
+        ],
+        "confirmation_required": false,
+        "success": true
+      },
+      {
+        "stage": 2,
+        "item_id": "LOG-204-3",
+        "route": "redeliver",
+        "fields": [
+          "unit3_delivery_ref"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "pickup",
+      "locker",
+      "redeliver"
+    ],
+    "expected_success_routes": [
+      "pickup",
+      "locker",
+      "redeliver"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_postal_code"
+      ],
+      [
+        "unit2_locker_ref"
+      ],
+      [
+        "unit3_delivery_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "LOG-204-1",
+      "LOG-204-2",
+      "LOG-204-3"
+    ]
+  },
+  "fresh-multi-04-v1": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "LOG-204-1",
+        "route": "redeliver",
+        "fields": [
+          "unit1_delivery_ref"
+        ],
+        "confirmation_required": false,
+        "success": true
+      },
+      {
+        "stage": 1,
+        "item_id": "LOG-204-2",
+        "route": "redeliver",
+        "fields": [
+          "unit2_delivery_ref"
+        ],
+        "confirmation_required": false,
+        "success": true
+      },
+      {
+        "stage": 2,
+        "item_id": "LOG-204-3",
+        "route": "redirect",
+        "fields": [
+          "unit3_backup_address",
+          "unit3_contact_ref"
+        ],
+        "confirmation_required": true,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "redeliver",
+      "redeliver",
+      "redirect"
+    ],
+    "expected_success_routes": [
+      "redeliver",
+      "redeliver",
+      "redirect"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_delivery_ref"
+      ],
+      [
+        "unit2_delivery_ref"
+      ],
+      [
+        "unit3_backup_address",
+        "unit3_contact_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "LOG-204-1",
+      "LOG-204-2",
+      "LOG-204-3"
+    ]
+  },
+  "fresh-multi-05-v0": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "REF-205-1",
+        "route": "bank_transfer",
+        "fields": [
+          "unit1_account_ref",
+          "unit1_account_name_ref"
+        ],
+        "confirmation_required": true,
+        "success": true
+      },
+      {
+        "stage": 1,
+        "item_id": "REF-205-2",
+        "route": "wallet",
+        "fields": [
+          "unit2_wallet_ref"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "bank_transfer",
+      "wallet"
+    ],
+    "expected_success_routes": [
+      "bank_transfer",
+      "wallet"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_account_ref",
+        "unit1_account_name_ref"
+      ],
+      [
+        "unit2_wallet_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "REF-205-1",
+      "REF-205-2"
+    ]
+  },
+  "fresh-multi-05-v1": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "REF-205-1",
+        "route": "wallet",
+        "fields": [
+          "unit1_wallet_ref"
+        ],
+        "confirmation_required": false,
+        "success": true
+      },
+      {
+        "stage": 1,
+        "item_id": "REF-205-2",
+        "route": "store_credit",
+        "fields": [
+          "unit2_member_ref"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "wallet",
+      "store_credit"
+    ],
+    "expected_success_routes": [
+      "wallet",
+      "store_credit"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_wallet_ref"
+      ],
+      [
+        "unit2_member_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "REF-205-1",
+      "REF-205-2"
+    ]
+  },
+  "fresh-multi-06-v0": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "APP-206-1",
+        "route": "home_visit",
+        "fields": [
+          "unit1_service_address",
+          "unit1_contact_ref"
+        ],
+        "confirmation_required": true,
+        "success": true
+      },
+      {
+        "stage": 1,
+        "item_id": "APP-206-2",
+        "route": "online",
+        "fields": [
+          "unit2_member_ref"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "home_visit",
+      "online"
+    ],
+    "expected_success_routes": [
+      "home_visit",
+      "online"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_service_address",
+        "unit1_contact_ref"
+      ],
+      [
+        "unit2_member_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "APP-206-1",
+      "APP-206-2"
+    ]
+  },
+  "fresh-multi-06-v1": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "APP-206-1",
+        "route": "onsite",
+        "fields": [
+          "unit1_postal_code"
+        ],
+        "confirmation_required": false,
+        "success": true
+      },
+      {
+        "stage": 1,
+        "item_id": "APP-206-2",
+        "route": "onsite",
+        "fields": [
+          "unit2_postal_code"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "onsite",
+      "onsite"
+    ],
+    "expected_success_routes": [
+      "onsite",
+      "onsite"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_postal_code"
+      ],
+      [
+        "unit2_postal_code"
+      ]
+    ],
+    "expected_successful_items": [
+      "APP-206-1",
+      "APP-206-2"
+    ]
+  },
+  "fresh-multi-07-v0": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "LOG-207-1",
+        "route": "redeliver",
+        "fields": [
+          "unit1_delivery_ref"
+        ],
+        "confirmation_required": false,
+        "success": true
+      },
+      {
+        "stage": 1,
+        "item_id": "LOG-207-2",
+        "route": "redeliver",
+        "fields": [
+          "unit2_delivery_ref"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "redeliver",
+      "redeliver"
+    ],
+    "expected_success_routes": [
+      "redeliver",
+      "redeliver"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_delivery_ref"
+      ],
+      [
+        "unit2_delivery_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "LOG-207-1",
+      "LOG-207-2"
+    ]
+  },
+  "fresh-multi-07-v1": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "LOG-207-1",
+        "route": "pickup",
+        "fields": [
+          "unit1_postal_code"
+        ],
+        "confirmation_required": false,
+        "success": true
+      },
+      {
+        "stage": 1,
+        "item_id": "LOG-207-2",
+        "route": "pickup",
+        "fields": [
+          "unit2_postal_code"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "pickup",
+      "pickup"
+    ],
+    "expected_success_routes": [
+      "pickup",
+      "pickup"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_postal_code"
+      ],
+      [
+        "unit2_postal_code"
+      ]
+    ],
+    "expected_successful_items": [
+      "LOG-207-1",
+      "LOG-207-2"
+    ]
+  },
+  "fresh-multi-08-v0": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "REF-208-1",
+        "route": "wallet",
+        "fields": [
+          "unit1_wallet_ref"
+        ],
+        "confirmation_required": false,
+        "success": true
+      },
+      {
+        "stage": 1,
+        "item_id": "REF-208-2",
+        "route": "original_payment",
+        "fields": [
+          "unit2_payment_ref"
+        ],
+        "confirmation_required": true,
+        "success": true
+      },
+      {
+        "stage": 2,
+        "item_id": "REF-208-3",
+        "route": "wallet",
+        "fields": [
+          "unit3_wallet_ref"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "wallet",
+      "original_payment",
+      "wallet"
+    ],
+    "expected_success_routes": [
+      "wallet",
+      "original_payment",
+      "wallet"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_wallet_ref"
+      ],
+      [
+        "unit2_payment_ref"
+      ],
+      [
+        "unit3_wallet_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "REF-208-1",
+      "REF-208-2",
+      "REF-208-3"
+    ]
+  },
+  "fresh-multi-08-v1": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "REF-208-1",
+        "route": "bank_transfer",
+        "fields": [
+          "unit1_account_ref",
+          "unit1_account_name_ref"
+        ],
+        "confirmation_required": true,
+        "success": true
+      },
+      {
+        "stage": 1,
+        "item_id": "REF-208-2",
+        "route": "store_credit",
+        "fields": [
+          "unit2_member_ref"
+        ],
+        "confirmation_required": true,
+        "success": true
+      },
+      {
+        "stage": 2,
+        "item_id": "REF-208-3",
+        "route": "bank_transfer",
+        "fields": [
+          "unit3_account_ref",
+          "unit3_account_name_ref"
+        ],
+        "confirmation_required": true,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "bank_transfer",
+      "store_credit",
+      "bank_transfer"
+    ],
+    "expected_success_routes": [
+      "bank_transfer",
+      "store_credit",
+      "bank_transfer"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_account_ref",
+        "unit1_account_name_ref"
+      ],
+      [
+        "unit2_member_ref"
+      ],
+      [
+        "unit3_account_ref",
+        "unit3_account_name_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "REF-208-1",
+      "REF-208-2",
+      "REF-208-3"
+    ]
+  },
+  "fresh-multi-09-v0": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "APP-209-1",
+        "route": "onsite",
+        "fields": [
+          "unit1_postal_code"
+        ],
+        "confirmation_required": true,
+        "success": true
+      },
+      {
+        "stage": 1,
+        "item_id": "APP-209-2",
+        "route": "online",
+        "fields": [
+          "unit2_member_ref"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "onsite",
+      "online"
+    ],
+    "expected_success_routes": [
+      "onsite",
+      "online"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_postal_code"
+      ],
+      [
+        "unit2_member_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "APP-209-1",
+      "APP-209-2"
+    ]
+  },
+  "fresh-multi-09-v1": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "APP-209-1",
+        "route": "online",
+        "fields": [
+          "unit1_member_ref"
+        ],
+        "confirmation_required": true,
+        "success": true
+      },
+      {
+        "stage": 1,
+        "item_id": "APP-209-2",
+        "route": "phone",
+        "fields": [
+          "unit2_phone_number"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "online",
+      "phone"
+    ],
+    "expected_success_routes": [
+      "online",
+      "phone"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_member_ref"
+      ],
+      [
+        "unit2_phone_number"
+      ]
+    ],
+    "expected_successful_items": [
+      "APP-209-1",
+      "APP-209-2"
+    ]
+  },
+  "fresh-multi-10-v0": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "LOG-210-1",
+        "route": "locker",
+        "fields": [
+          "unit1_locker_ref"
+        ],
+        "confirmation_required": false,
+        "success": true
+      },
+      {
+        "stage": 1,
+        "item_id": "LOG-210-2",
+        "route": "locker",
+        "fields": [
+          "unit2_locker_ref"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "locker",
+      "locker"
+    ],
+    "expected_success_routes": [
+      "locker",
+      "locker"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_locker_ref"
+      ],
+      [
+        "unit2_locker_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "LOG-210-1",
+      "LOG-210-2"
+    ]
+  },
+  "fresh-multi-10-v1": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "LOG-210-1",
+        "route": "redirect",
+        "fields": [
+          "unit1_backup_address",
+          "unit1_contact_ref"
+        ],
+        "confirmation_required": true,
+        "success": true
+      },
+      {
+        "stage": 1,
+        "item_id": "LOG-210-2",
+        "route": "redeliver",
+        "fields": [
+          "unit2_delivery_ref"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "redirect",
+      "redeliver"
+    ],
+    "expected_success_routes": [
+      "redirect",
+      "redeliver"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_backup_address",
+        "unit1_contact_ref"
+      ],
+      [
+        "unit2_delivery_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "LOG-210-1",
+      "LOG-210-2"
+    ]
+  },
+  "fresh-multi-11-v0": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "REF-211-1",
+        "route": "original_payment",
+        "fields": [
+          "unit1_payment_ref"
+        ],
+        "confirmation_required": false,
+        "success": true
+      },
+      {
+        "stage": 1,
+        "item_id": "REF-211-2",
+        "route": "store_credit",
+        "fields": [
+          "unit2_member_ref"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "original_payment",
+      "store_credit"
+    ],
+    "expected_success_routes": [
+      "original_payment",
+      "store_credit"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_payment_ref"
+      ],
+      [
+        "unit2_member_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "REF-211-1",
+      "REF-211-2"
+    ]
+  },
+  "fresh-multi-11-v1": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "REF-211-1",
+        "route": "store_credit",
+        "fields": [
+          "unit1_member_ref"
+        ],
+        "confirmation_required": false,
+        "success": true
+      },
+      {
+        "stage": 1,
+        "item_id": "REF-211-2",
+        "route": "original_payment",
+        "fields": [
+          "unit2_payment_ref"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "store_credit",
+      "original_payment"
+    ],
+    "expected_success_routes": [
+      "store_credit",
+      "original_payment"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_member_ref"
+      ],
+      [
+        "unit2_payment_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "REF-211-1",
+      "REF-211-2"
+    ]
+  },
+  "fresh-multi-12-v0": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "APP-212-1",
+        "route": "online",
+        "fields": [
+          "unit1_member_ref"
+        ],
+        "confirmation_required": false,
+        "success": true
+      },
+      {
+        "stage": 1,
+        "item_id": "APP-212-2",
+        "route": "home_visit",
+        "fields": [
+          "unit2_service_address",
+          "unit2_contact_ref"
+        ],
+        "confirmation_required": true,
+        "success": true
+      },
+      {
+        "stage": 2,
+        "item_id": "APP-212-3",
+        "route": "home_visit",
+        "fields": [
+          "unit3_service_address",
+          "unit3_contact_ref"
+        ],
+        "confirmation_required": true,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "online",
+      "home_visit",
+      "home_visit"
+    ],
+    "expected_success_routes": [
+      "online",
+      "home_visit",
+      "home_visit"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_member_ref"
+      ],
+      [
+        "unit2_service_address",
+        "unit2_contact_ref"
+      ],
+      [
+        "unit3_service_address",
+        "unit3_contact_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "APP-212-1",
+      "APP-212-2",
+      "APP-212-3"
+    ]
+  },
+  "fresh-multi-12-v1": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "APP-212-1",
+        "route": "phone",
+        "fields": [
+          "unit1_phone_number"
+        ],
+        "confirmation_required": false,
+        "success": true
+      },
+      {
+        "stage": 1,
+        "item_id": "APP-212-2",
+        "route": "onsite",
+        "fields": [
+          "unit2_postal_code"
+        ],
+        "confirmation_required": false,
+        "success": true
+      },
+      {
+        "stage": 2,
+        "item_id": "APP-212-3",
+        "route": "online",
+        "fields": [
+          "unit3_member_ref"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "phone",
+      "onsite",
+      "online"
+    ],
+    "expected_success_routes": [
+      "phone",
+      "onsite",
+      "online"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_phone_number"
+      ],
+      [
+        "unit2_postal_code"
+      ],
+      [
+        "unit3_member_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "APP-212-1",
+      "APP-212-2",
+      "APP-212-3"
+    ]
+  },
+  "fresh-multi-13-v0": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "LOG-213-1",
+        "route": "redeliver",
+        "fields": [
+          "unit1_delivery_ref"
+        ],
+        "confirmation_required": false,
+        "success": true
+      },
+      {
+        "stage": 1,
+        "item_id": "LOG-213-2",
+        "route": "pickup",
+        "fields": [
+          "unit2_postal_code"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "redeliver",
+      "pickup"
+    ],
+    "expected_success_routes": [
+      "redeliver",
+      "pickup"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_delivery_ref"
+      ],
+      [
+        "unit2_postal_code"
+      ]
+    ],
+    "expected_successful_items": [
+      "LOG-213-1",
+      "LOG-213-2"
+    ]
+  },
+  "fresh-multi-13-v1": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "LOG-213-1",
+        "route": "locker",
+        "fields": [
+          "unit1_locker_ref"
+        ],
+        "confirmation_required": false,
+        "success": true
+      },
+      {
+        "stage": 1,
+        "item_id": "LOG-213-2",
+        "route": "locker",
+        "fields": [
+          "unit2_locker_ref"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "locker",
+      "locker"
+    ],
+    "expected_success_routes": [
+      "locker",
+      "locker"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_locker_ref"
+      ],
+      [
+        "unit2_locker_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "LOG-213-1",
+      "LOG-213-2"
+    ]
+  },
+  "fresh-multi-14-v0": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "REF-214-1",
+        "route": "bank_transfer",
+        "fields": [
+          "unit1_account_ref",
+          "unit1_account_name_ref"
+        ],
+        "confirmation_required": true,
+        "success": true
+      },
+      {
+        "stage": 1,
+        "item_id": "REF-214-2",
+        "route": "wallet",
+        "fields": [
+          "unit2_wallet_ref"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "bank_transfer",
+      "wallet"
+    ],
+    "expected_success_routes": [
+      "bank_transfer",
+      "wallet"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_account_ref",
+        "unit1_account_name_ref"
+      ],
+      [
+        "unit2_wallet_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "REF-214-1",
+      "REF-214-2"
+    ]
+  },
+  "fresh-multi-14-v1": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "REF-214-1",
+        "route": "store_credit",
+        "fields": [
+          "unit1_member_ref"
+        ],
+        "confirmation_required": false,
+        "success": true
+      },
+      {
+        "stage": 1,
+        "item_id": "REF-214-2",
+        "route": "store_credit",
+        "fields": [
+          "unit2_member_ref"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "store_credit",
+      "store_credit"
+    ],
+    "expected_success_routes": [
+      "store_credit",
+      "store_credit"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_member_ref"
+      ],
+      [
+        "unit2_member_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "REF-214-1",
+      "REF-214-2"
+    ]
+  },
+  "fresh-multi-15-v0": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "APP-215-1",
+        "route": "onsite",
+        "fields": [
+          "unit1_postal_code"
+        ],
+        "confirmation_required": false,
+        "success": true
+      },
+      {
+        "stage": 1,
+        "item_id": "APP-215-2",
+        "route": "home_visit",
+        "fields": [
+          "unit2_service_address",
+          "unit2_contact_ref"
+        ],
+        "confirmation_required": true,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "onsite",
+      "home_visit"
+    ],
+    "expected_success_routes": [
+      "onsite",
+      "home_visit"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_postal_code"
+      ],
+      [
+        "unit2_service_address",
+        "unit2_contact_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "APP-215-1",
+      "APP-215-2"
+    ]
+  },
+  "fresh-multi-15-v1": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "APP-215-1",
+        "route": "phone",
+        "fields": [
+          "unit1_phone_number"
+        ],
+        "confirmation_required": false,
+        "success": true
+      },
+      {
+        "stage": 1,
+        "item_id": "APP-215-2",
+        "route": "online",
+        "fields": [
+          "unit2_member_ref"
+        ],
+        "confirmation_required": true,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "phone",
+      "online"
+    ],
+    "expected_success_routes": [
+      "phone",
+      "online"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_phone_number"
+      ],
+      [
+        "unit2_member_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "APP-215-1",
+      "APP-215-2"
+    ]
+  },
+  "fresh-multi-16-v0": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "LOG-216-1",
+        "route": "locker",
+        "fields": [
+          "unit1_locker_ref"
+        ],
+        "confirmation_required": true,
+        "success": true
+      },
+      {
+        "stage": 1,
+        "item_id": "LOG-216-2",
+        "route": "pickup",
+        "fields": [
+          "unit2_postal_code"
+        ],
+        "confirmation_required": false,
+        "success": true
+      },
+      {
+        "stage": 2,
+        "item_id": "LOG-216-3",
+        "route": "redirect",
+        "fields": [
+          "unit3_backup_address",
+          "unit3_contact_ref"
+        ],
+        "confirmation_required": true,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "locker",
+      "pickup",
+      "redirect"
+    ],
+    "expected_success_routes": [
+      "locker",
+      "pickup",
+      "redirect"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_locker_ref"
+      ],
+      [
+        "unit2_postal_code"
+      ],
+      [
+        "unit3_backup_address",
+        "unit3_contact_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "LOG-216-1",
+      "LOG-216-2",
+      "LOG-216-3"
+    ]
+  },
+  "fresh-multi-16-v1": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "LOG-216-1",
+        "route": "redirect",
+        "fields": [
+          "unit1_backup_address",
+          "unit1_contact_ref"
+        ],
+        "confirmation_required": true,
+        "success": true
+      },
+      {
+        "stage": 1,
+        "item_id": "LOG-216-2",
+        "route": "locker",
+        "fields": [
+          "unit2_locker_ref"
+        ],
+        "confirmation_required": false,
+        "success": true
+      },
+      {
+        "stage": 2,
+        "item_id": "LOG-216-3",
+        "route": "pickup",
+        "fields": [
+          "unit3_postal_code"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "redirect",
+      "locker",
+      "pickup"
+    ],
+    "expected_success_routes": [
+      "redirect",
+      "locker",
+      "pickup"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_backup_address",
+        "unit1_contact_ref"
+      ],
+      [
+        "unit2_locker_ref"
+      ],
+      [
+        "unit3_postal_code"
+      ]
+    ],
+    "expected_successful_items": [
+      "LOG-216-1",
+      "LOG-216-2",
+      "LOG-216-3"
+    ]
+  },
+  "fresh-multi-17-v0": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "REF-217-1",
+        "route": "store_credit",
+        "fields": [
+          "unit1_member_ref"
+        ],
+        "confirmation_required": false,
+        "success": true
+      },
+      {
+        "stage": 1,
+        "item_id": "REF-217-2",
+        "route": "store_credit",
+        "fields": [
+          "unit2_member_ref"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "store_credit",
+      "store_credit"
+    ],
+    "expected_success_routes": [
+      "store_credit",
+      "store_credit"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_member_ref"
+      ],
+      [
+        "unit2_member_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "REF-217-1",
+      "REF-217-2"
+    ]
+  },
+  "fresh-multi-17-v1": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "REF-217-1",
+        "route": "bank_transfer",
+        "fields": [
+          "unit1_account_ref",
+          "unit1_account_name_ref"
+        ],
+        "confirmation_required": true,
+        "success": true
+      },
+      {
+        "stage": 1,
+        "item_id": "REF-217-2",
+        "route": "original_payment",
+        "fields": [
+          "unit2_payment_ref"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "bank_transfer",
+      "original_payment"
+    ],
+    "expected_success_routes": [
+      "bank_transfer",
+      "original_payment"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_account_ref",
+        "unit1_account_name_ref"
+      ],
+      [
+        "unit2_payment_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "REF-217-1",
+      "REF-217-2"
+    ]
+  },
+  "fresh-multi-18-v0": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "APP-218-1",
+        "route": "home_visit",
+        "fields": [
+          "unit1_service_address",
+          "unit1_contact_ref"
+        ],
+        "confirmation_required": true,
+        "success": true
+      },
+      {
+        "stage": 1,
+        "item_id": "APP-218-2",
+        "route": "onsite",
+        "fields": [
+          "unit2_postal_code"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "home_visit",
+      "onsite"
+    ],
+    "expected_success_routes": [
+      "home_visit",
+      "onsite"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_service_address",
+        "unit1_contact_ref"
+      ],
+      [
+        "unit2_postal_code"
+      ]
+    ],
+    "expected_successful_items": [
+      "APP-218-1",
+      "APP-218-2"
+    ]
+  },
+  "fresh-multi-18-v1": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "APP-218-1",
+        "route": "online",
+        "fields": [
+          "unit1_member_ref"
+        ],
+        "confirmation_required": false,
+        "success": true
+      },
+      {
+        "stage": 1,
+        "item_id": "APP-218-2",
+        "route": "phone",
+        "fields": [
+          "unit2_phone_number"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "online",
+      "phone"
+    ],
+    "expected_success_routes": [
+      "online",
+      "phone"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_member_ref"
+      ],
+      [
+        "unit2_phone_number"
+      ]
+    ],
+    "expected_successful_items": [
+      "APP-218-1",
+      "APP-218-2"
+    ]
+  },
+  "fresh-multi-19-v0": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "LOG-219-1",
+        "route": "pickup",
+        "fields": [
+          "unit1_postal_code"
+        ],
+        "confirmation_required": false,
+        "success": true
+      },
+      {
+        "stage": 1,
+        "item_id": "LOG-219-2",
+        "route": "locker",
+        "fields": [
+          "unit2_locker_ref"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "pickup",
+      "locker"
+    ],
+    "expected_success_routes": [
+      "pickup",
+      "locker"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_postal_code"
+      ],
+      [
+        "unit2_locker_ref"
+      ]
+    ],
+    "expected_successful_items": [
+      "LOG-219-1",
+      "LOG-219-2"
+    ]
+  },
+  "fresh-multi-19-v1": {
+    "expected_attempts": [
+      {
+        "stage": 0,
+        "item_id": "LOG-219-1",
+        "route": "redeliver",
+        "fields": [
+          "unit1_delivery_ref"
+        ],
+        "confirmation_required": false,
+        "success": true
+      },
+      {
+        "stage": 1,
+        "item_id": "LOG-219-2",
+        "route": "pickup",
+        "fields": [
+          "unit2_postal_code"
+        ],
+        "confirmation_required": false,
+        "success": true
+      }
+    ],
+    "expected_attempt_routes": [
+      "redeliver",
+      "pickup"
+    ],
+    "expected_success_routes": [
+      "redeliver",
+      "pickup"
+    ],
+    "required_fields_by_attempt": [
+      [
+        "unit1_delivery_ref"
+      ],
+      [
+        "unit2_postal_code"
+      ]
+    ],
+    "expected_successful_items": [
+      "LOG-219-1",
+      "LOG-219-2"
+    ]
+  }
+}

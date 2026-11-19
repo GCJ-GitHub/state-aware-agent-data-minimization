@@ -1,0 +1,7480 @@
+{
+  "n_scripted_probes": 720,
+  "passed": true,
+  "included_in_model_results": false,
+  "probes": [
+    {
+      "id": "single-00-0",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-00-0",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-00-0",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-00-0",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-00-0",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "single-00-0",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref"
+      ]
+    },
+    {
+      "id": "single-00-1",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-00-1",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-00-1",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-00-1",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-00-1",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "single-00-1",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "backup_address",
+        "contact_ref"
+      ]
+    },
+    {
+      "id": "single-01-0",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-01-0",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-01-0",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-01-0",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-01-0",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "single-01-0",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "account_ref",
+        "account_name_ref"
+      ]
+    },
+    {
+      "id": "single-01-1",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-01-1",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-01-1",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-01-1",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-01-1",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "single-01-1",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref"
+      ]
+    },
+    {
+      "id": "single-02-0",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-02-0",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-02-0",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-02-0",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-02-0",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "single-02-0",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "postal_code"
+      ]
+    },
+    {
+      "id": "single-02-1",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-02-1",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-02-1",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-02-1",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-02-1",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "single-02-1",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref"
+      ]
+    },
+    {
+      "id": "single-03-0",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-03-0",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-03-0",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-03-0",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-03-0",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "single-03-0",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref"
+      ]
+    },
+    {
+      "id": "single-03-1",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-03-1",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-03-1",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-03-1",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-03-1",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "single-03-1",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "wallet_ref"
+      ]
+    },
+    {
+      "id": "single-04-0",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-04-0",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-04-0",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-04-0",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-04-0",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "single-04-0",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-04-1",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-04-1",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-04-1",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-04-1",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-04-1",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "single-04-1",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref"
+      ]
+    },
+    {
+      "id": "single-05-0",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-05-0",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-05-0",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-05-0",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-05-0",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "single-05-0",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-05-1",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-05-1",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-05-1",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-05-1",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-05-1",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "single-05-1",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "wallet_ref"
+      ]
+    },
+    {
+      "id": "single-06-0",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-06-0",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-06-0",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-06-0",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-06-0",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "single-06-0",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "backup_address",
+        "contact_ref"
+      ]
+    },
+    {
+      "id": "single-06-1",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-06-1",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-06-1",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-06-1",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-06-1",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "single-06-1",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-07-0",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-07-0",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-07-0",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-07-0",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-07-0",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "single-07-0",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "account_ref",
+        "account_name_ref"
+      ]
+    },
+    {
+      "id": "single-07-1",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-07-1",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-07-1",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-07-1",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-07-1",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "single-07-1",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "wallet_ref"
+      ]
+    },
+    {
+      "id": "single-08-0",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-08-0",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-08-0",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-08-0",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-08-0",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "single-08-0",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-08-1",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-08-1",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-08-1",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-08-1",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-08-1",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "single-08-1",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "backup_address",
+        "contact_ref"
+      ]
+    },
+    {
+      "id": "single-09-0",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-09-0",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-09-0",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-09-0",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-09-0",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "single-09-0",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref"
+      ]
+    },
+    {
+      "id": "single-09-1",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-09-1",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-09-1",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-09-1",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-09-1",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "single-09-1",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "account_ref",
+        "account_name_ref"
+      ]
+    },
+    {
+      "id": "single-10-0",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-10-0",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-10-0",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-10-0",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-10-0",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "single-10-0",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-10-1",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-10-1",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-10-1",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-10-1",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-10-1",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "single-10-1",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "postal_code"
+      ]
+    },
+    {
+      "id": "single-11-0",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-11-0",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-11-0",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-11-0",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-11-0",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "single-11-0",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "wallet_ref"
+      ]
+    },
+    {
+      "id": "single-11-1",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-11-1",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-11-1",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-11-1",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-11-1",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "single-11-1",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref"
+      ]
+    },
+    {
+      "id": "single-12-0",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-12-0",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-12-0",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-12-0",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-12-0",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "single-12-0",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "backup_address",
+        "contact_ref"
+      ]
+    },
+    {
+      "id": "single-12-1",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-12-1",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-12-1",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-12-1",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-12-1",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "single-12-1",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-13-0",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-13-0",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-13-0",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-13-0",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-13-0",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "single-13-0",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "wallet_ref"
+      ]
+    },
+    {
+      "id": "single-13-1",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-13-1",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-13-1",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-13-1",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-13-1",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "single-13-1",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref"
+      ]
+    },
+    {
+      "id": "single-14-0",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-14-0",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-14-0",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-14-0",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-14-0",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "single-14-0",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "postal_code"
+      ]
+    },
+    {
+      "id": "single-14-1",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-14-1",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-14-1",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-14-1",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-14-1",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "single-14-1",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-15-0",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-15-0",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-15-0",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-15-0",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-15-0",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "single-15-0",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "wallet_ref"
+      ]
+    },
+    {
+      "id": "single-15-1",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-15-1",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-15-1",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-15-1",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-15-1",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "single-15-1",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "account_ref",
+        "account_name_ref"
+      ]
+    },
+    {
+      "id": "single-16-0",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-16-0",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-16-0",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-16-0",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-16-0",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "single-16-0",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-16-1",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-16-1",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-16-1",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-16-1",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-16-1",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "single-16-1",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref"
+      ]
+    },
+    {
+      "id": "single-17-0",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-17-0",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-17-0",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-17-0",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-17-0",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "single-17-0",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-17-1",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-17-1",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-17-1",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-17-1",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-17-1",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "single-17-1",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref"
+      ]
+    },
+    {
+      "id": "single-18-0",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-18-0",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-18-0",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-18-0",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-18-0",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "single-18-0",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "postal_code"
+      ]
+    },
+    {
+      "id": "single-18-1",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-18-1",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-18-1",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-18-1",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "single-18-1",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "single-18-1",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "backup_address",
+        "contact_ref"
+      ]
+    },
+    {
+      "id": "single-19-0",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-19-0",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-19-0",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-19-0",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-19-0",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "single-19-0",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-19-1",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-19-1",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-19-1",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-19-1",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "single-19-1",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "single-19-1",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref"
+      ]
+    },
+    {
+      "id": "switch-00-0",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-00-0",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-00-0",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-00-0",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-00-0",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "switch-00-0",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "backup_address",
+        "contact_ref"
+      ]
+    },
+    {
+      "id": "switch-00-1",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-00-1",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-00-1",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-00-1",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-00-1",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "switch-00-1",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "postal_code"
+      ]
+    },
+    {
+      "id": "switch-01-0",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-01-0",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-01-0",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-01-0",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-01-0",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "switch-01-0",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-01-1",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-01-1",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-01-1",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-01-1",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-01-1",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "switch-01-1",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "wallet_ref"
+      ]
+    },
+    {
+      "id": "switch-02-0",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-02-0",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-02-0",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-02-0",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-02-0",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "switch-02-0",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "backup_address",
+        "contact_ref"
+      ]
+    },
+    {
+      "id": "switch-02-1",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-02-1",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-02-1",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-02-1",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-02-1",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "switch-02-1",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-03-0",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-03-0",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-03-0",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-03-0",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-03-0",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "switch-03-0",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref"
+      ]
+    },
+    {
+      "id": "switch-03-1",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-03-1",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-03-1",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-03-1",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-03-1",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "switch-03-1",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "account_ref",
+        "account_name_ref"
+      ]
+    },
+    {
+      "id": "switch-04-0",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-04-0",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-04-0",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-04-0",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-04-0",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "switch-04-0",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "backup_address",
+        "contact_ref"
+      ]
+    },
+    {
+      "id": "switch-04-1",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-04-1",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-04-1",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-04-1",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-04-1",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "switch-04-1",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-05-0",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-05-0",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-05-0",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-05-0",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-05-0",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "switch-05-0",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref"
+      ]
+    },
+    {
+      "id": "switch-05-1",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-05-1",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-05-1",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-05-1",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-05-1",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "switch-05-1",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "wallet_ref"
+      ]
+    },
+    {
+      "id": "switch-06-0",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-06-0",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-06-0",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-06-0",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-06-0",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "switch-06-0",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "backup_address",
+        "contact_ref"
+      ]
+    },
+    {
+      "id": "switch-06-1",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-06-1",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-06-1",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-06-1",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-06-1",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "switch-06-1",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "postal_code"
+      ]
+    },
+    {
+      "id": "switch-07-0",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-07-0",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-07-0",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-07-0",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-07-0",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "switch-07-0",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-07-1",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-07-1",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-07-1",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-07-1",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-07-1",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "switch-07-1",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "wallet_ref"
+      ]
+    },
+    {
+      "id": "switch-08-0",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-08-0",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-08-0",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-08-0",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-08-0",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "switch-08-0",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "postal_code"
+      ]
+    },
+    {
+      "id": "switch-08-1",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-08-1",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-08-1",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-08-1",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-08-1",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "switch-08-1",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-09-0",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-09-0",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-09-0",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-09-0",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-09-0",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "switch-09-0",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "wallet_ref"
+      ]
+    },
+    {
+      "id": "switch-09-1",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-09-1",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-09-1",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-09-1",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-09-1",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "switch-09-1",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref"
+      ]
+    },
+    {
+      "id": "switch-10-0",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-10-0",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-10-0",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-10-0",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-10-0",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "switch-10-0",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "backup_address",
+        "contact_ref"
+      ]
+    },
+    {
+      "id": "switch-10-1",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-10-1",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-10-1",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-10-1",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-10-1",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "switch-10-1",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "postal_code"
+      ]
+    },
+    {
+      "id": "switch-11-0",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-11-0",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-11-0",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-11-0",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-11-0",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "switch-11-0",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-11-1",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-11-1",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-11-1",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-11-1",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-11-1",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "switch-11-1",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref"
+      ]
+    },
+    {
+      "id": "switch-12-0",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-12-0",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-12-0",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-12-0",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-12-0",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "switch-12-0",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-12-1",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-12-1",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-12-1",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-12-1",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-12-1",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "switch-12-1",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "postal_code"
+      ]
+    },
+    {
+      "id": "switch-13-0",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-13-0",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-13-0",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-13-0",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-13-0",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "switch-13-0",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-13-1",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-13-1",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-13-1",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-13-1",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-13-1",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "switch-13-1",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "account_ref",
+        "account_name_ref"
+      ]
+    },
+    {
+      "id": "switch-14-0",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-14-0",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-14-0",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-14-0",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-14-0",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "switch-14-0",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "backup_address",
+        "contact_ref"
+      ]
+    },
+    {
+      "id": "switch-14-1",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-14-1",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-14-1",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-14-1",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-14-1",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "switch-14-1",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-15-0",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-15-0",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-15-0",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-15-0",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-15-0",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "switch-15-0",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "account_ref",
+        "account_name_ref"
+      ]
+    },
+    {
+      "id": "switch-15-1",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-15-1",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-15-1",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-15-1",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-15-1",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "switch-15-1",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref"
+      ]
+    },
+    {
+      "id": "switch-16-0",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-16-0",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-16-0",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-16-0",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-16-0",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "switch-16-0",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-16-1",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-16-1",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-16-1",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-16-1",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-16-1",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "switch-16-1",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "postal_code"
+      ]
+    },
+    {
+      "id": "switch-17-0",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-17-0",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-17-0",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-17-0",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-17-0",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "switch-17-0",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "account_ref",
+        "account_name_ref"
+      ]
+    },
+    {
+      "id": "switch-17-1",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-17-1",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-17-1",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-17-1",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-17-1",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "switch-17-1",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-18-0",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-18-0",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-18-0",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-18-0",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-18-0",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "switch-18-0",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-18-1",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-18-1",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-18-1",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-18-1",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "switch-18-1",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "switch-18-1",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "backup_address",
+        "contact_ref"
+      ]
+    },
+    {
+      "id": "switch-19-0",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-19-0",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-19-0",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-19-0",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-19-0",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "switch-19-0",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "account_ref",
+        "account_name_ref"
+      ]
+    },
+    {
+      "id": "switch-19-1",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-19-1",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-19-1",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-19-1",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "switch-19-1",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "switch-19-1",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-00-0",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-00-0",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-00-0",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-00-0",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-00-0",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "multi-00-0",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-00-1",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-00-1",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-00-1",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-00-1",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-00-1",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "multi-00-1",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "backup_address",
+        "contact_ref"
+      ]
+    },
+    {
+      "id": "multi-01-0",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-01-0",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-01-0",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-01-0",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-01-0",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "multi-01-0",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "account_ref",
+        "account_name_ref"
+      ]
+    },
+    {
+      "id": "multi-01-1",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-01-1",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-01-1",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-01-1",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-01-1",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "multi-01-1",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-02-0",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-02-0",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-02-0",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-02-0",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-02-0",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "multi-02-0",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "backup_address",
+        "contact_ref"
+      ]
+    },
+    {
+      "id": "multi-02-1",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-02-1",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-02-1",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-02-1",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-02-1",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "multi-02-1",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-03-0",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-03-0",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-03-0",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-03-0",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-03-0",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "multi-03-0",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "account_ref",
+        "account_name_ref"
+      ]
+    },
+    {
+      "id": "multi-03-1",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-03-1",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-03-1",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-03-1",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-03-1",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "multi-03-1",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "wallet_ref"
+      ]
+    },
+    {
+      "id": "multi-04-0",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-04-0",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-04-0",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-04-0",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-04-0",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "multi-04-0",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-04-1",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-04-1",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-04-1",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-04-1",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-04-1",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "multi-04-1",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref"
+      ]
+    },
+    {
+      "id": "multi-05-0",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-05-0",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-05-0",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-05-0",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-05-0",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "multi-05-0",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "wallet_ref"
+      ]
+    },
+    {
+      "id": "multi-05-1",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-05-1",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-05-1",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-05-1",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-05-1",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "multi-05-1",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-06-0",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-06-0",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-06-0",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-06-0",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-06-0",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "multi-06-0",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "backup_address",
+        "contact_ref"
+      ]
+    },
+    {
+      "id": "multi-06-1",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-06-1",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-06-1",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-06-1",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-06-1",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "multi-06-1",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-07-0",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-07-0",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-07-0",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-07-0",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-07-0",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "multi-07-0",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "account_ref",
+        "account_name_ref"
+      ]
+    },
+    {
+      "id": "multi-07-1",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-07-1",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-07-1",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-07-1",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-07-1",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "multi-07-1",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref"
+      ]
+    },
+    {
+      "id": "multi-08-0",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-08-0",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-08-0",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-08-0",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-08-0",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "multi-08-0",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-08-1",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-08-1",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-08-1",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-08-1",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-08-1",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "multi-08-1",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "postal_code"
+      ]
+    },
+    {
+      "id": "multi-09-0",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-09-0",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-09-0",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-09-0",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-09-0",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "multi-09-0",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref"
+      ]
+    },
+    {
+      "id": "multi-09-1",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-09-1",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-09-1",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-09-1",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-09-1",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "multi-09-1",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "wallet_ref"
+      ]
+    },
+    {
+      "id": "multi-10-0",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-10-0",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-10-0",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-10-0",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-10-0",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "multi-10-0",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "postal_code"
+      ]
+    },
+    {
+      "id": "multi-10-1",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-10-1",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-10-1",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-10-1",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-10-1",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "multi-10-1",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-11-0",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-11-0",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-11-0",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-11-0",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-11-0",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "multi-11-0",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref"
+      ]
+    },
+    {
+      "id": "multi-11-1",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-11-1",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-11-1",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-11-1",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-11-1",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "multi-11-1",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-12-0",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-12-0",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-12-0",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-12-0",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-12-0",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "multi-12-0",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "backup_address",
+        "contact_ref"
+      ]
+    },
+    {
+      "id": "multi-12-1",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-12-1",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-12-1",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-12-1",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-12-1",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "multi-12-1",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref"
+      ]
+    },
+    {
+      "id": "multi-13-0",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-13-0",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-13-0",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-13-0",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-13-0",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "multi-13-0",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "account_ref",
+        "account_name_ref"
+      ]
+    },
+    {
+      "id": "multi-13-1",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-13-1",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-13-1",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-13-1",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-13-1",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "multi-13-1",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "wallet_ref"
+      ]
+    },
+    {
+      "id": "multi-14-0",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-14-0",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-14-0",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-14-0",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-14-0",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "multi-14-0",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "backup_address",
+        "contact_ref"
+      ]
+    },
+    {
+      "id": "multi-14-1",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-14-1",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-14-1",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-14-1",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-14-1",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "multi-14-1",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "postal_code"
+      ]
+    },
+    {
+      "id": "multi-15-0",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-15-0",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-15-0",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-15-0",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-15-0",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "multi-15-0",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "account_ref",
+        "account_name_ref"
+      ]
+    },
+    {
+      "id": "multi-15-1",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-15-1",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-15-1",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-15-1",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-15-1",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "multi-15-1",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref"
+      ]
+    },
+    {
+      "id": "multi-16-0",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-16-0",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-16-0",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-16-0",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-16-0",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "multi-16-0",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "postal_code"
+      ]
+    },
+    {
+      "id": "multi-16-1",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-16-1",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-16-1",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-16-1",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-16-1",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "multi-16-1",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "backup_address",
+        "contact_ref"
+      ]
+    },
+    {
+      "id": "multi-17-0",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-17-0",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-17-0",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-17-0",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-17-0",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "multi-17-0",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref"
+      ]
+    },
+    {
+      "id": "multi-17-1",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-17-1",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-17-1",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-17-1",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-17-1",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "multi-17-1",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "account_ref",
+        "account_name_ref"
+      ]
+    },
+    {
+      "id": "multi-18-0",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-18-0",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-18-0",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-18-0",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-18-0",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "multi-18-0",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-18-1",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-18-1",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-18-1",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-18-1",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "delivery_ref",
+        "postal_code",
+        "backup_address",
+        "contact_ref",
+        "locker_ref"
+      ]
+    },
+    {
+      "id": "multi-18-1",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "multi-18-1",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "postal_code"
+      ]
+    },
+    {
+      "id": "multi-19-0",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-19-0",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-19-0",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-19-0",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-19-0",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "multi-19-0",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref"
+      ]
+    },
+    {
+      "id": "multi-19-1",
+      "arm": "upfront",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-19-1",
+      "arm": "upfront",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-19-1",
+      "arm": "agent_only",
+      "phase": "before_status",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-19-1",
+      "arm": "agent_only",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "payment_ref",
+        "account_ref",
+        "account_name_ref",
+        "wallet_ref",
+        "member_ref"
+      ]
+    },
+    {
+      "id": "multi-19-1",
+      "arm": "state_guard",
+      "phase": "before_status",
+      "returned_fields": []
+    },
+    {
+      "id": "multi-19-1",
+      "arm": "state_guard",
+      "phase": "after_prepare",
+      "returned_fields": [
+        "member_ref"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "native": {
+    "upfront": {
+      "n": 56,
+      "utility_n": 28,
+      "privacy_n": 28,
+      "utility_count": 11,
+      "privacy_count": 24,
+      "negative_without_value_count": 24,
+      "negative_value_leaks": 4,
+      "private_target_seen": 4,
+      "nontarget_fields": 254,
+      "out_of_state_fields": 0,
+      "tool_calls": 18,
+      "unanswered": 0
+    },
+    "on_demand": {
+      "n": 56,
+      "utility_n": 28,
+      "privacy_n": 28,
+      "utility_count": 14,
+      "privacy_count": 24,
+      "negative_without_value_count": 24,
+      "negative_value_leaks": 4,
+      "private_target_seen": 4,
+      "nontarget_fields": 0,
+      "out_of_state_fields": 0,
+      "tool_calls": 18,
+      "unanswered": 0
+    }
+  },
+  "state_switch": {
+    "upfront": {
+      "n": 28,
+      "utility_n": 14,
+      "privacy_n": 14,
+      "utility_count": 14,
+      "privacy_count": 14,
+      "negative_without_value_count": 14,
+      "negative_value_leaks": 0,
+      "private_target_seen": 14,
+      "nontarget_fields": 28,
+      "out_of_state_fields": 28,
+      "tool_calls": 26,
+      "unanswered": 0
+    },
+    "on_demand": {
+      "n": 28,
+      "utility_n": 14,
+      "privacy_n": 14,
+      "utility_count": 14,
+      "privacy_count": 14,
+      "negative_without_value_count": 14,
+      "negative_value_leaks": 0,
+      "private_target_seen": 0,
+      "nontarget_fields": 0,
+      "out_of_state_fields": 0,
+      "tool_calls": 23,
+      "unanswered": 0
+    }
+  }
+}

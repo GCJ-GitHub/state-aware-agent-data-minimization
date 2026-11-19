@@ -1,0 +1,35 @@
+1 /1080 multi-07-0 upfront 113 terminal True tools 7 seconds 12.0
+2 /1080 switch-14-1 agent_only 421 terminal True tools 15 seconds 31.2
+3 /1080 single-08-1 state_guard 19 terminal True tools 6 seconds 10.6
+4 /1080 single-01-0 state_guard 19 terminal True tools 6 seconds 11.2
+5 /1080 multi-18-0 agent_only 19 terminal True tools 8 seconds 13.9
+6 /1080 single-01-0 upfront 113 terminal True tools 4 seconds 6.8
+7 /1080 single-13-1 agent_only 19 terminal True tools 4 seconds 6.1
+8 /1080 single-14-0 state_guard 421 terminal True tools 4 seconds 5.8
+9 /1080 single-09-1 upfront 113 terminal True tools 4 seconds 6.8
+10 /1080 multi-10-0 state_guard 113 terminal False tools 24 seconds 64.3
+Traceback (most recent call last):
+  File "${REPO}/blind_three_arm.py", line 424, in <module>
+    {'freeze': build, 'self-check': self_check, 'run': lambda: run(args.model),
+  File "${REPO}/blind_three_arm.py", line 424, in <lambda>
+    {'freeze': build, 'self-check': self_check, 'run': lambda: run(args.model),
+                                                               ^^^^^^^^^^^^^^^
+  File "${REPO}/blind_three_arm.py", line 408, in run
+    row = run_episode(c, arm, seed, infer)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "${REPO}/blind_three_arm.py", line 240, in run_episode
+    raw, tokens = infer(messages)
+                  ^^^^^^^^^^^^^^^
+  File "${REPO}/blind_three_arm.py", line 395, in infer
+    answer = generate(model, tokenizer, prompt=prompt, sampler=sampler, max_tokens=192)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/tmp/logistics-mlx-direct/lib/python3.11/site-packages/mlx_lm/generate.py", line 797, in generate
+    for response in stream_generate(model, tokenizer, prompt, **kwargs):
+  File "/private/tmp/logistics-mlx-direct/lib/python3.11/site-packages/mlx_lm/generate.py", line 734, in stream_generate
+    for n, (token, logprobs, from_draft) in enumerate(token_generator):
+  File "/private/tmp/logistics-mlx-direct/lib/python3.11/site-packages/mlx_lm/generate.py", line 721, in <genexpr>
+    token_generator = (
+                      ^
+  File "/private/tmp/logistics-mlx-direct/lib/python3.11/site-packages/mlx_lm/generate.py", line 450, in generate_step
+    mx.eval([c.state for c in prompt_cache])
+KeyboardInterrupt

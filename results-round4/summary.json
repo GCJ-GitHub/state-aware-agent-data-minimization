@@ -1,0 +1,54 @@
+{
+  "round3_feedback": {
+    "n": 24,
+    "success": 22,
+    "legal_completion": 22,
+    "success_without_excess": 22,
+    "any_sensitive_seen": 10,
+    "any_excess_seen": 0,
+    "excess_address": 0,
+    "excess_phone": 0,
+    "excess_postal": 0,
+    "excess_requested": 11,
+    "mean_calls": 3.958,
+    "median_ms": 3028.77,
+    "by_completed_route": {
+      "retry": 12,
+      "pickup": 6,
+      "change": 4
+    }
+  },
+  "round4_feedback": {
+    "n": 24,
+    "success": 23,
+    "legal_completion": 23,
+    "success_without_excess": 23,
+    "any_sensitive_seen": 12,
+    "any_excess_seen": 0,
+    "excess_address": 0,
+    "excess_phone": 0,
+    "excess_postal": 0,
+    "excess_requested": 11,
+    "mean_calls": 4.167,
+    "median_ms": 3457.23,
+    "by_completed_route": {
+      "retry": 12,
+      "pickup": 7,
+      "change": 4
+    }
+  },
+  "paired": {
+    "recovered_cases": [
+      40
+    ],
+    "regressed_cases": [],
+    "cases_with_more_calls": 2,
+    "cases_with_fewer_calls": 0,
+    "cases_with_same_calls": 22,
+    "total_call_delta": 5
+  },
+  "cases_with_accepted_missing_opening_tag": [
+    40,
+    52
+  ]
+}

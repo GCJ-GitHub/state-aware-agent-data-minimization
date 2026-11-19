@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "episodes": 162,
+  "actual_message_hashes_verified": 2354,
+  "no_profile_values_in_system": true,
+  "bootstraps_per_arm": {
+    "upfront": 54,
+    "agent_only": 54,
+    "state_guard": 54
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "source_snapshot": "2026-11-19 local experiments",
+  "redactions": "No original experiment directory modified. Internal URLs and local home paths removed. Credentials, model weights, caches and temporary key files excluded.",
+  "verification": "Historical freeze hashes describe the original execution. PUBLICATION_MANIFEST.json describes this sanitized portable publication. Code/data path or endpoint redaction invalidates original source hashes; no historical recomputation is claimed.",
+  "changed_files": [
+    {
+      "source": "blind-three-arm/REPORT.md",
+      "published_path": "blind-three-arm/REPORT.md",
+      "original_sha256": "ece65a2dcad50ee90c6d473805a71488dde0ebfe34d7c616bd4077d478f57213",
+      "published_sha256": "cd91e93ee9f5948673799080414c64ae3e528d60413a3640a2c05aea044fec5f",
+      "notes": []
+    },
+    {
+      "source": "blind-three-arm/batch-run.log",
+      "published_path": "blind-three-arm/batch-run.log",
+      "original_sha256": "ff39d50deb5ab4dc1fa1d1347f5436286130561dbb2ba2b8ead41d2123e163c1",
+      "published_sha256": "21bac03c646f4ce1c42d68e3315c06b2dbd64e6ae3ac9ada25a23c8c93f1d46b",
+      "notes": []
+    },
+    {
+      "source": "blind-three-arm/freeze-invalid-model-path.json",
+      "published_path": "blind-three-arm/freeze-invalid-model-path.json",
+      "original_sha256": "1ba6dfe27b84cb0c823d4272694749b11435d7401a777be66cc3f92c9a1163ab",
+      "published_sha256": "3a4306bb9419bb94aca85538a3d48e658b18dfa8f43cfb28561f69eea8c16b13",
+      "notes": []
+    },
+    {
+      "source": "blind-three-arm/freeze.json",
+      "published_path": "blind-three-arm/freeze.json",
+      "original_sha256": "7363905d1cfca8d5d596049506422be78f05b51b18919f3f9c99867b5007a382",
+      "published_sha256": "4075b9aae3f4c2dba136e29d43406b97ad6f2dae0d69586d164c3956867429ce",
+      "notes": []
+    },
+    {
+      "source": "blind-three-arm/initial-model-load-error.log",
+      "published_path": "blind-three-arm/initial-model-load-error.log",
+      "original_sha256": "994a00517bfc2b7685d1e995d7c1efbbf0e02d19da264a670f288e19634ded3f",
+      "published_sha256": "4ca567a97a22e01d145b946f39c96287224039dd3c3817101568333d6e9b00e2",
+      "notes": []
+    },
+    {
+      "source": "blind-three-arm/run.log",
+      "published_path": "blind-three-arm/run.log",
+      "original_sha256": "c6f602ae4db08b4198a87be692164ee38a0b3697ea17f92c8d08d2bc4914820f",
+      "published_sha256": "65739a08d58721c7ac2f7218fa9fcf05d1f0b52ffbc8dbac7a8a3cafc239a5a8",
+      "notes": []
+    },
+    {
+      "source": "blind_three_arm.py",
+      "published_path": "blind_three_arm.py",
+      "original_sha256": "d01347e0f7765e7cfe0688c9306457eba1ff96b8d1ed71343e2e1c9d3bac1b16",
+      "published_sha256": "1ba4a81da2cfa66b67685b614bdad63386f8e89ba94ab1e0cb58f68969a5b41e",
+      "notes": [
+        "portable publication verification; historical freeze fingerprints preserved separately",
+        "model path supplied externally"
+      ]
+    },
+    {
+      "source": "blind_three_arm_batch.py",
+      "published_path": "blind_three_arm_batch.py",
+      "original_sha256": "ea39d9a543de4fcc5b43fe7d3528a131cf58b4bac10f93914fa1344d3403f6a4",
+      "published_sha256": "6f8ca469b1b1c12ae0d17732db52c014bcdf776fcbbf8f2630ac03bd30d7993e",
+      "notes": [
+        "model path supplied externally"
+      ]
+    },
+    {
+      "source": "blind_three_arm_cached.py",
+      "published_path": "blind_three_arm_cached.py",
+      "original_sha256": "5e39b836655b09784b2f5b47dd8ef676630b302f68e261dd97e9e5cee51ae1ad",
+      "published_sha256": "6252c0f9b4a041dad30030f6e76d03b4819e841cd983b84e5c2e28dc437429bc",
+      "notes": [
+        "model path supplied externally"
+      ]
+    },
+    {
+      "source": "blind_three_arm_replay.py",
+      "published_path": "blind_three_arm_replay.py",
+      "original_sha256": "5ce1cda0a923df96a0f0fd0ddba50911cf58919007d9678a994c9424cbefece7",
+      "published_sha256": "e05b10f6c0fc384586bc7ad7b08facc558b00175b937cf8d6f148705c7c9011d",
+      "notes": [
+        "model path supplied externally"
+      ]
+    },
+    {
+      "source": "blind_three_arm_report.py",
+      "published_path": "blind_three_arm_report.py",
+      "original_sha256": "b690c8a88daaea169ee8c3aa02d58c0e9e384069e9fcc32825db51c1f26d8b30",
+      "published_sha256": "a08143898b4b8ab0245c34a7635ded09574ee4839eb960981bf7262c3c286b1d",
+      "notes": []
+    },
+    {
+      "source": "maas_privacy_eval.py",
+      "published_path": "maas_privacy_eval.py",
+      "original_sha256": "c33be5bc80d19a73dc8215dd07fc904b1d862bda4427ed02bb70d3c94654cb25",
+      "published_sha256": "615a67387c3818a8f26546086a6561156f0e8167cca8e0cca928ec37581c588d",
+      "notes": [
+        "all four MaaS endpoint defaults removed"
+      ]
+    },
+    {
+      "source": "state-holdout-cross-model/freeze.json",
+      "published_path": "state-holdout-cross-model/freeze.json",
+      "original_sha256": "effd9ff9493f226b3bd3fe8284d7fc8bc184e576b0a11da4f1e908faeb0f29ed",
+      "published_sha256": "12534de198367464df4b6777c184fa86bb7f184b2fb6bd2a73adc29f37e54b82",
+      "notes": []
+    },
+    {
+      "source": "state-holdout-cross-model/pre-canonical-probe-freeze.json",
+      "published_path": "state-holdout-cross-model/pre-canonical-probe-freeze.json",
+      "original_sha256": "c72fe08a62c5cfa1ee6d5c27a317e02061779087e38d9311532a4289244909d8",
+      "published_sha256": "63663852d82e6d7328c12f67f9f38cab991a7d01994b4988cb2f2113700628db",
+      "notes": []
+    },
+    {
+      "source": "state-holdout-cross-model/preflight-freeze.json",
+      "published_path": "state-holdout-cross-model/preflight-freeze.json",
+      "original_sha256": "c424ddc0fdf03fcae0dfbe99b29b58a8873b590e525702a9dc4e5209d4d7b550",
+      "published_sha256": "a8c1a2818e47d856b0ba726f8d5bddf3b08a61cc61d78e3623103d7ce442ce9c",
+      "notes": []
+    },
+    {
+      "source": "state-holdout-cross-model/protocol.json",
+      "published_path": "state-holdout-cross-model/protocol.json",
+      "original_sha256": "9d06f6584e136810e4d2522170bb084db33989feb649fca52975e61214559a30",
+      "published_sha256": "a219f1f56f15c446eeb178d301086cb04f1301b58b53cfae613c13d0d64d38c5",
+      "notes": []
+    },
+    {
+      "source": "state_holdout_cross_model.py",
+      "published_path": "state_holdout_cross_model.py",
+      "original_sha256": "60a91ca8dd3a993adf9844a0c27bfb32763e0d25657d9927614f59db7903658b",
+      "published_sha256": "5417d5a53b247da912ef140277be92c5d21d35ab4f0bbbb1d12898cf3878c06f",
+      "notes": [
+        "portable publication verification; historical freeze fingerprints preserved separately",
+        "model path supplied externally",
+        "MaaS endpoint removed; QWEN_MAAS_URL required"
+      ]
+    },
+    {
+      "source": "tool-channel-failure-retest/freeze.json",
+      "published_path": "tool-channel-failure-retest/freeze.json",
+      "original_sha256": "301440451d09eba98b9deae624772c684718aeb6bf25c93d08d8536d3d79d8eb",
+      "published_sha256": "af66b5ef4d863c8e5a5cfa322e7ad0f913f3eeeddde2d55a6cc5e0ccb89c644b",
+      "notes": []
+    },
+    {
+      "source": "tool_channel_failure_retest.py",
+      "published_path": "tool_channel_failure_retest.py",
+      "original_sha256": "33e134a482bd031e29c5ba3a28c4dd7913aef3d93e8a5ad4e794a8d74f1f00e4",
+      "published_sha256": "012700129ba43be033e6766813d973e17a00a88efb37570e7d439d6280cd2704",
+      "notes": [
+        "portable publication verification; historical freeze fingerprints preserved separately",
+        "model path supplied externally"
+      ]
+    }
+  ]
+}

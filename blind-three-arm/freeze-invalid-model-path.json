@@ -1,0 +1,13 @@
+{
+  "created_at": "2026-11-19T11:18:57+0800",
+  "sha256": {
+    "${REPO}/blind_three_arm.py": "af70549d3c798f5a122f035a550a0458b6c38c489fa1c48666eb335c028571ef",
+    "${REPO}/blind-three-arm/tasks.json": "54d2ff2e8f112290145893efd112cce8f508baa8fee97421f3e4c86d64ee9883",
+    "${REPO}/blind-three-arm/gold.json": "6483d5124bafd98e76ee22f199f1cf19a95dd46aca74332fda1e96fcb98a222f",
+    "${REPO}/blind-three-arm/protocol.json": "967be6d5736fe1b384604f96636bdd6f87c24826697218dae8896cf1c68a8abe",
+    "/tmp/logistics-qwen3-17/config.json": "507a6701220524eb8b283425bf0856a9ae4f21f4052e563896ddd668994b1dc7",
+    "/tmp/logistics-qwen3-17/model.safetensors": "4c6fc6f3f45ff82ff32b809bd5dc7d6789a2ddefb43fd3bd5c77e875f0fab501",
+    "/tmp/logistics-qwen3-17/tokenizer_config.json": "253153d0738ceb4c668d2eff957714dd2bea0b56de772a9fdccd96cbf517e6a0",
+    "/tmp/logistics-qwen3-17/tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4"
+  }
+}

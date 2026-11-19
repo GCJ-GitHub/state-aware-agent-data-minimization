@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "${REPO}/blind_three_arm.py", line 424, in <module>
+    {'freeze': build, 'self-check': self_check, 'run': lambda: run(args.model),
+  File "${REPO}/blind_three_arm.py", line 424, in <lambda>
+    {'freeze': build, 'self-check': self_check, 'run': lambda: run(args.model),
+                                                               ^^^^^^^^^^^^^^^
+  File "${REPO}/blind_three_arm.py", line 390, in run
+    model, tokenizer = load(model_path)
+                       ^^^^^^^^^^^^^^^^
+  File "/private/tmp/logistics-mlx-direct/lib/python3.11/site-packages/mlx_lm/utils.py", line 690, in load
+    model, config = load_model(
+                    ^^^^^^^^^^^
+  File "/private/tmp/logistics-mlx-direct/lib/python3.11/site-packages/mlx_lm/utils.py", line 456, in load_model
+    weights.update(mx.load(wf))
+                   ^^^^^^^^^^^
+RuntimeError: [load_safetensors] Tensor 'model.embed_tokens.weight' invalid data offsets (436450304, 592032768) exceeding the size of the file. Perhaps an incomplete download or corrupt file?

@@ -1,0 +1,18 @@
+{
+  "at": "2026-11-19T14:04:43+0800",
+  "sha256": {
+    "${REPO}/tool_channel_failure_retest.py": "33e134a482bd031e29c5ba3a28c4dd7913aef3d93e8a5ad4e794a8d74f1f00e4",
+    "${REPO}/blind_three_arm.py": "d01347e0f7765e7cfe0688c9306457eba1ff96b8d1ed71343e2e1c9d3bac1b16",
+    "${REPO}/tool-channel-failure-retest/tasks.json": "4c6c7dbad1d2bb4f1f7c3c575bda593791296fc92b8c5e0a50900f0011f33bf4",
+    "${REPO}/tool-channel-failure-retest/gold.json": "18c73e03b92a21a3e09709152f105c6506ab7391fc25589ac177ab8a824ca70a",
+    "${REPO}/tool-channel-failure-retest/previous-scored-subset.json": "bd31e58d8c22ef1e777b5d6c82929fd64063ad7dc46834a3cec54a92a51fa6c2",
+    "${REPO}/tool-channel-failure-retest/protocol.json": "6b0f63452225782fdbccff0c1dc6f54033301114824b3c86733e5e97eaf485bc",
+    "${REPO}/blind-three-arm/freeze.json": "7363905d1cfca8d5d596049506422be78f05b51b18919f3f9c99867b5007a382",
+    "${REPO}/blind-three-arm/scored.json": "19ce71bff41299213ab7044d99f2ae9dfd787671f86bb02fe4e2e50830c23449",
+    "${REPO}/blind-three-arm/traces.jsonl": "f5e271377f31029d5c201dec52669be94ec3e430e5955ecfb428a91db9fdca8d",
+    "/tmp/logistics-qwen3-17-ready/config.json": "507a6701220524eb8b283425bf0856a9ae4f21f4052e563896ddd668994b1dc7",
+    "/tmp/logistics-qwen3-17-ready/model.safetensors": "0e86d9677e519323849eac1bc272caae88567a481ff188c431f70be543d9995f",
+    "/tmp/logistics-qwen3-17-ready/tokenizer_config.json": "253153d0738ceb4c668d2eff957714dd2bea0b56de772a9fdccd96cbf517e6a0",
+    "/tmp/logistics-qwen3-17-ready/tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4"
+  }
+}

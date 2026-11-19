@@ -1,0 +1,551 @@
+[
+  {
+    "pair": 71,
+    "request": "退货审核通过了，请帮我退款。原支付渠道（original）能一次退完就优先原路退，否则退到我授权的银行账户（bank）。",
+    "available": [
+      "original",
+      "bank"
+    ],
+    "rules": {
+      "original": [
+        [
+          "original_full_amount",
+          "eq",
+          true
+        ]
+      ],
+      "bank": []
+    },
+    "priority": [
+      [
+        "original"
+      ],
+      [
+        "bank"
+      ]
+    ],
+    "states": [
+      {
+        "facts": {
+          "original_full_amount": true
+        },
+        "target": [
+          "original"
+        ]
+      },
+      {
+        "facts": {
+          "original_full_amount": false
+        },
+        "target": [
+          "bank"
+        ]
+      }
+    ]
+  },
+  {
+    "pair": 72,
+    "request": "退货审核通过了，请帮我退款。如果退到已授权的银行账户（bank）无需临柜核验就优先用它，否则原路退（original）。",
+    "available": [
+      "bank",
+      "original"
+    ],
+    "rules": {
+      "bank": [
+        [
+          "bank_branch_visit_required",
+          "eq",
+          false
+        ]
+      ],
+      "original": []
+    },
+    "priority": [
+      [
+        "bank"
+      ],
+      [
+        "original"
+      ]
+    ],
+    "states": [
+      {
+        "facts": {
+          "bank_branch_visit_required": false
+        },
+        "target": [
+          "bank"
+        ]
+      },
+      {
+        "facts": {
+          "bank_branch_visit_required": true
+        },
+        "target": [
+          "original"
+        ]
+      }
+    ]
+  },
+  {
+    "pair": 73,
+    "request": "退货审核通过了，请帮我退款。原路退（original）只要能在晚上 8 点之前提交就优先办理，错过截止时间则退到已授权的银行账户（bank）。",
+    "available": [
+      "original",
+      "bank"
+    ],
+    "rules": {
+      "original": [
+        [
+          "original_submission_hour",
+          "lte",
+          19
+        ]
+      ],
+      "bank": []
+    },
+    "priority": [
+      [
+        "original"
+      ],
+      [
+        "bank"
+      ]
+    ],
+    "states": [
+      {
+        "facts": {
+          "original_submission_hour": 19
+        },
+        "target": [
+          "original"
+        ]
+      },
+      {
+        "facts": {
+          "original_submission_hour": 21
+        },
+        "target": [
+          "bank"
+        ]
+      }
+    ]
+  },
+  {
+    "pair": 74,
+    "request": "退货审核通过了，请帮我退款。优先退到已授权的银行账户（bank），但银行要支持原币种，而且最迟两天到账。否则原路退（original）。",
+    "available": [
+      "bank",
+      "original"
+    ],
+    "rules": {
+      "bank": [
+        [
+          "bank_same_currency",
+          "eq",
+          true
+        ],
+        [
+          "bank_eta_days",
+          "lte",
+          2
+        ]
+      ],
+      "original": []
+    },
+    "priority": [
+      [
+        "bank"
+      ],
+      [
+        "original"
+      ]
+    ],
+    "states": [
+      {
+        "facts": {
+          "bank_same_currency": true,
+          "bank_eta_days": 2
+        },
+        "target": [
+          "bank"
+        ]
+      },
+      {
+        "facts": {
+          "bank_same_currency": false,
+          "bank_eta_days": 2
+        },
+        "target": [
+          "original"
+        ]
+      }
+    ]
+  },
+  {
+    "pair": 75,
+    "request": "退货审核通过了，请帮我退款。原路退（original）如果不会产生货币兑换差额就选它，有差额就发退款券（voucher）到我授权的邮箱。",
+    "available": [
+      "original",
+      "voucher"
+    ],
+    "rules": {
+      "original": [
+        [
+          "original_conversion_loss_yuan",
+          "eq",
+          0
+        ]
+      ],
+      "voucher": []
+    },
+    "priority": [
+      [
+        "original"
+      ],
+      [
+        "voucher"
+      ]
+    ],
+    "states": [
+      {
+        "facts": {
+          "original_conversion_loss_yuan": 0
+        },
+        "target": [
+          "original"
+        ]
+      },
+      {
+        "facts": {
+          "original_conversion_loss_yuan": 5
+        },
+        "target": [
+          "voucher"
+        ]
+      }
+    ]
+  },
+  {
+    "pair": 76,
+    "request": "退货审核通过了，请帮我退款。退款券（voucher）可在所有门店用就给我退款券，授权发到邮箱。如果有限定门店就原路退（original）。",
+    "available": [
+      "voucher",
+      "original"
+    ],
+    "rules": {
+      "voucher": [
+        [
+          "voucher_all_stores",
+          "eq",
+          true
+        ]
+      ],
+      "original": []
+    },
+    "priority": [
+      [
+        "voucher"
+      ],
+      [
+        "original"
+      ]
+    ],
+    "states": [
+      {
+        "facts": {
+          "voucher_all_stores": true
+        },
+        "target": [
+          "voucher"
+        ]
+      },
+      {
+        "facts": {
+          "voucher_all_stores": false
+        },
+        "target": [
+          "original"
+        ]
+      }
+    ]
+  },
+  {
+    "pair": 77,
+    "request": "退货审核通过了，请帮我退款。如果原路退款（original）手续费不超过 2 元，就优先原路退。手续费超过 2 元就给我退款券（voucher），我授权发到邮箱。",
+    "available": [
+      "original",
+      "voucher"
+    ],
+    "rules": {
+      "original": [
+        [
+          "original_fee_yuan",
+          "lte",
+          2
+        ]
+      ],
+      "voucher": []
+    },
+    "priority": [
+      [
+        "original"
+      ],
+      [
+        "voucher"
+      ]
+    ],
+    "states": [
+      {
+        "facts": {
+          "original_fee_yuan": 2
+        },
+        "target": [
+          "original"
+        ]
+      },
+      {
+        "facts": {
+          "original_fee_yuan": 4
+        },
+        "target": [
+          "voucher"
+        ]
+      }
+    ]
+  },
+  {
+    "pair": 78,
+    "request": "退货审核通过了，请帮我退款。退款券（voucher）只有能立即到账且可与优惠一起用才优先，授权你发到我的邮箱。少一个条件就原路退（original）。",
+    "available": [
+      "voucher",
+      "original"
+    ],
+    "rules": {
+      "voucher": [
+        [
+          "voucher_instant",
+          "eq",
+          true
+        ],
+        [
+          "voucher_stackable",
+          "eq",
+          true
+        ]
+      ],
+      "original": []
+    },
+    "priority": [
+      [
+        "voucher"
+      ],
+      [
+        "original"
+      ]
+    ],
+    "states": [
+      {
+        "facts": {
+          "voucher_instant": true,
+          "voucher_stackable": true
+        },
+        "target": [
+          "voucher"
+        ]
+      },
+      {
+        "facts": {
+          "voucher_instant": true,
+          "voucher_stackable": false
+        },
+        "target": [
+          "original"
+        ]
+      }
+    ]
+  },
+  {
+    "pair": 79,
+    "request": "退货审核通过了，请帮我退款。如果银行退款（bank）能一次退完，请优先退到已授权的银行账户，否则发退款券（voucher）到已授权的邮箱。",
+    "available": [
+      "bank",
+      "voucher"
+    ],
+    "rules": {
+      "bank": [
+        [
+          "bank_full_amount",
+          "eq",
+          true
+        ]
+      ],
+      "voucher": []
+    },
+    "priority": [
+      [
+        "bank"
+      ],
+      [
+        "voucher"
+      ]
+    ],
+    "states": [
+      {
+        "facts": {
+          "bank_full_amount": true
+        },
+        "target": [
+          "bank"
+        ]
+      },
+      {
+        "facts": {
+          "bank_full_amount": false
+        },
+        "target": [
+          "voucher"
+        ]
+      }
+    ]
+  },
+  {
+    "pair": 80,
+    "request": "退货审核通过了，请帮我退款。退款券（voucher）要至少覆盖退货金额的 105% 才划算，达到就发到我的邮箱，没达到就退到已授权的银行账户（bank）。",
+    "available": [
+      "voucher",
+      "bank"
+    ],
+    "rules": {
+      "voucher": [
+        [
+          "voucher_value_pct",
+          "gte",
+          105
+        ]
+      ],
+      "bank": []
+    },
+    "priority": [
+      [
+        "voucher"
+      ],
+      [
+        "bank"
+      ]
+    ],
+    "states": [
+      {
+        "facts": {
+          "voucher_value_pct": 110
+        },
+        "target": [
+          "voucher"
+        ]
+      },
+      {
+        "facts": {
+          "voucher_value_pct": 100
+        },
+        "target": [
+          "bank"
+        ]
+      }
+    ]
+  },
+  {
+    "pair": 81,
+    "request": "退货审核通过了，请帮我退款。如果退到银行账户（bank）能在周末入账就优先用，账户已授权。如果周末不到账，就发退款券（voucher）到我的邮箱。",
+    "available": [
+      "bank",
+      "voucher"
+    ],
+    "rules": {
+      "bank": [
+        [
+          "bank_weekend_settlement",
+          "eq",
+          true
+        ]
+      ],
+      "voucher": []
+    },
+    "priority": [
+      [
+        "bank"
+      ],
+      [
+        "voucher"
+      ]
+    ],
+    "states": [
+      {
+        "facts": {
+          "bank_weekend_settlement": true
+        },
+        "target": [
+          "bank"
+        ]
+      },
+      {
+        "facts": {
+          "bank_weekend_settlement": false
+        },
+        "target": [
+          "voucher"
+        ]
+      }
+    ]
+  },
+  {
+    "pair": 82,
+    "request": "退货审核通过了，请帮我退款。只有退款券（voucher）可转赠且没有最低消费时，才优先把券发到我已授权的邮箱，否则退到已授权的银行账户（bank）。",
+    "available": [
+      "voucher",
+      "bank"
+    ],
+    "rules": {
+      "voucher": [
+        [
+          "voucher_transferable",
+          "eq",
+          true
+        ],
+        [
+          "voucher_min_spend_yuan",
+          "eq",
+          0
+        ]
+      ],
+      "bank": []
+    },
+    "priority": [
+      [
+        "voucher"
+      ],
+      [
+        "bank"
+      ]
+    ],
+    "states": [
+      {
+        "facts": {
+          "voucher_transferable": true,
+          "voucher_min_spend_yuan": 0
+        },
+        "target": [
+          "voucher"
+        ]
+      },
+      {
+        "facts": {
+          "voucher_transferable": true,
+          "voucher_min_spend_yuan": 50
+        },
+        "target": [
+          "bank"
+        ]
+      }
+    ]
+  }
+]

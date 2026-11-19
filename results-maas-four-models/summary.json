@@ -1,0 +1,142 @@
+{
+  "qwen3.8-flash": {
+    "upfront": {
+      "n": 28,
+      "utility": 14,
+      "utility_n": 14,
+      "privacy": 14,
+      "privacy_n": 14,
+      "answer_leak_cases": 0,
+      "reasoning_visible_cases": 28,
+      "visible_reasoning_leak_cases": 6,
+      "tool_calls": 1,
+      "model_calls": 30,
+      "retry_cases": 1,
+      "unreleased_retry_leak_cases": 0,
+      "discarded_refusal_leak_cases": 0,
+      "truncated_calls": 0
+    },
+    "on_demand": {
+      "n": 28,
+      "utility": 14,
+      "utility_n": 14,
+      "privacy": 14,
+      "privacy_n": 14,
+      "answer_leak_cases": 0,
+      "reasoning_visible_cases": 28,
+      "visible_reasoning_leak_cases": 0,
+      "tool_calls": 14,
+      "model_calls": 44,
+      "retry_cases": 2,
+      "unreleased_retry_leak_cases": 0,
+      "discarded_refusal_leak_cases": 0,
+      "truncated_calls": 0
+    },
+    "api_error_attempts": 0
+  },
+  "glm-5.3-flash": {
+    "upfront": {
+      "n": 28,
+      "utility": 14,
+      "utility_n": 14,
+      "privacy": 14,
+      "privacy_n": 14,
+      "answer_leak_cases": 0,
+      "reasoning_visible_cases": 28,
+      "visible_reasoning_leak_cases": 0,
+      "tool_calls": 0,
+      "model_calls": 28,
+      "retry_cases": 0,
+      "unreleased_retry_leak_cases": 0,
+      "discarded_refusal_leak_cases": 0,
+      "truncated_calls": 0
+    },
+    "on_demand": {
+      "n": 28,
+      "utility": 14,
+      "utility_n": 14,
+      "privacy": 14,
+      "privacy_n": 14,
+      "answer_leak_cases": 0,
+      "reasoning_visible_cases": 28,
+      "visible_reasoning_leak_cases": 0,
+      "tool_calls": 14,
+      "model_calls": 42,
+      "retry_cases": 0,
+      "unreleased_retry_leak_cases": 0,
+      "discarded_refusal_leak_cases": 0,
+      "truncated_calls": 0
+    },
+    "api_error_attempts": 0
+  },
+  "gemini-3.7-flash": {
+    "upfront": {
+      "n": 28,
+      "utility": 14,
+      "utility_n": 14,
+      "privacy": 14,
+      "privacy_n": 14,
+      "answer_leak_cases": 0,
+      "reasoning_visible_cases": 28,
+      "visible_reasoning_leak_cases": 0,
+      "tool_calls": 0,
+      "model_calls": 28,
+      "retry_cases": 0,
+      "unreleased_retry_leak_cases": 0,
+      "discarded_refusal_leak_cases": 0,
+      "truncated_calls": 0
+    },
+    "on_demand": {
+      "n": 28,
+      "utility": 14,
+      "utility_n": 14,
+      "privacy": 14,
+      "privacy_n": 14,
+      "answer_leak_cases": 0,
+      "reasoning_visible_cases": 28,
+      "visible_reasoning_leak_cases": 0,
+      "tool_calls": 14,
+      "model_calls": 42,
+      "retry_cases": 0,
+      "unreleased_retry_leak_cases": 0,
+      "discarded_refusal_leak_cases": 0,
+      "truncated_calls": 0
+    },
+    "api_error_attempts": 0
+  },
+  "gpt-6-astra": {
+    "upfront": {
+      "n": 28,
+      "utility": 14,
+      "utility_n": 14,
+      "privacy": 14,
+      "privacy_n": 14,
+      "answer_leak_cases": 0,
+      "reasoning_visible_cases": 0,
+      "visible_reasoning_leak_cases": null,
+      "tool_calls": 0,
+      "model_calls": 28,
+      "retry_cases": 0,
+      "unreleased_retry_leak_cases": 0,
+      "discarded_refusal_leak_cases": 0,
+      "truncated_calls": 0
+    },
+    "on_demand": {
+      "n": 28,
+      "utility": 14,
+      "utility_n": 14,
+      "privacy": 14,
+      "privacy_n": 14,
+      "answer_leak_cases": 0,
+      "reasoning_visible_cases": 0,
+      "visible_reasoning_leak_cases": null,
+      "tool_calls": 14,
+      "model_calls": 42,
+      "retry_cases": 0,
+      "unreleased_retry_leak_cases": 0,
+      "discarded_refusal_leak_cases": 0,
+      "truncated_calls": 0
+    },
+    "api_error_attempts": 0
+  }
+}

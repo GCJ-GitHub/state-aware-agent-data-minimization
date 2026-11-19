@@ -1,0 +1,6 @@
+# Offline fingerprint and result-summary checks use only the Python standard library.
+# Exact tokenizer versions used for replaying saved model conversations:
+transformers==5.23.0
+tokenizers==0.23.3
+huggingface-hub==2.4.0
+numpy==2.4.6
