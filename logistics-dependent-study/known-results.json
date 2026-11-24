@@ -1,0 +1,370 @@
+[
+  {
+    "arm": "route_table",
+    "case": "known_move",
+    "complete": true,
+    "confirmations": 1,
+    "denied_reads": 0,
+    "events": [
+      {
+        "action": "propose",
+        "nodes": [
+          "identity",
+          "move"
+        ],
+        "reused": []
+      },
+      {
+        "action": "read_refresh",
+        "step": "identity"
+      },
+      {
+        "action": "read",
+        "delivered": [
+          "customer.identity_ref"
+        ],
+        "step": "identity"
+      },
+      {
+        "action": "execute",
+        "produced": "identity_verified",
+        "step": "identity"
+      },
+      {
+        "action": "read_refresh",
+        "step": "move"
+      },
+      {
+        "action": "read",
+        "delivered": [
+          "parcel.station_ref"
+        ],
+        "step": "move"
+      },
+      {
+        "action": "confirm",
+        "step": "move"
+      },
+      {
+        "action": "execute",
+        "produced": "pickup_point_changed",
+        "step": "move"
+      }
+    ],
+    "executions": {
+      "identity": 1,
+      "move": 1
+    },
+    "fields": [
+      "customer.identity_ref",
+      "parcel.station_ref"
+    ],
+    "goals": [
+      "pickup_point_changed"
+    ],
+    "justifications": 0,
+    "read_attempts": 2,
+    "read_refreshes": 2
+  },
+  {
+    "arm": "contract",
+    "case": "known_move",
+    "complete": true,
+    "confirmations": 1,
+    "denied_reads": 0,
+    "events": [
+      {
+        "action": "propose",
+        "nodes": [
+          "identity",
+          "move"
+        ],
+        "reused": []
+      },
+      {
+        "action": "issue",
+        "step": "identity"
+      },
+      {
+        "action": "read",
+        "delivered": [
+          "customer.identity_ref"
+        ],
+        "step": "identity"
+      },
+      {
+        "action": "execute",
+        "produced": "identity_verified",
+        "step": "identity"
+      },
+      {
+        "action": "issue",
+        "step": "move"
+      },
+      {
+        "action": "read",
+        "delivered": [
+          "parcel.station_ref"
+        ],
+        "step": "move"
+      },
+      {
+        "action": "confirm",
+        "step": "move"
+      },
+      {
+        "action": "execute",
+        "produced": "pickup_point_changed",
+        "step": "move"
+      }
+    ],
+    "executions": {
+      "identity": 1,
+      "move": 1
+    },
+    "fields": [
+      "customer.identity_ref",
+      "parcel.station_ref"
+    ],
+    "goals": [
+      "pickup_point_changed"
+    ],
+    "justifications": 2,
+    "read_attempts": 2,
+    "read_refreshes": 0
+  },
+  {
+    "arm": "route_table",
+    "case": "known_retain",
+    "complete": true,
+    "confirmations": 0,
+    "denied_reads": 0,
+    "events": [
+      {
+        "action": "propose",
+        "nodes": [
+          "retain"
+        ],
+        "reused": []
+      },
+      {
+        "action": "execute",
+        "produced": "appointment_resolved",
+        "step": "retain"
+      }
+    ],
+    "executions": {
+      "retain": 1
+    },
+    "fields": [],
+    "goals": [
+      "appointment_resolved"
+    ],
+    "justifications": 0,
+    "read_attempts": 0,
+    "read_refreshes": 0
+  },
+  {
+    "arm": "contract",
+    "case": "known_retain",
+    "complete": true,
+    "confirmations": 0,
+    "denied_reads": 0,
+    "events": [
+      {
+        "action": "propose",
+        "nodes": [
+          "retain"
+        ],
+        "reused": []
+      },
+      {
+        "action": "execute",
+        "produced": "appointment_resolved",
+        "step": "retain"
+      }
+    ],
+    "executions": {
+      "retain": 1
+    },
+    "fields": [],
+    "goals": [
+      "appointment_resolved"
+    ],
+    "justifications": 0,
+    "read_attempts": 0,
+    "read_refreshes": 0
+  },
+  {
+    "arm": "route_table",
+    "case": "known_enhanced_backup",
+    "complete": true,
+    "confirmations": 1,
+    "denied_reads": 0,
+    "events": [
+      {
+        "action": "propose",
+        "nodes": [
+          "backup_checked",
+          "identity",
+          "station_check"
+        ],
+        "reused": []
+      },
+      {
+        "action": "read_refresh",
+        "step": "identity"
+      },
+      {
+        "action": "read",
+        "delivered": [
+          "customer.identity_ref"
+        ],
+        "step": "identity"
+      },
+      {
+        "action": "execute",
+        "produced": "identity_verified",
+        "step": "identity"
+      },
+      {
+        "action": "read_refresh",
+        "step": "station_check"
+      },
+      {
+        "action": "read",
+        "delivered": [
+          "customer.station_access_ref"
+        ],
+        "step": "station_check"
+      },
+      {
+        "action": "execute",
+        "produced": "station_verified",
+        "step": "station_check"
+      },
+      {
+        "action": "read_refresh",
+        "step": "backup_checked"
+      },
+      {
+        "action": "read",
+        "delivered": [
+          "parcel.backup_slot_ref"
+        ],
+        "step": "backup_checked"
+      },
+      {
+        "action": "confirm",
+        "step": "backup_checked"
+      },
+      {
+        "action": "execute",
+        "produced": "appointment_resolved",
+        "step": "backup_checked"
+      }
+    ],
+    "executions": {
+      "backup_checked": 1,
+      "identity": 1,
+      "station_check": 1
+    },
+    "fields": [
+      "customer.identity_ref",
+      "customer.station_access_ref",
+      "parcel.backup_slot_ref"
+    ],
+    "goals": [
+      "appointment_resolved"
+    ],
+    "justifications": 0,
+    "read_attempts": 3,
+    "read_refreshes": 3
+  },
+  {
+    "arm": "contract",
+    "case": "known_enhanced_backup",
+    "complete": true,
+    "confirmations": 1,
+    "denied_reads": 0,
+    "events": [
+      {
+        "action": "propose",
+        "nodes": [
+          "backup_checked",
+          "identity",
+          "station_check"
+        ],
+        "reused": []
+      },
+      {
+        "action": "issue",
+        "step": "identity"
+      },
+      {
+        "action": "read",
+        "delivered": [
+          "customer.identity_ref"
+        ],
+        "step": "identity"
+      },
+      {
+        "action": "execute",
+        "produced": "identity_verified",
+        "step": "identity"
+      },
+      {
+        "action": "issue",
+        "step": "station_check"
+      },
+      {
+        "action": "read",
+        "delivered": [
+          "customer.station_access_ref"
+        ],
+        "step": "station_check"
+      },
+      {
+        "action": "execute",
+        "produced": "station_verified",
+        "step": "station_check"
+      },
+      {
+        "action": "issue",
+        "step": "backup_checked"
+      },
+      {
+        "action": "read",
+        "delivered": [
+          "parcel.backup_slot_ref"
+        ],
+        "step": "backup_checked"
+      },
+      {
+        "action": "confirm",
+        "step": "backup_checked"
+      },
+      {
+        "action": "execute",
+        "produced": "appointment_resolved",
+        "step": "backup_checked"
+      }
+    ],
+    "executions": {
+      "backup_checked": 1,
+      "identity": 1,
+      "station_check": 1
+    },
+    "fields": [
+      "customer.identity_ref",
+      "customer.station_access_ref",
+      "parcel.backup_slot_ref"
+    ],
+    "goals": [
+      "appointment_resolved"
+    ],
+    "justifications": 3,
+    "read_attempts": 3,
+    "read_refreshes": 0
+  }
+]

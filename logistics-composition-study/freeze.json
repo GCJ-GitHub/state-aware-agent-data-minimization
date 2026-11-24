@@ -1,0 +1,9 @@
+{
+  "sha256": {
+    "necessity_v2/composable_routes.py": "dcc8f2b55aaca150e8d0e338f5d6ba5ff980c90a6d6162677082342debfdb750",
+    "necessity_v2/core.py": "ec513b8ec1c290541b51287fd822be89bed7cd8ee25323ef3836b9324f980b73",
+    "necessity_v2/route_baseline.py": "4a66c7bf60793339fb684fb26019f5fe3be8259499f3d7f662eba94f2d97235b",
+    "single-goal-config.json": "410fb01f8bafbedef2d60e678abe68bcdc3c81ba3e8602ab32fdc6b3380e5c5d"
+  },
+  "single_goal_passes": 4
+}

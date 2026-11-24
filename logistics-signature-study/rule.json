@@ -1,0 +1,14 @@
+{
+  "shared": {
+    "condition": "signature_required",
+    "step": {
+      "id": "signature_check",
+      "tool": "verify_signature_authorization",
+      "produces": "signature_verified",
+      "requires": ["identity_verified"],
+      "fields": ["customer.signature_authorization_ref"]
+    }
+  },
+  "contract": {"apply_to_tools": ["reserve_primary", "reserve_backup"]},
+  "route_table": {"apply_to_fragment": "rebook"}
+}

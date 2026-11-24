@@ -11,6 +11,8 @@
 
 ![方法框架](docs/assets/paper-framework/framework.svg)
 
+[四轮强基线对照、论文结论与投稿前验证](docs/STRONG_BASELINE_FOLLOWUP.md)
+
 ## 当前最有力的结果
 
 新120个合成任务、60个状态配对，MaaS qwen3.8-flash，三组各重复三次，共1080次尝试。规则、授权、确认、恢复、原生工具和预算跑前冻结。

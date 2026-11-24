@@ -1,0 +1,515 @@
+{
+  "configuration_check": {
+    "added_contract_arm_route_rows": 0,
+    "added_route_rows": 3,
+    "added_tool_contracts": 0,
+    "before_table_registration": "no_permitted_plan",
+    "business_goals_completed_by_both_after_registration": [
+      "quotes_reported",
+      "refund_done"
+    ],
+    "delivered_fields": [
+      "customer.identity_ref",
+      "order.wallet_ref",
+      "private.bank_fee",
+      "private.wallet_fee"
+    ],
+    "scope": "Configuration demonstration for this explicit table representation."
+  },
+  "mode": "offline_scripted_walkthrough",
+  "model_calls": 0,
+  "results": [
+    {
+      "arm": "route_table",
+      "case": "preferred_route_restored",
+      "complete": true,
+      "confirmations": 1,
+      "delivered_fields": [
+        "order.wallet_ref"
+      ],
+      "denied_reads": 1,
+      "events": [
+        {
+          "action": "propose",
+          "nodes": [
+            "bank",
+            "bank_verify_low"
+          ],
+          "reused": []
+        },
+        {
+          "action": "state_event",
+          "at": "before_first_bank_account_delivery",
+          "wallet_available": true
+        },
+        {
+          "action": "read_denied",
+          "delivered": {},
+          "feedback": "Refresh trusted state, then propose the currently preferred plan.",
+          "fields": [
+            "order.account_ref",
+            "customer.owner_ref"
+          ],
+          "step": "bank_verify_low"
+        },
+        {
+          "action": "recovery_refresh"
+        },
+        {
+          "action": "propose",
+          "nodes": [
+            "wallet"
+          ],
+          "reused": []
+        },
+        {
+          "action": "read",
+          "delivered": {
+            "order.wallet_ref": "SYN-WALLET"
+          },
+          "step": "wallet"
+        },
+        {
+          "action": "confirm",
+          "approved": true,
+          "step": "wallet"
+        },
+        {
+          "action": "execute",
+          "complete": true,
+          "produced": "refund_done",
+          "step": "wallet"
+        }
+      ],
+      "identity_executions": 0,
+      "read_attempts": 2,
+      "read_justification_operations": 0,
+      "read_state_refreshes": 2,
+      "recovery_refreshes": 1
+    },
+    {
+      "arm": "contract",
+      "case": "preferred_route_restored",
+      "complete": true,
+      "confirmations": 1,
+      "delivered_fields": [
+        "order.wallet_ref"
+      ],
+      "denied_reads": 1,
+      "events": [
+        {
+          "action": "propose",
+          "nodes": [
+            "bank",
+            "bank_verify_low"
+          ],
+          "reused": []
+        },
+        {
+          "action": "issue_read",
+          "fields": [
+            "customer.owner_ref",
+            "order.account_ref"
+          ],
+          "step": "bank_verify_low"
+        },
+        {
+          "action": "state_event",
+          "at": "before_first_bank_account_delivery",
+          "wallet_available": true
+        },
+        {
+          "action": "read_denied",
+          "delivered": {},
+          "feedback": "Refresh trusted state, then propose the currently preferred plan.",
+          "fields": [
+            "order.account_ref",
+            "customer.owner_ref"
+          ],
+          "step": "bank_verify_low"
+        },
+        {
+          "action": "recovery_refresh"
+        },
+        {
+          "action": "propose",
+          "nodes": [
+            "wallet"
+          ],
+          "reused": []
+        },
+        {
+          "action": "issue_read",
+          "fields": [
+            "order.wallet_ref"
+          ],
+          "step": "wallet"
+        },
+        {
+          "action": "read",
+          "delivered": {
+            "order.wallet_ref": "SYN-WALLET"
+          },
+          "step": "wallet"
+        },
+        {
+          "action": "confirm",
+          "approved": true,
+          "step": "wallet"
+        },
+        {
+          "action": "execute",
+          "complete": true,
+          "produced": "refund_done",
+          "step": "wallet"
+        }
+      ],
+      "identity_executions": 0,
+      "read_attempts": 2,
+      "read_justification_operations": 2,
+      "read_state_refreshes": 0,
+      "recovery_refreshes": 1
+    },
+    {
+      "arm": "route_table",
+      "case": "reuse_identity_after_replan",
+      "complete": true,
+      "confirmations": 1,
+      "delivered_fields": [
+        "customer.identity_ref",
+        "order.wallet_ref"
+      ],
+      "denied_reads": 1,
+      "events": [
+        {
+          "action": "propose",
+          "nodes": [
+            "bank",
+            "bank_verify_high",
+            "identity"
+          ],
+          "reused": []
+        },
+        {
+          "action": "read",
+          "delivered": {
+            "customer.identity_ref": "SYN-IDENTITY"
+          },
+          "step": "identity"
+        },
+        {
+          "action": "execute",
+          "complete": false,
+          "produced": "identity_verified",
+          "step": "identity"
+        },
+        {
+          "action": "state_event",
+          "at": "before_first_bank_account_delivery",
+          "wallet_available": true
+        },
+        {
+          "action": "read_denied",
+          "delivered": {},
+          "feedback": "Refresh trusted state, then propose the currently preferred plan.",
+          "fields": [
+            "order.account_ref",
+            "customer.owner_ref"
+          ],
+          "step": "bank_verify_high"
+        },
+        {
+          "action": "recovery_refresh"
+        },
+        {
+          "action": "propose",
+          "nodes": [
+            "identity",
+            "wallet"
+          ],
+          "reused": [
+            "identity_verified"
+          ]
+        },
+        {
+          "action": "read",
+          "delivered": {
+            "order.wallet_ref": "SYN-WALLET"
+          },
+          "step": "wallet"
+        },
+        {
+          "action": "confirm",
+          "approved": true,
+          "step": "wallet"
+        },
+        {
+          "action": "execute",
+          "complete": true,
+          "produced": "refund_done",
+          "step": "wallet"
+        }
+      ],
+      "identity_executions": 1,
+      "read_attempts": 3,
+      "read_justification_operations": 0,
+      "read_state_refreshes": 3,
+      "recovery_refreshes": 1
+    },
+    {
+      "arm": "contract",
+      "case": "reuse_identity_after_replan",
+      "complete": true,
+      "confirmations": 1,
+      "delivered_fields": [
+        "customer.identity_ref",
+        "order.wallet_ref"
+      ],
+      "denied_reads": 1,
+      "events": [
+        {
+          "action": "propose",
+          "nodes": [
+            "bank",
+            "bank_verify_high",
+            "identity"
+          ],
+          "reused": []
+        },
+        {
+          "action": "issue_read",
+          "fields": [
+            "customer.identity_ref"
+          ],
+          "step": "identity"
+        },
+        {
+          "action": "read",
+          "delivered": {
+            "customer.identity_ref": "SYN-IDENTITY"
+          },
+          "step": "identity"
+        },
+        {
+          "action": "execute",
+          "complete": false,
+          "produced": "identity_verified",
+          "step": "identity"
+        },
+        {
+          "action": "issue_read",
+          "fields": [
+            "customer.owner_ref",
+            "order.account_ref"
+          ],
+          "step": "bank_verify_high"
+        },
+        {
+          "action": "state_event",
+          "at": "before_first_bank_account_delivery",
+          "wallet_available": true
+        },
+        {
+          "action": "read_denied",
+          "delivered": {},
+          "feedback": "Refresh trusted state, then propose the currently preferred plan.",
+          "fields": [
+            "order.account_ref",
+            "customer.owner_ref"
+          ],
+          "step": "bank_verify_high"
+        },
+        {
+          "action": "recovery_refresh"
+        },
+        {
+          "action": "propose",
+          "nodes": [
+            "identity",
+            "wallet"
+          ],
+          "reused": [
+            "identity_verified"
+          ]
+        },
+        {
+          "action": "issue_read",
+          "fields": [
+            "order.wallet_ref"
+          ],
+          "step": "wallet"
+        },
+        {
+          "action": "read",
+          "delivered": {
+            "order.wallet_ref": "SYN-WALLET"
+          },
+          "step": "wallet"
+        },
+        {
+          "action": "confirm",
+          "approved": true,
+          "step": "wallet"
+        },
+        {
+          "action": "execute",
+          "complete": true,
+          "produced": "refund_done",
+          "step": "wallet"
+        }
+      ],
+      "identity_executions": 1,
+      "read_attempts": 3,
+      "read_justification_operations": 3,
+      "read_state_refreshes": 0,
+      "recovery_refreshes": 1
+    },
+    {
+      "arm": "route_table",
+      "case": "exact_quotes_required",
+      "complete": true,
+      "confirmations": 1,
+      "delivered_fields": [
+        "order.wallet_ref",
+        "private.bank_fee",
+        "private.wallet_fee"
+      ],
+      "denied_reads": 0,
+      "events": [
+        {
+          "action": "propose",
+          "nodes": [
+            "quotes",
+            "wallet"
+          ],
+          "reused": []
+        },
+        {
+          "action": "read",
+          "delivered": {
+            "private.bank_fee": 4,
+            "private.wallet_fee": 2
+          },
+          "step": "quotes"
+        },
+        {
+          "action": "execute",
+          "complete": false,
+          "produced": "quotes_reported",
+          "step": "quotes"
+        },
+        {
+          "action": "authorized_report",
+          "values": {
+            "private.bank_fee": 4,
+            "private.wallet_fee": 2
+          }
+        },
+        {
+          "action": "read",
+          "delivered": {
+            "order.wallet_ref": "SYN-WALLET"
+          },
+          "step": "wallet"
+        },
+        {
+          "action": "confirm",
+          "approved": true,
+          "step": "wallet"
+        },
+        {
+          "action": "execute",
+          "complete": true,
+          "produced": "refund_done",
+          "step": "wallet"
+        }
+      ],
+      "identity_executions": 0,
+      "read_attempts": 2,
+      "read_justification_operations": 0,
+      "read_state_refreshes": 2,
+      "recovery_refreshes": 0
+    },
+    {
+      "arm": "contract",
+      "case": "exact_quotes_required",
+      "complete": true,
+      "confirmations": 1,
+      "delivered_fields": [
+        "order.wallet_ref",
+        "private.bank_fee",
+        "private.wallet_fee"
+      ],
+      "denied_reads": 0,
+      "events": [
+        {
+          "action": "propose",
+          "nodes": [
+            "quotes",
+            "wallet"
+          ],
+          "reused": []
+        },
+        {
+          "action": "issue_read",
+          "fields": [
+            "private.bank_fee",
+            "private.wallet_fee"
+          ],
+          "step": "quotes"
+        },
+        {
+          "action": "read",
+          "delivered": {
+            "private.bank_fee": 4,
+            "private.wallet_fee": 2
+          },
+          "step": "quotes"
+        },
+        {
+          "action": "execute",
+          "complete": false,
+          "produced": "quotes_reported",
+          "step": "quotes"
+        },
+        {
+          "action": "authorized_report",
+          "values": {
+            "private.bank_fee": 4,
+            "private.wallet_fee": 2
+          }
+        },
+        {
+          "action": "issue_read",
+          "fields": [
+            "order.wallet_ref"
+          ],
+          "step": "wallet"
+        },
+        {
+          "action": "read",
+          "delivered": {
+            "order.wallet_ref": "SYN-WALLET"
+          },
+          "step": "wallet"
+        },
+        {
+          "action": "confirm",
+          "approved": true,
+          "step": "wallet"
+        },
+        {
+          "action": "execute",
+          "complete": true,
+          "produced": "refund_done",
+          "step": "wallet"
+        }
+      ],
+      "identity_executions": 0,
+      "read_attempts": 2,
+      "read_justification_operations": 2,
+      "read_state_refreshes": 0,
+      "recovery_refreshes": 0
+    }
+  ]
+}

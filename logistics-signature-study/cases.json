@@ -1,0 +1,283 @@
+[
+  {
+    "after_move": {
+      "assessment_ready": true,
+      "backup_available": true,
+      "enhanced_check": false,
+      "original_slot_valid": false,
+      "primary_available": true,
+      "signature_required": true
+    },
+    "booking_plan": [
+      "identity",
+      "signature_check",
+      "primary_signed"
+    ],
+    "expected_confirmations": 2,
+    "expected_executions": {
+      "identity": 1,
+      "move": 1,
+      "primary_signed": 1,
+      "signature_check": 1
+    },
+    "expected_fields": [
+      "customer.identity_ref",
+      "parcel.station_ref",
+      "customer.signature_authorization_ref",
+      "parcel.primary_slot_ref"
+    ],
+    "expected_goals": [
+      "pickup_point_changed",
+      "appointment_resolved"
+    ],
+    "finish": [
+      "signature_check",
+      "primary_signed"
+    ],
+    "goals": [
+      "pickup_point_changed",
+      "appointment_resolved"
+    ],
+    "id": "signature_primary",
+    "initial": {
+      "assessment_ready": false,
+      "backup_available": true,
+      "enhanced_check": false,
+      "original_slot_valid": true,
+      "primary_available": true
+    },
+    "signature_authorized": true
+  },
+  {
+    "after_move": {
+      "assessment_ready": true,
+      "backup_available": true,
+      "enhanced_check": true,
+      "original_slot_valid": false,
+      "primary_available": false,
+      "signature_required": true
+    },
+    "booking_plan": [
+      "identity",
+      "station_check",
+      "signature_check",
+      "backup_checked_signed"
+    ],
+    "expected_confirmations": 2,
+    "expected_executions": {
+      "backup_checked_signed": 1,
+      "identity": 1,
+      "move": 1,
+      "signature_check": 1,
+      "station_check": 1
+    },
+    "expected_fields": [
+      "customer.identity_ref",
+      "parcel.station_ref",
+      "customer.station_access_ref",
+      "customer.signature_authorization_ref",
+      "parcel.backup_slot_ref"
+    ],
+    "expected_goals": [
+      "pickup_point_changed",
+      "appointment_resolved"
+    ],
+    "finish": [
+      "station_check",
+      "signature_check",
+      "backup_checked_signed"
+    ],
+    "goals": [
+      "pickup_point_changed",
+      "appointment_resolved"
+    ],
+    "id": "signature_enhanced_backup",
+    "initial": {
+      "assessment_ready": false,
+      "backup_available": true,
+      "enhanced_check": false,
+      "original_slot_valid": true,
+      "primary_available": true
+    },
+    "signature_authorized": true
+  },
+  {
+    "after_move": {
+      "assessment_ready": true,
+      "backup_available": true,
+      "enhanced_check": false,
+      "original_slot_valid": false,
+      "primary_available": true,
+      "signature_required": true
+    },
+    "booking_plan": [],
+    "expected_confirmations": 1,
+    "expected_executions": {
+      "identity": 1,
+      "move": 1
+    },
+    "expected_fields": [
+      "customer.identity_ref",
+      "parcel.station_ref"
+    ],
+    "expected_goals": [
+      "pickup_point_changed"
+    ],
+    "finish": [],
+    "goals": [
+      "pickup_point_changed",
+      "appointment_resolved"
+    ],
+    "id": "signature_not_authorized",
+    "initial": {
+      "assessment_ready": false,
+      "backup_available": true,
+      "enhanced_check": false,
+      "original_slot_valid": true,
+      "primary_available": true
+    },
+    "signature_authorized": false
+  },
+  {
+    "after_move": {
+      "assessment_ready": true,
+      "backup_available": true,
+      "enhanced_check": true,
+      "original_slot_valid": true,
+      "primary_available": true,
+      "signature_required": true
+    },
+    "booking_plan": [
+      "retain"
+    ],
+    "expected_confirmations": 1,
+    "expected_executions": {
+      "identity": 1,
+      "move": 1,
+      "retain": 1
+    },
+    "expected_fields": [
+      "customer.identity_ref",
+      "parcel.station_ref"
+    ],
+    "expected_goals": [
+      "pickup_point_changed",
+      "appointment_resolved"
+    ],
+    "finish": [
+      "retain"
+    ],
+    "goals": [
+      "pickup_point_changed",
+      "appointment_resolved"
+    ],
+    "id": "retain_high_value_without_signature",
+    "initial": {
+      "assessment_ready": false,
+      "backup_available": true,
+      "enhanced_check": false,
+      "original_slot_valid": true,
+      "primary_available": true
+    },
+    "signature_authorized": false
+  },
+  {
+    "after_move": {
+      "assessment_ready": true,
+      "backup_available": true,
+      "enhanced_check": false,
+      "original_slot_valid": false,
+      "primary_available": false,
+      "signature_required": true
+    },
+    "booking_plan": [
+      "identity",
+      "signature_check",
+      "backup_signed"
+    ],
+    "drift": {
+      "new_plan": [
+        "identity",
+        "signature_check",
+        "primary_signed"
+      ],
+      "old_step": "backup_signed",
+      "updates": {
+        "primary_available": true
+      }
+    },
+    "expected_confirmations": 2,
+    "expected_executions": {
+      "identity": 1,
+      "move": 1,
+      "primary_signed": 1,
+      "signature_check": 1
+    },
+    "expected_fields": [
+      "customer.identity_ref",
+      "parcel.station_ref",
+      "customer.signature_authorization_ref",
+      "parcel.primary_slot_ref"
+    ],
+    "expected_goals": [
+      "pickup_point_changed",
+      "appointment_resolved"
+    ],
+    "finish": [
+      "primary_signed"
+    ],
+    "goals": [
+      "pickup_point_changed",
+      "appointment_resolved"
+    ],
+    "id": "signature_primary_restored",
+    "initial": {
+      "assessment_ready": false,
+      "backup_available": true,
+      "enhanced_check": false,
+      "original_slot_valid": true,
+      "primary_available": true
+    },
+    "signature_authorized": true,
+    "verify_before_drift": [
+      "signature_check"
+    ]
+  },
+  {
+    "after_move": {
+      "assessment_ready": true,
+      "backup_available": false,
+      "enhanced_check": false,
+      "original_slot_valid": false,
+      "primary_available": false,
+      "signature_required": true
+    },
+    "booking_plan": [],
+    "expected_confirmations": 1,
+    "expected_executions": {
+      "identity": 1,
+      "move": 1
+    },
+    "expected_fields": [
+      "customer.identity_ref",
+      "parcel.station_ref"
+    ],
+    "expected_goals": [
+      "pickup_point_changed"
+    ],
+    "finish": [],
+    "goals": [
+      "pickup_point_changed",
+      "appointment_resolved"
+    ],
+    "id": "high_value_no_available_slot",
+    "initial": {
+      "assessment_ready": false,
+      "backup_available": true,
+      "enhanced_check": false,
+      "original_slot_valid": true,
+      "primary_available": true
+    },
+    "signature_authorized": true
+  }
+]

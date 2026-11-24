@@ -1,0 +1,262 @@
+[
+  {
+    "arm": "route_table",
+    "case": "pickup_point_changed",
+    "complete": true,
+    "confirmations": 1,
+    "denied_reads": 0,
+    "events": [
+      {
+        "action": "propose",
+        "nodes": [
+          "identity",
+          "locker"
+        ],
+        "reused": []
+      },
+      {
+        "action": "read_refresh",
+        "step": "identity"
+      },
+      {
+        "action": "read",
+        "delivered": [
+          "customer.identity_ref"
+        ],
+        "step": "identity"
+      },
+      {
+        "action": "execute",
+        "produced": "identity_verified",
+        "step": "identity"
+      },
+      {
+        "action": "read_refresh",
+        "step": "locker"
+      },
+      {
+        "action": "read",
+        "delivered": [
+          "parcel.locker_ref"
+        ],
+        "step": "locker"
+      },
+      {
+        "action": "confirm",
+        "step": "locker"
+      },
+      {
+        "action": "execute",
+        "produced": "pickup_point_changed",
+        "step": "locker"
+      }
+    ],
+    "fields": [
+      "customer.identity_ref",
+      "parcel.locker_ref"
+    ],
+    "goal_effects": {
+      "pickup_point_changed": 1
+    },
+    "identity_executions": 1,
+    "read_attempts": 2,
+    "read_justifications": 0,
+    "read_state_refreshes": 2,
+    "recoveries": 0
+  },
+  {
+    "arm": "contract",
+    "case": "pickup_point_changed",
+    "complete": true,
+    "confirmations": 1,
+    "denied_reads": 0,
+    "events": [
+      {
+        "action": "propose",
+        "nodes": [
+          "identity",
+          "locker"
+        ],
+        "reused": []
+      },
+      {
+        "action": "issue",
+        "step": "identity"
+      },
+      {
+        "action": "read",
+        "delivered": [
+          "customer.identity_ref"
+        ],
+        "step": "identity"
+      },
+      {
+        "action": "execute",
+        "produced": "identity_verified",
+        "step": "identity"
+      },
+      {
+        "action": "issue",
+        "step": "locker"
+      },
+      {
+        "action": "read",
+        "delivered": [
+          "parcel.locker_ref"
+        ],
+        "step": "locker"
+      },
+      {
+        "action": "confirm",
+        "step": "locker"
+      },
+      {
+        "action": "execute",
+        "produced": "pickup_point_changed",
+        "step": "locker"
+      }
+    ],
+    "fields": [
+      "customer.identity_ref",
+      "parcel.locker_ref"
+    ],
+    "goal_effects": {
+      "pickup_point_changed": 1
+    },
+    "identity_executions": 1,
+    "read_attempts": 2,
+    "read_justifications": 2,
+    "read_state_refreshes": 0,
+    "recoveries": 0
+  },
+  {
+    "arm": "route_table",
+    "case": "pickup_time_changed",
+    "complete": true,
+    "confirmations": 1,
+    "denied_reads": 0,
+    "events": [
+      {
+        "action": "propose",
+        "nodes": [
+          "identity",
+          "slot"
+        ],
+        "reused": []
+      },
+      {
+        "action": "read_refresh",
+        "step": "identity"
+      },
+      {
+        "action": "read",
+        "delivered": [
+          "customer.identity_ref"
+        ],
+        "step": "identity"
+      },
+      {
+        "action": "execute",
+        "produced": "identity_verified",
+        "step": "identity"
+      },
+      {
+        "action": "read_refresh",
+        "step": "slot"
+      },
+      {
+        "action": "read",
+        "delivered": [
+          "parcel.slot_ref"
+        ],
+        "step": "slot"
+      },
+      {
+        "action": "confirm",
+        "step": "slot"
+      },
+      {
+        "action": "execute",
+        "produced": "pickup_time_changed",
+        "step": "slot"
+      }
+    ],
+    "fields": [
+      "customer.identity_ref",
+      "parcel.slot_ref"
+    ],
+    "goal_effects": {
+      "pickup_time_changed": 1
+    },
+    "identity_executions": 1,
+    "read_attempts": 2,
+    "read_justifications": 0,
+    "read_state_refreshes": 2,
+    "recoveries": 0
+  },
+  {
+    "arm": "contract",
+    "case": "pickup_time_changed",
+    "complete": true,
+    "confirmations": 1,
+    "denied_reads": 0,
+    "events": [
+      {
+        "action": "propose",
+        "nodes": [
+          "identity",
+          "slot"
+        ],
+        "reused": []
+      },
+      {
+        "action": "issue",
+        "step": "identity"
+      },
+      {
+        "action": "read",
+        "delivered": [
+          "customer.identity_ref"
+        ],
+        "step": "identity"
+      },
+      {
+        "action": "execute",
+        "produced": "identity_verified",
+        "step": "identity"
+      },
+      {
+        "action": "issue",
+        "step": "slot"
+      },
+      {
+        "action": "read",
+        "delivered": [
+          "parcel.slot_ref"
+        ],
+        "step": "slot"
+      },
+      {
+        "action": "confirm",
+        "step": "slot"
+      },
+      {
+        "action": "execute",
+        "produced": "pickup_time_changed",
+        "step": "slot"
+      }
+    ],
+    "fields": [
+      "customer.identity_ref",
+      "parcel.slot_ref"
+    ],
+    "goal_effects": {
+      "pickup_time_changed": 1
+    },
+    "identity_executions": 1,
+    "read_attempts": 2,
+    "read_justifications": 2,
+    "read_state_refreshes": 0,
+    "recoveries": 0
+  }
+]

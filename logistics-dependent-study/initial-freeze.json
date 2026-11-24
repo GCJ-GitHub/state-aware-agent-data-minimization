@@ -1,0 +1,11 @@
+{
+  "known_runs": 6,
+  "sha256": {
+    "logistics-dependent-study/config.json": "da18518d3651c89fa45012b55511b826e0b6c6926d84dd37b9c24a0c7d436ffc",
+    "necessity_v2/composable_routes.py": "dcc8f2b55aaca150e8d0e338f5d6ba5ff980c90a6d6162677082342debfdb750",
+    "necessity_v2/core.py": "ec513b8ec1c290541b51287fd822be89bed7cd8ee25323ef3836b9324f980b73",
+    "necessity_v2/route_baseline.py": "4a66c7bf60793339fb684fb26019f5fe3be8259499f3d7f662eba94f2d97235b",
+    "scripts/run_logistics_composition.py": "73cdb218c1462f4c1daf6b883fa879af4fcb7cfe5e52921cd8e07106d27aa034",
+    "scripts/run_logistics_dependency.py": "870f741ba83f6d42bf2305849fcb7f3815880b4fcb2f5b90f3da407d6480c2bd"
+  }
+}

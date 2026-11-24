@@ -1,0 +1,16 @@
+{
+  "contracts": [
+    {"id": "identity", "tool": "verify_identity", "produces": "identity_verified", "fields": ["customer.identity_ref"]},
+    {"id": "locker", "tool": "change_to_locker", "produces": "pickup_point_changed", "requires": ["identity_verified"], "fields": ["parcel.locker_ref"], "guards": [["locker_available", true]]},
+    {"id": "desk", "tool": "change_to_staffed_desk", "produces": "pickup_point_changed", "requires": ["identity_verified"], "fields": ["parcel.desk_ref", "parcel.contact_ref"], "guards": [["desk_available", true]]},
+    {"id": "slot", "tool": "reschedule_pickup", "produces": "pickup_time_changed", "requires": ["identity_verified"], "fields": ["parcel.slot_ref"]}
+  ],
+  "route_recipes": [
+    {"goal": "pickup_point_changed", "root": "locker", "steps": {"identity": ["customer.identity_ref"], "locker": ["parcel.locker_ref"]}, "conditions": [["locker_available", true]]},
+    {"goal": "pickup_point_changed", "root": "desk", "steps": {"identity": ["customer.identity_ref"], "desk": ["parcel.desk_ref", "parcel.contact_ref"]}, "conditions": [["desk_available", true]]},
+    {"goal": "pickup_time_changed", "root": "slot", "steps": {"identity": ["customer.identity_ref"], "slot": ["parcel.slot_ref"]}, "conditions": []}
+  ],
+  "allowed_fields": ["customer.identity_ref", "parcel.locker_ref", "parcel.desk_ref", "parcel.contact_ref", "parcel.slot_ref"],
+  "preference": {"change_to_locker": 0, "change_to_staffed_desk": 1},
+  "confirmation_required": ["change_to_locker", "change_to_staffed_desk", "reschedule_pickup"]
+}

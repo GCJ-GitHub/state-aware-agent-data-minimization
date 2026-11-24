@@ -1,0 +1,9 @@
+{
+  "prior_experiment_frozen": true,
+  "sha256": {
+    "logistics-signature-study/cases.json": "054c54afcf8343dc06e0d0804a10ee39d94ba76a3bd7e782bde621bfa59165c8",
+    "logistics-signature-study/rule.json": "8ea1d1fd23b21dd3ff8b43718c56abb846b260667ed7a69a4b68b12b292fa0d8",
+    "necessity_v2/signature_rule.py": "55f098c033c284203d7a1c68c2b22a1ff920262f703d9daa4c33e8d35815c5f3",
+    "scripts/run_logistics_signature.py": "218034afe35d741ab4200d4ddd7a3cb59d14c045bb29ef06289d84bd580c5fdc"
+  }
+}

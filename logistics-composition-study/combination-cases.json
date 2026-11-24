@@ -1,0 +1,42 @@
+[
+  {
+    "id": "steady_combination",
+    "goals": ["pickup_point_changed", "pickup_time_changed"],
+    "initial": {"locker_available": true, "desk_available": true},
+    "initial_plan": ["identity", "locker", "slot"],
+    "before_event": ["identity", "slot", "locker"],
+    "expected_goals": ["pickup_point_changed", "pickup_time_changed"],
+    "expected_fields": ["customer.identity_ref", "parcel.slot_ref", "parcel.locker_ref"]
+  },
+  {
+    "id": "locker_restored_after_reschedule",
+    "goals": ["pickup_point_changed", "pickup_time_changed"],
+    "initial": {"locker_available": false, "desk_available": true},
+    "initial_plan": ["identity", "desk", "slot"],
+    "before_event": ["identity", "slot"],
+    "drift": {"pending": "desk", "fact": "locker_available", "value": true, "new_plan": ["identity", "locker"], "after_recovery": ["locker"]},
+    "expected_goals": ["pickup_point_changed", "pickup_time_changed"],
+    "expected_fields": ["customer.identity_ref", "parcel.slot_ref", "parcel.locker_ref"]
+  },
+  {
+    "id": "locker_lost_after_reschedule",
+    "goals": ["pickup_point_changed", "pickup_time_changed"],
+    "initial": {"locker_available": true, "desk_available": true},
+    "initial_plan": ["identity", "locker", "slot"],
+    "before_event": ["identity", "slot"],
+    "drift": {"pending": "locker", "fact": "locker_available", "value": false, "new_plan": ["identity", "desk"], "after_recovery": ["desk"]},
+    "expected_goals": ["pickup_point_changed", "pickup_time_changed"],
+    "expected_fields": ["customer.identity_ref", "parcel.slot_ref", "parcel.desk_ref", "parcel.contact_ref"]
+  },
+  {
+    "id": "fallback_requires_unapproved_contact_after_reschedule",
+    "goals": ["pickup_point_changed", "pickup_time_changed"],
+    "initial": {"locker_available": true, "desk_available": true},
+    "initial_plan": ["identity", "locker", "slot"],
+    "withhold_fields": ["parcel.contact_ref"],
+    "before_event": ["identity", "slot"],
+    "drift": {"pending": "locker", "fact": "locker_available", "value": false, "new_plan": [], "after_recovery": []},
+    "expected_goals": ["pickup_time_changed"],
+    "expected_fields": ["customer.identity_ref", "parcel.slot_ref"]
+  }
+]
