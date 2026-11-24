@@ -1,0 +1,173 @@
+{
+  "note": "Post-hoc diagnostic; frozen task_success means valid business goals completed and does not require a final text response. Do not silently substitute the endpoint. All recorded calls including post-completion loops retained.",
+  "by_arm": {
+    "upfront": {
+      "n": 360,
+      "normal_final_response": 354,
+      "post_completion_tool_calls": 390,
+      "tools_median": 7.0,
+      "tools_p95": 11,
+      "model_calls_median": 8.0,
+      "model_calls_p95": 12
+    },
+    "agent_only": {
+      "n": 360,
+      "normal_final_response": 352,
+      "post_completion_tool_calls": 378,
+      "tools_median": 9.0,
+      "tools_p95": 14,
+      "model_calls_median": 10.0,
+      "model_calls_p95": 15
+    },
+    "state_guard": {
+      "n": 360,
+      "normal_final_response": 355,
+      "post_completion_tool_calls": 350,
+      "tools_median": 9.0,
+      "tools_p95": 13,
+      "model_calls_median": 10.0,
+      "model_calls_p95": 14
+    }
+  },
+  "non_normal_terminations": [
+    {
+      "id": "holdout-261123-multi-05-0",
+      "arm": "upfront",
+      "seed": 421,
+      "business_complete": false,
+      "terminal_transport_error": null
+    },
+    {
+      "id": "holdout-261123-multi-19-1",
+      "arm": "upfront",
+      "seed": 19,
+      "business_complete": true,
+      "terminal_transport_error": null
+    },
+    {
+      "id": "holdout-261123-single-18-0",
+      "arm": "upfront",
+      "seed": 113,
+      "business_complete": true,
+      "terminal_transport_error": null
+    },
+    {
+      "id": "holdout-261123-switch-12-0",
+      "arm": "upfront",
+      "seed": 421,
+      "business_complete": true,
+      "terminal_transport_error": null
+    },
+    {
+      "id": "holdout-261123-switch-17-1",
+      "arm": "upfront",
+      "seed": 19,
+      "business_complete": true,
+      "terminal_transport_error": null
+    },
+    {
+      "id": "holdout-261123-switch-18-1",
+      "arm": "upfront",
+      "seed": 421,
+      "business_complete": true,
+      "terminal_transport_error": null
+    },
+    {
+      "id": "holdout-261123-multi-13-0",
+      "arm": "agent_only",
+      "seed": 421,
+      "business_complete": false,
+      "terminal_transport_error": null
+    },
+    {
+      "id": "holdout-261123-single-06-0",
+      "arm": "agent_only",
+      "seed": 113,
+      "business_complete": true,
+      "terminal_transport_error": {
+        "category": "HTTP_400",
+        "error_type": "RuntimeError"
+      }
+    },
+    {
+      "id": "holdout-261123-single-14-0",
+      "arm": "agent_only",
+      "seed": 113,
+      "business_complete": true,
+      "terminal_transport_error": null
+    },
+    {
+      "id": "holdout-261123-switch-04-1",
+      "arm": "agent_only",
+      "seed": 113,
+      "business_complete": true,
+      "terminal_transport_error": null
+    },
+    {
+      "id": "holdout-261123-switch-05-0",
+      "arm": "agent_only",
+      "seed": 113,
+      "business_complete": true,
+      "terminal_transport_error": null
+    },
+    {
+      "id": "holdout-261123-switch-10-1",
+      "arm": "agent_only",
+      "seed": 19,
+      "business_complete": true,
+      "terminal_transport_error": null
+    },
+    {
+      "id": "holdout-261123-switch-11-0",
+      "arm": "agent_only",
+      "seed": 421,
+      "business_complete": true,
+      "terminal_transport_error": null
+    },
+    {
+      "id": "holdout-261123-switch-18-1",
+      "arm": "agent_only",
+      "seed": 421,
+      "business_complete": true,
+      "terminal_transport_error": null
+    },
+    {
+      "id": "holdout-261123-multi-09-1",
+      "arm": "state_guard",
+      "seed": 19,
+      "business_complete": true,
+      "terminal_transport_error": null
+    },
+    {
+      "id": "holdout-261123-switch-04-1",
+      "arm": "state_guard",
+      "seed": 421,
+      "business_complete": true,
+      "terminal_transport_error": null
+    },
+    {
+      "id": "holdout-261123-switch-08-0",
+      "arm": "state_guard",
+      "seed": 19,
+      "business_complete": true,
+      "terminal_transport_error": null
+    },
+    {
+      "id": "holdout-261123-switch-10-1",
+      "arm": "state_guard",
+      "seed": 421,
+      "business_complete": true,
+      "terminal_transport_error": null
+    },
+    {
+      "id": "holdout-261123-switch-12-1",
+      "arm": "state_guard",
+      "seed": 113,
+      "business_complete": false,
+      "terminal_transport_error": null
+    }
+  ],
+  "reported_model_versions": {
+    "qwen3.8-flash": 10780
+  }
+}

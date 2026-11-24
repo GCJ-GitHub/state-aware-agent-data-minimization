@@ -1,0 +1,165 @@
+{
+  "same_case_seed_arm_keys": 144,
+  "exact_task_bytes_unchanged": true,
+  "visible_advice": {
+    "fixed_soft": {
+      "successful_queries": 14,
+      "had_visible_hint": 14,
+      "matched_visible_hint": 10
+    },
+    "fixed_enforced": {
+      "successful_queries": 14,
+      "had_visible_hint": 14,
+      "matched_visible_hint": 10
+    },
+    "planned_soft": {
+      "successful_queries": 12,
+      "had_visible_hint": 12,
+      "matched_visible_hint": 9
+    },
+    "planned_enforced": {
+      "successful_queries": 12,
+      "had_visible_hint": 12,
+      "matched_visible_hint": 9
+    }
+  },
+  "query_subset": {
+    "fixed_soft": {
+      "n": 9,
+      "success": 9,
+      "queries": 14,
+      "backend_reads": 17
+    },
+    "fixed_enforced": {
+      "n": 9,
+      "success": 9,
+      "queries": 14,
+      "backend_reads": 17
+    },
+    "planned_soft": {
+      "n": 9,
+      "success": 9,
+      "queries": 12,
+      "backend_reads": 15
+    },
+    "planned_enforced": {
+      "n": 9,
+      "success": 9,
+      "queries": 12,
+      "backend_reads": 15
+    }
+  },
+  "paired_task_cluster_effects": {
+    "query_advice": {
+      "task_success": {
+        "difference_per_episode": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "unique_raw_fields": {
+        "difference_per_episode": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "expired_evidence_fields": {
+        "difference_per_episode": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "predicate_queries": {
+        "difference_per_episode": -0.05555555555555555,
+        "ci95": [
+          -0.16666666666666666,
+          0.0
+        ]
+      },
+      "tools": {
+        "difference_per_episode": -0.08333333333333333,
+        "ci95": [
+          -0.25,
+          0.041666666666666664
+        ]
+      },
+      "model_calls": {
+        "difference_per_episode": -0.08333333333333333,
+        "ci95": [
+          -0.25,
+          0.041666666666666664
+        ]
+      }
+    },
+    "read_enforcement": {
+      "task_success": {
+        "difference_per_episode": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "unique_raw_fields": {
+        "difference_per_episode": -0.16666666666666666,
+        "ci95": [
+          -0.5,
+          0.0
+        ]
+      },
+      "expired_evidence_fields": {
+        "difference_per_episode": -0.3333333333333333,
+        "ci95": [
+          -0.8333333333333334,
+          0.0
+        ]
+      },
+      "predicate_queries": {
+        "difference_per_episode": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "tools": {
+        "difference_per_episode": 0.19444444444444445,
+        "ci95": [
+          -0.041666666666666664,
+          0.513888888888889
+        ]
+      },
+      "model_calls": {
+        "difference_per_episode": 0.19444444444444445,
+        "ci95": [
+          -0.041666666666666664,
+          0.513888888888889
+        ]
+      }
+    }
+  },
+  "failures": [],
+  "http_by_arm": {
+    "fixed_soft": {
+      "attempts": 339,
+      "ok": 331,
+      "errors": 8
+    },
+    "fixed_enforced": {
+      "attempts": 343,
+      "ok": 339,
+      "errors": 4
+    },
+    "planned_soft": {
+      "attempts": 344,
+      "ok": 329,
+      "errors": 15
+    },
+    "planned_enforced": {
+      "attempts": 351,
+      "ok": 335,
+      "errors": 16
+    }
+  }
+}

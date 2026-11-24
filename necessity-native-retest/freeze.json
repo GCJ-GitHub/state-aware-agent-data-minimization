@@ -1,0 +1,18 @@
+{
+  "frozen_at_utc": "2026-11-23T12:05:04Z",
+  "sha256": {
+    "necessity_native_retest.py": "52d1842aa905f5c1800a8087e8af44b69b964bfe56edb7086bfc79b70f9fdf05",
+    "necessity_factorial.py": "6195c6ff0deba48f16c7a363a04d6dfb771658e7f04b6cfde427781b72a3c601",
+    "airgap_state_study.py": "1e18500e9567586a752bc71c0ee575ebe656332b0224f0d4b2c0ea43660e1e16",
+    "necessity_v2/core.py": "ec513b8ec1c290541b51287fd822be89bed7cd8ee25323ef3836b9324f980b73",
+    "necessity_v2/scenarios.py": "5e0c2c2dd6c73539aac1a39018896957da9321a30d465c37906bfa467b7a9f85",
+    "necessity_v2/acquire.py": "48d24746fe575fb735c4bde1e84ca3cb0bdf45f6cb2f8efe73a8b583496d1641",
+    "necessity-native-retest/tasks.json": "78a89cdb7a7fae55a3e7b2c297fca9622c35f24a6d29771d1af0ef16b54292a8",
+    "necessity-native-retest/judge-fixtures.json": "66232592a07e63e479e217b8ede7122ccfcf4337e962d3e602621d0e438e861a",
+    "necessity-native-retest/system.txt": "0b3fdee50abe58f7a9f62bcb8b43aa45d82953b5e92f036bc1c326b1a4383494",
+    "necessity-native-retest/native-tools.json": "a2897f8c50ba0a1e09093e175e9a0479233ed7dc029772883c7e472b32597f1f",
+    "necessity-native-retest/protocol.json": "28d6546f27218e8b21ff2203826585bfe431914db113c7caf815c4c99b30db75",
+    "necessity-native-retest/native-api-preflight.json": "10d4507d41b9015ee48c0b568e7e1056fe905bc45df9da9234d6473070ba7e0b",
+    "necessity-native-retest/native-roundtrip.json": "71c88ae10fd460147e285411576692b2a98f49f60b698dae91359b5bacff30a2"
+  }
+}

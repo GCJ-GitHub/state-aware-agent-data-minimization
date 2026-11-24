@@ -1,0 +1,69 @@
+{
+  "date": "2026-11-24",
+  "new_model_api_calls": 0,
+  "core_unit_tests_passed": 49,
+  "archive_safety_cases_passed": 7,
+  "offline_replay_and_independent_recount": "all_passed",
+  "secret_scan_including_archive_contents": "passed",
+  "runtime_sources_published_byte_identically": {
+    "airgap_state_study.py": "1e18500e9567586a752bc71c0ee575ebe656332b0224f0d4b2c0ea43660e1e16",
+    "airgap_state_report.py": "dd8af1de3e3a5ad4f71ed0ad842317442d5c226c7883038dc78469368aca0d4e",
+    "necessity_factorial.py": "6195c6ff0deba48f16c7a363a04d6dfb771658e7f04b6cfde427781b72a3c601",
+    "necessity_factorial_report.py": "d46c1b0b43fad5b4e5f8024f6e97666bb5f3602d88c62348edc25868f466b519",
+    "necessity_native_retest.py": "52d1842aa905f5c1800a8087e8af44b69b964bfe56edb7086bfc79b70f9fdf05",
+    "necessity_native_report.py": "075a94df8069b48717dcd80c25b4b76fdc397a39c928c4d08cb7afd68c985f36",
+    "necessity_holdout.py": "3eddc388f0ac22122054fcd0c1354e75adb6df702bf20089ea290bceec5f15eb",
+    "necessity_holdout_report.py": "b5e4b5c402d87044c84ec033cc26596aa0dd328ace1a67426b23ea795de77837",
+    "necessity_v2/scenarios.py": "5e0c2c2dd6c73539aac1a39018896957da9321a30d465c37906bfa467b7a9f85",
+    "necessity_v2/acquire.py": "48d24746fe575fb735c4bde1e84ca3cb0bdf45f6cb2f8efe73a8b583496d1641",
+    "necessity_v2/__init__.py": "04b53620f26cdaacc9adb85a13574aa3930e40c2dcf7ffc47941d04ca9e351b9",
+    "necessity_v2/core.py": "ec513b8ec1c290541b51287fd822be89bed7cd8ee25323ef3836b9324f980b73"
+  },
+  "trace_archives": 4,
+  "raw_archive_members": 24272,
+  "raw_archive_bytes": 514482018,
+  "compressed_archive_bytes": 25897669,
+  "stage_audits": {
+    "airgap-escalation-state-study": {
+      "completed_episodes_replayed": 648,
+      "model_inputs_replayed": 6603,
+      "all_passed": true,
+      "partial_successful_returns": 0
+    },
+    "necessity-factorial-pilot": {
+      "all_passed": true,
+      "episodes": 144,
+      "model_inputs": 1313
+    },
+    "necessity-native-retest": {
+      "all_passed": true,
+      "episodes": 144,
+      "model_inputs": 1334,
+      "full_native_request_body_replayed": true
+    },
+    "necessity-three-arm-holdout": {
+      "all_passed": true,
+      "episodes": 1080,
+      "model_inputs": 10780,
+      "full_native_request_body_replayed": true,
+      "interrupted_observed_prefixes": [
+        {
+          "id": "holdout-261123-single-06-0",
+          "arm": "agent_only",
+          "seed": 113,
+          "observed_returns": 25,
+          "business_complete": true,
+          "error": "HTTP_400"
+        }
+      ],
+      "fabricated_returns": 0,
+      "model_api_calls_during_audit": 0
+    }
+  },
+  "notes": [
+    "Four study denominators are separate, not one pooled success estimate.",
+    "Original experiment code, data and model replies are not edited by this publication.",
+    "Publication tooling, current docs and archive-aware secret scanner are new or updated.",
+    "Archive member bytes and relative paths are losslessly retained; original file ownership and timestamps are normalized."
+  ]
+}

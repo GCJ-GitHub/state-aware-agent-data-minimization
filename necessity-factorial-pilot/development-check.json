@@ -1,0 +1,46 @@
+{
+  "development_episodes": 6,
+  "all_successful": true,
+  "replay_passed": true,
+  "formal_model_outputs_seen": 0,
+  "rows": [
+    {
+      "id": "dev-bank-261123",
+      "arm": "fixed_soft",
+      "task_success": true,
+      "calls": 11
+    },
+    {
+      "id": "dev-bank-261123",
+      "arm": "planned_enforced",
+      "task_success": true,
+      "calls": 11
+    },
+    {
+      "id": "dev-drift-261123",
+      "arm": "fixed_soft",
+      "task_success": true,
+      "calls": 10
+    },
+    {
+      "id": "dev-drift-261123",
+      "arm": "planned_enforced",
+      "task_success": true,
+      "calls": 10
+    },
+    {
+      "id": "dev-private-261123",
+      "arm": "fixed_soft",
+      "task_success": true,
+      "calls": 8
+    },
+    {
+      "id": "dev-private-261123",
+      "arm": "planned_enforced",
+      "task_success": true,
+      "calls": 7
+    }
+  ],
+  "mechanical_fixture_checks": 48,
+  "mechanical_checks_are_model_results": false
+}

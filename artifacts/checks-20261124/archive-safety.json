@@ -1,0 +1,1 @@
+{"all_passed": true, "checks": [{"case": "parent_path", "passed": true}, {"case": "absolute_path", "passed": true}, {"case": "symlink", "passed": true}, {"case": "duplicate", "passed": true}, {"case": "wrong_prefix", "passed": true}, {"case": "digest_mismatch", "passed": true}, {"case": "overwrite_conflict", "passed": true}], "model_api_calls": 0}

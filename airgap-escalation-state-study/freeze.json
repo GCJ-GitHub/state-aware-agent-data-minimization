@@ -1,0 +1,12 @@
+{
+  "frozen_at_utc": "2026-11-23T06:58:08Z",
+  "before_first_formal_model_call": true,
+  "sha256": {
+    "airgap_state_study.py": "1e18500e9567586a752bc71c0ee575ebe656332b0224f0d4b2c0ea43660e1e16",
+    "airgap-escalation-state-study/tasks.json": "236ac510407a398e54dd3728f4d0bc060ebfe49b79e4aca8cef70d6ec940db16",
+    "airgap-escalation-state-study/gold.json": "8ef679ffbc35110b2f9c0959229017bd07e68985592f3a78f99535c46ff93864",
+    "airgap-escalation-state-study/protocol.json": "b3a1cbcf087a45010b329722663cc1960527f2385eae40ef8ec3f0f84494aad9",
+    "airgap-escalation-state-study/canonical-system.txt": "f2bcacde2a7b9051730b635342d572bc940445aa90ba0ef921ab98b4d8ecbaca",
+    "airgap-escalation-state-study/self-check.json": "f823cb7a575b56741aa35db917d167dafbbfe2f23bee268d3672756d66358611"
+  }
+}

@@ -1,0 +1,169 @@
+{
+  "unit": "60 state-pair clusters, both members and 3 seeds nested",
+  "bootstrap_samples": 5000,
+  "contrasts_state_guard_minus": {
+    "upfront": {
+      "task_success": {
+        "delta_per_episode": 0.0,
+        "ci95": [
+          -0.008333333333333331,
+          0.008333333333333331
+        ]
+      },
+      "unique_raw_fields": {
+        "delta_per_episode": -2.9027777777777777,
+        "ci95": [
+          -3.3027777777777776,
+          -2.519444444444445
+        ]
+      },
+      "hindsight_unused_fields": {
+        "delta_per_episode": -2.9138888888888888,
+        "ci95": [
+          -3.313888888888889,
+          -2.5250000000000004
+        ]
+      },
+      "premature_fields": {
+        "delta_per_episode": -4.866666666666666,
+        "ci95": [
+          -5.483333333333333,
+          -4.25
+        ]
+      },
+      "expired_evidence_fields": {
+        "delta_per_episode": -0.0027777777777777775,
+        "ci95": [
+          -0.008333333333333333,
+          0.0
+        ]
+      },
+      "tools": {
+        "delta_per_episode": 1.8638888888888894,
+        "ci95": [
+          1.294444444444444,
+          2.4416666666666673
+        ]
+      },
+      "model_calls": {
+        "delta_per_episode": 1.8666666666666663,
+        "ci95": [
+          1.3138888888888893,
+          2.430555555555556
+        ]
+      },
+      "confirmations": {
+        "delta_per_episode": 0.0055555555555555575,
+        "ci95": [
+          -0.005555555555555553,
+          0.01666666666666667
+        ]
+      },
+      "any_leak": {
+        "delta_per_episode": 0.0,
+        "ci95": [
+          -0.008333333333333333,
+          0.008333333333333333
+        ]
+      }
+    },
+    "agent_only": {
+      "task_success": {
+        "delta_per_episode": 0.0,
+        "ci95": [
+          -0.008333333333333331,
+          0.008333333333333331
+        ]
+      },
+      "unique_raw_fields": {
+        "delta_per_episode": -0.3972222222222222,
+        "ci95": [
+          -0.55,
+          -0.25277777777777777
+        ]
+      },
+      "hindsight_unused_fields": {
+        "delta_per_episode": -0.4,
+        "ci95": [
+          -0.55,
+          -0.25833333333333336
+        ]
+      },
+      "premature_fields": {
+        "delta_per_episode": -0.4083333333333333,
+        "ci95": [
+          -0.5583333333333333,
+          -0.26666666666666666
+        ]
+      },
+      "expired_evidence_fields": {
+        "delta_per_episode": -0.4,
+        "ci95": [
+          -0.55,
+          -0.25833333333333336
+        ]
+      },
+      "tools": {
+        "delta_per_episode": -0.1138888888888889,
+        "ci95": [
+          -0.6166666666666665,
+          0.3722222222222223
+        ]
+      },
+      "model_calls": {
+        "delta_per_episode": -0.09444444444444437,
+        "ci95": [
+          -0.5833333333333331,
+          0.38611111111111146
+        ]
+      },
+      "confirmations": {
+        "delta_per_episode": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "any_leak": {
+        "delta_per_episode": 0.0027777777777777775,
+        "ci95": [
+          0.0,
+          0.008333333333333333
+        ]
+      }
+    }
+  },
+  "switch_event_triggered": {
+    "state_guard": 120,
+    "upfront": 108,
+    "agent_only": 120
+  },
+  "switch_denominators": {
+    "state_guard": 120,
+    "upfront": 120,
+    "agent_only": 120
+  },
+  "failures": [
+    {
+      "id": "holdout-261123-multi-05-0",
+      "arm": "upfront",
+      "seed": 421,
+      "tools": 4,
+      "protocol_errors": 3
+    },
+    {
+      "id": "holdout-261123-multi-13-0",
+      "arm": "agent_only",
+      "seed": 421,
+      "tools": 39,
+      "protocol_errors": 1
+    },
+    {
+      "id": "holdout-261123-switch-12-1",
+      "arm": "state_guard",
+      "seed": 113,
+      "tools": 30,
+      "protocol_errors": 3
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "all_passed": true,
+  "episodes": 144,
+  "observed_duplicate_terminal_effects": [],
+  "scope": "Independent raw-response field, evidence-change, dependency, actual-value, confirmation, completion and call recount. No claim of semantic necessity proof.",
+  "totals": {
+    "planned_enforced": {
+      "unique_raw_fields": 87,
+      "expired_evidence_fields": 0,
+      "tools": 299,
+      "model_calls": 335,
+      "confirmations": 27,
+      "success": 36,
+      "n": 36
+    },
+    "fixed_soft": {
+      "unique_raw_fields": 93,
+      "expired_evidence_fields": 12,
+      "tools": 295,
+      "model_calls": 331,
+      "confirmations": 27,
+      "success": 36,
+      "n": 36
+    },
+    "fixed_enforced": {
+      "unique_raw_fields": 87,
+      "expired_evidence_fields": 0,
+      "tools": 303,
+      "model_calls": 339,
+      "confirmations": 27,
+      "success": 36,
+      "n": 36
+    },
+    "planned_soft": {
+      "unique_raw_fields": 93,
+      "expired_evidence_fields": 12,
+      "tools": 293,
+      "model_calls": 329,
+      "confirmations": 27,
+      "success": 36,
+      "n": 36
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "all_passed": true,
+  "episodes": 1080,
+  "metric_comparisons": 16200,
+  "independent_of_planner_and_scorer": true,
+  "repeated_prerequisite_effects": [
+    {
+      "id": "holdout-261123-multi-13-0",
+      "arm": "agent_only",
+      "seed": 421,
+      "artifact": "identity_verified"
+    },
+    {
+      "id": "holdout-261123-multi-13-0",
+      "arm": "agent_only",
+      "seed": 421,
+      "artifact": "identity_verified"
+    }
+  ],
+  "terminal_business_effects_unique": true
+}

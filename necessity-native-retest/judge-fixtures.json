@@ -1,0 +1,1517 @@
+{
+  "new-v2-20261123-private_query_order-0": {
+    "manifest": {
+      "resource": "new-v2-20261123-private_query_order-0",
+      "goals": [
+        "refund_done"
+      ],
+      "contracts": [
+        {
+          "id": "bank",
+          "tool": "bank_refund",
+          "produces": "refund_done",
+          "requires": [],
+          "fields": [
+            "order.account_ref",
+            "customer.owner_ref"
+          ],
+          "guards": []
+        },
+        {
+          "id": "wallet",
+          "tool": "wallet_refund",
+          "produces": "refund_done",
+          "requires": [],
+          "fields": [
+            "order.wallet_ref"
+          ],
+          "guards": [
+            [
+              "wallet_fee_ok",
+              true
+            ],
+            [
+              "wallet_speed_ok",
+              true
+            ]
+          ]
+        }
+      ],
+      "policy": {
+        "allowed_fields": [
+          "customer.owner_ref",
+          "order.account_ref",
+          "order.wallet_ref",
+          "private.days",
+          "private.fee"
+        ],
+        "allowed_tools": [
+          "bank_refund",
+          "wallet_refund"
+        ],
+        "utility_ranks": {},
+        "minimize_disclosure": true
+      },
+      "registered_probes": [
+        {
+          "name": "check_fee",
+          "fact": "wallet_fee_ok",
+          "prior_true": 0.2
+        },
+        {
+          "name": "check_speed",
+          "fact": "wallet_speed_ok",
+          "prior_true": 0.8
+        }
+      ]
+    },
+    "initial_true_facts": {
+      "wallet_fee_ok": false,
+      "wallet_speed_ok": true
+    },
+    "initial_values": {
+      "order.wallet_ref": "SYN-9C0CBC0C41662B91",
+      "order.account_ref": "SYN-DB2DF312C460CCE4",
+      "customer.owner_ref": "SYN-6ADFB88EABE14CF9",
+      "private.fee": 8.1768,
+      "private.days": 1.6662
+    }
+  },
+  "new-v2-20261123-private_query_order-1": {
+    "manifest": {
+      "resource": "new-v2-20261123-private_query_order-1",
+      "goals": [
+        "refund_done"
+      ],
+      "contracts": [
+        {
+          "id": "bank",
+          "tool": "bank_refund",
+          "produces": "refund_done",
+          "requires": [],
+          "fields": [
+            "order.account_ref",
+            "customer.owner_ref"
+          ],
+          "guards": []
+        },
+        {
+          "id": "wallet",
+          "tool": "wallet_refund",
+          "produces": "refund_done",
+          "requires": [],
+          "fields": [
+            "order.wallet_ref"
+          ],
+          "guards": [
+            [
+              "wallet_fee_ok",
+              true
+            ],
+            [
+              "wallet_speed_ok",
+              true
+            ]
+          ]
+        }
+      ],
+      "policy": {
+        "allowed_fields": [
+          "customer.owner_ref",
+          "order.account_ref",
+          "order.wallet_ref",
+          "private.days",
+          "private.fee"
+        ],
+        "allowed_tools": [
+          "bank_refund",
+          "wallet_refund"
+        ],
+        "utility_ranks": {},
+        "minimize_disclosure": true
+      },
+      "registered_probes": [
+        {
+          "name": "check_fee",
+          "fact": "wallet_fee_ok",
+          "prior_true": 0.8
+        },
+        {
+          "name": "check_speed",
+          "fact": "wallet_speed_ok",
+          "prior_true": 0.2
+        }
+      ]
+    },
+    "initial_true_facts": {
+      "wallet_fee_ok": true,
+      "wallet_speed_ok": false
+    },
+    "initial_values": {
+      "order.wallet_ref": "SYN-91CA3878D1CBB870",
+      "order.account_ref": "SYN-D429A4CB4C7F5331",
+      "customer.owner_ref": "SYN-2CBB17406118677C",
+      "private.fee": 1.3913,
+      "private.days": 8.5581
+    }
+  },
+  "new-v2-20261123-legal_alternatives-0": {
+    "manifest": {
+      "resource": "new-v2-20261123-legal_alternatives-0",
+      "goals": [
+        "refund_done"
+      ],
+      "contracts": [
+        {
+          "id": "bank",
+          "tool": "bank_refund",
+          "produces": "refund_done",
+          "requires": [
+            "bank_verified"
+          ],
+          "fields": [
+            "order.account_ref"
+          ],
+          "guards": [
+            [
+              "bank_available",
+              true
+            ]
+          ]
+        },
+        {
+          "id": "bank_verify_high",
+          "tool": "verify_bank",
+          "produces": "bank_verified",
+          "requires": [
+            "identity_verified"
+          ],
+          "fields": [
+            "order.account_ref",
+            "customer.owner_ref"
+          ],
+          "guards": [
+            [
+              "high_value",
+              true
+            ]
+          ]
+        },
+        {
+          "id": "bank_verify_low",
+          "tool": "verify_bank",
+          "produces": "bank_verified",
+          "requires": [],
+          "fields": [
+            "order.account_ref",
+            "customer.owner_ref"
+          ],
+          "guards": [
+            [
+              "high_value",
+              false
+            ]
+          ]
+        },
+        {
+          "id": "identity",
+          "tool": "verify_identity",
+          "produces": "identity_verified",
+          "requires": [],
+          "fields": [
+            "customer.identity_ref"
+          ],
+          "guards": []
+        },
+        {
+          "id": "quotes",
+          "tool": "report_exact_quotes",
+          "produces": "quotes_reported",
+          "requires": [],
+          "fields": [
+            "private.wallet_fee",
+            "private.bank_fee"
+          ],
+          "guards": []
+        },
+        {
+          "id": "wallet",
+          "tool": "wallet_refund",
+          "produces": "refund_done",
+          "requires": [],
+          "fields": [
+            "order.wallet_ref"
+          ],
+          "guards": [
+            [
+              "wallet_available",
+              true
+            ],
+            [
+              "wallet_eligible",
+              true
+            ]
+          ]
+        }
+      ],
+      "policy": {
+        "allowed_fields": [
+          "customer.identity_ref",
+          "customer.owner_ref",
+          "order.account_ref",
+          "order.wallet_ref",
+          "private.bank_fee",
+          "private.wallet_days",
+          "private.wallet_fee"
+        ],
+        "allowed_tools": [
+          "bank_refund",
+          "report_exact_quotes",
+          "verify_bank",
+          "verify_identity",
+          "wallet_refund"
+        ],
+        "utility_ranks": {},
+        "minimize_disclosure": false
+      },
+      "registered_probes": []
+    },
+    "initial_true_facts": {
+      "wallet_available": true,
+      "bank_available": true,
+      "high_value": false,
+      "backend_help_banner_visible": true,
+      "wallet_eligible": true
+    },
+    "initial_values": {
+      "order.wallet_ref": "SYN-937925D3CD62B7AA",
+      "order.account_ref": "SYN-3D3C303E9CC40CC2",
+      "customer.owner_ref": "SYN-AF28D71D7058E181",
+      "customer.identity_ref": "SYN-8FB9941241F3C643",
+      "private.wallet_fee": 1.7221,
+      "private.bank_fee": 8.841,
+      "private.wallet_days": 1.3937
+    }
+  },
+  "new-v2-20261123-legal_alternatives-1": {
+    "manifest": {
+      "resource": "new-v2-20261123-legal_alternatives-1",
+      "goals": [
+        "refund_done"
+      ],
+      "contracts": [
+        {
+          "id": "bank",
+          "tool": "bank_refund",
+          "produces": "refund_done",
+          "requires": [
+            "bank_verified"
+          ],
+          "fields": [
+            "order.account_ref"
+          ],
+          "guards": [
+            [
+              "bank_available",
+              true
+            ]
+          ]
+        },
+        {
+          "id": "bank_verify_high",
+          "tool": "verify_bank",
+          "produces": "bank_verified",
+          "requires": [
+            "identity_verified"
+          ],
+          "fields": [
+            "order.account_ref",
+            "customer.owner_ref"
+          ],
+          "guards": [
+            [
+              "high_value",
+              true
+            ]
+          ]
+        },
+        {
+          "id": "bank_verify_low",
+          "tool": "verify_bank",
+          "produces": "bank_verified",
+          "requires": [],
+          "fields": [
+            "order.account_ref",
+            "customer.owner_ref"
+          ],
+          "guards": [
+            [
+              "high_value",
+              false
+            ]
+          ]
+        },
+        {
+          "id": "identity",
+          "tool": "verify_identity",
+          "produces": "identity_verified",
+          "requires": [],
+          "fields": [
+            "customer.identity_ref"
+          ],
+          "guards": []
+        },
+        {
+          "id": "quotes",
+          "tool": "report_exact_quotes",
+          "produces": "quotes_reported",
+          "requires": [],
+          "fields": [
+            "private.wallet_fee",
+            "private.bank_fee"
+          ],
+          "guards": []
+        },
+        {
+          "id": "wallet",
+          "tool": "wallet_refund",
+          "produces": "refund_done",
+          "requires": [],
+          "fields": [
+            "order.wallet_ref"
+          ],
+          "guards": [
+            [
+              "wallet_available",
+              true
+            ],
+            [
+              "wallet_eligible",
+              true
+            ]
+          ]
+        }
+      ],
+      "policy": {
+        "allowed_fields": [
+          "customer.identity_ref",
+          "customer.owner_ref",
+          "order.account_ref",
+          "order.wallet_ref",
+          "private.bank_fee",
+          "private.wallet_days",
+          "private.wallet_fee"
+        ],
+        "allowed_tools": [
+          "bank_refund",
+          "report_exact_quotes",
+          "verify_bank",
+          "verify_identity",
+          "wallet_refund"
+        ],
+        "utility_ranks": {
+          "wallet_refund": 1,
+          "bank_refund": 0
+        },
+        "minimize_disclosure": false
+      },
+      "registered_probes": []
+    },
+    "initial_true_facts": {
+      "wallet_available": true,
+      "bank_available": true,
+      "high_value": false,
+      "backend_help_banner_visible": true,
+      "wallet_eligible": true
+    },
+    "initial_values": {
+      "order.wallet_ref": "SYN-AFA42D881BE0D3DA",
+      "order.account_ref": "SYN-B55648219A592A33",
+      "customer.owner_ref": "SYN-50DFA9F14A074081",
+      "customer.identity_ref": "SYN-89A75831B9406F43",
+      "private.wallet_fee": 1.1906,
+      "private.bank_fee": 8.3794,
+      "private.wallet_days": 1.1387
+    }
+  },
+  "new-v2-20261123-predicate_or_exact_values-0": {
+    "manifest": {
+      "resource": "new-v2-20261123-predicate_or_exact_values-0",
+      "goals": [
+        "refund_done"
+      ],
+      "contracts": [
+        {
+          "id": "bank",
+          "tool": "bank_refund",
+          "produces": "refund_done",
+          "requires": [
+            "bank_verified"
+          ],
+          "fields": [
+            "order.account_ref"
+          ],
+          "guards": [
+            [
+              "bank_available",
+              true
+            ]
+          ]
+        },
+        {
+          "id": "bank_verify_high",
+          "tool": "verify_bank",
+          "produces": "bank_verified",
+          "requires": [
+            "identity_verified"
+          ],
+          "fields": [
+            "order.account_ref",
+            "customer.owner_ref"
+          ],
+          "guards": [
+            [
+              "high_value",
+              true
+            ]
+          ]
+        },
+        {
+          "id": "bank_verify_low",
+          "tool": "verify_bank",
+          "produces": "bank_verified",
+          "requires": [],
+          "fields": [
+            "order.account_ref",
+            "customer.owner_ref"
+          ],
+          "guards": [
+            [
+              "high_value",
+              false
+            ]
+          ]
+        },
+        {
+          "id": "identity",
+          "tool": "verify_identity",
+          "produces": "identity_verified",
+          "requires": [],
+          "fields": [
+            "customer.identity_ref"
+          ],
+          "guards": []
+        },
+        {
+          "id": "quotes",
+          "tool": "report_exact_quotes",
+          "produces": "quotes_reported",
+          "requires": [],
+          "fields": [
+            "private.wallet_fee",
+            "private.bank_fee"
+          ],
+          "guards": []
+        },
+        {
+          "id": "wallet",
+          "tool": "wallet_refund",
+          "produces": "refund_done",
+          "requires": [],
+          "fields": [
+            "order.wallet_ref"
+          ],
+          "guards": [
+            [
+              "wallet_available",
+              true
+            ],
+            [
+              "wallet_eligible",
+              true
+            ]
+          ]
+        }
+      ],
+      "policy": {
+        "allowed_fields": [
+          "customer.identity_ref",
+          "customer.owner_ref",
+          "order.account_ref",
+          "order.wallet_ref",
+          "private.bank_fee",
+          "private.wallet_days",
+          "private.wallet_fee"
+        ],
+        "allowed_tools": [
+          "bank_refund",
+          "report_exact_quotes",
+          "verify_bank",
+          "verify_identity",
+          "wallet_refund"
+        ],
+        "utility_ranks": {},
+        "minimize_disclosure": true
+      },
+      "registered_probes": [
+        {
+          "name": "check_wallet_constraints",
+          "fact": "wallet_eligible",
+          "prior_true": 0.5
+        }
+      ]
+    },
+    "initial_true_facts": {
+      "wallet_available": true,
+      "bank_available": true,
+      "high_value": false,
+      "backend_help_banner_visible": true,
+      "wallet_eligible": true
+    },
+    "initial_values": {
+      "order.wallet_ref": "SYN-66F56E74A4166E12",
+      "order.account_ref": "SYN-FD6C3E31803EDE5E",
+      "customer.owner_ref": "SYN-3A9FAE0FDD464B08",
+      "customer.identity_ref": "SYN-FF1FE05CB7CB6A5C",
+      "private.wallet_fee": 1.6333,
+      "private.bank_fee": 8.1878,
+      "private.wallet_days": 1.7394
+    }
+  },
+  "new-v2-20261123-predicate_or_exact_values-1": {
+    "manifest": {
+      "resource": "new-v2-20261123-predicate_or_exact_values-1",
+      "goals": [
+        "refund_done",
+        "quotes_reported"
+      ],
+      "contracts": [
+        {
+          "id": "bank",
+          "tool": "bank_refund",
+          "produces": "refund_done",
+          "requires": [
+            "bank_verified"
+          ],
+          "fields": [
+            "order.account_ref"
+          ],
+          "guards": [
+            [
+              "bank_available",
+              true
+            ]
+          ]
+        },
+        {
+          "id": "bank_verify_high",
+          "tool": "verify_bank",
+          "produces": "bank_verified",
+          "requires": [
+            "identity_verified"
+          ],
+          "fields": [
+            "order.account_ref",
+            "customer.owner_ref"
+          ],
+          "guards": [
+            [
+              "high_value",
+              true
+            ]
+          ]
+        },
+        {
+          "id": "bank_verify_low",
+          "tool": "verify_bank",
+          "produces": "bank_verified",
+          "requires": [],
+          "fields": [
+            "order.account_ref",
+            "customer.owner_ref"
+          ],
+          "guards": [
+            [
+              "high_value",
+              false
+            ]
+          ]
+        },
+        {
+          "id": "identity",
+          "tool": "verify_identity",
+          "produces": "identity_verified",
+          "requires": [],
+          "fields": [
+            "customer.identity_ref"
+          ],
+          "guards": []
+        },
+        {
+          "id": "quotes",
+          "tool": "report_exact_quotes",
+          "produces": "quotes_reported",
+          "requires": [],
+          "fields": [
+            "private.wallet_fee",
+            "private.bank_fee"
+          ],
+          "guards": []
+        },
+        {
+          "id": "wallet",
+          "tool": "wallet_refund",
+          "produces": "refund_done",
+          "requires": [],
+          "fields": [
+            "order.wallet_ref"
+          ],
+          "guards": [
+            [
+              "wallet_available",
+              true
+            ],
+            [
+              "wallet_eligible",
+              true
+            ]
+          ]
+        }
+      ],
+      "policy": {
+        "allowed_fields": [
+          "customer.identity_ref",
+          "customer.owner_ref",
+          "order.account_ref",
+          "order.wallet_ref",
+          "private.bank_fee",
+          "private.wallet_days",
+          "private.wallet_fee"
+        ],
+        "allowed_tools": [
+          "bank_refund",
+          "report_exact_quotes",
+          "verify_bank",
+          "verify_identity",
+          "wallet_refund"
+        ],
+        "utility_ranks": {},
+        "minimize_disclosure": true
+      },
+      "registered_probes": []
+    },
+    "initial_true_facts": {
+      "wallet_available": true,
+      "bank_available": true,
+      "high_value": false,
+      "backend_help_banner_visible": true,
+      "wallet_eligible": true
+    },
+    "initial_values": {
+      "order.wallet_ref": "SYN-D2204201DB9DB9B3",
+      "order.account_ref": "SYN-4EAE21A69EBD31D4",
+      "customer.owner_ref": "SYN-36B10FE557287087",
+      "customer.identity_ref": "SYN-5B22D47FF1B3B46D",
+      "private.wallet_fee": 1.6508,
+      "private.bank_fee": 8.6216,
+      "private.wallet_days": 1.3987
+    }
+  },
+  "new-v2-20261123-conditional_dependencies-0": {
+    "manifest": {
+      "resource": "new-v2-20261123-conditional_dependencies-0",
+      "goals": [
+        "refund_done"
+      ],
+      "contracts": [
+        {
+          "id": "bank",
+          "tool": "bank_refund",
+          "produces": "refund_done",
+          "requires": [
+            "bank_verified"
+          ],
+          "fields": [
+            "order.account_ref"
+          ],
+          "guards": [
+            [
+              "bank_available",
+              true
+            ]
+          ]
+        },
+        {
+          "id": "bank_verify_high",
+          "tool": "verify_bank",
+          "produces": "bank_verified",
+          "requires": [
+            "identity_verified"
+          ],
+          "fields": [
+            "order.account_ref",
+            "customer.owner_ref"
+          ],
+          "guards": [
+            [
+              "high_value",
+              true
+            ]
+          ]
+        },
+        {
+          "id": "bank_verify_low",
+          "tool": "verify_bank",
+          "produces": "bank_verified",
+          "requires": [],
+          "fields": [
+            "order.account_ref",
+            "customer.owner_ref"
+          ],
+          "guards": [
+            [
+              "high_value",
+              false
+            ]
+          ]
+        },
+        {
+          "id": "identity",
+          "tool": "verify_identity",
+          "produces": "identity_verified",
+          "requires": [],
+          "fields": [
+            "customer.identity_ref"
+          ],
+          "guards": []
+        },
+        {
+          "id": "quotes",
+          "tool": "report_exact_quotes",
+          "produces": "quotes_reported",
+          "requires": [],
+          "fields": [
+            "private.wallet_fee",
+            "private.bank_fee"
+          ],
+          "guards": []
+        },
+        {
+          "id": "wallet",
+          "tool": "wallet_refund",
+          "produces": "refund_done",
+          "requires": [],
+          "fields": [
+            "order.wallet_ref"
+          ],
+          "guards": [
+            [
+              "wallet_available",
+              true
+            ],
+            [
+              "wallet_eligible",
+              true
+            ]
+          ]
+        }
+      ],
+      "policy": {
+        "allowed_fields": [
+          "customer.identity_ref",
+          "customer.owner_ref",
+          "order.account_ref",
+          "order.wallet_ref",
+          "private.bank_fee",
+          "private.wallet_days",
+          "private.wallet_fee"
+        ],
+        "allowed_tools": [
+          "bank_refund",
+          "report_exact_quotes",
+          "verify_bank",
+          "verify_identity",
+          "wallet_refund"
+        ],
+        "utility_ranks": {},
+        "minimize_disclosure": true
+      },
+      "registered_probes": []
+    },
+    "initial_true_facts": {
+      "wallet_available": false,
+      "bank_available": true,
+      "high_value": false,
+      "backend_help_banner_visible": true,
+      "wallet_eligible": true
+    },
+    "initial_values": {
+      "order.wallet_ref": "SYN-BCC94FFC7410D2B2",
+      "order.account_ref": "SYN-D5A738FCFFB86741",
+      "customer.owner_ref": "SYN-F4D70E5F7E18C8A8",
+      "customer.identity_ref": "SYN-059CFD9FEE9115FC",
+      "private.wallet_fee": 1.3949,
+      "private.bank_fee": 8.1987,
+      "private.wallet_days": 1.1863
+    }
+  },
+  "new-v2-20261123-conditional_dependencies-1": {
+    "manifest": {
+      "resource": "new-v2-20261123-conditional_dependencies-1",
+      "goals": [
+        "refund_done"
+      ],
+      "contracts": [
+        {
+          "id": "bank",
+          "tool": "bank_refund",
+          "produces": "refund_done",
+          "requires": [
+            "bank_verified"
+          ],
+          "fields": [
+            "order.account_ref"
+          ],
+          "guards": [
+            [
+              "bank_available",
+              true
+            ]
+          ]
+        },
+        {
+          "id": "bank_verify_high",
+          "tool": "verify_bank",
+          "produces": "bank_verified",
+          "requires": [
+            "identity_verified"
+          ],
+          "fields": [
+            "order.account_ref",
+            "customer.owner_ref"
+          ],
+          "guards": [
+            [
+              "high_value",
+              true
+            ]
+          ]
+        },
+        {
+          "id": "bank_verify_low",
+          "tool": "verify_bank",
+          "produces": "bank_verified",
+          "requires": [],
+          "fields": [
+            "order.account_ref",
+            "customer.owner_ref"
+          ],
+          "guards": [
+            [
+              "high_value",
+              false
+            ]
+          ]
+        },
+        {
+          "id": "identity",
+          "tool": "verify_identity",
+          "produces": "identity_verified",
+          "requires": [],
+          "fields": [
+            "customer.identity_ref"
+          ],
+          "guards": []
+        },
+        {
+          "id": "quotes",
+          "tool": "report_exact_quotes",
+          "produces": "quotes_reported",
+          "requires": [],
+          "fields": [
+            "private.wallet_fee",
+            "private.bank_fee"
+          ],
+          "guards": []
+        },
+        {
+          "id": "wallet",
+          "tool": "wallet_refund",
+          "produces": "refund_done",
+          "requires": [],
+          "fields": [
+            "order.wallet_ref"
+          ],
+          "guards": [
+            [
+              "wallet_available",
+              true
+            ],
+            [
+              "wallet_eligible",
+              true
+            ]
+          ]
+        }
+      ],
+      "policy": {
+        "allowed_fields": [
+          "customer.identity_ref",
+          "customer.owner_ref",
+          "order.account_ref",
+          "order.wallet_ref",
+          "private.bank_fee",
+          "private.wallet_days",
+          "private.wallet_fee"
+        ],
+        "allowed_tools": [
+          "bank_refund",
+          "report_exact_quotes",
+          "verify_bank",
+          "verify_identity",
+          "wallet_refund"
+        ],
+        "utility_ranks": {},
+        "minimize_disclosure": true
+      },
+      "registered_probes": []
+    },
+    "initial_true_facts": {
+      "wallet_available": false,
+      "bank_available": true,
+      "high_value": true,
+      "backend_help_banner_visible": true,
+      "wallet_eligible": true
+    },
+    "initial_values": {
+      "order.wallet_ref": "SYN-C69043CE8F30294D",
+      "order.account_ref": "SYN-2664C06A982D8F39",
+      "customer.owner_ref": "SYN-77D42767E9B1AE05",
+      "customer.identity_ref": "SYN-8F4CEF56C48CE553",
+      "private.wallet_fee": 1.2774,
+      "private.bank_fee": 8.4438,
+      "private.wallet_days": 1.4457
+    }
+  },
+  "new-v2-20261123-shared_goals-0": {
+    "manifest": {
+      "resource": "new-v2-20261123-shared_goals-0",
+      "goals": [
+        "session1.done",
+        "session2.done"
+      ],
+      "contracts": [
+        {
+          "id": "identity",
+          "tool": "verify_identity",
+          "produces": "identity_verified",
+          "requires": [],
+          "fields": [
+            "customer.identity_ref"
+          ],
+          "guards": []
+        },
+        {
+          "id": "session1.home",
+          "tool": "book_home",
+          "produces": "session1.done",
+          "requires": [
+            "identity_verified"
+          ],
+          "fields": [
+            "session1.member_ref",
+            "session1.address_ref"
+          ],
+          "guards": [
+            [
+              "session1.home_available",
+              true
+            ]
+          ]
+        },
+        {
+          "id": "session1.online",
+          "tool": "book_online",
+          "produces": "session1.done",
+          "requires": [
+            "identity_verified"
+          ],
+          "fields": [
+            "session1.member_ref"
+          ],
+          "guards": [
+            [
+              "session1.online_available",
+              true
+            ]
+          ]
+        },
+        {
+          "id": "session2.home",
+          "tool": "book_home",
+          "produces": "session2.done",
+          "requires": [
+            "identity_verified"
+          ],
+          "fields": [
+            "session2.member_ref",
+            "session2.address_ref"
+          ],
+          "guards": [
+            [
+              "session2.home_available",
+              true
+            ]
+          ]
+        },
+        {
+          "id": "session2.online",
+          "tool": "book_online",
+          "produces": "session2.done",
+          "requires": [
+            "identity_verified"
+          ],
+          "fields": [
+            "session2.member_ref"
+          ],
+          "guards": [
+            [
+              "session2.online_available",
+              true
+            ]
+          ]
+        }
+      ],
+      "policy": {
+        "allowed_fields": [
+          "customer.identity_ref",
+          "session1.address_ref",
+          "session1.member_ref",
+          "session2.address_ref",
+          "session2.member_ref"
+        ],
+        "allowed_tools": [
+          "book_home",
+          "book_online",
+          "verify_identity"
+        ],
+        "utility_ranks": {},
+        "minimize_disclosure": true
+      },
+      "registered_probes": []
+    },
+    "initial_true_facts": {
+      "session1.online_available": true,
+      "session1.home_available": true,
+      "session2.online_available": false,
+      "session2.home_available": true
+    },
+    "initial_values": {
+      "customer.identity_ref": "SYN-059BCB09D447A987",
+      "session1.member_ref": "SYN-7B5E3FB2318AB092",
+      "session1.address_ref": "SYN-65DDBD0E6C091502",
+      "session2.member_ref": "SYN-EB6C23532A7CA909",
+      "session2.address_ref": "SYN-94E2A28526276115"
+    }
+  },
+  "new-v2-20261123-shared_goals-1": {
+    "manifest": {
+      "resource": "new-v2-20261123-shared_goals-1",
+      "goals": [
+        "session1.done",
+        "session2.done"
+      ],
+      "contracts": [
+        {
+          "id": "identity",
+          "tool": "verify_identity",
+          "produces": "identity_verified",
+          "requires": [],
+          "fields": [
+            "customer.identity_ref"
+          ],
+          "guards": []
+        },
+        {
+          "id": "session1.home",
+          "tool": "book_home",
+          "produces": "session1.done",
+          "requires": [
+            "identity_verified"
+          ],
+          "fields": [
+            "session1.member_ref",
+            "session1.address_ref"
+          ],
+          "guards": [
+            [
+              "session1.home_available",
+              true
+            ]
+          ]
+        },
+        {
+          "id": "session1.online",
+          "tool": "book_online",
+          "produces": "session1.done",
+          "requires": [
+            "identity_verified"
+          ],
+          "fields": [
+            "session1.member_ref"
+          ],
+          "guards": [
+            [
+              "session1.online_available",
+              true
+            ]
+          ]
+        },
+        {
+          "id": "session2.home",
+          "tool": "book_home",
+          "produces": "session2.done",
+          "requires": [
+            "identity_verified"
+          ],
+          "fields": [
+            "session2.member_ref",
+            "session2.address_ref"
+          ],
+          "guards": [
+            [
+              "session2.home_available",
+              true
+            ]
+          ]
+        },
+        {
+          "id": "session2.online",
+          "tool": "book_online",
+          "produces": "session2.done",
+          "requires": [
+            "identity_verified"
+          ],
+          "fields": [
+            "session2.member_ref"
+          ],
+          "guards": [
+            [
+              "session2.online_available",
+              true
+            ]
+          ]
+        }
+      ],
+      "policy": {
+        "allowed_fields": [
+          "customer.identity_ref",
+          "session1.address_ref",
+          "session1.member_ref",
+          "session2.address_ref",
+          "session2.member_ref"
+        ],
+        "allowed_tools": [
+          "book_home",
+          "book_online",
+          "verify_identity"
+        ],
+        "utility_ranks": {
+          "book_online": 1,
+          "book_home": 0
+        },
+        "minimize_disclosure": true
+      },
+      "registered_probes": []
+    },
+    "initial_true_facts": {
+      "session1.online_available": false,
+      "session1.home_available": true,
+      "session2.online_available": true,
+      "session2.home_available": true
+    },
+    "initial_values": {
+      "customer.identity_ref": "SYN-AF1D5086303D4DB7",
+      "session1.member_ref": "SYN-052D4B115C05B1F8",
+      "session1.address_ref": "SYN-AFD17C7E4CC2F71B",
+      "session2.member_ref": "SYN-7B6F37D81A73A4C4",
+      "session2.address_ref": "SYN-EAEE72194D90EAD5"
+    }
+  },
+  "new-v2-20261123-evidence_drift-0": {
+    "manifest": {
+      "resource": "new-v2-20261123-evidence_drift-0",
+      "goals": [
+        "refund_done"
+      ],
+      "contracts": [
+        {
+          "id": "bank",
+          "tool": "bank_refund",
+          "produces": "refund_done",
+          "requires": [
+            "bank_verified"
+          ],
+          "fields": [
+            "order.account_ref"
+          ],
+          "guards": [
+            [
+              "bank_available",
+              true
+            ]
+          ]
+        },
+        {
+          "id": "bank_verify_high",
+          "tool": "verify_bank",
+          "produces": "bank_verified",
+          "requires": [
+            "identity_verified"
+          ],
+          "fields": [
+            "order.account_ref",
+            "customer.owner_ref"
+          ],
+          "guards": [
+            [
+              "high_value",
+              true
+            ]
+          ]
+        },
+        {
+          "id": "bank_verify_low",
+          "tool": "verify_bank",
+          "produces": "bank_verified",
+          "requires": [],
+          "fields": [
+            "order.account_ref",
+            "customer.owner_ref"
+          ],
+          "guards": [
+            [
+              "high_value",
+              false
+            ]
+          ]
+        },
+        {
+          "id": "identity",
+          "tool": "verify_identity",
+          "produces": "identity_verified",
+          "requires": [],
+          "fields": [
+            "customer.identity_ref"
+          ],
+          "guards": []
+        },
+        {
+          "id": "quotes",
+          "tool": "report_exact_quotes",
+          "produces": "quotes_reported",
+          "requires": [],
+          "fields": [
+            "private.wallet_fee",
+            "private.bank_fee"
+          ],
+          "guards": []
+        },
+        {
+          "id": "wallet",
+          "tool": "wallet_refund",
+          "produces": "refund_done",
+          "requires": [],
+          "fields": [
+            "order.wallet_ref"
+          ],
+          "guards": [
+            [
+              "wallet_available",
+              true
+            ],
+            [
+              "wallet_eligible",
+              true
+            ]
+          ]
+        }
+      ],
+      "policy": {
+        "allowed_fields": [
+          "customer.identity_ref",
+          "customer.owner_ref",
+          "order.account_ref",
+          "order.wallet_ref",
+          "private.bank_fee",
+          "private.wallet_days",
+          "private.wallet_fee"
+        ],
+        "allowed_tools": [
+          "bank_refund",
+          "report_exact_quotes",
+          "verify_bank",
+          "verify_identity",
+          "wallet_refund"
+        ],
+        "utility_ranks": {},
+        "minimize_disclosure": true
+      },
+      "registered_probes": []
+    },
+    "initial_true_facts": {
+      "wallet_available": false,
+      "bank_available": true,
+      "high_value": false,
+      "backend_help_banner_visible": true,
+      "wallet_eligible": true
+    },
+    "initial_values": {
+      "order.wallet_ref": "SYN-0310D4E0F8D2FD79",
+      "order.account_ref": "SYN-D9897A89D3D388ED",
+      "customer.owner_ref": "SYN-2AE3EB3CE74E2BD0",
+      "customer.identity_ref": "SYN-E4270F48574888DD",
+      "private.wallet_fee": 1.6133,
+      "private.bank_fee": 8.2713,
+      "private.wallet_days": 1.6832
+    }
+  },
+  "new-v2-20261123-evidence_drift-1": {
+    "manifest": {
+      "resource": "new-v2-20261123-evidence_drift-1",
+      "goals": [
+        "refund_done"
+      ],
+      "contracts": [
+        {
+          "id": "bank",
+          "tool": "bank_refund",
+          "produces": "refund_done",
+          "requires": [
+            "bank_verified"
+          ],
+          "fields": [
+            "order.account_ref"
+          ],
+          "guards": [
+            [
+              "bank_available",
+              true
+            ]
+          ]
+        },
+        {
+          "id": "bank_verify_high",
+          "tool": "verify_bank",
+          "produces": "bank_verified",
+          "requires": [
+            "identity_verified"
+          ],
+          "fields": [
+            "order.account_ref",
+            "customer.owner_ref"
+          ],
+          "guards": [
+            [
+              "high_value",
+              true
+            ]
+          ]
+        },
+        {
+          "id": "bank_verify_low",
+          "tool": "verify_bank",
+          "produces": "bank_verified",
+          "requires": [],
+          "fields": [
+            "order.account_ref",
+            "customer.owner_ref"
+          ],
+          "guards": [
+            [
+              "high_value",
+              false
+            ]
+          ]
+        },
+        {
+          "id": "identity",
+          "tool": "verify_identity",
+          "produces": "identity_verified",
+          "requires": [],
+          "fields": [
+            "customer.identity_ref"
+          ],
+          "guards": []
+        },
+        {
+          "id": "quotes",
+          "tool": "report_exact_quotes",
+          "produces": "quotes_reported",
+          "requires": [],
+          "fields": [
+            "private.wallet_fee",
+            "private.bank_fee"
+          ],
+          "guards": []
+        },
+        {
+          "id": "wallet",
+          "tool": "wallet_refund",
+          "produces": "refund_done",
+          "requires": [],
+          "fields": [
+            "order.wallet_ref"
+          ],
+          "guards": [
+            [
+              "wallet_available",
+              true
+            ],
+            [
+              "wallet_eligible",
+              true
+            ]
+          ]
+        }
+      ],
+      "policy": {
+        "allowed_fields": [
+          "customer.identity_ref",
+          "customer.owner_ref",
+          "order.account_ref",
+          "order.wallet_ref",
+          "private.bank_fee",
+          "private.wallet_days",
+          "private.wallet_fee"
+        ],
+        "allowed_tools": [
+          "bank_refund",
+          "report_exact_quotes",
+          "verify_bank",
+          "verify_identity",
+          "wallet_refund"
+        ],
+        "utility_ranks": {},
+        "minimize_disclosure": true
+      },
+      "registered_probes": []
+    },
+    "initial_true_facts": {
+      "wallet_available": false,
+      "bank_available": true,
+      "high_value": false,
+      "backend_help_banner_visible": true,
+      "wallet_eligible": true
+    },
+    "initial_values": {
+      "order.wallet_ref": "SYN-D3D099A47869A4C8",
+      "order.account_ref": "SYN-01FFF06D03116BF9",
+      "customer.owner_ref": "SYN-3E96900341136AC6",
+      "customer.identity_ref": "SYN-C37A94A740BC05FB",
+      "private.wallet_fee": 1.7632,
+      "private.bank_fee": 8.5224,
+      "private.wallet_days": 1.1342
+    }
+  }
+}

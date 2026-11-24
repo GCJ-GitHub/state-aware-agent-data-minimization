@@ -1,0 +1,8 @@
+{
+  "phase": "before formal freeze",
+  "v0_complete": 5,
+  "v0_total": 6,
+  "issue": "Complete JSON tool call followed by </. No missing name/arguments.",
+  "fix": "Common parser accepts only empty, </ or </tool_call> suffix after a complete JSON object; no inferred calls.",
+  "formal_outputs_seen": 0
+}

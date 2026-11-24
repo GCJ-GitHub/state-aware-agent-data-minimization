@@ -1,0 +1,31 @@
+{
+  "date": "2026-11-23",
+  "kind": "same_cohort_native_interface_and_advice_retest",
+  "tasks": 12,
+  "arms": [
+    "fixed_soft",
+    "fixed_enforced",
+    "planned_soft",
+    "planned_enforced"
+  ],
+  "seeds": [
+    19,
+    113,
+    421
+  ],
+  "episodes": 144,
+  "model": "qwen3.8-flash",
+  "temperature": 0.3,
+  "thinking": false,
+  "max_output_tokens": 512,
+  "max_model_calls": 40,
+  "common_recoveries": 2,
+  "native": "Actual tools/tool_calls and matching tool_call_id replies. tool_choice=auto, parallel_tool_calls=false. No textual tool parsing or inferred names/arguments. Only one complete native call is executed per response.",
+  "common_repair": "Initial metadata includes the same public planning state and group-specific query advice before any model call. Common instructions say stop private queries when a plan is ready. No automatic queries or backend denial of otherwise registered probes.",
+  "unchanged": "Exact same case bytes, values, 4 factors, priors, dynamic-state triggers, tool contracts, read checks, plan and business execution, confirmations, model alias, seeds and budgets as prior pilot.",
+  "query_factor": "Fixed-order versus small-graph DP recommendations only. Still advisory, not forced. Visible suggestions and unneeded follow-up probes measured from actual native request contexts.",
+  "read_factor": "Same original Backend, soft task-wide reads versus enforced current-step and evidence checks. Planner and actual execution checks are common to all arms.",
+  "cross_round_limit": "Native protocol, initial observation presentation and common prompt clarification change together. Cross-round gain is diagnostic combined repair, not isolated native-format causal effect or unseen-task generalization.",
+  "analysis": "All 144 attempts retained. Same independent goal/field oracle and evidence-drift subset; 5000 paired task-cluster bootstrap; report raw/summary/backend reads separately. No claims of superiority to published systems.",
+  "development": "Separate prior development IDs only; formal task set is reused deliberately for interface diagnosis. No formal outputs before this freeze."
+}

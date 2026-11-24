@@ -1,0 +1,18 @@
+{
+  "all_passed": true,
+  "episodes": 1080,
+  "model_inputs": 10780,
+  "full_native_request_body_replayed": true,
+  "interrupted_observed_prefixes": [
+    {
+      "id": "holdout-261123-single-06-0",
+      "arm": "agent_only",
+      "seed": 113,
+      "observed_returns": 25,
+      "business_complete": true,
+      "error": "HTTP_400"
+    }
+  ],
+  "fabricated_returns": 0,
+  "model_api_calls_during_audit": 0
+}

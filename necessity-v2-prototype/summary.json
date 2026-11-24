@@ -1,0 +1,28 @@
+{
+  "kind": "offline_prototype_mechanics_not_agent_evaluation",
+  "date": "2026-11-23",
+  "model_calls": 0,
+  "real_service_actions": 0,
+  "scripted_examples": 12,
+  "unit_tests": 27,
+  "unit_failures": 0,
+  "unit_errors": 0,
+  "independent_plan_oracle_configurations": 64,
+  "query_order_truth_worlds": 4,
+  "query_order_prior": {
+    "wallet_fee_ok": 0.1,
+    "wallet_speed_ok": 0.9
+  },
+  "expected_query_counts_under_assumed_prior": {
+    "exact_dp_reference": 1.1,
+    "fixed_speed_first": 1.9000000000000001
+  },
+  "not_claimed": [
+    "LLM success improvement",
+    "stronger empirical attack resistance",
+    "global semantic necessity",
+    "optimal real-world query strategy",
+    "production security",
+    "published-method novelty"
+  ]
+}

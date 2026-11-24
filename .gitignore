@@ -13,3 +13,13 @@ runs/
 credentials*
 secrets*
 *token-cache*
+
+# Large cached trajectories are committed losslessly in artifacts/2026-11-23.
+/airgap-escalation-state-study/episodes/
+/necessity-factorial-pilot/development-format-v0/
+/necessity-factorial-pilot/development/
+/necessity-factorial-pilot/episodes/
+/necessity-native-retest/development/
+/necessity-native-retest/episodes/
+/necessity-three-arm-holdout/episodes/
+/artifacts/verification/

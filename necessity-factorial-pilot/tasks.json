@@ -1,0 +1,74 @@
+[
+  {
+    "id": "new-v2-20261123-private_query_order-0",
+    "family": "private_query_order",
+    "variant": 0,
+    "development": false
+  },
+  {
+    "id": "new-v2-20261123-private_query_order-1",
+    "family": "private_query_order",
+    "variant": 1,
+    "development": false
+  },
+  {
+    "id": "new-v2-20261123-legal_alternatives-0",
+    "family": "legal_alternatives",
+    "variant": 0,
+    "development": false
+  },
+  {
+    "id": "new-v2-20261123-legal_alternatives-1",
+    "family": "legal_alternatives",
+    "variant": 1,
+    "development": false
+  },
+  {
+    "id": "new-v2-20261123-predicate_or_exact_values-0",
+    "family": "predicate_or_exact_values",
+    "variant": 0,
+    "development": false
+  },
+  {
+    "id": "new-v2-20261123-predicate_or_exact_values-1",
+    "family": "predicate_or_exact_values",
+    "variant": 1,
+    "development": false
+  },
+  {
+    "id": "new-v2-20261123-conditional_dependencies-0",
+    "family": "conditional_dependencies",
+    "variant": 0,
+    "development": false
+  },
+  {
+    "id": "new-v2-20261123-conditional_dependencies-1",
+    "family": "conditional_dependencies",
+    "variant": 1,
+    "development": false
+  },
+  {
+    "id": "new-v2-20261123-shared_goals-0",
+    "family": "shared_goals",
+    "variant": 0,
+    "development": false
+  },
+  {
+    "id": "new-v2-20261123-shared_goals-1",
+    "family": "shared_goals",
+    "variant": 1,
+    "development": false
+  },
+  {
+    "id": "new-v2-20261123-evidence_drift-0",
+    "family": "evidence_drift",
+    "variant": 0,
+    "development": false
+  },
+  {
+    "id": "new-v2-20261123-evidence_drift-1",
+    "family": "evidence_drift",
+    "variant": 1,
+    "development": false
+  }
+]

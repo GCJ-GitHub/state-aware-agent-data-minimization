@@ -1,0 +1,30 @@
+{
+  "all_passed": true,
+  "note": "Trigger proportions are observed treatment fidelity, not forced equal. No experimental rule edits.",
+  "by_arm": {
+    "upfront": {
+      "episodes": 360,
+      "initial_delivery_before_plan": 360,
+      "first_tool_inspect": 360,
+      "initial_delivery_observed": 360,
+      "switch_episodes": 120,
+      "switch_triggered": 108
+    },
+    "agent_only": {
+      "episodes": 360,
+      "initial_delivery_before_plan": 360,
+      "first_tool_inspect": 360,
+      "initial_delivery_observed": 360,
+      "switch_episodes": 120,
+      "switch_triggered": 120
+    },
+    "state_guard": {
+      "episodes": 360,
+      "initial_delivery_before_plan": 360,
+      "first_tool_inspect": 360,
+      "initial_delivery_observed": 360,
+      "switch_episodes": 120,
+      "switch_triggered": 120
+    }
+  }
+}

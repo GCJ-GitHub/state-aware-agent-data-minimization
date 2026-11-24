@@ -1,0 +1,4 @@
+{"study": "airgap-escalation-state-study", "written": 7899, "already_identical": 0, "files": 7899}
+{"study": "necessity-factorial-pilot", "written": 1737, "already_identical": 0, "files": 1737}
+{"study": "necessity-native-retest", "written": 1693, "already_identical": 0, "files": 1693}
+{"study": "necessity-three-arm-holdout", "written": 12943, "already_identical": 0, "files": 12943}

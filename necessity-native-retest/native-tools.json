@@ -1,0 +1,194 @@
+[
+  {
+    "type": "function",
+    "function": {
+      "name": "inspect",
+      "description": "Inspect verified facts, legal plans and query advice. No private raw values.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "probe",
+      "description": "Ask a registered fixed private predicate; obtain a verified boolean result.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "name"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "refresh_state",
+      "description": "Refresh public business facts after supporting evidence changes.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "propose_plan",
+      "description": "Propose a currently supported plan using action identifiers.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "nodes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "nodes"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "issue_read",
+      "description": "Request a single-use read justification for a pending enabled action.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "session": {
+            "type": "string"
+          },
+          "action": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "session",
+          "action"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "read_details",
+      "description": "Request exact missing fields for a justified pending action. Do not request backups, unrelated fields or raw decision values instead of approved predicates.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "grant": {
+            "type": "string"
+          },
+          "fields": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "grant",
+          "fields"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "confirm_action",
+      "description": "Ask simulated user approval if the action requires confirmation.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "session": {
+            "type": "string"
+          },
+          "action": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "session",
+          "action"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "execute",
+      "description": "Execute an enabled action with all and only its actual input fields. Reuse already obtained current values.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "session": {
+            "type": "string"
+          },
+          "action": {
+            "type": "string"
+          },
+          "values": {
+            "type": "object",
+            "additionalProperties": {
+              "type": [
+                "string",
+                "number",
+                "boolean"
+              ]
+            }
+          }
+        },
+        "required": [
+          "session",
+          "action",
+          "values"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "send_service_message",
+      "description": "Optional message to an external service; do not send personal values.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "text"
+        ],
+        "additionalProperties": false
+      }
+    }
+  }
+]

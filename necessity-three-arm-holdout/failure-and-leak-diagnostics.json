@@ -1,0 +1,92 @@
+{
+  "note": "Post-hoc descriptive trace inspection; no reruns or rule changes. Synthetic values intentionally omitted here; actual raw messages retained in episode files.",
+  "failures": [
+    {
+      "id": "holdout-261123-multi-05-0",
+      "arm": "upfront",
+      "seed": 421,
+      "native_protocol_errors": [
+        {
+          "turn": 3,
+          "reason": "no_native_call"
+        },
+        {
+          "turn": 4,
+          "reason": "no_native_call"
+        },
+        {
+          "turn": 6,
+          "reason": "no_native_call"
+        }
+      ],
+      "model_calls": 7,
+      "tools": 4,
+      "business_complete": false,
+      "budget_exhausted": false
+    },
+    {
+      "id": "holdout-261123-multi-13-0",
+      "arm": "agent_only",
+      "seed": 421,
+      "native_protocol_errors": [
+        {
+          "turn": 8,
+          "reason": "no_native_call"
+        }
+      ],
+      "model_calls": 40,
+      "tools": 39,
+      "business_complete": false,
+      "budget_exhausted": true
+    },
+    {
+      "id": "holdout-261123-switch-12-1",
+      "arm": "state_guard",
+      "seed": 113,
+      "native_protocol_errors": [
+        {
+          "turn": 28,
+          "reason": "no_native_call"
+        },
+        {
+          "turn": 31,
+          "reason": "no_native_call"
+        },
+        {
+          "turn": 32,
+          "reason": "no_native_call"
+        }
+      ],
+      "model_calls": 33,
+      "tools": 30,
+      "business_complete": false,
+      "budget_exhausted": false
+    }
+  ],
+  "leaks": [
+    {
+      "id": "holdout-261123-single-01-0",
+      "arm": "upfront",
+      "seed": 113,
+      "turn": 5,
+      "phase": "final_answer",
+      "fields": [
+        "logistics.stage0.locker_ref"
+      ],
+      "all_fields_previously_observed": true,
+      "all_fields_used_in_successful_action": true
+    },
+    {
+      "id": "holdout-261123-single-03-0",
+      "arm": "state_guard",
+      "seed": 113,
+      "turn": 5,
+      "phase": "final_answer",
+      "fields": [
+        "logistics.stage0.delivery_ref"
+      ],
+      "all_fields_previously_observed": true,
+      "all_fields_used_in_successful_action": true
+    }
+  ]
+}

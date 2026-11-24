@@ -1,0 +1,939 @@
+[
+  {
+    "case": "refund_wallet",
+    "before_execution": {
+      "status": "ready",
+      "missing_evidence": [],
+      "plans": [
+        {
+          "id": "39e8398c763bad540f2b",
+          "nodes": [
+            "wallet"
+          ],
+          "fields": [
+            "order.wallet_ref"
+          ],
+          "utility_and_disclosure_cost": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    "mode": "scripted_mechanics_only",
+    "model_calls": 0,
+    "selected_actions": [
+      "wallet"
+    ],
+    "derived_field_union": [
+      "order.wallet_ref"
+    ],
+    "disclosed_raw_fields": [
+      "order.wallet_ref"
+    ],
+    "monitor_metrics": {
+      "raw_disclosure_deliveries": 1,
+      "rejected_reads": 0,
+      "rejected_executions": 0
+    },
+    "connector_metrics": {
+      "private_probe_calls": 0,
+      "private_probe_raw_reads": 0,
+      "predicate_results_released": 0,
+      "public_receipts": 5
+    },
+    "events": [
+      {
+        "kind": "read",
+        "node": "wallet",
+        "fields": [
+          "order.wallet_ref"
+        ]
+      },
+      {
+        "kind": "execute",
+        "node": "wallet",
+        "fields": [
+          "order.wallet_ref"
+        ]
+      }
+    ]
+  },
+  {
+    "case": "refund_bank_normal",
+    "before_execution": {
+      "status": "ready",
+      "missing_evidence": [],
+      "plans": [
+        {
+          "id": "61a1c69486fd16d40fd1",
+          "nodes": [
+            "bank",
+            "bank_verify_low"
+          ],
+          "fields": [
+            "customer.owner_ref",
+            "order.account_ref"
+          ],
+          "utility_and_disclosure_cost": [
+            0,
+            2
+          ]
+        }
+      ]
+    },
+    "mode": "scripted_mechanics_only",
+    "model_calls": 0,
+    "selected_actions": [
+      "bank",
+      "bank_verify_low"
+    ],
+    "derived_field_union": [
+      "customer.owner_ref",
+      "order.account_ref"
+    ],
+    "disclosed_raw_fields": [
+      "customer.owner_ref",
+      "order.account_ref"
+    ],
+    "monitor_metrics": {
+      "raw_disclosure_deliveries": 2,
+      "rejected_reads": 0,
+      "rejected_executions": 0
+    },
+    "connector_metrics": {
+      "private_probe_calls": 0,
+      "private_probe_raw_reads": 0,
+      "predicate_results_released": 0,
+      "public_receipts": 5
+    },
+    "events": [
+      {
+        "kind": "read",
+        "node": "bank_verify_low",
+        "fields": [
+          "customer.owner_ref",
+          "order.account_ref"
+        ]
+      },
+      {
+        "kind": "execute",
+        "node": "bank_verify_low",
+        "fields": [
+          "customer.owner_ref",
+          "order.account_ref"
+        ]
+      },
+      {
+        "kind": "read",
+        "node": "bank",
+        "fields": []
+      },
+      {
+        "kind": "execute",
+        "node": "bank",
+        "fields": [
+          "order.account_ref"
+        ]
+      }
+    ]
+  },
+  {
+    "case": "refund_bank_high_value",
+    "before_execution": {
+      "status": "ready",
+      "missing_evidence": [],
+      "plans": [
+        {
+          "id": "1dcf02b1dd86ad06c88c",
+          "nodes": [
+            "bank",
+            "bank_verify_high",
+            "identity"
+          ],
+          "fields": [
+            "customer.identity_ref",
+            "customer.owner_ref",
+            "order.account_ref"
+          ],
+          "utility_and_disclosure_cost": [
+            0,
+            3
+          ]
+        }
+      ]
+    },
+    "mode": "scripted_mechanics_only",
+    "model_calls": 0,
+    "selected_actions": [
+      "bank",
+      "bank_verify_high",
+      "identity"
+    ],
+    "derived_field_union": [
+      "customer.identity_ref",
+      "customer.owner_ref",
+      "order.account_ref"
+    ],
+    "disclosed_raw_fields": [
+      "customer.identity_ref",
+      "customer.owner_ref",
+      "order.account_ref"
+    ],
+    "monitor_metrics": {
+      "raw_disclosure_deliveries": 3,
+      "rejected_reads": 0,
+      "rejected_executions": 0
+    },
+    "connector_metrics": {
+      "private_probe_calls": 0,
+      "private_probe_raw_reads": 0,
+      "predicate_results_released": 0,
+      "public_receipts": 5
+    },
+    "events": [
+      {
+        "kind": "read",
+        "node": "identity",
+        "fields": [
+          "customer.identity_ref"
+        ]
+      },
+      {
+        "kind": "execute",
+        "node": "identity",
+        "fields": [
+          "customer.identity_ref"
+        ]
+      },
+      {
+        "kind": "read",
+        "node": "bank_verify_high",
+        "fields": [
+          "customer.owner_ref",
+          "order.account_ref"
+        ]
+      },
+      {
+        "kind": "execute",
+        "node": "bank_verify_high",
+        "fields": [
+          "customer.owner_ref",
+          "order.account_ref"
+        ]
+      },
+      {
+        "kind": "read",
+        "node": "bank",
+        "fields": []
+      },
+      {
+        "kind": "execute",
+        "node": "bank",
+        "fields": [
+          "order.account_ref"
+        ]
+      }
+    ]
+  },
+  {
+    "case": "user_prefers_bank_over_less_data",
+    "before_execution": {
+      "status": "ready",
+      "missing_evidence": [],
+      "plans": [
+        {
+          "id": "61a1c69486fd16d40fd1",
+          "nodes": [
+            "bank",
+            "bank_verify_low"
+          ],
+          "fields": [
+            "customer.owner_ref",
+            "order.account_ref"
+          ],
+          "utility_and_disclosure_cost": [
+            0,
+            2
+          ]
+        }
+      ]
+    },
+    "mode": "scripted_mechanics_only",
+    "model_calls": 0,
+    "selected_actions": [
+      "bank",
+      "bank_verify_low"
+    ],
+    "derived_field_union": [
+      "customer.owner_ref",
+      "order.account_ref"
+    ],
+    "disclosed_raw_fields": [
+      "customer.owner_ref",
+      "order.account_ref"
+    ],
+    "monitor_metrics": {
+      "raw_disclosure_deliveries": 2,
+      "rejected_reads": 0,
+      "rejected_executions": 0
+    },
+    "connector_metrics": {
+      "private_probe_calls": 0,
+      "private_probe_raw_reads": 0,
+      "predicate_results_released": 0,
+      "public_receipts": 5
+    },
+    "events": [
+      {
+        "kind": "read",
+        "node": "bank_verify_low",
+        "fields": [
+          "customer.owner_ref",
+          "order.account_ref"
+        ]
+      },
+      {
+        "kind": "execute",
+        "node": "bank_verify_low",
+        "fields": [
+          "customer.owner_ref",
+          "order.account_ref"
+        ]
+      },
+      {
+        "kind": "read",
+        "node": "bank",
+        "fields": []
+      },
+      {
+        "kind": "execute",
+        "node": "bank",
+        "fields": [
+          "order.account_ref"
+        ]
+      }
+    ]
+  },
+  {
+    "case": "user_requests_exact_quotes",
+    "before_execution": {
+      "status": "ready",
+      "missing_evidence": [],
+      "plans": [
+        {
+          "id": "72132e90138e4061c4a4",
+          "nodes": [
+            "quotes",
+            "wallet"
+          ],
+          "fields": [
+            "order.wallet_ref",
+            "private.bank_fee",
+            "private.wallet_fee"
+          ],
+          "utility_and_disclosure_cost": [
+            0,
+            3
+          ]
+        }
+      ]
+    },
+    "mode": "scripted_mechanics_only",
+    "model_calls": 0,
+    "selected_actions": [
+      "quotes",
+      "wallet"
+    ],
+    "derived_field_union": [
+      "order.wallet_ref",
+      "private.bank_fee",
+      "private.wallet_fee"
+    ],
+    "disclosed_raw_fields": [
+      "order.wallet_ref",
+      "private.bank_fee",
+      "private.wallet_fee"
+    ],
+    "monitor_metrics": {
+      "raw_disclosure_deliveries": 3,
+      "rejected_reads": 0,
+      "rejected_executions": 0
+    },
+    "connector_metrics": {
+      "private_probe_calls": 0,
+      "private_probe_raw_reads": 0,
+      "predicate_results_released": 0,
+      "public_receipts": 5
+    },
+    "events": [
+      {
+        "kind": "read",
+        "node": "quotes",
+        "fields": [
+          "private.bank_fee",
+          "private.wallet_fee"
+        ]
+      },
+      {
+        "kind": "execute",
+        "node": "quotes",
+        "fields": [
+          "private.bank_fee",
+          "private.wallet_fee"
+        ]
+      },
+      {
+        "kind": "read",
+        "node": "wallet",
+        "fields": [
+          "order.wallet_ref"
+        ]
+      },
+      {
+        "kind": "execute",
+        "node": "wallet",
+        "fields": [
+          "order.wallet_ref"
+        ]
+      }
+    ]
+  },
+  {
+    "case": "two_appointments_shared_identity",
+    "before_execution": {
+      "status": "ready",
+      "missing_evidence": [],
+      "plans": [
+        {
+          "id": "d38c8072177f5e9d2bc5",
+          "nodes": [
+            "identity",
+            "session1.online",
+            "session2.online"
+          ],
+          "fields": [
+            "customer.identity_ref",
+            "session1.member_ref",
+            "session2.member_ref"
+          ],
+          "utility_and_disclosure_cost": [
+            0,
+            3
+          ]
+        }
+      ]
+    },
+    "mode": "scripted_mechanics_only",
+    "model_calls": 0,
+    "selected_actions": [
+      "identity",
+      "session1.online",
+      "session2.online"
+    ],
+    "derived_field_union": [
+      "customer.identity_ref",
+      "session1.member_ref",
+      "session2.member_ref"
+    ],
+    "disclosed_raw_fields": [
+      "customer.identity_ref",
+      "session1.member_ref",
+      "session2.member_ref"
+    ],
+    "monitor_metrics": {
+      "raw_disclosure_deliveries": 3,
+      "rejected_reads": 0,
+      "rejected_executions": 0
+    },
+    "connector_metrics": {
+      "private_probe_calls": 0,
+      "private_probe_raw_reads": 0,
+      "predicate_results_released": 0,
+      "public_receipts": 4
+    },
+    "events": [
+      {
+        "kind": "read",
+        "node": "identity",
+        "fields": [
+          "customer.identity_ref"
+        ]
+      },
+      {
+        "kind": "execute",
+        "node": "identity",
+        "fields": [
+          "customer.identity_ref"
+        ]
+      },
+      {
+        "kind": "read",
+        "node": "session1.online",
+        "fields": [
+          "session1.member_ref"
+        ]
+      },
+      {
+        "kind": "execute",
+        "node": "session1.online",
+        "fields": [
+          "session1.member_ref"
+        ]
+      },
+      {
+        "kind": "read",
+        "node": "session2.online",
+        "fields": [
+          "session2.member_ref"
+        ]
+      },
+      {
+        "kind": "execute",
+        "node": "session2.online",
+        "fields": [
+          "session2.member_ref"
+        ]
+      }
+    ]
+  },
+  {
+    "case": "two_appointments_home",
+    "before_execution": {
+      "status": "ready",
+      "missing_evidence": [],
+      "plans": [
+        {
+          "id": "8702fd8bec141eaa09f9",
+          "nodes": [
+            "identity",
+            "session1.home",
+            "session2.home"
+          ],
+          "fields": [
+            "customer.identity_ref",
+            "session1.address_ref",
+            "session1.member_ref",
+            "session2.address_ref",
+            "session2.member_ref"
+          ],
+          "utility_and_disclosure_cost": [
+            0,
+            5
+          ]
+        }
+      ]
+    },
+    "mode": "scripted_mechanics_only",
+    "model_calls": 0,
+    "selected_actions": [
+      "identity",
+      "session1.home",
+      "session2.home"
+    ],
+    "derived_field_union": [
+      "customer.identity_ref",
+      "session1.address_ref",
+      "session1.member_ref",
+      "session2.address_ref",
+      "session2.member_ref"
+    ],
+    "disclosed_raw_fields": [
+      "customer.identity_ref",
+      "session1.address_ref",
+      "session1.member_ref",
+      "session2.address_ref",
+      "session2.member_ref"
+    ],
+    "monitor_metrics": {
+      "raw_disclosure_deliveries": 5,
+      "rejected_reads": 0,
+      "rejected_executions": 0
+    },
+    "connector_metrics": {
+      "private_probe_calls": 0,
+      "private_probe_raw_reads": 0,
+      "predicate_results_released": 0,
+      "public_receipts": 4
+    },
+    "events": [
+      {
+        "kind": "read",
+        "node": "identity",
+        "fields": [
+          "customer.identity_ref"
+        ]
+      },
+      {
+        "kind": "execute",
+        "node": "identity",
+        "fields": [
+          "customer.identity_ref"
+        ]
+      },
+      {
+        "kind": "read",
+        "node": "session1.home",
+        "fields": [
+          "session1.address_ref",
+          "session1.member_ref"
+        ]
+      },
+      {
+        "kind": "execute",
+        "node": "session1.home",
+        "fields": [
+          "session1.address_ref",
+          "session1.member_ref"
+        ]
+      },
+      {
+        "kind": "read",
+        "node": "session2.home",
+        "fields": [
+          "session2.address_ref",
+          "session2.member_ref"
+        ]
+      },
+      {
+        "kind": "execute",
+        "node": "session2.home",
+        "fields": [
+          "session2.address_ref",
+          "session2.member_ref"
+        ]
+      }
+    ]
+  },
+  {
+    "initial_unknown": {
+      "status": "need_evidence",
+      "missing_evidence": [
+        "wallet_eligible"
+      ],
+      "plans": []
+    },
+    "case": "refund_predicate_then_execute",
+    "before_execution": {
+      "status": "ready",
+      "missing_evidence": [],
+      "plans": [
+        {
+          "id": "39e8398c763bad540f2b",
+          "nodes": [
+            "wallet"
+          ],
+          "fields": [
+            "order.wallet_ref"
+          ],
+          "utility_and_disclosure_cost": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    "mode": "scripted_mechanics_only",
+    "model_calls": 0,
+    "selected_actions": [
+      "wallet"
+    ],
+    "derived_field_union": [
+      "order.wallet_ref"
+    ],
+    "disclosed_raw_fields": [
+      "order.wallet_ref"
+    ],
+    "monitor_metrics": {
+      "raw_disclosure_deliveries": 1,
+      "rejected_reads": 0,
+      "rejected_executions": 0
+    },
+    "connector_metrics": {
+      "private_probe_calls": 1,
+      "private_probe_raw_reads": 2,
+      "predicate_results_released": 1,
+      "public_receipts": 4
+    },
+    "events": [
+      {
+        "kind": "read",
+        "node": "wallet",
+        "fields": [
+          "order.wallet_ref"
+        ]
+      },
+      {
+        "kind": "execute",
+        "node": "wallet",
+        "fields": [
+          "order.wallet_ref"
+        ]
+      }
+    ]
+  },
+  {
+    "initial_unknown": {
+      "status": "need_evidence",
+      "missing_evidence": [
+        "pickup_within_radius"
+      ],
+      "plans": []
+    },
+    "case": "delivery_radius_True",
+    "before_execution": {
+      "status": "ready",
+      "missing_evidence": [],
+      "plans": [
+        {
+          "id": "5b4f691c58161646b888",
+          "nodes": [
+            "pickup"
+          ],
+          "fields": [
+            "parcel.postal_ref"
+          ],
+          "utility_and_disclosure_cost": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    "mode": "scripted_mechanics_only",
+    "model_calls": 0,
+    "selected_actions": [
+      "pickup"
+    ],
+    "derived_field_union": [
+      "parcel.postal_ref"
+    ],
+    "disclosed_raw_fields": [
+      "parcel.postal_ref"
+    ],
+    "monitor_metrics": {
+      "raw_disclosure_deliveries": 1,
+      "rejected_reads": 0,
+      "rejected_executions": 0
+    },
+    "connector_metrics": {
+      "private_probe_calls": 1,
+      "private_probe_raw_reads": 1,
+      "predicate_results_released": 1,
+      "public_receipts": 2
+    },
+    "events": [
+      {
+        "kind": "read",
+        "node": "pickup",
+        "fields": [
+          "parcel.postal_ref"
+        ]
+      },
+      {
+        "kind": "execute",
+        "node": "pickup",
+        "fields": [
+          "parcel.postal_ref"
+        ]
+      }
+    ]
+  },
+  {
+    "initial_unknown": {
+      "status": "need_evidence",
+      "missing_evidence": [
+        "pickup_within_radius"
+      ],
+      "plans": []
+    },
+    "case": "delivery_radius_False",
+    "before_execution": {
+      "status": "ready",
+      "missing_evidence": [],
+      "plans": [
+        {
+          "id": "58c160a12ec830590b33",
+          "nodes": [
+            "redirect"
+          ],
+          "fields": [
+            "parcel.address_ref",
+            "parcel.contact_ref"
+          ],
+          "utility_and_disclosure_cost": [
+            0,
+            2
+          ]
+        }
+      ]
+    },
+    "mode": "scripted_mechanics_only",
+    "model_calls": 0,
+    "selected_actions": [
+      "redirect"
+    ],
+    "derived_field_union": [
+      "parcel.address_ref",
+      "parcel.contact_ref"
+    ],
+    "disclosed_raw_fields": [
+      "parcel.address_ref",
+      "parcel.contact_ref"
+    ],
+    "monitor_metrics": {
+      "raw_disclosure_deliveries": 2,
+      "rejected_reads": 0,
+      "rejected_executions": 0
+    },
+    "connector_metrics": {
+      "private_probe_calls": 1,
+      "private_probe_raw_reads": 1,
+      "predicate_results_released": 1,
+      "public_receipts": 2
+    },
+    "events": [
+      {
+        "kind": "read",
+        "node": "redirect",
+        "fields": [
+          "parcel.address_ref",
+          "parcel.contact_ref"
+        ]
+      },
+      {
+        "kind": "execute",
+        "node": "redirect",
+        "fields": [
+          "parcel.address_ref",
+          "parcel.contact_ref"
+        ]
+      }
+    ]
+  },
+  {
+    "case": "delivery_skip_unnecessary_private_probe",
+    "before_execution": {
+      "status": "ready",
+      "missing_evidence": [],
+      "plans": [
+        {
+          "id": "58c160a12ec830590b33",
+          "nodes": [
+            "redirect"
+          ],
+          "fields": [
+            "parcel.address_ref",
+            "parcel.contact_ref"
+          ],
+          "utility_and_disclosure_cost": [
+            0,
+            2
+          ]
+        }
+      ]
+    },
+    "mode": "scripted_mechanics_only",
+    "model_calls": 0,
+    "selected_actions": [
+      "redirect"
+    ],
+    "derived_field_union": [
+      "parcel.address_ref",
+      "parcel.contact_ref"
+    ],
+    "disclosed_raw_fields": [
+      "parcel.address_ref",
+      "parcel.contact_ref"
+    ],
+    "monitor_metrics": {
+      "raw_disclosure_deliveries": 2,
+      "rejected_reads": 0,
+      "rejected_executions": 0
+    },
+    "connector_metrics": {
+      "private_probe_calls": 0,
+      "private_probe_raw_reads": 0,
+      "predicate_results_released": 0,
+      "public_receipts": 2
+    },
+    "events": [
+      {
+        "kind": "read",
+        "node": "redirect",
+        "fields": [
+          "parcel.address_ref",
+          "parcel.contact_ref"
+        ]
+      },
+      {
+        "kind": "execute",
+        "node": "redirect",
+        "fields": [
+          "parcel.address_ref",
+          "parcel.contact_ref"
+        ]
+      }
+    ]
+  },
+  {
+    "case": "replan_after_better_route_appears",
+    "before_execution": {
+      "status": "ready",
+      "missing_evidence": [],
+      "plans": [
+        {
+          "id": "39e8398c763bad540f2b",
+          "nodes": [
+            "wallet"
+          ],
+          "fields": [
+            "order.wallet_ref"
+          ],
+          "utility_and_disclosure_cost": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    "mode": "scripted_mechanics_only",
+    "model_calls": 0,
+    "selected_actions": [
+      "wallet"
+    ],
+    "derived_field_union": [
+      "order.wallet_ref"
+    ],
+    "disclosed_raw_fields": [
+      "order.wallet_ref"
+    ],
+    "monitor_metrics": {
+      "raw_disclosure_deliveries": 1,
+      "rejected_reads": 1,
+      "rejected_executions": 0
+    },
+    "connector_metrics": {
+      "private_probe_calls": 0,
+      "private_probe_raw_reads": 0,
+      "predicate_results_released": 0,
+      "public_receipts": 6
+    },
+    "events": [
+      {
+        "kind": "read",
+        "node": "wallet",
+        "fields": [
+          "order.wallet_ref"
+        ]
+      },
+      {
+        "kind": "execute",
+        "node": "wallet",
+        "fields": [
+          "order.wallet_ref"
+        ]
+      }
+    ]
+  }
+]

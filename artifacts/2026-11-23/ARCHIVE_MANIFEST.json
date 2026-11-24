@@ -1,0 +1,54 @@
+{
+  "format": "lossless-relative-path-tar-gzip-v1",
+  "date": "2026-11-24",
+  "contents": "Original synthetic study trace bytes, including development and interruptions. Root reports, tasks, metrics and freezes are uncompressed in the repository. No credentials, model weights or runtime configuration.",
+  "archives": {
+    "airgap-escalation-state-study": {
+      "path": "artifacts/2026-11-23/airgap-escalation-state-study.traces.tar.gz",
+      "sha256": "b1fe891eec96827aa1f88d374d487bd4ed767e84a35241b04dd5dd17b7bd955f",
+      "compressed_bytes": 3135693,
+      "uncompressed_bytes": 58683748,
+      "file_count": 7899,
+      "largest_member_bytes": 30589,
+      "allowed_prefixes": [
+        "airgap-escalation-state-study/episodes/"
+      ]
+    },
+    "necessity-factorial-pilot": {
+      "path": "artifacts/2026-11-23/necessity-factorial-pilot.traces.tar.gz",
+      "sha256": "c5de8d0b989ce72de63079057de6dfd8857a2ce427f14dfc1da371738ff6379d",
+      "compressed_bytes": 1066022,
+      "uncompressed_bytes": 21653684,
+      "file_count": 1737,
+      "largest_member_bytes": 48184,
+      "allowed_prefixes": [
+        "necessity-factorial-pilot/development-format-v0/",
+        "necessity-factorial-pilot/development/",
+        "necessity-factorial-pilot/episodes/"
+      ]
+    },
+    "necessity-native-retest": {
+      "path": "artifacts/2026-11-23/necessity-native-retest.traces.tar.gz",
+      "sha256": "cd78fa7a63f9d468a0e710ba1bbd499b79750aede981a48a13295a30b6182b03",
+      "compressed_bytes": 2146616,
+      "uncompressed_bytes": 46794085,
+      "file_count": 1693,
+      "largest_member_bytes": 61549,
+      "allowed_prefixes": [
+        "necessity-native-retest/development/",
+        "necessity-native-retest/episodes/"
+      ]
+    },
+    "necessity-three-arm-holdout": {
+      "path": "artifacts/2026-11-23/necessity-three-arm-holdout.traces.tar.gz",
+      "sha256": "589b24a7785ca95b5f286967a48a153a62a4f621018daeda4be44bb10ea60192",
+      "compressed_bytes": 19549338,
+      "uncompressed_bytes": 387350501,
+      "file_count": 12943,
+      "largest_member_bytes": 202537,
+      "allowed_prefixes": [
+        "necessity-three-arm-holdout/episodes/"
+      ]
+    }
+  }
+}

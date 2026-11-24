@@ -1,0 +1,37 @@
+{
+  "all_passed": true,
+  "episodes": 648,
+  "method": "Independent event-based authorization, state-release and execution-ledger recount; does not import study.score.",
+  "totals": {
+    "airgap": {
+      "success": 216,
+      "overread_fields": 576,
+      "observed_fields": 1020,
+      "tools": 1927,
+      "model_calls": 2580,
+      "action_confirmations": 222,
+      "data_escalations": 112,
+      "n": 216
+    },
+    "agent_only": {
+      "success": 216,
+      "overread_fields": 0,
+      "observed_fields": 444,
+      "tools": 1793,
+      "model_calls": 2011,
+      "action_confirmations": 222,
+      "data_escalations": 0,
+      "n": 216
+    },
+    "state_guard": {
+      "success": 216,
+      "overread_fields": 0,
+      "observed_fields": 444,
+      "tools": 1792,
+      "model_calls": 2012,
+      "action_confirmations": 222,
+      "data_escalations": 0,
+      "n": 216
+    }
+  }
+}

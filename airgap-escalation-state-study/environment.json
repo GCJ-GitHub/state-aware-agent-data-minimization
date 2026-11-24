@@ -1,0 +1,8 @@
+{
+  "python": "3.9.6",
+  "os": "Darwin",
+  "architecture": "arm64",
+  "inference": "MaaS only; no local generation",
+  "workers": 4,
+  "stdlib_client": "urllib.request"
+}

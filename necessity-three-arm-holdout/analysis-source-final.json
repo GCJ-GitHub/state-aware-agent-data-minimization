@@ -1,0 +1,19 @@
+{
+  "recorded_at_utc": "2026-11-23T14:23:55Z",
+  "sha256": {
+    "necessity_holdout_report.py": "b5e4b5c402d87044c84ec033cc26596aa0dd328ace1a67426b23ea795de77837",
+    "scripts/check_necessity_holdout_results.py": "21d4884d3d1a3a3ecffbf19b24db0cd45eedd0c63c9fa2c3bd8db480b5f01a4f",
+    "tests/test_necessity_holdout.py": "aa24df7708cfdfd65b34b598feb7422c5933ba21b1eb2bed3aa9b21c3ad58360",
+    "tests/test_holdout_measurement_controls.py": "9a8cc6ce000edb77a8b1822fb9602cea3fcbf2262d57df0206fcdb98f7a1e9f4",
+    "scripts/audit_holdout_with_interruptions.py": "b37e5708f31eb57d8bd8b2ff3bb29a8e58d0ea1be79f7fe03b26a3322d005ab8",
+    "scripts/check_holdout_state_ledger.py": "7fe23836eb77ae616c83a40ac6c011f1d14ea00570500c973e214008ae23fa1f",
+    "scripts/describe_holdout_completion.py": "cc3e7e4d4bb4b213f7e0cdbe2f20ecb187e38a12afbbc454b2a0c7e6f938297c"
+  },
+  "changes_from_initial_analysis": {
+    "scripts/check_necessity_holdout_results.py": {
+      "before": "4d43a7712ce1afa197366b12e0fb600f1db2669a452281b811139650965db767",
+      "after": "21d4884d3d1a3a3ecffbf19b24db0cd45eedd0c63c9fa2c3bd8db480b5f01a4f"
+    }
+  },
+  "reason": "Independent checker overstrictly prohibited repeated prerequisite verification. Preserve and report those repeated effects; still assert terminal business effects unique. Primary frozen scorer and all experimental sources unchanged. Additional completion and interrupted-prefix helpers are post-hoc diagnostics."
+}

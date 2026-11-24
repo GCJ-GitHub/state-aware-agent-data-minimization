@@ -1,0 +1,14 @@
+airgap-escalation-state-study summary count 648 OK
+necessity-factorial-pilot summary count 144 OK
+necessity-native-retest summary count 144 OK
+necessity-three-arm-holdout summary count 1080 OK
+PASS airgap_state_study.py audit
+PASS scripts/check_state_study_results.py
+PASS necessity_factorial.py audit
+PASS scripts/check_necessity_factorial_results.py
+PASS necessity_native_retest.py audit
+PASS scripts/check_necessity_native_results.py
+PASS scripts/audit_holdout_with_interruptions.py
+PASS scripts/check_necessity_holdout_results.py
+PASS scripts/check_holdout_state_ledger.py
+CURRENT_RELEASE_ALL_OFFLINE_REPLAYS_VERIFIED; no model API calls made.

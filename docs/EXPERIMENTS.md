@@ -1,5 +1,21 @@
 # 实验索引与证据等级
 
+> 更新 2026-11-24：当前主证据、后续原型与完整轨迹见[当前进展](CURRENT_PROGRESS.md)和[当前复核指南](CURRENT_REPRODUCIBILITY.md)。下方原索引中的“最新”指 2026-11-19 的历史阶段。
+
+## 后续阶段（2026-11-23）
+
+| 阶段 | 报告 | 代码 | 正式规模/证据 |
+|---|---|---|---|
+| AirGap架构适配 | [报告](../airgap-escalation-state-study/REPORT.md) | airgap_state_study.py | 648；含最小化/升级，未触发B/C强制差异 |
+| 必要性原型 | [报告](../necessity-v2-prototype/REPORT.md) | necessity_v2、scripts/run_necessity_prototype.py | 0模型调用；脚本与机械检查 |
+| 2×2自主模型 | [报告](../necessity-factorial-pilot/REPORT.md) | necessity_factorial.py | 144；133成功，格式失败保留 |
+| 原生工具同题重测 | [报告](../necessity-native-retest/REPORT.md) | necessity_native_retest.py | 144；同题诊断，不是新留出 |
+| 冻结三组新任务 | [报告](../necessity-three-arm-holdout/REPORT.md) | necessity_holdout.py | 1080；当前动态必要性主证据 |
+
+以上阶段的完整原始目录保存在[四个压缩包](../artifacts/2026-11-23/ARCHIVE_MANIFEST.json)中；根级任务、指标、报告直接存放于对应目录。开发、格式诊断和HTTP中断保留，但不混入正式分母。
+
+## 历史阶段（截至2026-11-19）
+
 代码、数据和结果保留原目录关系。不同轮次的模型、自由调用程度、提示、评分和数据选择存在变化，不能把全部轮次加起来当成一个统一测试集。第一轮不是Qwen3-1.7B；后续以各轮报告为准。
 
 | 阶段 | 代码 | 结果目录 | 报告 | 证据边界 |

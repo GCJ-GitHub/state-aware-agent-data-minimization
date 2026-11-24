@@ -1,0 +1,8 @@
+{
+  "note": "Analysis/checker added after formal start, before completion; experimental rule freeze unchanged. Descriptive contrasts already in protocol.",
+  "sha256": {
+    "necessity_holdout_report.py": "b5e4b5c402d87044c84ec033cc26596aa0dd328ace1a67426b23ea795de77837",
+    "scripts/check_necessity_holdout_results.py": "4d43a7712ce1afa197366b12e0fb600f1db2669a452281b811139650965db767",
+    "tests/test_necessity_holdout.py": "aa24df7708cfdfd65b34b598feb7422c5933ba21b1eb2bed3aa9b21c3ad58360"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "model_episodes": 6,
+  "all_successful": true,
+  "native_protocol_errors": 0,
+  "mechanical_fixtures": 48,
+  "formal_retest_outputs_seen": 0,
+  "rows": [
+    {
+      "id": "dev-bank-261123",
+      "arm": "fixed_soft",
+      "task_success": true,
+      "calls": 12,
+      "native_protocol_errors": 0
+    },
+    {
+      "id": "dev-bank-261123",
+      "arm": "planned_enforced",
+      "task_success": true,
+      "calls": 13,
+      "native_protocol_errors": 0
+    },
+    {
+      "id": "dev-drift-261123",
+      "arm": "fixed_soft",
+      "task_success": true,
+      "calls": 9,
+      "native_protocol_errors": 0
+    },
+    {
+      "id": "dev-drift-261123",
+      "arm": "planned_enforced",
+      "task_success": true,
+      "calls": 9,
+      "native_protocol_errors": 0
+    },
+    {
+      "id": "dev-private-261123",
+      "arm": "fixed_soft",
+      "task_success": true,
+      "calls": 9,
+      "native_protocol_errors": 0
+    },
+    {
+      "id": "dev-private-261123",
+      "arm": "planned_enforced",
+      "task_success": true,
+      "calls": 7,
+      "native_protocol_errors": 0
+    }
+  ]
+}

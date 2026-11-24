@@ -1,0 +1,32 @@
+test_conditional_dependencies_derived_from_same_contracts (test_necessity_v2.NecessityControls) ... ok
+test_data_change_between_issue_and_read_is_detected (test_necessity_v2.NecessityControls) ... ok
+test_data_change_between_read_and_execute_is_detected (test_necessity_v2.NecessityControls) ... ok
+test_exact_frontier_matches_independent_subset_enumerator (test_necessity_v2.NecessityControls) ... ok
+test_explicit_privacy_preference_selects_smaller_set (test_necessity_v2.NecessityControls) ... ok
+test_forged_evidence_cannot_expand_read_scope (test_necessity_v2.NecessityControls) ... ok
+test_grant_is_not_permission_to_read_backup_route (test_necessity_v2.NecessityControls) ... ok
+test_legitimate_actions_work_in_all_domains (test_necessity_v2.NecessityControls) ... ok
+test_multiple_legal_plans_not_labeled_illegal (test_necessity_v2.NecessityControls) ... ok
+test_mutating_private_probe_input_invalidates_its_evidence (test_necessity_v2.NecessityControls) ... ok
+test_negative_evidence_for_alternative_is_bound (test_necessity_v2.NecessityControls) ... ok
+test_next_action_not_entire_plan_is_released (test_necessity_v2.NecessityControls) ... ok
+test_no_plan_when_all_routes_are_unavailable (test_necessity_v2.NecessityControls) ... ok
+test_private_predicate_reads_are_accounted_for (test_necessity_v2.NecessityControls) ... ok
+test_private_query_short_circuits_after_negative_result (test_necessity_v2.NecessityControls) ... ok
+test_query_order_oracle_uses_prior_for_order_not_permission (test_necessity_v2.NecessityControls) ... ok
+test_raw_quote_values_are_allowed_when_user_really_requests_them (test_necessity_v2.NecessityControls) ... ok
+test_read_grant_is_single_use_and_resource_bound (test_necessity_v2.NecessityControls) ... ok
+test_repeated_predicate_has_no_new_raw_reads (test_necessity_v2.NecessityControls) ... ok
+test_same_named_fact_from_another_order_is_rejected (test_necessity_v2.NecessityControls) ... ok
+test_shared_dependency_is_not_duplicated (test_necessity_v2.NecessityControls) ... ok
+test_simulated_success_cannot_be_executed_twice (test_necessity_v2.NecessityControls) ... ok
+test_unknown_evidence_is_not_guessed_or_released (test_necessity_v2.NecessityControls) ... ok
+test_unnecessary_probe_is_not_a_required_step (test_necessity_v2.NecessityControls) ... ok
+test_unrelated_state_change_does_not_invalidate_plan (test_necessity_v2.NecessityControls) ... ok
+test_unused_action_does_not_justify_extra_fields (test_necessity_v2.NecessityControls) ... ok
+test_user_utility_precedes_smaller_disclosure (test_necessity_v2.NecessityControls) ... ok
+
+----------------------------------------------------------------------
+Ran 27 tests in 0.043s
+
+OK
