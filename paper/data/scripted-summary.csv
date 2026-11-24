@@ -1,0 +1,11 @@
+study,arm,runs,completed,fields,denied,confirmations
+Refund cases,route_table,3,3,6,2,3
+Refund cases,contract,3,3,6,2,3
+Independent goals,route_table,4,3,12,3,7
+Independent goals,contract,4,3,12,3,7
+Dependent goals,route_table,6,5,17,1,9
+Dependent goals,contract,6,5,17,1,9
+Signature rule (new),route_table,6,4,19,1,9
+Signature rule (new),contract,6,4,19,1,9
+Signature rule (regression),route_table,15,12,39,2,20
+Signature rule (regression),contract,15,12,39,2,20

@@ -1,0 +1,13 @@
+family,arm,n,task_success,unique_raw_fields,hindsight_unused_fields,expired_evidence_fields,tools,model_calls,confirmations,any_leak
+all,upfront,360,359,1752,1049,1,2775,3134,139,1
+all,agent_only,360,359,850,144,144,3487,3840,141,0
+all,state_guard,360,359,707,0,0,3446,3806,141,1
+single,upfront,120,120,420,255,0,614,733,30,1
+single,agent_only,120,120,165,0,0,794,912,30,0
+single,state_guard,120,120,165,0,0,734,855,30,1
+switch,upfront,120,120,414,261,1,1185,1304,28,0
+switch,agent_only,120,120,300,144,144,1378,1493,30,0
+switch,state_guard,120,119,155,0,0,1392,1512,30,0
+multi,upfront,120,119,918,533,0,976,1097,81,0
+multi,agent_only,120,119,385,0,0,1315,1435,81,0
+multi,state_guard,120,120,387,0,0,1320,1439,81,0

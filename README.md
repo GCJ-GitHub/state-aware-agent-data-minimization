@@ -4,6 +4,8 @@
 
 ## 从这里开始
 
+- **[论文初稿、LaTeX 源码与实验图表](paper/README.md)**
+
 - **[当前实验、代码、效果与进展总览](docs/CURRENT_PROGRESS.md)**
 - **[完整 idea、三项贡献与方法设计](docs/PAPER_IDEA.md)**
 - [当前材料复现与离线复核](docs/CURRENT_REPRODUCIBILITY.md)

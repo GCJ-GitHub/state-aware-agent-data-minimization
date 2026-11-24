@@ -19,6 +19,14 @@ archive_index_path=root/'artifacts/2026-11-23/ARCHIVE_MANIFEST.json'
 archive_entries=json.loads(archive_index_path.read_text())['archives'] if archive_index_path.exists() else {}
 archive_paths={entry['path']:entry for entry in archive_entries.values()}
 
+# These generated figures and manuscript are text-extracted and scanned before
+# publication. Require a matching reviewed digest for exactly these PDF paths.
+paper_pdfs = {'paper/paper.pdf', 'paper/figures/exposure.pdf', 'paper/figures/mechanism.pdf'}
+publication = json.loads((root/'PUBLICATION_MANIFEST.json').read_text())
+reviewed_pdf_digests = publication.get('reviewed_pdf_sha256', {})
+pdfs_verified = 0
+
+
 def check_text(name,text):
     global scanned
     scanned+=1
@@ -31,6 +39,14 @@ for f in root.rglob('*'):
     if f.name=='.env' or (f.name.startswith('.env.') and f.name!='.env.example'):
         failures.append((str(rel),'forbidden_env_file'));continue
     name=rel.as_posix()
+    if name in paper_pdfs:
+        data = f.read_bytes()
+        digest = hashlib.sha256(data).hexdigest()
+        if not data.startswith(b'%PDF-') or reviewed_pdf_digests.get(name) != digest:
+            failures.append((name, 'unreviewed_pdf'))
+        else:
+            pdfs_verified += 1
+        continue
     if name in archive_paths:
         entry=archive_paths[name]
         if hashlib.sha256(f.read_bytes()).hexdigest()!=entry['sha256']:
@@ -50,4 +66,4 @@ for f in root.rglob('*'):
 if failures:
     for filename,label in failures:print(filename,label)
     raise SystemExit(1)
-print('SECRET_SCAN_PASSED',scanned,'text files/members;',archives_scanned,'archives validated; no matched values printed')
+print('SECRET_SCAN_PASSED',scanned,'text files/members;',archives_scanned,'archives validated;', pdfs_verified, 'reviewed PDF hashes validated; no matched values printed')

@@ -1,0 +1,170 @@
+\documentclass[10pt,twocolumn]{article}
+\usepackage[letterpaper,left=.74in,right=.74in,top=.67in,bottom=.67in,columnsep=.24in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx,booktabs,amsmath,microtype}
+\usepackage[hidelinks]{hyperref}
+\setlength{\emergencystretch}{1em}
+\setlength{\textfloatsep}{12pt plus 2pt minus 2pt}
+\setlength{\dbltextfloatsep}{12pt plus 2pt minus 2pt}
+\linespread{.97}
+\raggedbottom
+\setcounter{topnumber}{3}
+\setcounter{dbltopnumber}{3}
+\renewcommand{\topfraction}{.9}
+\renewcommand{\dbltopfraction}{.92}
+\renewcommand{\textfraction}{.08}
+\title{\bfseries State-Aware Data Minimization for Tool-Using Agents\\
+\large Revalidating Reads When Business State Changes}
+\author{Anonymous authors}
+\date{}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Tool-using agents often need private values to complete authorized workflows. A value that is necessary for a valid action can become unnecessary when a preferred route becomes available or a prerequisite changes. We study enforcement at the point where a tool delivers a value to the model. A prototype derives step-level requirements from tool contracts, binds read requests to current supporting evidence, and returns recovery feedback when that evidence becomes stale. We evaluate three release policies on 120 synthetic refund and logistics tasks, with one shared model and three repetitions per policy (1,080 attempts). Relative to agent-directed on-demand access, enforcement reduces field instances released on stale evidence from 144 to zero. Each policy completes 359 of 360 business workflows. The guard arm completes 119 of 120 workflows after a blocked read. One guard-arm response repeats a legitimately obtained value, illustrating the separate problem of downstream disclosure. In four scripted studies, a refreshed, composable route-table baseline matches the contract-based prototype when given reusable dependency and recovery rules. These results establish a concrete benefit for delivery-time enforcement under the evaluated changes in state and delimit the evidence for a contract-based representation.
+\end{abstract}
+
+\section{Introduction}
+A user asks an agent to prefer a wallet refund and fall back to a bank refund when the wallet is unavailable. While the wallet is unavailable, the bank route has a valid reason to request account information. Before the tool returns that information, the wallet becomes available. The user has granted the same overall authorization throughout, yet the account fields are now unnecessary under the user's stated preference. Checking the field list at the start of the task or when the route is first selected leaves a gap between the decision to read and the delivery of the data.
+
+This gap matters because releasing a raw value changes what the model can disclose. The system can invalidate the permission for future reads. A value already present in model context remains available to subsequent computation. A workflow system therefore needs to distinguish task relevance, necessity at delivery, and authorization to disclose a value to an external recipient.
+
+We study changing necessity as a property of the interaction among an agent, a workflow, and a data connector. The agent proposes plans and issues tools. The platform checks whether the next step belongs to an acceptable plan, its prerequisites are satisfied, and its evidence is still current when requested data would enter model context. A refusal can supply a reason and permitted recovery options. The agent remains responsible for selecting and invoking the next tool.
+
+We contribute three things. First, we specify a step-level read rule based on contractual inputs, current state, and evidence that supports the chosen plan or excludes a preferred alternative. Second, we implement and measure the rule for autonomous tool calls, including behavior after a denial. Third, we compare this representation to route tables that also refresh state and compose rules. The third contribution bounds our claim: the data support enforcing current necessity, while the evaluated strong baseline achieves the same outcomes and similar configuration changes in scripted workflows.
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=.94\textwidth]{figures/mechanism.pdf}
+\caption{The agent proposes and calls tools. The trusted platform checks the reason for data delivery against current evidence. On denial, the agent can refresh state and replan within the original authorization.}
+\label{fig:mechanism}
+\end{figure*}
+
+\section{Problem and trust model}
+\paragraph{Actors and state.}
+A user supplies a goal set $G$, data authorization $U$, and an ordering over acceptable options. The authorized route set is subject to business facts, such as availability, and already completed actions. The model may misread policy, act on stale information, or follow instructions in untrusted tool text. A trusted tool registry and business connector define action contracts and provide authenticated, versioned evidence. We assume that the relevant private output is mediated by the connector. Bypassed tools or compromised state sources are outside this boundary.
+
+\paragraph{Necessity at delivery.}
+Let $C$ be the trusted tool contracts and $E_t$ the evidence available at time $t$. A plan is admissible if its actions are authorized, its preconditions have trusted support, and it obeys the configured user preference. When a condition is unknown, the platform can withhold the plan pending evidence if learning that condition could change plan acceptance. Permission to use a value for an authorized task supplies an upper bound on access. Whether that value is needed now depends on the enabled step within an admissible plan.
+
+We distinguish \emph{decision information} from \emph{execution inputs}. A fixed predicate, such as whether a fee is below a user-approved threshold, can inform a plan without delivering the exact fee. The predicate result still conveys information. Conversely, an explicit reporting goal may require exact values, including a quote from a route that the agent ultimately does not execute.
+
+\paragraph{Security objective.}
+For a mediated read, the connector releases only the fields missing for the pending step of a plan it currently accepts. This objective is conditional on correct contracts, current trustworthy evidence, and mediated access. It does not characterize downstream use of a legitimate input. We measure visible output separately and make no claim about hidden reasoning or provenance-aware output control.
+
+\section{Design}
+\subsection{Plan derivation and read justification}
+Each tool contract declares its input fields, preconditions, required artifacts, and produced artifacts. The reference implementation expands goals into candidate plans over this dependency graph and filters them by authorization and evidence. Shared prerequisites appear once in a plan. The user's configured utility ordering precedes any disclosure-cost tie breaking permitted by the policy. The prototype uses enumeration for small graphs.
+
+The platform records a justification for a pending step of an accepted plan. This record identifies the resource, plan session, step, requested scope, and relevant evidence and field versions. Evidence can include facts that exclude an alternate route. In the refund example, the wallet's earlier unavailability matters even though the bank route's local conditions never change.
+
+Let $R(a)$ be the fields declared by step $a$, and $V_t$ the values already obtained at their current versions. Subject to plan admissibility, location of the step in the workflow, and version checks, the set eligible for delivery is
+\[
+D_t(a) = (R(a)\cap U)\setminus V_t .
+\]
+The connector compares the proposed field request with this scope and rejects stale, mismatched, or previously consumed justifications. In our sequential simulator, checks precede delivery. A distributed connector would need an atomic conditional read or equivalent protection against a state change between these operations.
+
+\subsection{Denial, recovery, and effects}
+A structured refusal can distinguish a stale justification, an unresolved prerequisite, and a prohibited field. The agent can use feedback to refresh evidence and propose a new plan. A request that needs new authority requires explicit user approval. Recovery within the original authorization does not extend the access scope. Figure~\ref{fig:mechanism} shows the execution path.
+
+The scripted logistics adapter records completed business effects and replans remaining goals. It can reuse a verification artifact when the resource, purpose, authorized policy and versions of its supporting inputs still match. This is important when choosing a different time slot at the same station after checking identity, station access or signing authorization. A changed station or signature input can invalidate a previous check. Both scripted comparators use the same recovery and reuse rules. This work does not implement general workflow rollback or distributed exactly-once execution.
+
+\subsection{Alternative enforcement with route tables}
+A strong alternative reads trusted state immediately before each delivery and looks up fields for the currently valid route and step. We allow the table to compose independent goal recipes, merge shared prerequisites, and refer to reusable condition and verification fragments. This baseline may encode the same checks as a contract-derived plan with different maintenance trade-offs. Our comparison keeps business tool behavior and authorization shared, then examines whether these two representations require different changes on the chosen tasks.
+
+\section{Evaluation}
+\subsection{Autonomous model experiment}
+\label{sec:autonomous}
+We compare three policies. \textsc{Upfront} returns all task-authorized candidate inputs in its first state inspection. \textsc{Agent only} lets the model request inputs as needed while preserving task-level authorization and common plan and execution checks. A shadow check records when a request would violate step-level necessity. \textsc{State guard} enforces necessity at delivery. The upfront arm isolates an eager-release policy and should be interpreted separately from the dedicated AirGap-style adaptation.
+
+The main experiment consists of 120 parameterized synthetic tasks across refund and logistics, grouped into 60 pairs. Paired members share the user request, profile and rules, with different business state. The suite balances single-route, route-switch and multiple-stage workflows, 40 of each. We run all three policies with one hosted model (alias \texttt{qwen3.8-flash}), native tool calls and the same task authorization, approval and recovery rules. Each task runs with three seeds, yielding 360 attempts per policy. The archived protocol fixes temperature 0.3, a budget of 40 model responses, a 512-token output cap per response, and two recoveries. We retain incomplete attempts and distinguish HTTP retries from returned model calls.
+
+In route-switch tasks, the simulated condition can change after the first read justification and before field delivery. The event actually occurred in all 120 attempts in both on-demand arms. In the upfront arm it occurred in 108 of 120 because some workflows used already supplied values and skipped the triggering action. As a result, comparisons involving upfront release in this subgroup include different event exposure. The primary comparison uses the two on-demand arms.
+
+\paragraph{Metrics and uncertainty.}
+An independent task ledger determines successful business effects and applicable confirmations. We separately count unique raw field instances (deduplicated within an attempt), fields unused by the resulting valid execution, and fields released despite a stale evidence check. These counts may overlap. We count successful business effects even when the expected final answer fails to arrive, and report final-answer completion separately. We check visible model prose and simulated external text for exact synthetic value matches. The protocol does not observe paraphrases, partial disclosures, or hidden reasoning. Intervals use 5,000 paired cluster bootstrap draws over the 60 state pairs, with both members and all repeats kept together. They describe uncertainty for this constructed suite, rather than a production workload.
+
+\begin{table*}[t]
+\centering
+\small
+\begin{tabular}{@{}lrrrrrrrr@{}}
+\toprule
+Policy & Business success & Raw fields & Unused & Stale & Tool calls & Model calls & Approvals & Leaks \\
+\midrule
+\input{autonomous_rows.tex}
+\end{tabular}
+\caption{Autonomous comparison across 360 attempts per policy (1,080 total). Field instances are deduplicated within attempts and summed. Leaks counts trajectories with a visible exact-value disclosure. Approvals are simulated. Repeated HTTP transport attempts are excluded from the model calls column.}
+\label{tab:autonomous}
+\end{table*}
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=.92\textwidth]{figures/exposure.pdf}
+\caption{Autonomous field exposure by workflow family (120 attempts per policy per family). Zero counts appear as short marks on the baseline. Panels use distinct vertical scales. The state event triggered in all on-demand route-switch attempts and in 108 of 120 upfront attempts.}
+\label{fig:exposure}
+\end{figure*}
+
+\subsection{Autonomous results}
+Table~\ref{tab:autonomous} shows that state enforcement reduced the raw fields delivered to the model from 850 to 707 relative to agent-only reads (16.8\%). It eliminated the 144 observed stale-field instances and the 144 eventually unused field instances of that comparator. Figure~\ref{fig:exposure} localizes the stale-field difference to route-switch cases. In the static and multiple-stage cases, agent-only already achieved zero eventually unused field instances.
+
+The guard blocked 120 read attempts, and 119 of the corresponding trajectories completed the business task. Aggregate completion was 359/360 for each policy. Within route switches, agent-only completed 120/120 and the guard completed 119/120. The failures differed across policies, so similar aggregate success does not imply identical trajectories. Normal final responses accompanied 354, 352 and 355 attempts in upfront, agent-only and guard respectively.
+
+The guard-minus-agent-only difference in stale field instances was $-0.400$ per attempt (95\% interval $[-0.550,-0.258]$). The business success difference was 0 percentage points (interval $[-0.83,0.83]$ points). Tool and model calls fell by 41 and 34 in total. The tool difference interval was $[-0.617,0.372]$ calls per attempt and the model difference interval was $[-0.583,0.386]$. These intervals leave the direction of the cost difference unresolved. Approval counts were equal in the two on-demand arms.
+
+One upfront and one guard attempt exposed a value in final prose. In the guard attempt, the value had been legitimately obtained for the workflow. There were no exact matches in the simulated external delivery logs. This distinction illustrates why preventing unnecessary reads and controlling what an agent repeats require separate evaluation.
+
+\subsection{Scripted comparison with refreshed route tables}
+\label{sec:scripted}
+We compare the two stronger backends using scripted decisions to isolate middleware behavior. The backends share authorization, confirmation, recovery and verification-reuse rules. Scenario definitions specify expected committed goals, fields and steps. Unsafe continuations, duplicate effects, and unexpected data delivery can thus be checked directly against the scenario. These studies run no model inference.
+
+\begin{table}[t]
+\centering
+\small
+\setlength{\tabcolsep}{2.2pt}
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+Study & Done & Fields & Denials & Approvals \\
+\midrule
+\input{scripted_rows.tex}
+\end{tabular}
+\caption{Scripted comparisons. Each row reports the identical counts observed for each backend separately. \emph{Done} counts fully completed workflows. The regression row includes previously expected safe stops.}
+\label{tab:scripted}
+\end{table}
+
+\paragraph{Refund cases.}
+We test restoration of the preferred refund route, reuse of identity verification across a plan change, and authorized access to exact quotes. Both backends handle all three cases. For one composition of refund and quote goals, the enumerated table requires three additional logical entries while the contract-based backend composes the existing contracts. This difference depends on the table representation.
+
+\paragraph{Logistics composition and dependency.}
+When the table can compose single-goal recipes, both backends execute new combinations of a pickup-site change and a time change with no configuration additions after freezing. We then let a pickup-site change invalidate a previous booking and require a different verification at the new site. An initial development trace revealed redundant site verification on replan. We give both backends a versioned reuse rule and freeze again. On six new composed cases, both complete five workflows and deliberately stop the unauthorized remaining appointment in the other. Each delivers 17 necessary field instances. A read of an obsolete time slot is denied by both. Table~\ref{tab:scripted} reports the matched counts.
+
+\paragraph{A new business rule.}
+We add a signature-authorization check for high-value rebooking. A valid existing slot can be retained without the check. The rule needs one manually written applicability declaration per backend after building migration adapters. In the contract system the declaration targets the two rebooking tools. In the table it targets a reusable rebooking fragment. Both expand it across four existing route variants and generate four variants requiring the check. This measures authored records for this design. Adapter development and maintenance time remain unmeasured.
+
+Across 30 prior regression runs (15 per backend), seven recorded metrics agree with the corresponding prior runs, and no signature input is delivered. On six new cases per backend, each completes four workflows. In the others, a needed field is unauthorized or no alternate slot is available. Both preserve the completed pickup-site change. They deliver 19 field instances each, all within the case-defined required set. When a preferred slot returns after signature verification, both reject the old slot read and reuse the valid verification. Focused checks show that missing or stale signature authorization blocks delivery of reservation inputs.
+
+\section{Discussion}
+\paragraph{What the comparison establishes.}
+The autonomous result identifies a pressure point: a change between justification and delivery defeats model-directed minimization even when a strong model performs well on ordinary workflows. The two strong scripted backends close this gap by checking current necessity at delivery. Their agreement weakens a broader claim that a contract representation always saves configuration. The observed difference from a flat table in the refund demonstration disappears for a composable table on the evaluated logistics workflows.
+
+\paragraph{Scope and validity.}
+We run one hosted model alias in the primary study. The fixtures and policies were designed by the researchers, and state changes are injected in a sequential simulator. The test does not estimate how often these events arise in real systems. Strong-baseline trials rely on scripted decisions, shared recovery machinery, and curated contracts. Neither method has been compared for human configuration time, maintenance errors, or production connector overhead. The study measures exposure of synthetic values, an input to privacy risk, and exact visible disclosure. It cannot quantify semantic leakage or hidden reasoning. Connector compromise, unmediated access, and concurrency are outside the evaluated system.
+
+\paragraph{The remaining comparison.}
+The most informative extension is a matched autonomous evaluation of the refreshed composable route table and contract verifier. It would hold the model, authorization, feedback, and budget fixed and synchronize the state change independently of read attempts. A small new suite can stress stale verifications, recovery after a committed action, and safe stop when no authorized route remains. This would show whether parity persists when the model must interpret feedback, decide which tools to call, and stop correctly. Observed equivalence in scripts does not settle that question.
+
+\section{Related work}
+\paragraph{Contextual minimization.}
+AirGapAgent first reduces a data view based on a trusted task context, isolates the conversational agent from the complete store, and can escalate a request to the user \cite{airgap}. Our setting targets the lifetime of a justified read after workflow execution has begun. An architectural adaptation in the artifact includes a minimizer, isolation and simulated escalation. It is a study-specific adapter and has a distinct metric and protocol. The upfront arm of Table~\ref{tab:autonomous} is a release-policy comparator.
+
+\paragraph{Tool policy and privacy measurement.}
+CaMeL tracks provenance and allowed readers and enforces tool policies in an interpreter \cite{camel}. We study a different decision at the upstream delivery boundary: which fields a plan presently needs, given changes in supporting business evidence. Both controls could be composed. AgentDAM measures inappropriate private data use in autonomous web workflows \cite{agentdam}. \emph{Leaky Thoughts} studies exposure in visible reasoning and final outcomes, including the reconstructed AirGapAgent-R benchmark \cite{leaky}. These works motivate separate accounting for acquisition and downstream disclosure. Their benchmarks and reported rates are distinct from our synthetic business-workflow tasks.
+
+\section{Conclusion}
+Delivery-time state checks prevented data from reaching the model after its justification expired, with high business completion in the tested workflows. Strong route tables can obtain the same behavior by refreshing state and sharing reusable dependency rules. The best-supported contribution is the dynamic read boundary and its recovery path. The relative merit of the representations in autonomous operation remains open.
+
+\section*{Ethics and artifacts}
+Task profiles contain synthetic values. Confirmations and business operations are simulated. The artifact provides authored tasks, frozen protocols, traces, independent recounts, and plotting scripts. To preserve the anonymity of this review-format draft, repository URLs and author affiliations are omitted in the manuscript. The accompanying source package identifies the public experiment artifacts.
+
+\bibliographystyle{plain}
+\bibliography{references}
+\end{document}
