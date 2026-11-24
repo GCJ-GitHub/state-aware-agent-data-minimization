@@ -1,6 +1,6 @@
 {
   "kind": "sanitized-publication-snapshot",
-  "note": "Checks current published bytes. Historical freeze hashes describe the original local execution, not redacted sources.",
+  "note": "Checks current published bytes. Historical freeze hashes describe original local execution, not redacted sources. Documentation and summary-only evidence update: 2026-11-24; new full study code and raw traces are not part of this update.",
   "sha256": {
     ".env.example": "6efc1f9e2392e397a847fcd0e017098f062de6270c0650b02601c7ddd08d2d6d",
     ".gitattributes": "ad9e64fea3f3e7d110057bbeadf495dedff025b4b31de0e9f60bb14fdec2cc4c",
@@ -16,7 +16,7 @@
     "AIRGAP-R-THINKING.md": "33119bb48ad8ad741e43a992c196fd7ed1c71300b00529e63d0cdf57c0ea7da0",
     "MAAS-FOUR-MODELS.md": "76a165bfa78b7b03371e1a7fd11c6e491aaa6443e89b2984bae0587df25d7b09",
     "PUBLICATION_CHANGES.json": "49d949fbde58988514ca5901f89d423679dbda682f0b07ca21215082dbb95899",
-    "README.md": "b56e2072111a65c2c4498d74439d91f84c23dd26a0183625f2fff9a74ec25e2d",
+    "README.md": "42175a0be0c0f6421335723e87c85f37055107651a210e4258819d80b56592cc",
     "REFUND-RECOVERY-HOLDOUT.md": "a50610de9cf33909c25b1e6ae2ce90055e5d1f8245fcb60564b9f3e01d575713",
     "REFUND-RECOVERY.md": "e31dbf02b9d924465f610194ad26cae0772ccdbfc208f87f21c3ec2768824f1e",
     "REFUND-RELEASE-TIMING.md": "ff94549cc608548527a9f7e14d5c14cafe9cf235abd45a81867b1ed045ecdd50",
@@ -206,6 +206,10 @@
     "tool-channel-failure-retest/summary.json": "cfde88548afd503e3b794974789db956cf2d25bde73a80fedb6a2f0ad9e321b6",
     "tool-channel-failure-retest/tasks.json": "4c6c7dbad1d2bb4f1f7c3c575bda593791296fc92b8c5e0a50900f0011f33bf4",
     "tool-channel-failure-retest/traces.jsonl": "b868630957af41976e8fe63930d14f3208a165df8d1d7daa7905e0a2dd35bdbc",
-    "tool_channel_failure_retest.py": "012700129ba43be033e6766813d973e17a00a88efb37570e7d439d6280cd2704"
+    "tool_channel_failure_retest.py": "012700129ba43be033e6766813d973e17a00a88efb37570e7d439d6280cd2704",
+    "docs/PAPER_IDEA.md": "5b021896d218a4df2103d0a9e5fc711a5ddaaa3882bfdae77509ed67224fb539",
+    "docs/assets/paper-framework/framework.svg": "5d751fa818cae27e8c739d9d1e2cfca23604d41965ec4c0159c082908e87560e",
+    "docs/assets/paper-framework/refund-flow.svg": "b92450620add116c9afcf507e38f192f915ae9eade8b5a8d3d69187fa2ac25c3",
+    "docs/idea-evidence-20261123.json": "571a92e6c63a2b9ccf5441a31913510791081dea6fc588dbe8c342dfa213e711"
   }
 }

@@ -1,0 +1,681 @@
+{
+  "publication_date": "2026-11-24",
+  "study_date": "2026-11-23",
+  "scope": "Summary and audit metadata only, not a full new-study source/trajectory release. Primary task_success measures business goals completed; final-answer completion is separate.",
+  "model": "MaaS qwen3.8-flash",
+  "tasks": 120,
+  "state_pairs": 60,
+  "arms": 3,
+  "seeds": [
+    19,
+    113,
+    421
+  ],
+  "attempts": 1080,
+  "summary": {
+    "episodes": 1080,
+    "expected_episodes": 1080,
+    "tables": {
+      "all": {
+        "upfront": {
+          "n": 360,
+          "task_success": 359,
+          "unique_raw_fields": 1752,
+          "hindsight_unused_fields": 1049,
+          "premature_fields": 1752,
+          "outside_justification_fields": 2,
+          "expired_evidence_fields": 1,
+          "raw_deliveries": 1754,
+          "blocked_reads": 0,
+          "success_after_block": 0,
+          "tools": 2775,
+          "model_calls": 3134,
+          "confirmations": 139,
+          "prose_leak_fields": 1,
+          "external_leak_fields": 0,
+          "any_leak": 1,
+          "native_protocol_errors": 5,
+          "recoveries": 4,
+          "truncated_calls": 1,
+          "visible_reasoning_calls": 0
+        },
+        "agent_only": {
+          "n": 360,
+          "task_success": 359,
+          "unique_raw_fields": 850,
+          "hindsight_unused_fields": 144,
+          "premature_fields": 147,
+          "outside_justification_fields": 147,
+          "expired_evidence_fields": 144,
+          "raw_deliveries": 854,
+          "blocked_reads": 0,
+          "success_after_block": 0,
+          "tools": 3487,
+          "model_calls": 3840,
+          "confirmations": 141,
+          "prose_leak_fields": 0,
+          "external_leak_fields": 0,
+          "any_leak": 0,
+          "native_protocol_errors": 1,
+          "recoveries": 1,
+          "truncated_calls": 0,
+          "visible_reasoning_calls": 0
+        },
+        "state_guard": {
+          "n": 360,
+          "task_success": 359,
+          "unique_raw_fields": 707,
+          "hindsight_unused_fields": 0,
+          "premature_fields": 0,
+          "outside_justification_fields": 0,
+          "expired_evidence_fields": 0,
+          "raw_deliveries": 707,
+          "blocked_reads": 120,
+          "success_after_block": 119,
+          "tools": 3446,
+          "model_calls": 3806,
+          "confirmations": 141,
+          "prose_leak_fields": 1,
+          "external_leak_fields": 0,
+          "any_leak": 1,
+          "native_protocol_errors": 5,
+          "recoveries": 4,
+          "truncated_calls": 0,
+          "visible_reasoning_calls": 0
+        }
+      },
+      "single": {
+        "upfront": {
+          "n": 120,
+          "task_success": 120,
+          "unique_raw_fields": 420,
+          "hindsight_unused_fields": 255,
+          "premature_fields": 420,
+          "outside_justification_fields": 0,
+          "expired_evidence_fields": 0,
+          "raw_deliveries": 420,
+          "blocked_reads": 0,
+          "success_after_block": 0,
+          "tools": 614,
+          "model_calls": 733,
+          "confirmations": 30,
+          "prose_leak_fields": 1,
+          "external_leak_fields": 0,
+          "any_leak": 1,
+          "native_protocol_errors": 0,
+          "recoveries": 0,
+          "truncated_calls": 0,
+          "visible_reasoning_calls": 0
+        },
+        "agent_only": {
+          "n": 120,
+          "task_success": 120,
+          "unique_raw_fields": 165,
+          "hindsight_unused_fields": 0,
+          "premature_fields": 0,
+          "outside_justification_fields": 0,
+          "expired_evidence_fields": 0,
+          "raw_deliveries": 165,
+          "blocked_reads": 0,
+          "success_after_block": 0,
+          "tools": 794,
+          "model_calls": 912,
+          "confirmations": 30,
+          "prose_leak_fields": 0,
+          "external_leak_fields": 0,
+          "any_leak": 0,
+          "native_protocol_errors": 0,
+          "recoveries": 0,
+          "truncated_calls": 0,
+          "visible_reasoning_calls": 0
+        },
+        "state_guard": {
+          "n": 120,
+          "task_success": 120,
+          "unique_raw_fields": 165,
+          "hindsight_unused_fields": 0,
+          "premature_fields": 0,
+          "outside_justification_fields": 0,
+          "expired_evidence_fields": 0,
+          "raw_deliveries": 165,
+          "blocked_reads": 0,
+          "success_after_block": 0,
+          "tools": 734,
+          "model_calls": 855,
+          "confirmations": 30,
+          "prose_leak_fields": 1,
+          "external_leak_fields": 0,
+          "any_leak": 1,
+          "native_protocol_errors": 1,
+          "recoveries": 1,
+          "truncated_calls": 0,
+          "visible_reasoning_calls": 0
+        }
+      },
+      "switch": {
+        "upfront": {
+          "n": 120,
+          "task_success": 120,
+          "unique_raw_fields": 414,
+          "hindsight_unused_fields": 261,
+          "premature_fields": 414,
+          "outside_justification_fields": 2,
+          "expired_evidence_fields": 1,
+          "raw_deliveries": 416,
+          "blocked_reads": 0,
+          "success_after_block": 0,
+          "tools": 1185,
+          "model_calls": 1304,
+          "confirmations": 28,
+          "prose_leak_fields": 0,
+          "external_leak_fields": 0,
+          "any_leak": 0,
+          "native_protocol_errors": 2,
+          "recoveries": 2,
+          "truncated_calls": 0,
+          "visible_reasoning_calls": 0
+        },
+        "agent_only": {
+          "n": 120,
+          "task_success": 120,
+          "unique_raw_fields": 300,
+          "hindsight_unused_fields": 144,
+          "premature_fields": 144,
+          "outside_justification_fields": 144,
+          "expired_evidence_fields": 144,
+          "raw_deliveries": 300,
+          "blocked_reads": 0,
+          "success_after_block": 0,
+          "tools": 1378,
+          "model_calls": 1493,
+          "confirmations": 30,
+          "prose_leak_fields": 0,
+          "external_leak_fields": 0,
+          "any_leak": 0,
+          "native_protocol_errors": 0,
+          "recoveries": 0,
+          "truncated_calls": 0,
+          "visible_reasoning_calls": 0
+        },
+        "state_guard": {
+          "n": 120,
+          "task_success": 119,
+          "unique_raw_fields": 155,
+          "hindsight_unused_fields": 0,
+          "premature_fields": 0,
+          "outside_justification_fields": 0,
+          "expired_evidence_fields": 0,
+          "raw_deliveries": 155,
+          "blocked_reads": 120,
+          "success_after_block": 119,
+          "tools": 1392,
+          "model_calls": 1512,
+          "confirmations": 30,
+          "prose_leak_fields": 0,
+          "external_leak_fields": 0,
+          "any_leak": 0,
+          "native_protocol_errors": 4,
+          "recoveries": 3,
+          "truncated_calls": 0,
+          "visible_reasoning_calls": 0
+        }
+      },
+      "multi": {
+        "upfront": {
+          "n": 120,
+          "task_success": 119,
+          "unique_raw_fields": 918,
+          "hindsight_unused_fields": 533,
+          "premature_fields": 918,
+          "outside_justification_fields": 0,
+          "expired_evidence_fields": 0,
+          "raw_deliveries": 918,
+          "blocked_reads": 0,
+          "success_after_block": 0,
+          "tools": 976,
+          "model_calls": 1097,
+          "confirmations": 81,
+          "prose_leak_fields": 0,
+          "external_leak_fields": 0,
+          "any_leak": 0,
+          "native_protocol_errors": 3,
+          "recoveries": 2,
+          "truncated_calls": 1,
+          "visible_reasoning_calls": 0
+        },
+        "agent_only": {
+          "n": 120,
+          "task_success": 119,
+          "unique_raw_fields": 385,
+          "hindsight_unused_fields": 0,
+          "premature_fields": 3,
+          "outside_justification_fields": 3,
+          "expired_evidence_fields": 0,
+          "raw_deliveries": 389,
+          "blocked_reads": 0,
+          "success_after_block": 0,
+          "tools": 1315,
+          "model_calls": 1435,
+          "confirmations": 81,
+          "prose_leak_fields": 0,
+          "external_leak_fields": 0,
+          "any_leak": 0,
+          "native_protocol_errors": 1,
+          "recoveries": 1,
+          "truncated_calls": 0,
+          "visible_reasoning_calls": 0
+        },
+        "state_guard": {
+          "n": 120,
+          "task_success": 120,
+          "unique_raw_fields": 387,
+          "hindsight_unused_fields": 0,
+          "premature_fields": 0,
+          "outside_justification_fields": 0,
+          "expired_evidence_fields": 0,
+          "raw_deliveries": 387,
+          "blocked_reads": 0,
+          "success_after_block": 0,
+          "tools": 1320,
+          "model_calls": 1439,
+          "confirmations": 81,
+          "prose_leak_fields": 0,
+          "external_leak_fields": 0,
+          "any_leak": 0,
+          "native_protocol_errors": 0,
+          "recoveries": 0,
+          "truncated_calls": 0,
+          "visible_reasoning_calls": 0
+        }
+      }
+    },
+    "http_attempts": 14392,
+    "http_errors": {
+      "429": 3555,
+      "400": 1,
+      "None": 56
+    }
+  },
+  "contrasts": {
+    "upfront": {
+      "task_success": {
+        "delta_per_episode": 0.0,
+        "ci95": [
+          -0.008333333333333331,
+          0.008333333333333331
+        ]
+      },
+      "unique_raw_fields": {
+        "delta_per_episode": -2.9027777777777777,
+        "ci95": [
+          -3.3027777777777776,
+          -2.519444444444445
+        ]
+      },
+      "hindsight_unused_fields": {
+        "delta_per_episode": -2.9138888888888888,
+        "ci95": [
+          -3.313888888888889,
+          -2.5250000000000004
+        ]
+      },
+      "premature_fields": {
+        "delta_per_episode": -4.866666666666666,
+        "ci95": [
+          -5.483333333333333,
+          -4.25
+        ]
+      },
+      "expired_evidence_fields": {
+        "delta_per_episode": -0.0027777777777777775,
+        "ci95": [
+          -0.008333333333333333,
+          0.0
+        ]
+      },
+      "tools": {
+        "delta_per_episode": 1.8638888888888894,
+        "ci95": [
+          1.294444444444444,
+          2.4416666666666673
+        ]
+      },
+      "model_calls": {
+        "delta_per_episode": 1.8666666666666663,
+        "ci95": [
+          1.3138888888888893,
+          2.430555555555556
+        ]
+      },
+      "confirmations": {
+        "delta_per_episode": 0.0055555555555555575,
+        "ci95": [
+          -0.005555555555555553,
+          0.01666666666666667
+        ]
+      },
+      "any_leak": {
+        "delta_per_episode": 0.0,
+        "ci95": [
+          -0.008333333333333333,
+          0.008333333333333333
+        ]
+      }
+    },
+    "agent_only": {
+      "task_success": {
+        "delta_per_episode": 0.0,
+        "ci95": [
+          -0.008333333333333331,
+          0.008333333333333331
+        ]
+      },
+      "unique_raw_fields": {
+        "delta_per_episode": -0.3972222222222222,
+        "ci95": [
+          -0.55,
+          -0.25277777777777777
+        ]
+      },
+      "hindsight_unused_fields": {
+        "delta_per_episode": -0.4,
+        "ci95": [
+          -0.55,
+          -0.25833333333333336
+        ]
+      },
+      "premature_fields": {
+        "delta_per_episode": -0.4083333333333333,
+        "ci95": [
+          -0.5583333333333333,
+          -0.26666666666666666
+        ]
+      },
+      "expired_evidence_fields": {
+        "delta_per_episode": -0.4,
+        "ci95": [
+          -0.55,
+          -0.25833333333333336
+        ]
+      },
+      "tools": {
+        "delta_per_episode": -0.1138888888888889,
+        "ci95": [
+          -0.6166666666666665,
+          0.3722222222222223
+        ]
+      },
+      "model_calls": {
+        "delta_per_episode": -0.09444444444444437,
+        "ci95": [
+          -0.5833333333333331,
+          0.38611111111111146
+        ]
+      },
+      "confirmations": {
+        "delta_per_episode": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "any_leak": {
+        "delta_per_episode": 0.0027777777777777775,
+        "ci95": [
+          0.0,
+          0.008333333333333333
+        ]
+      }
+    }
+  },
+  "input_replay_audit": {
+    "all_passed": true,
+    "episodes": 1080,
+    "model_inputs": 10780,
+    "full_native_request_body_replayed": true,
+    "interrupted_observed_prefixes": [
+      {
+        "id": "holdout-261123-single-06-0",
+        "arm": "agent_only",
+        "seed": 113,
+        "observed_returns": 25,
+        "business_complete": true,
+        "error": "HTTP_400"
+      }
+    ],
+    "fabricated_returns": 0,
+    "model_api_calls_during_audit": 0
+  },
+  "independent_recount": {
+    "all_passed": true,
+    "episodes": 1080,
+    "metric_comparisons": 16200,
+    "independent_of_planner_and_scorer": true,
+    "repeated_prerequisite_effects": [
+      {
+        "id": "holdout-261123-multi-13-0",
+        "arm": "agent_only",
+        "seed": 421,
+        "artifact": "identity_verified"
+      },
+      {
+        "id": "holdout-261123-multi-13-0",
+        "arm": "agent_only",
+        "seed": 421,
+        "artifact": "identity_verified"
+      }
+    ],
+    "terminal_business_effects_unique": true
+  },
+  "state_ledger_audit": {
+    "all_passed": true,
+    "note": "Trigger proportions are observed treatment fidelity, not forced equal. No experimental rule edits.",
+    "by_arm": {
+      "upfront": {
+        "episodes": 360,
+        "initial_delivery_before_plan": 360,
+        "first_tool_inspect": 360,
+        "initial_delivery_observed": 360,
+        "switch_episodes": 120,
+        "switch_triggered": 108
+      },
+      "agent_only": {
+        "episodes": 360,
+        "initial_delivery_before_plan": 360,
+        "first_tool_inspect": 360,
+        "initial_delivery_observed": 360,
+        "switch_episodes": 120,
+        "switch_triggered": 120
+      },
+      "state_guard": {
+        "episodes": 360,
+        "initial_delivery_before_plan": 360,
+        "first_tool_inspect": 360,
+        "initial_delivery_observed": 360,
+        "switch_episodes": 120,
+        "switch_triggered": 120
+      }
+    }
+  },
+  "completion_diagnostics": {
+    "note": "Post-hoc diagnostic; frozen task_success means valid business goals completed and does not require a final text response. Do not silently substitute the endpoint. All recorded calls including post-completion loops retained.",
+    "by_arm": {
+      "upfront": {
+        "n": 360,
+        "normal_final_response": 354,
+        "post_completion_tool_calls": 390,
+        "tools_median": 7.0,
+        "tools_p95": 11,
+        "model_calls_median": 8.0,
+        "model_calls_p95": 12
+      },
+      "agent_only": {
+        "n": 360,
+        "normal_final_response": 352,
+        "post_completion_tool_calls": 378,
+        "tools_median": 9.0,
+        "tools_p95": 14,
+        "model_calls_median": 10.0,
+        "model_calls_p95": 15
+      },
+      "state_guard": {
+        "n": 360,
+        "normal_final_response": 355,
+        "post_completion_tool_calls": 350,
+        "tools_median": 9.0,
+        "tools_p95": 13,
+        "model_calls_median": 10.0,
+        "model_calls_p95": 14
+      }
+    },
+    "non_normal_terminations": [
+      {
+        "id": "holdout-261123-multi-05-0",
+        "arm": "upfront",
+        "seed": 421,
+        "business_complete": false,
+        "terminal_transport_error": null
+      },
+      {
+        "id": "holdout-261123-multi-19-1",
+        "arm": "upfront",
+        "seed": 19,
+        "business_complete": true,
+        "terminal_transport_error": null
+      },
+      {
+        "id": "holdout-261123-single-18-0",
+        "arm": "upfront",
+        "seed": 113,
+        "business_complete": true,
+        "terminal_transport_error": null
+      },
+      {
+        "id": "holdout-261123-switch-12-0",
+        "arm": "upfront",
+        "seed": 421,
+        "business_complete": true,
+        "terminal_transport_error": null
+      },
+      {
+        "id": "holdout-261123-switch-17-1",
+        "arm": "upfront",
+        "seed": 19,
+        "business_complete": true,
+        "terminal_transport_error": null
+      },
+      {
+        "id": "holdout-261123-switch-18-1",
+        "arm": "upfront",
+        "seed": 421,
+        "business_complete": true,
+        "terminal_transport_error": null
+      },
+      {
+        "id": "holdout-261123-multi-13-0",
+        "arm": "agent_only",
+        "seed": 421,
+        "business_complete": false,
+        "terminal_transport_error": null
+      },
+      {
+        "id": "holdout-261123-single-06-0",
+        "arm": "agent_only",
+        "seed": 113,
+        "business_complete": true,
+        "terminal_transport_error": {
+          "category": "HTTP_400",
+          "error_type": "RuntimeError"
+        }
+      },
+      {
+        "id": "holdout-261123-single-14-0",
+        "arm": "agent_only",
+        "seed": 113,
+        "business_complete": true,
+        "terminal_transport_error": null
+      },
+      {
+        "id": "holdout-261123-switch-04-1",
+        "arm": "agent_only",
+        "seed": 113,
+        "business_complete": true,
+        "terminal_transport_error": null
+      },
+      {
+        "id": "holdout-261123-switch-05-0",
+        "arm": "agent_only",
+        "seed": 113,
+        "business_complete": true,
+        "terminal_transport_error": null
+      },
+      {
+        "id": "holdout-261123-switch-10-1",
+        "arm": "agent_only",
+        "seed": 19,
+        "business_complete": true,
+        "terminal_transport_error": null
+      },
+      {
+        "id": "holdout-261123-switch-11-0",
+        "arm": "agent_only",
+        "seed": 421,
+        "business_complete": true,
+        "terminal_transport_error": null
+      },
+      {
+        "id": "holdout-261123-switch-18-1",
+        "arm": "agent_only",
+        "seed": 421,
+        "business_complete": true,
+        "terminal_transport_error": null
+      },
+      {
+        "id": "holdout-261123-multi-09-1",
+        "arm": "state_guard",
+        "seed": 19,
+        "business_complete": true,
+        "terminal_transport_error": null
+      },
+      {
+        "id": "holdout-261123-switch-04-1",
+        "arm": "state_guard",
+        "seed": 421,
+        "business_complete": true,
+        "terminal_transport_error": null
+      },
+      {
+        "id": "holdout-261123-switch-08-0",
+        "arm": "state_guard",
+        "seed": 19,
+        "business_complete": true,
+        "terminal_transport_error": null
+      },
+      {
+        "id": "holdout-261123-switch-10-1",
+        "arm": "state_guard",
+        "seed": 421,
+        "business_complete": true,
+        "terminal_transport_error": null
+      },
+      {
+        "id": "holdout-261123-switch-12-1",
+        "arm": "state_guard",
+        "seed": 113,
+        "business_complete": false,
+        "terminal_transport_error": null
+      }
+    ],
+    "reported_model_versions": {
+      "qwen3.8-flash": 10780
+    }
+  },
+  "source_artifact_sha256": {
+    "summary.json": "743f371da9f3cc7f3302218addb073e62ae59b7ac69602e972d424e33eb159c2",
+    "analysis.json": "17a444ca4e6da792eaa618aa5bc049694900a09559cd51f3a4511f8809eeb887",
+    "audit.json": "d11895d100f5f49012906093aaaf897614c138c72bf56ea4a1275ec8a0a822ad",
+    "independent-recount.json": "f55f38aa9b71fc56b35873209041487607afb1f58136ef8a6bbecb36c930e8a9",
+    "state-ledger-audit.json": "51e566b117b622ac7b9581b433df1f700394e5e8330cf369b78348a4c9bcfbc3",
+    "completion-diagnostics.json": "5d233497398481e1947d037fa9417b0d4a419190268722bfa0b6531702d64a7a"
+  }
+}
