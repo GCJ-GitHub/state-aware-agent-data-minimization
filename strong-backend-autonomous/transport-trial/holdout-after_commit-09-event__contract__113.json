@@ -1,0 +1,433 @@
+{
+  "id": "holdout-after_commit-09-event",
+  "pair": "holdout-after_commit-09",
+  "arm": "contract",
+  "seed": 113,
+  "events": [
+    {
+      "event": "read",
+      "turn": 3,
+      "prepared": 2,
+      "step": "identity",
+      "requested": [
+        "identity_ref"
+      ],
+      "facts": {
+        "backup_open": true,
+        "preferred_open": true,
+        "site_open": true
+      },
+      "seen": [],
+      "goal": "site_change",
+      "delivered": {
+        "identity_ref": 1
+      },
+      "ok": true
+    },
+    {
+      "event": "effect",
+      "step": "identity",
+      "turn": 4,
+      "goal": "identity_verified",
+      "identity_version": 1
+    },
+    {
+      "event": "read",
+      "turn": 6,
+      "prepared": 5,
+      "step": "move",
+      "requested": [
+        "site_ref"
+      ],
+      "facts": {
+        "backup_open": true,
+        "preferred_open": true,
+        "site_open": true
+      },
+      "seen": [
+        "identity_ref"
+      ],
+      "goal": "site_change",
+      "delivered": {
+        "site_ref": 1
+      },
+      "ok": true
+    },
+    {
+      "event": "confirmation",
+      "step": "move",
+      "turn": 7
+    },
+    {
+      "event": "effect",
+      "step": "move",
+      "turn": 8,
+      "goal": "site_change",
+      "identity_version": null
+    },
+    {
+      "event": "checkpoint",
+      "turn": 8,
+      "scheduled": 12
+    }
+  ],
+  "commits": [
+    "move"
+  ],
+  "stopped": false,
+  "end": "api_error",
+  "model_responses": [
+    {
+      "turn": 0,
+      "model": "qwen3.8-flash",
+      "fingerprint": "",
+      "text": "I'll start by checking the current status.\n\n",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_f520e2d01a4845bc86e8e1e0",
+          "function": {
+            "name": "status",
+            "arguments": "{}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 1,
+      "model": "qwen3.8-flash",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_c448f3082cac498b8912e40d",
+          "function": {
+            "name": "select_plan",
+            "arguments": "{\"steps\": \n[\"identity\", \"move\"]\n\n}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 2,
+      "model": "qwen3.8-flash",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_edafc58fbe4d471696a688a4",
+          "function": {
+            "name": "prepare_read",
+            "arguments": "{\"step\": \"identity\"}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 3,
+      "model": "qwen3.8-flash",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_90bf5918e3844ef6a22eed13",
+          "function": {
+            "name": "read_fields",
+            "arguments": "{\"handle\": \"R1\", \"fields\": \n[\"identity_ref\"]\n\n}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 4,
+      "model": "qwen3.8-flash",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_e7e704d18dbf43aa85c33931",
+          "function": {
+            "name": "execute",
+            "arguments": "{\"step\": \"identity\", \"values\": {\"identity_ref\": \"SYN_1f1763ad2d28b\"}}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 5,
+      "model": "qwen3.8-flash",
+      "fingerprint": "",
+      "text": "Identity verified. Now preparing the pickup-point move, which requires your confirmation.\n\n",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_583a853f45e1430e83359d03",
+          "function": {
+            "name": "prepare_read",
+            "arguments": "{\"step\": \"move\"}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 6,
+      "model": "qwen3.8-flash",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_8b276cfbb3674562a5b52c5f",
+          "function": {
+            "name": "read_fields",
+            "arguments": "{\"handle\": \"R3\", \"fields\": \n[\"site_ref\"]\n\n}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 7,
+      "model": "qwen3.8-flash",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_d69c6926bc3c4906a33a650c",
+          "function": {
+            "name": "confirm",
+            "arguments": "{\"step\": \"move\"}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 8,
+      "model": "qwen3.8-flash",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_b066d62af2d7416187ac23dc",
+          "function": {
+            "name": "execute",
+            "arguments": "{\"step\": \"move\", \"values\": {\"site_ref\": \"SYN_ad5ddd169d789\"}}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 9,
+      "model": "qwen3.8-flash",
+      "fingerprint": "",
+      "text": "The pickup point change is permanent. Checking status for remaining booking work.\n\n",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_6180606c2121447aa9dbbf31",
+          "function": {
+            "name": "status",
+            "arguments": "{}"
+          }
+        }
+      ]
+    }
+  ],
+  "calls": [
+    {
+      "turn": 0,
+      "name": "status",
+      "args": {},
+      "response": {
+        "status": "ready",
+        "facts": {
+          "backup_open": true,
+          "preferred_open": true,
+          "site_open": true
+        },
+        "committed": [],
+        "plans": [
+          [
+            "identity",
+            "move"
+          ]
+        ]
+      }
+    },
+    {
+      "turn": 1,
+      "name": "select_plan",
+      "args": {
+        "steps": [
+          "identity",
+          "move"
+        ]
+      },
+      "response": {
+        "enabled": [
+          {
+            "step": "identity",
+            "input_fields": [
+              "identity_ref"
+            ],
+            "missing_fields": [
+              "identity_ref"
+            ],
+            "needs_confirmation": false
+          }
+        ],
+        "reused": []
+      }
+    },
+    {
+      "turn": 2,
+      "name": "prepare_read",
+      "args": {
+        "step": "identity"
+      },
+      "response": {
+        "handle": "R1",
+        "fields": [
+          "identity_ref"
+        ]
+      }
+    },
+    {
+      "turn": 3,
+      "name": "read_fields",
+      "args": {
+        "handle": "R1",
+        "fields": [
+          "identity_ref"
+        ]
+      },
+      "response": {
+        "values": {
+          "identity_ref": "SYN_1f1763ad2d28b"
+        }
+      }
+    },
+    {
+      "turn": 4,
+      "name": "execute",
+      "args": {
+        "step": "identity",
+        "values": {
+          "identity_ref": "SYN_1f1763ad2d28b"
+        }
+      },
+      "response": {
+        "verified": "identity",
+        "enabled": [
+          {
+            "step": "move",
+            "input_fields": [
+              "site_ref"
+            ],
+            "missing_fields": [
+              "site_ref"
+            ],
+            "needs_confirmation": true
+          }
+        ]
+      }
+    },
+    {
+      "turn": 5,
+      "name": "prepare_read",
+      "args": {
+        "step": "move"
+      },
+      "response": {
+        "handle": "R3",
+        "fields": [
+          "site_ref"
+        ]
+      }
+    },
+    {
+      "turn": 6,
+      "name": "read_fields",
+      "args": {
+        "handle": "R3",
+        "fields": [
+          "site_ref"
+        ]
+      },
+      "response": {
+        "values": {
+          "site_ref": "SYN_ad5ddd169d789"
+        }
+      }
+    },
+    {
+      "turn": 7,
+      "name": "confirm",
+      "args": {
+        "step": "move"
+      },
+      "response": {
+        "approved": true
+      }
+    },
+    {
+      "turn": 8,
+      "name": "execute",
+      "args": {
+        "step": "move",
+        "values": {
+          "site_ref": "SYN_ad5ddd169d789"
+        }
+      },
+      "response": {
+        "committed": "move",
+        "next": "status for remaining booking"
+      }
+    },
+    {
+      "turn": 9,
+      "name": "status",
+      "args": {},
+      "response": {
+        "status": "ready",
+        "facts": {
+          "backup_open": true,
+          "preferred_open": true,
+          "site_open": true
+        },
+        "committed": [
+          "move"
+        ],
+        "plans": [
+          [
+            "identity",
+            "preferred_slot"
+          ]
+        ]
+      }
+    }
+  ],
+  "protocol_errors": [
+    "retries_exhausted_429"
+  ],
+  "http_attempts": 21,
+  "http_statuses": {
+    "200": 10,
+    "429": 11
+  }
+}

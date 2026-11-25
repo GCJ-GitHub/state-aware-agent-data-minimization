@@ -1,0 +1,646 @@
+{
+  "id": "holdout-after_commit-02-control",
+  "pair": "holdout-after_commit-02",
+  "arm": "route_table",
+  "seed": 19,
+  "events": [
+    {
+      "event": "read",
+      "turn": 3,
+      "prepared": 2,
+      "step": "identity",
+      "requested": [
+        "identity_ref"
+      ],
+      "facts": {
+        "backup_open": true,
+        "preferred_open": true,
+        "site_open": true
+      },
+      "seen": [],
+      "goal": "site_change",
+      "delivered": {
+        "identity_ref": 1
+      },
+      "ok": true
+    },
+    {
+      "event": "effect",
+      "step": "identity",
+      "turn": 4,
+      "goal": "identity_verified",
+      "identity_version": 1
+    },
+    {
+      "event": "read",
+      "turn": 6,
+      "prepared": 5,
+      "step": "move",
+      "requested": [
+        "site_ref"
+      ],
+      "facts": {
+        "backup_open": true,
+        "preferred_open": true,
+        "site_open": true
+      },
+      "seen": [
+        "identity_ref"
+      ],
+      "goal": "site_change",
+      "delivered": {
+        "site_ref": 1
+      },
+      "ok": true
+    },
+    {
+      "event": "confirmation",
+      "step": "move",
+      "turn": 7
+    },
+    {
+      "event": "effect",
+      "step": "move",
+      "turn": 8,
+      "goal": "site_change",
+      "identity_version": null
+    },
+    {
+      "event": "checkpoint",
+      "turn": 8,
+      "scheduled": 12
+    },
+    {
+      "event": "clock",
+      "turn": 12,
+      "changed": true,
+      "facts": {
+        "preferred_open": true
+      },
+      "identity_updated": false
+    },
+    {
+      "event": "read",
+      "turn": 12,
+      "prepared": 11,
+      "step": "preferred_slot",
+      "requested": [
+        "preferred_slot_ref"
+      ],
+      "facts": {
+        "backup_open": true,
+        "preferred_open": true,
+        "site_open": true
+      },
+      "seen": [
+        "identity_ref",
+        "site_ref"
+      ],
+      "goal": "booking",
+      "delivered": {
+        "preferred_slot_ref": 1
+      },
+      "ok": true
+    },
+    {
+      "event": "confirmation",
+      "step": "preferred_slot",
+      "turn": 13
+    },
+    {
+      "event": "effect",
+      "step": "preferred_slot",
+      "turn": 14,
+      "goal": "booking",
+      "identity_version": null
+    }
+  ],
+  "commits": [
+    "move",
+    "preferred_slot"
+  ],
+  "stopped": false,
+  "end": "final_reply",
+  "model_responses": [
+    {
+      "turn": 0,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_f1370b17671c4c68b95cb4f0",
+          "function": {
+            "name": "status",
+            "arguments": "{}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 1,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_d0843894dd2c45e8afa6f5e7",
+          "function": {
+            "name": "select_plan",
+            "arguments": "{\"steps\": \n[\"identity\", \"move\"]\n\n}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 2,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_6cd12a1d1bbb44c4a5500b4f",
+          "function": {
+            "name": "prepare_read",
+            "arguments": "{\"step\": \"identity\"}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 3,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_e9ff1df48af04879a8186980",
+          "function": {
+            "name": "read_fields",
+            "arguments": "{\"handle\": \"R1\", \"fields\": \n[\"identity_ref\"]\n\n}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 4,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_fd1357ed90af45e8848ab9b0",
+          "function": {
+            "name": "execute",
+            "arguments": "{\"step\": \"identity\", \"values\": {\"identity_ref\": \"SYN_10f45cffe5899\"}}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 5,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_91d6fb4d8d974065b03f63f1",
+          "function": {
+            "name": "prepare_read",
+            "arguments": "{\"step\": \"move\"}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 6,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_57962178e1b749fe8257b261",
+          "function": {
+            "name": "read_fields",
+            "arguments": "{\"handle\": \"R3\", \"fields\": \n[\"site_ref\"]\n\n}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 7,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_17ac5c89501144b2991c6c83",
+          "function": {
+            "name": "confirm",
+            "arguments": "{\"step\": \"move\"}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 8,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_89be35e80c1447389c68ab27",
+          "function": {
+            "name": "execute",
+            "arguments": "{\"step\": \"move\", \"values\": {\"site_ref\": \"SYN_1e2cb8fac20e7\"}}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 9,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_f12b813750504f37856c92d5",
+          "function": {
+            "name": "status",
+            "arguments": "{}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 10,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_568e811bf4d14fffb46c0a6d",
+          "function": {
+            "name": "select_plan",
+            "arguments": "{\"steps\": \n[\"identity\", \"preferred_slot\"]\n\n}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 11,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_1d8348d946fa44bd924fae1b",
+          "function": {
+            "name": "prepare_read",
+            "arguments": "{\"step\": \"preferred_slot\"}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 12,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_d7ee9921dd0a4238ae547250",
+          "function": {
+            "name": "read_fields",
+            "arguments": "{\"handle\": \"R7\", \"fields\": \n[\"preferred_slot_ref\"]\n\n}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 13,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_a9b29fe4e5e141f7822df85f",
+          "function": {
+            "name": "confirm",
+            "arguments": "{\"step\": \"preferred_slot\"}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 14,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_98fb7470b72040959705fcb5",
+          "function": {
+            "name": "execute",
+            "arguments": "{\"step\": \"preferred_slot\", \"values\": {\"preferred_slot_ref\": \"SYN_9c562a5e722aa\"}}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 15,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "Done. The parcel was moved to your requested pickup point, and the preferred pickup slot was available and has been booked. Identity verification was completed, and both changes were confirmed before execution.",
+      "tool_calls": []
+    }
+  ],
+  "calls": [
+    {
+      "turn": 0,
+      "name": "status",
+      "args": {},
+      "response": {
+        "status": "ready",
+        "facts": {
+          "backup_open": true,
+          "preferred_open": true,
+          "site_open": true
+        },
+        "committed": [],
+        "plans": [
+          [
+            "identity",
+            "move"
+          ]
+        ]
+      }
+    },
+    {
+      "turn": 1,
+      "name": "select_plan",
+      "args": {
+        "steps": [
+          "identity",
+          "move"
+        ]
+      },
+      "response": {
+        "enabled": [
+          {
+            "step": "identity",
+            "input_fields": [
+              "identity_ref"
+            ],
+            "missing_fields": [
+              "identity_ref"
+            ],
+            "needs_confirmation": false
+          }
+        ],
+        "reused": []
+      }
+    },
+    {
+      "turn": 2,
+      "name": "prepare_read",
+      "args": {
+        "step": "identity"
+      },
+      "response": {
+        "handle": "R1",
+        "fields": [
+          "identity_ref"
+        ]
+      }
+    },
+    {
+      "turn": 3,
+      "name": "read_fields",
+      "args": {
+        "handle": "R1",
+        "fields": [
+          "identity_ref"
+        ]
+      },
+      "response": {
+        "values": {
+          "identity_ref": "SYN_10f45cffe5899"
+        }
+      }
+    },
+    {
+      "turn": 4,
+      "name": "execute",
+      "args": {
+        "step": "identity",
+        "values": {
+          "identity_ref": "SYN_10f45cffe5899"
+        }
+      },
+      "response": {
+        "verified": "identity",
+        "enabled": [
+          {
+            "step": "move",
+            "input_fields": [
+              "site_ref"
+            ],
+            "missing_fields": [
+              "site_ref"
+            ],
+            "needs_confirmation": true
+          }
+        ]
+      }
+    },
+    {
+      "turn": 5,
+      "name": "prepare_read",
+      "args": {
+        "step": "move"
+      },
+      "response": {
+        "handle": "R3",
+        "fields": [
+          "site_ref"
+        ]
+      }
+    },
+    {
+      "turn": 6,
+      "name": "read_fields",
+      "args": {
+        "handle": "R3",
+        "fields": [
+          "site_ref"
+        ]
+      },
+      "response": {
+        "values": {
+          "site_ref": "SYN_1e2cb8fac20e7"
+        }
+      }
+    },
+    {
+      "turn": 7,
+      "name": "confirm",
+      "args": {
+        "step": "move"
+      },
+      "response": {
+        "approved": true
+      }
+    },
+    {
+      "turn": 8,
+      "name": "execute",
+      "args": {
+        "step": "move",
+        "values": {
+          "site_ref": "SYN_1e2cb8fac20e7"
+        }
+      },
+      "response": {
+        "committed": "move",
+        "next": "status for remaining booking"
+      }
+    },
+    {
+      "turn": 9,
+      "name": "status",
+      "args": {},
+      "response": {
+        "status": "ready",
+        "facts": {
+          "backup_open": true,
+          "preferred_open": true,
+          "site_open": true
+        },
+        "committed": [
+          "move"
+        ],
+        "plans": [
+          [
+            "identity",
+            "preferred_slot"
+          ]
+        ]
+      }
+    },
+    {
+      "turn": 10,
+      "name": "select_plan",
+      "args": {
+        "steps": [
+          "identity",
+          "preferred_slot"
+        ]
+      },
+      "response": {
+        "enabled": [
+          {
+            "step": "preferred_slot",
+            "input_fields": [
+              "preferred_slot_ref"
+            ],
+            "missing_fields": [
+              "preferred_slot_ref"
+            ],
+            "needs_confirmation": true
+          }
+        ],
+        "reused": [
+          "identity_verified"
+        ]
+      }
+    },
+    {
+      "turn": 11,
+      "name": "prepare_read",
+      "args": {
+        "step": "preferred_slot"
+      },
+      "response": {
+        "handle": "R7",
+        "fields": [
+          "preferred_slot_ref"
+        ]
+      }
+    },
+    {
+      "turn": 12,
+      "name": "read_fields",
+      "args": {
+        "handle": "R7",
+        "fields": [
+          "preferred_slot_ref"
+        ]
+      },
+      "response": {
+        "values": {
+          "preferred_slot_ref": "SYN_9c562a5e722aa"
+        }
+      }
+    },
+    {
+      "turn": 13,
+      "name": "confirm",
+      "args": {
+        "step": "preferred_slot"
+      },
+      "response": {
+        "approved": true
+      }
+    },
+    {
+      "turn": 14,
+      "name": "execute",
+      "args": {
+        "step": "preferred_slot",
+        "values": {
+          "preferred_slot_ref": "SYN_9c562a5e722aa"
+        }
+      },
+      "response": {
+        "committed": "preferred_slot",
+        "complete": true
+      }
+    }
+  ],
+  "protocol_errors": [],
+  "http_attempts": 16,
+  "http_statuses": {
+    "200": 16
+  }
+}

@@ -21,7 +21,11 @@ archive_paths={entry['path']:entry for entry in archive_entries.values()}
 
 # These generated figures and manuscript are text-extracted and scanned before
 # publication. Require a matching reviewed digest for exactly these PDF paths.
-paper_pdfs = {'paper/paper.pdf', 'paper/figures/exposure.pdf', 'paper/figures/mechanism.pdf'}
+paper_pdfs = {
+    'paper/paper.pdf', 'paper/figures/exposure.pdf', 'paper/figures/mechanism.pdf',
+    'paper/figures/backend-comparison.pdf', 'paper/figures/refund-sequence.pdf',
+    'paper/figures/strong-call-stages.pdf',
+}
 publication = json.loads((root/'PUBLICATION_MANIFEST.json').read_text())
 reviewed_pdf_digests = publication.get('reviewed_pdf_sha256', {})
 pdfs_verified = 0

@@ -1,0 +1,19 @@
+{
+  "id": "holdout-preferred_returns-20-control",
+  "pair": "holdout-preferred_returns-20",
+  "arm": "contract",
+  "seed": 421,
+  "events": [],
+  "commits": [],
+  "stopped": false,
+  "end": "api_error",
+  "model_responses": [],
+  "calls": [],
+  "protocol_errors": [
+    "retries_exhausted_429"
+  ],
+  "http_attempts": 5,
+  "http_statuses": {
+    "429": 5
+  }
+}

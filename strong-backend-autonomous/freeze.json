@@ -1,0 +1,30 @@
+{
+  "timestamp_utc": "2026-11-25T02:41:49.762723+00:00",
+  "scripted_preflight_episodes": 24,
+  "sha256": {
+    "strong_backend_autonomous.py": "ca2bd568fec1682d58b32848df50ac34a8fd147eb23e10ac5a4a6779e3559999",
+    "necessity_v2/scenarios.py": "5e0c2c2dd6c73539aac1a39018896957da9321a30d465c37906bfa467b7a9f85",
+    "necessity_v2/acquire.py": "48d24746fe575fb735c4bde1e84ca3cb0bdf45f6cb2f8efe73a8b583496d1641",
+    "necessity_v2/signature_rule.py": "55f098c033c284203d7a1c68c2b22a1ff920262f703d9daa4c33e8d35815c5f3",
+    "necessity_v2/__init__.py": "04b53620f26cdaacc9adb85a13574aa3930e40c2dcf7ffc47941d04ca9e351b9",
+    "necessity_v2/core.py": "ec513b8ec1c290541b51287fd822be89bed7cd8ee25323ef3836b9324f980b73",
+    "necessity_v2/composable_routes.py": "dcc8f2b55aaca150e8d0e338f5d6ba5ff980c90a6d6162677082342debfdb750",
+    "necessity_v2/route_baseline.py": "4a66c7bf60793339fb684fb26019f5fe3be8259499f3d7f662eba94f2d97235b",
+    "strong-backend-autonomous/rules.json": "4446d3a861e8d64c8edc7200dd19377f7c0b6447c967e4bb032f93acff3e8217",
+    "strong-backend-autonomous/system.txt": "c20b4b409b3bbfd174904d2b93f9008337b5037c714620f10acfe1124bfac49e",
+    "strong-backend-autonomous/tasks.json": "eeefbec7ece70f47d678b9efd08cc90a26faf2de889de1d86d419ea176851eb2",
+    "strong-backend-autonomous/protocol.json": "1dae787a47ed73edf329ef0fc8d99f37c1edceb4f6b8c4f9a61f5f365b2bdb91",
+    "strong-backend-autonomous/tools.json": "2f4374be72668756397b052569ddb2062458b7977c3c9a906ade2f466c5b3039"
+  },
+  "transport_amendment": {
+    "at": "2026-11-25T02:44:14.866032+00:00",
+    "partial_trial_records": 25,
+    "partial_trial_http_statuses": {
+      "200": 220,
+      "429": 163
+    },
+    "reason": "HTTP 429 under unpaced concurrency; restart all 720 with a shared pacer and retries.",
+    "changed": "Only HTTP dispatch pacing, retries and global 429 backoff in Client. Identical inference bodies, workflows, prompts, fixtures and scorer.",
+    "trial_counted": false
+  }
+}

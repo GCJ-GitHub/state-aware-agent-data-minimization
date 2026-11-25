@@ -23,3 +23,12 @@ secrets*
 /necessity-native-retest/episodes/
 /necessity-three-arm-holdout/episodes/
 /artifacts/verification/
+
+# Local extraction of published trace archives.
+/strong-backend-autonomous/episodes/
+/qwen4-max-paper-replication/episodes/
+/qwen4-max-paper-replication/preflight/
+/qwen4-max-paper-replication/strong-call-stages.png
+/paper/*.log
+/paper/*.aux
+/paper/*.blg

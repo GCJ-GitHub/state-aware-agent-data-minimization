@@ -4,6 +4,22 @@
 
 后续四轮强基线的独立复跑命令见[四轮对照复跑](STRONG_BASELINE_FOLLOWUP.md#离线复跑)。
 
+## 2026-11-25 新增复核
+
+先安装 Python 依赖，再解开轨迹数据。以下命令不调用模型。早期完整轨迹同样可用 `--all` 恢复。
+
+```bash
+python -m pip install -r requirements.txt
+python scripts/extract_research_archives.py --study strong-backend-autonomous
+python scripts/extract_research_archives.py --study qwen4-max-paper-replication
+python strong-backend-autonomous/audit.py
+python qwen4-max-paper-replication/verify_traces.py
+python maintenance_audit_study.py run
+python maintenance-audit-study/fault_audit.py
+```
+
+[最新结果与研究结论](LATEST_RESULTS.md)列出论文使用的五项模型复现、离线实验和源文件入口。
+
 ## 1. 安装要求
 
 推荐Python 3.11；后续核心、解包和离线重放使用标准库。单元测试也不请求模型API。历史MLX本地生成、tokenizer重放及上游数据说明仍按历史指南。
@@ -37,7 +53,7 @@ python3 scripts/extract_research_archives.py --study necessity-three-arm-holdout
 
 默认恢复到仓库根目录，`episodes/`、开发目录等路径与原运行一致。解包不执行任何成员代码，拒绝覆盖不同内容文件。`--out /path/to/another-directory` 可另存，但现有审计入口默认从仓库根级阶段目录读；另存后需自己设置等价ROOT，不能把找不到轨迹误当零数据。
 
-压缩包共24,272个原文件；[清单](../artifacts/2026-11-23/ARCHIVE_MANIFEST.json)包含逐包统计。原始任务、答案/夹具、指标、报告和冻结文件不需要解包即可在线阅读。解出的原始目录被Git忽略，以免把同一材料再提交一遍。
+各版压缩包的数量和校验值见[清单](../artifacts/2026-11-23/ARCHIVE_MANIFEST.json)包含逐包统计。原始任务、答案/夹具、指标、报告和冻结文件不需要解包即可在线阅读。解出的原始目录被Git忽略，以免把同一材料再提交一遍。
 
 ## 4. 全量离线复核
 

@@ -1,0 +1,7 @@
+{
+  "wallet": "wallet_refund",
+  "bank": "bank_refund",
+  "move": "site_change",
+  "preferred_slot": "reserve_slot",
+  "backup_slot": "reserve_slot"
+}

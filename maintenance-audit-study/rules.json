@@ -1,0 +1,29 @@
+[
+  {
+    "id": "R1",
+    "domain": "refund",
+    "when": "recent_bank_change",
+    "gate": "beneficiary_check",
+    "field": "beneficiary_ref",
+    "tool_selector": ["bank"],
+    "recipe_selector": "bank_refund"
+  },
+  {
+    "id": "R2",
+    "domain": "pickup",
+    "when": "cross_region",
+    "gate": "carrier_check",
+    "field": "carrier_declaration_ref",
+    "tool_selector": ["move"],
+    "recipe_selector": "site_change"
+  },
+  {
+    "id": "R3",
+    "domain": "pickup",
+    "when": "restricted_site",
+    "gate": "reservation_check",
+    "field": "reservation_attestation_ref",
+    "tool_selector": ["preferred_slot", "backup_slot"],
+    "recipe_selector": "reserve_slot"
+  }
+]

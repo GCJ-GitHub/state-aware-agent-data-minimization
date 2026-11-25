@@ -1,0 +1,10 @@
+{
+  "archived_model_tool_transcripts_replayed": {
+    "three-arm": 3,
+    "airgap": 3,
+    "native-factorial": 4,
+    "text-factorial": 4
+  },
+  "gateway_error_prefix_tested": true,
+  "network_calls": 0
+}

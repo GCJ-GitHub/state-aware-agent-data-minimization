@@ -1,0 +1,1535 @@
+{
+  "id": "holdout-after_commit-01-event",
+  "pair": "holdout-after_commit-01",
+  "arm": "route_table",
+  "seed": 19,
+  "events": [
+    {
+      "event": "read",
+      "turn": 3,
+      "prepared": 2,
+      "step": "identity",
+      "requested": [
+        "identity_ref"
+      ],
+      "facts": {
+        "backup_open": true,
+        "preferred_open": true,
+        "site_open": true
+      },
+      "seen": [],
+      "goal": "site_change",
+      "delivered": {
+        "identity_ref": 1
+      },
+      "ok": true
+    },
+    {
+      "event": "effect",
+      "step": "identity",
+      "turn": 4,
+      "goal": "identity_verified",
+      "identity_version": 1
+    },
+    {
+      "event": "read",
+      "turn": 6,
+      "prepared": 5,
+      "step": "move",
+      "requested": [
+        "site_ref"
+      ],
+      "facts": {
+        "backup_open": true,
+        "preferred_open": true,
+        "site_open": true
+      },
+      "seen": [
+        "identity_ref"
+      ],
+      "goal": "site_change",
+      "delivered": {
+        "site_ref": 1
+      },
+      "ok": true
+    },
+    {
+      "event": "confirmation",
+      "step": "move",
+      "turn": 7
+    },
+    {
+      "event": "effect",
+      "step": "move",
+      "turn": 8,
+      "goal": "site_change",
+      "identity_version": null
+    },
+    {
+      "event": "checkpoint",
+      "turn": 8,
+      "scheduled": 12
+    },
+    {
+      "event": "clock",
+      "turn": 12,
+      "changed": true,
+      "facts": {
+        "preferred_open": false
+      },
+      "identity_updated": false
+    },
+    {
+      "event": "read",
+      "turn": 12,
+      "prepared": 11,
+      "step": "preferred_slot",
+      "requested": [
+        "preferred_slot_ref"
+      ],
+      "facts": {
+        "backup_open": true,
+        "preferred_open": false,
+        "site_open": true
+      },
+      "seen": [
+        "identity_ref",
+        "site_ref"
+      ],
+      "goal": "booking",
+      "delivered": {},
+      "ok": false,
+      "reason": "replan"
+    },
+    {
+      "event": "denial",
+      "tool": "read_fields",
+      "turn": 12,
+      "code": "replan",
+      "detail": "current_plan_invalid"
+    },
+    {
+      "event": "read",
+      "turn": 16,
+      "prepared": 15,
+      "step": "backup_slot",
+      "requested": [
+        "backup_slot_ref"
+      ],
+      "facts": {
+        "backup_open": true,
+        "preferred_open": false,
+        "site_open": true
+      },
+      "seen": [
+        "identity_ref",
+        "site_ref"
+      ],
+      "goal": "booking",
+      "delivered": {
+        "backup_slot_ref": 1
+      },
+      "ok": true
+    },
+    {
+      "event": "confirmation",
+      "step": "backup_slot",
+      "turn": 17
+    },
+    {
+      "event": "effect",
+      "step": "backup_slot",
+      "turn": 18,
+      "goal": "booking",
+      "identity_version": null
+    },
+    {
+      "event": "denial",
+      "tool": "status",
+      "turn": 19,
+      "code": "check_request",
+      "detail": "workflow_closed"
+    },
+    {
+      "event": "denial",
+      "tool": "status",
+      "turn": 20,
+      "code": "check_request",
+      "detail": "workflow_closed"
+    },
+    {
+      "event": "denial",
+      "tool": "stop",
+      "turn": 21,
+      "code": "check_request",
+      "detail": "workflow_closed"
+    },
+    {
+      "event": "denial",
+      "tool": "status",
+      "turn": 22,
+      "code": "check_request",
+      "detail": "workflow_closed"
+    },
+    {
+      "event": "denial",
+      "tool": "select_plan",
+      "turn": 23,
+      "code": "check_request",
+      "detail": "workflow_closed"
+    },
+    {
+      "event": "denial",
+      "tool": "stop",
+      "turn": 24,
+      "code": "check_request",
+      "detail": "workflow_closed"
+    },
+    {
+      "event": "denial",
+      "tool": "status",
+      "turn": 25,
+      "code": "check_request",
+      "detail": "workflow_closed"
+    },
+    {
+      "event": "denial",
+      "tool": "select_plan",
+      "turn": 26,
+      "code": "check_request",
+      "detail": "workflow_closed"
+    },
+    {
+      "event": "denial",
+      "tool": "stop",
+      "turn": 27,
+      "code": "check_request",
+      "detail": "workflow_closed"
+    },
+    {
+      "event": "denial",
+      "tool": "status",
+      "turn": 28,
+      "code": "check_request",
+      "detail": "workflow_closed"
+    },
+    {
+      "event": "denial",
+      "tool": "select_plan",
+      "turn": 29,
+      "code": "check_request",
+      "detail": "workflow_closed"
+    },
+    {
+      "event": "denial",
+      "tool": "stop",
+      "turn": 30,
+      "code": "check_request",
+      "detail": "workflow_closed"
+    },
+    {
+      "event": "denial",
+      "tool": "status",
+      "turn": 31,
+      "code": "check_request",
+      "detail": "workflow_closed"
+    },
+    {
+      "event": "denial",
+      "tool": "select_plan",
+      "turn": 32,
+      "code": "check_request",
+      "detail": "workflow_closed"
+    },
+    {
+      "event": "denial",
+      "tool": "stop",
+      "turn": 33,
+      "code": "check_request",
+      "detail": "workflow_closed"
+    },
+    {
+      "event": "denial",
+      "tool": "status",
+      "turn": 34,
+      "code": "check_request",
+      "detail": "workflow_closed"
+    },
+    {
+      "event": "denial",
+      "tool": "select_plan",
+      "turn": 35,
+      "code": "check_request",
+      "detail": "workflow_closed"
+    },
+    {
+      "event": "denial",
+      "tool": "stop",
+      "turn": 36,
+      "code": "check_request",
+      "detail": "workflow_closed"
+    },
+    {
+      "event": "denial",
+      "tool": "status",
+      "turn": 37,
+      "code": "check_request",
+      "detail": "workflow_closed"
+    },
+    {
+      "event": "denial",
+      "tool": "select_plan",
+      "turn": 38,
+      "code": "check_request",
+      "detail": "workflow_closed"
+    },
+    {
+      "event": "denial",
+      "tool": "stop",
+      "turn": 39,
+      "code": "check_request",
+      "detail": "workflow_closed"
+    }
+  ],
+  "commits": [
+    "move",
+    "backup_slot"
+  ],
+  "stopped": false,
+  "end": "turn_limit",
+  "model_responses": [
+    {
+      "turn": 0,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_f3d102322ede442c81c752ad",
+          "function": {
+            "name": "status",
+            "arguments": "{}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 1,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_5d8b40d1251747e4aa945640",
+          "function": {
+            "name": "select_plan",
+            "arguments": "{\"steps\": \n[\"identity\", \"move\"]\n\n}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 2,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_83302395633d4e2e977d192b",
+          "function": {
+            "name": "prepare_read",
+            "arguments": "{\"step\": \"identity\"}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 3,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_f0240372a33941abaa223c3a",
+          "function": {
+            "name": "read_fields",
+            "arguments": "{\"handle\": \"R1\", \"fields\": \n[\"identity_ref\"]\n\n}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 4,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_73f755e560d64d028dccd352",
+          "function": {
+            "name": "execute",
+            "arguments": "{\"step\": \"identity\", \"values\": {\"identity_ref\": \"SYN_6c26e2486b2a4\"}}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 5,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_ff0625491d944feab7fc1301",
+          "function": {
+            "name": "prepare_read",
+            "arguments": "{\"step\": \"move\"}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 6,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_03d5bf022a884bd28251e4bf",
+          "function": {
+            "name": "read_fields",
+            "arguments": "{\"handle\": \"R3\", \"fields\": \n[\"site_ref\"]\n\n}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 7,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_a4431c8c5a0348c0a4aa5bcd",
+          "function": {
+            "name": "confirm",
+            "arguments": "{\"step\": \"move\"}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 8,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_b46998aad6674c00abd6490e",
+          "function": {
+            "name": "execute",
+            "arguments": "{\"step\": \"move\", \"values\": {\"site_ref\": \"SYN_1f3d3cec06664\"}}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 9,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_2f1b0dc5053545e6b01c9ff1",
+          "function": {
+            "name": "status",
+            "arguments": "{}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 10,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_0f18a34f824141d78d3ef011",
+          "function": {
+            "name": "select_plan",
+            "arguments": "{\"steps\": \n[\"identity\", \"preferred_slot\"]\n\n}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 11,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_25dd7bea0ead499cb0bdbb69",
+          "function": {
+            "name": "prepare_read",
+            "arguments": "{\"step\": \"preferred_slot\"}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 12,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_b91d710879344ad7b0ba7541",
+          "function": {
+            "name": "read_fields",
+            "arguments": "{\"handle\": \"R7\", \"fields\": \n[\"preferred_slot_ref\"]\n\n}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 13,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_13faafac4ca14ed9a2cf31bf",
+          "function": {
+            "name": "status",
+            "arguments": "{}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 14,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_fdd590626c6b4897b432d9d6",
+          "function": {
+            "name": "select_plan",
+            "arguments": "{\"steps\": \n[\"backup_slot\", \"identity\"]\n\n}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 15,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_959b454c71824fd48f8986b2",
+          "function": {
+            "name": "prepare_read",
+            "arguments": "{\"step\": \"backup_slot\"}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 16,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_4cdba99d0ca24eb5a0b3f07c",
+          "function": {
+            "name": "read_fields",
+            "arguments": "{\"handle\": \"R10\", \"fields\": \n[\"backup_slot_ref\"]\n\n}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 17,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_c45d315fa2694addae1c2cd3",
+          "function": {
+            "name": "confirm",
+            "arguments": "{\"step\": \"backup_slot\"}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 18,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_d524221d3f7b498da4e945b1",
+          "function": {
+            "name": "execute",
+            "arguments": "{\"step\": \"backup_slot\", \"values\": {\"backup_slot_ref\": \"SYN_43107f7ef97f4\"}}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 19,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_ecc4b0d95c394e998d29ff1c",
+          "function": {
+            "name": "status",
+            "arguments": "{}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 20,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_09f68b2c7a2e4481842b28db",
+          "function": {
+            "name": "status",
+            "arguments": "{}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 21,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_8a15c8962a164de4b26fa43b",
+          "function": {
+            "name": "stop",
+            "arguments": "{}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 22,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_e1061320b01d4ae089926c3c",
+          "function": {
+            "name": "status",
+            "arguments": "{}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 23,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_9f5e94f8bf164ee78036065a",
+          "function": {
+            "name": "select_plan",
+            "arguments": "{\"steps\": \n[\"backup_slot\", \"identity\"]\n\n}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 24,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_7c47e2d890d24ac99cb4252a",
+          "function": {
+            "name": "stop",
+            "arguments": "{}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 25,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_4c1c9220de73408b85b8cdb0",
+          "function": {
+            "name": "status",
+            "arguments": "{}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 26,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_1de1d463c48642b6bc6888bb",
+          "function": {
+            "name": "select_plan",
+            "arguments": "{\"steps\": \n[\"identity\", \"preferred_slot\"]\n\n}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 27,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_e8c4510cb2c849a0a44e46ba",
+          "function": {
+            "name": "stop",
+            "arguments": "{}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 28,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_e869e33f2af54eb2a42b9613",
+          "function": {
+            "name": "status",
+            "arguments": "{}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 29,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_efc6c7bcd63940debc860391",
+          "function": {
+            "name": "select_plan",
+            "arguments": "{\"steps\": \n[\"identity\", \"move\"]\n\n}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 30,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_80ec5600f2c14ef6b6dfe029",
+          "function": {
+            "name": "stop",
+            "arguments": "{}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 31,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_5168033677c34b94bbcd78ef",
+          "function": {
+            "name": "status",
+            "arguments": "{}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 32,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_2f1720cf9e94459aa820622b",
+          "function": {
+            "name": "select_plan",
+            "arguments": "{\"steps\": \n[\"backup_slot\", \"identity\"]\n\n}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 33,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_2ec8336860444521b5f1b7ac",
+          "function": {
+            "name": "stop",
+            "arguments": "{}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 34,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_8e2b82a26e1a4253b93472c7",
+          "function": {
+            "name": "status",
+            "arguments": "{}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 35,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_2732e8e143d34b868d017f1b",
+          "function": {
+            "name": "select_plan",
+            "arguments": "{\"steps\": \n[\"identity\", \"preferred_slot\"]\n\n}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 36,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_de764818d615435f91d0e307",
+          "function": {
+            "name": "stop",
+            "arguments": "{}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 37,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_ed53cfb00a5848fa8c50bb96",
+          "function": {
+            "name": "status",
+            "arguments": "{}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 38,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_54c4cc4fd2a1428791778b4f",
+          "function": {
+            "name": "select_plan",
+            "arguments": "{\"steps\": \n[\"identity\", \"move\"]\n\n}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 39,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_cf9a2eac5efb457d8f29e224",
+          "function": {
+            "name": "stop",
+            "arguments": "{}"
+          }
+        }
+      ]
+    }
+  ],
+  "calls": [
+    {
+      "turn": 0,
+      "name": "status",
+      "args": {},
+      "response": {
+        "status": "ready",
+        "facts": {
+          "backup_open": true,
+          "preferred_open": true,
+          "site_open": true
+        },
+        "committed": [],
+        "plans": [
+          [
+            "identity",
+            "move"
+          ]
+        ]
+      }
+    },
+    {
+      "turn": 1,
+      "name": "select_plan",
+      "args": {
+        "steps": [
+          "identity",
+          "move"
+        ]
+      },
+      "response": {
+        "enabled": [
+          {
+            "step": "identity",
+            "input_fields": [
+              "identity_ref"
+            ],
+            "missing_fields": [
+              "identity_ref"
+            ],
+            "needs_confirmation": false
+          }
+        ],
+        "reused": []
+      }
+    },
+    {
+      "turn": 2,
+      "name": "prepare_read",
+      "args": {
+        "step": "identity"
+      },
+      "response": {
+        "handle": "R1",
+        "fields": [
+          "identity_ref"
+        ]
+      }
+    },
+    {
+      "turn": 3,
+      "name": "read_fields",
+      "args": {
+        "handle": "R1",
+        "fields": [
+          "identity_ref"
+        ]
+      },
+      "response": {
+        "values": {
+          "identity_ref": "SYN_6c26e2486b2a4"
+        }
+      }
+    },
+    {
+      "turn": 4,
+      "name": "execute",
+      "args": {
+        "step": "identity",
+        "values": {
+          "identity_ref": "SYN_6c26e2486b2a4"
+        }
+      },
+      "response": {
+        "verified": "identity",
+        "enabled": [
+          {
+            "step": "move",
+            "input_fields": [
+              "site_ref"
+            ],
+            "missing_fields": [
+              "site_ref"
+            ],
+            "needs_confirmation": true
+          }
+        ]
+      }
+    },
+    {
+      "turn": 5,
+      "name": "prepare_read",
+      "args": {
+        "step": "move"
+      },
+      "response": {
+        "handle": "R3",
+        "fields": [
+          "site_ref"
+        ]
+      }
+    },
+    {
+      "turn": 6,
+      "name": "read_fields",
+      "args": {
+        "handle": "R3",
+        "fields": [
+          "site_ref"
+        ]
+      },
+      "response": {
+        "values": {
+          "site_ref": "SYN_1f3d3cec06664"
+        }
+      }
+    },
+    {
+      "turn": 7,
+      "name": "confirm",
+      "args": {
+        "step": "move"
+      },
+      "response": {
+        "approved": true
+      }
+    },
+    {
+      "turn": 8,
+      "name": "execute",
+      "args": {
+        "step": "move",
+        "values": {
+          "site_ref": "SYN_1f3d3cec06664"
+        }
+      },
+      "response": {
+        "committed": "move",
+        "next": "status for remaining booking"
+      }
+    },
+    {
+      "turn": 9,
+      "name": "status",
+      "args": {},
+      "response": {
+        "status": "ready",
+        "facts": {
+          "backup_open": true,
+          "preferred_open": true,
+          "site_open": true
+        },
+        "committed": [
+          "move"
+        ],
+        "plans": [
+          [
+            "identity",
+            "preferred_slot"
+          ]
+        ]
+      }
+    },
+    {
+      "turn": 10,
+      "name": "select_plan",
+      "args": {
+        "steps": [
+          "identity",
+          "preferred_slot"
+        ]
+      },
+      "response": {
+        "enabled": [
+          {
+            "step": "preferred_slot",
+            "input_fields": [
+              "preferred_slot_ref"
+            ],
+            "missing_fields": [
+              "preferred_slot_ref"
+            ],
+            "needs_confirmation": true
+          }
+        ],
+        "reused": [
+          "identity_verified"
+        ]
+      }
+    },
+    {
+      "turn": 11,
+      "name": "prepare_read",
+      "args": {
+        "step": "preferred_slot"
+      },
+      "response": {
+        "handle": "R7",
+        "fields": [
+          "preferred_slot_ref"
+        ]
+      }
+    },
+    {
+      "turn": 12,
+      "name": "read_fields",
+      "args": {
+        "handle": "R7",
+        "fields": [
+          "preferred_slot_ref"
+        ]
+      },
+      "response": {
+        "error": "replan",
+        "feedback": "Call status and select a current plan. Continue only with enabled steps."
+      }
+    },
+    {
+      "turn": 13,
+      "name": "status",
+      "args": {},
+      "response": {
+        "status": "ready",
+        "facts": {
+          "backup_open": true,
+          "preferred_open": false,
+          "site_open": true
+        },
+        "committed": [
+          "move"
+        ],
+        "plans": [
+          [
+            "backup_slot",
+            "identity"
+          ]
+        ]
+      }
+    },
+    {
+      "turn": 14,
+      "name": "select_plan",
+      "args": {
+        "steps": [
+          "backup_slot",
+          "identity"
+        ]
+      },
+      "response": {
+        "enabled": [
+          {
+            "step": "backup_slot",
+            "input_fields": [
+              "backup_slot_ref"
+            ],
+            "missing_fields": [
+              "backup_slot_ref"
+            ],
+            "needs_confirmation": true
+          }
+        ],
+        "reused": [
+          "identity_verified"
+        ]
+      }
+    },
+    {
+      "turn": 15,
+      "name": "prepare_read",
+      "args": {
+        "step": "backup_slot"
+      },
+      "response": {
+        "handle": "R10",
+        "fields": [
+          "backup_slot_ref"
+        ]
+      }
+    },
+    {
+      "turn": 16,
+      "name": "read_fields",
+      "args": {
+        "handle": "R10",
+        "fields": [
+          "backup_slot_ref"
+        ]
+      },
+      "response": {
+        "values": {
+          "backup_slot_ref": "SYN_43107f7ef97f4"
+        }
+      }
+    },
+    {
+      "turn": 17,
+      "name": "confirm",
+      "args": {
+        "step": "backup_slot"
+      },
+      "response": {
+        "approved": true
+      }
+    },
+    {
+      "turn": 18,
+      "name": "execute",
+      "args": {
+        "step": "backup_slot",
+        "values": {
+          "backup_slot_ref": "SYN_43107f7ef97f4"
+        }
+      },
+      "response": {
+        "committed": "backup_slot",
+        "complete": true
+      }
+    },
+    {
+      "turn": 19,
+      "name": "status",
+      "args": {},
+      "response": {
+        "error": "check_request",
+        "feedback": "Call status and select a current plan. Continue only with enabled steps."
+      }
+    },
+    {
+      "turn": 20,
+      "name": "status",
+      "args": {},
+      "response": {
+        "error": "check_request",
+        "feedback": "Call status and select a current plan. Continue only with enabled steps."
+      }
+    },
+    {
+      "turn": 21,
+      "name": "stop",
+      "args": {},
+      "response": {
+        "error": "check_request",
+        "feedback": "Call status and select a current plan. Continue only with enabled steps."
+      }
+    },
+    {
+      "turn": 22,
+      "name": "status",
+      "args": {},
+      "response": {
+        "error": "check_request",
+        "feedback": "Call status and select a current plan. Continue only with enabled steps."
+      }
+    },
+    {
+      "turn": 23,
+      "name": "select_plan",
+      "args": {
+        "steps": [
+          "backup_slot",
+          "identity"
+        ]
+      },
+      "response": {
+        "error": "check_request",
+        "feedback": "Call status and select a current plan. Continue only with enabled steps."
+      }
+    },
+    {
+      "turn": 24,
+      "name": "stop",
+      "args": {},
+      "response": {
+        "error": "check_request",
+        "feedback": "Call status and select a current plan. Continue only with enabled steps."
+      }
+    },
+    {
+      "turn": 25,
+      "name": "status",
+      "args": {},
+      "response": {
+        "error": "check_request",
+        "feedback": "Call status and select a current plan. Continue only with enabled steps."
+      }
+    },
+    {
+      "turn": 26,
+      "name": "select_plan",
+      "args": {
+        "steps": [
+          "identity",
+          "preferred_slot"
+        ]
+      },
+      "response": {
+        "error": "check_request",
+        "feedback": "Call status and select a current plan. Continue only with enabled steps."
+      }
+    },
+    {
+      "turn": 27,
+      "name": "stop",
+      "args": {},
+      "response": {
+        "error": "check_request",
+        "feedback": "Call status and select a current plan. Continue only with enabled steps."
+      }
+    },
+    {
+      "turn": 28,
+      "name": "status",
+      "args": {},
+      "response": {
+        "error": "check_request",
+        "feedback": "Call status and select a current plan. Continue only with enabled steps."
+      }
+    },
+    {
+      "turn": 29,
+      "name": "select_plan",
+      "args": {
+        "steps": [
+          "identity",
+          "move"
+        ]
+      },
+      "response": {
+        "error": "check_request",
+        "feedback": "Call status and select a current plan. Continue only with enabled steps."
+      }
+    },
+    {
+      "turn": 30,
+      "name": "stop",
+      "args": {},
+      "response": {
+        "error": "check_request",
+        "feedback": "Call status and select a current plan. Continue only with enabled steps."
+      }
+    },
+    {
+      "turn": 31,
+      "name": "status",
+      "args": {},
+      "response": {
+        "error": "check_request",
+        "feedback": "Call status and select a current plan. Continue only with enabled steps."
+      }
+    },
+    {
+      "turn": 32,
+      "name": "select_plan",
+      "args": {
+        "steps": [
+          "backup_slot",
+          "identity"
+        ]
+      },
+      "response": {
+        "error": "check_request",
+        "feedback": "Call status and select a current plan. Continue only with enabled steps."
+      }
+    },
+    {
+      "turn": 33,
+      "name": "stop",
+      "args": {},
+      "response": {
+        "error": "check_request",
+        "feedback": "Call status and select a current plan. Continue only with enabled steps."
+      }
+    },
+    {
+      "turn": 34,
+      "name": "status",
+      "args": {},
+      "response": {
+        "error": "check_request",
+        "feedback": "Call status and select a current plan. Continue only with enabled steps."
+      }
+    },
+    {
+      "turn": 35,
+      "name": "select_plan",
+      "args": {
+        "steps": [
+          "identity",
+          "preferred_slot"
+        ]
+      },
+      "response": {
+        "error": "check_request",
+        "feedback": "Call status and select a current plan. Continue only with enabled steps."
+      }
+    },
+    {
+      "turn": 36,
+      "name": "stop",
+      "args": {},
+      "response": {
+        "error": "check_request",
+        "feedback": "Call status and select a current plan. Continue only with enabled steps."
+      }
+    },
+    {
+      "turn": 37,
+      "name": "status",
+      "args": {},
+      "response": {
+        "error": "check_request",
+        "feedback": "Call status and select a current plan. Continue only with enabled steps."
+      }
+    },
+    {
+      "turn": 38,
+      "name": "select_plan",
+      "args": {
+        "steps": [
+          "identity",
+          "move"
+        ]
+      },
+      "response": {
+        "error": "check_request",
+        "feedback": "Call status and select a current plan. Continue only with enabled steps."
+      }
+    },
+    {
+      "turn": 39,
+      "name": "stop",
+      "args": {},
+      "response": {
+        "error": "check_request",
+        "feedback": "Call status and select a current plan. Continue only with enabled steps."
+      }
+    }
+  ],
+  "protocol_errors": [],
+  "http_attempts": 40,
+  "http_statuses": {
+    "200": 40
+  }
+}

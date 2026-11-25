@@ -49,6 +49,28 @@
       "allowed_prefixes": [
         "necessity-three-arm-holdout/episodes/"
       ]
+    },
+    "qwen4-max-paper-replication": {
+      "path": "artifacts/2026-11-23/qwen4-max-paper-replication.traces.tar.gz",
+      "sha256": "7b99a7a17a53cff802dd453464829540878341a0ed28e324a1030728f1ea4fea",
+      "compressed_bytes": 3754174,
+      "uncompressed_bytes": 77971713,
+      "file_count": 2736,
+      "largest_member_bytes": 75796,
+      "allowed_prefixes": [
+        "qwen4-max-paper-replication/episodes/"
+      ]
+    },
+    "strong-backend-autonomous": {
+      "path": "artifacts/2026-11-23/strong-backend-autonomous.traces.tar.gz",
+      "sha256": "c81d8d675e3922f16a10cf11b6e15c75a96cf5d2510eb0d8213e9f515cc78621",
+      "compressed_bytes": 474026,
+      "uncompressed_bytes": 9036370,
+      "file_count": 720,
+      "largest_member_bytes": 39217,
+      "allowed_prefixes": [
+        "strong-backend-autonomous/episodes/"
+      ]
     }
   }
 }

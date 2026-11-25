@@ -1,0 +1,1346 @@
+[
+  {
+    "arm": "route_table",
+    "rule": "R1",
+    "diagnosis": "missing_rule",
+    "configuration_evidence": {},
+    "example": {
+      "case": 6,
+      "state": {
+        "wallet_online": false,
+        "bank_online": true,
+        "recent_bank_change": true
+      },
+      "expected": {
+        "steps": [],
+        "branches": [],
+        "fields": [],
+        "confirmations": 0
+      },
+      "actual": {
+        "steps": [
+          "bank"
+        ],
+        "branches": [
+          "bank"
+        ],
+        "fields": [
+          "bank_ref",
+          "owner_ref"
+        ],
+        "confirmations": 1
+      }
+    }
+  },
+  {
+    "arm": "route_table",
+    "rule": "R1",
+    "diagnosis": "wrong_selector",
+    "configuration_evidence": {
+      "selected_targets": [],
+      "compiled_gate": "beneficiary_check"
+    },
+    "example": {
+      "case": 6,
+      "state": {
+        "wallet_online": false,
+        "bank_online": true,
+        "recent_bank_change": true
+      },
+      "expected": {
+        "steps": [],
+        "branches": [],
+        "fields": [],
+        "confirmations": 0
+      },
+      "actual": {
+        "steps": [
+          "bank"
+        ],
+        "branches": [
+          "bank"
+        ],
+        "fields": [
+          "bank_ref",
+          "owner_ref"
+        ],
+        "confirmations": 1
+      }
+    }
+  },
+  {
+    "arm": "route_table",
+    "rule": "R1",
+    "diagnosis": "reverse_condition",
+    "configuration_evidence": {
+      "selected_targets": [
+        "bank"
+      ],
+      "compiled_gate": "beneficiary_check",
+      "compiled_predicates": [
+        [
+          "recent_bank_change",
+          false
+        ]
+      ],
+      "compiled_fields": [
+        "beneficiary_ref"
+      ]
+    },
+    "example": {
+      "case": 4,
+      "state": {
+        "wallet_online": false,
+        "bank_online": true,
+        "recent_bank_change": false
+      },
+      "expected": {
+        "steps": [
+          "bank"
+        ],
+        "branches": [
+          "bank"
+        ],
+        "fields": [
+          "bank_ref",
+          "owner_ref"
+        ],
+        "confirmations": 1
+      },
+      "actual": {
+        "steps": [],
+        "branches": [],
+        "fields": [],
+        "confirmations": 0
+      }
+    }
+  },
+  {
+    "arm": "route_table",
+    "rule": "R1",
+    "diagnosis": "wrong_field",
+    "configuration_evidence": {
+      "selected_targets": [
+        "bank"
+      ],
+      "compiled_gate": "beneficiary_check",
+      "compiled_predicates": [
+        [
+          "recent_bank_change",
+          true
+        ]
+      ],
+      "compiled_fields": [
+        "audit_trap_ref"
+      ]
+    },
+    "example": {
+      "case": 6,
+      "state": {
+        "wallet_online": false,
+        "bank_online": true,
+        "recent_bank_change": true
+      },
+      "expected": {
+        "steps": [],
+        "branches": [],
+        "fields": [],
+        "confirmations": 0
+      },
+      "actual": {
+        "steps": [
+          "bank",
+          "beneficiary_check"
+        ],
+        "branches": [
+          "bank"
+        ],
+        "fields": [
+          "audit_trap_ref",
+          "bank_ref",
+          "owner_ref"
+        ],
+        "confirmations": 1
+      }
+    }
+  },
+  {
+    "arm": "route_table",
+    "rule": "R1",
+    "diagnosis": "missing_dependency",
+    "configuration_evidence": {
+      "selected_targets": [
+        "bank"
+      ],
+      "compiled_gate": null
+    },
+    "example": {
+      "case": 6,
+      "state": {
+        "wallet_online": false,
+        "bank_online": true,
+        "recent_bank_change": true
+      },
+      "expected": {
+        "steps": [],
+        "branches": [],
+        "fields": [],
+        "confirmations": 0
+      },
+      "actual": {
+        "steps": [
+          "bank"
+        ],
+        "branches": [
+          "bank"
+        ],
+        "fields": [
+          "bank_ref",
+          "owner_ref"
+        ],
+        "confirmations": 1
+      }
+    }
+  },
+  {
+    "arm": "route_table",
+    "rule": "R2",
+    "diagnosis": "missing_rule",
+    "configuration_evidence": {},
+    "example": {
+      "case": 16,
+      "state": {
+        "site_open": true,
+        "preferred_open": true,
+        "backup_open": true,
+        "cross_region": true,
+        "restricted_site": false
+      },
+      "expected": {
+        "steps": [],
+        "branches": [],
+        "fields": [],
+        "confirmations": 0
+      },
+      "actual": {
+        "steps": [
+          "identity",
+          "move",
+          "preferred_slot"
+        ],
+        "branches": [
+          "move",
+          "preferred_slot"
+        ],
+        "fields": [
+          "identity_ref",
+          "preferred_slot_ref",
+          "site_ref"
+        ],
+        "confirmations": 2
+      }
+    }
+  },
+  {
+    "arm": "route_table",
+    "rule": "R2",
+    "diagnosis": "wrong_selector",
+    "configuration_evidence": {
+      "selected_targets": [],
+      "compiled_gate": "carrier_check"
+    },
+    "example": {
+      "case": 16,
+      "state": {
+        "site_open": true,
+        "preferred_open": true,
+        "backup_open": true,
+        "cross_region": true,
+        "restricted_site": false
+      },
+      "expected": {
+        "steps": [],
+        "branches": [],
+        "fields": [],
+        "confirmations": 0
+      },
+      "actual": {
+        "steps": [
+          "identity",
+          "move",
+          "preferred_slot"
+        ],
+        "branches": [
+          "move",
+          "preferred_slot"
+        ],
+        "fields": [
+          "identity_ref",
+          "preferred_slot_ref",
+          "site_ref"
+        ],
+        "confirmations": 2
+      }
+    }
+  },
+  {
+    "arm": "route_table",
+    "rule": "R2",
+    "diagnosis": "reverse_condition",
+    "configuration_evidence": {
+      "selected_targets": [
+        "move"
+      ],
+      "compiled_gate": "carrier_check",
+      "compiled_predicates": [
+        [
+          "cross_region",
+          false
+        ]
+      ],
+      "compiled_fields": [
+        "carrier_declaration_ref"
+      ]
+    },
+    "example": {
+      "case": 12,
+      "state": {
+        "site_open": true,
+        "preferred_open": true,
+        "backup_open": true,
+        "cross_region": false,
+        "restricted_site": false
+      },
+      "expected": {
+        "steps": [
+          "identity",
+          "move",
+          "preferred_slot"
+        ],
+        "branches": [
+          "move",
+          "preferred_slot"
+        ],
+        "fields": [
+          "identity_ref",
+          "preferred_slot_ref",
+          "site_ref"
+        ],
+        "confirmations": 2
+      },
+      "actual": {
+        "steps": [],
+        "branches": [],
+        "fields": [],
+        "confirmations": 0
+      }
+    }
+  },
+  {
+    "arm": "route_table",
+    "rule": "R2",
+    "diagnosis": "wrong_field",
+    "configuration_evidence": {
+      "selected_targets": [
+        "move"
+      ],
+      "compiled_gate": "carrier_check",
+      "compiled_predicates": [
+        [
+          "cross_region",
+          true
+        ]
+      ],
+      "compiled_fields": [
+        "audit_trap_ref"
+      ]
+    },
+    "example": {
+      "case": 16,
+      "state": {
+        "site_open": true,
+        "preferred_open": true,
+        "backup_open": true,
+        "cross_region": true,
+        "restricted_site": false
+      },
+      "expected": {
+        "steps": [],
+        "branches": [],
+        "fields": [],
+        "confirmations": 0
+      },
+      "actual": {
+        "steps": [
+          "carrier_check",
+          "identity",
+          "move",
+          "preferred_slot"
+        ],
+        "branches": [
+          "move",
+          "preferred_slot"
+        ],
+        "fields": [
+          "audit_trap_ref",
+          "identity_ref",
+          "preferred_slot_ref",
+          "site_ref"
+        ],
+        "confirmations": 2
+      }
+    }
+  },
+  {
+    "arm": "route_table",
+    "rule": "R2",
+    "diagnosis": "missing_dependency",
+    "configuration_evidence": {
+      "selected_targets": [
+        "move"
+      ],
+      "compiled_gate": null
+    },
+    "example": {
+      "case": 16,
+      "state": {
+        "site_open": true,
+        "preferred_open": true,
+        "backup_open": true,
+        "cross_region": true,
+        "restricted_site": false
+      },
+      "expected": {
+        "steps": [],
+        "branches": [],
+        "fields": [],
+        "confirmations": 0
+      },
+      "actual": {
+        "steps": [
+          "identity",
+          "move",
+          "preferred_slot"
+        ],
+        "branches": [
+          "move",
+          "preferred_slot"
+        ],
+        "fields": [
+          "identity_ref",
+          "preferred_slot_ref",
+          "site_ref"
+        ],
+        "confirmations": 2
+      }
+    }
+  },
+  {
+    "arm": "route_table",
+    "rule": "R3",
+    "diagnosis": "missing_rule",
+    "configuration_evidence": {},
+    "example": {
+      "case": 14,
+      "state": {
+        "site_open": true,
+        "preferred_open": true,
+        "backup_open": true,
+        "cross_region": false,
+        "restricted_site": true
+      },
+      "expected": {
+        "steps": [],
+        "branches": [],
+        "fields": [],
+        "confirmations": 0
+      },
+      "actual": {
+        "steps": [
+          "identity",
+          "move",
+          "preferred_slot"
+        ],
+        "branches": [
+          "move",
+          "preferred_slot"
+        ],
+        "fields": [
+          "identity_ref",
+          "preferred_slot_ref",
+          "site_ref"
+        ],
+        "confirmations": 2
+      }
+    }
+  },
+  {
+    "arm": "route_table",
+    "rule": "R3",
+    "diagnosis": "wrong_selector",
+    "configuration_evidence": {
+      "selected_targets": [],
+      "compiled_gate": "reservation_check"
+    },
+    "example": {
+      "case": 14,
+      "state": {
+        "site_open": true,
+        "preferred_open": true,
+        "backup_open": true,
+        "cross_region": false,
+        "restricted_site": true
+      },
+      "expected": {
+        "steps": [],
+        "branches": [],
+        "fields": [],
+        "confirmations": 0
+      },
+      "actual": {
+        "steps": [
+          "identity",
+          "move",
+          "preferred_slot"
+        ],
+        "branches": [
+          "move",
+          "preferred_slot"
+        ],
+        "fields": [
+          "identity_ref",
+          "preferred_slot_ref",
+          "site_ref"
+        ],
+        "confirmations": 2
+      }
+    }
+  },
+  {
+    "arm": "route_table",
+    "rule": "R3",
+    "diagnosis": "reverse_condition",
+    "configuration_evidence": {
+      "selected_targets": [
+        "backup_slot",
+        "preferred_slot"
+      ],
+      "compiled_gate": "reservation_check",
+      "compiled_predicates": [
+        [
+          "restricted_site",
+          false
+        ]
+      ],
+      "compiled_fields": [
+        "reservation_attestation_ref"
+      ]
+    },
+    "example": {
+      "case": 12,
+      "state": {
+        "site_open": true,
+        "preferred_open": true,
+        "backup_open": true,
+        "cross_region": false,
+        "restricted_site": false
+      },
+      "expected": {
+        "steps": [
+          "identity",
+          "move",
+          "preferred_slot"
+        ],
+        "branches": [
+          "move",
+          "preferred_slot"
+        ],
+        "fields": [
+          "identity_ref",
+          "preferred_slot_ref",
+          "site_ref"
+        ],
+        "confirmations": 2
+      },
+      "actual": {
+        "steps": [],
+        "branches": [],
+        "fields": [],
+        "confirmations": 0
+      }
+    }
+  },
+  {
+    "arm": "route_table",
+    "rule": "R3",
+    "diagnosis": "wrong_field",
+    "configuration_evidence": {
+      "selected_targets": [
+        "backup_slot",
+        "preferred_slot"
+      ],
+      "compiled_gate": "reservation_check",
+      "compiled_predicates": [
+        [
+          "restricted_site",
+          true
+        ]
+      ],
+      "compiled_fields": [
+        "audit_trap_ref"
+      ]
+    },
+    "example": {
+      "case": 14,
+      "state": {
+        "site_open": true,
+        "preferred_open": true,
+        "backup_open": true,
+        "cross_region": false,
+        "restricted_site": true
+      },
+      "expected": {
+        "steps": [],
+        "branches": [],
+        "fields": [],
+        "confirmations": 0
+      },
+      "actual": {
+        "steps": [
+          "identity",
+          "move",
+          "preferred_slot",
+          "reservation_check"
+        ],
+        "branches": [
+          "move",
+          "preferred_slot"
+        ],
+        "fields": [
+          "audit_trap_ref",
+          "identity_ref",
+          "preferred_slot_ref",
+          "site_ref"
+        ],
+        "confirmations": 2
+      }
+    }
+  },
+  {
+    "arm": "route_table",
+    "rule": "R3",
+    "diagnosis": "missing_dependency",
+    "configuration_evidence": {
+      "selected_targets": [
+        "backup_slot",
+        "preferred_slot"
+      ],
+      "compiled_gate": null
+    },
+    "example": {
+      "case": 14,
+      "state": {
+        "site_open": true,
+        "preferred_open": true,
+        "backup_open": true,
+        "cross_region": false,
+        "restricted_site": true
+      },
+      "expected": {
+        "steps": [],
+        "branches": [],
+        "fields": [],
+        "confirmations": 0
+      },
+      "actual": {
+        "steps": [
+          "identity",
+          "move",
+          "preferred_slot"
+        ],
+        "branches": [
+          "move",
+          "preferred_slot"
+        ],
+        "fields": [
+          "identity_ref",
+          "preferred_slot_ref",
+          "site_ref"
+        ],
+        "confirmations": 2
+      }
+    }
+  },
+  {
+    "arm": "contract",
+    "rule": "R1",
+    "diagnosis": "missing_rule",
+    "configuration_evidence": {},
+    "example": {
+      "case": 6,
+      "state": {
+        "wallet_online": false,
+        "bank_online": true,
+        "recent_bank_change": true
+      },
+      "expected": {
+        "steps": [],
+        "branches": [],
+        "fields": [],
+        "confirmations": 0
+      },
+      "actual": {
+        "steps": [
+          "bank"
+        ],
+        "branches": [
+          "bank"
+        ],
+        "fields": [
+          "bank_ref",
+          "owner_ref"
+        ],
+        "confirmations": 1
+      }
+    }
+  },
+  {
+    "arm": "contract",
+    "rule": "R1",
+    "diagnosis": "wrong_selector",
+    "configuration_evidence": {
+      "selected_targets": [],
+      "compiled_gate": "beneficiary_check"
+    },
+    "example": {
+      "case": 6,
+      "state": {
+        "wallet_online": false,
+        "bank_online": true,
+        "recent_bank_change": true
+      },
+      "expected": {
+        "steps": [],
+        "branches": [],
+        "fields": [],
+        "confirmations": 0
+      },
+      "actual": {
+        "steps": [
+          "bank"
+        ],
+        "branches": [
+          "bank"
+        ],
+        "fields": [
+          "bank_ref",
+          "owner_ref"
+        ],
+        "confirmations": 1
+      }
+    }
+  },
+  {
+    "arm": "contract",
+    "rule": "R1",
+    "diagnosis": "reverse_condition",
+    "configuration_evidence": {
+      "selected_targets": [
+        "bank"
+      ],
+      "compiled_gate": "beneficiary_check",
+      "compiled_predicates": [
+        [
+          "recent_bank_change",
+          false
+        ]
+      ],
+      "compiled_fields": [
+        "beneficiary_ref"
+      ]
+    },
+    "example": {
+      "case": 4,
+      "state": {
+        "wallet_online": false,
+        "bank_online": true,
+        "recent_bank_change": false
+      },
+      "expected": {
+        "steps": [
+          "bank"
+        ],
+        "branches": [
+          "bank"
+        ],
+        "fields": [
+          "bank_ref",
+          "owner_ref"
+        ],
+        "confirmations": 1
+      },
+      "actual": {
+        "steps": [],
+        "branches": [],
+        "fields": [],
+        "confirmations": 0
+      }
+    }
+  },
+  {
+    "arm": "contract",
+    "rule": "R1",
+    "diagnosis": "wrong_field",
+    "configuration_evidence": {
+      "selected_targets": [
+        "bank"
+      ],
+      "compiled_gate": "beneficiary_check",
+      "compiled_predicates": [
+        [
+          "recent_bank_change",
+          true
+        ]
+      ],
+      "compiled_fields": [
+        "audit_trap_ref"
+      ]
+    },
+    "example": {
+      "case": 6,
+      "state": {
+        "wallet_online": false,
+        "bank_online": true,
+        "recent_bank_change": true
+      },
+      "expected": {
+        "steps": [],
+        "branches": [],
+        "fields": [],
+        "confirmations": 0
+      },
+      "actual": {
+        "steps": [
+          "bank",
+          "beneficiary_check"
+        ],
+        "branches": [
+          "bank"
+        ],
+        "fields": [
+          "audit_trap_ref",
+          "bank_ref",
+          "owner_ref"
+        ],
+        "confirmations": 1
+      }
+    }
+  },
+  {
+    "arm": "contract",
+    "rule": "R1",
+    "diagnosis": "missing_dependency",
+    "configuration_evidence": {
+      "selected_targets": [
+        "bank"
+      ],
+      "compiled_gate": null
+    },
+    "example": {
+      "case": 6,
+      "state": {
+        "wallet_online": false,
+        "bank_online": true,
+        "recent_bank_change": true
+      },
+      "expected": {
+        "steps": [],
+        "branches": [],
+        "fields": [],
+        "confirmations": 0
+      },
+      "actual": {
+        "steps": [
+          "bank"
+        ],
+        "branches": [
+          "bank"
+        ],
+        "fields": [
+          "bank_ref",
+          "owner_ref"
+        ],
+        "confirmations": 1
+      }
+    }
+  },
+  {
+    "arm": "contract",
+    "rule": "R2",
+    "diagnosis": "missing_rule",
+    "configuration_evidence": {},
+    "example": {
+      "case": 16,
+      "state": {
+        "site_open": true,
+        "preferred_open": true,
+        "backup_open": true,
+        "cross_region": true,
+        "restricted_site": false
+      },
+      "expected": {
+        "steps": [],
+        "branches": [],
+        "fields": [],
+        "confirmations": 0
+      },
+      "actual": {
+        "steps": [
+          "identity",
+          "move",
+          "preferred_slot"
+        ],
+        "branches": [
+          "move",
+          "preferred_slot"
+        ],
+        "fields": [
+          "identity_ref",
+          "preferred_slot_ref",
+          "site_ref"
+        ],
+        "confirmations": 2
+      }
+    }
+  },
+  {
+    "arm": "contract",
+    "rule": "R2",
+    "diagnosis": "wrong_selector",
+    "configuration_evidence": {
+      "selected_targets": [],
+      "compiled_gate": "carrier_check"
+    },
+    "example": {
+      "case": 16,
+      "state": {
+        "site_open": true,
+        "preferred_open": true,
+        "backup_open": true,
+        "cross_region": true,
+        "restricted_site": false
+      },
+      "expected": {
+        "steps": [],
+        "branches": [],
+        "fields": [],
+        "confirmations": 0
+      },
+      "actual": {
+        "steps": [
+          "identity",
+          "move",
+          "preferred_slot"
+        ],
+        "branches": [
+          "move",
+          "preferred_slot"
+        ],
+        "fields": [
+          "identity_ref",
+          "preferred_slot_ref",
+          "site_ref"
+        ],
+        "confirmations": 2
+      }
+    }
+  },
+  {
+    "arm": "contract",
+    "rule": "R2",
+    "diagnosis": "reverse_condition",
+    "configuration_evidence": {
+      "selected_targets": [
+        "move"
+      ],
+      "compiled_gate": "carrier_check",
+      "compiled_predicates": [
+        [
+          "cross_region",
+          false
+        ]
+      ],
+      "compiled_fields": [
+        "carrier_declaration_ref"
+      ]
+    },
+    "example": {
+      "case": 12,
+      "state": {
+        "site_open": true,
+        "preferred_open": true,
+        "backup_open": true,
+        "cross_region": false,
+        "restricted_site": false
+      },
+      "expected": {
+        "steps": [
+          "identity",
+          "move",
+          "preferred_slot"
+        ],
+        "branches": [
+          "move",
+          "preferred_slot"
+        ],
+        "fields": [
+          "identity_ref",
+          "preferred_slot_ref",
+          "site_ref"
+        ],
+        "confirmations": 2
+      },
+      "actual": {
+        "steps": [],
+        "branches": [],
+        "fields": [],
+        "confirmations": 0
+      }
+    }
+  },
+  {
+    "arm": "contract",
+    "rule": "R2",
+    "diagnosis": "wrong_field",
+    "configuration_evidence": {
+      "selected_targets": [
+        "move"
+      ],
+      "compiled_gate": "carrier_check",
+      "compiled_predicates": [
+        [
+          "cross_region",
+          true
+        ]
+      ],
+      "compiled_fields": [
+        "audit_trap_ref"
+      ]
+    },
+    "example": {
+      "case": 16,
+      "state": {
+        "site_open": true,
+        "preferred_open": true,
+        "backup_open": true,
+        "cross_region": true,
+        "restricted_site": false
+      },
+      "expected": {
+        "steps": [],
+        "branches": [],
+        "fields": [],
+        "confirmations": 0
+      },
+      "actual": {
+        "steps": [
+          "carrier_check",
+          "identity",
+          "move",
+          "preferred_slot"
+        ],
+        "branches": [
+          "move",
+          "preferred_slot"
+        ],
+        "fields": [
+          "audit_trap_ref",
+          "identity_ref",
+          "preferred_slot_ref",
+          "site_ref"
+        ],
+        "confirmations": 2
+      }
+    }
+  },
+  {
+    "arm": "contract",
+    "rule": "R2",
+    "diagnosis": "missing_dependency",
+    "configuration_evidence": {
+      "selected_targets": [
+        "move"
+      ],
+      "compiled_gate": null
+    },
+    "example": {
+      "case": 16,
+      "state": {
+        "site_open": true,
+        "preferred_open": true,
+        "backup_open": true,
+        "cross_region": true,
+        "restricted_site": false
+      },
+      "expected": {
+        "steps": [],
+        "branches": [],
+        "fields": [],
+        "confirmations": 0
+      },
+      "actual": {
+        "steps": [
+          "identity",
+          "move",
+          "preferred_slot"
+        ],
+        "branches": [
+          "move",
+          "preferred_slot"
+        ],
+        "fields": [
+          "identity_ref",
+          "preferred_slot_ref",
+          "site_ref"
+        ],
+        "confirmations": 2
+      }
+    }
+  },
+  {
+    "arm": "contract",
+    "rule": "R3",
+    "diagnosis": "missing_rule",
+    "configuration_evidence": {},
+    "example": {
+      "case": 14,
+      "state": {
+        "site_open": true,
+        "preferred_open": true,
+        "backup_open": true,
+        "cross_region": false,
+        "restricted_site": true
+      },
+      "expected": {
+        "steps": [],
+        "branches": [],
+        "fields": [],
+        "confirmations": 0
+      },
+      "actual": {
+        "steps": [
+          "identity",
+          "move",
+          "preferred_slot"
+        ],
+        "branches": [
+          "move",
+          "preferred_slot"
+        ],
+        "fields": [
+          "identity_ref",
+          "preferred_slot_ref",
+          "site_ref"
+        ],
+        "confirmations": 2
+      }
+    }
+  },
+  {
+    "arm": "contract",
+    "rule": "R3",
+    "diagnosis": "wrong_selector",
+    "configuration_evidence": {
+      "selected_targets": [],
+      "compiled_gate": "reservation_check"
+    },
+    "example": {
+      "case": 14,
+      "state": {
+        "site_open": true,
+        "preferred_open": true,
+        "backup_open": true,
+        "cross_region": false,
+        "restricted_site": true
+      },
+      "expected": {
+        "steps": [],
+        "branches": [],
+        "fields": [],
+        "confirmations": 0
+      },
+      "actual": {
+        "steps": [
+          "identity",
+          "move",
+          "preferred_slot"
+        ],
+        "branches": [
+          "move",
+          "preferred_slot"
+        ],
+        "fields": [
+          "identity_ref",
+          "preferred_slot_ref",
+          "site_ref"
+        ],
+        "confirmations": 2
+      }
+    }
+  },
+  {
+    "arm": "contract",
+    "rule": "R3",
+    "diagnosis": "reverse_condition",
+    "configuration_evidence": {
+      "selected_targets": [
+        "backup_slot",
+        "preferred_slot"
+      ],
+      "compiled_gate": "reservation_check",
+      "compiled_predicates": [
+        [
+          "restricted_site",
+          false
+        ]
+      ],
+      "compiled_fields": [
+        "reservation_attestation_ref"
+      ]
+    },
+    "example": {
+      "case": 12,
+      "state": {
+        "site_open": true,
+        "preferred_open": true,
+        "backup_open": true,
+        "cross_region": false,
+        "restricted_site": false
+      },
+      "expected": {
+        "steps": [
+          "identity",
+          "move",
+          "preferred_slot"
+        ],
+        "branches": [
+          "move",
+          "preferred_slot"
+        ],
+        "fields": [
+          "identity_ref",
+          "preferred_slot_ref",
+          "site_ref"
+        ],
+        "confirmations": 2
+      },
+      "actual": {
+        "steps": [],
+        "branches": [],
+        "fields": [],
+        "confirmations": 0
+      }
+    }
+  },
+  {
+    "arm": "contract",
+    "rule": "R3",
+    "diagnosis": "wrong_field",
+    "configuration_evidence": {
+      "selected_targets": [
+        "backup_slot",
+        "preferred_slot"
+      ],
+      "compiled_gate": "reservation_check",
+      "compiled_predicates": [
+        [
+          "restricted_site",
+          true
+        ]
+      ],
+      "compiled_fields": [
+        "audit_trap_ref"
+      ]
+    },
+    "example": {
+      "case": 14,
+      "state": {
+        "site_open": true,
+        "preferred_open": true,
+        "backup_open": true,
+        "cross_region": false,
+        "restricted_site": true
+      },
+      "expected": {
+        "steps": [],
+        "branches": [],
+        "fields": [],
+        "confirmations": 0
+      },
+      "actual": {
+        "steps": [
+          "identity",
+          "move",
+          "preferred_slot",
+          "reservation_check"
+        ],
+        "branches": [
+          "move",
+          "preferred_slot"
+        ],
+        "fields": [
+          "audit_trap_ref",
+          "identity_ref",
+          "preferred_slot_ref",
+          "site_ref"
+        ],
+        "confirmations": 2
+      }
+    }
+  },
+  {
+    "arm": "contract",
+    "rule": "R3",
+    "diagnosis": "missing_dependency",
+    "configuration_evidence": {
+      "selected_targets": [
+        "backup_slot",
+        "preferred_slot"
+      ],
+      "compiled_gate": null
+    },
+    "example": {
+      "case": 14,
+      "state": {
+        "site_open": true,
+        "preferred_open": true,
+        "backup_open": true,
+        "cross_region": false,
+        "restricted_site": true
+      },
+      "expected": {
+        "steps": [],
+        "branches": [],
+        "fields": [],
+        "confirmations": 0
+      },
+      "actual": {
+        "steps": [
+          "identity",
+          "move",
+          "preferred_slot"
+        ],
+        "branches": [
+          "move",
+          "preferred_slot"
+        ],
+        "fields": [
+          "identity_ref",
+          "preferred_slot_ref",
+          "site_ref"
+        ],
+        "confirmations": 2
+      }
+    }
+  }
+]

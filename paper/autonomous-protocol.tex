@@ -1,0 +1,28 @@
+\section{Autonomous comparison protocol}
+\label{sec:autonomous-protocol}
+This appendix describes the design used in Section~\ref{sec:strong-autonomous}.
+
+\paragraph{Question and arms.}
+Compare reads, recovery and cost under two backends. Arm T composes route recipes and refreshes state at every read. Arm C derives requirements from tool contracts and validates an evidence-bound grant at delivery. Both share route eligibility, required fields, verification reuse, confirmation, idempotency and recovery rules.
+
+\paragraph{Shared interface.}
+Use one model snapshot, prompt, tool schema, response format, authorization policy, confirmation simulator and call budgets. A common prepare call returns an opaque handle: a request identifier in T and a grant identifier in C. Normalize denial codes and recovery advice for equivalent conditions. If a grant expires while its route remains viable, use common refresh-and-prepare guidance. The model issues all follow-up calls. Execution checks and scoring are shared.
+
+\paragraph{Frozen paired tasks.}
+The study uses 60 new pairs, 20 in each family below. Each pair shares the user request, synthetic values, starting authorization and tool capabilities. The two members vary a state update or its timing. Both arms run every member. Hold the 120 tasks out of prompt and policy development. Within the three families, include conditions where a supporting version changes but the current route remains admissible, to expose avoidable grant refreshes.
+\begin{enumerate}
+\item \textbf{Preferred route returns.} Change wallet availability before a pending raw read, with a matched case where the fallback stays necessary. The ledger checks the refund destination and whether any bank values were delivered.
+\item \textbf{A committed action precedes replanning.} Change a booking prerequisite after a pickup-site change has committed. Vary whether a verification record is still valid for the new continuation. The ledger requires preservation of the committed effect and counts missing verification, redundant verification and duplicate commits.
+\item \textbf{No authorized continuation.} Remove the active route when alternatives either lack authorization or cannot satisfy a business prerequisite. Pair it with a case retaining an authorized continuation. The ledger distinguishes an expected safe stop from an abandoned executable task. It records when a confirmation request is permitted.
+\end{enumerate}
+
+\paragraph{Timing and coverage.}
+Freeze an event script per task. From a shared checkpoint (e.g., first status reply or committed pickup-site change), apply the update before tool dispatch at a predetermined later model turn. The schedule is independent of field requests, denials and grants. Preflight by replaying reference trajectories. Log checkpoint, event, preparation and delivery attempt separately. Report all runs and the share that reached the intended window by arm. Treat reached-window results as diagnostic because reaching it can depend on the arm.
+
+\paragraph{Runs and scoring.}
+Cross the 120 tasks with both arms and three repetitions for 720 runs. Counterbalance or randomize execution order within task and repetition. Use the same generation settings and matched seeds where the endpoint supports them. Start with the main study settings: a pinned version of \texttt{qwen3.8-flash}, temperature 0.3, up to 40 model responses, 512 output tokens per response and two recoveries. Log model version, calls and transport retries. Freeze the fixture ledger, model configuration and exclusions before running. Use scripted preflight to validate interface parity, environment resets and evaluator agreement. Keep refusals, timeouts and budget exhaustion in the assigned denominator, coded by failure cause.
+
+An independent ledger scores the actual route, fields and business outcome against the rules at each event. Co-primary outcomes are excess raw fields (once per attempt, field and version) and correct outcomes, including expected safe stops. A field is excess if current shared business rules do not require it at delivery. Log grant expiration separately from business necessity. Separately report stale justifications, completion of executable tasks, recovery, repeated reads and verifications, duplicate effects, calls, confirmations and visible exact-value disclosure in text or outbound tools.
+
+\paragraph{Analysis and interpretation.}
+Report paired C-minus-T differences and 95\% bootstrap intervals resampling whole task pairs within family. Include per-family counts, discordances and failure traces. Freeze practical margins before any runs. Wide intervals leave parity unresolved. Similar privacy and completion under narrow intervals support the shared delivery rule on this suite. Maintenance claims require separate human effort and regression measurements.

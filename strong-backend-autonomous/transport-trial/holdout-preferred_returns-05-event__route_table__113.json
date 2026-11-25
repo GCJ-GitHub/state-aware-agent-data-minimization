@@ -1,0 +1,438 @@
+{
+  "id": "holdout-preferred_returns-05-event",
+  "pair": "holdout-preferred_returns-05",
+  "arm": "route_table",
+  "seed": 113,
+  "events": [
+    {
+      "event": "checkpoint",
+      "turn": 0,
+      "scheduled": 3
+    },
+    {
+      "event": "clock",
+      "turn": 3,
+      "changed": true,
+      "facts": {
+        "wallet_online": true
+      },
+      "identity_updated": false
+    },
+    {
+      "event": "read",
+      "turn": 3,
+      "prepared": 2,
+      "step": "bank",
+      "requested": [
+        "bank_ref",
+        "owner_ref"
+      ],
+      "facts": {
+        "bank_online": true,
+        "wallet_online": true
+      },
+      "seen": [],
+      "goal": "refund",
+      "delivered": {},
+      "ok": false,
+      "reason": "replan"
+    },
+    {
+      "event": "denial",
+      "tool": "read_fields",
+      "turn": 3,
+      "code": "replan",
+      "detail": "current_plan_invalid"
+    },
+    {
+      "event": "read",
+      "turn": 7,
+      "prepared": 6,
+      "step": "wallet",
+      "requested": [
+        "wallet_ref"
+      ],
+      "facts": {
+        "bank_online": true,
+        "wallet_online": true
+      },
+      "seen": [],
+      "goal": "refund",
+      "delivered": {
+        "wallet_ref": 1
+      },
+      "ok": true
+    },
+    {
+      "event": "confirmation",
+      "step": "wallet",
+      "turn": 8
+    },
+    {
+      "event": "effect",
+      "step": "wallet",
+      "turn": 9,
+      "goal": "refund",
+      "identity_version": null
+    }
+  ],
+  "commits": [
+    "wallet"
+  ],
+  "stopped": false,
+  "end": "final_reply",
+  "model_responses": [
+    {
+      "turn": 0,
+      "model": "qwen3.8-flash",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_074098f564bd4573af129230",
+          "function": {
+            "name": "status",
+            "arguments": "{}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 1,
+      "model": "qwen3.8-flash",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_ea3614b777274df99719af22",
+          "function": {
+            "name": "select_plan",
+            "arguments": "{\"steps\": \n[\"bank\"]\n\n}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 2,
+      "model": "qwen3.8-flash",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_3216114a6cb34c838dd64aff",
+          "function": {
+            "name": "prepare_read",
+            "arguments": "{\"step\": \"bank\"}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 3,
+      "model": "qwen3.8-flash",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_8dd444d854f74438a680443f",
+          "function": {
+            "name": "read_fields",
+            "arguments": "{\"handle\": \"R2\", \"fields\": \n[\"bank_ref\", \"owner_ref\"]\n\n}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 4,
+      "model": "qwen3.8-flash",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_524b1fccf02a4e579127e350",
+          "function": {
+            "name": "status",
+            "arguments": "{}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 5,
+      "model": "qwen3.8-flash",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_29930e55d3c440f5be6228e6",
+          "function": {
+            "name": "select_plan",
+            "arguments": "{\"steps\": \n[\"wallet\"]\n\n}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 6,
+      "model": "qwen3.8-flash",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_8013b729372744c486d356c5",
+          "function": {
+            "name": "prepare_read",
+            "arguments": "{\"step\": \"wallet\"}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 7,
+      "model": "qwen3.8-flash",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_d1f1538cb2e84f37bf842d2d",
+          "function": {
+            "name": "read_fields",
+            "arguments": "{\"handle\": \"R5\", \"fields\": \n[\"wallet_ref\"]\n\n}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 8,
+      "model": "qwen3.8-flash",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_dd22be158c8d404490d3e677",
+          "function": {
+            "name": "confirm",
+            "arguments": "{\"step\": \"wallet\"}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 9,
+      "model": "qwen3.8-flash",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_d3427b1d818b46db87703116",
+          "function": {
+            "name": "execute",
+            "arguments": "{\"step\": \"wallet\", \"values\": {\"wallet_ref\": \"SYN_5b7223fc8b693\"}}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 10,
+      "model": "qwen3.8-flash",
+      "fingerprint": "",
+      "text": "The refund for order holdout-preferred_returns-05 was issued to the wallet after confirmation. The bank fallback wasn't needed.",
+      "tool_calls": []
+    }
+  ],
+  "calls": [
+    {
+      "turn": 0,
+      "name": "status",
+      "args": {},
+      "response": {
+        "status": "ready",
+        "facts": {
+          "bank_online": true,
+          "wallet_online": false
+        },
+        "committed": [],
+        "plans": [
+          [
+            "bank"
+          ]
+        ]
+      }
+    },
+    {
+      "turn": 1,
+      "name": "select_plan",
+      "args": {
+        "steps": [
+          "bank"
+        ]
+      },
+      "response": {
+        "enabled": [
+          {
+            "step": "bank",
+            "input_fields": [
+              "bank_ref",
+              "owner_ref"
+            ],
+            "missing_fields": [
+              "bank_ref",
+              "owner_ref"
+            ],
+            "needs_confirmation": true
+          }
+        ],
+        "reused": []
+      }
+    },
+    {
+      "turn": 2,
+      "name": "prepare_read",
+      "args": {
+        "step": "bank"
+      },
+      "response": {
+        "handle": "R2",
+        "fields": [
+          "bank_ref",
+          "owner_ref"
+        ]
+      }
+    },
+    {
+      "turn": 3,
+      "name": "read_fields",
+      "args": {
+        "handle": "R2",
+        "fields": [
+          "bank_ref",
+          "owner_ref"
+        ]
+      },
+      "response": {
+        "error": "replan",
+        "feedback": "Call status and select a current plan. Continue only with enabled steps."
+      }
+    },
+    {
+      "turn": 4,
+      "name": "status",
+      "args": {},
+      "response": {
+        "status": "ready",
+        "facts": {
+          "bank_online": true,
+          "wallet_online": true
+        },
+        "committed": [],
+        "plans": [
+          [
+            "wallet"
+          ]
+        ]
+      }
+    },
+    {
+      "turn": 5,
+      "name": "select_plan",
+      "args": {
+        "steps": [
+          "wallet"
+        ]
+      },
+      "response": {
+        "enabled": [
+          {
+            "step": "wallet",
+            "input_fields": [
+              "wallet_ref"
+            ],
+            "missing_fields": [
+              "wallet_ref"
+            ],
+            "needs_confirmation": true
+          }
+        ],
+        "reused": []
+      }
+    },
+    {
+      "turn": 6,
+      "name": "prepare_read",
+      "args": {
+        "step": "wallet"
+      },
+      "response": {
+        "handle": "R5",
+        "fields": [
+          "wallet_ref"
+        ]
+      }
+    },
+    {
+      "turn": 7,
+      "name": "read_fields",
+      "args": {
+        "handle": "R5",
+        "fields": [
+          "wallet_ref"
+        ]
+      },
+      "response": {
+        "values": {
+          "wallet_ref": "SYN_5b7223fc8b693"
+        }
+      }
+    },
+    {
+      "turn": 8,
+      "name": "confirm",
+      "args": {
+        "step": "wallet"
+      },
+      "response": {
+        "approved": true
+      }
+    },
+    {
+      "turn": 9,
+      "name": "execute",
+      "args": {
+        "step": "wallet",
+        "values": {
+          "wallet_ref": "SYN_5b7223fc8b693"
+        }
+      },
+      "response": {
+        "committed": "wallet",
+        "complete": true
+      }
+    }
+  ],
+  "protocol_errors": [],
+  "http_attempts": 20,
+  "http_statuses": {
+    "200": 11,
+    "429": 9
+  }
+}

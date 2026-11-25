@@ -1,0 +1,263 @@
+{
+  "id": "holdout-after_commit-14-event",
+  "pair": "holdout-after_commit-14",
+  "arm": "route_table",
+  "seed": 19,
+  "events": [
+    {
+      "event": "read",
+      "turn": 3,
+      "prepared": 2,
+      "step": "identity",
+      "requested": [
+        "identity_ref"
+      ],
+      "facts": {
+        "backup_open": true,
+        "preferred_open": true,
+        "site_open": true
+      },
+      "seen": [],
+      "goal": "site_change",
+      "delivered": {
+        "identity_ref": 1
+      },
+      "ok": true
+    },
+    {
+      "event": "effect",
+      "step": "identity",
+      "turn": 4,
+      "goal": "identity_verified",
+      "identity_version": 1
+    }
+  ],
+  "commits": [],
+  "stopped": false,
+  "end": "api_error",
+  "model_responses": [
+    {
+      "turn": 0,
+      "model": "qwen3.8-flash",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_8eea6a06e6c24dafb913c252",
+          "function": {
+            "name": "status",
+            "arguments": "{}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 1,
+      "model": "qwen3.8-flash",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_17d1b5705d824876a1f18a2f",
+          "function": {
+            "name": "select_plan",
+            "arguments": "{\"steps\": \n[\"identity\", \"move\"]\n\n}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 2,
+      "model": "qwen3.8-flash",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_c7ecdc1e5d2c467b868a6337",
+          "function": {
+            "name": "prepare_read",
+            "arguments": "{\"step\": \"identity\"}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 3,
+      "model": "qwen3.8-flash",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_318d8fa04da94f23b992a20a",
+          "function": {
+            "name": "read_fields",
+            "arguments": "{\"handle\": \"R1\", \"fields\": \n[\"identity_ref\"]\n\n}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 4,
+      "model": "qwen3.8-flash",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_6669c24558cc4e0f84ae5279",
+          "function": {
+            "name": "execute",
+            "arguments": "{\"step\": \"identity\", \"values\": {\"identity_ref\": \"SYN_1b964c3836108\"}}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 5,
+      "model": "qwen3.8-flash",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_f10fa264022648ea86181ef2",
+          "function": {
+            "name": "prepare_read",
+            "arguments": "{\"step\": \"move\"}"
+          }
+        }
+      ]
+    }
+  ],
+  "calls": [
+    {
+      "turn": 0,
+      "name": "status",
+      "args": {},
+      "response": {
+        "status": "ready",
+        "facts": {
+          "backup_open": true,
+          "preferred_open": true,
+          "site_open": true
+        },
+        "committed": [],
+        "plans": [
+          [
+            "identity",
+            "move"
+          ]
+        ]
+      }
+    },
+    {
+      "turn": 1,
+      "name": "select_plan",
+      "args": {
+        "steps": [
+          "identity",
+          "move"
+        ]
+      },
+      "response": {
+        "enabled": [
+          {
+            "step": "identity",
+            "input_fields": [
+              "identity_ref"
+            ],
+            "missing_fields": [
+              "identity_ref"
+            ],
+            "needs_confirmation": false
+          }
+        ],
+        "reused": []
+      }
+    },
+    {
+      "turn": 2,
+      "name": "prepare_read",
+      "args": {
+        "step": "identity"
+      },
+      "response": {
+        "handle": "R1",
+        "fields": [
+          "identity_ref"
+        ]
+      }
+    },
+    {
+      "turn": 3,
+      "name": "read_fields",
+      "args": {
+        "handle": "R1",
+        "fields": [
+          "identity_ref"
+        ]
+      },
+      "response": {
+        "values": {
+          "identity_ref": "SYN_1b964c3836108"
+        }
+      }
+    },
+    {
+      "turn": 4,
+      "name": "execute",
+      "args": {
+        "step": "identity",
+        "values": {
+          "identity_ref": "SYN_1b964c3836108"
+        }
+      },
+      "response": {
+        "verified": "identity",
+        "enabled": [
+          {
+            "step": "move",
+            "input_fields": [
+              "site_ref"
+            ],
+            "missing_fields": [
+              "site_ref"
+            ],
+            "needs_confirmation": true
+          }
+        ]
+      }
+    },
+    {
+      "turn": 5,
+      "name": "prepare_read",
+      "args": {
+        "step": "move"
+      },
+      "response": {
+        "handle": "R3",
+        "fields": [
+          "site_ref"
+        ]
+      }
+    }
+  ],
+  "protocol_errors": [
+    "retries_exhausted_429"
+  ],
+  "http_attempts": 11,
+  "http_statuses": {
+    "200": 6,
+    "429": 5
+  }
+}

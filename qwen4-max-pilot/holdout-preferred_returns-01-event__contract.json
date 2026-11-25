@@ -1,0 +1,1262 @@
+{
+  "id": "holdout-preferred_returns-01-event",
+  "pair": "holdout-preferred_returns-01",
+  "arm": "contract",
+  "seed": 19,
+  "events": [
+    {
+      "event": "checkpoint",
+      "turn": 0,
+      "scheduled": 3
+    },
+    {
+      "event": "clock",
+      "turn": 3,
+      "changed": true,
+      "facts": {
+        "wallet_online": true
+      },
+      "identity_updated": false
+    },
+    {
+      "event": "read",
+      "turn": 3,
+      "prepared": 2,
+      "step": "bank",
+      "requested": [
+        "bank_ref",
+        "owner_ref"
+      ],
+      "facts": {
+        "bank_online": true,
+        "wallet_online": true
+      },
+      "seen": [],
+      "goal": "refund",
+      "delivered": {},
+      "ok": false,
+      "reason": "replan"
+    },
+    {
+      "event": "denial",
+      "tool": "read_fields",
+      "turn": 3,
+      "code": "replan",
+      "detail": "current_plan_invalid"
+    },
+    {
+      "event": "read",
+      "turn": 7,
+      "prepared": 6,
+      "step": "wallet",
+      "requested": [
+        "wallet_ref"
+      ],
+      "facts": {
+        "bank_online": true,
+        "wallet_online": true
+      },
+      "seen": [],
+      "goal": "refund",
+      "delivered": {
+        "wallet_ref": 1
+      },
+      "ok": true
+    },
+    {
+      "event": "confirmation",
+      "step": "wallet",
+      "turn": 8
+    },
+    {
+      "event": "effect",
+      "step": "wallet",
+      "turn": 9,
+      "goal": "refund",
+      "identity_version": null
+    },
+    {
+      "event": "denial",
+      "tool": "status",
+      "turn": 10,
+      "code": "check_request",
+      "detail": "workflow_closed"
+    },
+    {
+      "event": "denial",
+      "tool": "status",
+      "turn": 11,
+      "code": "check_request",
+      "detail": "workflow_closed"
+    },
+    {
+      "event": "denial",
+      "tool": "stop",
+      "turn": 12,
+      "code": "check_request",
+      "detail": "workflow_closed"
+    },
+    {
+      "event": "denial",
+      "tool": "status",
+      "turn": 13,
+      "code": "check_request",
+      "detail": "workflow_closed"
+    },
+    {
+      "event": "denial",
+      "tool": "select_plan",
+      "turn": 14,
+      "code": "check_request",
+      "detail": "workflow_closed"
+    },
+    {
+      "event": "denial",
+      "tool": "stop",
+      "turn": 15,
+      "code": "check_request",
+      "detail": "workflow_closed"
+    },
+    {
+      "event": "denial",
+      "tool": "status",
+      "turn": 16,
+      "code": "check_request",
+      "detail": "workflow_closed"
+    },
+    {
+      "event": "denial",
+      "tool": "stop",
+      "turn": 17,
+      "code": "check_request",
+      "detail": "workflow_closed"
+    },
+    {
+      "event": "denial",
+      "tool": "status",
+      "turn": 18,
+      "code": "check_request",
+      "detail": "workflow_closed"
+    },
+    {
+      "event": "denial",
+      "tool": "stop",
+      "turn": 19,
+      "code": "check_request",
+      "detail": "workflow_closed"
+    },
+    {
+      "event": "denial",
+      "tool": "status",
+      "turn": 20,
+      "code": "check_request",
+      "detail": "workflow_closed"
+    },
+    {
+      "event": "denial",
+      "tool": "stop",
+      "turn": 21,
+      "code": "check_request",
+      "detail": "workflow_closed"
+    },
+    {
+      "event": "denial",
+      "tool": "status",
+      "turn": 22,
+      "code": "check_request",
+      "detail": "workflow_closed"
+    },
+    {
+      "event": "denial",
+      "tool": "stop",
+      "turn": 23,
+      "code": "check_request",
+      "detail": "workflow_closed"
+    },
+    {
+      "event": "denial",
+      "tool": "status",
+      "turn": 24,
+      "code": "check_request",
+      "detail": "workflow_closed"
+    },
+    {
+      "event": "denial",
+      "tool": "stop",
+      "turn": 25,
+      "code": "check_request",
+      "detail": "workflow_closed"
+    },
+    {
+      "event": "denial",
+      "tool": "status",
+      "turn": 26,
+      "code": "check_request",
+      "detail": "workflow_closed"
+    },
+    {
+      "event": "denial",
+      "tool": "stop",
+      "turn": 27,
+      "code": "check_request",
+      "detail": "workflow_closed"
+    },
+    {
+      "event": "denial",
+      "tool": "status",
+      "turn": 28,
+      "code": "check_request",
+      "detail": "workflow_closed"
+    },
+    {
+      "event": "denial",
+      "tool": "stop",
+      "turn": 29,
+      "code": "check_request",
+      "detail": "workflow_closed"
+    },
+    {
+      "event": "denial",
+      "tool": "status",
+      "turn": 30,
+      "code": "check_request",
+      "detail": "workflow_closed"
+    },
+    {
+      "event": "denial",
+      "tool": "stop",
+      "turn": 31,
+      "code": "check_request",
+      "detail": "workflow_closed"
+    },
+    {
+      "event": "denial",
+      "tool": "status",
+      "turn": 32,
+      "code": "check_request",
+      "detail": "workflow_closed"
+    },
+    {
+      "event": "denial",
+      "tool": "stop",
+      "turn": 33,
+      "code": "check_request",
+      "detail": "workflow_closed"
+    },
+    {
+      "event": "denial",
+      "tool": "status",
+      "turn": 34,
+      "code": "check_request",
+      "detail": "workflow_closed"
+    }
+  ],
+  "commits": [
+    "wallet"
+  ],
+  "stopped": false,
+  "end": "api_error",
+  "model_responses": [
+    {
+      "turn": 0,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_efa1120a1abf4f9285febbbf",
+          "function": {
+            "name": "status",
+            "arguments": "{}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 1,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_a515b870c6dd48ceb6c6fc4a",
+          "function": {
+            "name": "select_plan",
+            "arguments": "{\"steps\": \n[\"bank\"]\n\n}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 2,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_1ab989a46489458daf2e8c9a",
+          "function": {
+            "name": "prepare_read",
+            "arguments": "{\"step\": \"bank\"}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 3,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_f1b15337bfcf44fca9e145fa",
+          "function": {
+            "name": "read_fields",
+            "arguments": "{\"handle\": \"R2\", \"fields\": \n[\"bank_ref\", \"owner_ref\"]\n\n}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 4,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_f74e620d8d0e41578264eae1",
+          "function": {
+            "name": "status",
+            "arguments": "{}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 5,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_fffab13ac451401e8017e239",
+          "function": {
+            "name": "select_plan",
+            "arguments": "{\"steps\": \n[\"wallet\"]\n\n}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 6,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_8ca3d233886e4b00bb990db0",
+          "function": {
+            "name": "prepare_read",
+            "arguments": "{\"step\": \"wallet\"}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 7,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_466cb469021b476ab829834b",
+          "function": {
+            "name": "read_fields",
+            "arguments": "{\"handle\": \"R5\", \"fields\": \n[\"wallet_ref\"]\n\n}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 8,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_e6a0a5a767a14543b8cda5f4",
+          "function": {
+            "name": "confirm",
+            "arguments": "{\"step\": \"wallet\"}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 9,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_952feccfdcd74c71ae73b4d7",
+          "function": {
+            "name": "execute",
+            "arguments": "{\"step\": \"wallet\", \"values\": {\"wallet_ref\": \"SYN_35e8fd1d5f050\"}}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 10,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_29784a04ab484763b21daf49",
+          "function": {
+            "name": "status",
+            "arguments": "{}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 11,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_a7d7755c9adf4921913a3dfb",
+          "function": {
+            "name": "status",
+            "arguments": "{}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 12,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_5066bd68331e420ebaa27dfe",
+          "function": {
+            "name": "stop",
+            "arguments": "{}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 13,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_6722b052b3ae4586b4f84027",
+          "function": {
+            "name": "status",
+            "arguments": "{}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 14,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_746f5ab430944329a120a457",
+          "function": {
+            "name": "select_plan",
+            "arguments": "{\"steps\": \n[\"wallet\"]\n\n}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 15,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_7f5c1b3db04c4018b9ed4de3",
+          "function": {
+            "name": "stop",
+            "arguments": "{}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 16,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_eff344d4c6b54b409d80f340",
+          "function": {
+            "name": "status",
+            "arguments": "{}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 17,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_df4f074c0b9c4c5eae2fe6ca",
+          "function": {
+            "name": "stop",
+            "arguments": "{}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 18,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_15ec5ee3011a40eda19e2be2",
+          "function": {
+            "name": "status",
+            "arguments": "{}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 19,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_92ba2fa45cfe4fbc9a575a11",
+          "function": {
+            "name": "stop",
+            "arguments": "{}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 20,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_0c4950d9e5e64526a8c75736",
+          "function": {
+            "name": "status",
+            "arguments": "{}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 21,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_50a07952501e4765a5f27302",
+          "function": {
+            "name": "stop",
+            "arguments": "{}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 22,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_cdca083c1bda41489772b1ae",
+          "function": {
+            "name": "status",
+            "arguments": "{}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 23,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_492119fe8e5f42abae14d898",
+          "function": {
+            "name": "stop",
+            "arguments": "{}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 24,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_f3994d8a5bd74fa981a2c445",
+          "function": {
+            "name": "status",
+            "arguments": "{}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 25,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_ef4594512d7a4b9dbe0b16c9",
+          "function": {
+            "name": "stop",
+            "arguments": "{}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 26,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_476bf4d4202a4ff4800e349b",
+          "function": {
+            "name": "status",
+            "arguments": "{}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 27,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_d1fc2c10cc6849f5a48b572a",
+          "function": {
+            "name": "stop",
+            "arguments": "{}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 28,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_d674bf8c85824b6db0da03f7",
+          "function": {
+            "name": "status",
+            "arguments": "{}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 29,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_ef798b449c884dd0952a2318",
+          "function": {
+            "name": "stop",
+            "arguments": "{}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 30,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_2c68b0c110e945f7a7a4f106",
+          "function": {
+            "name": "status",
+            "arguments": "{}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 31,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_6154746285ab4a69bb8cb6fd",
+          "function": {
+            "name": "stop",
+            "arguments": "{}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 32,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_809a7ce2ccd44a01b9e2eed2",
+          "function": {
+            "name": "status",
+            "arguments": "{}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 33,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_f4d02c71785340bd873c5390",
+          "function": {
+            "name": "stop",
+            "arguments": "{}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 34,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_06b8047a36fe4a0fb2d56765",
+          "function": {
+            "name": "status",
+            "arguments": "{}"
+          }
+        }
+      ]
+    }
+  ],
+  "calls": [
+    {
+      "turn": 0,
+      "name": "status",
+      "args": {},
+      "response": {
+        "status": "ready",
+        "facts": {
+          "bank_online": true,
+          "wallet_online": false
+        },
+        "committed": [],
+        "plans": [
+          [
+            "bank"
+          ]
+        ]
+      }
+    },
+    {
+      "turn": 1,
+      "name": "select_plan",
+      "args": {
+        "steps": [
+          "bank"
+        ]
+      },
+      "response": {
+        "enabled": [
+          {
+            "step": "bank",
+            "input_fields": [
+              "bank_ref",
+              "owner_ref"
+            ],
+            "missing_fields": [
+              "bank_ref",
+              "owner_ref"
+            ],
+            "needs_confirmation": true
+          }
+        ],
+        "reused": []
+      }
+    },
+    {
+      "turn": 2,
+      "name": "prepare_read",
+      "args": {
+        "step": "bank"
+      },
+      "response": {
+        "handle": "R2",
+        "fields": [
+          "bank_ref",
+          "owner_ref"
+        ]
+      }
+    },
+    {
+      "turn": 3,
+      "name": "read_fields",
+      "args": {
+        "handle": "R2",
+        "fields": [
+          "bank_ref",
+          "owner_ref"
+        ]
+      },
+      "response": {
+        "error": "replan",
+        "feedback": "Call status and select a current plan. Continue only with enabled steps."
+      }
+    },
+    {
+      "turn": 4,
+      "name": "status",
+      "args": {},
+      "response": {
+        "status": "ready",
+        "facts": {
+          "bank_online": true,
+          "wallet_online": true
+        },
+        "committed": [],
+        "plans": [
+          [
+            "wallet"
+          ]
+        ]
+      }
+    },
+    {
+      "turn": 5,
+      "name": "select_plan",
+      "args": {
+        "steps": [
+          "wallet"
+        ]
+      },
+      "response": {
+        "enabled": [
+          {
+            "step": "wallet",
+            "input_fields": [
+              "wallet_ref"
+            ],
+            "missing_fields": [
+              "wallet_ref"
+            ],
+            "needs_confirmation": true
+          }
+        ],
+        "reused": []
+      }
+    },
+    {
+      "turn": 6,
+      "name": "prepare_read",
+      "args": {
+        "step": "wallet"
+      },
+      "response": {
+        "handle": "R5",
+        "fields": [
+          "wallet_ref"
+        ]
+      }
+    },
+    {
+      "turn": 7,
+      "name": "read_fields",
+      "args": {
+        "handle": "R5",
+        "fields": [
+          "wallet_ref"
+        ]
+      },
+      "response": {
+        "values": {
+          "wallet_ref": "SYN_35e8fd1d5f050"
+        }
+      }
+    },
+    {
+      "turn": 8,
+      "name": "confirm",
+      "args": {
+        "step": "wallet"
+      },
+      "response": {
+        "approved": true
+      }
+    },
+    {
+      "turn": 9,
+      "name": "execute",
+      "args": {
+        "step": "wallet",
+        "values": {
+          "wallet_ref": "SYN_35e8fd1d5f050"
+        }
+      },
+      "response": {
+        "committed": "wallet",
+        "complete": true
+      }
+    },
+    {
+      "turn": 10,
+      "name": "status",
+      "args": {},
+      "response": {
+        "error": "check_request",
+        "feedback": "Call status and select a current plan. Continue only with enabled steps."
+      }
+    },
+    {
+      "turn": 11,
+      "name": "status",
+      "args": {},
+      "response": {
+        "error": "check_request",
+        "feedback": "Call status and select a current plan. Continue only with enabled steps."
+      }
+    },
+    {
+      "turn": 12,
+      "name": "stop",
+      "args": {},
+      "response": {
+        "error": "check_request",
+        "feedback": "Call status and select a current plan. Continue only with enabled steps."
+      }
+    },
+    {
+      "turn": 13,
+      "name": "status",
+      "args": {},
+      "response": {
+        "error": "check_request",
+        "feedback": "Call status and select a current plan. Continue only with enabled steps."
+      }
+    },
+    {
+      "turn": 14,
+      "name": "select_plan",
+      "args": {
+        "steps": [
+          "wallet"
+        ]
+      },
+      "response": {
+        "error": "check_request",
+        "feedback": "Call status and select a current plan. Continue only with enabled steps."
+      }
+    },
+    {
+      "turn": 15,
+      "name": "stop",
+      "args": {},
+      "response": {
+        "error": "check_request",
+        "feedback": "Call status and select a current plan. Continue only with enabled steps."
+      }
+    },
+    {
+      "turn": 16,
+      "name": "status",
+      "args": {},
+      "response": {
+        "error": "check_request",
+        "feedback": "Call status and select a current plan. Continue only with enabled steps."
+      }
+    },
+    {
+      "turn": 17,
+      "name": "stop",
+      "args": {},
+      "response": {
+        "error": "check_request",
+        "feedback": "Call status and select a current plan. Continue only with enabled steps."
+      }
+    },
+    {
+      "turn": 18,
+      "name": "status",
+      "args": {},
+      "response": {
+        "error": "check_request",
+        "feedback": "Call status and select a current plan. Continue only with enabled steps."
+      }
+    },
+    {
+      "turn": 19,
+      "name": "stop",
+      "args": {},
+      "response": {
+        "error": "check_request",
+        "feedback": "Call status and select a current plan. Continue only with enabled steps."
+      }
+    },
+    {
+      "turn": 20,
+      "name": "status",
+      "args": {},
+      "response": {
+        "error": "check_request",
+        "feedback": "Call status and select a current plan. Continue only with enabled steps."
+      }
+    },
+    {
+      "turn": 21,
+      "name": "stop",
+      "args": {},
+      "response": {
+        "error": "check_request",
+        "feedback": "Call status and select a current plan. Continue only with enabled steps."
+      }
+    },
+    {
+      "turn": 22,
+      "name": "status",
+      "args": {},
+      "response": {
+        "error": "check_request",
+        "feedback": "Call status and select a current plan. Continue only with enabled steps."
+      }
+    },
+    {
+      "turn": 23,
+      "name": "stop",
+      "args": {},
+      "response": {
+        "error": "check_request",
+        "feedback": "Call status and select a current plan. Continue only with enabled steps."
+      }
+    },
+    {
+      "turn": 24,
+      "name": "status",
+      "args": {},
+      "response": {
+        "error": "check_request",
+        "feedback": "Call status and select a current plan. Continue only with enabled steps."
+      }
+    },
+    {
+      "turn": 25,
+      "name": "stop",
+      "args": {},
+      "response": {
+        "error": "check_request",
+        "feedback": "Call status and select a current plan. Continue only with enabled steps."
+      }
+    },
+    {
+      "turn": 26,
+      "name": "status",
+      "args": {},
+      "response": {
+        "error": "check_request",
+        "feedback": "Call status and select a current plan. Continue only with enabled steps."
+      }
+    },
+    {
+      "turn": 27,
+      "name": "stop",
+      "args": {},
+      "response": {
+        "error": "check_request",
+        "feedback": "Call status and select a current plan. Continue only with enabled steps."
+      }
+    },
+    {
+      "turn": 28,
+      "name": "status",
+      "args": {},
+      "response": {
+        "error": "check_request",
+        "feedback": "Call status and select a current plan. Continue only with enabled steps."
+      }
+    },
+    {
+      "turn": 29,
+      "name": "stop",
+      "args": {},
+      "response": {
+        "error": "check_request",
+        "feedback": "Call status and select a current plan. Continue only with enabled steps."
+      }
+    },
+    {
+      "turn": 30,
+      "name": "status",
+      "args": {},
+      "response": {
+        "error": "check_request",
+        "feedback": "Call status and select a current plan. Continue only with enabled steps."
+      }
+    },
+    {
+      "turn": 31,
+      "name": "stop",
+      "args": {},
+      "response": {
+        "error": "check_request",
+        "feedback": "Call status and select a current plan. Continue only with enabled steps."
+      }
+    },
+    {
+      "turn": 32,
+      "name": "status",
+      "args": {},
+      "response": {
+        "error": "check_request",
+        "feedback": "Call status and select a current plan. Continue only with enabled steps."
+      }
+    },
+    {
+      "turn": 33,
+      "name": "stop",
+      "args": {},
+      "response": {
+        "error": "check_request",
+        "feedback": "Call status and select a current plan. Continue only with enabled steps."
+      }
+    },
+    {
+      "turn": 34,
+      "name": "status",
+      "args": {},
+      "response": {
+        "error": "check_request",
+        "feedback": "Call status and select a current plan. Continue only with enabled steps."
+      }
+    }
+  ],
+  "protocol_errors": [
+    "HTTP_400"
+  ],
+  "http_attempts": 36,
+  "http_statuses": {
+    "200": 35,
+    "400": 1
+  }
+}

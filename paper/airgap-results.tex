@@ -1,0 +1,24 @@
+\subsection{Upfront minimization with escalation}
+\label{sec:airgap-adaptation}
+We evaluate a study-specific AirGapAgent-style adaptation with base-context minimization, a restricted conversational view and user escalation when additional fields are needed. The two on-demand arms begin with no private field values. The protocol uses 72 variants comprising 18 business-state pairs with both clean and externally injected tool text, two models, three arms and three repetitions (1,296 runs). This tests the adaptation on our workflows. The original AirGapAgent benchmarks and reported scores use different tasks and metrics.
+
+\begin{table*}[t]
+\centering
+\small
+\begin{tabular}{@{}llrrrrrr@{}}
+\toprule
+Model & Method & Correct & Unused & Data escalations & Action approvals & Tool calls & Model calls\\
+\midrule
+Qwen3.8-Flash & AirGap-style & 216/216 & 576 & 112 & 222 & 1927 & 2580\\
+              & Agent only   & 216/216 & 0   & 0   & 222 & 1793 & 2011\\
+              & State guard  & 216/216 & 0   & 0   & 222 & 1792 & 2012\\
+Qwen4-Max     & AirGap-style & 216/216 & 366 & 182 & 222 & 2249 & 2896\\
+              & Agent only   & 216/216 & 0   & 0   & 222 & 1900 & 2116\\
+              & State guard  & 216/216 & 0   & 0   & 222 & 1963 & 2176\\
+\bottomrule
+\end{tabular}
+\caption{AirGap-style adaptation and two on-demand controls. Unused fields are raw fields observed by the conversational agent that are outside the gold route field set. Data escalations ask for an additional field. Action approvals confirm the business operation.}
+\label{tab:airgap-adaptation}
+\end{table*}
+
+Both on-demand arms eliminate observed unused fields in this study. The adaptation releases 576 and 366 unused field instances per model. With Qwen4-Max, the guard reduces tool calls by 286 and data escalations by 182 relative to the adaptation. All arms complete 216/216 tasks and preserve equal action approval counts. The exact-value checker finds no observed leakage and no unauthorized values delivered to the conversational agent. This comparison shows the effect of postponing disclosure under these policies. The separate stale-read settings in Sections~\ref{sec:autonomous} and~\ref{sec:strong-autonomous} test the need and cost of runtime enforcement.

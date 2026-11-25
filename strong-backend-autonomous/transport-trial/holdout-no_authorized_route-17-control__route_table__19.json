@@ -1,0 +1,19 @@
+{
+  "id": "holdout-no_authorized_route-17-control",
+  "pair": "holdout-no_authorized_route-17",
+  "arm": "route_table",
+  "seed": 19,
+  "events": [],
+  "commits": [],
+  "stopped": false,
+  "end": "api_error",
+  "model_responses": [],
+  "calls": [],
+  "protocol_errors": [
+    "retries_exhausted_429"
+  ],
+  "http_attempts": 5,
+  "http_statuses": {
+    "429": 5
+  }
+}

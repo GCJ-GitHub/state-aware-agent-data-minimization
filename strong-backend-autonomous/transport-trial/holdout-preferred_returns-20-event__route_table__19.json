@@ -1,0 +1,393 @@
+{
+  "id": "holdout-preferred_returns-20-event",
+  "pair": "holdout-preferred_returns-20",
+  "arm": "route_table",
+  "seed": 19,
+  "events": [
+    {
+      "event": "checkpoint",
+      "turn": 0,
+      "scheduled": 3
+    },
+    {
+      "event": "clock",
+      "turn": 3,
+      "changed": true,
+      "facts": {
+        "wallet_online": true
+      },
+      "identity_updated": false
+    },
+    {
+      "event": "read",
+      "turn": 3,
+      "prepared": 2,
+      "step": "bank",
+      "requested": [
+        "bank_ref",
+        "owner_ref"
+      ],
+      "facts": {
+        "bank_online": true,
+        "wallet_online": true
+      },
+      "seen": [],
+      "goal": "refund",
+      "delivered": {},
+      "ok": false,
+      "reason": "replan"
+    },
+    {
+      "event": "denial",
+      "tool": "read_fields",
+      "turn": 3,
+      "code": "replan",
+      "detail": "current_plan_invalid"
+    },
+    {
+      "event": "read",
+      "turn": 7,
+      "prepared": 6,
+      "step": "wallet",
+      "requested": [
+        "wallet_ref"
+      ],
+      "facts": {
+        "bank_online": true,
+        "wallet_online": true
+      },
+      "seen": [],
+      "goal": "refund",
+      "delivered": {
+        "wallet_ref": 1
+      },
+      "ok": true
+    },
+    {
+      "event": "confirmation",
+      "step": "wallet",
+      "turn": 8
+    }
+  ],
+  "commits": [],
+  "stopped": false,
+  "end": "api_error",
+  "model_responses": [
+    {
+      "turn": 0,
+      "model": "qwen3.8-flash",
+      "fingerprint": "",
+      "text": "I'll start by checking the current status.\n\n",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_e3566de3067946a1b48e5d58",
+          "function": {
+            "name": "status",
+            "arguments": "{}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 1,
+      "model": "qwen3.8-flash",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_4b1c87f7a5454f92a3a51aae",
+          "function": {
+            "name": "select_plan",
+            "arguments": "{\"steps\": \n[\"bank\"]\n\n}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 2,
+      "model": "qwen3.8-flash",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_2a69330c7fec4f3794c016cd",
+          "function": {
+            "name": "prepare_read",
+            "arguments": "{\"step\": \"bank\"}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 3,
+      "model": "qwen3.8-flash",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_5f9fafa978244a129c6a9368",
+          "function": {
+            "name": "read_fields",
+            "arguments": "{\"handle\": \"R2\", \"fields\": \n[\"bank_ref\", \"owner_ref\"]\n\n}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 4,
+      "model": "qwen3.8-flash",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_f9c0e64ee39240a7bf5dcf52",
+          "function": {
+            "name": "status",
+            "arguments": "{}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 5,
+      "model": "qwen3.8-flash",
+      "fingerprint": "",
+      "text": "Status has changed — the wallet is now available, which matches your preferred route.\n\n",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_db6415ebd6ef4164ad5f18a6",
+          "function": {
+            "name": "select_plan",
+            "arguments": "{\"steps\": \n[\"wallet\"]\n\n}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 6,
+      "model": "qwen3.8-flash",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_d854ddff41124c4dbc024eb0",
+          "function": {
+            "name": "prepare_read",
+            "arguments": "{\"step\": \"wallet\"}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 7,
+      "model": "qwen3.8-flash",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_fa62bfd74f014987a058a048",
+          "function": {
+            "name": "read_fields",
+            "arguments": "{\"handle\": \"R5\", \"fields\": \n[\"wallet_ref\"]\n\n}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 8,
+      "model": "qwen3.8-flash",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_b0760eebd2ce4670882c1152",
+          "function": {
+            "name": "confirm",
+            "arguments": "{\"step\": \"wallet\"}"
+          }
+        }
+      ]
+    }
+  ],
+  "calls": [
+    {
+      "turn": 0,
+      "name": "status",
+      "args": {},
+      "response": {
+        "status": "ready",
+        "facts": {
+          "bank_online": true,
+          "wallet_online": false
+        },
+        "committed": [],
+        "plans": [
+          [
+            "bank"
+          ]
+        ]
+      }
+    },
+    {
+      "turn": 1,
+      "name": "select_plan",
+      "args": {
+        "steps": [
+          "bank"
+        ]
+      },
+      "response": {
+        "enabled": [
+          {
+            "step": "bank",
+            "input_fields": [
+              "bank_ref",
+              "owner_ref"
+            ],
+            "missing_fields": [
+              "bank_ref",
+              "owner_ref"
+            ],
+            "needs_confirmation": true
+          }
+        ],
+        "reused": []
+      }
+    },
+    {
+      "turn": 2,
+      "name": "prepare_read",
+      "args": {
+        "step": "bank"
+      },
+      "response": {
+        "handle": "R2",
+        "fields": [
+          "bank_ref",
+          "owner_ref"
+        ]
+      }
+    },
+    {
+      "turn": 3,
+      "name": "read_fields",
+      "args": {
+        "handle": "R2",
+        "fields": [
+          "bank_ref",
+          "owner_ref"
+        ]
+      },
+      "response": {
+        "error": "replan",
+        "feedback": "Call status and select a current plan. Continue only with enabled steps."
+      }
+    },
+    {
+      "turn": 4,
+      "name": "status",
+      "args": {},
+      "response": {
+        "status": "ready",
+        "facts": {
+          "bank_online": true,
+          "wallet_online": true
+        },
+        "committed": [],
+        "plans": [
+          [
+            "wallet"
+          ]
+        ]
+      }
+    },
+    {
+      "turn": 5,
+      "name": "select_plan",
+      "args": {
+        "steps": [
+          "wallet"
+        ]
+      },
+      "response": {
+        "enabled": [
+          {
+            "step": "wallet",
+            "input_fields": [
+              "wallet_ref"
+            ],
+            "missing_fields": [
+              "wallet_ref"
+            ],
+            "needs_confirmation": true
+          }
+        ],
+        "reused": []
+      }
+    },
+    {
+      "turn": 6,
+      "name": "prepare_read",
+      "args": {
+        "step": "wallet"
+      },
+      "response": {
+        "handle": "R5",
+        "fields": [
+          "wallet_ref"
+        ]
+      }
+    },
+    {
+      "turn": 7,
+      "name": "read_fields",
+      "args": {
+        "handle": "R5",
+        "fields": [
+          "wallet_ref"
+        ]
+      },
+      "response": {
+        "values": {
+          "wallet_ref": "SYN_4659b22591234"
+        }
+      }
+    },
+    {
+      "turn": 8,
+      "name": "confirm",
+      "args": {
+        "step": "wallet"
+      },
+      "response": {
+        "approved": true
+      }
+    }
+  ],
+  "protocol_errors": [
+    "retries_exhausted_429"
+  ],
+  "http_attempts": 18,
+  "http_statuses": {
+    "200": 9,
+    "429": 9
+  }
+}

@@ -1,0 +1,1253 @@
+{
+  "strong": {
+    "assigned": 720,
+    "recorded": 720,
+    "scored": 720,
+    "http": {
+      "200": 21995,
+      "429": 48,
+      "400": 45,
+      "None": 1
+    },
+    "end": {
+      "final_reply": 243,
+      "turn_limit": 432,
+      "api_error": 45
+    },
+    "complete_matrix": true,
+    "cross_model_by_arm": {
+      "route_table": {
+        "matched": 360,
+        "clusters": 60,
+        "mean_delta": {
+          "correct": 0.0,
+          "excess_fields": 0.0,
+          "recovered": 0.008333333333333333,
+          "tool_calls": 16.29722222222222,
+          "model_calls": 15.644444444444444,
+          "leak_episode": 0.0
+        },
+        "paired_ci95": {
+          "correct": [
+            0.0,
+            0.0
+          ],
+          "excess_fields": [
+            0.0,
+            0.0
+          ],
+          "recovered": [
+            0.0,
+            0.016666666666666666
+          ],
+          "tool_calls": [
+            15.26375,
+            17.275
+          ],
+          "model_calls": [
+            14.647222222222222,
+            16.583333333333332
+          ],
+          "leak_episode": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "contract": {
+        "matched": 360,
+        "clusters": 60,
+        "mean_delta": {
+          "correct": 0.002777777777777778,
+          "excess_fields": 0.0,
+          "recovered": 0.013888888888888888,
+          "tool_calls": 16.0,
+          "model_calls": 15.325,
+          "leak_episode": 0.0
+        },
+        "paired_ci95": {
+          "correct": [
+            0.0,
+            0.008333333333333333
+          ],
+          "excess_fields": [
+            0.0,
+            0.0
+          ],
+          "recovered": [
+            0.0,
+            0.030555555555555555
+          ],
+          "tool_calls": [
+            14.983333333333333,
+            16.988888888888887
+          ],
+          "model_calls": [
+            14.35,
+            16.27777777777778
+          ],
+          "leak_episode": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "qwen4_arm_contrasts": {
+      "contract-minus-route_table": {
+        "matched": 360,
+        "clusters": 60,
+        "mean_delta": {
+          "correct": 0.0,
+          "excess_fields": 0.0,
+          "recovered": 0.25,
+          "tool_calls": 0.05,
+          "model_calls": 0.05277777777777778,
+          "leak_episode": 0.0
+        },
+        "paired_ci95": {
+          "correct": [
+            0.0,
+            0.0
+          ],
+          "excess_fields": [
+            0.0,
+            0.0
+          ],
+          "recovered": [
+            0.19166666666666668,
+            0.31666666666666665
+          ],
+          "tool_calls": [
+            -0.8222222222222222,
+            0.9333333333333333
+          ],
+          "model_calls": [
+            -0.7861805555555555,
+            0.9
+          ],
+          "leak_episode": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    }
+  },
+  "three-arm": {
+    "assigned": 1080,
+    "recorded": 1080,
+    "scored": 1080,
+    "http": {
+      "200": 9657,
+      "429": 22
+    },
+    "end": {},
+    "complete_matrix": true,
+    "cross_model_by_arm": {
+      "upfront": {
+        "matched": 360,
+        "clusters": 60,
+        "mean_delta": {
+          "task_success": 0.002777777777777778,
+          "hindsight_unused_fields": -0.013888888888888888,
+          "expired_evidence_fields": -0.002777777777777778,
+          "success_after_block": 0.0,
+          "tools": -0.8194444444444444,
+          "model_calls": -0.8166666666666667,
+          "confirmations": 0.005555555555555556,
+          "any_leak": -0.002777777777777778
+        },
+        "paired_ci95": {
+          "task_success": [
+            0.0,
+            0.008333333333333333
+          ],
+          "hindsight_unused_fields": [
+            -0.03333333333333333,
+            0.002777777777777778
+          ],
+          "expired_evidence_fields": [
+            -0.008333333333333333,
+            0.0
+          ],
+          "success_after_block": [
+            0.0,
+            0.0
+          ],
+          "tools": [
+            -1.3666666666666667,
+            -0.35555555555555557
+          ],
+          "model_calls": [
+            -1.355625,
+            -0.36104166666666765
+          ],
+          "confirmations": [
+            -0.005555555555555556,
+            0.016666666666666666
+          ],
+          "any_leak": [
+            -0.008333333333333333,
+            0.0
+          ]
+        }
+      },
+      "agent_only": {
+        "matched": 360,
+        "clusters": 60,
+        "mean_delta": {
+          "task_success": 0.002777777777777778,
+          "hindsight_unused_fields": 0.0,
+          "expired_evidence_fields": 0.0,
+          "success_after_block": 0.0,
+          "tools": -1.225,
+          "model_calls": -1.2055555555555555,
+          "confirmations": 0.0,
+          "any_leak": 0.0
+        },
+        "paired_ci95": {
+          "task_success": [
+            0.0,
+            0.008333333333333333
+          ],
+          "hindsight_unused_fields": [
+            0.0,
+            0.0
+          ],
+          "expired_evidence_fields": [
+            0.0,
+            0.0
+          ],
+          "success_after_block": [
+            0.0,
+            0.0
+          ],
+          "tools": [
+            -1.6611111111111112,
+            -0.8472222222222222
+          ],
+          "model_calls": [
+            -1.6278472222222222,
+            -0.8388888888888889
+          ],
+          "confirmations": [
+            0.0,
+            0.0
+          ],
+          "any_leak": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "state_guard": {
+        "matched": 360,
+        "clusters": 60,
+        "mean_delta": {
+          "task_success": 0.002777777777777778,
+          "hindsight_unused_fields": 0.0,
+          "expired_evidence_fields": 0.0,
+          "success_after_block": 0.002777777777777778,
+          "tools": -1.0972222222222223,
+          "model_calls": -1.0972222222222223,
+          "confirmations": 0.0,
+          "any_leak": -0.002777777777777778
+        },
+        "paired_ci95": {
+          "task_success": [
+            0.0,
+            0.008333333333333333
+          ],
+          "hindsight_unused_fields": [
+            0.0,
+            0.0
+          ],
+          "expired_evidence_fields": [
+            0.0,
+            0.0
+          ],
+          "success_after_block": [
+            0.0,
+            0.008333333333333333
+          ],
+          "tools": [
+            -1.6222222222222222,
+            -0.6693750000000009
+          ],
+          "model_calls": [
+            -1.6166666666666667,
+            -0.6777777777777778
+          ],
+          "confirmations": [
+            0.0,
+            0.0
+          ],
+          "any_leak": [
+            -0.008333333333333333,
+            0.0
+          ]
+        }
+      }
+    },
+    "qwen4_arm_contrasts": {
+      "state_guard-minus-agent_only": {
+        "matched": 360,
+        "clusters": 60,
+        "mean_delta": {
+          "task_success": 0.0,
+          "hindsight_unused_fields": -0.4,
+          "expired_evidence_fields": -0.4,
+          "success_after_block": 0.3333333333333333,
+          "tools": 0.013888888888888888,
+          "model_calls": 0.013888888888888888,
+          "confirmations": 0.0,
+          "any_leak": 0.0
+        },
+        "paired_ci95": {
+          "task_success": [
+            0.0,
+            0.0
+          ],
+          "hindsight_unused_fields": [
+            -0.43333333333333335,
+            -0.36666666666666664
+          ],
+          "expired_evidence_fields": [
+            -0.43333333333333335,
+            -0.36666666666666664
+          ],
+          "success_after_block": [
+            0.3333333333333333,
+            0.3333333333333333
+          ],
+          "tools": [
+            -0.008333333333333333,
+            0.041666666666666664
+          ],
+          "model_calls": [
+            -0.008333333333333333,
+            0.041666666666666664
+          ],
+          "confirmations": [
+            0.0,
+            0.0
+          ],
+          "any_leak": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "state_guard-minus-upfront": {
+        "matched": 360,
+        "clusters": 60,
+        "mean_delta": {
+          "task_success": 0.0,
+          "hindsight_unused_fields": -2.9,
+          "expired_evidence_fields": 0.0,
+          "success_after_block": 0.3333333333333333,
+          "tools": 1.586111111111111,
+          "model_calls": 1.586111111111111,
+          "confirmations": 0.0,
+          "any_leak": 0.0
+        },
+        "paired_ci95": {
+          "task_success": [
+            0.0,
+            0.0
+          ],
+          "hindsight_unused_fields": [
+            -3.2,
+            -2.6247916666666695
+          ],
+          "expired_evidence_fields": [
+            0.0,
+            0.0
+          ],
+          "success_after_block": [
+            0.3333333333333333,
+            0.3333333333333333
+          ],
+          "tools": [
+            1.5138888888888888,
+            1.6583333333333334
+          ],
+          "model_calls": [
+            1.5138888888888888,
+            1.6583333333333334
+          ],
+          "confirmations": [
+            0.0,
+            0.0
+          ],
+          "any_leak": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    }
+  },
+  "airgap": {
+    "assigned": 648,
+    "recorded": 648,
+    "scored": 648,
+    "http": {
+      "200": 7188,
+      "429": 18
+    },
+    "end": {},
+    "complete_matrix": true,
+    "cross_model_by_arm": {
+      "airgap": {
+        "matched": 216,
+        "clusters": 18,
+        "mean_delta": {
+          "success": 0.0,
+          "overread_fields": -0.9722222222222222,
+          "unauthorized_observed": 0.0,
+          "tools": 1.4907407407407407,
+          "model_calls": 1.462962962962963,
+          "data_escalations": 0.32407407407407407,
+          "action_confirmations": 0.0,
+          "any_leak": 0.0
+        },
+        "paired_ci95": {
+          "success": [
+            0.0,
+            0.0
+          ],
+          "overread_fields": [
+            -1.5462962962962963,
+            -0.46296296296296297
+          ],
+          "unauthorized_observed": [
+            0.0,
+            0.0
+          ],
+          "tools": [
+            1.1203703703703705,
+            1.8888888888888888
+          ],
+          "model_calls": [
+            1.0925925925925926,
+            1.8611111111111112
+          ],
+          "data_escalations": [
+            0.2037037037037037,
+            0.4398148148148148
+          ],
+          "action_confirmations": [
+            0.0,
+            0.0
+          ],
+          "any_leak": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "agent_only": {
+        "matched": 216,
+        "clusters": 18,
+        "mean_delta": {
+          "success": 0.0,
+          "overread_fields": 0.0,
+          "unauthorized_observed": 0.0,
+          "tools": 0.49537037037037035,
+          "model_calls": 0.4861111111111111,
+          "data_escalations": 0.0,
+          "action_confirmations": 0.0,
+          "any_leak": 0.0
+        },
+        "paired_ci95": {
+          "success": [
+            0.0,
+            0.0
+          ],
+          "overread_fields": [
+            0.0,
+            0.0
+          ],
+          "unauthorized_observed": [
+            0.0,
+            0.0
+          ],
+          "tools": [
+            0.3194444444444444,
+            0.6620370370370371
+          ],
+          "model_calls": [
+            0.3055555555555556,
+            0.6574074074074074
+          ],
+          "data_escalations": [
+            0.0,
+            0.0
+          ],
+          "action_confirmations": [
+            0.0,
+            0.0
+          ],
+          "any_leak": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "state_guard": {
+        "matched": 216,
+        "clusters": 18,
+        "mean_delta": {
+          "success": 0.0,
+          "overread_fields": 0.0,
+          "unauthorized_observed": 0.0,
+          "tools": 0.7916666666666666,
+          "model_calls": 0.7592592592592593,
+          "data_escalations": 0.0,
+          "action_confirmations": 0.0,
+          "any_leak": 0.0
+        },
+        "paired_ci95": {
+          "success": [
+            0.0,
+            0.0
+          ],
+          "overread_fields": [
+            0.0,
+            0.0
+          ],
+          "unauthorized_observed": [
+            0.0,
+            0.0
+          ],
+          "tools": [
+            0.5,
+            1.0972222222222223
+          ],
+          "model_calls": [
+            0.4721064814814815,
+            1.0601851851851851
+          ],
+          "data_escalations": [
+            0.0,
+            0.0
+          ],
+          "action_confirmations": [
+            0.0,
+            0.0
+          ],
+          "any_leak": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "qwen4_arm_contrasts": {
+      "state_guard-minus-airgap": {
+        "matched": 216,
+        "clusters": 18,
+        "mean_delta": {
+          "success": 0.0,
+          "overread_fields": -1.6944444444444444,
+          "unauthorized_observed": 0.0,
+          "tools": -1.3240740740740742,
+          "model_calls": -3.3333333333333335,
+          "data_escalations": -0.8425925925925926,
+          "action_confirmations": 0.0,
+          "any_leak": 0.0
+        },
+        "paired_ci95": {
+          "success": [
+            0.0,
+            0.0
+          ],
+          "overread_fields": [
+            -2.120486111111111,
+            -1.3287037037037037
+          ],
+          "unauthorized_observed": [
+            0.0,
+            0.0
+          ],
+          "tools": [
+            -1.657523148148148,
+            -0.9674768518518535
+          ],
+          "model_calls": [
+            -3.6574074074074074,
+            -2.986111111111111
+          ],
+          "data_escalations": [
+            -0.9212962962962963,
+            -0.75
+          ],
+          "action_confirmations": [
+            0.0,
+            0.0
+          ],
+          "any_leak": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "state_guard-minus-agent_only": {
+        "matched": 216,
+        "clusters": 18,
+        "mean_delta": {
+          "success": 0.0,
+          "overread_fields": 0.0,
+          "unauthorized_observed": 0.0,
+          "tools": 0.2916666666666667,
+          "model_calls": 0.2777777777777778,
+          "data_escalations": 0.0,
+          "action_confirmations": 0.0,
+          "any_leak": 0.0
+        },
+        "paired_ci95": {
+          "success": [
+            0.0,
+            0.0
+          ],
+          "overread_fields": [
+            0.0,
+            0.0
+          ],
+          "unauthorized_observed": [
+            0.0,
+            0.0
+          ],
+          "tools": [
+            0.05555555555555555,
+            0.5649305555555538
+          ],
+          "model_calls": [
+            0.05543981481481485,
+            0.5371527777777761
+          ],
+          "data_escalations": [
+            0.0,
+            0.0
+          ],
+          "action_confirmations": [
+            0.0,
+            0.0
+          ],
+          "any_leak": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    }
+  },
+  "native-factorial": {
+    "assigned": 144,
+    "recorded": 144,
+    "scored": 144,
+    "http": {
+      "200": 1309,
+      "429": 3
+    },
+    "end": {},
+    "complete_matrix": true,
+    "cross_model_by_arm": {
+      "fixed_soft": {
+        "matched": 36,
+        "clusters": 12,
+        "mean_delta": {
+          "task_success": 0.0,
+          "outside_justification_fields": 0.0,
+          "expired_evidence_fields": 0.0,
+          "success_after_block": 0.0,
+          "predicate_queries": -0.05555555555555555,
+          "tools": -0.08333333333333333,
+          "model_calls": -0.08333333333333333,
+          "any_leak": 0.0
+        },
+        "paired_ci95": {
+          "task_success": [
+            0.0,
+            0.0
+          ],
+          "outside_justification_fields": [
+            0.0,
+            0.0
+          ],
+          "expired_evidence_fields": [
+            0.0,
+            0.0
+          ],
+          "success_after_block": [
+            0.0,
+            0.0
+          ],
+          "predicate_queries": [
+            -0.16666666666666666,
+            0.05555555555555555
+          ],
+          "tools": [
+            -0.3055555555555556,
+            0.1388888888888889
+          ],
+          "model_calls": [
+            -0.3055555555555556,
+            0.1388888888888889
+          ],
+          "any_leak": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "fixed_enforced": {
+        "matched": 36,
+        "clusters": 12,
+        "mean_delta": {
+          "task_success": 0.0,
+          "outside_justification_fields": 0.0,
+          "expired_evidence_fields": 0.0,
+          "success_after_block": 0.0,
+          "predicate_queries": -0.05555555555555555,
+          "tools": -0.25,
+          "model_calls": -0.25,
+          "any_leak": 0.0
+        },
+        "paired_ci95": {
+          "task_success": [
+            0.0,
+            0.0
+          ],
+          "outside_justification_fields": [
+            0.0,
+            0.0
+          ],
+          "expired_evidence_fields": [
+            0.0,
+            0.0
+          ],
+          "success_after_block": [
+            0.0,
+            0.0
+          ],
+          "predicate_queries": [
+            -0.16666666666666666,
+            0.05555555555555555
+          ],
+          "tools": [
+            -0.4166666666666667,
+            -0.08333333333333333
+          ],
+          "model_calls": [
+            -0.4166666666666667,
+            -0.08333333333333333
+          ],
+          "any_leak": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "planned_soft": {
+        "matched": 36,
+        "clusters": 12,
+        "mean_delta": {
+          "task_success": 0.0,
+          "outside_justification_fields": 0.0,
+          "expired_evidence_fields": 0.0,
+          "success_after_block": 0.0,
+          "predicate_queries": -0.08333333333333333,
+          "tools": -0.1388888888888889,
+          "model_calls": -0.1388888888888889,
+          "any_leak": 0.0
+        },
+        "paired_ci95": {
+          "task_success": [
+            0.0,
+            0.0
+          ],
+          "outside_justification_fields": [
+            0.0,
+            0.0
+          ],
+          "expired_evidence_fields": [
+            0.0,
+            0.0
+          ],
+          "success_after_block": [
+            0.0,
+            0.0
+          ],
+          "predicate_queries": [
+            -0.16666666666666666,
+            0.0
+          ],
+          "tools": [
+            -0.2777777777777778,
+            0.0
+          ],
+          "model_calls": [
+            -0.2777777777777778,
+            0.0
+          ],
+          "any_leak": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "planned_enforced": {
+        "matched": 36,
+        "clusters": 12,
+        "mean_delta": {
+          "task_success": 0.0,
+          "outside_justification_fields": 0.0,
+          "expired_evidence_fields": 0.0,
+          "success_after_block": 0.0,
+          "predicate_queries": -0.08333333333333333,
+          "tools": -0.2222222222222222,
+          "model_calls": -0.2222222222222222,
+          "any_leak": 0.0
+        },
+        "paired_ci95": {
+          "task_success": [
+            0.0,
+            0.0
+          ],
+          "outside_justification_fields": [
+            0.0,
+            0.0
+          ],
+          "expired_evidence_fields": [
+            0.0,
+            0.0
+          ],
+          "success_after_block": [
+            0.0,
+            0.0
+          ],
+          "predicate_queries": [
+            -0.16666666666666666,
+            0.0
+          ],
+          "tools": [
+            -0.3888888888888889,
+            -0.05555555555555555
+          ],
+          "model_calls": [
+            -0.3888888888888889,
+            -0.05555555555555555
+          ],
+          "any_leak": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "qwen4_arm_contrasts": {
+      "planned_enforced-minus-fixed_enforced": {
+        "matched": 36,
+        "clusters": 12,
+        "mean_delta": {
+          "task_success": 0.0,
+          "outside_justification_fields": 0.0,
+          "expired_evidence_fields": 0.0,
+          "success_after_block": 0.0,
+          "predicate_queries": -0.08333333333333333,
+          "tools": -0.08333333333333333,
+          "model_calls": -0.08333333333333333,
+          "any_leak": 0.0
+        },
+        "paired_ci95": {
+          "task_success": [
+            0.0,
+            0.0
+          ],
+          "outside_justification_fields": [
+            0.0,
+            0.0
+          ],
+          "expired_evidence_fields": [
+            0.0,
+            0.0
+          ],
+          "success_after_block": [
+            0.0,
+            0.0
+          ],
+          "predicate_queries": [
+            -0.16666666666666666,
+            0.0
+          ],
+          "tools": [
+            -0.16666666666666666,
+            0.0
+          ],
+          "model_calls": [
+            -0.16666666666666666,
+            0.0
+          ],
+          "any_leak": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "planned_enforced-minus-planned_soft": {
+        "matched": 36,
+        "clusters": 12,
+        "mean_delta": {
+          "task_success": 0.0,
+          "outside_justification_fields": -0.3333333333333333,
+          "expired_evidence_fields": -0.3333333333333333,
+          "success_after_block": 0.16666666666666666,
+          "predicate_queries": 0.0,
+          "tools": 0.08333333333333333,
+          "model_calls": 0.08333333333333333,
+          "any_leak": 0.0
+        },
+        "paired_ci95": {
+          "task_success": [
+            0.0,
+            0.0
+          ],
+          "outside_justification_fields": [
+            -0.3333333333333333,
+            -0.3333333333333333
+          ],
+          "expired_evidence_fields": [
+            -0.3333333333333333,
+            -0.3333333333333333
+          ],
+          "success_after_block": [
+            0.16666666666666666,
+            0.16666666666666666
+          ],
+          "predicate_queries": [
+            0.0,
+            0.0
+          ],
+          "tools": [
+            0.0,
+            0.16666666666666666
+          ],
+          "model_calls": [
+            0.0,
+            0.16666666666666666
+          ],
+          "any_leak": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    }
+  },
+  "text-factorial": {
+    "assigned": 144,
+    "recorded": 144,
+    "scored": 144,
+    "http": {
+      "200": 1521,
+      "429": 2
+    },
+    "end": {},
+    "complete_matrix": true,
+    "cross_model_by_arm": {
+      "fixed_soft": {
+        "matched": 36,
+        "clusters": 12,
+        "mean_delta": {
+          "task_success": 0.08333333333333333,
+          "outside_justification_fields": 0.0,
+          "expired_evidence_fields": 0.0,
+          "success_after_block": 0.0,
+          "predicate_queries": 0.027777777777777776,
+          "tools": 1.9166666666666667,
+          "model_calls": 1.7222222222222223,
+          "any_leak": 0.0
+        },
+        "paired_ci95": {
+          "task_success": [
+            0.0,
+            0.16666666666666666
+          ],
+          "outside_justification_fields": [
+            0.0,
+            0.0
+          ],
+          "expired_evidence_fields": [
+            0.0,
+            0.0
+          ],
+          "success_after_block": [
+            0.0,
+            0.0
+          ],
+          "predicate_queries": [
+            -0.05555555555555555,
+            0.1111111111111111
+          ],
+          "tools": [
+            0.9444444444444444,
+            2.888888888888889
+          ],
+          "model_calls": [
+            0.8888888888888888,
+            2.528472222222212
+          ],
+          "any_leak": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "fixed_enforced": {
+        "matched": 36,
+        "clusters": 12,
+        "mean_delta": {
+          "task_success": 0.08333333333333333,
+          "outside_justification_fields": 0.0,
+          "expired_evidence_fields": 0.0,
+          "success_after_block": 0.0,
+          "predicate_queries": -0.05555555555555555,
+          "tools": 1.7222222222222223,
+          "model_calls": 1.5555555555555556,
+          "any_leak": 0.0
+        },
+        "paired_ci95": {
+          "task_success": [
+            0.027777777777777776,
+            0.1388888888888889
+          ],
+          "outside_justification_fields": [
+            0.0,
+            0.0
+          ],
+          "expired_evidence_fields": [
+            0.0,
+            0.0
+          ],
+          "success_after_block": [
+            0.0,
+            0.0
+          ],
+          "predicate_queries": [
+            -0.1111111111111111,
+            0.0
+          ],
+          "tools": [
+            1.0,
+            2.4444444444444446
+          ],
+          "model_calls": [
+            0.9444444444444444,
+            2.1666666666666665
+          ],
+          "any_leak": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "planned_soft": {
+        "matched": 36,
+        "clusters": 12,
+        "mean_delta": {
+          "task_success": 0.08333333333333333,
+          "outside_justification_fields": 0.0,
+          "expired_evidence_fields": 0.0,
+          "success_after_block": 0.0,
+          "predicate_queries": -0.1111111111111111,
+          "tools": 1.6111111111111112,
+          "model_calls": 1.3611111111111112,
+          "any_leak": 0.0
+        },
+        "paired_ci95": {
+          "task_success": [
+            0.027777777777777776,
+            0.1388888888888889
+          ],
+          "outside_justification_fields": [
+            0.0,
+            0.0
+          ],
+          "expired_evidence_fields": [
+            0.0,
+            0.0
+          ],
+          "success_after_block": [
+            0.0,
+            0.0
+          ],
+          "predicate_queries": [
+            -0.16666666666666666,
+            -0.05555555555555555
+          ],
+          "tools": [
+            1.0277777777777777,
+            2.2222222222222223
+          ],
+          "model_calls": [
+            0.8888888888888888,
+            1.8333333333333333
+          ],
+          "any_leak": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "planned_enforced": {
+        "matched": 36,
+        "clusters": 12,
+        "mean_delta": {
+          "task_success": 0.05555555555555555,
+          "outside_justification_fields": 0.0,
+          "expired_evidence_fields": 0.0,
+          "success_after_block": 0.0,
+          "predicate_queries": -0.05555555555555555,
+          "tools": 1.25,
+          "model_calls": 1.1388888888888888,
+          "any_leak": 0.0
+        },
+        "paired_ci95": {
+          "task_success": [
+            0.0,
+            0.1111111111111111
+          ],
+          "outside_justification_fields": [
+            0.0,
+            0.0
+          ],
+          "expired_evidence_fields": [
+            0.0,
+            0.0
+          ],
+          "success_after_block": [
+            0.0,
+            0.0
+          ],
+          "predicate_queries": [
+            -0.05555555555555555,
+            -0.05555555555555555
+          ],
+          "tools": [
+            0.6944444444444444,
+            1.8055555555555556
+          ],
+          "model_calls": [
+            0.6944444444444444,
+            1.6111111111111112
+          ],
+          "any_leak": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "qwen4_arm_contrasts": {
+      "planned_enforced-minus-fixed_enforced": {
+        "matched": 36,
+        "clusters": 12,
+        "mean_delta": {
+          "task_success": 0.0,
+          "outside_justification_fields": 0.0,
+          "expired_evidence_fields": 0.0,
+          "success_after_block": 0.0,
+          "predicate_queries": -0.05555555555555555,
+          "tools": -0.2222222222222222,
+          "model_calls": -0.2222222222222222,
+          "any_leak": 0.0
+        },
+        "paired_ci95": {
+          "task_success": [
+            0.0,
+            0.0
+          ],
+          "outside_justification_fields": [
+            0.0,
+            0.0
+          ],
+          "expired_evidence_fields": [
+            0.0,
+            0.0
+          ],
+          "success_after_block": [
+            0.0,
+            0.0
+          ],
+          "predicate_queries": [
+            -0.1111111111111111,
+            0.0
+          ],
+          "tools": [
+            -0.3611111111111111,
+            -0.08333333333333333
+          ],
+          "model_calls": [
+            -0.3611111111111111,
+            -0.08333333333333333
+          ],
+          "any_leak": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "planned_enforced-minus-planned_soft": {
+        "matched": 36,
+        "clusters": 12,
+        "mean_delta": {
+          "task_success": 0.0,
+          "outside_justification_fields": -0.3333333333333333,
+          "expired_evidence_fields": -0.3333333333333333,
+          "success_after_block": 0.16666666666666666,
+          "predicate_queries": 0.027777777777777776,
+          "tools": -0.1388888888888889,
+          "model_calls": -0.1388888888888889,
+          "any_leak": 0.0
+        },
+        "paired_ci95": {
+          "task_success": [
+            0.0,
+            0.0
+          ],
+          "outside_justification_fields": [
+            -0.3333333333333333,
+            -0.3333333333333333
+          ],
+          "expired_evidence_fields": [
+            -0.3333333333333333,
+            -0.3333333333333333
+          ],
+          "success_after_block": [
+            0.16666666666666666,
+            0.16666666666666666
+          ],
+          "predicate_queries": [
+            0.0,
+            0.05555555555555555
+          ],
+          "tools": [
+            -0.3055555555555556,
+            0.027777777777777776
+          ],
+          "model_calls": [
+            -0.3055555555555556,
+            0.027777777777777776
+          ],
+          "any_leak": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    }
+  }
+}

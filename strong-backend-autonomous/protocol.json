@@ -1,0 +1,33 @@
+{
+  "model": "qwen3.8-flash",
+  "version_limit": "Gateway alias; record returned model and fingerprint.",
+  "arms": [
+    "route_table",
+    "contract"
+  ],
+  "seeds": [
+    19,
+    113,
+    421
+  ],
+  "tasks": 120,
+  "pairs": 60,
+  "episodes": 720,
+  "temperature": 0.3,
+  "output_tokens": 512,
+  "max_model_calls": 40,
+  "native_format_recoveries": 2,
+  "thinking": false,
+  "policy": "Shared business authorization, public snapshot, confirmation, execution and feedback.",
+  "clock": "First status +3 turns in refund; site-change commit +4 turns in pickup. Apply before tools.",
+  "co_primary": [
+    "excess_fields per episode",
+    "correct business outcome including expected safe stop"
+  ],
+  "practical_margins": {
+    "excess_fields_per_episode": 0.05,
+    "correct_rate_percentage_points": 2
+  },
+  "reporting": "Retain assigned episodes. Cluster bootstrap of whole pairs within families (5000).",
+  "scope": "Synthetic sequential simulator; three authored families with paired fixture variants."
+}

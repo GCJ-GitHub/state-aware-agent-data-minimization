@@ -1,0 +1,59 @@
+{
+  "id": "holdout-after_commit-04-control",
+  "pair": "holdout-after_commit-04",
+  "arm": "contract",
+  "seed": 113,
+  "events": [],
+  "commits": [],
+  "stopped": false,
+  "end": "api_error",
+  "model_responses": [
+    {
+      "turn": 0,
+      "model": "qwen3.8-flash",
+      "fingerprint": "",
+      "text": "I'll start by checking the current status and available plans.\n\n",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_1e5e47a64dab4370a20f5611",
+          "function": {
+            "name": "status",
+            "arguments": "{}"
+          }
+        }
+      ]
+    }
+  ],
+  "calls": [
+    {
+      "turn": 0,
+      "name": "status",
+      "args": {},
+      "response": {
+        "status": "ready",
+        "facts": {
+          "backup_open": true,
+          "preferred_open": true,
+          "site_open": true
+        },
+        "committed": [],
+        "plans": [
+          [
+            "identity",
+            "move"
+          ]
+        ]
+      }
+    }
+  ],
+  "protocol_errors": [
+    "retries_exhausted_429"
+  ],
+  "http_attempts": 7,
+  "http_statuses": {
+    "429": 6,
+    "200": 1
+  }
+}

@@ -1,6 +1,15 @@
 # 状态感知 Agent 数据最小化：方法、代码与实验
 
-更新：**2026-11-24**。研究目标：在原授权内，结合可信业务状态与工具依赖，验证“这个步骤此刻为什么需要这些数据”，并在理由失效后让 Agent 自主恢复。
+更新：**2026-11-25**。研究目标：在原授权内，结合可信业务状态与工具依赖，验证“这个步骤此刻为什么需要这些数据”，并在理由失效后让 Agent 自主恢复。
+
+## 最新结果（2026-11-25）
+
+- **[新版论文 PDF](paper/paper.pdf)** · [LaTeX 源码与图表](paper/README.md)
+- **[实验结果、论文结论与下一步](docs/LATEST_RESULTS.md)**
+- [Qwen4-Max 的 2,736 次正式复现](qwen4-max-paper-replication/REPORT.md) · [配对分析](qwen4-max-paper-replication/paired-analysis.json)
+- [两种强后端的自主对照](strong-backend-autonomous/REPORT.md) · [维护与审计](maintenance-audit-study/REPORT.md) · [结束回包诊断](qwen4-terminal-diagnostic/REPORT.md)
+
+Qwen3.8-Flash 和 Qwen4-Max 的主对照中，后端交付前校验都将 Agent 自行按需的 144 次过时字段交付降到 0。可组合路线表在强基线对照中也实现了零多读。证据支持动态状态下的交付检查；进一步验证应优先换独立的业务工具环境。
 
 ## 从这里开始
 
@@ -15,7 +24,7 @@
 
 [四轮强基线对照、论文结论与投稿前验证](docs/STRONG_BASELINE_FOLLOWUP.md)
 
-## 当前最有力的结果
+## Qwen3.8-Flash 主对照基线
 
 新120个合成任务、60个状态配对，MaaS qwen3.8-flash，三组各重复三次，共1080次尝试。规则、授权、确认、恢复、原生工具和预算跑前冻结。
 

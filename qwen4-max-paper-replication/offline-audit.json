@@ -1,0 +1,37 @@
+{
+  "prototype": {
+    "return_code": 0,
+    "semantic_match": true,
+    "error": null
+  },
+  "refund": {
+    "return_code": 0,
+    "semantic_match": true,
+    "error": null
+  },
+  "composition": {
+    "return_code": 0,
+    "semantic_match": true,
+    "error": null
+  },
+  "dependency": {
+    "return_code": 0,
+    "semantic_match": true,
+    "error": null
+  },
+  "signature": {
+    "return_code": 0,
+    "semantic_match": true,
+    "error": null
+  },
+  "maintenance": {
+    "return_code": 0,
+    "semantic_match": true,
+    "error": null
+  },
+  "fault-audit": {
+    "return_code": 0,
+    "semantic_match": true,
+    "error": null
+  }
+}

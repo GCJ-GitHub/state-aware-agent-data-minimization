@@ -1,0 +1,26 @@
+\subsection{Query-order and enforcement ablation}
+\label{sec:factorial}
+A $2\times2$ study separates fixed versus planned predicate-query advice from advisory versus enforced reads. The contract and trusted predicates are shared. Each model uses three repetitions on 12 tasks per arm. We reproduce both archived versions of this study, one with native tool calls and one with JSON tool calls in model text, for 576 runs across models and interfaces. Table~\ref{tab:factorial} shows the Qwen4-Max replication.
+
+\begin{table*}[t]
+\centering
+\small
+\begin{tabular}{@{}lllrrrr@{}}
+\toprule
+Interface & Query advice & Read check & Correct & Stale fields & Predicate queries & Tool calls\\
+\midrule
+Native & Fixed   & Advisory & 36/36 & 12 & 12 & 292\\
+       & Fixed   & Enforced & 36/36 & 0  & 12 & 294\\
+       & Planned & Advisory & 36/36 & 12 & 9  & 288\\
+       & Planned & Enforced & 36/36 & 0  & 9  & 291\\
+Text   & Fixed   & Advisory & 36/36 & 12 & 12 & 344\\
+       & Fixed   & Enforced & 36/36 & 0  & 12 & 348\\
+       & Planned & Advisory & 36/36 & 12 & 9  & 345\\
+       & Planned & Enforced & 36/36 & 0  & 10 & 340\\
+\bottomrule
+\end{tabular}
+\caption{Qwen4-Max query-order and enforcement ablation. Stale fields are values delivered after the evidence supporting the read changed. Advice concerns the order of obtaining trusted predicates.}
+\label{tab:factorial}
+\end{table*}
+
+Both models reproduce the twelve-to-zero stale-field contrast at each advice setting and in each interface. Qwen4-Max reaches 36/36 in every arm. With Qwen3.8-Flash, the same native arms achieve 36/36 and the archived text arms range from 33/36 to 34/36. Planned advice saves two to three predicate queries in the Qwen4-Max arms relative to fixed advice. Deployment conclusions about query cost remain bounded by the small predicate suite and its configured priors. The read check supplies the observed privacy effect in this ablation.

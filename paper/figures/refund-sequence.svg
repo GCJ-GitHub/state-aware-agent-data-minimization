@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="505.44pt" height="306pt" viewBox="0 0 505.44 306" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-25T10:33:03.582303</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.9.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 306
+L 505.44 306
+L 505.44 0
+L 0 0
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="LineCollection_1">
+    <path d="M 45.4896 298.581818
+L 45.4896 27.354545
+" clip-path="url(#p4fa89d43ca)" style="fill: none; stroke-dasharray: 1.5,1.5; stroke-dashoffset: 0; stroke: #a6b6c6; stroke-width: 0.75"/>
+   </g>
+   <g id="LineCollection_2">
+    <path d="M 308.3184 298.581818
+L 308.3184 27.354545
+" clip-path="url(#p4fa89d43ca)" style="fill: none; stroke-dasharray: 1.5,1.5; stroke-dashoffset: 0; stroke: #a6b6c6; stroke-width: 0.75"/>
+   </g>
+   <g id="LineCollection_3">
+    <path d="M 459.9504 298.581818
+L 459.9504 27.354545
+" clip-path="url(#p4fa89d43ca)" style="fill: none; stroke-dasharray: 1.5,1.5; stroke-dashoffset: 0; stroke: #a6b6c6; stroke-width: 0.75"/>
+   </g>
+   <g id="patch_2">
+    <path d="M 17.43768 27.354545
+L 73.54152 27.354545
+Q 78.3432 27.354545 78.3432 22.95
+L 78.3432 10.431818
+Q 78.3432 6.027273 73.54152 6.027273
+L 17.43768 6.027273
+Q 12.636 6.027273 12.636 10.431818
+L 12.636 22.95
+Q 12.636 27.354545 17.43768 27.354545
+z
+" clip-path="url(#p4fa89d43ca)" style="fill: #f4f7fa; stroke: #a6b6c6; stroke-width: 0.72; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 267.63048 27.354545
+L 349.00632 27.354545
+Q 353.808 27.354545 353.808 22.95
+L 353.808 10.431818
+Q 353.808 6.027273 349.00632 6.027273
+L 267.63048 6.027273
+Q 262.8288 6.027273 262.8288 10.431818
+L 262.8288 22.95
+Q 262.8288 27.354545 267.63048 27.354545
+z
+" clip-path="url(#p4fa89d43ca)" style="fill: #f4f7fa; stroke: #a6b6c6; stroke-width: 0.72; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 421.78968 27.354545
+L 498.11112 27.354545
+Q 502.9128 27.354545 502.9128 22.95
+L 502.9128 10.431818
+Q 502.9128 6.027273 498.11112 6.027273
+L 421.78968 6.027273
+Q 416.988 6.027273 416.988 10.431818
+L 416.988 22.95
+Q 416.988 27.354545 421.78968 27.354545
+z
+" clip-path="url(#p4fa89d43ca)" style="fill: #f4f7fa; stroke: #a6b6c6; stroke-width: 0.72; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 219.61368 197.045455
+L 457.67592 197.045455
+Q 462.4776 197.045455 462.4776 192.640909
+L 462.4776 150.45
+Q 462.4776 146.045455 457.67592 146.045455
+L 219.61368 146.045455
+Q 214.812 146.045455 214.812 150.45
+L 214.812 192.640909
+Q 214.812 197.045455 219.61368 197.045455
+z
+" clip-path="url(#p4fa89d43ca)" style="fill: #ffffff; stroke: #a6b6c6; stroke-width: 0.72; stroke-linejoin: miter"/>
+   </g>
+   <g id="LineCollection_4">
+    <path d="M 6.57072 113.590909
+L 501.39648 113.590909
+" clip-path="url(#p4fa89d43ca)" style="fill: none; stroke-dasharray: 3.2,2.4; stroke-dashoffset: 0; stroke: #992e3b; stroke-opacity: 0.46; stroke-width: 0.8"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 308.3184 49.145455
+Q 176.904 49.145455 46.428749 49.145455
+" style="fill: none; stroke: #43586d; stroke-width: 0.84; stroke-linecap: round"/>
+    <path d="M 49.628749 50.745455
+L 46.428749 49.145455
+L 49.628749 47.545455
+z
+" style="fill: #43586d; stroke: #43586d; stroke-width: 0.84; stroke-linecap: round"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 45.4896 72.327273
+Q 176.904 72.327273 307.379251 72.327273
+" style="fill: none; stroke: #43586d; stroke-width: 0.84; stroke-linecap: round"/>
+    <path d="M 304.179251 70.727273
+L 307.379251 72.327273
+L 304.179251 73.927273
+z
+" style="fill: #43586d; stroke: #43586d; stroke-width: 0.84; stroke-linecap: round"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 308.3184 95.509091
+Q 176.904 95.509091 46.428749 95.509091
+" style="fill: none; stroke: #43586d; stroke-width: 0.84; stroke-linecap: round"/>
+    <path d="M 49.628749 97.109091
+L 46.428749 95.509091
+L 49.628749 93.909091
+z
+" style="fill: #43586d; stroke: #43586d; stroke-width: 0.84; stroke-linecap: round"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 459.9504 113.590909
+Q 384.1344 113.590909 309.257549 113.590909
+" style="fill: none; stroke: #992e3b; stroke-width: 0.84; stroke-linecap: round"/>
+    <path d="M 312.457549 115.190909
+L 309.257549 113.590909
+L 312.457549 111.990909
+z
+" style="fill: #992e3b; stroke: #992e3b; stroke-width: 0.84; stroke-linecap: round"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 45.4896 137.7
+Q 176.904 137.7 307.379251 137.7
+" style="fill: none; stroke: #43586d; stroke-width: 0.84; stroke-linecap: round"/>
+    <path d="M 304.179251 136.1
+L 307.379251 137.7
+L 304.179251 139.3
+z
+" style="fill: #43586d; stroke: #43586d; stroke-width: 0.84; stroke-linecap: round"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 308.3184 211.881818
+Q 176.904 211.881818 46.428749 211.881818
+" style="fill: none; stroke: #992e3b; stroke-width: 0.84; stroke-linecap: round"/>
+    <path d="M 49.628749 213.481818
+L 46.428749 211.881818
+L 49.628749 210.281818
+z
+" style="fill: #992e3b; stroke: #992e3b; stroke-width: 0.84; stroke-linecap: round"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 45.4896 238.309091
+Q 176.904 238.309091 307.379251 238.309091
+" style="fill: none; stroke: #075d54; stroke-width: 0.84; stroke-linecap: round"/>
+    <path d="M 304.179251 236.709091
+L 307.379251 238.309091
+L 304.179251 239.909091
+z
+" style="fill: #075d54; stroke: #075d54; stroke-width: 0.84; stroke-linecap: round"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 308.3184 261.954545
+Q 176.904 261.954545 46.428749 261.954545
+" style="fill: none; stroke: #075d54; stroke-width: 0.84; stroke-linecap: round"/>
+    <path d="M 49.628749 263.554545
+L 46.428749 261.954545
+L 49.628749 260.354545
+z
+" style="fill: #075d54; stroke: #075d54; stroke-width: 0.84; stroke-linecap: round"/>
+   </g>
+   <g id="patch_14">
+    <path d="M 45.4896 285.6
+Q 176.904 285.6 307.379251 285.6
+" style="fill: none; stroke: #075d54; stroke-width: 0.84; stroke-linecap: round"/>
+    <path d="M 304.179251 284
+L 307.379251 285.6
+L 304.179251 287.2
+z
+" style="fill: #075d54; stroke: #075d54; stroke-width: 0.84; stroke-linecap: round"/>
+   </g>
+   <g id="patch_15">
+    <path d="M 308.3184 285.6
+Q 363.9168 285.6 418.576051 285.6
+" style="fill: none; stroke-dasharray: 3.108,1.344; stroke-dashoffset: 0; stroke: #075d54; stroke-width: 0.84; stroke-linecap: round"/>
+    <path d="M 415.376051 284
+L 418.576051 285.6
+L 415.376051 287.2
+z
+" style="fill: #075d54; stroke-dasharray: 3.108,1.344; stroke-dashoffset: 0; stroke: #075d54; stroke-width: 0.84; stroke-linecap: round"/>
+   </g>
+   <g id="text_1">
+    <text style="fill: #14263a; font: 700 7.2px 'DejaVu Sans'; text-anchor: middle" x="45.4896" y="18.621409" transform="rotate(-0 45.4896 18.621409)">Agent</text>
+   </g>
+   <g id="text_2">
+    <text style="fill: #14263a; font: 700 7.2px 'DejaVu Sans'; text-anchor: middle" x="308.3184" y="18.677659" transform="rotate(-0 308.3184 18.677659)">Trusted connector</text>
+   </g>
+   <g id="text_3">
+    <text style="fill: #14263a; font: 700 7.2px 'DejaVu Sans'; text-anchor: middle" x="459.9504" y="18.677659" transform="rotate(-0 459.9504 18.677659)">Business state</text>
+   </g>
+   <g id="text_4">
+    <text style="fill: #43586d; font: 7.65px 'DejaVu Sans'; text-anchor: middle" x="176.904" y="44.67274" transform="rotate(-0 176.904 44.67274)">Status: wallet unavailable, bank available</text>
+   </g>
+   <g id="text_5">
+    <text style="fill: #43586d; font: 7.65px 'DejaVu Sans'; text-anchor: middle" x="176.904" y="67.854558" transform="rotate(-0 176.904 67.854558)">Propose bank; prepare account verification</text>
+   </g>
+   <g id="text_6">
+    <text style="fill: #43586d; font: 7.65px 'DejaVu Sans'; text-anchor: middle" x="176.904" y="91.036376" transform="rotate(-0 176.904 91.036376)">Preparation accepted under wallet version v1</text>
+   </g>
+   <g id="text_7">
+    <text style="fill: #992e3b; font: 7.65px 'DejaVu Sans'; text-anchor: middle" x="384.1344" y="109.118195" transform="rotate(-0 384.1344 109.118195)">Wallet recovers (v2)</text>
+   </g>
+   <g id="text_8">
+    <text style="fill: #43586d; font: 7.65px 'DejaVu Sans'; text-anchor: middle" x="176.904" y="133.227286" transform="rotate(-0 176.904 133.227286)">Read account and owner references</text>
+   </g>
+   <g id="text_9">
+    <text style="fill: #174d89; font: 700 7.8px 'DejaVu Sans'; text-anchor: start" x="224.9208" y="159.32504" transform="rotate(-0 224.9208 159.32504)">T   Table refresh</text>
+   </g>
+   <g id="text_10">
+    <text style="fill: #14263a; font: 7.4px 'DejaVu Sans'; text-anchor: start" x="224.9208" y="170.341937" transform="rotate(-0 224.9208 170.341937)">Wallet now outranks bank</text>
+   </g>
+   <g id="text_11">
+    <text style="fill: #075d54; font: 700 7.8px 'DejaVu Sans'; text-anchor: start" x="224.9208" y="182.506858" transform="rotate(-0 224.9208 182.506858)">C   Contract revalidation</text>
+   </g>
+   <g id="text_12">
+    <text style="fill: #14263a; font: 7.4px 'DejaVu Sans'; text-anchor: start" x="224.9208" y="193.291937" transform="rotate(-0 224.9208 193.291937)">Bank grant binds v1; current version is v2</text>
+   </g>
+   <g id="text_13">
+    <text style="fill: #992e3b; font: 7.65px 'DejaVu Sans'; text-anchor: middle" x="176.904" y="207.409104" transform="rotate(-0 176.904 207.409104)">Deny bank fields; provide safe next options</text>
+   </g>
+   <g id="text_14">
+    <text style="fill: #075d54; font: 7.65px 'DejaVu Sans'; text-anchor: middle" x="176.904" y="233.836376" transform="rotate(-0 176.904 233.836376)">Refresh status; propose wallet; request its reference</text>
+   </g>
+   <g id="text_15">
+    <text style="fill: #075d54; font: 7.65px 'DejaVu Sans'; text-anchor: middle" x="176.904" y="257.481831" transform="rotate(-0 176.904 257.481831)">Release wallet reference</text>
+   </g>
+   <g id="text_16">
+    <text style="fill: #075d54; font: 7.65px 'DejaVu Sans'; text-anchor: middle" x="176.904" y="281.127286" transform="rotate(-0 176.904 281.127286)">Confirm and execute wallet refund</text>
+   </g>
+   <g id="text_17">
+    <text style="fill: #075d54; font: 700 7.3px 'DejaVu Sans'" transform="translate(445.267134 283.527142)">Refund</text>
+    <text style="fill: #075d54; font: 700 7.3px 'DejaVu Sans'" transform="translate(437.843377 291.701545)">committed</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p4fa89d43ca">
+   <rect x="0" y="0" width="505.44" height="306"/>
+  </clipPath>
+ </defs>
+</svg>

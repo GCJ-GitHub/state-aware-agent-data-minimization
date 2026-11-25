@@ -1,0 +1,31 @@
+{
+  "selected": [
+    {
+      "id": "holdout-preferred_returns-02-event",
+      "seed": 421
+    },
+    {
+      "id": "holdout-preferred_returns-06-control",
+      "seed": 421
+    },
+    {
+      "id": "holdout-after_commit-03-event",
+      "seed": 19
+    },
+    {
+      "id": "holdout-after_commit-04-control",
+      "seed": 421
+    },
+    {
+      "id": "holdout-no_authorized_route-02-event",
+      "seed": 19
+    },
+    {
+      "id": "holdout-no_authorized_route-04-control",
+      "seed": 113
+    }
+  ],
+  "model": "qwen4-max",
+  "only_change": "Reply to a native call after business closure with explicit terminal feedback.",
+  "selection": "First case/seed per family and fixed variant with both baseline arms recorded; excludes prior compatibility pilot; selection does not query outcomes."
+}

@@ -1,0 +1,343 @@
+{
+  "id": "holdout-preferred_returns-15-control",
+  "pair": "holdout-preferred_returns-15",
+  "arm": "contract",
+  "seed": 19,
+  "events": [
+    {
+      "event": "checkpoint",
+      "turn": 0,
+      "scheduled": 3
+    },
+    {
+      "event": "clock",
+      "turn": 3,
+      "changed": false,
+      "facts": {},
+      "identity_updated": false
+    },
+    {
+      "event": "read",
+      "turn": 3,
+      "prepared": 2,
+      "step": "bank",
+      "requested": [
+        "bank_ref",
+        "owner_ref"
+      ],
+      "facts": {
+        "bank_online": true,
+        "wallet_online": false
+      },
+      "seen": [],
+      "goal": "refund",
+      "delivered": {
+        "owner_ref": 1,
+        "bank_ref": 1
+      },
+      "ok": true
+    },
+    {
+      "event": "confirmation",
+      "step": "bank",
+      "turn": 4
+    },
+    {
+      "event": "effect",
+      "step": "bank",
+      "turn": 5,
+      "goal": "refund",
+      "identity_version": null
+    },
+    {
+      "event": "denial",
+      "tool": "status",
+      "turn": 6,
+      "code": "check_request",
+      "detail": "workflow_closed"
+    },
+    {
+      "event": "denial",
+      "tool": "status",
+      "turn": 7,
+      "code": "check_request",
+      "detail": "workflow_closed"
+    }
+  ],
+  "commits": [
+    "bank"
+  ],
+  "stopped": false,
+  "end": "final_reply",
+  "model_responses": [
+    {
+      "turn": 0,
+      "model": "qwen3.8-flash",
+      "fingerprint": "",
+      "text": "I'll start by checking the current status.\n\n",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_fe4a538c5c7a410c9e2fd664",
+          "function": {
+            "name": "status",
+            "arguments": "{}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 1,
+      "model": "qwen3.8-flash",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_9ce0db48a2b14eff8649c9a7",
+          "function": {
+            "name": "select_plan",
+            "arguments": "{\"steps\": \n[\"bank\"]\n\n}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 2,
+      "model": "qwen3.8-flash",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_dad920101e2640428e8ddb1d",
+          "function": {
+            "name": "prepare_read",
+            "arguments": "{\"step\": \"bank\"}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 3,
+      "model": "qwen3.8-flash",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_4a7fd0d5ccb24828b676ff5b",
+          "function": {
+            "name": "read_fields",
+            "arguments": "{\"handle\": \"R2\", \"fields\": \n[\"bank_ref\", \"owner_ref\"]\n\n}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 4,
+      "model": "qwen3.8-flash",
+      "fingerprint": "",
+      "text": "The wallet refund route is unavailable (wallet offline), so I'm proceeding with the bank refund as you authorized. You also asked to be asked for confirmation before issuing it, so let me request that now.\n\n",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_0ca245cbba094cbb9f606ab0",
+          "function": {
+            "name": "confirm",
+            "arguments": "{\"step\": \"bank\"}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 5,
+      "model": "qwen3.8-flash",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_f8ea147405be4e098c04b85e",
+          "function": {
+            "name": "execute",
+            "arguments": "{\"step\": \"bank\", \"values\": {\"bank_ref\": \"SYN_29485c05894f4\", \"owner_ref\": \"SYN_cb542c528ca6b\"}}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 6,
+      "model": "qwen3.8-flash",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_e619eeff05664c6ca3d9e4d6",
+          "function": {
+            "name": "status",
+            "arguments": "{}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 7,
+      "model": "qwen3.8-flash",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_6fa2e560b0fb4a79862fc242",
+          "function": {
+            "name": "status",
+            "arguments": "{}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 8,
+      "model": "qwen3.8-flash",
+      "fingerprint": "",
+      "text": "The refund for order holdout-preferred_returns-15 has been issued to the bank account.\n\nSummary:\n- Wallet refund was unavailable (offline), so I used the authorized bank fallback.\n- Confirmation was requested and granted before executing.\n- The bank refund completed successfully; the workflow is finished with no remaining steps.",
+      "tool_calls": []
+    }
+  ],
+  "calls": [
+    {
+      "turn": 0,
+      "name": "status",
+      "args": {},
+      "response": {
+        "status": "ready",
+        "facts": {
+          "bank_online": true,
+          "wallet_online": false
+        },
+        "committed": [],
+        "plans": [
+          [
+            "bank"
+          ]
+        ]
+      }
+    },
+    {
+      "turn": 1,
+      "name": "select_plan",
+      "args": {
+        "steps": [
+          "bank"
+        ]
+      },
+      "response": {
+        "enabled": [
+          {
+            "step": "bank",
+            "input_fields": [
+              "bank_ref",
+              "owner_ref"
+            ],
+            "missing_fields": [
+              "bank_ref",
+              "owner_ref"
+            ],
+            "needs_confirmation": true
+          }
+        ],
+        "reused": []
+      }
+    },
+    {
+      "turn": 2,
+      "name": "prepare_read",
+      "args": {
+        "step": "bank"
+      },
+      "response": {
+        "handle": "R2",
+        "fields": [
+          "bank_ref",
+          "owner_ref"
+        ]
+      }
+    },
+    {
+      "turn": 3,
+      "name": "read_fields",
+      "args": {
+        "handle": "R2",
+        "fields": [
+          "bank_ref",
+          "owner_ref"
+        ]
+      },
+      "response": {
+        "values": {
+          "owner_ref": "SYN_cb542c528ca6b",
+          "bank_ref": "SYN_29485c05894f4"
+        }
+      }
+    },
+    {
+      "turn": 4,
+      "name": "confirm",
+      "args": {
+        "step": "bank"
+      },
+      "response": {
+        "approved": true
+      }
+    },
+    {
+      "turn": 5,
+      "name": "execute",
+      "args": {
+        "step": "bank",
+        "values": {
+          "bank_ref": "SYN_29485c05894f4",
+          "owner_ref": "SYN_cb542c528ca6b"
+        }
+      },
+      "response": {
+        "committed": "bank",
+        "complete": true
+      }
+    },
+    {
+      "turn": 6,
+      "name": "status",
+      "args": {},
+      "response": {
+        "error": "check_request",
+        "feedback": "Call status and select a current plan. Continue only with enabled steps."
+      }
+    },
+    {
+      "turn": 7,
+      "name": "status",
+      "args": {},
+      "response": {
+        "error": "check_request",
+        "feedback": "Call status and select a current plan. Continue only with enabled steps."
+      }
+    }
+  ],
+  "protocol_errors": [],
+  "http_attempts": 10,
+  "http_statuses": {
+    "200": 9,
+    "429": 1
+  }
+}

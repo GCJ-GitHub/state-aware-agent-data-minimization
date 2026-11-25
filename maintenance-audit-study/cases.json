@@ -1,0 +1,907 @@
+[
+  {
+    "domain": "refund",
+    "variant": "wallet",
+    "facts": {
+      "wallet_online": true,
+      "bank_online": true,
+      "recent_bank_change": false
+    },
+    "goals": [
+      "refund"
+    ],
+    "authorized": false,
+    "withheld": [
+      "beneficiary_ref"
+    ],
+    "branches": [
+      "wallet"
+    ],
+    "fields": [
+      "wallet_ref"
+    ],
+    "steps": [
+      "wallet"
+    ]
+  },
+  {
+    "domain": "refund",
+    "variant": "wallet",
+    "facts": {
+      "wallet_online": true,
+      "bank_online": true,
+      "recent_bank_change": false
+    },
+    "goals": [
+      "refund"
+    ],
+    "authorized": true,
+    "withheld": [],
+    "branches": [
+      "wallet"
+    ],
+    "fields": [
+      "wallet_ref"
+    ],
+    "steps": [
+      "wallet"
+    ]
+  },
+  {
+    "domain": "refund",
+    "variant": "wallet",
+    "facts": {
+      "wallet_online": true,
+      "bank_online": true,
+      "recent_bank_change": true
+    },
+    "goals": [
+      "refund"
+    ],
+    "authorized": false,
+    "withheld": [
+      "beneficiary_ref"
+    ],
+    "branches": [
+      "wallet"
+    ],
+    "fields": [
+      "wallet_ref"
+    ],
+    "steps": [
+      "wallet"
+    ]
+  },
+  {
+    "domain": "refund",
+    "variant": "wallet",
+    "facts": {
+      "wallet_online": true,
+      "bank_online": true,
+      "recent_bank_change": true
+    },
+    "goals": [
+      "refund"
+    ],
+    "authorized": true,
+    "withheld": [],
+    "branches": [
+      "wallet"
+    ],
+    "fields": [
+      "wallet_ref"
+    ],
+    "steps": [
+      "wallet"
+    ]
+  },
+  {
+    "domain": "refund",
+    "variant": "bank",
+    "facts": {
+      "wallet_online": false,
+      "bank_online": true,
+      "recent_bank_change": false
+    },
+    "goals": [
+      "refund"
+    ],
+    "authorized": false,
+    "withheld": [
+      "beneficiary_ref"
+    ],
+    "branches": [
+      "bank"
+    ],
+    "fields": [
+      "bank_ref",
+      "owner_ref"
+    ],
+    "steps": [
+      "bank"
+    ]
+  },
+  {
+    "domain": "refund",
+    "variant": "bank",
+    "facts": {
+      "wallet_online": false,
+      "bank_online": true,
+      "recent_bank_change": false
+    },
+    "goals": [
+      "refund"
+    ],
+    "authorized": true,
+    "withheld": [],
+    "branches": [
+      "bank"
+    ],
+    "fields": [
+      "bank_ref",
+      "owner_ref"
+    ],
+    "steps": [
+      "bank"
+    ]
+  },
+  {
+    "domain": "refund",
+    "variant": "bank",
+    "facts": {
+      "wallet_online": false,
+      "bank_online": true,
+      "recent_bank_change": true
+    },
+    "goals": [
+      "refund"
+    ],
+    "authorized": false,
+    "withheld": [
+      "beneficiary_ref"
+    ],
+    "branches": [],
+    "fields": [],
+    "steps": []
+  },
+  {
+    "domain": "refund",
+    "variant": "bank",
+    "facts": {
+      "wallet_online": false,
+      "bank_online": true,
+      "recent_bank_change": true
+    },
+    "goals": [
+      "refund"
+    ],
+    "authorized": true,
+    "withheld": [],
+    "branches": [
+      "bank"
+    ],
+    "fields": [
+      "bank_ref",
+      "beneficiary_ref",
+      "owner_ref"
+    ],
+    "steps": [
+      "bank",
+      "beneficiary_check"
+    ]
+  },
+  {
+    "domain": "refund",
+    "variant": "none",
+    "facts": {
+      "wallet_online": false,
+      "bank_online": false,
+      "recent_bank_change": false
+    },
+    "goals": [
+      "refund"
+    ],
+    "authorized": false,
+    "withheld": [
+      "beneficiary_ref"
+    ],
+    "branches": [],
+    "fields": [],
+    "steps": []
+  },
+  {
+    "domain": "refund",
+    "variant": "none",
+    "facts": {
+      "wallet_online": false,
+      "bank_online": false,
+      "recent_bank_change": false
+    },
+    "goals": [
+      "refund"
+    ],
+    "authorized": true,
+    "withheld": [],
+    "branches": [],
+    "fields": [],
+    "steps": []
+  },
+  {
+    "domain": "refund",
+    "variant": "none",
+    "facts": {
+      "wallet_online": false,
+      "bank_online": false,
+      "recent_bank_change": true
+    },
+    "goals": [
+      "refund"
+    ],
+    "authorized": false,
+    "withheld": [
+      "beneficiary_ref"
+    ],
+    "branches": [],
+    "fields": [],
+    "steps": []
+  },
+  {
+    "domain": "refund",
+    "variant": "none",
+    "facts": {
+      "wallet_online": false,
+      "bank_online": false,
+      "recent_bank_change": true
+    },
+    "goals": [
+      "refund"
+    ],
+    "authorized": true,
+    "withheld": [],
+    "branches": [],
+    "fields": [],
+    "steps": []
+  },
+  {
+    "domain": "pickup",
+    "variant": "preferred",
+    "facts": {
+      "site_open": true,
+      "preferred_open": true,
+      "backup_open": true,
+      "cross_region": false,
+      "restricted_site": false
+    },
+    "goals": [
+      "site_change",
+      "booking"
+    ],
+    "authorized": false,
+    "withheld": [
+      "carrier_declaration_ref",
+      "reservation_attestation_ref"
+    ],
+    "branches": [
+      "move",
+      "preferred_slot"
+    ],
+    "fields": [
+      "identity_ref",
+      "preferred_slot_ref",
+      "site_ref"
+    ],
+    "steps": [
+      "identity",
+      "move",
+      "preferred_slot"
+    ]
+  },
+  {
+    "domain": "pickup",
+    "variant": "preferred",
+    "facts": {
+      "site_open": true,
+      "preferred_open": true,
+      "backup_open": true,
+      "cross_region": false,
+      "restricted_site": false
+    },
+    "goals": [
+      "site_change",
+      "booking"
+    ],
+    "authorized": true,
+    "withheld": [],
+    "branches": [
+      "move",
+      "preferred_slot"
+    ],
+    "fields": [
+      "identity_ref",
+      "preferred_slot_ref",
+      "site_ref"
+    ],
+    "steps": [
+      "identity",
+      "move",
+      "preferred_slot"
+    ]
+  },
+  {
+    "domain": "pickup",
+    "variant": "preferred",
+    "facts": {
+      "site_open": true,
+      "preferred_open": true,
+      "backup_open": true,
+      "cross_region": false,
+      "restricted_site": true
+    },
+    "goals": [
+      "site_change",
+      "booking"
+    ],
+    "authorized": false,
+    "withheld": [
+      "carrier_declaration_ref",
+      "reservation_attestation_ref"
+    ],
+    "branches": [],
+    "fields": [],
+    "steps": []
+  },
+  {
+    "domain": "pickup",
+    "variant": "preferred",
+    "facts": {
+      "site_open": true,
+      "preferred_open": true,
+      "backup_open": true,
+      "cross_region": false,
+      "restricted_site": true
+    },
+    "goals": [
+      "site_change",
+      "booking"
+    ],
+    "authorized": true,
+    "withheld": [],
+    "branches": [
+      "move",
+      "preferred_slot"
+    ],
+    "fields": [
+      "identity_ref",
+      "preferred_slot_ref",
+      "reservation_attestation_ref",
+      "site_ref"
+    ],
+    "steps": [
+      "identity",
+      "move",
+      "preferred_slot",
+      "reservation_check"
+    ]
+  },
+  {
+    "domain": "pickup",
+    "variant": "preferred",
+    "facts": {
+      "site_open": true,
+      "preferred_open": true,
+      "backup_open": true,
+      "cross_region": true,
+      "restricted_site": false
+    },
+    "goals": [
+      "site_change",
+      "booking"
+    ],
+    "authorized": false,
+    "withheld": [
+      "carrier_declaration_ref",
+      "reservation_attestation_ref"
+    ],
+    "branches": [],
+    "fields": [],
+    "steps": []
+  },
+  {
+    "domain": "pickup",
+    "variant": "preferred",
+    "facts": {
+      "site_open": true,
+      "preferred_open": true,
+      "backup_open": true,
+      "cross_region": true,
+      "restricted_site": false
+    },
+    "goals": [
+      "site_change",
+      "booking"
+    ],
+    "authorized": true,
+    "withheld": [],
+    "branches": [
+      "move",
+      "preferred_slot"
+    ],
+    "fields": [
+      "carrier_declaration_ref",
+      "identity_ref",
+      "preferred_slot_ref",
+      "site_ref"
+    ],
+    "steps": [
+      "carrier_check",
+      "identity",
+      "move",
+      "preferred_slot"
+    ]
+  },
+  {
+    "domain": "pickup",
+    "variant": "preferred",
+    "facts": {
+      "site_open": true,
+      "preferred_open": true,
+      "backup_open": true,
+      "cross_region": true,
+      "restricted_site": true
+    },
+    "goals": [
+      "site_change",
+      "booking"
+    ],
+    "authorized": false,
+    "withheld": [
+      "carrier_declaration_ref",
+      "reservation_attestation_ref"
+    ],
+    "branches": [],
+    "fields": [],
+    "steps": []
+  },
+  {
+    "domain": "pickup",
+    "variant": "preferred",
+    "facts": {
+      "site_open": true,
+      "preferred_open": true,
+      "backup_open": true,
+      "cross_region": true,
+      "restricted_site": true
+    },
+    "goals": [
+      "site_change",
+      "booking"
+    ],
+    "authorized": true,
+    "withheld": [],
+    "branches": [
+      "move",
+      "preferred_slot"
+    ],
+    "fields": [
+      "carrier_declaration_ref",
+      "identity_ref",
+      "preferred_slot_ref",
+      "reservation_attestation_ref",
+      "site_ref"
+    ],
+    "steps": [
+      "carrier_check",
+      "identity",
+      "move",
+      "preferred_slot",
+      "reservation_check"
+    ]
+  },
+  {
+    "domain": "pickup",
+    "variant": "backup",
+    "facts": {
+      "site_open": true,
+      "preferred_open": false,
+      "backup_open": true,
+      "cross_region": false,
+      "restricted_site": false
+    },
+    "goals": [
+      "site_change",
+      "booking"
+    ],
+    "authorized": false,
+    "withheld": [
+      "carrier_declaration_ref",
+      "reservation_attestation_ref"
+    ],
+    "branches": [
+      "backup_slot",
+      "move"
+    ],
+    "fields": [
+      "backup_slot_ref",
+      "identity_ref",
+      "site_ref"
+    ],
+    "steps": [
+      "backup_slot",
+      "identity",
+      "move"
+    ]
+  },
+  {
+    "domain": "pickup",
+    "variant": "backup",
+    "facts": {
+      "site_open": true,
+      "preferred_open": false,
+      "backup_open": true,
+      "cross_region": false,
+      "restricted_site": false
+    },
+    "goals": [
+      "site_change",
+      "booking"
+    ],
+    "authorized": true,
+    "withheld": [],
+    "branches": [
+      "backup_slot",
+      "move"
+    ],
+    "fields": [
+      "backup_slot_ref",
+      "identity_ref",
+      "site_ref"
+    ],
+    "steps": [
+      "backup_slot",
+      "identity",
+      "move"
+    ]
+  },
+  {
+    "domain": "pickup",
+    "variant": "backup",
+    "facts": {
+      "site_open": true,
+      "preferred_open": false,
+      "backup_open": true,
+      "cross_region": false,
+      "restricted_site": true
+    },
+    "goals": [
+      "site_change",
+      "booking"
+    ],
+    "authorized": false,
+    "withheld": [
+      "carrier_declaration_ref",
+      "reservation_attestation_ref"
+    ],
+    "branches": [],
+    "fields": [],
+    "steps": []
+  },
+  {
+    "domain": "pickup",
+    "variant": "backup",
+    "facts": {
+      "site_open": true,
+      "preferred_open": false,
+      "backup_open": true,
+      "cross_region": false,
+      "restricted_site": true
+    },
+    "goals": [
+      "site_change",
+      "booking"
+    ],
+    "authorized": true,
+    "withheld": [],
+    "branches": [
+      "backup_slot",
+      "move"
+    ],
+    "fields": [
+      "backup_slot_ref",
+      "identity_ref",
+      "reservation_attestation_ref",
+      "site_ref"
+    ],
+    "steps": [
+      "backup_slot",
+      "identity",
+      "move",
+      "reservation_check"
+    ]
+  },
+  {
+    "domain": "pickup",
+    "variant": "backup",
+    "facts": {
+      "site_open": true,
+      "preferred_open": false,
+      "backup_open": true,
+      "cross_region": true,
+      "restricted_site": false
+    },
+    "goals": [
+      "site_change",
+      "booking"
+    ],
+    "authorized": false,
+    "withheld": [
+      "carrier_declaration_ref",
+      "reservation_attestation_ref"
+    ],
+    "branches": [],
+    "fields": [],
+    "steps": []
+  },
+  {
+    "domain": "pickup",
+    "variant": "backup",
+    "facts": {
+      "site_open": true,
+      "preferred_open": false,
+      "backup_open": true,
+      "cross_region": true,
+      "restricted_site": false
+    },
+    "goals": [
+      "site_change",
+      "booking"
+    ],
+    "authorized": true,
+    "withheld": [],
+    "branches": [
+      "backup_slot",
+      "move"
+    ],
+    "fields": [
+      "backup_slot_ref",
+      "carrier_declaration_ref",
+      "identity_ref",
+      "site_ref"
+    ],
+    "steps": [
+      "backup_slot",
+      "carrier_check",
+      "identity",
+      "move"
+    ]
+  },
+  {
+    "domain": "pickup",
+    "variant": "backup",
+    "facts": {
+      "site_open": true,
+      "preferred_open": false,
+      "backup_open": true,
+      "cross_region": true,
+      "restricted_site": true
+    },
+    "goals": [
+      "site_change",
+      "booking"
+    ],
+    "authorized": false,
+    "withheld": [
+      "carrier_declaration_ref",
+      "reservation_attestation_ref"
+    ],
+    "branches": [],
+    "fields": [],
+    "steps": []
+  },
+  {
+    "domain": "pickup",
+    "variant": "backup",
+    "facts": {
+      "site_open": true,
+      "preferred_open": false,
+      "backup_open": true,
+      "cross_region": true,
+      "restricted_site": true
+    },
+    "goals": [
+      "site_change",
+      "booking"
+    ],
+    "authorized": true,
+    "withheld": [],
+    "branches": [
+      "backup_slot",
+      "move"
+    ],
+    "fields": [
+      "backup_slot_ref",
+      "carrier_declaration_ref",
+      "identity_ref",
+      "reservation_attestation_ref",
+      "site_ref"
+    ],
+    "steps": [
+      "backup_slot",
+      "carrier_check",
+      "identity",
+      "move",
+      "reservation_check"
+    ]
+  },
+  {
+    "domain": "pickup",
+    "variant": "closed",
+    "facts": {
+      "site_open": false,
+      "preferred_open": false,
+      "backup_open": false,
+      "cross_region": false,
+      "restricted_site": false
+    },
+    "goals": [
+      "site_change",
+      "booking"
+    ],
+    "authorized": false,
+    "withheld": [
+      "carrier_declaration_ref",
+      "reservation_attestation_ref"
+    ],
+    "branches": [],
+    "fields": [],
+    "steps": []
+  },
+  {
+    "domain": "pickup",
+    "variant": "closed",
+    "facts": {
+      "site_open": false,
+      "preferred_open": false,
+      "backup_open": false,
+      "cross_region": false,
+      "restricted_site": false
+    },
+    "goals": [
+      "site_change",
+      "booking"
+    ],
+    "authorized": true,
+    "withheld": [],
+    "branches": [],
+    "fields": [],
+    "steps": []
+  },
+  {
+    "domain": "pickup",
+    "variant": "closed",
+    "facts": {
+      "site_open": false,
+      "preferred_open": false,
+      "backup_open": false,
+      "cross_region": false,
+      "restricted_site": true
+    },
+    "goals": [
+      "site_change",
+      "booking"
+    ],
+    "authorized": false,
+    "withheld": [
+      "carrier_declaration_ref",
+      "reservation_attestation_ref"
+    ],
+    "branches": [],
+    "fields": [],
+    "steps": []
+  },
+  {
+    "domain": "pickup",
+    "variant": "closed",
+    "facts": {
+      "site_open": false,
+      "preferred_open": false,
+      "backup_open": false,
+      "cross_region": false,
+      "restricted_site": true
+    },
+    "goals": [
+      "site_change",
+      "booking"
+    ],
+    "authorized": true,
+    "withheld": [],
+    "branches": [],
+    "fields": [],
+    "steps": []
+  },
+  {
+    "domain": "pickup",
+    "variant": "closed",
+    "facts": {
+      "site_open": false,
+      "preferred_open": false,
+      "backup_open": false,
+      "cross_region": true,
+      "restricted_site": false
+    },
+    "goals": [
+      "site_change",
+      "booking"
+    ],
+    "authorized": false,
+    "withheld": [
+      "carrier_declaration_ref",
+      "reservation_attestation_ref"
+    ],
+    "branches": [],
+    "fields": [],
+    "steps": []
+  },
+  {
+    "domain": "pickup",
+    "variant": "closed",
+    "facts": {
+      "site_open": false,
+      "preferred_open": false,
+      "backup_open": false,
+      "cross_region": true,
+      "restricted_site": false
+    },
+    "goals": [
+      "site_change",
+      "booking"
+    ],
+    "authorized": true,
+    "withheld": [],
+    "branches": [],
+    "fields": [],
+    "steps": []
+  },
+  {
+    "domain": "pickup",
+    "variant": "closed",
+    "facts": {
+      "site_open": false,
+      "preferred_open": false,
+      "backup_open": false,
+      "cross_region": true,
+      "restricted_site": true
+    },
+    "goals": [
+      "site_change",
+      "booking"
+    ],
+    "authorized": false,
+    "withheld": [
+      "carrier_declaration_ref",
+      "reservation_attestation_ref"
+    ],
+    "branches": [],
+    "fields": [],
+    "steps": []
+  },
+  {
+    "domain": "pickup",
+    "variant": "closed",
+    "facts": {
+      "site_open": false,
+      "preferred_open": false,
+      "backup_open": false,
+      "cross_region": true,
+      "restricted_site": true
+    },
+    "goals": [
+      "site_change",
+      "booking"
+    ],
+    "authorized": true,
+    "withheld": [],
+    "branches": [],
+    "fields": [],
+    "steps": []
+  }
+]

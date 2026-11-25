@@ -1,0 +1,140 @@
+[
+  {
+    "type": "function",
+    "function": {
+      "name": "status",
+      "description": "Inspect current trusted status, admissible plans, and remaining goals.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "select_plan",
+      "description": "Select the exact steps of one currently admissible plan.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "steps": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "steps"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "prepare_read",
+      "description": "Prepare a read for the named enabled step.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "step": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "step"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "read_fields",
+      "description": "Read the exact missing fields associated with the prepared handle.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "handle": {
+            "type": "string"
+          },
+          "fields": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "handle",
+          "fields"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "confirm",
+      "description": "Request required approval for this enabled action.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "step": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "step"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "execute",
+      "description": "Execute enabled action using its exact input fields and current values.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "step": {
+            "type": "string"
+          },
+          "values": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "step",
+          "values"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "stop",
+      "description": "End a workflow when no authorized continuation exists.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  }
+]

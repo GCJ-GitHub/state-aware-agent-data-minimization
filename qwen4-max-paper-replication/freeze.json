@@ -1,0 +1,116 @@
+{
+  "model": "qwen4-max",
+  "assigned": 2736,
+  "studies": {
+    "strong": {
+      "tasks": 120,
+      "arms": [
+        "route_table",
+        "contract"
+      ],
+      "seeds": [
+        19,
+        113,
+        421
+      ],
+      "assigned": 720
+    },
+    "three-arm": {
+      "tasks": 120,
+      "arms": [
+        "upfront",
+        "agent_only",
+        "state_guard"
+      ],
+      "seeds": [
+        19,
+        113,
+        421
+      ],
+      "assigned": 1080
+    },
+    "airgap": {
+      "tasks": 72,
+      "arms": [
+        "airgap",
+        "agent_only",
+        "state_guard"
+      ],
+      "seeds": [
+        19,
+        113,
+        421
+      ],
+      "assigned": 648
+    },
+    "native-factorial": {
+      "tasks": 12,
+      "arms": [
+        "fixed_soft",
+        "fixed_enforced",
+        "planned_soft",
+        "planned_enforced"
+      ],
+      "seeds": [
+        19,
+        113,
+        421
+      ],
+      "assigned": 144
+    },
+    "text-factorial": {
+      "tasks": 12,
+      "arms": [
+        "fixed_soft",
+        "fixed_enforced",
+        "planned_soft",
+        "planned_enforced"
+      ],
+      "seeds": [
+        19,
+        113,
+        421
+      ],
+      "assigned": 144
+    }
+  },
+  "temperature": 0.3,
+  "thinking": false,
+  "tool_protocol_and_budgets": "original per study",
+  "timing": "retain original event schedule",
+  "primary_scope": "strong baseline, three-way, and AirGap-style adaptation",
+  "diagnostic_scope": "native-tool and text factorials",
+  "hashes": {
+    "airgap-escalation-state-study/freeze.json": "96a94c55d94031245c9829d2b698dfab74122553a5375a253bd94ff80ce4b347",
+    "airgap-escalation-state-study/gold.json": "8ef679ffbc35110b2f9c0959229017bd07e68985592f3a78f99535c46ff93864",
+    "airgap-escalation-state-study/protocol.json": "b3a1cbcf087a45010b329722663cc1960527f2385eae40ef8ec3f0f84494aad9",
+    "airgap-escalation-state-study/tasks.json": "236ac510407a398e54dd3728f4d0bc060ebfe49b79e4aca8cef70d6ec940db16",
+    "airgap_state_study.py": "1e18500e9567586a752bc71c0ee575ebe656332b0224f0d4b2c0ea43660e1e16",
+    "necessity-factorial-pilot/freeze.json": "a6676fab7eab70445dec4f666f3f94b2776b438ed023580a6d837b22f3daa145",
+    "necessity-factorial-pilot/judge-fixtures.json": "66232592a07e63e479e217b8ede7122ccfcf4337e962d3e602621d0e438e861a",
+    "necessity-factorial-pilot/protocol.json": "9b537b897e94429d6902d79c0c9ba16bad1f70f1a416d550b9afc03a8f795aa7",
+    "necessity-factorial-pilot/tasks.json": "78a89cdb7a7fae55a3e7b2c297fca9622c35f24a6d29771d1af0ef16b54292a8",
+    "necessity-native-retest/freeze.json": "60e590365ed76c0fcccd0e9d31c8a2710c15ae078416a5f27a48c95f1695d9d4",
+    "necessity-native-retest/judge-fixtures.json": "66232592a07e63e479e217b8ede7122ccfcf4337e962d3e602621d0e438e861a",
+    "necessity-native-retest/protocol.json": "28d6546f27218e8b21ff2203826585bfe431914db113c7caf815c4c99b30db75",
+    "necessity-native-retest/tasks.json": "78a89cdb7a7fae55a3e7b2c297fca9622c35f24a6d29771d1af0ef16b54292a8",
+    "necessity-three-arm-holdout/freeze.json": "38429e4cc209766cd2baa94dc521d88b93510da79bf55fbf2d3b967c4d6ce2a9",
+    "necessity-three-arm-holdout/protocol.json": "506c250786d61de1ecf8945bc18d1522ae21630350c6c71d06d7dbba6b691084",
+    "necessity-three-arm-holdout/tasks.json": "eb4715a6d5feca3bc52fcb6d497bca2ccaa0863ba150810a823cfdd91edbbb09",
+    "necessity_factorial.py": "6195c6ff0deba48f16c7a363a04d6dfb771658e7f04b6cfde427781b72a3c601",
+    "necessity_holdout.py": "3eddc388f0ac22122054fcd0c1354e75adb6df702bf20089ea290bceec5f15eb",
+    "necessity_native_retest.py": "52d1842aa905f5c1800a8087e8af44b69b964bfe56edb7086bfc79b70f9fdf05",
+    "necessity_v2/__init__.py": "04b53620f26cdaacc9adb85a13574aa3930e40c2dcf7ffc47941d04ca9e351b9",
+    "necessity_v2/acquire.py": "48d24746fe575fb735c4bde1e84ca3cb0bdf45f6cb2f8efe73a8b583496d1641",
+    "necessity_v2/composable_routes.py": "dcc8f2b55aaca150e8d0e338f5d6ba5ff980c90a6d6162677082342debfdb750",
+    "necessity_v2/core.py": "ec513b8ec1c290541b51287fd822be89bed7cd8ee25323ef3836b9324f980b73",
+    "necessity_v2/route_baseline.py": "4a66c7bf60793339fb684fb26019f5fe3be8259499f3d7f662eba94f2d97235b",
+    "necessity_v2/scenarios.py": "5e0c2c2dd6c73539aac1a39018896957da9321a30d465c37906bfa467b7a9f85",
+    "necessity_v2/signature_rule.py": "55f098c033c284203d7a1c68c2b22a1ff920262f703d9daa4c33e8d35815c5f3",
+    "qwen4_paper_replication.py": "7d401d7a899892ba853636f58bf5f430d79c8ec758bed8af138db5fccbb1c8d0",
+    "strong-backend-autonomous/freeze.json": "5cdf29eb94a549dbe1cdd3423d66824fef9ffaabe09bdb78c7b4929c566023b5",
+    "strong-backend-autonomous/protocol.json": "1dae787a47ed73edf329ef0fc8d99f37c1edceb4f6b8c4f9a61f5f365b2bdb91",
+    "strong-backend-autonomous/tasks.json": "eeefbec7ece70f47d678b9efd08cc90a26faf2de889de1d86d419ea176851eb2",
+    "strong_backend_autonomous.py": "ca2bd568fec1682d58b32848df50ac34a8fd147eb23e10ac5a4a6779e3559999"
+  }
+}

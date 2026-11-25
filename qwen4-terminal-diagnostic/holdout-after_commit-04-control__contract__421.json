@@ -1,0 +1,819 @@
+{
+  "id": "holdout-after_commit-04-control",
+  "pair": "holdout-after_commit-04",
+  "arm": "contract",
+  "seed": 421,
+  "events": [
+    {
+      "event": "read",
+      "turn": 3,
+      "prepared": 2,
+      "step": "identity",
+      "requested": [
+        "identity_ref"
+      ],
+      "facts": {
+        "backup_open": true,
+        "preferred_open": true,
+        "site_open": true
+      },
+      "seen": [],
+      "goal": "site_change",
+      "delivered": {
+        "identity_ref": 1
+      },
+      "ok": true
+    },
+    {
+      "event": "effect",
+      "step": "identity",
+      "turn": 4,
+      "goal": "identity_verified",
+      "identity_version": 1
+    },
+    {
+      "event": "read",
+      "turn": 6,
+      "prepared": 5,
+      "step": "move",
+      "requested": [
+        "site_ref"
+      ],
+      "facts": {
+        "backup_open": true,
+        "preferred_open": true,
+        "site_open": true
+      },
+      "seen": [
+        "identity_ref"
+      ],
+      "goal": "site_change",
+      "delivered": {
+        "site_ref": 1
+      },
+      "ok": true
+    },
+    {
+      "event": "confirmation",
+      "step": "move",
+      "turn": 7
+    },
+    {
+      "event": "effect",
+      "step": "move",
+      "turn": 8,
+      "goal": "site_change",
+      "identity_version": null
+    },
+    {
+      "event": "checkpoint",
+      "turn": 8,
+      "scheduled": 12
+    },
+    {
+      "event": "clock",
+      "turn": 12,
+      "changed": true,
+      "facts": {
+        "preferred_open": true
+      },
+      "identity_updated": false
+    },
+    {
+      "event": "read",
+      "turn": 12,
+      "prepared": 11,
+      "step": "preferred_slot",
+      "requested": [
+        "preferred_slot_ref"
+      ],
+      "facts": {
+        "backup_open": true,
+        "preferred_open": true,
+        "site_open": true
+      },
+      "seen": [
+        "identity_ref",
+        "site_ref"
+      ],
+      "goal": "booking",
+      "delivered": {},
+      "ok": false,
+      "reason": "refresh_required"
+    },
+    {
+      "event": "denial",
+      "tool": "read_fields",
+      "turn": 12,
+      "code": "refresh_required",
+      "detail": "Supporting evidence changed; re-evaluate the plan."
+    },
+    {
+      "event": "read",
+      "turn": 16,
+      "prepared": 15,
+      "step": "preferred_slot",
+      "requested": [
+        "preferred_slot_ref"
+      ],
+      "facts": {
+        "backup_open": true,
+        "preferred_open": true,
+        "site_open": true
+      },
+      "seen": [
+        "identity_ref",
+        "site_ref"
+      ],
+      "goal": "booking",
+      "delivered": {
+        "preferred_slot_ref": 1
+      },
+      "ok": true
+    },
+    {
+      "event": "confirmation",
+      "step": "preferred_slot",
+      "turn": 17
+    },
+    {
+      "event": "effect",
+      "step": "preferred_slot",
+      "turn": 18,
+      "goal": "booking",
+      "identity_version": null
+    }
+  ],
+  "commits": [
+    "move",
+    "preferred_slot"
+  ],
+  "stopped": false,
+  "end": "final_reply",
+  "model_responses": [
+    {
+      "turn": 0,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_6bedfe251f8f4aa49c222558",
+          "function": {
+            "name": "status",
+            "arguments": "{}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 1,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_114e96945d3a4fb08674869c",
+          "function": {
+            "name": "select_plan",
+            "arguments": "{\"steps\": \n[\"identity\", \"move\"]\n\n}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 2,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_955db771f5784a3f84e85b65",
+          "function": {
+            "name": "prepare_read",
+            "arguments": "{\"step\": \"identity\"}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 3,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_84726508fc0d473890a6d403",
+          "function": {
+            "name": "read_fields",
+            "arguments": "{\"handle\": \"R1\", \"fields\": \n[\"identity_ref\"]\n\n}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 4,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_cfb6195660934d508ce6ed78",
+          "function": {
+            "name": "execute",
+            "arguments": "{\"step\": \"identity\", \"values\": {\"identity_ref\": \"SYN_1e8f7c9e4e2ac\"}}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 5,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_4d362125f8d143d0a676188d",
+          "function": {
+            "name": "prepare_read",
+            "arguments": "{\"step\": \"move\"}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 6,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_78637565105f422483f0a9af",
+          "function": {
+            "name": "read_fields",
+            "arguments": "{\"handle\": \"R3\", \"fields\": \n[\"site_ref\"]\n\n}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 7,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_087c49839a714e86b4da8bcb",
+          "function": {
+            "name": "confirm",
+            "arguments": "{\"step\": \"move\"}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 8,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_ebec1b937bce43689ba76a76",
+          "function": {
+            "name": "execute",
+            "arguments": "{\"step\": \"move\", \"values\": {\"site_ref\": \"SYN_5685f4b5eb2b5\"}}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 9,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_bddd1e1a64d5496989675f51",
+          "function": {
+            "name": "status",
+            "arguments": "{}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 10,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_ec9ba4a6c5b146d8b4cebd75",
+          "function": {
+            "name": "select_plan",
+            "arguments": "{\"steps\": \n[\"identity\", \"preferred_slot\"]\n\n}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 11,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_66e7e5a2067b45b3810ed6de",
+          "function": {
+            "name": "prepare_read",
+            "arguments": "{\"step\": \"preferred_slot\"}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 12,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_a1ea88f63ee94fd893b374ce",
+          "function": {
+            "name": "read_fields",
+            "arguments": "{\"handle\": \"R7\", \"fields\": \n[\"preferred_slot_ref\"]\n\n}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 13,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_50702df9d1a04e618c49ac61",
+          "function": {
+            "name": "status",
+            "arguments": "{}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 14,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_4aa1507ecdce459da7783921",
+          "function": {
+            "name": "select_plan",
+            "arguments": "{\"steps\": \n[\"identity\", \"preferred_slot\"]\n\n}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 15,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_e6c7b6bc5456408ba866796d",
+          "function": {
+            "name": "prepare_read",
+            "arguments": "{\"step\": \"preferred_slot\"}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 16,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_e3bd0d52b39b4a0383618247",
+          "function": {
+            "name": "read_fields",
+            "arguments": "{\"handle\": \"R10\", \"fields\": \n[\"preferred_slot_ref\"]\n\n}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 17,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_faa3db4cd24247509a329fb0",
+          "function": {
+            "name": "confirm",
+            "arguments": "{\"step\": \"preferred_slot\"}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 18,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "type": "function",
+          "id": "call_22ce02f6886a4027abf5f44c",
+          "function": {
+            "name": "execute",
+            "arguments": "{\"step\": \"preferred_slot\", \"values\": {\"preferred_slot_ref\": \"SYN_1ff94b859103b\"}}"
+          }
+        }
+      ]
+    },
+    {
+      "turn": 19,
+      "model": "qwen4-max",
+      "fingerprint": "",
+      "text": "Done. The parcel was moved to your requested pickup point, and since the preferred slot was available, it has been booked (no backup needed). Identity verification was completed and confirmations were obtained before each change.",
+      "tool_calls": []
+    }
+  ],
+  "calls": [
+    {
+      "turn": 0,
+      "name": "status",
+      "args": {},
+      "response": {
+        "status": "ready",
+        "facts": {
+          "backup_open": true,
+          "preferred_open": true,
+          "site_open": true
+        },
+        "committed": [],
+        "plans": [
+          [
+            "identity",
+            "move"
+          ]
+        ]
+      }
+    },
+    {
+      "turn": 1,
+      "name": "select_plan",
+      "args": {
+        "steps": [
+          "identity",
+          "move"
+        ]
+      },
+      "response": {
+        "enabled": [
+          {
+            "step": "identity",
+            "input_fields": [
+              "identity_ref"
+            ],
+            "missing_fields": [
+              "identity_ref"
+            ],
+            "needs_confirmation": false
+          }
+        ],
+        "reused": []
+      }
+    },
+    {
+      "turn": 2,
+      "name": "prepare_read",
+      "args": {
+        "step": "identity"
+      },
+      "response": {
+        "handle": "R1",
+        "fields": [
+          "identity_ref"
+        ]
+      }
+    },
+    {
+      "turn": 3,
+      "name": "read_fields",
+      "args": {
+        "handle": "R1",
+        "fields": [
+          "identity_ref"
+        ]
+      },
+      "response": {
+        "values": {
+          "identity_ref": "SYN_1e8f7c9e4e2ac"
+        }
+      }
+    },
+    {
+      "turn": 4,
+      "name": "execute",
+      "args": {
+        "step": "identity",
+        "values": {
+          "identity_ref": "SYN_1e8f7c9e4e2ac"
+        }
+      },
+      "response": {
+        "verified": "identity",
+        "enabled": [
+          {
+            "step": "move",
+            "input_fields": [
+              "site_ref"
+            ],
+            "missing_fields": [
+              "site_ref"
+            ],
+            "needs_confirmation": true
+          }
+        ]
+      }
+    },
+    {
+      "turn": 5,
+      "name": "prepare_read",
+      "args": {
+        "step": "move"
+      },
+      "response": {
+        "handle": "R3",
+        "fields": [
+          "site_ref"
+        ]
+      }
+    },
+    {
+      "turn": 6,
+      "name": "read_fields",
+      "args": {
+        "handle": "R3",
+        "fields": [
+          "site_ref"
+        ]
+      },
+      "response": {
+        "values": {
+          "site_ref": "SYN_5685f4b5eb2b5"
+        }
+      }
+    },
+    {
+      "turn": 7,
+      "name": "confirm",
+      "args": {
+        "step": "move"
+      },
+      "response": {
+        "approved": true
+      }
+    },
+    {
+      "turn": 8,
+      "name": "execute",
+      "args": {
+        "step": "move",
+        "values": {
+          "site_ref": "SYN_5685f4b5eb2b5"
+        }
+      },
+      "response": {
+        "committed": "move",
+        "next": "status for remaining booking"
+      }
+    },
+    {
+      "turn": 9,
+      "name": "status",
+      "args": {},
+      "response": {
+        "status": "ready",
+        "facts": {
+          "backup_open": true,
+          "preferred_open": true,
+          "site_open": true
+        },
+        "committed": [
+          "move"
+        ],
+        "plans": [
+          [
+            "identity",
+            "preferred_slot"
+          ]
+        ]
+      }
+    },
+    {
+      "turn": 10,
+      "name": "select_plan",
+      "args": {
+        "steps": [
+          "identity",
+          "preferred_slot"
+        ]
+      },
+      "response": {
+        "enabled": [
+          {
+            "step": "preferred_slot",
+            "input_fields": [
+              "preferred_slot_ref"
+            ],
+            "missing_fields": [
+              "preferred_slot_ref"
+            ],
+            "needs_confirmation": true
+          }
+        ],
+        "reused": [
+          "identity_verified"
+        ]
+      }
+    },
+    {
+      "turn": 11,
+      "name": "prepare_read",
+      "args": {
+        "step": "preferred_slot"
+      },
+      "response": {
+        "handle": "R7",
+        "fields": [
+          "preferred_slot_ref"
+        ]
+      }
+    },
+    {
+      "turn": 12,
+      "name": "read_fields",
+      "args": {
+        "handle": "R7",
+        "fields": [
+          "preferred_slot_ref"
+        ]
+      },
+      "response": {
+        "error": "refresh_required",
+        "feedback": "Call status and select a current plan. Continue only with enabled steps."
+      }
+    },
+    {
+      "turn": 13,
+      "name": "status",
+      "args": {},
+      "response": {
+        "status": "ready",
+        "facts": {
+          "backup_open": true,
+          "preferred_open": true,
+          "site_open": true
+        },
+        "committed": [
+          "move"
+        ],
+        "plans": [
+          [
+            "identity",
+            "preferred_slot"
+          ]
+        ]
+      }
+    },
+    {
+      "turn": 14,
+      "name": "select_plan",
+      "args": {
+        "steps": [
+          "identity",
+          "preferred_slot"
+        ]
+      },
+      "response": {
+        "enabled": [
+          {
+            "step": "preferred_slot",
+            "input_fields": [
+              "preferred_slot_ref"
+            ],
+            "missing_fields": [
+              "preferred_slot_ref"
+            ],
+            "needs_confirmation": true
+          }
+        ],
+        "reused": [
+          "identity_verified"
+        ]
+      }
+    },
+    {
+      "turn": 15,
+      "name": "prepare_read",
+      "args": {
+        "step": "preferred_slot"
+      },
+      "response": {
+        "handle": "R10",
+        "fields": [
+          "preferred_slot_ref"
+        ]
+      }
+    },
+    {
+      "turn": 16,
+      "name": "read_fields",
+      "args": {
+        "handle": "R10",
+        "fields": [
+          "preferred_slot_ref"
+        ]
+      },
+      "response": {
+        "values": {
+          "preferred_slot_ref": "SYN_1ff94b859103b"
+        }
+      }
+    },
+    {
+      "turn": 17,
+      "name": "confirm",
+      "args": {
+        "step": "preferred_slot"
+      },
+      "response": {
+        "approved": true
+      }
+    },
+    {
+      "turn": 18,
+      "name": "execute",
+      "args": {
+        "step": "preferred_slot",
+        "values": {
+          "preferred_slot_ref": "SYN_1ff94b859103b"
+        }
+      },
+      "response": {
+        "committed": "preferred_slot",
+        "complete": true
+      }
+    }
+  ],
+  "protocol_errors": [],
+  "http_attempts": 20,
+  "http_statuses": {
+    "200": 20
+  }
+}

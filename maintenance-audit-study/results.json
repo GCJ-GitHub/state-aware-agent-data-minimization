@@ -1,0 +1,6643 @@
+{
+  "summary": {
+    "route_table": {
+      "changes": {
+        "authored_rule_records": 3,
+        "authored_selector_entries": 3,
+        "original_operations_changed": 4,
+        "generated_operations_added": 7,
+        "existing_recipes_changed": 4,
+        "generated_recipes_added": 4
+      },
+      "clean_correct": 36,
+      "legacy_same": 12,
+      "mutants_detected": 15,
+      "mutants_with_excess": 15,
+      "mutants_with_wrong_business": 15,
+      "mutants_with_missing_verification": 12,
+      "structured_reconstructable": 8,
+      "native_read_success_event": 0,
+      "native_denial_message": 5,
+      "native_rule_id": 0
+    },
+    "contract": {
+      "changes": {
+        "authored_rule_records": 3,
+        "authored_selector_entries": 4,
+        "original_operations_changed": 4,
+        "generated_operations_added": 7,
+        "existing_recipes_changed": 0,
+        "generated_recipes_added": 0
+      },
+      "clean_correct": 36,
+      "legacy_same": 12,
+      "mutants_detected": 15,
+      "mutants_with_excess": 15,
+      "mutants_with_wrong_business": 15,
+      "mutants_with_missing_verification": 12,
+      "structured_reconstructable": 8,
+      "native_read_success_event": 2,
+      "native_denial_message": 6,
+      "native_rule_id": 0
+    }
+  },
+  "regression": [
+    {
+      "arm": "route_table",
+      "fixture": {
+        "domain": "refund",
+        "variant": "wallet",
+        "facts": {
+          "wallet_online": true,
+          "bank_online": true,
+          "recent_bank_change": false
+        },
+        "goals": [
+          "refund"
+        ],
+        "authorized": false,
+        "withheld": [
+          "beneficiary_ref"
+        ],
+        "branches": [
+          "wallet"
+        ],
+        "fields": [
+          "wallet_ref"
+        ],
+        "steps": [
+          "wallet"
+        ]
+      },
+      "before": {
+        "steps": [
+          "wallet"
+        ],
+        "branches": [
+          "wallet"
+        ],
+        "fields": [
+          "wallet_ref"
+        ],
+        "confirmations": 1
+      },
+      "after": {
+        "steps": [
+          "wallet"
+        ],
+        "branches": [
+          "wallet"
+        ],
+        "fields": [
+          "wallet_ref"
+        ],
+        "confirmations": 1
+      }
+    },
+    {
+      "arm": "route_table",
+      "fixture": {
+        "domain": "refund",
+        "variant": "wallet",
+        "facts": {
+          "wallet_online": true,
+          "bank_online": true,
+          "recent_bank_change": false
+        },
+        "goals": [
+          "refund"
+        ],
+        "authorized": true,
+        "withheld": [],
+        "branches": [
+          "wallet"
+        ],
+        "fields": [
+          "wallet_ref"
+        ],
+        "steps": [
+          "wallet"
+        ]
+      },
+      "before": {
+        "steps": [
+          "wallet"
+        ],
+        "branches": [
+          "wallet"
+        ],
+        "fields": [
+          "wallet_ref"
+        ],
+        "confirmations": 1
+      },
+      "after": {
+        "steps": [
+          "wallet"
+        ],
+        "branches": [
+          "wallet"
+        ],
+        "fields": [
+          "wallet_ref"
+        ],
+        "confirmations": 1
+      }
+    },
+    {
+      "arm": "route_table",
+      "fixture": {
+        "domain": "refund",
+        "variant": "bank",
+        "facts": {
+          "wallet_online": false,
+          "bank_online": true,
+          "recent_bank_change": false
+        },
+        "goals": [
+          "refund"
+        ],
+        "authorized": false,
+        "withheld": [
+          "beneficiary_ref"
+        ],
+        "branches": [
+          "bank"
+        ],
+        "fields": [
+          "bank_ref",
+          "owner_ref"
+        ],
+        "steps": [
+          "bank"
+        ]
+      },
+      "before": {
+        "steps": [
+          "bank"
+        ],
+        "branches": [
+          "bank"
+        ],
+        "fields": [
+          "bank_ref",
+          "owner_ref"
+        ],
+        "confirmations": 1
+      },
+      "after": {
+        "steps": [
+          "bank"
+        ],
+        "branches": [
+          "bank"
+        ],
+        "fields": [
+          "bank_ref",
+          "owner_ref"
+        ],
+        "confirmations": 1
+      }
+    },
+    {
+      "arm": "route_table",
+      "fixture": {
+        "domain": "refund",
+        "variant": "bank",
+        "facts": {
+          "wallet_online": false,
+          "bank_online": true,
+          "recent_bank_change": false
+        },
+        "goals": [
+          "refund"
+        ],
+        "authorized": true,
+        "withheld": [],
+        "branches": [
+          "bank"
+        ],
+        "fields": [
+          "bank_ref",
+          "owner_ref"
+        ],
+        "steps": [
+          "bank"
+        ]
+      },
+      "before": {
+        "steps": [
+          "bank"
+        ],
+        "branches": [
+          "bank"
+        ],
+        "fields": [
+          "bank_ref",
+          "owner_ref"
+        ],
+        "confirmations": 1
+      },
+      "after": {
+        "steps": [
+          "bank"
+        ],
+        "branches": [
+          "bank"
+        ],
+        "fields": [
+          "bank_ref",
+          "owner_ref"
+        ],
+        "confirmations": 1
+      }
+    },
+    {
+      "arm": "route_table",
+      "fixture": {
+        "domain": "refund",
+        "variant": "none",
+        "facts": {
+          "wallet_online": false,
+          "bank_online": false,
+          "recent_bank_change": false
+        },
+        "goals": [
+          "refund"
+        ],
+        "authorized": false,
+        "withheld": [
+          "beneficiary_ref"
+        ],
+        "branches": [],
+        "fields": [],
+        "steps": []
+      },
+      "before": {
+        "steps": [],
+        "branches": [],
+        "fields": [],
+        "confirmations": 0
+      },
+      "after": {
+        "steps": [],
+        "branches": [],
+        "fields": [],
+        "confirmations": 0
+      }
+    },
+    {
+      "arm": "route_table",
+      "fixture": {
+        "domain": "refund",
+        "variant": "none",
+        "facts": {
+          "wallet_online": false,
+          "bank_online": false,
+          "recent_bank_change": false
+        },
+        "goals": [
+          "refund"
+        ],
+        "authorized": true,
+        "withheld": [],
+        "branches": [],
+        "fields": [],
+        "steps": []
+      },
+      "before": {
+        "steps": [],
+        "branches": [],
+        "fields": [],
+        "confirmations": 0
+      },
+      "after": {
+        "steps": [],
+        "branches": [],
+        "fields": [],
+        "confirmations": 0
+      }
+    },
+    {
+      "arm": "route_table",
+      "fixture": {
+        "domain": "pickup",
+        "variant": "preferred",
+        "facts": {
+          "site_open": true,
+          "preferred_open": true,
+          "backup_open": true,
+          "cross_region": false,
+          "restricted_site": false
+        },
+        "goals": [
+          "site_change",
+          "booking"
+        ],
+        "authorized": false,
+        "withheld": [
+          "carrier_declaration_ref",
+          "reservation_attestation_ref"
+        ],
+        "branches": [
+          "move",
+          "preferred_slot"
+        ],
+        "fields": [
+          "identity_ref",
+          "preferred_slot_ref",
+          "site_ref"
+        ],
+        "steps": [
+          "identity",
+          "move",
+          "preferred_slot"
+        ]
+      },
+      "before": {
+        "steps": [
+          "identity",
+          "move",
+          "preferred_slot"
+        ],
+        "branches": [
+          "move",
+          "preferred_slot"
+        ],
+        "fields": [
+          "identity_ref",
+          "preferred_slot_ref",
+          "site_ref"
+        ],
+        "confirmations": 2
+      },
+      "after": {
+        "steps": [
+          "identity",
+          "move",
+          "preferred_slot"
+        ],
+        "branches": [
+          "move",
+          "preferred_slot"
+        ],
+        "fields": [
+          "identity_ref",
+          "preferred_slot_ref",
+          "site_ref"
+        ],
+        "confirmations": 2
+      }
+    },
+    {
+      "arm": "route_table",
+      "fixture": {
+        "domain": "pickup",
+        "variant": "preferred",
+        "facts": {
+          "site_open": true,
+          "preferred_open": true,
+          "backup_open": true,
+          "cross_region": false,
+          "restricted_site": false
+        },
+        "goals": [
+          "site_change",
+          "booking"
+        ],
+        "authorized": true,
+        "withheld": [],
+        "branches": [
+          "move",
+          "preferred_slot"
+        ],
+        "fields": [
+          "identity_ref",
+          "preferred_slot_ref",
+          "site_ref"
+        ],
+        "steps": [
+          "identity",
+          "move",
+          "preferred_slot"
+        ]
+      },
+      "before": {
+        "steps": [
+          "identity",
+          "move",
+          "preferred_slot"
+        ],
+        "branches": [
+          "move",
+          "preferred_slot"
+        ],
+        "fields": [
+          "identity_ref",
+          "preferred_slot_ref",
+          "site_ref"
+        ],
+        "confirmations": 2
+      },
+      "after": {
+        "steps": [
+          "identity",
+          "move",
+          "preferred_slot"
+        ],
+        "branches": [
+          "move",
+          "preferred_slot"
+        ],
+        "fields": [
+          "identity_ref",
+          "preferred_slot_ref",
+          "site_ref"
+        ],
+        "confirmations": 2
+      }
+    },
+    {
+      "arm": "route_table",
+      "fixture": {
+        "domain": "pickup",
+        "variant": "backup",
+        "facts": {
+          "site_open": true,
+          "preferred_open": false,
+          "backup_open": true,
+          "cross_region": false,
+          "restricted_site": false
+        },
+        "goals": [
+          "site_change",
+          "booking"
+        ],
+        "authorized": false,
+        "withheld": [
+          "carrier_declaration_ref",
+          "reservation_attestation_ref"
+        ],
+        "branches": [
+          "backup_slot",
+          "move"
+        ],
+        "fields": [
+          "backup_slot_ref",
+          "identity_ref",
+          "site_ref"
+        ],
+        "steps": [
+          "backup_slot",
+          "identity",
+          "move"
+        ]
+      },
+      "before": {
+        "steps": [
+          "backup_slot",
+          "identity",
+          "move"
+        ],
+        "branches": [
+          "backup_slot",
+          "move"
+        ],
+        "fields": [
+          "backup_slot_ref",
+          "identity_ref",
+          "site_ref"
+        ],
+        "confirmations": 2
+      },
+      "after": {
+        "steps": [
+          "backup_slot",
+          "identity",
+          "move"
+        ],
+        "branches": [
+          "backup_slot",
+          "move"
+        ],
+        "fields": [
+          "backup_slot_ref",
+          "identity_ref",
+          "site_ref"
+        ],
+        "confirmations": 2
+      }
+    },
+    {
+      "arm": "route_table",
+      "fixture": {
+        "domain": "pickup",
+        "variant": "backup",
+        "facts": {
+          "site_open": true,
+          "preferred_open": false,
+          "backup_open": true,
+          "cross_region": false,
+          "restricted_site": false
+        },
+        "goals": [
+          "site_change",
+          "booking"
+        ],
+        "authorized": true,
+        "withheld": [],
+        "branches": [
+          "backup_slot",
+          "move"
+        ],
+        "fields": [
+          "backup_slot_ref",
+          "identity_ref",
+          "site_ref"
+        ],
+        "steps": [
+          "backup_slot",
+          "identity",
+          "move"
+        ]
+      },
+      "before": {
+        "steps": [
+          "backup_slot",
+          "identity",
+          "move"
+        ],
+        "branches": [
+          "backup_slot",
+          "move"
+        ],
+        "fields": [
+          "backup_slot_ref",
+          "identity_ref",
+          "site_ref"
+        ],
+        "confirmations": 2
+      },
+      "after": {
+        "steps": [
+          "backup_slot",
+          "identity",
+          "move"
+        ],
+        "branches": [
+          "backup_slot",
+          "move"
+        ],
+        "fields": [
+          "backup_slot_ref",
+          "identity_ref",
+          "site_ref"
+        ],
+        "confirmations": 2
+      }
+    },
+    {
+      "arm": "route_table",
+      "fixture": {
+        "domain": "pickup",
+        "variant": "closed",
+        "facts": {
+          "site_open": false,
+          "preferred_open": false,
+          "backup_open": false,
+          "cross_region": false,
+          "restricted_site": false
+        },
+        "goals": [
+          "site_change",
+          "booking"
+        ],
+        "authorized": false,
+        "withheld": [
+          "carrier_declaration_ref",
+          "reservation_attestation_ref"
+        ],
+        "branches": [],
+        "fields": [],
+        "steps": []
+      },
+      "before": {
+        "steps": [],
+        "branches": [],
+        "fields": [],
+        "confirmations": 0
+      },
+      "after": {
+        "steps": [],
+        "branches": [],
+        "fields": [],
+        "confirmations": 0
+      }
+    },
+    {
+      "arm": "route_table",
+      "fixture": {
+        "domain": "pickup",
+        "variant": "closed",
+        "facts": {
+          "site_open": false,
+          "preferred_open": false,
+          "backup_open": false,
+          "cross_region": false,
+          "restricted_site": false
+        },
+        "goals": [
+          "site_change",
+          "booking"
+        ],
+        "authorized": true,
+        "withheld": [],
+        "branches": [],
+        "fields": [],
+        "steps": []
+      },
+      "before": {
+        "steps": [],
+        "branches": [],
+        "fields": [],
+        "confirmations": 0
+      },
+      "after": {
+        "steps": [],
+        "branches": [],
+        "fields": [],
+        "confirmations": 0
+      }
+    },
+    {
+      "arm": "contract",
+      "fixture": {
+        "domain": "refund",
+        "variant": "wallet",
+        "facts": {
+          "wallet_online": true,
+          "bank_online": true,
+          "recent_bank_change": false
+        },
+        "goals": [
+          "refund"
+        ],
+        "authorized": false,
+        "withheld": [
+          "beneficiary_ref"
+        ],
+        "branches": [
+          "wallet"
+        ],
+        "fields": [
+          "wallet_ref"
+        ],
+        "steps": [
+          "wallet"
+        ]
+      },
+      "before": {
+        "steps": [
+          "wallet"
+        ],
+        "branches": [
+          "wallet"
+        ],
+        "fields": [
+          "wallet_ref"
+        ],
+        "confirmations": 1
+      },
+      "after": {
+        "steps": [
+          "wallet"
+        ],
+        "branches": [
+          "wallet"
+        ],
+        "fields": [
+          "wallet_ref"
+        ],
+        "confirmations": 1
+      }
+    },
+    {
+      "arm": "contract",
+      "fixture": {
+        "domain": "refund",
+        "variant": "wallet",
+        "facts": {
+          "wallet_online": true,
+          "bank_online": true,
+          "recent_bank_change": false
+        },
+        "goals": [
+          "refund"
+        ],
+        "authorized": true,
+        "withheld": [],
+        "branches": [
+          "wallet"
+        ],
+        "fields": [
+          "wallet_ref"
+        ],
+        "steps": [
+          "wallet"
+        ]
+      },
+      "before": {
+        "steps": [
+          "wallet"
+        ],
+        "branches": [
+          "wallet"
+        ],
+        "fields": [
+          "wallet_ref"
+        ],
+        "confirmations": 1
+      },
+      "after": {
+        "steps": [
+          "wallet"
+        ],
+        "branches": [
+          "wallet"
+        ],
+        "fields": [
+          "wallet_ref"
+        ],
+        "confirmations": 1
+      }
+    },
+    {
+      "arm": "contract",
+      "fixture": {
+        "domain": "refund",
+        "variant": "bank",
+        "facts": {
+          "wallet_online": false,
+          "bank_online": true,
+          "recent_bank_change": false
+        },
+        "goals": [
+          "refund"
+        ],
+        "authorized": false,
+        "withheld": [
+          "beneficiary_ref"
+        ],
+        "branches": [
+          "bank"
+        ],
+        "fields": [
+          "bank_ref",
+          "owner_ref"
+        ],
+        "steps": [
+          "bank"
+        ]
+      },
+      "before": {
+        "steps": [
+          "bank"
+        ],
+        "branches": [
+          "bank"
+        ],
+        "fields": [
+          "bank_ref",
+          "owner_ref"
+        ],
+        "confirmations": 1
+      },
+      "after": {
+        "steps": [
+          "bank"
+        ],
+        "branches": [
+          "bank"
+        ],
+        "fields": [
+          "bank_ref",
+          "owner_ref"
+        ],
+        "confirmations": 1
+      }
+    },
+    {
+      "arm": "contract",
+      "fixture": {
+        "domain": "refund",
+        "variant": "bank",
+        "facts": {
+          "wallet_online": false,
+          "bank_online": true,
+          "recent_bank_change": false
+        },
+        "goals": [
+          "refund"
+        ],
+        "authorized": true,
+        "withheld": [],
+        "branches": [
+          "bank"
+        ],
+        "fields": [
+          "bank_ref",
+          "owner_ref"
+        ],
+        "steps": [
+          "bank"
+        ]
+      },
+      "before": {
+        "steps": [
+          "bank"
+        ],
+        "branches": [
+          "bank"
+        ],
+        "fields": [
+          "bank_ref",
+          "owner_ref"
+        ],
+        "confirmations": 1
+      },
+      "after": {
+        "steps": [
+          "bank"
+        ],
+        "branches": [
+          "bank"
+        ],
+        "fields": [
+          "bank_ref",
+          "owner_ref"
+        ],
+        "confirmations": 1
+      }
+    },
+    {
+      "arm": "contract",
+      "fixture": {
+        "domain": "refund",
+        "variant": "none",
+        "facts": {
+          "wallet_online": false,
+          "bank_online": false,
+          "recent_bank_change": false
+        },
+        "goals": [
+          "refund"
+        ],
+        "authorized": false,
+        "withheld": [
+          "beneficiary_ref"
+        ],
+        "branches": [],
+        "fields": [],
+        "steps": []
+      },
+      "before": {
+        "steps": [],
+        "branches": [],
+        "fields": [],
+        "confirmations": 0
+      },
+      "after": {
+        "steps": [],
+        "branches": [],
+        "fields": [],
+        "confirmations": 0
+      }
+    },
+    {
+      "arm": "contract",
+      "fixture": {
+        "domain": "refund",
+        "variant": "none",
+        "facts": {
+          "wallet_online": false,
+          "bank_online": false,
+          "recent_bank_change": false
+        },
+        "goals": [
+          "refund"
+        ],
+        "authorized": true,
+        "withheld": [],
+        "branches": [],
+        "fields": [],
+        "steps": []
+      },
+      "before": {
+        "steps": [],
+        "branches": [],
+        "fields": [],
+        "confirmations": 0
+      },
+      "after": {
+        "steps": [],
+        "branches": [],
+        "fields": [],
+        "confirmations": 0
+      }
+    },
+    {
+      "arm": "contract",
+      "fixture": {
+        "domain": "pickup",
+        "variant": "preferred",
+        "facts": {
+          "site_open": true,
+          "preferred_open": true,
+          "backup_open": true,
+          "cross_region": false,
+          "restricted_site": false
+        },
+        "goals": [
+          "site_change",
+          "booking"
+        ],
+        "authorized": false,
+        "withheld": [
+          "carrier_declaration_ref",
+          "reservation_attestation_ref"
+        ],
+        "branches": [
+          "move",
+          "preferred_slot"
+        ],
+        "fields": [
+          "identity_ref",
+          "preferred_slot_ref",
+          "site_ref"
+        ],
+        "steps": [
+          "identity",
+          "move",
+          "preferred_slot"
+        ]
+      },
+      "before": {
+        "steps": [
+          "identity",
+          "move",
+          "preferred_slot"
+        ],
+        "branches": [
+          "move",
+          "preferred_slot"
+        ],
+        "fields": [
+          "identity_ref",
+          "preferred_slot_ref",
+          "site_ref"
+        ],
+        "confirmations": 2
+      },
+      "after": {
+        "steps": [
+          "identity",
+          "move",
+          "preferred_slot"
+        ],
+        "branches": [
+          "move",
+          "preferred_slot"
+        ],
+        "fields": [
+          "identity_ref",
+          "preferred_slot_ref",
+          "site_ref"
+        ],
+        "confirmations": 2
+      }
+    },
+    {
+      "arm": "contract",
+      "fixture": {
+        "domain": "pickup",
+        "variant": "preferred",
+        "facts": {
+          "site_open": true,
+          "preferred_open": true,
+          "backup_open": true,
+          "cross_region": false,
+          "restricted_site": false
+        },
+        "goals": [
+          "site_change",
+          "booking"
+        ],
+        "authorized": true,
+        "withheld": [],
+        "branches": [
+          "move",
+          "preferred_slot"
+        ],
+        "fields": [
+          "identity_ref",
+          "preferred_slot_ref",
+          "site_ref"
+        ],
+        "steps": [
+          "identity",
+          "move",
+          "preferred_slot"
+        ]
+      },
+      "before": {
+        "steps": [
+          "identity",
+          "move",
+          "preferred_slot"
+        ],
+        "branches": [
+          "move",
+          "preferred_slot"
+        ],
+        "fields": [
+          "identity_ref",
+          "preferred_slot_ref",
+          "site_ref"
+        ],
+        "confirmations": 2
+      },
+      "after": {
+        "steps": [
+          "identity",
+          "move",
+          "preferred_slot"
+        ],
+        "branches": [
+          "move",
+          "preferred_slot"
+        ],
+        "fields": [
+          "identity_ref",
+          "preferred_slot_ref",
+          "site_ref"
+        ],
+        "confirmations": 2
+      }
+    },
+    {
+      "arm": "contract",
+      "fixture": {
+        "domain": "pickup",
+        "variant": "backup",
+        "facts": {
+          "site_open": true,
+          "preferred_open": false,
+          "backup_open": true,
+          "cross_region": false,
+          "restricted_site": false
+        },
+        "goals": [
+          "site_change",
+          "booking"
+        ],
+        "authorized": false,
+        "withheld": [
+          "carrier_declaration_ref",
+          "reservation_attestation_ref"
+        ],
+        "branches": [
+          "backup_slot",
+          "move"
+        ],
+        "fields": [
+          "backup_slot_ref",
+          "identity_ref",
+          "site_ref"
+        ],
+        "steps": [
+          "backup_slot",
+          "identity",
+          "move"
+        ]
+      },
+      "before": {
+        "steps": [
+          "backup_slot",
+          "identity",
+          "move"
+        ],
+        "branches": [
+          "backup_slot",
+          "move"
+        ],
+        "fields": [
+          "backup_slot_ref",
+          "identity_ref",
+          "site_ref"
+        ],
+        "confirmations": 2
+      },
+      "after": {
+        "steps": [
+          "backup_slot",
+          "identity",
+          "move"
+        ],
+        "branches": [
+          "backup_slot",
+          "move"
+        ],
+        "fields": [
+          "backup_slot_ref",
+          "identity_ref",
+          "site_ref"
+        ],
+        "confirmations": 2
+      }
+    },
+    {
+      "arm": "contract",
+      "fixture": {
+        "domain": "pickup",
+        "variant": "backup",
+        "facts": {
+          "site_open": true,
+          "preferred_open": false,
+          "backup_open": true,
+          "cross_region": false,
+          "restricted_site": false
+        },
+        "goals": [
+          "site_change",
+          "booking"
+        ],
+        "authorized": true,
+        "withheld": [],
+        "branches": [
+          "backup_slot",
+          "move"
+        ],
+        "fields": [
+          "backup_slot_ref",
+          "identity_ref",
+          "site_ref"
+        ],
+        "steps": [
+          "backup_slot",
+          "identity",
+          "move"
+        ]
+      },
+      "before": {
+        "steps": [
+          "backup_slot",
+          "identity",
+          "move"
+        ],
+        "branches": [
+          "backup_slot",
+          "move"
+        ],
+        "fields": [
+          "backup_slot_ref",
+          "identity_ref",
+          "site_ref"
+        ],
+        "confirmations": 2
+      },
+      "after": {
+        "steps": [
+          "backup_slot",
+          "identity",
+          "move"
+        ],
+        "branches": [
+          "backup_slot",
+          "move"
+        ],
+        "fields": [
+          "backup_slot_ref",
+          "identity_ref",
+          "site_ref"
+        ],
+        "confirmations": 2
+      }
+    },
+    {
+      "arm": "contract",
+      "fixture": {
+        "domain": "pickup",
+        "variant": "closed",
+        "facts": {
+          "site_open": false,
+          "preferred_open": false,
+          "backup_open": false,
+          "cross_region": false,
+          "restricted_site": false
+        },
+        "goals": [
+          "site_change",
+          "booking"
+        ],
+        "authorized": false,
+        "withheld": [
+          "carrier_declaration_ref",
+          "reservation_attestation_ref"
+        ],
+        "branches": [],
+        "fields": [],
+        "steps": []
+      },
+      "before": {
+        "steps": [],
+        "branches": [],
+        "fields": [],
+        "confirmations": 0
+      },
+      "after": {
+        "steps": [],
+        "branches": [],
+        "fields": [],
+        "confirmations": 0
+      }
+    },
+    {
+      "arm": "contract",
+      "fixture": {
+        "domain": "pickup",
+        "variant": "closed",
+        "facts": {
+          "site_open": false,
+          "preferred_open": false,
+          "backup_open": false,
+          "cross_region": false,
+          "restricted_site": false
+        },
+        "goals": [
+          "site_change",
+          "booking"
+        ],
+        "authorized": true,
+        "withheld": [],
+        "branches": [],
+        "fields": [],
+        "steps": []
+      },
+      "before": {
+        "steps": [],
+        "branches": [],
+        "fields": [],
+        "confirmations": 0
+      },
+      "after": {
+        "steps": [],
+        "branches": [],
+        "fields": [],
+        "confirmations": 0
+      }
+    }
+  ],
+  "faults": [
+    {
+      "arm": "route_table",
+      "rule": "R1",
+      "fault": "missing_rule",
+      "violations": [
+        {
+          "fixture_index": 6,
+          "excess": [
+            "bank_ref",
+            "owner_ref"
+          ],
+          "wrong_business": true,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "bank"
+            ],
+            "branches": [
+              "bank"
+            ],
+            "fields": [
+              "bank_ref",
+              "owner_ref"
+            ],
+            "confirmations": 1
+          }
+        },
+        {
+          "fixture_index": 7,
+          "excess": [],
+          "wrong_business": false,
+          "missing_verification": [
+            "beneficiary_check"
+          ],
+          "actual": {
+            "steps": [
+              "bank"
+            ],
+            "branches": [
+              "bank"
+            ],
+            "fields": [
+              "bank_ref",
+              "owner_ref"
+            ],
+            "confirmations": 1
+          }
+        }
+      ]
+    },
+    {
+      "arm": "route_table",
+      "rule": "R1",
+      "fault": "wrong_selector",
+      "violations": [
+        {
+          "fixture_index": 6,
+          "excess": [
+            "bank_ref",
+            "owner_ref"
+          ],
+          "wrong_business": true,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "bank"
+            ],
+            "branches": [
+              "bank"
+            ],
+            "fields": [
+              "bank_ref",
+              "owner_ref"
+            ],
+            "confirmations": 1
+          }
+        },
+        {
+          "fixture_index": 7,
+          "excess": [],
+          "wrong_business": false,
+          "missing_verification": [
+            "beneficiary_check"
+          ],
+          "actual": {
+            "steps": [
+              "bank"
+            ],
+            "branches": [
+              "bank"
+            ],
+            "fields": [
+              "bank_ref",
+              "owner_ref"
+            ],
+            "confirmations": 1
+          }
+        }
+      ]
+    },
+    {
+      "arm": "route_table",
+      "rule": "R1",
+      "fault": "reverse_condition",
+      "violations": [
+        {
+          "fixture_index": 4,
+          "excess": [],
+          "wrong_business": true,
+          "missing_verification": [
+            "bank"
+          ],
+          "actual": {
+            "steps": [],
+            "branches": [],
+            "fields": [],
+            "confirmations": 0
+          }
+        },
+        {
+          "fixture_index": 5,
+          "excess": [
+            "beneficiary_ref"
+          ],
+          "wrong_business": false,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "bank",
+              "beneficiary_check"
+            ],
+            "branches": [
+              "bank"
+            ],
+            "fields": [
+              "bank_ref",
+              "beneficiary_ref",
+              "owner_ref"
+            ],
+            "confirmations": 1
+          }
+        },
+        {
+          "fixture_index": 6,
+          "excess": [
+            "bank_ref",
+            "owner_ref"
+          ],
+          "wrong_business": true,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "bank"
+            ],
+            "branches": [
+              "bank"
+            ],
+            "fields": [
+              "bank_ref",
+              "owner_ref"
+            ],
+            "confirmations": 1
+          }
+        },
+        {
+          "fixture_index": 7,
+          "excess": [],
+          "wrong_business": false,
+          "missing_verification": [
+            "beneficiary_check"
+          ],
+          "actual": {
+            "steps": [
+              "bank"
+            ],
+            "branches": [
+              "bank"
+            ],
+            "fields": [
+              "bank_ref",
+              "owner_ref"
+            ],
+            "confirmations": 1
+          }
+        }
+      ]
+    },
+    {
+      "arm": "route_table",
+      "rule": "R1",
+      "fault": "wrong_field",
+      "violations": [
+        {
+          "fixture_index": 6,
+          "excess": [
+            "audit_trap_ref",
+            "bank_ref",
+            "owner_ref"
+          ],
+          "wrong_business": true,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "bank",
+              "beneficiary_check"
+            ],
+            "branches": [
+              "bank"
+            ],
+            "fields": [
+              "audit_trap_ref",
+              "bank_ref",
+              "owner_ref"
+            ],
+            "confirmations": 1
+          }
+        },
+        {
+          "fixture_index": 7,
+          "excess": [
+            "audit_trap_ref"
+          ],
+          "wrong_business": false,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "bank",
+              "beneficiary_check"
+            ],
+            "branches": [
+              "bank"
+            ],
+            "fields": [
+              "audit_trap_ref",
+              "bank_ref",
+              "owner_ref"
+            ],
+            "confirmations": 1
+          }
+        }
+      ]
+    },
+    {
+      "arm": "route_table",
+      "rule": "R1",
+      "fault": "missing_dependency",
+      "violations": [
+        {
+          "fixture_index": 6,
+          "excess": [
+            "bank_ref",
+            "owner_ref"
+          ],
+          "wrong_business": true,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "bank"
+            ],
+            "branches": [
+              "bank"
+            ],
+            "fields": [
+              "bank_ref",
+              "owner_ref"
+            ],
+            "confirmations": 1
+          }
+        },
+        {
+          "fixture_index": 7,
+          "excess": [],
+          "wrong_business": false,
+          "missing_verification": [
+            "beneficiary_check"
+          ],
+          "actual": {
+            "steps": [
+              "bank"
+            ],
+            "branches": [
+              "bank"
+            ],
+            "fields": [
+              "bank_ref",
+              "owner_ref"
+            ],
+            "confirmations": 1
+          }
+        }
+      ]
+    },
+    {
+      "arm": "route_table",
+      "rule": "R2",
+      "fault": "missing_rule",
+      "violations": [
+        {
+          "fixture_index": 16,
+          "excess": [
+            "identity_ref",
+            "preferred_slot_ref",
+            "site_ref"
+          ],
+          "wrong_business": true,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "identity",
+              "move",
+              "preferred_slot"
+            ],
+            "branches": [
+              "move",
+              "preferred_slot"
+            ],
+            "fields": [
+              "identity_ref",
+              "preferred_slot_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 17,
+          "excess": [],
+          "wrong_business": false,
+          "missing_verification": [
+            "carrier_check"
+          ],
+          "actual": {
+            "steps": [
+              "identity",
+              "move",
+              "preferred_slot"
+            ],
+            "branches": [
+              "move",
+              "preferred_slot"
+            ],
+            "fields": [
+              "identity_ref",
+              "preferred_slot_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 19,
+          "excess": [],
+          "wrong_business": false,
+          "missing_verification": [
+            "carrier_check"
+          ],
+          "actual": {
+            "steps": [
+              "identity",
+              "move",
+              "preferred_slot",
+              "reservation_check"
+            ],
+            "branches": [
+              "move",
+              "preferred_slot"
+            ],
+            "fields": [
+              "identity_ref",
+              "preferred_slot_ref",
+              "reservation_attestation_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 24,
+          "excess": [
+            "backup_slot_ref",
+            "identity_ref",
+            "site_ref"
+          ],
+          "wrong_business": true,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "backup_slot",
+              "identity",
+              "move"
+            ],
+            "branches": [
+              "backup_slot",
+              "move"
+            ],
+            "fields": [
+              "backup_slot_ref",
+              "identity_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 25,
+          "excess": [],
+          "wrong_business": false,
+          "missing_verification": [
+            "carrier_check"
+          ],
+          "actual": {
+            "steps": [
+              "backup_slot",
+              "identity",
+              "move"
+            ],
+            "branches": [
+              "backup_slot",
+              "move"
+            ],
+            "fields": [
+              "backup_slot_ref",
+              "identity_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 27,
+          "excess": [],
+          "wrong_business": false,
+          "missing_verification": [
+            "carrier_check"
+          ],
+          "actual": {
+            "steps": [
+              "backup_slot",
+              "identity",
+              "move",
+              "reservation_check"
+            ],
+            "branches": [
+              "backup_slot",
+              "move"
+            ],
+            "fields": [
+              "backup_slot_ref",
+              "identity_ref",
+              "reservation_attestation_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        }
+      ]
+    },
+    {
+      "arm": "route_table",
+      "rule": "R2",
+      "fault": "wrong_selector",
+      "violations": [
+        {
+          "fixture_index": 16,
+          "excess": [
+            "identity_ref",
+            "preferred_slot_ref",
+            "site_ref"
+          ],
+          "wrong_business": true,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "identity",
+              "move",
+              "preferred_slot"
+            ],
+            "branches": [
+              "move",
+              "preferred_slot"
+            ],
+            "fields": [
+              "identity_ref",
+              "preferred_slot_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 17,
+          "excess": [],
+          "wrong_business": false,
+          "missing_verification": [
+            "carrier_check"
+          ],
+          "actual": {
+            "steps": [
+              "identity",
+              "move",
+              "preferred_slot"
+            ],
+            "branches": [
+              "move",
+              "preferred_slot"
+            ],
+            "fields": [
+              "identity_ref",
+              "preferred_slot_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 19,
+          "excess": [],
+          "wrong_business": false,
+          "missing_verification": [
+            "carrier_check"
+          ],
+          "actual": {
+            "steps": [
+              "identity",
+              "move",
+              "preferred_slot",
+              "reservation_check"
+            ],
+            "branches": [
+              "move",
+              "preferred_slot"
+            ],
+            "fields": [
+              "identity_ref",
+              "preferred_slot_ref",
+              "reservation_attestation_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 24,
+          "excess": [
+            "backup_slot_ref",
+            "identity_ref",
+            "site_ref"
+          ],
+          "wrong_business": true,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "backup_slot",
+              "identity",
+              "move"
+            ],
+            "branches": [
+              "backup_slot",
+              "move"
+            ],
+            "fields": [
+              "backup_slot_ref",
+              "identity_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 25,
+          "excess": [],
+          "wrong_business": false,
+          "missing_verification": [
+            "carrier_check"
+          ],
+          "actual": {
+            "steps": [
+              "backup_slot",
+              "identity",
+              "move"
+            ],
+            "branches": [
+              "backup_slot",
+              "move"
+            ],
+            "fields": [
+              "backup_slot_ref",
+              "identity_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 27,
+          "excess": [],
+          "wrong_business": false,
+          "missing_verification": [
+            "carrier_check"
+          ],
+          "actual": {
+            "steps": [
+              "backup_slot",
+              "identity",
+              "move",
+              "reservation_check"
+            ],
+            "branches": [
+              "backup_slot",
+              "move"
+            ],
+            "fields": [
+              "backup_slot_ref",
+              "identity_ref",
+              "reservation_attestation_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        }
+      ]
+    },
+    {
+      "arm": "route_table",
+      "rule": "R2",
+      "fault": "reverse_condition",
+      "violations": [
+        {
+          "fixture_index": 12,
+          "excess": [],
+          "wrong_business": true,
+          "missing_verification": [
+            "identity",
+            "move",
+            "preferred_slot"
+          ],
+          "actual": {
+            "steps": [],
+            "branches": [],
+            "fields": [],
+            "confirmations": 0
+          }
+        },
+        {
+          "fixture_index": 13,
+          "excess": [
+            "carrier_declaration_ref"
+          ],
+          "wrong_business": false,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "carrier_check",
+              "identity",
+              "move",
+              "preferred_slot"
+            ],
+            "branches": [
+              "move",
+              "preferred_slot"
+            ],
+            "fields": [
+              "carrier_declaration_ref",
+              "identity_ref",
+              "preferred_slot_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 15,
+          "excess": [
+            "carrier_declaration_ref"
+          ],
+          "wrong_business": false,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "carrier_check",
+              "identity",
+              "move",
+              "preferred_slot",
+              "reservation_check"
+            ],
+            "branches": [
+              "move",
+              "preferred_slot"
+            ],
+            "fields": [
+              "carrier_declaration_ref",
+              "identity_ref",
+              "preferred_slot_ref",
+              "reservation_attestation_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 16,
+          "excess": [
+            "identity_ref",
+            "preferred_slot_ref",
+            "site_ref"
+          ],
+          "wrong_business": true,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "identity",
+              "move",
+              "preferred_slot"
+            ],
+            "branches": [
+              "move",
+              "preferred_slot"
+            ],
+            "fields": [
+              "identity_ref",
+              "preferred_slot_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 17,
+          "excess": [],
+          "wrong_business": false,
+          "missing_verification": [
+            "carrier_check"
+          ],
+          "actual": {
+            "steps": [
+              "identity",
+              "move",
+              "preferred_slot"
+            ],
+            "branches": [
+              "move",
+              "preferred_slot"
+            ],
+            "fields": [
+              "identity_ref",
+              "preferred_slot_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 19,
+          "excess": [],
+          "wrong_business": false,
+          "missing_verification": [
+            "carrier_check"
+          ],
+          "actual": {
+            "steps": [
+              "identity",
+              "move",
+              "preferred_slot",
+              "reservation_check"
+            ],
+            "branches": [
+              "move",
+              "preferred_slot"
+            ],
+            "fields": [
+              "identity_ref",
+              "preferred_slot_ref",
+              "reservation_attestation_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 20,
+          "excess": [],
+          "wrong_business": true,
+          "missing_verification": [
+            "backup_slot",
+            "identity",
+            "move"
+          ],
+          "actual": {
+            "steps": [],
+            "branches": [],
+            "fields": [],
+            "confirmations": 0
+          }
+        },
+        {
+          "fixture_index": 21,
+          "excess": [
+            "carrier_declaration_ref"
+          ],
+          "wrong_business": false,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "backup_slot",
+              "carrier_check",
+              "identity",
+              "move"
+            ],
+            "branches": [
+              "backup_slot",
+              "move"
+            ],
+            "fields": [
+              "backup_slot_ref",
+              "carrier_declaration_ref",
+              "identity_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 23,
+          "excess": [
+            "carrier_declaration_ref"
+          ],
+          "wrong_business": false,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "backup_slot",
+              "carrier_check",
+              "identity",
+              "move",
+              "reservation_check"
+            ],
+            "branches": [
+              "backup_slot",
+              "move"
+            ],
+            "fields": [
+              "backup_slot_ref",
+              "carrier_declaration_ref",
+              "identity_ref",
+              "reservation_attestation_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 24,
+          "excess": [
+            "backup_slot_ref",
+            "identity_ref",
+            "site_ref"
+          ],
+          "wrong_business": true,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "backup_slot",
+              "identity",
+              "move"
+            ],
+            "branches": [
+              "backup_slot",
+              "move"
+            ],
+            "fields": [
+              "backup_slot_ref",
+              "identity_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 25,
+          "excess": [],
+          "wrong_business": false,
+          "missing_verification": [
+            "carrier_check"
+          ],
+          "actual": {
+            "steps": [
+              "backup_slot",
+              "identity",
+              "move"
+            ],
+            "branches": [
+              "backup_slot",
+              "move"
+            ],
+            "fields": [
+              "backup_slot_ref",
+              "identity_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 27,
+          "excess": [],
+          "wrong_business": false,
+          "missing_verification": [
+            "carrier_check"
+          ],
+          "actual": {
+            "steps": [
+              "backup_slot",
+              "identity",
+              "move",
+              "reservation_check"
+            ],
+            "branches": [
+              "backup_slot",
+              "move"
+            ],
+            "fields": [
+              "backup_slot_ref",
+              "identity_ref",
+              "reservation_attestation_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        }
+      ]
+    },
+    {
+      "arm": "route_table",
+      "rule": "R2",
+      "fault": "wrong_field",
+      "violations": [
+        {
+          "fixture_index": 16,
+          "excess": [
+            "audit_trap_ref",
+            "identity_ref",
+            "preferred_slot_ref",
+            "site_ref"
+          ],
+          "wrong_business": true,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "carrier_check",
+              "identity",
+              "move",
+              "preferred_slot"
+            ],
+            "branches": [
+              "move",
+              "preferred_slot"
+            ],
+            "fields": [
+              "audit_trap_ref",
+              "identity_ref",
+              "preferred_slot_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 17,
+          "excess": [
+            "audit_trap_ref"
+          ],
+          "wrong_business": false,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "carrier_check",
+              "identity",
+              "move",
+              "preferred_slot"
+            ],
+            "branches": [
+              "move",
+              "preferred_slot"
+            ],
+            "fields": [
+              "audit_trap_ref",
+              "identity_ref",
+              "preferred_slot_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 19,
+          "excess": [
+            "audit_trap_ref"
+          ],
+          "wrong_business": false,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "carrier_check",
+              "identity",
+              "move",
+              "preferred_slot",
+              "reservation_check"
+            ],
+            "branches": [
+              "move",
+              "preferred_slot"
+            ],
+            "fields": [
+              "audit_trap_ref",
+              "identity_ref",
+              "preferred_slot_ref",
+              "reservation_attestation_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 24,
+          "excess": [
+            "audit_trap_ref",
+            "backup_slot_ref",
+            "identity_ref",
+            "site_ref"
+          ],
+          "wrong_business": true,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "backup_slot",
+              "carrier_check",
+              "identity",
+              "move"
+            ],
+            "branches": [
+              "backup_slot",
+              "move"
+            ],
+            "fields": [
+              "audit_trap_ref",
+              "backup_slot_ref",
+              "identity_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 25,
+          "excess": [
+            "audit_trap_ref"
+          ],
+          "wrong_business": false,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "backup_slot",
+              "carrier_check",
+              "identity",
+              "move"
+            ],
+            "branches": [
+              "backup_slot",
+              "move"
+            ],
+            "fields": [
+              "audit_trap_ref",
+              "backup_slot_ref",
+              "identity_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 27,
+          "excess": [
+            "audit_trap_ref"
+          ],
+          "wrong_business": false,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "backup_slot",
+              "carrier_check",
+              "identity",
+              "move",
+              "reservation_check"
+            ],
+            "branches": [
+              "backup_slot",
+              "move"
+            ],
+            "fields": [
+              "audit_trap_ref",
+              "backup_slot_ref",
+              "identity_ref",
+              "reservation_attestation_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        }
+      ]
+    },
+    {
+      "arm": "route_table",
+      "rule": "R2",
+      "fault": "missing_dependency",
+      "violations": [
+        {
+          "fixture_index": 16,
+          "excess": [
+            "identity_ref",
+            "preferred_slot_ref",
+            "site_ref"
+          ],
+          "wrong_business": true,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "identity",
+              "move",
+              "preferred_slot"
+            ],
+            "branches": [
+              "move",
+              "preferred_slot"
+            ],
+            "fields": [
+              "identity_ref",
+              "preferred_slot_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 17,
+          "excess": [],
+          "wrong_business": false,
+          "missing_verification": [
+            "carrier_check"
+          ],
+          "actual": {
+            "steps": [
+              "identity",
+              "move",
+              "preferred_slot"
+            ],
+            "branches": [
+              "move",
+              "preferred_slot"
+            ],
+            "fields": [
+              "identity_ref",
+              "preferred_slot_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 19,
+          "excess": [],
+          "wrong_business": false,
+          "missing_verification": [
+            "carrier_check"
+          ],
+          "actual": {
+            "steps": [
+              "identity",
+              "move",
+              "preferred_slot",
+              "reservation_check"
+            ],
+            "branches": [
+              "move",
+              "preferred_slot"
+            ],
+            "fields": [
+              "identity_ref",
+              "preferred_slot_ref",
+              "reservation_attestation_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 24,
+          "excess": [
+            "backup_slot_ref",
+            "identity_ref",
+            "site_ref"
+          ],
+          "wrong_business": true,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "backup_slot",
+              "identity",
+              "move"
+            ],
+            "branches": [
+              "backup_slot",
+              "move"
+            ],
+            "fields": [
+              "backup_slot_ref",
+              "identity_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 25,
+          "excess": [],
+          "wrong_business": false,
+          "missing_verification": [
+            "carrier_check"
+          ],
+          "actual": {
+            "steps": [
+              "backup_slot",
+              "identity",
+              "move"
+            ],
+            "branches": [
+              "backup_slot",
+              "move"
+            ],
+            "fields": [
+              "backup_slot_ref",
+              "identity_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 27,
+          "excess": [],
+          "wrong_business": false,
+          "missing_verification": [
+            "carrier_check"
+          ],
+          "actual": {
+            "steps": [
+              "backup_slot",
+              "identity",
+              "move",
+              "reservation_check"
+            ],
+            "branches": [
+              "backup_slot",
+              "move"
+            ],
+            "fields": [
+              "backup_slot_ref",
+              "identity_ref",
+              "reservation_attestation_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        }
+      ]
+    },
+    {
+      "arm": "route_table",
+      "rule": "R3",
+      "fault": "missing_rule",
+      "violations": [
+        {
+          "fixture_index": 14,
+          "excess": [
+            "identity_ref",
+            "preferred_slot_ref",
+            "site_ref"
+          ],
+          "wrong_business": true,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "identity",
+              "move",
+              "preferred_slot"
+            ],
+            "branches": [
+              "move",
+              "preferred_slot"
+            ],
+            "fields": [
+              "identity_ref",
+              "preferred_slot_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 15,
+          "excess": [],
+          "wrong_business": false,
+          "missing_verification": [
+            "reservation_check"
+          ],
+          "actual": {
+            "steps": [
+              "identity",
+              "move",
+              "preferred_slot"
+            ],
+            "branches": [
+              "move",
+              "preferred_slot"
+            ],
+            "fields": [
+              "identity_ref",
+              "preferred_slot_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 19,
+          "excess": [],
+          "wrong_business": false,
+          "missing_verification": [
+            "reservation_check"
+          ],
+          "actual": {
+            "steps": [
+              "carrier_check",
+              "identity",
+              "move",
+              "preferred_slot"
+            ],
+            "branches": [
+              "move",
+              "preferred_slot"
+            ],
+            "fields": [
+              "carrier_declaration_ref",
+              "identity_ref",
+              "preferred_slot_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 22,
+          "excess": [
+            "backup_slot_ref",
+            "identity_ref",
+            "site_ref"
+          ],
+          "wrong_business": true,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "backup_slot",
+              "identity",
+              "move"
+            ],
+            "branches": [
+              "backup_slot",
+              "move"
+            ],
+            "fields": [
+              "backup_slot_ref",
+              "identity_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 23,
+          "excess": [],
+          "wrong_business": false,
+          "missing_verification": [
+            "reservation_check"
+          ],
+          "actual": {
+            "steps": [
+              "backup_slot",
+              "identity",
+              "move"
+            ],
+            "branches": [
+              "backup_slot",
+              "move"
+            ],
+            "fields": [
+              "backup_slot_ref",
+              "identity_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 27,
+          "excess": [],
+          "wrong_business": false,
+          "missing_verification": [
+            "reservation_check"
+          ],
+          "actual": {
+            "steps": [
+              "backup_slot",
+              "carrier_check",
+              "identity",
+              "move"
+            ],
+            "branches": [
+              "backup_slot",
+              "move"
+            ],
+            "fields": [
+              "backup_slot_ref",
+              "carrier_declaration_ref",
+              "identity_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        }
+      ]
+    },
+    {
+      "arm": "route_table",
+      "rule": "R3",
+      "fault": "wrong_selector",
+      "violations": [
+        {
+          "fixture_index": 14,
+          "excess": [
+            "identity_ref",
+            "preferred_slot_ref",
+            "site_ref"
+          ],
+          "wrong_business": true,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "identity",
+              "move",
+              "preferred_slot"
+            ],
+            "branches": [
+              "move",
+              "preferred_slot"
+            ],
+            "fields": [
+              "identity_ref",
+              "preferred_slot_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 15,
+          "excess": [],
+          "wrong_business": false,
+          "missing_verification": [
+            "reservation_check"
+          ],
+          "actual": {
+            "steps": [
+              "identity",
+              "move",
+              "preferred_slot"
+            ],
+            "branches": [
+              "move",
+              "preferred_slot"
+            ],
+            "fields": [
+              "identity_ref",
+              "preferred_slot_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 19,
+          "excess": [],
+          "wrong_business": false,
+          "missing_verification": [
+            "reservation_check"
+          ],
+          "actual": {
+            "steps": [
+              "carrier_check",
+              "identity",
+              "move",
+              "preferred_slot"
+            ],
+            "branches": [
+              "move",
+              "preferred_slot"
+            ],
+            "fields": [
+              "carrier_declaration_ref",
+              "identity_ref",
+              "preferred_slot_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 22,
+          "excess": [
+            "backup_slot_ref",
+            "identity_ref",
+            "site_ref"
+          ],
+          "wrong_business": true,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "backup_slot",
+              "identity",
+              "move"
+            ],
+            "branches": [
+              "backup_slot",
+              "move"
+            ],
+            "fields": [
+              "backup_slot_ref",
+              "identity_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 23,
+          "excess": [],
+          "wrong_business": false,
+          "missing_verification": [
+            "reservation_check"
+          ],
+          "actual": {
+            "steps": [
+              "backup_slot",
+              "identity",
+              "move"
+            ],
+            "branches": [
+              "backup_slot",
+              "move"
+            ],
+            "fields": [
+              "backup_slot_ref",
+              "identity_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 27,
+          "excess": [],
+          "wrong_business": false,
+          "missing_verification": [
+            "reservation_check"
+          ],
+          "actual": {
+            "steps": [
+              "backup_slot",
+              "carrier_check",
+              "identity",
+              "move"
+            ],
+            "branches": [
+              "backup_slot",
+              "move"
+            ],
+            "fields": [
+              "backup_slot_ref",
+              "carrier_declaration_ref",
+              "identity_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        }
+      ]
+    },
+    {
+      "arm": "route_table",
+      "rule": "R3",
+      "fault": "reverse_condition",
+      "violations": [
+        {
+          "fixture_index": 12,
+          "excess": [],
+          "wrong_business": true,
+          "missing_verification": [
+            "identity",
+            "move",
+            "preferred_slot"
+          ],
+          "actual": {
+            "steps": [],
+            "branches": [],
+            "fields": [],
+            "confirmations": 0
+          }
+        },
+        {
+          "fixture_index": 13,
+          "excess": [
+            "reservation_attestation_ref"
+          ],
+          "wrong_business": false,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "identity",
+              "move",
+              "preferred_slot",
+              "reservation_check"
+            ],
+            "branches": [
+              "move",
+              "preferred_slot"
+            ],
+            "fields": [
+              "identity_ref",
+              "preferred_slot_ref",
+              "reservation_attestation_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 14,
+          "excess": [
+            "identity_ref",
+            "preferred_slot_ref",
+            "site_ref"
+          ],
+          "wrong_business": true,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "identity",
+              "move",
+              "preferred_slot"
+            ],
+            "branches": [
+              "move",
+              "preferred_slot"
+            ],
+            "fields": [
+              "identity_ref",
+              "preferred_slot_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 15,
+          "excess": [],
+          "wrong_business": false,
+          "missing_verification": [
+            "reservation_check"
+          ],
+          "actual": {
+            "steps": [
+              "identity",
+              "move",
+              "preferred_slot"
+            ],
+            "branches": [
+              "move",
+              "preferred_slot"
+            ],
+            "fields": [
+              "identity_ref",
+              "preferred_slot_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 17,
+          "excess": [
+            "reservation_attestation_ref"
+          ],
+          "wrong_business": false,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "carrier_check",
+              "identity",
+              "move",
+              "preferred_slot",
+              "reservation_check"
+            ],
+            "branches": [
+              "move",
+              "preferred_slot"
+            ],
+            "fields": [
+              "carrier_declaration_ref",
+              "identity_ref",
+              "preferred_slot_ref",
+              "reservation_attestation_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 19,
+          "excess": [],
+          "wrong_business": false,
+          "missing_verification": [
+            "reservation_check"
+          ],
+          "actual": {
+            "steps": [
+              "carrier_check",
+              "identity",
+              "move",
+              "preferred_slot"
+            ],
+            "branches": [
+              "move",
+              "preferred_slot"
+            ],
+            "fields": [
+              "carrier_declaration_ref",
+              "identity_ref",
+              "preferred_slot_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 20,
+          "excess": [],
+          "wrong_business": true,
+          "missing_verification": [
+            "backup_slot",
+            "identity",
+            "move"
+          ],
+          "actual": {
+            "steps": [],
+            "branches": [],
+            "fields": [],
+            "confirmations": 0
+          }
+        },
+        {
+          "fixture_index": 21,
+          "excess": [
+            "reservation_attestation_ref"
+          ],
+          "wrong_business": false,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "backup_slot",
+              "identity",
+              "move",
+              "reservation_check"
+            ],
+            "branches": [
+              "backup_slot",
+              "move"
+            ],
+            "fields": [
+              "backup_slot_ref",
+              "identity_ref",
+              "reservation_attestation_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 22,
+          "excess": [
+            "backup_slot_ref",
+            "identity_ref",
+            "site_ref"
+          ],
+          "wrong_business": true,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "backup_slot",
+              "identity",
+              "move"
+            ],
+            "branches": [
+              "backup_slot",
+              "move"
+            ],
+            "fields": [
+              "backup_slot_ref",
+              "identity_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 23,
+          "excess": [],
+          "wrong_business": false,
+          "missing_verification": [
+            "reservation_check"
+          ],
+          "actual": {
+            "steps": [
+              "backup_slot",
+              "identity",
+              "move"
+            ],
+            "branches": [
+              "backup_slot",
+              "move"
+            ],
+            "fields": [
+              "backup_slot_ref",
+              "identity_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 25,
+          "excess": [
+            "reservation_attestation_ref"
+          ],
+          "wrong_business": false,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "backup_slot",
+              "carrier_check",
+              "identity",
+              "move",
+              "reservation_check"
+            ],
+            "branches": [
+              "backup_slot",
+              "move"
+            ],
+            "fields": [
+              "backup_slot_ref",
+              "carrier_declaration_ref",
+              "identity_ref",
+              "reservation_attestation_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 27,
+          "excess": [],
+          "wrong_business": false,
+          "missing_verification": [
+            "reservation_check"
+          ],
+          "actual": {
+            "steps": [
+              "backup_slot",
+              "carrier_check",
+              "identity",
+              "move"
+            ],
+            "branches": [
+              "backup_slot",
+              "move"
+            ],
+            "fields": [
+              "backup_slot_ref",
+              "carrier_declaration_ref",
+              "identity_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        }
+      ]
+    },
+    {
+      "arm": "route_table",
+      "rule": "R3",
+      "fault": "wrong_field",
+      "violations": [
+        {
+          "fixture_index": 14,
+          "excess": [
+            "audit_trap_ref",
+            "identity_ref",
+            "preferred_slot_ref",
+            "site_ref"
+          ],
+          "wrong_business": true,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "identity",
+              "move",
+              "preferred_slot",
+              "reservation_check"
+            ],
+            "branches": [
+              "move",
+              "preferred_slot"
+            ],
+            "fields": [
+              "audit_trap_ref",
+              "identity_ref",
+              "preferred_slot_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 15,
+          "excess": [
+            "audit_trap_ref"
+          ],
+          "wrong_business": false,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "identity",
+              "move",
+              "preferred_slot",
+              "reservation_check"
+            ],
+            "branches": [
+              "move",
+              "preferred_slot"
+            ],
+            "fields": [
+              "audit_trap_ref",
+              "identity_ref",
+              "preferred_slot_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 19,
+          "excess": [
+            "audit_trap_ref"
+          ],
+          "wrong_business": false,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "carrier_check",
+              "identity",
+              "move",
+              "preferred_slot",
+              "reservation_check"
+            ],
+            "branches": [
+              "move",
+              "preferred_slot"
+            ],
+            "fields": [
+              "audit_trap_ref",
+              "carrier_declaration_ref",
+              "identity_ref",
+              "preferred_slot_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 22,
+          "excess": [
+            "audit_trap_ref",
+            "backup_slot_ref",
+            "identity_ref",
+            "site_ref"
+          ],
+          "wrong_business": true,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "backup_slot",
+              "identity",
+              "move",
+              "reservation_check"
+            ],
+            "branches": [
+              "backup_slot",
+              "move"
+            ],
+            "fields": [
+              "audit_trap_ref",
+              "backup_slot_ref",
+              "identity_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 23,
+          "excess": [
+            "audit_trap_ref"
+          ],
+          "wrong_business": false,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "backup_slot",
+              "identity",
+              "move",
+              "reservation_check"
+            ],
+            "branches": [
+              "backup_slot",
+              "move"
+            ],
+            "fields": [
+              "audit_trap_ref",
+              "backup_slot_ref",
+              "identity_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 27,
+          "excess": [
+            "audit_trap_ref"
+          ],
+          "wrong_business": false,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "backup_slot",
+              "carrier_check",
+              "identity",
+              "move",
+              "reservation_check"
+            ],
+            "branches": [
+              "backup_slot",
+              "move"
+            ],
+            "fields": [
+              "audit_trap_ref",
+              "backup_slot_ref",
+              "carrier_declaration_ref",
+              "identity_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        }
+      ]
+    },
+    {
+      "arm": "route_table",
+      "rule": "R3",
+      "fault": "missing_dependency",
+      "violations": [
+        {
+          "fixture_index": 14,
+          "excess": [
+            "identity_ref",
+            "preferred_slot_ref",
+            "site_ref"
+          ],
+          "wrong_business": true,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "identity",
+              "move",
+              "preferred_slot"
+            ],
+            "branches": [
+              "move",
+              "preferred_slot"
+            ],
+            "fields": [
+              "identity_ref",
+              "preferred_slot_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 15,
+          "excess": [],
+          "wrong_business": false,
+          "missing_verification": [
+            "reservation_check"
+          ],
+          "actual": {
+            "steps": [
+              "identity",
+              "move",
+              "preferred_slot"
+            ],
+            "branches": [
+              "move",
+              "preferred_slot"
+            ],
+            "fields": [
+              "identity_ref",
+              "preferred_slot_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 19,
+          "excess": [],
+          "wrong_business": false,
+          "missing_verification": [
+            "reservation_check"
+          ],
+          "actual": {
+            "steps": [
+              "carrier_check",
+              "identity",
+              "move",
+              "preferred_slot"
+            ],
+            "branches": [
+              "move",
+              "preferred_slot"
+            ],
+            "fields": [
+              "carrier_declaration_ref",
+              "identity_ref",
+              "preferred_slot_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 22,
+          "excess": [
+            "backup_slot_ref",
+            "identity_ref",
+            "site_ref"
+          ],
+          "wrong_business": true,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "backup_slot",
+              "identity",
+              "move"
+            ],
+            "branches": [
+              "backup_slot",
+              "move"
+            ],
+            "fields": [
+              "backup_slot_ref",
+              "identity_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 23,
+          "excess": [],
+          "wrong_business": false,
+          "missing_verification": [
+            "reservation_check"
+          ],
+          "actual": {
+            "steps": [
+              "backup_slot",
+              "identity",
+              "move"
+            ],
+            "branches": [
+              "backup_slot",
+              "move"
+            ],
+            "fields": [
+              "backup_slot_ref",
+              "identity_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 27,
+          "excess": [],
+          "wrong_business": false,
+          "missing_verification": [
+            "reservation_check"
+          ],
+          "actual": {
+            "steps": [
+              "backup_slot",
+              "carrier_check",
+              "identity",
+              "move"
+            ],
+            "branches": [
+              "backup_slot",
+              "move"
+            ],
+            "fields": [
+              "backup_slot_ref",
+              "carrier_declaration_ref",
+              "identity_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        }
+      ]
+    },
+    {
+      "arm": "contract",
+      "rule": "R1",
+      "fault": "missing_rule",
+      "violations": [
+        {
+          "fixture_index": 6,
+          "excess": [
+            "bank_ref",
+            "owner_ref"
+          ],
+          "wrong_business": true,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "bank"
+            ],
+            "branches": [
+              "bank"
+            ],
+            "fields": [
+              "bank_ref",
+              "owner_ref"
+            ],
+            "confirmations": 1
+          }
+        },
+        {
+          "fixture_index": 7,
+          "excess": [],
+          "wrong_business": false,
+          "missing_verification": [
+            "beneficiary_check"
+          ],
+          "actual": {
+            "steps": [
+              "bank"
+            ],
+            "branches": [
+              "bank"
+            ],
+            "fields": [
+              "bank_ref",
+              "owner_ref"
+            ],
+            "confirmations": 1
+          }
+        }
+      ]
+    },
+    {
+      "arm": "contract",
+      "rule": "R1",
+      "fault": "wrong_selector",
+      "violations": [
+        {
+          "fixture_index": 6,
+          "excess": [
+            "bank_ref",
+            "owner_ref"
+          ],
+          "wrong_business": true,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "bank"
+            ],
+            "branches": [
+              "bank"
+            ],
+            "fields": [
+              "bank_ref",
+              "owner_ref"
+            ],
+            "confirmations": 1
+          }
+        },
+        {
+          "fixture_index": 7,
+          "excess": [],
+          "wrong_business": false,
+          "missing_verification": [
+            "beneficiary_check"
+          ],
+          "actual": {
+            "steps": [
+              "bank"
+            ],
+            "branches": [
+              "bank"
+            ],
+            "fields": [
+              "bank_ref",
+              "owner_ref"
+            ],
+            "confirmations": 1
+          }
+        }
+      ]
+    },
+    {
+      "arm": "contract",
+      "rule": "R1",
+      "fault": "reverse_condition",
+      "violations": [
+        {
+          "fixture_index": 4,
+          "excess": [],
+          "wrong_business": true,
+          "missing_verification": [
+            "bank"
+          ],
+          "actual": {
+            "steps": [],
+            "branches": [],
+            "fields": [],
+            "confirmations": 0
+          }
+        },
+        {
+          "fixture_index": 5,
+          "excess": [
+            "beneficiary_ref"
+          ],
+          "wrong_business": false,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "bank",
+              "beneficiary_check"
+            ],
+            "branches": [
+              "bank"
+            ],
+            "fields": [
+              "bank_ref",
+              "beneficiary_ref",
+              "owner_ref"
+            ],
+            "confirmations": 1
+          }
+        },
+        {
+          "fixture_index": 6,
+          "excess": [
+            "bank_ref",
+            "owner_ref"
+          ],
+          "wrong_business": true,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "bank"
+            ],
+            "branches": [
+              "bank"
+            ],
+            "fields": [
+              "bank_ref",
+              "owner_ref"
+            ],
+            "confirmations": 1
+          }
+        },
+        {
+          "fixture_index": 7,
+          "excess": [],
+          "wrong_business": false,
+          "missing_verification": [
+            "beneficiary_check"
+          ],
+          "actual": {
+            "steps": [
+              "bank"
+            ],
+            "branches": [
+              "bank"
+            ],
+            "fields": [
+              "bank_ref",
+              "owner_ref"
+            ],
+            "confirmations": 1
+          }
+        }
+      ]
+    },
+    {
+      "arm": "contract",
+      "rule": "R1",
+      "fault": "wrong_field",
+      "violations": [
+        {
+          "fixture_index": 6,
+          "excess": [
+            "audit_trap_ref",
+            "bank_ref",
+            "owner_ref"
+          ],
+          "wrong_business": true,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "bank",
+              "beneficiary_check"
+            ],
+            "branches": [
+              "bank"
+            ],
+            "fields": [
+              "audit_trap_ref",
+              "bank_ref",
+              "owner_ref"
+            ],
+            "confirmations": 1
+          }
+        },
+        {
+          "fixture_index": 7,
+          "excess": [
+            "audit_trap_ref"
+          ],
+          "wrong_business": false,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "bank",
+              "beneficiary_check"
+            ],
+            "branches": [
+              "bank"
+            ],
+            "fields": [
+              "audit_trap_ref",
+              "bank_ref",
+              "owner_ref"
+            ],
+            "confirmations": 1
+          }
+        }
+      ]
+    },
+    {
+      "arm": "contract",
+      "rule": "R1",
+      "fault": "missing_dependency",
+      "violations": [
+        {
+          "fixture_index": 6,
+          "excess": [
+            "bank_ref",
+            "owner_ref"
+          ],
+          "wrong_business": true,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "bank"
+            ],
+            "branches": [
+              "bank"
+            ],
+            "fields": [
+              "bank_ref",
+              "owner_ref"
+            ],
+            "confirmations": 1
+          }
+        },
+        {
+          "fixture_index": 7,
+          "excess": [],
+          "wrong_business": false,
+          "missing_verification": [
+            "beneficiary_check"
+          ],
+          "actual": {
+            "steps": [
+              "bank"
+            ],
+            "branches": [
+              "bank"
+            ],
+            "fields": [
+              "bank_ref",
+              "owner_ref"
+            ],
+            "confirmations": 1
+          }
+        }
+      ]
+    },
+    {
+      "arm": "contract",
+      "rule": "R2",
+      "fault": "missing_rule",
+      "violations": [
+        {
+          "fixture_index": 16,
+          "excess": [
+            "identity_ref",
+            "preferred_slot_ref",
+            "site_ref"
+          ],
+          "wrong_business": true,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "identity",
+              "move",
+              "preferred_slot"
+            ],
+            "branches": [
+              "move",
+              "preferred_slot"
+            ],
+            "fields": [
+              "identity_ref",
+              "preferred_slot_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 17,
+          "excess": [],
+          "wrong_business": false,
+          "missing_verification": [
+            "carrier_check"
+          ],
+          "actual": {
+            "steps": [
+              "identity",
+              "move",
+              "preferred_slot"
+            ],
+            "branches": [
+              "move",
+              "preferred_slot"
+            ],
+            "fields": [
+              "identity_ref",
+              "preferred_slot_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 19,
+          "excess": [],
+          "wrong_business": false,
+          "missing_verification": [
+            "carrier_check"
+          ],
+          "actual": {
+            "steps": [
+              "identity",
+              "move",
+              "preferred_slot",
+              "reservation_check"
+            ],
+            "branches": [
+              "move",
+              "preferred_slot"
+            ],
+            "fields": [
+              "identity_ref",
+              "preferred_slot_ref",
+              "reservation_attestation_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 24,
+          "excess": [
+            "backup_slot_ref",
+            "identity_ref",
+            "site_ref"
+          ],
+          "wrong_business": true,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "backup_slot",
+              "identity",
+              "move"
+            ],
+            "branches": [
+              "backup_slot",
+              "move"
+            ],
+            "fields": [
+              "backup_slot_ref",
+              "identity_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 25,
+          "excess": [],
+          "wrong_business": false,
+          "missing_verification": [
+            "carrier_check"
+          ],
+          "actual": {
+            "steps": [
+              "backup_slot",
+              "identity",
+              "move"
+            ],
+            "branches": [
+              "backup_slot",
+              "move"
+            ],
+            "fields": [
+              "backup_slot_ref",
+              "identity_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 27,
+          "excess": [],
+          "wrong_business": false,
+          "missing_verification": [
+            "carrier_check"
+          ],
+          "actual": {
+            "steps": [
+              "backup_slot",
+              "identity",
+              "move",
+              "reservation_check"
+            ],
+            "branches": [
+              "backup_slot",
+              "move"
+            ],
+            "fields": [
+              "backup_slot_ref",
+              "identity_ref",
+              "reservation_attestation_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        }
+      ]
+    },
+    {
+      "arm": "contract",
+      "rule": "R2",
+      "fault": "wrong_selector",
+      "violations": [
+        {
+          "fixture_index": 16,
+          "excess": [
+            "identity_ref",
+            "preferred_slot_ref",
+            "site_ref"
+          ],
+          "wrong_business": true,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "identity",
+              "move",
+              "preferred_slot"
+            ],
+            "branches": [
+              "move",
+              "preferred_slot"
+            ],
+            "fields": [
+              "identity_ref",
+              "preferred_slot_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 17,
+          "excess": [],
+          "wrong_business": false,
+          "missing_verification": [
+            "carrier_check"
+          ],
+          "actual": {
+            "steps": [
+              "identity",
+              "move",
+              "preferred_slot"
+            ],
+            "branches": [
+              "move",
+              "preferred_slot"
+            ],
+            "fields": [
+              "identity_ref",
+              "preferred_slot_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 19,
+          "excess": [],
+          "wrong_business": false,
+          "missing_verification": [
+            "carrier_check"
+          ],
+          "actual": {
+            "steps": [
+              "identity",
+              "move",
+              "preferred_slot",
+              "reservation_check"
+            ],
+            "branches": [
+              "move",
+              "preferred_slot"
+            ],
+            "fields": [
+              "identity_ref",
+              "preferred_slot_ref",
+              "reservation_attestation_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 24,
+          "excess": [
+            "backup_slot_ref",
+            "identity_ref",
+            "site_ref"
+          ],
+          "wrong_business": true,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "backup_slot",
+              "identity",
+              "move"
+            ],
+            "branches": [
+              "backup_slot",
+              "move"
+            ],
+            "fields": [
+              "backup_slot_ref",
+              "identity_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 25,
+          "excess": [],
+          "wrong_business": false,
+          "missing_verification": [
+            "carrier_check"
+          ],
+          "actual": {
+            "steps": [
+              "backup_slot",
+              "identity",
+              "move"
+            ],
+            "branches": [
+              "backup_slot",
+              "move"
+            ],
+            "fields": [
+              "backup_slot_ref",
+              "identity_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 27,
+          "excess": [],
+          "wrong_business": false,
+          "missing_verification": [
+            "carrier_check"
+          ],
+          "actual": {
+            "steps": [
+              "backup_slot",
+              "identity",
+              "move",
+              "reservation_check"
+            ],
+            "branches": [
+              "backup_slot",
+              "move"
+            ],
+            "fields": [
+              "backup_slot_ref",
+              "identity_ref",
+              "reservation_attestation_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        }
+      ]
+    },
+    {
+      "arm": "contract",
+      "rule": "R2",
+      "fault": "reverse_condition",
+      "violations": [
+        {
+          "fixture_index": 12,
+          "excess": [],
+          "wrong_business": true,
+          "missing_verification": [
+            "identity",
+            "move",
+            "preferred_slot"
+          ],
+          "actual": {
+            "steps": [],
+            "branches": [],
+            "fields": [],
+            "confirmations": 0
+          }
+        },
+        {
+          "fixture_index": 13,
+          "excess": [
+            "carrier_declaration_ref"
+          ],
+          "wrong_business": false,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "carrier_check",
+              "identity",
+              "move",
+              "preferred_slot"
+            ],
+            "branches": [
+              "move",
+              "preferred_slot"
+            ],
+            "fields": [
+              "carrier_declaration_ref",
+              "identity_ref",
+              "preferred_slot_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 15,
+          "excess": [
+            "carrier_declaration_ref"
+          ],
+          "wrong_business": false,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "carrier_check",
+              "identity",
+              "move",
+              "preferred_slot",
+              "reservation_check"
+            ],
+            "branches": [
+              "move",
+              "preferred_slot"
+            ],
+            "fields": [
+              "carrier_declaration_ref",
+              "identity_ref",
+              "preferred_slot_ref",
+              "reservation_attestation_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 16,
+          "excess": [
+            "identity_ref",
+            "preferred_slot_ref",
+            "site_ref"
+          ],
+          "wrong_business": true,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "identity",
+              "move",
+              "preferred_slot"
+            ],
+            "branches": [
+              "move",
+              "preferred_slot"
+            ],
+            "fields": [
+              "identity_ref",
+              "preferred_slot_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 17,
+          "excess": [],
+          "wrong_business": false,
+          "missing_verification": [
+            "carrier_check"
+          ],
+          "actual": {
+            "steps": [
+              "identity",
+              "move",
+              "preferred_slot"
+            ],
+            "branches": [
+              "move",
+              "preferred_slot"
+            ],
+            "fields": [
+              "identity_ref",
+              "preferred_slot_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 19,
+          "excess": [],
+          "wrong_business": false,
+          "missing_verification": [
+            "carrier_check"
+          ],
+          "actual": {
+            "steps": [
+              "identity",
+              "move",
+              "preferred_slot",
+              "reservation_check"
+            ],
+            "branches": [
+              "move",
+              "preferred_slot"
+            ],
+            "fields": [
+              "identity_ref",
+              "preferred_slot_ref",
+              "reservation_attestation_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 20,
+          "excess": [],
+          "wrong_business": true,
+          "missing_verification": [
+            "backup_slot",
+            "identity",
+            "move"
+          ],
+          "actual": {
+            "steps": [],
+            "branches": [],
+            "fields": [],
+            "confirmations": 0
+          }
+        },
+        {
+          "fixture_index": 21,
+          "excess": [
+            "carrier_declaration_ref"
+          ],
+          "wrong_business": false,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "backup_slot",
+              "carrier_check",
+              "identity",
+              "move"
+            ],
+            "branches": [
+              "backup_slot",
+              "move"
+            ],
+            "fields": [
+              "backup_slot_ref",
+              "carrier_declaration_ref",
+              "identity_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 23,
+          "excess": [
+            "carrier_declaration_ref"
+          ],
+          "wrong_business": false,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "backup_slot",
+              "carrier_check",
+              "identity",
+              "move",
+              "reservation_check"
+            ],
+            "branches": [
+              "backup_slot",
+              "move"
+            ],
+            "fields": [
+              "backup_slot_ref",
+              "carrier_declaration_ref",
+              "identity_ref",
+              "reservation_attestation_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 24,
+          "excess": [
+            "backup_slot_ref",
+            "identity_ref",
+            "site_ref"
+          ],
+          "wrong_business": true,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "backup_slot",
+              "identity",
+              "move"
+            ],
+            "branches": [
+              "backup_slot",
+              "move"
+            ],
+            "fields": [
+              "backup_slot_ref",
+              "identity_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 25,
+          "excess": [],
+          "wrong_business": false,
+          "missing_verification": [
+            "carrier_check"
+          ],
+          "actual": {
+            "steps": [
+              "backup_slot",
+              "identity",
+              "move"
+            ],
+            "branches": [
+              "backup_slot",
+              "move"
+            ],
+            "fields": [
+              "backup_slot_ref",
+              "identity_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 27,
+          "excess": [],
+          "wrong_business": false,
+          "missing_verification": [
+            "carrier_check"
+          ],
+          "actual": {
+            "steps": [
+              "backup_slot",
+              "identity",
+              "move",
+              "reservation_check"
+            ],
+            "branches": [
+              "backup_slot",
+              "move"
+            ],
+            "fields": [
+              "backup_slot_ref",
+              "identity_ref",
+              "reservation_attestation_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        }
+      ]
+    },
+    {
+      "arm": "contract",
+      "rule": "R2",
+      "fault": "wrong_field",
+      "violations": [
+        {
+          "fixture_index": 16,
+          "excess": [
+            "audit_trap_ref",
+            "identity_ref",
+            "preferred_slot_ref",
+            "site_ref"
+          ],
+          "wrong_business": true,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "carrier_check",
+              "identity",
+              "move",
+              "preferred_slot"
+            ],
+            "branches": [
+              "move",
+              "preferred_slot"
+            ],
+            "fields": [
+              "audit_trap_ref",
+              "identity_ref",
+              "preferred_slot_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 17,
+          "excess": [
+            "audit_trap_ref"
+          ],
+          "wrong_business": false,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "carrier_check",
+              "identity",
+              "move",
+              "preferred_slot"
+            ],
+            "branches": [
+              "move",
+              "preferred_slot"
+            ],
+            "fields": [
+              "audit_trap_ref",
+              "identity_ref",
+              "preferred_slot_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 19,
+          "excess": [
+            "audit_trap_ref"
+          ],
+          "wrong_business": false,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "carrier_check",
+              "identity",
+              "move",
+              "preferred_slot",
+              "reservation_check"
+            ],
+            "branches": [
+              "move",
+              "preferred_slot"
+            ],
+            "fields": [
+              "audit_trap_ref",
+              "identity_ref",
+              "preferred_slot_ref",
+              "reservation_attestation_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 24,
+          "excess": [
+            "audit_trap_ref",
+            "backup_slot_ref",
+            "identity_ref",
+            "site_ref"
+          ],
+          "wrong_business": true,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "backup_slot",
+              "carrier_check",
+              "identity",
+              "move"
+            ],
+            "branches": [
+              "backup_slot",
+              "move"
+            ],
+            "fields": [
+              "audit_trap_ref",
+              "backup_slot_ref",
+              "identity_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 25,
+          "excess": [
+            "audit_trap_ref"
+          ],
+          "wrong_business": false,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "backup_slot",
+              "carrier_check",
+              "identity",
+              "move"
+            ],
+            "branches": [
+              "backup_slot",
+              "move"
+            ],
+            "fields": [
+              "audit_trap_ref",
+              "backup_slot_ref",
+              "identity_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 27,
+          "excess": [
+            "audit_trap_ref"
+          ],
+          "wrong_business": false,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "backup_slot",
+              "carrier_check",
+              "identity",
+              "move",
+              "reservation_check"
+            ],
+            "branches": [
+              "backup_slot",
+              "move"
+            ],
+            "fields": [
+              "audit_trap_ref",
+              "backup_slot_ref",
+              "identity_ref",
+              "reservation_attestation_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        }
+      ]
+    },
+    {
+      "arm": "contract",
+      "rule": "R2",
+      "fault": "missing_dependency",
+      "violations": [
+        {
+          "fixture_index": 16,
+          "excess": [
+            "identity_ref",
+            "preferred_slot_ref",
+            "site_ref"
+          ],
+          "wrong_business": true,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "identity",
+              "move",
+              "preferred_slot"
+            ],
+            "branches": [
+              "move",
+              "preferred_slot"
+            ],
+            "fields": [
+              "identity_ref",
+              "preferred_slot_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 17,
+          "excess": [],
+          "wrong_business": false,
+          "missing_verification": [
+            "carrier_check"
+          ],
+          "actual": {
+            "steps": [
+              "identity",
+              "move",
+              "preferred_slot"
+            ],
+            "branches": [
+              "move",
+              "preferred_slot"
+            ],
+            "fields": [
+              "identity_ref",
+              "preferred_slot_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 19,
+          "excess": [],
+          "wrong_business": false,
+          "missing_verification": [
+            "carrier_check"
+          ],
+          "actual": {
+            "steps": [
+              "identity",
+              "move",
+              "preferred_slot",
+              "reservation_check"
+            ],
+            "branches": [
+              "move",
+              "preferred_slot"
+            ],
+            "fields": [
+              "identity_ref",
+              "preferred_slot_ref",
+              "reservation_attestation_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 24,
+          "excess": [
+            "backup_slot_ref",
+            "identity_ref",
+            "site_ref"
+          ],
+          "wrong_business": true,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "backup_slot",
+              "identity",
+              "move"
+            ],
+            "branches": [
+              "backup_slot",
+              "move"
+            ],
+            "fields": [
+              "backup_slot_ref",
+              "identity_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 25,
+          "excess": [],
+          "wrong_business": false,
+          "missing_verification": [
+            "carrier_check"
+          ],
+          "actual": {
+            "steps": [
+              "backup_slot",
+              "identity",
+              "move"
+            ],
+            "branches": [
+              "backup_slot",
+              "move"
+            ],
+            "fields": [
+              "backup_slot_ref",
+              "identity_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 27,
+          "excess": [],
+          "wrong_business": false,
+          "missing_verification": [
+            "carrier_check"
+          ],
+          "actual": {
+            "steps": [
+              "backup_slot",
+              "identity",
+              "move",
+              "reservation_check"
+            ],
+            "branches": [
+              "backup_slot",
+              "move"
+            ],
+            "fields": [
+              "backup_slot_ref",
+              "identity_ref",
+              "reservation_attestation_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        }
+      ]
+    },
+    {
+      "arm": "contract",
+      "rule": "R3",
+      "fault": "missing_rule",
+      "violations": [
+        {
+          "fixture_index": 14,
+          "excess": [
+            "identity_ref",
+            "preferred_slot_ref",
+            "site_ref"
+          ],
+          "wrong_business": true,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "identity",
+              "move",
+              "preferred_slot"
+            ],
+            "branches": [
+              "move",
+              "preferred_slot"
+            ],
+            "fields": [
+              "identity_ref",
+              "preferred_slot_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 15,
+          "excess": [],
+          "wrong_business": false,
+          "missing_verification": [
+            "reservation_check"
+          ],
+          "actual": {
+            "steps": [
+              "identity",
+              "move",
+              "preferred_slot"
+            ],
+            "branches": [
+              "move",
+              "preferred_slot"
+            ],
+            "fields": [
+              "identity_ref",
+              "preferred_slot_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 19,
+          "excess": [],
+          "wrong_business": false,
+          "missing_verification": [
+            "reservation_check"
+          ],
+          "actual": {
+            "steps": [
+              "carrier_check",
+              "identity",
+              "move",
+              "preferred_slot"
+            ],
+            "branches": [
+              "move",
+              "preferred_slot"
+            ],
+            "fields": [
+              "carrier_declaration_ref",
+              "identity_ref",
+              "preferred_slot_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 22,
+          "excess": [
+            "backup_slot_ref",
+            "identity_ref",
+            "site_ref"
+          ],
+          "wrong_business": true,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "backup_slot",
+              "identity",
+              "move"
+            ],
+            "branches": [
+              "backup_slot",
+              "move"
+            ],
+            "fields": [
+              "backup_slot_ref",
+              "identity_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 23,
+          "excess": [],
+          "wrong_business": false,
+          "missing_verification": [
+            "reservation_check"
+          ],
+          "actual": {
+            "steps": [
+              "backup_slot",
+              "identity",
+              "move"
+            ],
+            "branches": [
+              "backup_slot",
+              "move"
+            ],
+            "fields": [
+              "backup_slot_ref",
+              "identity_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 27,
+          "excess": [],
+          "wrong_business": false,
+          "missing_verification": [
+            "reservation_check"
+          ],
+          "actual": {
+            "steps": [
+              "backup_slot",
+              "carrier_check",
+              "identity",
+              "move"
+            ],
+            "branches": [
+              "backup_slot",
+              "move"
+            ],
+            "fields": [
+              "backup_slot_ref",
+              "carrier_declaration_ref",
+              "identity_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        }
+      ]
+    },
+    {
+      "arm": "contract",
+      "rule": "R3",
+      "fault": "wrong_selector",
+      "violations": [
+        {
+          "fixture_index": 14,
+          "excess": [
+            "identity_ref",
+            "preferred_slot_ref",
+            "site_ref"
+          ],
+          "wrong_business": true,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "identity",
+              "move",
+              "preferred_slot"
+            ],
+            "branches": [
+              "move",
+              "preferred_slot"
+            ],
+            "fields": [
+              "identity_ref",
+              "preferred_slot_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 15,
+          "excess": [],
+          "wrong_business": false,
+          "missing_verification": [
+            "reservation_check"
+          ],
+          "actual": {
+            "steps": [
+              "identity",
+              "move",
+              "preferred_slot"
+            ],
+            "branches": [
+              "move",
+              "preferred_slot"
+            ],
+            "fields": [
+              "identity_ref",
+              "preferred_slot_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 19,
+          "excess": [],
+          "wrong_business": false,
+          "missing_verification": [
+            "reservation_check"
+          ],
+          "actual": {
+            "steps": [
+              "carrier_check",
+              "identity",
+              "move",
+              "preferred_slot"
+            ],
+            "branches": [
+              "move",
+              "preferred_slot"
+            ],
+            "fields": [
+              "carrier_declaration_ref",
+              "identity_ref",
+              "preferred_slot_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 22,
+          "excess": [
+            "backup_slot_ref",
+            "identity_ref",
+            "site_ref"
+          ],
+          "wrong_business": true,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "backup_slot",
+              "identity",
+              "move"
+            ],
+            "branches": [
+              "backup_slot",
+              "move"
+            ],
+            "fields": [
+              "backup_slot_ref",
+              "identity_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 23,
+          "excess": [],
+          "wrong_business": false,
+          "missing_verification": [
+            "reservation_check"
+          ],
+          "actual": {
+            "steps": [
+              "backup_slot",
+              "identity",
+              "move"
+            ],
+            "branches": [
+              "backup_slot",
+              "move"
+            ],
+            "fields": [
+              "backup_slot_ref",
+              "identity_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 27,
+          "excess": [],
+          "wrong_business": false,
+          "missing_verification": [
+            "reservation_check"
+          ],
+          "actual": {
+            "steps": [
+              "backup_slot",
+              "carrier_check",
+              "identity",
+              "move"
+            ],
+            "branches": [
+              "backup_slot",
+              "move"
+            ],
+            "fields": [
+              "backup_slot_ref",
+              "carrier_declaration_ref",
+              "identity_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        }
+      ]
+    },
+    {
+      "arm": "contract",
+      "rule": "R3",
+      "fault": "reverse_condition",
+      "violations": [
+        {
+          "fixture_index": 12,
+          "excess": [],
+          "wrong_business": true,
+          "missing_verification": [
+            "identity",
+            "move",
+            "preferred_slot"
+          ],
+          "actual": {
+            "steps": [],
+            "branches": [],
+            "fields": [],
+            "confirmations": 0
+          }
+        },
+        {
+          "fixture_index": 13,
+          "excess": [
+            "reservation_attestation_ref"
+          ],
+          "wrong_business": false,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "identity",
+              "move",
+              "preferred_slot",
+              "reservation_check"
+            ],
+            "branches": [
+              "move",
+              "preferred_slot"
+            ],
+            "fields": [
+              "identity_ref",
+              "preferred_slot_ref",
+              "reservation_attestation_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 14,
+          "excess": [
+            "identity_ref",
+            "preferred_slot_ref",
+            "site_ref"
+          ],
+          "wrong_business": true,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "identity",
+              "move",
+              "preferred_slot"
+            ],
+            "branches": [
+              "move",
+              "preferred_slot"
+            ],
+            "fields": [
+              "identity_ref",
+              "preferred_slot_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 15,
+          "excess": [],
+          "wrong_business": false,
+          "missing_verification": [
+            "reservation_check"
+          ],
+          "actual": {
+            "steps": [
+              "identity",
+              "move",
+              "preferred_slot"
+            ],
+            "branches": [
+              "move",
+              "preferred_slot"
+            ],
+            "fields": [
+              "identity_ref",
+              "preferred_slot_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 17,
+          "excess": [
+            "reservation_attestation_ref"
+          ],
+          "wrong_business": false,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "carrier_check",
+              "identity",
+              "move",
+              "preferred_slot",
+              "reservation_check"
+            ],
+            "branches": [
+              "move",
+              "preferred_slot"
+            ],
+            "fields": [
+              "carrier_declaration_ref",
+              "identity_ref",
+              "preferred_slot_ref",
+              "reservation_attestation_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 19,
+          "excess": [],
+          "wrong_business": false,
+          "missing_verification": [
+            "reservation_check"
+          ],
+          "actual": {
+            "steps": [
+              "carrier_check",
+              "identity",
+              "move",
+              "preferred_slot"
+            ],
+            "branches": [
+              "move",
+              "preferred_slot"
+            ],
+            "fields": [
+              "carrier_declaration_ref",
+              "identity_ref",
+              "preferred_slot_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 20,
+          "excess": [],
+          "wrong_business": true,
+          "missing_verification": [
+            "backup_slot",
+            "identity",
+            "move"
+          ],
+          "actual": {
+            "steps": [],
+            "branches": [],
+            "fields": [],
+            "confirmations": 0
+          }
+        },
+        {
+          "fixture_index": 21,
+          "excess": [
+            "reservation_attestation_ref"
+          ],
+          "wrong_business": false,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "backup_slot",
+              "identity",
+              "move",
+              "reservation_check"
+            ],
+            "branches": [
+              "backup_slot",
+              "move"
+            ],
+            "fields": [
+              "backup_slot_ref",
+              "identity_ref",
+              "reservation_attestation_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 22,
+          "excess": [
+            "backup_slot_ref",
+            "identity_ref",
+            "site_ref"
+          ],
+          "wrong_business": true,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "backup_slot",
+              "identity",
+              "move"
+            ],
+            "branches": [
+              "backup_slot",
+              "move"
+            ],
+            "fields": [
+              "backup_slot_ref",
+              "identity_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 23,
+          "excess": [],
+          "wrong_business": false,
+          "missing_verification": [
+            "reservation_check"
+          ],
+          "actual": {
+            "steps": [
+              "backup_slot",
+              "identity",
+              "move"
+            ],
+            "branches": [
+              "backup_slot",
+              "move"
+            ],
+            "fields": [
+              "backup_slot_ref",
+              "identity_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 25,
+          "excess": [
+            "reservation_attestation_ref"
+          ],
+          "wrong_business": false,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "backup_slot",
+              "carrier_check",
+              "identity",
+              "move",
+              "reservation_check"
+            ],
+            "branches": [
+              "backup_slot",
+              "move"
+            ],
+            "fields": [
+              "backup_slot_ref",
+              "carrier_declaration_ref",
+              "identity_ref",
+              "reservation_attestation_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 27,
+          "excess": [],
+          "wrong_business": false,
+          "missing_verification": [
+            "reservation_check"
+          ],
+          "actual": {
+            "steps": [
+              "backup_slot",
+              "carrier_check",
+              "identity",
+              "move"
+            ],
+            "branches": [
+              "backup_slot",
+              "move"
+            ],
+            "fields": [
+              "backup_slot_ref",
+              "carrier_declaration_ref",
+              "identity_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        }
+      ]
+    },
+    {
+      "arm": "contract",
+      "rule": "R3",
+      "fault": "wrong_field",
+      "violations": [
+        {
+          "fixture_index": 14,
+          "excess": [
+            "audit_trap_ref",
+            "identity_ref",
+            "preferred_slot_ref",
+            "site_ref"
+          ],
+          "wrong_business": true,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "identity",
+              "move",
+              "preferred_slot",
+              "reservation_check"
+            ],
+            "branches": [
+              "move",
+              "preferred_slot"
+            ],
+            "fields": [
+              "audit_trap_ref",
+              "identity_ref",
+              "preferred_slot_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 15,
+          "excess": [
+            "audit_trap_ref"
+          ],
+          "wrong_business": false,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "identity",
+              "move",
+              "preferred_slot",
+              "reservation_check"
+            ],
+            "branches": [
+              "move",
+              "preferred_slot"
+            ],
+            "fields": [
+              "audit_trap_ref",
+              "identity_ref",
+              "preferred_slot_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 19,
+          "excess": [
+            "audit_trap_ref"
+          ],
+          "wrong_business": false,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "carrier_check",
+              "identity",
+              "move",
+              "preferred_slot",
+              "reservation_check"
+            ],
+            "branches": [
+              "move",
+              "preferred_slot"
+            ],
+            "fields": [
+              "audit_trap_ref",
+              "carrier_declaration_ref",
+              "identity_ref",
+              "preferred_slot_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 22,
+          "excess": [
+            "audit_trap_ref",
+            "backup_slot_ref",
+            "identity_ref",
+            "site_ref"
+          ],
+          "wrong_business": true,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "backup_slot",
+              "identity",
+              "move",
+              "reservation_check"
+            ],
+            "branches": [
+              "backup_slot",
+              "move"
+            ],
+            "fields": [
+              "audit_trap_ref",
+              "backup_slot_ref",
+              "identity_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 23,
+          "excess": [
+            "audit_trap_ref"
+          ],
+          "wrong_business": false,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "backup_slot",
+              "identity",
+              "move",
+              "reservation_check"
+            ],
+            "branches": [
+              "backup_slot",
+              "move"
+            ],
+            "fields": [
+              "audit_trap_ref",
+              "backup_slot_ref",
+              "identity_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 27,
+          "excess": [
+            "audit_trap_ref"
+          ],
+          "wrong_business": false,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "backup_slot",
+              "carrier_check",
+              "identity",
+              "move",
+              "reservation_check"
+            ],
+            "branches": [
+              "backup_slot",
+              "move"
+            ],
+            "fields": [
+              "audit_trap_ref",
+              "backup_slot_ref",
+              "carrier_declaration_ref",
+              "identity_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        }
+      ]
+    },
+    {
+      "arm": "contract",
+      "rule": "R3",
+      "fault": "missing_dependency",
+      "violations": [
+        {
+          "fixture_index": 14,
+          "excess": [
+            "identity_ref",
+            "preferred_slot_ref",
+            "site_ref"
+          ],
+          "wrong_business": true,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "identity",
+              "move",
+              "preferred_slot"
+            ],
+            "branches": [
+              "move",
+              "preferred_slot"
+            ],
+            "fields": [
+              "identity_ref",
+              "preferred_slot_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 15,
+          "excess": [],
+          "wrong_business": false,
+          "missing_verification": [
+            "reservation_check"
+          ],
+          "actual": {
+            "steps": [
+              "identity",
+              "move",
+              "preferred_slot"
+            ],
+            "branches": [
+              "move",
+              "preferred_slot"
+            ],
+            "fields": [
+              "identity_ref",
+              "preferred_slot_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 19,
+          "excess": [],
+          "wrong_business": false,
+          "missing_verification": [
+            "reservation_check"
+          ],
+          "actual": {
+            "steps": [
+              "carrier_check",
+              "identity",
+              "move",
+              "preferred_slot"
+            ],
+            "branches": [
+              "move",
+              "preferred_slot"
+            ],
+            "fields": [
+              "carrier_declaration_ref",
+              "identity_ref",
+              "preferred_slot_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 22,
+          "excess": [
+            "backup_slot_ref",
+            "identity_ref",
+            "site_ref"
+          ],
+          "wrong_business": true,
+          "missing_verification": [],
+          "actual": {
+            "steps": [
+              "backup_slot",
+              "identity",
+              "move"
+            ],
+            "branches": [
+              "backup_slot",
+              "move"
+            ],
+            "fields": [
+              "backup_slot_ref",
+              "identity_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 23,
+          "excess": [],
+          "wrong_business": false,
+          "missing_verification": [
+            "reservation_check"
+          ],
+          "actual": {
+            "steps": [
+              "backup_slot",
+              "identity",
+              "move"
+            ],
+            "branches": [
+              "backup_slot",
+              "move"
+            ],
+            "fields": [
+              "backup_slot_ref",
+              "identity_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        },
+        {
+          "fixture_index": 27,
+          "excess": [],
+          "wrong_business": false,
+          "missing_verification": [
+            "reservation_check"
+          ],
+          "actual": {
+            "steps": [
+              "backup_slot",
+              "carrier_check",
+              "identity",
+              "move"
+            ],
+            "branches": [
+              "backup_slot",
+              "move"
+            ],
+            "fields": [
+              "backup_slot_ref",
+              "carrier_declaration_ref",
+              "identity_ref",
+              "site_ref"
+            ],
+            "confirmations": 2
+          }
+        }
+      ]
+    }
+  ],
+  "audit": [
+    {
+      "case": "allow_standard",
+      "arm": "route_table",
+      "allowed": true,
+      "native": {
+        "message": null,
+        "events": []
+      },
+      "structured": {
+        "decision": "allow",
+        "reason": "allow_standard",
+        "requested_step": "bank",
+        "requested_fields": [
+          "bank_ref",
+          "owner_ref"
+        ],
+        "step_fields": [
+          "bank_ref",
+          "owner_ref"
+        ],
+        "rule_id": null,
+        "prerequisites": [],
+        "verification_present": false,
+        "scope_ok": true,
+        "authorization_for_verification_field": true,
+        "status": {
+          "bank_online": {
+            "value": true,
+            "version": 1
+          },
+          "recent_bank_change": {
+            "value": false,
+            "version": 1
+          },
+          "wallet_online": {
+            "value": false,
+            "version": 1
+          }
+        },
+        "prepared_state_versions": {
+          "bank_online": 1,
+          "wallet_online": 1,
+          "recent_bank_change": 1
+        },
+        "grant_version_check": false,
+        "delivered_fields": [
+          "bank_ref",
+          "owner_ref"
+        ]
+      }
+    },
+    {
+      "case": "allow_after_check",
+      "arm": "route_table",
+      "allowed": true,
+      "native": {
+        "message": null,
+        "events": []
+      },
+      "structured": {
+        "decision": "allow",
+        "reason": "allow_after_check",
+        "requested_step": "bank_guarded",
+        "requested_fields": [
+          "bank_ref",
+          "owner_ref"
+        ],
+        "step_fields": [
+          "bank_ref",
+          "owner_ref"
+        ],
+        "rule_id": "R1",
+        "prerequisites": [
+          "beneficiary_check_done"
+        ],
+        "verification_present": true,
+        "scope_ok": true,
+        "authorization_for_verification_field": true,
+        "status": {
+          "bank_online": {
+            "value": true,
+            "version": 1
+          },
+          "recent_bank_change": {
+            "value": true,
+            "version": 1
+          },
+          "wallet_online": {
+            "value": false,
+            "version": 1
+          }
+        },
+        "prepared_state_versions": {
+          "bank_online": 1,
+          "wallet_online": 1,
+          "recent_bank_change": 1
+        },
+        "grant_version_check": false,
+        "delivered_fields": [
+          "bank_ref",
+          "owner_ref"
+        ]
+      }
+    },
+    {
+      "case": "unauthorized",
+      "arm": "route_table",
+      "allowed": false,
+      "native": {
+        "message": "Unproven, unauthorized, nonoptimal or extraneous plan; no_permitted_plan",
+        "events": []
+      },
+      "structured": {
+        "decision": "deny",
+        "reason": "unauthorized",
+        "requested_step": "bank_guarded",
+        "requested_fields": [
+          "bank_ref",
+          "owner_ref"
+        ],
+        "step_fields": [
+          "bank_ref",
+          "owner_ref"
+        ],
+        "rule_id": "R1",
+        "prerequisites": [
+          "beneficiary_check_done"
+        ],
+        "verification_present": false,
+        "scope_ok": true,
+        "authorization_for_verification_field": false,
+        "status": {
+          "bank_online": {
+            "value": true,
+            "version": 1
+          },
+          "recent_bank_change": {
+            "value": true,
+            "version": 1
+          },
+          "wallet_online": {
+            "value": false,
+            "version": 1
+          }
+        },
+        "prepared_state_versions": {
+          "bank_online": 1,
+          "wallet_online": 1,
+          "recent_bank_change": 1
+        },
+        "grant_version_check": false,
+        "delivered_fields": []
+      }
+    },
+    {
+      "case": "missing_prerequisite",
+      "arm": "route_table",
+      "allowed": false,
+      "native": {
+        "message": "Action dependencies are not completed.",
+        "events": []
+      },
+      "structured": {
+        "decision": "deny",
+        "reason": "missing_prerequisite",
+        "requested_step": "bank_guarded",
+        "requested_fields": [
+          "bank_ref",
+          "owner_ref"
+        ],
+        "step_fields": [
+          "bank_ref",
+          "owner_ref"
+        ],
+        "rule_id": "R1",
+        "prerequisites": [
+          "beneficiary_check_done"
+        ],
+        "verification_present": false,
+        "scope_ok": true,
+        "authorization_for_verification_field": true,
+        "status": {
+          "bank_online": {
+            "value": true,
+            "version": 1
+          },
+          "recent_bank_change": {
+            "value": true,
+            "version": 1
+          },
+          "wallet_online": {
+            "value": false,
+            "version": 1
+          }
+        },
+        "prepared_state_versions": {
+          "bank_online": 1,
+          "wallet_online": 1,
+          "recent_bank_change": 1
+        },
+        "grant_version_check": false,
+        "delivered_fields": []
+      }
+    },
+    {
+      "case": "wrong_fields",
+      "arm": "route_table",
+      "allowed": false,
+      "native": {
+        "message": "Requested fields differ from the table requirements.",
+        "events": []
+      },
+      "structured": {
+        "decision": "deny",
+        "reason": "wrong_fields",
+        "requested_step": "bank_guarded",
+        "requested_fields": [
+          "bank_ref",
+          "owner_ref",
+          "audit_trap_ref"
+        ],
+        "step_fields": [
+          "bank_ref",
+          "owner_ref"
+        ],
+        "rule_id": "R1",
+        "prerequisites": [
+          "beneficiary_check_done"
+        ],
+        "verification_present": true,
+        "scope_ok": true,
+        "authorization_for_verification_field": true,
+        "status": {
+          "bank_online": {
+            "value": true,
+            "version": 1
+          },
+          "recent_bank_change": {
+            "value": true,
+            "version": 1
+          },
+          "wallet_online": {
+            "value": false,
+            "version": 1
+          }
+        },
+        "prepared_state_versions": {
+          "bank_online": 1,
+          "wallet_online": 1,
+          "recent_bank_change": 1
+        },
+        "grant_version_check": false,
+        "delivered_fields": []
+      }
+    },
+    {
+      "case": "wrong_scope",
+      "arm": "route_table",
+      "allowed": false,
+      "native": {
+        "message": "Cross-resource read.",
+        "events": []
+      },
+      "structured": {
+        "decision": "deny",
+        "reason": "wrong_scope",
+        "requested_step": "bank_guarded",
+        "requested_fields": [
+          "bank_ref",
+          "owner_ref"
+        ],
+        "step_fields": [
+          "bank_ref",
+          "owner_ref"
+        ],
+        "rule_id": "R1",
+        "prerequisites": [
+          "beneficiary_check_done"
+        ],
+        "verification_present": true,
+        "scope_ok": false,
+        "authorization_for_verification_field": true,
+        "status": {
+          "bank_online": {
+            "value": true,
+            "version": 1
+          },
+          "recent_bank_change": {
+            "value": true,
+            "version": 1
+          },
+          "wallet_online": {
+            "value": false,
+            "version": 1
+          }
+        },
+        "prepared_state_versions": {
+          "bank_online": 1,
+          "wallet_online": 1,
+          "recent_bank_change": 1
+        },
+        "grant_version_check": false,
+        "delivered_fields": []
+      }
+    },
+    {
+      "case": "route_changed",
+      "arm": "route_table",
+      "allowed": false,
+      "native": {
+        "message": "Current evidence no longer supports the plan.",
+        "events": []
+      },
+      "structured": {
+        "decision": "deny",
+        "reason": "route_changed",
+        "requested_step": "bank",
+        "requested_fields": [
+          "bank_ref",
+          "owner_ref"
+        ],
+        "step_fields": [
+          "bank_ref",
+          "owner_ref"
+        ],
+        "rule_id": null,
+        "prerequisites": [],
+        "verification_present": false,
+        "scope_ok": true,
+        "authorization_for_verification_field": true,
+        "status": {
+          "bank_online": {
+            "value": true,
+            "version": 1
+          },
+          "recent_bank_change": {
+            "value": false,
+            "version": 1
+          },
+          "wallet_online": {
+            "value": true,
+            "version": 2
+          }
+        },
+        "prepared_state_versions": {
+          "bank_online": 1,
+          "wallet_online": 1,
+          "recent_bank_change": 1
+        },
+        "grant_version_check": false,
+        "delivered_fields": []
+      }
+    },
+    {
+      "case": "version_changed",
+      "arm": "route_table",
+      "allowed": true,
+      "native": {
+        "message": null,
+        "events": []
+      },
+      "structured": {
+        "decision": "allow",
+        "reason": "allow_standard",
+        "requested_step": "bank",
+        "requested_fields": [
+          "bank_ref",
+          "owner_ref"
+        ],
+        "step_fields": [
+          "bank_ref",
+          "owner_ref"
+        ],
+        "rule_id": null,
+        "prerequisites": [],
+        "verification_present": false,
+        "scope_ok": true,
+        "authorization_for_verification_field": true,
+        "status": {
+          "bank_online": {
+            "value": true,
+            "version": 1
+          },
+          "recent_bank_change": {
+            "value": false,
+            "version": 1
+          },
+          "wallet_online": {
+            "value": false,
+            "version": 2
+          }
+        },
+        "prepared_state_versions": {
+          "bank_online": 1,
+          "wallet_online": 1,
+          "recent_bank_change": 1
+        },
+        "grant_version_check": false,
+        "delivered_fields": [
+          "bank_ref",
+          "owner_ref"
+        ]
+      }
+    },
+    {
+      "case": "allow_standard",
+      "arm": "contract",
+      "allowed": true,
+      "native": {
+        "message": null,
+        "events": [
+          {
+            "kind": "read",
+            "node": "bank",
+            "fields": [
+              "bank_ref",
+              "owner_ref"
+            ]
+          }
+        ]
+      },
+      "structured": {
+        "decision": "allow",
+        "reason": "allow_standard",
+        "requested_step": "bank",
+        "requested_fields": [
+          "bank_ref",
+          "owner_ref"
+        ],
+        "step_fields": [
+          "bank_ref",
+          "owner_ref"
+        ],
+        "rule_id": null,
+        "prerequisites": [],
+        "verification_present": false,
+        "scope_ok": true,
+        "authorization_for_verification_field": true,
+        "status": {
+          "bank_online": {
+            "value": true,
+            "version": 1
+          },
+          "recent_bank_change": {
+            "value": false,
+            "version": 1
+          },
+          "wallet_online": {
+            "value": false,
+            "version": 1
+          }
+        },
+        "prepared_state_versions": {
+          "bank_online": 1,
+          "wallet_online": 1,
+          "recent_bank_change": 1
+        },
+        "grant_version_check": true,
+        "delivered_fields": [
+          "bank_ref",
+          "owner_ref"
+        ]
+      }
+    },
+    {
+      "case": "allow_after_check",
+      "arm": "contract",
+      "allowed": true,
+      "native": {
+        "message": null,
+        "events": [
+          {
+            "kind": "read",
+            "node": "bank_guarded",
+            "fields": [
+              "bank_ref",
+              "owner_ref"
+            ]
+          }
+        ]
+      },
+      "structured": {
+        "decision": "allow",
+        "reason": "allow_after_check",
+        "requested_step": "bank_guarded",
+        "requested_fields": [
+          "bank_ref",
+          "owner_ref"
+        ],
+        "step_fields": [
+          "bank_ref",
+          "owner_ref"
+        ],
+        "rule_id": "R1",
+        "prerequisites": [
+          "beneficiary_check_done"
+        ],
+        "verification_present": true,
+        "scope_ok": true,
+        "authorization_for_verification_field": true,
+        "status": {
+          "bank_online": {
+            "value": true,
+            "version": 1
+          },
+          "recent_bank_change": {
+            "value": true,
+            "version": 1
+          },
+          "wallet_online": {
+            "value": false,
+            "version": 1
+          }
+        },
+        "prepared_state_versions": {
+          "bank_online": 1,
+          "wallet_online": 1,
+          "recent_bank_change": 1
+        },
+        "grant_version_check": true,
+        "delivered_fields": [
+          "bank_ref",
+          "owner_ref"
+        ]
+      }
+    },
+    {
+      "case": "unauthorized",
+      "arm": "contract",
+      "allowed": false,
+      "native": {
+        "message": "Unproven, unauthorized, nonoptimal or extraneous plan; no_permitted_plan",
+        "events": []
+      },
+      "structured": {
+        "decision": "deny",
+        "reason": "unauthorized",
+        "requested_step": "bank_guarded",
+        "requested_fields": [
+          "bank_ref",
+          "owner_ref"
+        ],
+        "step_fields": [
+          "bank_ref",
+          "owner_ref"
+        ],
+        "rule_id": "R1",
+        "prerequisites": [
+          "beneficiary_check_done"
+        ],
+        "verification_present": false,
+        "scope_ok": true,
+        "authorization_for_verification_field": false,
+        "status": {
+          "bank_online": {
+            "value": true,
+            "version": 1
+          },
+          "recent_bank_change": {
+            "value": true,
+            "version": 1
+          },
+          "wallet_online": {
+            "value": false,
+            "version": 1
+          }
+        },
+        "prepared_state_versions": {
+          "bank_online": 1,
+          "wallet_online": 1,
+          "recent_bank_change": 1
+        },
+        "grant_version_check": true,
+        "delivered_fields": []
+      }
+    },
+    {
+      "case": "missing_prerequisite",
+      "arm": "contract",
+      "allowed": false,
+      "native": {
+        "message": "Action dependencies are not completed.",
+        "events": []
+      },
+      "structured": {
+        "decision": "deny",
+        "reason": "missing_prerequisite",
+        "requested_step": "bank_guarded",
+        "requested_fields": [
+          "bank_ref",
+          "owner_ref"
+        ],
+        "step_fields": [
+          "bank_ref",
+          "owner_ref"
+        ],
+        "rule_id": "R1",
+        "prerequisites": [
+          "beneficiary_check_done"
+        ],
+        "verification_present": false,
+        "scope_ok": true,
+        "authorization_for_verification_field": true,
+        "status": {
+          "bank_online": {
+            "value": true,
+            "version": 1
+          },
+          "recent_bank_change": {
+            "value": true,
+            "version": 1
+          },
+          "wallet_online": {
+            "value": false,
+            "version": 1
+          }
+        },
+        "prepared_state_versions": {
+          "bank_online": 1,
+          "wallet_online": 1,
+          "recent_bank_change": 1
+        },
+        "grant_version_check": true,
+        "delivered_fields": []
+      }
+    },
+    {
+      "case": "wrong_fields",
+      "arm": "contract",
+      "allowed": false,
+      "native": {
+        "message": "Requested fields differ from the next action requirements.",
+        "events": []
+      },
+      "structured": {
+        "decision": "deny",
+        "reason": "wrong_fields",
+        "requested_step": "bank_guarded",
+        "requested_fields": [
+          "bank_ref",
+          "owner_ref",
+          "audit_trap_ref"
+        ],
+        "step_fields": [
+          "bank_ref",
+          "owner_ref"
+        ],
+        "rule_id": "R1",
+        "prerequisites": [
+          "beneficiary_check_done"
+        ],
+        "verification_present": true,
+        "scope_ok": true,
+        "authorization_for_verification_field": true,
+        "status": {
+          "bank_online": {
+            "value": true,
+            "version": 1
+          },
+          "recent_bank_change": {
+            "value": true,
+            "version": 1
+          },
+          "wallet_online": {
+            "value": false,
+            "version": 1
+          }
+        },
+        "prepared_state_versions": {
+          "bank_online": 1,
+          "wallet_online": 1,
+          "recent_bank_change": 1
+        },
+        "grant_version_check": true,
+        "delivered_fields": []
+      }
+    },
+    {
+      "case": "wrong_scope",
+      "arm": "contract",
+      "allowed": false,
+      "native": {
+        "message": "Unknown, consumed or cross-resource grant.",
+        "events": []
+      },
+      "structured": {
+        "decision": "deny",
+        "reason": "wrong_scope",
+        "requested_step": "bank_guarded",
+        "requested_fields": [
+          "bank_ref",
+          "owner_ref"
+        ],
+        "step_fields": [
+          "bank_ref",
+          "owner_ref"
+        ],
+        "rule_id": "R1",
+        "prerequisites": [
+          "beneficiary_check_done"
+        ],
+        "verification_present": true,
+        "scope_ok": false,
+        "authorization_for_verification_field": true,
+        "status": {
+          "bank_online": {
+            "value": true,
+            "version": 1
+          },
+          "recent_bank_change": {
+            "value": true,
+            "version": 1
+          },
+          "wallet_online": {
+            "value": false,
+            "version": 1
+          }
+        },
+        "prepared_state_versions": {
+          "bank_online": 1,
+          "wallet_online": 1,
+          "recent_bank_change": 1
+        },
+        "grant_version_check": true,
+        "delivered_fields": []
+      }
+    },
+    {
+      "case": "route_changed",
+      "arm": "contract",
+      "allowed": false,
+      "native": {
+        "message": "Supporting evidence changed; re-evaluate the plan.",
+        "events": []
+      },
+      "structured": {
+        "decision": "deny",
+        "reason": "route_changed",
+        "requested_step": "bank",
+        "requested_fields": [
+          "bank_ref",
+          "owner_ref"
+        ],
+        "step_fields": [
+          "bank_ref",
+          "owner_ref"
+        ],
+        "rule_id": null,
+        "prerequisites": [],
+        "verification_present": false,
+        "scope_ok": true,
+        "authorization_for_verification_field": true,
+        "status": {
+          "bank_online": {
+            "value": true,
+            "version": 1
+          },
+          "recent_bank_change": {
+            "value": false,
+            "version": 1
+          },
+          "wallet_online": {
+            "value": true,
+            "version": 2
+          }
+        },
+        "prepared_state_versions": {
+          "bank_online": 1,
+          "wallet_online": 1,
+          "recent_bank_change": 1
+        },
+        "grant_version_check": true,
+        "delivered_fields": []
+      }
+    },
+    {
+      "case": "version_changed",
+      "arm": "contract",
+      "allowed": false,
+      "native": {
+        "message": "Supporting evidence changed; re-evaluate the plan.",
+        "events": []
+      },
+      "structured": {
+        "decision": "deny",
+        "reason": "version_changed",
+        "requested_step": "bank",
+        "requested_fields": [
+          "bank_ref",
+          "owner_ref"
+        ],
+        "step_fields": [
+          "bank_ref",
+          "owner_ref"
+        ],
+        "rule_id": null,
+        "prerequisites": [],
+        "verification_present": false,
+        "scope_ok": true,
+        "authorization_for_verification_field": true,
+        "status": {
+          "bank_online": {
+            "value": true,
+            "version": 1
+          },
+          "recent_bank_change": {
+            "value": false,
+            "version": 1
+          },
+          "wallet_online": {
+            "value": false,
+            "version": 2
+          }
+        },
+        "prepared_state_versions": {
+          "bank_online": 1,
+          "wallet_online": 1,
+          "recent_bank_change": 1
+        },
+        "grant_version_check": true,
+        "delivered_fields": []
+      }
+    }
+  ]
+}

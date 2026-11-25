@@ -1,0 +1,29 @@
+{
+  "refund": {
+    "contracts": [
+      ["wallet", "refund", [], ["wallet_ref"], "wallet_online"],
+      ["bank", "refund", [], ["bank_ref", "owner_ref"], "bank_online"]
+    ],
+    "recipes": {
+      "wallet": {"goal": "refund", "when": "wallet_online", "steps": {"wallet": ["wallet_ref"]}},
+      "bank": {"goal": "refund", "when": "bank_online", "steps": {"bank": ["bank_ref", "owner_ref"]}}
+    },
+    "priority": ["wallet", "bank"],
+    "approval": ["wallet", "bank"]
+  },
+  "pickup": {
+    "contracts": [
+      ["identity", "verified_identity", [], ["identity_ref"], null],
+      ["move", "site_change", ["verified_identity"], ["site_ref"], "site_open"],
+      ["preferred_slot", "booking", ["verified_identity"], ["preferred_slot_ref"], "preferred_open"],
+      ["backup_slot", "booking", ["verified_identity"], ["backup_slot_ref"], "backup_open"]
+    ],
+    "recipes": {
+      "move": {"goal": "site_change", "when": "site_open", "steps": {"identity": ["identity_ref"], "move": ["site_ref"]}},
+      "preferred_slot": {"goal": "booking", "when": "preferred_open", "steps": {"identity": ["identity_ref"], "preferred_slot": ["preferred_slot_ref"]}},
+      "backup_slot": {"goal": "booking", "when": "backup_open", "steps": {"identity": ["identity_ref"], "backup_slot": ["backup_slot_ref"]}}
+    },
+    "priority": ["move", "preferred_slot", "backup_slot"],
+    "approval": ["move", "preferred_slot", "backup_slot"]
+  }
+}

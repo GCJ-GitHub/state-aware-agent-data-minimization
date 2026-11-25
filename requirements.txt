@@ -4,3 +4,4 @@ transformers==5.23.0
 tokenizers==0.23.3
 huggingface-hub==2.4.0
 numpy==2.4.6
+requests>=2.28,<3

@@ -1,0 +1,8 @@
+{
+  "replayed_and_independently_counted": 720,
+  "per_arm": {
+    "contract": 360,
+    "route_table": 360
+  },
+  "frozen_inputs_verified": true
+}
