@@ -71,6 +71,17 @@
       "allowed_prefixes": [
         "strong-backend-autonomous/episodes/"
       ]
+    },
+    "external-retail-study": {
+      "path": "artifacts/2026-11-23/external-retail-study.traces.tar.gz",
+      "sha256": "d8dd01facad6aef4708d98b764b23410fac099627e2765eda5a4f7eceb304e86",
+      "compressed_bytes": 99144,
+      "uncompressed_bytes": 2461052,
+      "file_count": 270,
+      "largest_member_bytes": 14690,
+      "allowed_prefixes": [
+        "external-retail-study/episodes/"
+      ]
     }
   }
 }

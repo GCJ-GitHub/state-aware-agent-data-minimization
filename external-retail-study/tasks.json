@@ -1,0 +1,714 @@
+[
+  {
+    "id": "tau-retail-after_commit-01-event",
+    "pair": "tau-retail-after_commit-01",
+    "family": "after_commit",
+    "variant": "event",
+    "upstream_test_index": 16,
+    "source_intent_sha256": "568853faf4309531eeb1f13f47fafa6a5ef785f5186bec4376ef9087b96e4a0b",
+    "upstream_return": {
+      "order_id": "#W9389413",
+      "item_ids": [
+        "2554056026"
+      ],
+      "payment_method_id": "paypal_5364164"
+    },
+    "cancel": {
+      "order_id": "#W5199551",
+      "reason": "no longer needed"
+    },
+    "changed_status": "delivered",
+    "request": "First cancel order #W5199551 because it is no longer needed. For order #W9389413, update my delivery address to the saved alternate address only while it is pending. I authorize a return of the annotated items to the annotated refund method if it has been delivered. Ask for confirmation for each action.",
+    "expected": [
+      "cancel_pending_order",
+      "return_delivered_order_items"
+    ],
+    "expected_stop": false
+  },
+  {
+    "id": "tau-retail-after_commit-01-stable",
+    "pair": "tau-retail-after_commit-01",
+    "family": "after_commit",
+    "variant": "stable",
+    "upstream_test_index": 16,
+    "source_intent_sha256": "568853faf4309531eeb1f13f47fafa6a5ef785f5186bec4376ef9087b96e4a0b",
+    "upstream_return": {
+      "order_id": "#W9389413",
+      "item_ids": [
+        "2554056026"
+      ],
+      "payment_method_id": "paypal_5364164"
+    },
+    "cancel": {
+      "order_id": "#W5199551",
+      "reason": "no longer needed"
+    },
+    "changed_status": null,
+    "request": "First cancel order #W5199551 because it is no longer needed. For order #W9389413, update my delivery address to the saved alternate address only while it is pending. I authorize a return of the annotated items to the annotated refund method if it has been delivered. Ask for confirmation for each action.",
+    "expected": [
+      "cancel_pending_order",
+      "modify_pending_order_address"
+    ],
+    "expected_stop": false
+  },
+  {
+    "id": "tau-retail-after_commit-02-event",
+    "pair": "tau-retail-after_commit-02",
+    "family": "after_commit",
+    "variant": "event",
+    "upstream_test_index": 30,
+    "source_intent_sha256": "604960241b47e81747f0604d7662f83ad898a45245a08491fbdf11292bb4d063",
+    "upstream_return": {
+      "order_id": "#W2692684",
+      "item_ids": [
+        "3788616824"
+      ],
+      "payment_method_id": "gift_card_7711863"
+    },
+    "cancel": {
+      "order_id": "#W9373487",
+      "reason": "no longer needed"
+    },
+    "changed_status": "delivered",
+    "request": "First cancel order #W9373487 because it is no longer needed. For order #W2692684, update my delivery address to the saved alternate address only while it is pending. I authorize a return of the annotated items to the annotated refund method if it has been delivered. Ask for confirmation for each action.",
+    "expected": [
+      "cancel_pending_order",
+      "return_delivered_order_items"
+    ],
+    "expected_stop": false
+  },
+  {
+    "id": "tau-retail-after_commit-02-stable",
+    "pair": "tau-retail-after_commit-02",
+    "family": "after_commit",
+    "variant": "stable",
+    "upstream_test_index": 30,
+    "source_intent_sha256": "604960241b47e81747f0604d7662f83ad898a45245a08491fbdf11292bb4d063",
+    "upstream_return": {
+      "order_id": "#W2692684",
+      "item_ids": [
+        "3788616824"
+      ],
+      "payment_method_id": "gift_card_7711863"
+    },
+    "cancel": {
+      "order_id": "#W9373487",
+      "reason": "no longer needed"
+    },
+    "changed_status": null,
+    "request": "First cancel order #W9373487 because it is no longer needed. For order #W2692684, update my delivery address to the saved alternate address only while it is pending. I authorize a return of the annotated items to the annotated refund method if it has been delivered. Ask for confirmation for each action.",
+    "expected": [
+      "cancel_pending_order",
+      "modify_pending_order_address"
+    ],
+    "expected_stop": false
+  },
+  {
+    "id": "tau-retail-after_commit-03-event",
+    "pair": "tau-retail-after_commit-03",
+    "family": "after_commit",
+    "variant": "event",
+    "upstream_test_index": 30,
+    "source_intent_sha256": "604960241b47e81747f0604d7662f83ad898a45245a08491fbdf11292bb4d063",
+    "upstream_return": {
+      "order_id": "#W7449508",
+      "item_ids": [
+        "6477915553"
+      ],
+      "payment_method_id": "gift_card_7711863"
+    },
+    "cancel": {
+      "order_id": "#W9373487",
+      "reason": "no longer needed"
+    },
+    "changed_status": "delivered",
+    "request": "First cancel order #W9373487 because it is no longer needed. For order #W7449508, update my delivery address to the saved alternate address only while it is pending. I authorize a return of the annotated items to the annotated refund method if it has been delivered. Ask for confirmation for each action.",
+    "expected": [
+      "cancel_pending_order",
+      "return_delivered_order_items"
+    ],
+    "expected_stop": false
+  },
+  {
+    "id": "tau-retail-after_commit-03-stable",
+    "pair": "tau-retail-after_commit-03",
+    "family": "after_commit",
+    "variant": "stable",
+    "upstream_test_index": 30,
+    "source_intent_sha256": "604960241b47e81747f0604d7662f83ad898a45245a08491fbdf11292bb4d063",
+    "upstream_return": {
+      "order_id": "#W7449508",
+      "item_ids": [
+        "6477915553"
+      ],
+      "payment_method_id": "gift_card_7711863"
+    },
+    "cancel": {
+      "order_id": "#W9373487",
+      "reason": "no longer needed"
+    },
+    "changed_status": null,
+    "request": "First cancel order #W9373487 because it is no longer needed. For order #W7449508, update my delivery address to the saved alternate address only while it is pending. I authorize a return of the annotated items to the annotated refund method if it has been delivered. Ask for confirmation for each action.",
+    "expected": [
+      "cancel_pending_order",
+      "modify_pending_order_address"
+    ],
+    "expected_stop": false
+  },
+  {
+    "id": "tau-retail-after_commit-04-event",
+    "pair": "tau-retail-after_commit-04",
+    "family": "after_commit",
+    "variant": "event",
+    "upstream_test_index": 54,
+    "source_intent_sha256": "0b4f1fb163a9054b2846c2d9f64f6d8c3ba0d950dc8d798a194ac339fe295650",
+    "upstream_return": {
+      "order_id": "#W4597054",
+      "item_ids": [
+        "5669664287",
+        "4900990404",
+        "9862136885",
+        "6777246137"
+      ],
+      "payment_method_id": "gift_card_3491931"
+    },
+    "cancel": {
+      "order_id": "#W4836353",
+      "reason": "no longer needed"
+    },
+    "changed_status": "delivered",
+    "request": "First cancel order #W4836353 because it is no longer needed. For order #W4597054, update my delivery address to the saved alternate address only while it is pending. I authorize a return of the annotated items to the annotated refund method if it has been delivered. Ask for confirmation for each action.",
+    "expected": [
+      "cancel_pending_order",
+      "return_delivered_order_items"
+    ],
+    "expected_stop": false
+  },
+  {
+    "id": "tau-retail-after_commit-04-stable",
+    "pair": "tau-retail-after_commit-04",
+    "family": "after_commit",
+    "variant": "stable",
+    "upstream_test_index": 54,
+    "source_intent_sha256": "0b4f1fb163a9054b2846c2d9f64f6d8c3ba0d950dc8d798a194ac339fe295650",
+    "upstream_return": {
+      "order_id": "#W4597054",
+      "item_ids": [
+        "5669664287",
+        "4900990404",
+        "9862136885",
+        "6777246137"
+      ],
+      "payment_method_id": "gift_card_3491931"
+    },
+    "cancel": {
+      "order_id": "#W4836353",
+      "reason": "no longer needed"
+    },
+    "changed_status": null,
+    "request": "First cancel order #W4836353 because it is no longer needed. For order #W4597054, update my delivery address to the saved alternate address only while it is pending. I authorize a return of the annotated items to the annotated refund method if it has been delivered. Ask for confirmation for each action.",
+    "expected": [
+      "cancel_pending_order",
+      "modify_pending_order_address"
+    ],
+    "expected_stop": false
+  },
+  {
+    "id": "tau-retail-after_commit-05-event",
+    "pair": "tau-retail-after_commit-05",
+    "family": "after_commit",
+    "variant": "event",
+    "upstream_test_index": 55,
+    "source_intent_sha256": "76235b26507d0cab935d1ec6bf230b9c20b520c28bcf80c7b2bf369d80a0aed7",
+    "upstream_return": {
+      "order_id": "#W7773202",
+      "item_ids": [
+        "8277474082"
+      ],
+      "payment_method_id": "gift_card_3491931"
+    },
+    "cancel": {
+      "order_id": "#W4836353",
+      "reason": "no longer needed"
+    },
+    "changed_status": "delivered",
+    "request": "First cancel order #W4836353 because it is no longer needed. For order #W7773202, update my delivery address to the saved alternate address only while it is pending. I authorize a return of the annotated items to the annotated refund method if it has been delivered. Ask for confirmation for each action.",
+    "expected": [
+      "cancel_pending_order",
+      "return_delivered_order_items"
+    ],
+    "expected_stop": false
+  },
+  {
+    "id": "tau-retail-after_commit-05-stable",
+    "pair": "tau-retail-after_commit-05",
+    "family": "after_commit",
+    "variant": "stable",
+    "upstream_test_index": 55,
+    "source_intent_sha256": "76235b26507d0cab935d1ec6bf230b9c20b520c28bcf80c7b2bf369d80a0aed7",
+    "upstream_return": {
+      "order_id": "#W7773202",
+      "item_ids": [
+        "8277474082"
+      ],
+      "payment_method_id": "gift_card_3491931"
+    },
+    "cancel": {
+      "order_id": "#W4836353",
+      "reason": "no longer needed"
+    },
+    "changed_status": null,
+    "request": "First cancel order #W4836353 because it is no longer needed. For order #W7773202, update my delivery address to the saved alternate address only while it is pending. I authorize a return of the annotated items to the annotated refund method if it has been delivered. Ask for confirmation for each action.",
+    "expected": [
+      "cancel_pending_order",
+      "modify_pending_order_address"
+    ],
+    "expected_stop": false
+  },
+  {
+    "id": "tau-retail-no_authorized_route-01-event",
+    "pair": "tau-retail-no_authorized_route-01",
+    "family": "no_authorized_route",
+    "variant": "event",
+    "upstream_test_index": 26,
+    "source_intent_sha256": "45853ba4577596a88407b0b44a7cdbaaf6014f6e798ef15f618655087a383df8",
+    "upstream_return": {
+      "order_id": "#W5565470",
+      "item_ids": [
+        "7602931732",
+        "9570044148"
+      ],
+      "payment_method_id": "paypal_3024827"
+    },
+    "cancel": null,
+    "changed_status": "delivered",
+    "request": "For order #W5565470, update my delivery address to the saved alternate address only while it is pending. If it is no longer pending, stop. I do not authorize a return. Ask for confirmation for each action.",
+    "expected": [],
+    "expected_stop": true
+  },
+  {
+    "id": "tau-retail-no_authorized_route-01-stable",
+    "pair": "tau-retail-no_authorized_route-01",
+    "family": "no_authorized_route",
+    "variant": "stable",
+    "upstream_test_index": 26,
+    "source_intent_sha256": "45853ba4577596a88407b0b44a7cdbaaf6014f6e798ef15f618655087a383df8",
+    "upstream_return": {
+      "order_id": "#W5565470",
+      "item_ids": [
+        "7602931732",
+        "9570044148"
+      ],
+      "payment_method_id": "paypal_3024827"
+    },
+    "cancel": null,
+    "changed_status": null,
+    "request": "For order #W5565470, update my delivery address to the saved alternate address only while it is pending. If it is no longer pending, stop. I do not authorize a return. Ask for confirmation for each action.",
+    "expected": [
+      "modify_pending_order_address"
+    ],
+    "expected_stop": false
+  },
+  {
+    "id": "tau-retail-no_authorized_route-02-event",
+    "pair": "tau-retail-no_authorized_route-02",
+    "family": "no_authorized_route",
+    "variant": "event",
+    "upstream_test_index": 28,
+    "source_intent_sha256": "98def26d02f6588c984d65d1bd35a0ba99d35541bcf22e34d4e044f43f15190e",
+    "upstream_return": {
+      "order_id": "#W3792453",
+      "item_ids": [
+        "4293355847"
+      ],
+      "payment_method_id": "paypal_3024827"
+    },
+    "cancel": null,
+    "changed_status": "delivered",
+    "request": "For order #W3792453, update my delivery address to the saved alternate address only while it is pending. If it is no longer pending, stop. I do not authorize a return. Ask for confirmation for each action.",
+    "expected": [],
+    "expected_stop": true
+  },
+  {
+    "id": "tau-retail-no_authorized_route-02-stable",
+    "pair": "tau-retail-no_authorized_route-02",
+    "family": "no_authorized_route",
+    "variant": "stable",
+    "upstream_test_index": 28,
+    "source_intent_sha256": "98def26d02f6588c984d65d1bd35a0ba99d35541bcf22e34d4e044f43f15190e",
+    "upstream_return": {
+      "order_id": "#W3792453",
+      "item_ids": [
+        "4293355847"
+      ],
+      "payment_method_id": "paypal_3024827"
+    },
+    "cancel": null,
+    "changed_status": null,
+    "request": "For order #W3792453, update my delivery address to the saved alternate address only while it is pending. If it is no longer pending, stop. I do not authorize a return. Ask for confirmation for each action.",
+    "expected": [
+      "modify_pending_order_address"
+    ],
+    "expected_stop": false
+  },
+  {
+    "id": "tau-retail-no_authorized_route-03-event",
+    "pair": "tau-retail-no_authorized_route-03",
+    "family": "no_authorized_route",
+    "variant": "event",
+    "upstream_test_index": 28,
+    "source_intent_sha256": "98def26d02f6588c984d65d1bd35a0ba99d35541bcf22e34d4e044f43f15190e",
+    "upstream_return": {
+      "order_id": "#W7181492",
+      "item_ids": [
+        "5753502325",
+        "9851293632"
+      ],
+      "payment_method_id": "paypal_3024827"
+    },
+    "cancel": null,
+    "changed_status": "delivered",
+    "request": "For order #W7181492, update my delivery address to the saved alternate address only while it is pending. If it is no longer pending, stop. I do not authorize a return. Ask for confirmation for each action.",
+    "expected": [],
+    "expected_stop": true
+  },
+  {
+    "id": "tau-retail-no_authorized_route-03-stable",
+    "pair": "tau-retail-no_authorized_route-03",
+    "family": "no_authorized_route",
+    "variant": "stable",
+    "upstream_test_index": 28,
+    "source_intent_sha256": "98def26d02f6588c984d65d1bd35a0ba99d35541bcf22e34d4e044f43f15190e",
+    "upstream_return": {
+      "order_id": "#W7181492",
+      "item_ids": [
+        "5753502325",
+        "9851293632"
+      ],
+      "payment_method_id": "paypal_3024827"
+    },
+    "cancel": null,
+    "changed_status": null,
+    "request": "For order #W7181492, update my delivery address to the saved alternate address only while it is pending. If it is no longer pending, stop. I do not authorize a return. Ask for confirmation for each action.",
+    "expected": [
+      "modify_pending_order_address"
+    ],
+    "expected_stop": false
+  },
+  {
+    "id": "tau-retail-no_authorized_route-04-event",
+    "pair": "tau-retail-no_authorized_route-04",
+    "family": "no_authorized_route",
+    "variant": "event",
+    "upstream_test_index": 35,
+    "source_intent_sha256": "81e06b2efa8abc76b11e9c1e91e91519b247494a23495efccc847421971f2ad2",
+    "upstream_return": {
+      "order_id": "#W8528674",
+      "item_ids": [
+        "6704763132"
+      ],
+      "payment_method_id": "paypal_7664977"
+    },
+    "cancel": null,
+    "changed_status": "delivered",
+    "request": "For order #W8528674, update my delivery address to the saved alternate address only while it is pending. If it is no longer pending, stop. I do not authorize a return. Ask for confirmation for each action.",
+    "expected": [],
+    "expected_stop": true
+  },
+  {
+    "id": "tau-retail-no_authorized_route-04-stable",
+    "pair": "tau-retail-no_authorized_route-04",
+    "family": "no_authorized_route",
+    "variant": "stable",
+    "upstream_test_index": 35,
+    "source_intent_sha256": "81e06b2efa8abc76b11e9c1e91e91519b247494a23495efccc847421971f2ad2",
+    "upstream_return": {
+      "order_id": "#W8528674",
+      "item_ids": [
+        "6704763132"
+      ],
+      "payment_method_id": "paypal_7664977"
+    },
+    "cancel": null,
+    "changed_status": null,
+    "request": "For order #W8528674, update my delivery address to the saved alternate address only while it is pending. If it is no longer pending, stop. I do not authorize a return. Ask for confirmation for each action.",
+    "expected": [
+      "modify_pending_order_address"
+    ],
+    "expected_stop": false
+  },
+  {
+    "id": "tau-retail-no_authorized_route-05-event",
+    "pair": "tau-retail-no_authorized_route-05",
+    "family": "no_authorized_route",
+    "variant": "event",
+    "upstream_test_index": 46,
+    "source_intent_sha256": "8890f578a2409eb7676bcdae1ba2b3ff650863b267849cf32be600933aea682f",
+    "upstream_return": {
+      "order_id": "#W9502127",
+      "item_ids": [
+        "6259501109",
+        "9534205511"
+      ],
+      "payment_method_id": "paypal_2433177"
+    },
+    "cancel": null,
+    "changed_status": "delivered",
+    "request": "For order #W9502127, update my delivery address to the saved alternate address only while it is pending. If it is no longer pending, stop. I do not authorize a return. Ask for confirmation for each action.",
+    "expected": [],
+    "expected_stop": true
+  },
+  {
+    "id": "tau-retail-no_authorized_route-05-stable",
+    "pair": "tau-retail-no_authorized_route-05",
+    "family": "no_authorized_route",
+    "variant": "stable",
+    "upstream_test_index": 46,
+    "source_intent_sha256": "8890f578a2409eb7676bcdae1ba2b3ff650863b267849cf32be600933aea682f",
+    "upstream_return": {
+      "order_id": "#W9502127",
+      "item_ids": [
+        "6259501109",
+        "9534205511"
+      ],
+      "payment_method_id": "paypal_2433177"
+    },
+    "cancel": null,
+    "changed_status": null,
+    "request": "For order #W9502127, update my delivery address to the saved alternate address only while it is pending. If it is no longer pending, stop. I do not authorize a return. Ask for confirmation for each action.",
+    "expected": [
+      "modify_pending_order_address"
+    ],
+    "expected_stop": false
+  },
+  {
+    "id": "tau-retail-route_switch-01-event",
+    "pair": "tau-retail-route_switch-01",
+    "family": "route_switch",
+    "variant": "event",
+    "upstream_test_index": 2,
+    "source_intent_sha256": "785aab49a84ae89f427913573477ce5289e522f7d11656cbbb0673c9ed1e3d6f",
+    "upstream_return": {
+      "order_id": "#W2378156",
+      "item_ids": [
+        "4602305039",
+        "4202497723",
+        "9408160950"
+      ],
+      "payment_method_id": "credit_card_9513926"
+    },
+    "cancel": null,
+    "changed_status": "delivered",
+    "request": "For order #W2378156, update my delivery address to the saved alternate address only while it is pending. I authorize a return of the annotated items to the annotated refund method if it has been delivered. Ask for confirmation for each action.",
+    "expected": [
+      "return_delivered_order_items"
+    ],
+    "expected_stop": false
+  },
+  {
+    "id": "tau-retail-route_switch-01-stable",
+    "pair": "tau-retail-route_switch-01",
+    "family": "route_switch",
+    "variant": "stable",
+    "upstream_test_index": 2,
+    "source_intent_sha256": "785aab49a84ae89f427913573477ce5289e522f7d11656cbbb0673c9ed1e3d6f",
+    "upstream_return": {
+      "order_id": "#W2378156",
+      "item_ids": [
+        "4602305039",
+        "4202497723",
+        "9408160950"
+      ],
+      "payment_method_id": "credit_card_9513926"
+    },
+    "cancel": null,
+    "changed_status": null,
+    "request": "For order #W2378156, update my delivery address to the saved alternate address only while it is pending. I authorize a return of the annotated items to the annotated refund method if it has been delivered. Ask for confirmation for each action.",
+    "expected": [
+      "modify_pending_order_address"
+    ],
+    "expected_stop": false
+  },
+  {
+    "id": "tau-retail-route_switch-02-event",
+    "pair": "tau-retail-route_switch-02",
+    "family": "route_switch",
+    "variant": "event",
+    "upstream_test_index": 5,
+    "source_intent_sha256": "d215b894ca43eef3089e50488c184ff9c185afd9c6210dbccea364e4f305cd84",
+    "upstream_return": {
+      "order_id": "#W6390527",
+      "item_ids": [
+        "8538875209"
+      ],
+      "payment_method_id": "paypal_7644869"
+    },
+    "cancel": null,
+    "changed_status": "delivered",
+    "request": "For order #W6390527, update my delivery address to the saved alternate address only while it is pending. I authorize a return of the annotated items to the annotated refund method if it has been delivered. Ask for confirmation for each action.",
+    "expected": [
+      "return_delivered_order_items"
+    ],
+    "expected_stop": false
+  },
+  {
+    "id": "tau-retail-route_switch-02-stable",
+    "pair": "tau-retail-route_switch-02",
+    "family": "route_switch",
+    "variant": "stable",
+    "upstream_test_index": 5,
+    "source_intent_sha256": "d215b894ca43eef3089e50488c184ff9c185afd9c6210dbccea364e4f305cd84",
+    "upstream_return": {
+      "order_id": "#W6390527",
+      "item_ids": [
+        "8538875209"
+      ],
+      "payment_method_id": "paypal_7644869"
+    },
+    "cancel": null,
+    "changed_status": null,
+    "request": "For order #W6390527, update my delivery address to the saved alternate address only while it is pending. I authorize a return of the annotated items to the annotated refund method if it has been delivered. Ask for confirmation for each action.",
+    "expected": [
+      "modify_pending_order_address"
+    ],
+    "expected_stop": false
+  },
+  {
+    "id": "tau-retail-route_switch-03-event",
+    "pair": "tau-retail-route_switch-03",
+    "family": "route_switch",
+    "variant": "event",
+    "upstream_test_index": 11,
+    "source_intent_sha256": "b7611801b344167b882194d767ddf754f94a200a3e37d7ea16225d99e8964e2d",
+    "upstream_return": {
+      "order_id": "#W5490111",
+      "item_ids": [
+        "4579334072",
+        "1421289881",
+        "6117189161",
+        "4947717507"
+      ],
+      "payment_method_id": "credit_card_3124723"
+    },
+    "cancel": null,
+    "changed_status": "delivered",
+    "request": "For order #W5490111, update my delivery address to the saved alternate address only while it is pending. I authorize a return of the annotated items to the annotated refund method if it has been delivered. Ask for confirmation for each action.",
+    "expected": [
+      "return_delivered_order_items"
+    ],
+    "expected_stop": false
+  },
+  {
+    "id": "tau-retail-route_switch-03-stable",
+    "pair": "tau-retail-route_switch-03",
+    "family": "route_switch",
+    "variant": "stable",
+    "upstream_test_index": 11,
+    "source_intent_sha256": "b7611801b344167b882194d767ddf754f94a200a3e37d7ea16225d99e8964e2d",
+    "upstream_return": {
+      "order_id": "#W5490111",
+      "item_ids": [
+        "4579334072",
+        "1421289881",
+        "6117189161",
+        "4947717507"
+      ],
+      "payment_method_id": "credit_card_3124723"
+    },
+    "cancel": null,
+    "changed_status": null,
+    "request": "For order #W5490111, update my delivery address to the saved alternate address only while it is pending. I authorize a return of the annotated items to the annotated refund method if it has been delivered. Ask for confirmation for each action.",
+    "expected": [
+      "modify_pending_order_address"
+    ],
+    "expected_stop": false
+  },
+  {
+    "id": "tau-retail-route_switch-04-event",
+    "pair": "tau-retail-route_switch-04",
+    "family": "route_switch",
+    "variant": "event",
+    "upstream_test_index": 11,
+    "source_intent_sha256": "b7611801b344167b882194d767ddf754f94a200a3e37d7ea16225d99e8964e2d",
+    "upstream_return": {
+      "order_id": "#W7387996",
+      "item_ids": [
+        "5796612084"
+      ],
+      "payment_method_id": "paypal_9497703"
+    },
+    "cancel": null,
+    "changed_status": "delivered",
+    "request": "For order #W7387996, update my delivery address to the saved alternate address only while it is pending. I authorize a return of the annotated items to the annotated refund method if it has been delivered. Ask for confirmation for each action.",
+    "expected": [
+      "return_delivered_order_items"
+    ],
+    "expected_stop": false
+  },
+  {
+    "id": "tau-retail-route_switch-04-stable",
+    "pair": "tau-retail-route_switch-04",
+    "family": "route_switch",
+    "variant": "stable",
+    "upstream_test_index": 11,
+    "source_intent_sha256": "b7611801b344167b882194d767ddf754f94a200a3e37d7ea16225d99e8964e2d",
+    "upstream_return": {
+      "order_id": "#W7387996",
+      "item_ids": [
+        "5796612084"
+      ],
+      "payment_method_id": "paypal_9497703"
+    },
+    "cancel": null,
+    "changed_status": null,
+    "request": "For order #W7387996, update my delivery address to the saved alternate address only while it is pending. I authorize a return of the annotated items to the annotated refund method if it has been delivered. Ask for confirmation for each action.",
+    "expected": [
+      "modify_pending_order_address"
+    ],
+    "expected_stop": false
+  },
+  {
+    "id": "tau-retail-route_switch-05-event",
+    "pair": "tau-retail-route_switch-05",
+    "family": "route_switch",
+    "variant": "event",
+    "upstream_test_index": 19,
+    "source_intent_sha256": "8f2713148dcb22f52725a2e1c87f70ae65ff335892db70b14f4f5414f2d40525",
+    "upstream_return": {
+      "order_id": "#W2890441",
+      "item_ids": [
+        "2366567022"
+      ],
+      "payment_method_id": "credit_card_1061405"
+    },
+    "cancel": null,
+    "changed_status": "delivered",
+    "request": "For order #W2890441, update my delivery address to the saved alternate address only while it is pending. I authorize a return of the annotated items to the annotated refund method if it has been delivered. Ask for confirmation for each action.",
+    "expected": [
+      "return_delivered_order_items"
+    ],
+    "expected_stop": false
+  },
+  {
+    "id": "tau-retail-route_switch-05-stable",
+    "pair": "tau-retail-route_switch-05",
+    "family": "route_switch",
+    "variant": "stable",
+    "upstream_test_index": 19,
+    "source_intent_sha256": "8f2713148dcb22f52725a2e1c87f70ae65ff335892db70b14f4f5414f2d40525",
+    "upstream_return": {
+      "order_id": "#W2890441",
+      "item_ids": [
+        "2366567022"
+      ],
+      "payment_method_id": "credit_card_1061405"
+    },
+    "cancel": null,
+    "changed_status": null,
+    "request": "For order #W2890441, update my delivery address to the saved alternate address only while it is pending. I authorize a return of the annotated items to the annotated refund method if it has been delivered. Ask for confirmation for each action.",
+    "expected": [
+      "modify_pending_order_address"
+    ],
+    "expected_stop": false
+  }
+]

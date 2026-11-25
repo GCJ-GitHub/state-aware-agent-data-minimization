@@ -1,0 +1,509 @@
+{
+  "assigned": 270,
+  "rows": 270,
+  "tables": {
+    "all": {
+      "agent_only": {
+        "n": 90,
+        "correct": 90,
+        "excess": 270,
+        "raw_fields": 600,
+        "safe_stop": 15,
+        "completed": 75,
+        "blocked_episode": 0,
+        "recovery": 0,
+        "first_committed": 30,
+        "leak": 0,
+        "clock": 90,
+        "hit_read_window": 45,
+        "tool_calls": 825,
+        "calls_through_outcome": 825,
+        "calls_after_close": 0,
+        "model_calls": 915,
+        "confirmations": 105,
+        "final_reply": 90,
+        "api_error": 0
+      },
+      "route_table": {
+        "n": 90,
+        "correct": 90,
+        "excess": 0,
+        "raw_fields": 330,
+        "safe_stop": 15,
+        "completed": 75,
+        "blocked_episode": 45,
+        "recovery": 45,
+        "first_committed": 30,
+        "leak": 0,
+        "clock": 90,
+        "hit_read_window": 45,
+        "tool_calls": 780,
+        "calls_through_outcome": 780,
+        "calls_after_close": 0,
+        "model_calls": 870,
+        "confirmations": 105,
+        "final_reply": 90,
+        "api_error": 0
+      },
+      "contract": {
+        "n": 90,
+        "correct": 90,
+        "excess": 0,
+        "raw_fields": 330,
+        "safe_stop": 15,
+        "completed": 75,
+        "blocked_episode": 45,
+        "recovery": 45,
+        "first_committed": 30,
+        "leak": 0,
+        "clock": 90,
+        "hit_read_window": 45,
+        "tool_calls": 781,
+        "calls_through_outcome": 780,
+        "calls_after_close": 1,
+        "model_calls": 871,
+        "confirmations": 105,
+        "final_reply": 90,
+        "api_error": 0
+      }
+    },
+    "route_switch": {
+      "agent_only": {
+        "n": 30,
+        "correct": 30,
+        "excess": 90,
+        "raw_fields": 210,
+        "safe_stop": 0,
+        "completed": 30,
+        "blocked_episode": 0,
+        "recovery": 0,
+        "first_committed": 0,
+        "leak": 0,
+        "clock": 30,
+        "hit_read_window": 15,
+        "tool_calls": 255,
+        "calls_through_outcome": 255,
+        "calls_after_close": 0,
+        "model_calls": 285,
+        "confirmations": 30,
+        "final_reply": 30,
+        "api_error": 0
+      },
+      "route_table": {
+        "n": 30,
+        "correct": 30,
+        "excess": 0,
+        "raw_fields": 120,
+        "safe_stop": 0,
+        "completed": 30,
+        "blocked_episode": 15,
+        "recovery": 15,
+        "first_committed": 0,
+        "leak": 0,
+        "clock": 30,
+        "hit_read_window": 15,
+        "tool_calls": 240,
+        "calls_through_outcome": 240,
+        "calls_after_close": 0,
+        "model_calls": 270,
+        "confirmations": 30,
+        "final_reply": 30,
+        "api_error": 0
+      },
+      "contract": {
+        "n": 30,
+        "correct": 30,
+        "excess": 0,
+        "raw_fields": 120,
+        "safe_stop": 0,
+        "completed": 30,
+        "blocked_episode": 15,
+        "recovery": 15,
+        "first_committed": 0,
+        "leak": 0,
+        "clock": 30,
+        "hit_read_window": 15,
+        "tool_calls": 240,
+        "calls_through_outcome": 240,
+        "calls_after_close": 0,
+        "model_calls": 270,
+        "confirmations": 30,
+        "final_reply": 30,
+        "api_error": 0
+      }
+    },
+    "after_commit": {
+      "agent_only": {
+        "n": 30,
+        "correct": 30,
+        "excess": 90,
+        "raw_fields": 210,
+        "safe_stop": 0,
+        "completed": 30,
+        "blocked_episode": 0,
+        "recovery": 0,
+        "first_committed": 30,
+        "leak": 0,
+        "clock": 30,
+        "hit_read_window": 15,
+        "tool_calls": 375,
+        "calls_through_outcome": 375,
+        "calls_after_close": 0,
+        "model_calls": 405,
+        "confirmations": 60,
+        "final_reply": 30,
+        "api_error": 0
+      },
+      "route_table": {
+        "n": 30,
+        "correct": 30,
+        "excess": 0,
+        "raw_fields": 120,
+        "safe_stop": 0,
+        "completed": 30,
+        "blocked_episode": 15,
+        "recovery": 15,
+        "first_committed": 30,
+        "leak": 0,
+        "clock": 30,
+        "hit_read_window": 15,
+        "tool_calls": 360,
+        "calls_through_outcome": 360,
+        "calls_after_close": 0,
+        "model_calls": 390,
+        "confirmations": 60,
+        "final_reply": 30,
+        "api_error": 0
+      },
+      "contract": {
+        "n": 30,
+        "correct": 30,
+        "excess": 0,
+        "raw_fields": 120,
+        "safe_stop": 0,
+        "completed": 30,
+        "blocked_episode": 15,
+        "recovery": 15,
+        "first_committed": 30,
+        "leak": 0,
+        "clock": 30,
+        "hit_read_window": 15,
+        "tool_calls": 361,
+        "calls_through_outcome": 360,
+        "calls_after_close": 1,
+        "model_calls": 391,
+        "confirmations": 60,
+        "final_reply": 30,
+        "api_error": 0
+      }
+    },
+    "no_authorized_route": {
+      "agent_only": {
+        "n": 30,
+        "correct": 30,
+        "excess": 90,
+        "raw_fields": 180,
+        "safe_stop": 15,
+        "completed": 15,
+        "blocked_episode": 0,
+        "recovery": 0,
+        "first_committed": 0,
+        "leak": 0,
+        "clock": 30,
+        "hit_read_window": 15,
+        "tool_calls": 195,
+        "calls_through_outcome": 195,
+        "calls_after_close": 0,
+        "model_calls": 225,
+        "confirmations": 15,
+        "final_reply": 30,
+        "api_error": 0
+      },
+      "route_table": {
+        "n": 30,
+        "correct": 30,
+        "excess": 0,
+        "raw_fields": 90,
+        "safe_stop": 15,
+        "completed": 15,
+        "blocked_episode": 15,
+        "recovery": 15,
+        "first_committed": 0,
+        "leak": 0,
+        "clock": 30,
+        "hit_read_window": 15,
+        "tool_calls": 180,
+        "calls_through_outcome": 180,
+        "calls_after_close": 0,
+        "model_calls": 210,
+        "confirmations": 15,
+        "final_reply": 30,
+        "api_error": 0
+      },
+      "contract": {
+        "n": 30,
+        "correct": 30,
+        "excess": 0,
+        "raw_fields": 90,
+        "safe_stop": 15,
+        "completed": 15,
+        "blocked_episode": 15,
+        "recovery": 15,
+        "first_committed": 0,
+        "leak": 0,
+        "clock": 30,
+        "hit_read_window": 15,
+        "tool_calls": 180,
+        "calls_through_outcome": 180,
+        "calls_after_close": 0,
+        "model_calls": 210,
+        "confirmations": 15,
+        "final_reply": 30,
+        "api_error": 0
+      }
+    },
+    "stable": {
+      "agent_only": {
+        "n": 45,
+        "correct": 45,
+        "excess": 0,
+        "raw_fields": 270,
+        "safe_stop": 0,
+        "completed": 45,
+        "blocked_episode": 0,
+        "recovery": 0,
+        "first_committed": 15,
+        "leak": 0,
+        "clock": 45,
+        "hit_read_window": 0,
+        "tool_calls": 330,
+        "calls_through_outcome": 330,
+        "calls_after_close": 0,
+        "model_calls": 375,
+        "confirmations": 60,
+        "final_reply": 45,
+        "api_error": 0
+      },
+      "route_table": {
+        "n": 45,
+        "correct": 45,
+        "excess": 0,
+        "raw_fields": 270,
+        "safe_stop": 0,
+        "completed": 45,
+        "blocked_episode": 0,
+        "recovery": 0,
+        "first_committed": 15,
+        "leak": 0,
+        "clock": 45,
+        "hit_read_window": 0,
+        "tool_calls": 330,
+        "calls_through_outcome": 330,
+        "calls_after_close": 0,
+        "model_calls": 375,
+        "confirmations": 60,
+        "final_reply": 45,
+        "api_error": 0
+      },
+      "contract": {
+        "n": 45,
+        "correct": 45,
+        "excess": 0,
+        "raw_fields": 270,
+        "safe_stop": 0,
+        "completed": 45,
+        "blocked_episode": 0,
+        "recovery": 0,
+        "first_committed": 15,
+        "leak": 0,
+        "clock": 45,
+        "hit_read_window": 0,
+        "tool_calls": 331,
+        "calls_through_outcome": 330,
+        "calls_after_close": 1,
+        "model_calls": 376,
+        "confirmations": 60,
+        "final_reply": 45,
+        "api_error": 0
+      }
+    },
+    "event": {
+      "agent_only": {
+        "n": 45,
+        "correct": 45,
+        "excess": 270,
+        "raw_fields": 330,
+        "safe_stop": 15,
+        "completed": 30,
+        "blocked_episode": 0,
+        "recovery": 0,
+        "first_committed": 15,
+        "leak": 0,
+        "clock": 45,
+        "hit_read_window": 45,
+        "tool_calls": 495,
+        "calls_through_outcome": 495,
+        "calls_after_close": 0,
+        "model_calls": 540,
+        "confirmations": 45,
+        "final_reply": 45,
+        "api_error": 0
+      },
+      "route_table": {
+        "n": 45,
+        "correct": 45,
+        "excess": 0,
+        "raw_fields": 60,
+        "safe_stop": 15,
+        "completed": 30,
+        "blocked_episode": 45,
+        "recovery": 45,
+        "first_committed": 15,
+        "leak": 0,
+        "clock": 45,
+        "hit_read_window": 45,
+        "tool_calls": 450,
+        "calls_through_outcome": 450,
+        "calls_after_close": 0,
+        "model_calls": 495,
+        "confirmations": 45,
+        "final_reply": 45,
+        "api_error": 0
+      },
+      "contract": {
+        "n": 45,
+        "correct": 45,
+        "excess": 0,
+        "raw_fields": 60,
+        "safe_stop": 15,
+        "completed": 30,
+        "blocked_episode": 45,
+        "recovery": 45,
+        "first_committed": 15,
+        "leak": 0,
+        "clock": 45,
+        "hit_read_window": 45,
+        "tool_calls": 450,
+        "calls_through_outcome": 450,
+        "calls_after_close": 0,
+        "model_calls": 495,
+        "confirmations": 45,
+        "final_reply": 45,
+        "api_error": 0
+      }
+    }
+  },
+  "comparisons": {
+    "route_table_minus_agent_only": {
+      "correct": {
+        "delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "excess": {
+        "delta": -3.0,
+        "ci95": [
+          -3.0,
+          -3.0
+        ]
+      },
+      "tool_calls": {
+        "delta": -0.5,
+        "ci95": [
+          -0.5,
+          -0.5
+        ]
+      },
+      "calls_through_outcome": {
+        "delta": -0.5,
+        "ci95": [
+          -0.5,
+          -0.5
+        ]
+      },
+      "confirmations": {
+        "delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "contract_minus_agent_only": {
+      "correct": {
+        "delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "excess": {
+        "delta": -3.0,
+        "ci95": [
+          -3.0,
+          -3.0
+        ]
+      },
+      "tool_calls": {
+        "delta": -0.4888888888888889,
+        "ci95": [
+          -0.5,
+          -0.4666666666666666
+        ]
+      },
+      "calls_through_outcome": {
+        "delta": -0.5,
+        "ci95": [
+          -0.5,
+          -0.5
+        ]
+      },
+      "confirmations": {
+        "delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "contract_minus_route_table": {
+      "correct": {
+        "delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "excess": {
+        "delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "tool_calls": {
+        "delta": 0.01111111111111111,
+        "ci95": [
+          0.0,
+          0.03333333333333333
+        ]
+      },
+      "calls_through_outcome": {
+        "delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "confirmations": {
+        "delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  }
+}

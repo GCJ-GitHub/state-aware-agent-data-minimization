@@ -32,3 +32,5 @@ secrets*
 /paper/*.log
 /paper/*.aux
 /paper/*.blg
+
+/external-retail-study/episodes/

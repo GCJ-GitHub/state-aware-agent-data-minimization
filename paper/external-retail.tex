@@ -1,0 +1,24 @@
+\subsection{Transfer to an independently maintained retail environment}
+We use Sierra's retail environment from $\tau$-bench~\cite{taubench} as an external source of independently authored test annotations, synthetic order records, and executable business tools. We deterministically select 15 different target orders from 12 annotated test tasks. We preserve the annotated item and refund parameters for returns and the annotated cancellation inputs where available. The adapter calls the unmodified order lookup, address update, return, and cancellation functions. It projects the replies to the agent's view and uses fixed requests and simulated confirmations.
+
+We construct state pairs for testing the delivery boundary. The same request initially authorizes updating the alternate address on a pending order. In the changed variant the simulator marks it delivered at a preassigned model turn. Some requests allow an annotated return; others require a safe stop. A third family first commits the cancellation of a separate order before the target order changes. The external benchmark supplies the retail tools and task material. The address-update branch, state schedule, conditional authorizations, and privacy scorer are part of our adaptation.
+
+We compare agent-directed reads under the original task-level authorization, a composable refreshed route table, and the versioned contract backend. All arms share the same Qwen4-Max endpoint, prompts, tools, authority, confirmation and recovery policy. Thirty derived tasks and three repetitions per arm give 270 runs. We assess raw field releases against the currently valid route and score success from the upstream tool's actual simulated state changes and expected safe stops. The bounded cohort tests transfer of the enforcement mechanism to another tool implementation.
+
+\begin{table*}[t]
+\centering
+\small
+\begin{tabular}{@{}lrrrrrr@{}}
+\toprule
+Read policy & Correct & Excess fields & Block recovery & Calls through outcome & Calls after closure & Approvals\\
+\midrule
+Agent-directed & 90/90 & 270 & -- & 825 & 0 & 105\\
+Refreshed route table & 90/90 & 0 & 45/45 & 780 & 0 & 105\\
+Versioned contracts & 90/90 & 0 & 45/45 & 780 & 1 & 105\\
+\bottomrule
+\end{tabular}
+\caption{Retail transfer study. Correct outcomes include 15 expected safe stops per arm. Block recovery is conditional on a denied field read. All arms produce 90 normal final replies.}
+\label{tab:external-retail}
+\end{table*}
+
+The delivery event falls between read preparation and attempt in all 45 state-change runs per arm. Agent-directed reads deliver six obsolete address fields per changed run. Its confirmation check then sees that the address update is unavailable, so the agent still recovers. Both guarded arms stop the field release one tool call earlier. Each reduces observed excess fields from 270 to zero and saves 45 calls through the business outcome. The two guards match on correctness, excess exposure, and business-stage tool calls. All three arms deliver the prescribed safe stop on all 15 such runs. The result extends the observed delivery-time effect to independently developed retail tools, under our controlled state schedule. It does not estimate a passive rate of state changes or imply a score on the original benchmark protocol.

@@ -1,6 +1,6 @@
 # 后续实验完整轨迹
 
-根级报告、任务、评分和协议直接放在各阶段目录。下面四个压缩包保留原始相对路径和文本字节，包含正式轨迹、开发诊断、HTTP元数据和中断；不是抽样或重新生成的回答。
+根级报告、任务、评分和协议直接放在各阶段目录。下列压缩包保留原始相对路径和文本字节，包含正式轨迹、开发诊断、HTTP元数据和中断；不是抽样或重新生成的回答。
 
 | 阶段 | 文件数 | 原始MiB | 压缩MiB | 文件 |
 |---|---:|---:|---:|---|
@@ -8,6 +8,9 @@
 | `necessity-factorial-pilot` | 1737 | 20.65 | 1.02 | [下载](necessity-factorial-pilot.traces.tar.gz) |
 | `necessity-native-retest` | 1693 | 44.63 | 2.05 | [下载](necessity-native-retest.traces.tar.gz) |
 | `necessity-three-arm-holdout` | 12943 | 369.41 | 18.64 | [下载](necessity-three-arm-holdout.traces.tar.gz) |
+| `strong-backend-autonomous` | 720 | 8.62 | 0.45 | [下载](strong-backend-autonomous.traces.tar.gz) |
+| `qwen4-max-paper-replication` | 2736 | 74.36 | 3.58 | [下载](qwen4-max-paper-replication.traces.tar.gz) |
+| `external-retail-study` | 270 | 2.35 | 0.09 | [下载](external-retail-study.traces.tar.gz) |
 
 SHA-256、允许路径前缀和字节统计见 [ARCHIVE_MANIFEST.json](ARCHIVE_MANIFEST.json)。包内不含权重、认证配置或API凭据。凭据扫描同时解压检查成员文本，不是仅跳过二进制压缩包。
 

@@ -5,9 +5,10 @@
 - [Autonomous comparison protocol](autonomous-protocol.tex)
 - [Strong baseline, maintenance and model diagnostics](completed-followups.tex)
 - [AirGap-style experiment](airgap-results.tex) · [Query-order and enforcement ablation](factorial-results.tex)
+- [External retail transfer study](external-retail.tex)
 - [Full experiment index and current conclusions](../docs/LATEST_RESULTS.md)
 
-This ten-page anonymous conference draft uses two hosted model aliases and five matched model-dependent comparisons. Qwen4-Max contributes 2,736 formal runs. It also reports scripted rule-maintenance and audit studies and a separate terminal-feedback diagnostic. The central claim concerns field necessity at delivery; the refreshed route table is the strong implementation baseline.
+This eleven-page anonymous conference draft uses two hosted model aliases and five matched model-dependent comparisons. Qwen4-Max contributes 2,736 formal runs. An additional 270-run transfer study uses pinned Sierra tau-bench retail tools and researcher-designed state pairs. It also reports scripted rule-maintenance and audit studies and a separate terminal-feedback diagnostic. The central claim concerns field necessity at delivery; the refreshed route table is the strong implementation baseline.
 
 ## Build
 

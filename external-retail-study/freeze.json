@@ -1,0 +1,29 @@
+{
+  "upstream_commit": "59a200c6d575d595120f1cb70fea53cef0632f6b",
+  "upstream_files": {
+    "LICENSE": "243d23d45b80122b5ac575586ccef352fdc9c45e6d7d2605449aca8a17478b42",
+    "tau_bench/envs/retail/tasks_test.py": "6f09468923c6cfb6162e94fe659264d6aee70816c18d51278fb4a581db7765a4",
+    "tau_bench/envs/retail/wiki.md": "d539fd2a46a8b8dd2e934ff9ed92f43e9f6b56bc7a718db8d2803ba8ad8f6bf7",
+    "tau_bench/envs/retail/data/orders.json": "2598a12586d28f2d6bd16bc86f4c800029b6af18e0abb5c475ef5c869c11ced1",
+    "tau_bench/envs/retail/data/users.json": "6f4fd104cc5e80b92166c4035315c31532c6cea52a90dcdf18425ee7f87c2b82",
+    "tau_bench/envs/tool.py": "0a158be298092fc64862ae8843f35f57cfba139aa02c2ee8fbe87b1e4a1de0fc",
+    "tau_bench/envs/retail/tools/get_order_details.py": "ca6c23cc89c1e981251b9adb1e6d705e364ff942aee986b12335b36e94281056",
+    "tau_bench/envs/retail/tools/modify_pending_order_address.py": "8f23d24511078ca10818fac8501db358ad699584952233d696a695e78993d001",
+    "tau_bench/envs/retail/tools/return_delivered_order_items.py": "7d92e8962c17e5fa9c8e3240d21e31fc1adf5e68100c92bb0f67e0a67ea5b7bf",
+    "tau_bench/envs/retail/tools/cancel_pending_order.py": "c33151a896b62ac87ed1bcbcbd62dabcd47c8c1eaf47bbb5e2f15f8b6283b19d"
+  },
+  "study_files": {
+    "external_retail_study.py": "a6bf444f855915165ee9a8673bcabe4f3d6862ad747457f851b622316cdb8018",
+    "strong_backend_autonomous.py": "ca2bd568fec1682d58b32848df50ac34a8fd147eb23e10ac5a4a6779e3559999",
+    "qwen4_paper_replication.py": "7d401d7a899892ba853636f58bf5f430d79c8ec758bed8af138db5fccbb1c8d0",
+    "necessity_v2/scenarios.py": "5e0c2c2dd6c73539aac1a39018896957da9321a30d465c37906bfa467b7a9f85",
+    "necessity_v2/acquire.py": "48d24746fe575fb735c4bde1e84ca3cb0bdf45f6cb2f8efe73a8b583496d1641",
+    "necessity_v2/signature_rule.py": "55f098c033c284203d7a1c68c2b22a1ff920262f703d9daa4c33e8d35815c5f3",
+    "necessity_v2/__init__.py": "04b53620f26cdaacc9adb85a13574aa3930e40c2dcf7ffc47941d04ca9e351b9",
+    "necessity_v2/core.py": "ec513b8ec1c290541b51287fd822be89bed7cd8ee25323ef3836b9324f980b73",
+    "necessity_v2/composable_routes.py": "dcc8f2b55aaca150e8d0e338f5d6ba5ff980c90a6d6162677082342debfdb750",
+    "necessity_v2/route_baseline.py": "4a66c7bf60793339fb684fb26019f5fe3be8259499f3d7f662eba94f2d97235b",
+    "external-retail-study/tasks.json": "098e1d558cdad49c1c67d4a734b9b894c68187bcc7c4871fda694d34fab03cc5",
+    "external-retail-study/protocol.json": "6f06466e22dc73a7360c25e9e77f32fdd9d04f6788db26715570dcec5241d6c3"
+  }
+}

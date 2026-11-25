@@ -1,0 +1,24 @@
+{
+  "upstream_commit": "59a200c6d575d595120f1cb70fea53cef0632f6b",
+  "model": "qwen4-max",
+  "arms": [
+    "agent_only",
+    "route_table",
+    "contract"
+  ],
+  "seeds": [
+    19,
+    113,
+    421
+  ],
+  "cases": 30,
+  "pairs": 15,
+  "model_calls_max": 40,
+  "system_prompt": "You operate on a fictional retail workflow. Emit one native tool call per response.\nStart with status. Use exactly the shown admissible plan in select_plan. For an enabled step,\nuse prepare_read and then read_fields with the returned handle and exact field names if inputs are\nmissing. Follow the returned input names and never invent values. Ask for confirmation with confirm,\nthen execute using exactly the provided input fields. The step name is the actual retail operation.\nIf status_required, replan, or refresh_required, call status and select a current plan.\nAfter a completed cancellation call status for the remaining order. If status is no_route, call stop.\nWhen a tool reports complete, stopped, or workflow_closed, provide a brief final reply and do not\ncall more tools. Never repeat private field values in prose. All actions and confirmations are simulated.\n",
+  "original": "Sierra retail annotated return parameters, selected cancellation actions and four unchanged upstream tools",
+  "added": "Alternate-address update, conditional fallback authorization, pending initial state, delivery event at fixed turn boundary",
+  "privacy": "Count route-unnecessary field instances per episode; item_ids is one bundled field",
+  "preflight": 90,
+  "clock": "First status plus 3 turns, or committed cancellation plus 4; apply before tool dispatch",
+  "tool_success": "Real upstream order transitions checked against annotated action inputs."
+}

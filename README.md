@@ -6,10 +6,11 @@
 
 - **[新版论文 PDF](paper/paper.pdf)** · [LaTeX 源码与图表](paper/README.md)
 - **[实验结果、论文结论与下一步](docs/LATEST_RESULTS.md)**
+- **[独立 τ-bench 零售工具对照（270 次）](external-retail-study/REPORT.md)**
 - [Qwen4-Max 的 2,736 次正式复现](qwen4-max-paper-replication/REPORT.md) · [配对分析](qwen4-max-paper-replication/paired-analysis.json)
 - [两种强后端的自主对照](strong-backend-autonomous/REPORT.md) · [维护与审计](maintenance-audit-study/REPORT.md) · [结束回包诊断](qwen4-terminal-diagnostic/REPORT.md)
 
-Qwen3.8-Flash 和 Qwen4-Max 的主对照中，后端交付前校验都将 Agent 自行按需的 144 次过时字段交付降到 0。可组合路线表在强基线对照中也实现了零多读。证据支持动态状态下的交付检查；进一步验证应优先换独立的业务工具环境。
+Qwen3.8-Flash 和 Qwen4-Max 的主对照中，后端交付前校验都将 Agent 自行按需的 144 次过时字段交付降到 0。可组合路线表在强基线对照中也实现了零多读。τ-bench 零售补充对照复现了交付检查的效果，两种后端都将过时字段交付从 270 次降到 0，三组均为 90/90。
 
 ## 从这里开始
 

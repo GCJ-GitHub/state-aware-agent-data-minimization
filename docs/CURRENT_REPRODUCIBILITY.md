@@ -20,6 +20,8 @@ python maintenance-audit-study/fault_audit.py
 
 [最新结果与研究结论](LATEST_RESULTS.md)列出论文使用的五项模型复现、离线实验和源文件入口。
 
+[τ-bench 零售迁移对照](../external-retail-study/README.md)提供新的独立上游检出、解包和离线复放命令，覆盖 270 条轨迹。
+
 ## 1. 安装要求
 
 推荐Python 3.11；后续核心、解包和离线重放使用标准库。单元测试也不请求模型API。历史MLX本地生成、tokenizer重放及上游数据说明仍按历史指南。
