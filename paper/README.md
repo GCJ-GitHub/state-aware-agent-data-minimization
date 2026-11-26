@@ -8,7 +8,7 @@
 - [External retail transfer study](external-retail.tex)
 - [Full experiment index and current conclusions](../docs/LATEST_RESULTS.md)
 
-This eleven-page anonymous conference draft uses two hosted model aliases and five matched model-dependent comparisons. Qwen4-Max contributes 2,736 formal runs. An additional 270-run transfer study uses pinned Sierra tau-bench retail tools and researcher-designed state pairs. It also reports scripted rule-maintenance and audit studies and a separate terminal-feedback diagnostic. The central claim concerns field necessity at delivery; the refreshed route table is the strong implementation baseline.
+This eleven-page anonymous conference draft uses two hosted model aliases and five matched model-dependent comparisons. Qwen4-Max contributes 2,736 formal runs. An additional 270-run transfer study uses pinned Sierra tau-bench retail tools and researcher-designed state pairs. It also reports scripted rule-maintenance and audit studies and a separate terminal-feedback diagnostic. The manuscript specifies when a read justification expires, implements a shared denial and recovery path, and evaluates field release and recovery costs. A refreshed composable route table and a versioned contract backend both achieve zero excess reads in the direct comparisons. When evidence versions change while the route stays valid, version binding can add recovery work. The independent-author study is awaiting tasks.
 
 ## Build
 

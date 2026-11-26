@@ -7,7 +7,7 @@
     "paper/figures/mechanism.pdf": "72f64b97b37868e4ac3a3d8d6b47fda52205e81d02e9db4be1afd92cc743ca2d",
     "paper/figures/refund-sequence.pdf": "f6a0e7b6739184f2e27f265fac27956807c8b8795bc088cbaf22bd5c714431dd",
     "paper/figures/strong-call-stages.pdf": "40a82b0c48226a2eb925619a92229d5b37fcc196839a099b183e464c53d3e3d3",
-    "paper/paper.pdf": "73570631cf750610fc6cf7a3529e368e6f27c385368c8534fd904d6d34d05ada"
+    "paper/paper.pdf": "83e89c76b4251f657223d4f74e3e92bc321c85c8981365e17315f8032b8a208d"
   },
   "sha256": {
     ".env.example": "6efc1f9e2392e397a847fcd0e017098f062de6270c0650b02601c7ddd08d2d6d",
@@ -24,7 +24,7 @@
     "AIRGAP-R-THINKING.md": "33119bb48ad8ad741e43a992c196fd7ed1c71300b00529e63d0cdf57c0ea7da0",
     "MAAS-FOUR-MODELS.md": "76a165bfa78b7b03371e1a7fd11c6e491aaa6443e89b2984bae0587df25d7b09",
     "PUBLICATION_CHANGES.json": "49d949fbde58988514ca5901f89d423679dbda682f0b07ca21215082dbb95899",
-    "README.md": "6c7c0412a8543be77e46f99591c9f04f0b5689a4559923eca0700ba1d547927a",
+    "README.md": "85368f88d822e4928a5919acf97627bb7d8b77e681b8052ba46a001de7494635",
     "REFUND-RECOVERY-HOLDOUT.md": "a50610de9cf33909c25b1e6ae2ce90055e5d1f8245fcb60564b9f3e01d575713",
     "REFUND-RECOVERY.md": "e31dbf02b9d924465f610194ad26cae0772ccdbfc208f87f21c3ec2768824f1e",
     "REFUND-RELEASE-TIMING.md": "ff94549cc608548527a9f7e14d5c14cafe9cf235abd45a81867b1ed045ecdd50",
@@ -243,7 +243,7 @@
     "orders-release-timing.json": "7229d87a7db28d3f456612712e2002fab4a34509471252bd075e6e7b04adbfb3",
     "orders-round10.json": "c27d9b2912c1ef61400201a3cce3df968428f8bda395260be389d42ae024875e",
     "orders-round6.json": "b6ff46955eda1942f9ab093fe86f210503682f7fc9051822461e5e91fd2e17d6",
-    "paper/README.md": "96e54e724529893e90af3953baee236ba83961f4f9fdf46261a26897854e99bb",
+    "paper/README.md": "6f12d7b0ccaa64445a9353945dc03499f2c58ddb61f0f3efda7ac4e0d1799126",
     "paper/airgap-results.tex": "816be4990449b3cc26f682caf3403cd7640d86538984ee2f9a65aa496f36d23f",
     "paper/autonomous-protocol.tex": "d5ec4e9e4a31d788db7aaf1fd764cfeed4562b58f4f8a9ab2061ac5d3a515edf",
     "paper/autonomous_rows.tex": "35b043b1b7fdf9c52df2f8306531ea571497fa93bfce7a1992d001fe2d163344",
@@ -264,8 +264,8 @@
     "paper/figures/strong-call-stages.pdf": "40a82b0c48226a2eb925619a92229d5b37fcc196839a099b183e464c53d3e3d3",
     "paper/make_figures.py": "865eed8ecdc69200be695c3982383e3ddb3803a05435edd09eb1f08134c99fc7",
     "paper/method.tex": "5fcdbcc290f282b5922e2fa1d35f73ba7ffbf0daa3d121ce06f4a74dc4678278",
-    "paper/paper.pdf": "73570631cf750610fc6cf7a3529e368e6f27c385368c8534fd904d6d34d05ada",
-    "paper/paper.tex": "83728f24d95d023aa0b35abf7ba8de03d5d0471d5dfc4b6404c3937535dda05f",
+    "paper/paper.pdf": "83e89c76b4251f657223d4f74e3e92bc321c85c8981365e17315f8032b8a208d",
+    "paper/paper.tex": "bb4e9731e0e92b032b7c4eee24c75552f7614d794595c8584a7a1ec67a26aa2e",
     "paper/references.bib": "dd477276c3c71344324f7688b971d4eb6e1b2e4840b8f33917a903b630e733d1",
     "paper/scripted_rows.tex": "9d0e97a9856563f0f2aeff627984f0a52008593fd3adf40eb74ec6cce08264ed",
     "publication.py": "5906fa214c1be979a625f4014b438ba4b6e49b88ac869e37488a433465897d28",
