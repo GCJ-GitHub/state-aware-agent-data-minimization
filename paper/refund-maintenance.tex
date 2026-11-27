@@ -1,13 +1,5 @@
-\subsection{Delivery-window and refund-rule maintenance studies}
+\subsection{Maintenance and audit under compositional refund rules}
 \label{sec:refund-maintenance}
-\paragraph{Is a decision at read preparation sufficient?}
-We use three public Gaia2 Adaptability tasks~\cite{gaia2data} with upstream cancellation events and business scoring. After an initially valid catalog read starts, the experiment holds its reply until the original order cancellation. Qwen4-Max chooses all business actions. In seven same-task, same-seed triplets that reached the delivery window, agent-directed reads and a table refreshed at read preparation each delivered seven stale catalog replies. A contract checked at delivery returned zero stale replies and all three policies completed seven tasks. This is a controlled exposure opportunity on previously used public tasks. The outcome concerns the pending reply, including possible repeated delivery of an already observed identifier.
-
-In a second run, the table also rechecked at delivery. Neither implementation delivered stale replies in the eight pairs that reached the window. The table completed eight and the contract six. Both generated the same value-free denial, and the two matched contract failures exhausted the response budget before the final user report. The paired post-switch tool totals were 59 and 58. These comparisons locate the benefit at the delivery boundary and leave production frequency unmeasured.
-
-\paragraph{Which evidence should invalidate a pending read?}
-We run Qwen4-Max on five synthetic refund trajectories with three seeds and three backends. A temporary wallet-priority change that returns to bank leaves bank authorization and the requested field versions intact. Binding all plan-support versions rejects three still-valid reads in this case. The narrower grant binds the bank authorization generation and the requested field versions, with current-route checking at delivery. It rejects all nine obsolete reads, reuses all six valid reads, and removes twelve downstream tool calls. The strengthened table, which also checks authorization generation and field versions, matches the narrow contract on all 15 pairs. All arms complete 15/15 refunds.
-
 \begin{table}[t]
 \centering
 \small
@@ -28,7 +20,6 @@ Injected faults localized & 3/3 & 3/3 \\
 \label{tab:refund-rule-maintenance}
 \end{table}
 
-\paragraph{What changes when business rules compose?}
 We add three conditional checks to both the narrow contract and a composable table. Enhanced verification can serve both refund routes. A changed beneficiary adds a bank-only check. A large refund requires enhanced verification and review, and review waits for the beneficiary check when applicable. We freeze a factorial suite of four route states, eight trigger combinations, and eight field-authorization sets. A separate scripted ledger scores committed route, ordered prerequisites, released fields and approval. Table~\ref{tab:refund-rule-maintenance} summarizes the comparison. Both backends pass all 256 cases, committing 88 refunds and stopping safely in 168. The observed fields remain within the approved requirements in every case.
 
 Both implementations use three authored overlay declarations with five route references and three dependency references. The shared compiler generates 31 action entries per backend from two original entries. It also materializes 12 table recipes from two original recipes, while the contract execution uses its action registry. The original authored entries remain intact. Bank-only, wallet-only and wallet-preferred flows require regression under the new rules. We also retain the no-route stop as a common check. With the new conditions disabled, all 32 legacy cases per arm preserve their prior outcomes and fields.

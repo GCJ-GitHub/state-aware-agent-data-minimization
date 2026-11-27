@@ -1,0 +1,31 @@
+\section{Evaluation}
+
+We ask three questions about the read in Figure~\ref{fig:retail-return-trace}: Can it expose data even when the task succeeds? When must the connector check it? What recovery work does a version-bound grant add? We use \emph{excess delivery} for a raw field reaching the model after it has ceased to be necessary for the current workflow. Business outcomes, visible disclosure and recovery costs are scored separately. Appendix~\ref{sec:evaluation-details} gives the protocols, denominators and full results.
+
+\subsection{RQ1: Can a correct task outcome hide excess delivery?}
+\label{sec:rq-exposure}
+
+\textbf{Yes. A check at action confirmation can save the task after the tool has already returned the data.}
+We replay the workflow in Figure~\ref{fig:retail-return-trace} and related cases with the independently developed $\tau$-bench retail tools~\cite{taubench}. We compare agent-directed reads, a composable route table with a fresh check at delivery, and a versioned contract verifier. All three arms use Qwen4-Max with the same tools, user authorization, confirmation and recovery rules. The benchmark provides the retail tools, order records and annotations. We control the order-status change and specify the conditional authorization in the replay.
+
+Across 90 runs per arm, all three arms produce 90 correct outcomes, including 15 expected safe stops per arm. The status change lands between read preparation and delivery in 45 runs per arm. Agent-directed reads return six unnecessary address fields in each of those runs, for 270 excess field instances. The later confirmation check sees the changed state and the agent still reaches the correct outcome. Each guard prevents all 270 excess deliveries, and all 45 blocked runs per guard reach the correct outcome (Table~\ref{tab:external-retail}). The measured exposure is at the tool-to-model boundary. Visible exact-value disclosure is scored separately.
+
+\subsection{RQ2: When must the connector check the read?}
+\label{sec:rq-timing}
+
+\textbf{A read can become invalid after its preparation check. A fresh check at delivery closes the observed window.}
+In three public Gaia2 Adaptability tasks~\cite{gaia2data}, we arrange for a catalog reply prepared before the native order cancellation to be delivered after the cancellation. The agent still chooses the business actions and the upstream checker scores the task. Among the seven task-seed triplets in which all arms reached the delivery window, agent-directed reads and a route table checked at preparation each deliver seven stale replies. A contract checked at delivery delivers zero, and each arm passes all seven tasks (Table~\ref{tab:gaia-window-details}).
+
+Checking at delivery also works with a route table. We rerun the same tasks and seeds with a strengthened table that refreshes state immediately before it releases the reply. It blocks every stale reply in the eight pairs that reach the window in both arms, as does the contract verifier. Both return the same denial message. Post-switch native tool calls total 59 for the table and 58 for the contract. The table passes 8/8 paired tasks and the contract passes 6/8. In the two contract failures, the model completes reorder and notification but exhausts its response budget before giving the final user report. We therefore report downstream completion separately from successful blocking in the matched runs (Table~\ref{tab:gaia-refresh-details}).
+
+The Gaia2 replay controls the timing of a single pending reply on previously used public tasks. Its count concerns that reply, which can repeat an identifier already observed during a valid step. In a separate test across both hosted models on paired refund and logistics tasks, the guard reduces stale deliveries from 144 to zero per model. It recovers after 119/120 blocked reads with Qwen3.8-Flash and 120/120 with Qwen4-Max (Table~\ref{tab:autonomous}). This tests whether the exposure reduction and recovery also appear with a different model and workflow.
+
+\subsection{RQ3: What recovery work does version binding add?}
+\label{sec:rq-cost}
+
+\textbf{Binding all supporting evidence can force a new read even when the route and its inputs remain valid.}
+In the Qwen4-Max comparison with a strong route table, the two backends achieve 360/360 correct outcomes and zero excess deliveries each. In 90 matched runs where supporting evidence changes while the route remains admissible, the broad contract induces 90 additional denials and 360 additional tool calls before the business outcome. This condition measures the cost of requiring a fresh grant when a current-state table would allow the read (Appendix~\ref{sec:strong-autonomous}).
+
+We then compare the broad contract, a narrowly bound contract and a strengthened route table on the same five synthetic refund trajectories and three seeds per arm. The decisive case starts on bank refund, switches briefly to wallet, then returns to bank. The bank authorization remains in force and the requested account fields retain their versions. The broad contract rejects the old grant in all three repeats because its wallet evidence changed. Each rejection adds four calls: refresh state, select the route again, prepare the read again and fetch the fields.
+
+The narrow contract binds the grant to the bank authorization generation and the requested field versions. It still checks the current route at delivery. It removes all three unnecessary denials and cuts tool calls after the pending-read decision from 78 to 66, matching the strengthened table on every paired decision and its recovery cost. All three arms reject all nine obsolete reads and complete 15/15 refunds. The result supports narrowing the grant's dependencies under the tested state changes (Table~\ref{tab:refund-binding-details}).

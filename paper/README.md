@@ -3,14 +3,16 @@
 - [Latest compiled paper](paper.pdf) · [LaTeX source](paper.tex) · [Bibliography](references.bib)
 - [Figure 1 preview](figures/tau-bench-return-trace.png) · [SVG artwork](figures/tau-bench-return-trace.svg) · [Paired traces and offline replay](../external-retail-study/README.md#引言中的回放轨迹)
 - [Delivery-time guard, safety property and recovery](method.tex)
+- [Evaluation organized around three research questions](evaluation.tex)
+- [Appendices with experimental protocols and full results](evaluation-details.tex) · [Gaia2 and refund rerun tables](timing-refund-details.tex)
 - [Autonomous comparison protocol](autonomous-protocol.tex)
 - [Strong baseline, maintenance and model diagnostics](completed-followups.tex)
 - [AirGap-style experiment](airgap-results.tex) · [Query-order and enforcement ablation](factorial-results.tex)
 - [External retail transfer study](external-retail.tex)
-- [Gaia2 delivery window, narrow grants, and maintenance](refund-maintenance.tex)
+- [Compositional refund-rule maintenance and audit](refund-maintenance.tex)
 - [Full experiment index and current conclusions](../docs/LATEST_RESULTS.md)
 
-This anonymous conference draft opens with a matched pair of controlled retail replays. Figure 1 shows how an order-status change at turn 3 leaves six unnecessary address values in the model context with agent-directed reads. The contract verifier withholds those values before delivery. Both runs complete the return. The evaluation compares delivery-time checks across models and tool environments, and measures the recovery cost of binding reads to specific evidence versions.
+The 15-page draft opens with a matched pair of controlled retail replays. Figure 1 shows six unnecessary address values reaching the model under agent-directed reads. The contract verifier withholds those values, and both runs complete the return. Sections 4.1–4.3 then examine excess delivery despite correct task outcomes, the timing of the delivery check, and the recovery cost of version binding. The appendices start on page 8 and contain full tables, protocols, ablations and diagnostics.
 
 ## Build
 

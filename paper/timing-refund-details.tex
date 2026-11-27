@@ -1,0 +1,66 @@
+\subsection{Gaia2 delivery-window protocol and results}
+\label{sec:gaia-delivery-details}
+
+We use three previously exercised public Adaptability tasks (0863, 0913 and 0924) and seeds 19, 113 and 421. We retain the original tasks, native tools and cancellation event, and use the upstream business scorer. The harness starts a common auxiliary catalog read after the first checkout while the original item is still eligible. It saves the exact identifier and the current version. After the first report, it waits up to 90 seconds for the native cancellation and attaches the pending result or denial to a tool reply. We count the pending reply when the model receives it. The agent issues all business calls, and the auxiliary read is excluded from native tool-call totals.
+
+The timing comparison runs three arms (27 assignments). The agent-directed arm returns the pending result, and the preparation-time route table validates the read against the state at which the auxiliary read begins. The release-time contract compares the saved version with the version at delivery. Two assignments fail the upstream first-stage check before cancellation and remain in the all-assignment success denominator. Both Gaia2 comparisons use Qwen4-Max, with common prompts and budgets across arms within each comparison.
+
+\begin{table*}[t]
+\centering
+\small
+\begin{tabular}{@{}lrrrrr@{}}
+\toprule
+Read policy & All passed & Window reached & Stale replies & Matched passed & Matched post-switch calls\\
+\midrule
+Agent-directed & 8/9 & 8/9 & 8/8 & 7/7 & 52\\
+Route table at preparation & 9/9 & 9/9 & 9/9 & 7/7 & 53\\
+Contract at delivery & 8/9 & 8/9 & 0/8 & 7/7 & 55\\
+\bottomrule
+\end{tabular}
+\caption{Gaia2 timing comparison. Stale-reply denominators are the runs that reached the delivery window. Among the seven matched triplets, stale replies number 7, 7 and 0. All eight denials in the contract arm are followed by task success.}
+\label{tab:gaia-window-details}
+\end{table*}
+
+The strengthened-table comparison uses the same three tasks and seeds (18 assignments, 36 model responses allowed per run). Both arms keep their preparation check. The strengthened table also resolves the route from fresh state before delivery. Both arms use the same denial text. One table run fails to trigger cancellation, leaving eight matched pairs. The corresponding contract run reaches the window and blocks the reply before later reaching its response limit. The two matched contract failures occur on task 0913 at seeds 113 and 421. In the six pairs in which both arms pass, post-switch native calls total 43 for the table and 42 for the contract. Across all eight matched pairs, total model responses are 134 and 158, respectively, including responses before the switch.
+
+\begin{table*}[t]
+\centering
+\small
+\begin{tabular}{@{}lrrrrr@{}}
+\toprule
+Delivery check & All passed & Window reached & Stale replies & Matched passed & Matched post-switch calls\\
+\midrule
+Refreshed route table & 8/9 & 8/9 & 0/8 & 8/8 & 59\\
+Contract & 6/9 & 9/9 & 0/9 & 6/8 & 58\\
+\bottomrule
+\end{tabular}
+\caption{Gaia2 comparison with both checks at delivery. Paired columns condition on both runs reaching the delivery window. The all-assignment columns retain the run without a cancellation.}
+\label{tab:gaia-refresh-details}
+\end{table*}
+
+\subsection{Refund grant dependencies and matched rerun}
+\label{sec:refund-binding-details}
+
+We hold the hosted Qwen4-Max model, tools, authorization, confirmations, feedback, and scoring fixed across the broad contract, narrow contract, and strengthened route table. Each arm runs the same five synthetic trajectories at three seeds (45 runs overall). The trajectories cover bank-to-wallet-to-bank with continuous bank authorization and unchanged bank fields, an unrelated note update, revocation followed by renewed authorization, a changed bank reference, and wallet remaining the preferred route. Every run reaches the pending-grant decision and a correct single refund.
+
+Continuous authorization and unchanged input values make reuse valid in the first two trajectories. The other three must reject the old read. The narrow contract retains scope and single-use checks and binds continuity of the bank authorization and the versions of the exact requested fields. The strengthened table checks the same authorization generation and field versions at delivery. Table~\ref{tab:refund-binding-details} reports the matched decisions and calls.
+
+\begin{table*}[t]
+\centering
+\small
+\begin{tabular}{@{}lrrr@{}}
+\toprule
+Measure & Refreshed route table & Broad contract & Narrow contract\\
+\midrule
+Correct refunds & 15/15 & 15/15 & 15/15\\
+False releases among obsolete reads & 0/9 & 0/9 & 0/9\\
+Unnecessary denials among valid reads & 0/6 & 3/6 & 0/6\\
+Valid grants reused & 6 & 3 & 6\\
+Reads prepared again & 9 & 12 & 9\\
+Tool calls after pending-read decision & 66 & 78 & 66\\
+Total tool calls & 126 & 138 & 126\\
+\bottomrule
+\end{tabular}
+\caption{Qwen4-Max refund rerun. All 15 task-seed matches reach the grant decision in every arm. The three denials unique to the broad contract occur when the wallet briefly becomes preferred and the bank route subsequently becomes eligible again.}
+\label{tab:refund-binding-details}
+\end{table*}

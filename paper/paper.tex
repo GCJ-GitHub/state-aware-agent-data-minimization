@@ -63,84 +63,7 @@ For a mediated read, the connector releases only the fields missing for the pend
 
 \input{method.tex}
 
-\section{Evaluation}
-\subsection{Autonomous model experiment}
-\label{sec:autonomous}
-We compare three policies. \textsc{Upfront} returns all task-authorized candidate inputs in its first state inspection. \textsc{Agent only} lets the model request inputs as needed while preserving task-level authorization and common plan and execution checks. A shadow check records when a request would violate step-level necessity. \textsc{State guard} enforces necessity at delivery. The upfront arm isolates an eager-release policy and should be interpreted separately from the dedicated AirGap-style adaptation.
-
-The main experiment consists of 120 parameterized synthetic tasks across refund and logistics, grouped into 60 pairs. Paired members share the user request, profile and rules, with different business state. The suite balances single-route, route-switch and multiple-stage workflows, 40 of each. We run all three policies with each of two hosted model aliases (\texttt{qwen3.8-flash} and \texttt{qwen4-max}), native tool calls and shared task authorization, approval and recovery rules. Each task runs with three seeds, yielding 360 attempts per policy. The archived protocol fixes temperature 0.3, a budget of 40 model responses, a 512-token output cap per response, and two recoveries. We retain incomplete attempts and distinguish HTTP retries from returned model calls.
-
-In route-switch tasks, the simulated condition can change after the first read justification and before field delivery. The event occurred in all 120 attempts in each on-demand arm for both models. In the upfront arm it occurred in 108 of 120 Qwen3.8-Flash attempts and all 120 Qwen4-Max attempts. Some Qwen3.8-Flash workflows used already supplied values and skipped the triggering action. Event exposure in the upfront comparison therefore varies by model. The primary comparison uses the two on-demand arms.
-
-\paragraph{Metrics and uncertainty.}
-An independent task ledger determines successful business effects and applicable confirmations. We separately count unique raw field instances (deduplicated within an attempt), fields unused by the resulting valid execution, and fields released despite a stale evidence check. These counts may overlap. We count successful business effects even when the expected final answer fails to arrive, and report final-answer completion separately. We check visible model prose and simulated external text for exact synthetic value matches. The protocol does not observe paraphrases, partial disclosures, or hidden reasoning. Intervals use 5,000 paired cluster bootstrap draws over the 60 state pairs, with both members and all repeats kept together. They describe uncertainty for this constructed suite, rather than a production workload.
-
-\begin{table*}[t]
-\centering
-\small
-\begin{tabular}{@{}lrrrrrrrr@{}}
-\toprule
-Policy & Business success & Raw fields & Unused & Stale & Tool calls & Model calls & Approvals & Leaks \\
-\midrule
-\input{autonomous_rows.tex}
-\end{tabular}
-\caption{Autonomous comparison across 360 attempts per policy and model (2,160 total). Field instances are deduplicated within attempts and summed. Leaks counts trajectories with a visible exact-value disclosure. Approvals are simulated. Repeated HTTP transport attempts are excluded from the model calls column.}
-\label{tab:autonomous}
-\end{table*}
-
-\begin{figure*}[t]
-\centering
-\includegraphics[width=.92\textwidth]{figures/exposure.pdf}
-\caption{Qwen3.8-Flash field exposure by workflow family (120 attempts per policy per family). Zero counts appear as short marks on the baseline. Panels use distinct vertical scales. The state event triggered in all on-demand route-switch attempts and in 108 of 120 upfront attempts.}
-\label{fig:exposure}
-\end{figure*}
-
-\subsection{Autonomous results}
-For Qwen3.8-Flash, Table~\ref{tab:autonomous} shows that state enforcement reduced the raw fields delivered to the model from 850 to 707 relative to agent-only reads (16.8\%). It eliminated the 144 observed stale-field instances and the 144 eventually unused field instances of that comparator. Figure~\ref{fig:exposure} localizes the stale-field difference to route-switch cases. In the static and multiple-stage cases, agent-only already achieved zero eventually unused field instances.
-
-The guard blocked 120 read attempts, and 119 of the corresponding trajectories completed the business task. Aggregate completion was 359/360 for each policy. Within route switches, agent-only completed 120/120 and the guard completed 119/120. The failures differed across policies, so similar aggregate success does not imply identical trajectories. Normal final responses accompanied 354, 352 and 355 attempts in upfront, agent-only and guard respectively.
-
-The guard-minus-agent-only difference in stale field instances was $-0.400$ per attempt (95\% interval $[-0.550,-0.258]$). The business success difference was 0 percentage points (interval $[-0.83,0.83]$ points). Tool and model calls fell by 41 and 34 in total. The tool difference interval was $[-0.617,0.372]$ calls per attempt and the model difference interval was $[-0.583,0.386]$. These intervals leave the direction of the cost difference unresolved. Approval counts were equal in the two on-demand arms.
-
-One upfront and one guard attempt exposed a value in final prose. In the guard attempt, the value had been legitimately obtained for the workflow. There were no exact matches in the simulated external delivery logs. This distinction illustrates why preventing unnecessary reads and controlling what an agent repeats require separate evaluation.
-
-\paragraph{Replication with Qwen4-Max.}
-The state guard again reduces stale field instances from 144 to zero relative to agent-directed reads, and all three arms complete 360/360 workflows. All 120 blocked-read runs recover. The guard uses five additional tools (3,051 versus 3,046), a paired difference of 0.014 per run with a 95\% interval of $[-0.008,0.042]$. We observe no exact-value disclosure in visible text or simulated egress in any arm. The upfront arm releases 1,044 fields unused by the eventual valid execution.
-
-\subsection{Scripted comparison with refreshed route tables}
-\label{sec:scripted}
-We compare the two stronger backends using scripted decisions to isolate middleware behavior. The backends share authorization, confirmation, recovery and verification-reuse rules. Scenario definitions specify expected committed goals, fields and steps. Unsafe continuations, duplicate effects, and unexpected data delivery can thus be checked directly against the scenario. These studies run no model inference.
-
-\begin{table}[t]
-\centering
-\small
-\setlength{\tabcolsep}{2.2pt}
-\begin{tabular}{@{}lrrrr@{}}
-\toprule
-Study & Done & Fields & Denials & Approvals \\
-\midrule
-\input{scripted_rows.tex}
-\end{tabular}
-\caption{Scripted comparisons. Each row reports the identical counts observed for each backend separately. \emph{Done} counts fully completed workflows. The regression row includes previously expected safe stops.}
-\label{tab:scripted}
-\end{table}
-
-\paragraph{Refund cases.}
-We test restoration of the preferred refund route, reuse of identity verification across a plan change, and authorized access to exact quotes. Both backends handle all three cases. For one composition of refund and quote goals, the enumerated table requires three additional logical entries while the contract-based backend composes the existing contracts. This difference depends on the table representation.
-
-\paragraph{Logistics composition and dependency.}
-When the table can compose single-goal recipes, both backends execute new combinations of a pickup-site change and a time change with no configuration additions after freezing. We then let a pickup-site change invalidate a previous booking and require a different verification at the new site. An initial development trace revealed redundant site verification on replan. We give both backends a versioned reuse rule and freeze again. On six new composed cases, both complete five workflows and deliberately stop the unauthorized remaining appointment in the other. Each delivers 17 necessary field instances. A read of an obsolete time slot is denied by both. Table~\ref{tab:scripted} reports the matched counts.
-
-\paragraph{A new business rule.}
-We add a signature-authorization check for high-value rebooking. A valid existing slot can be retained without the check. The rule needs one manually written applicability declaration per backend after building migration adapters. In the contract system the declaration targets the two rebooking tools. In the table it targets a reusable rebooking fragment. Both expand it across four existing route variants and generate four variants requiring the check. This measures authored records for this design. Adapter development and maintenance time remain unmeasured.
-
-Across 30 prior regression runs (15 per backend), seven recorded metrics agree with the corresponding prior runs, and no signature input is delivered. On six new cases per backend, each completes four workflows. In the others, a needed field is unauthorized or no alternate slot is available. Both preserve the completed pickup-site change. They deliver 19 field instances each, all within the case-defined required set. When a preferred slot returns after signature verification, both reject the old slot read and reuse the valid verification. Focused checks show that missing or stale signature authorization blocks delivery of reservation inputs.
-
-\input{completed-followups.tex}
-\input{airgap-results.tex}
-\input{factorial-results.tex}
-\input{external-retail.tex}
-\input{refund-maintenance.tex}
+\input{evaluation.tex}
 
 \section{Discussion}
 \paragraph{What replicated.}
@@ -174,6 +97,8 @@ Task profiles contain synthetic values. Confirmations and business operations ar
 
 \bibliographystyle{plain}
 \bibliography{references}
+\clearpage
 \appendix
+\input{evaluation-details.tex}
 \input{autonomous-protocol.tex}
 \end{document}
