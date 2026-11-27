@@ -9,7 +9,7 @@
 - [Gaia2 delivery window, narrow grants, and maintenance](refund-maintenance.tex)
 - [Full experiment index and current conclusions](../docs/LATEST_RESULTS.md)
 
-This twelve-page anonymous conference draft studies how the reason for reading a field can expire before the value is delivered. The evaluation retains the hosted-model and retail tool comparisons, adds a controlled delivery window on public Gaia2 tasks, and separates delivery-time checks from the scope of version binding. In a five-scenario refund rerun, narrow binding removed three avoidable denials and twelve tool calls while matching the strengthened route table. A separate scripted rule-change comparison found equal authored changes, regression scope and audit coverage under shared tooling. The full Gaia2 reachability run and the limitations of the controlled studies are recorded in the experiment index.
+This twelve-page anonymous conference draft opens with a controlled retail replay. The agent completes the requested return, and the model also receives six shipping-address fields it no longer needs. An order-status change invalidates the read before delivery, while user authorization stays fixed. The paper studies how a connector can withhold such values and still let the agent recover. The evaluation compares delivery-time checks across models and tool environments, and measures the recovery cost of binding reads to specific evidence versions. The [opening trace and replay instructions](../external-retail-study/README.md#引言中的回放轨迹) link the example to the archived run.
 
 ## Build
 
