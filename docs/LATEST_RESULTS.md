@@ -20,6 +20,7 @@ Qwen4-Max 五项正式复现共 2,736 次，均通过离线轨迹重放。强基
 
 - [公开任务全量结果](../independent-holdout/gaia2/scale/README.md)覆盖 160 道题、480 次运行。补齐网关中断后，173 次业务通过，347 次触发至少一个原生事件。这部分为自行按需的可达性评估。
 - [受控窗口](../independent-holdout/gaia2/delivery-window/README.md)显示，读准备时仍有效的原值可以在取消后进入模型；[交付前都刷新](../independent-holdout/gaia2/delivery-refresh/README.md)后两组均拦住了观察到的旧值。
+- [五道追加题的异步三组对照](../independent-holdout/gaia2/async-delivery-holdout/REPORT.md)共 45 次。五个匹配三元组的旧值交付为 2、0、0，三组均保留三个仍在路线范围内的商品 ID。全量读准备组的三次旧值交付都发生在失败运行，四次成功都未命中窗口。论文以此补充交付时机的证据。
 - [窄绑定同期对照](../refund-state-return-study/selective-contract/README.md)中，只绑定银行授权撤回代数和必要字段版本消除了原契约的 3 次误拒绝和 12 次恢复调用。新契约与强路线表均零误放行、15/15 成功。
 - [组合退款维护](../refund-composition-maintenance-study/README.md)中，每组 256/256 正确、零误放行。人工都加了 3 条规则，回归各 32/32，结构化审计各能解释 7/7。路线表额外生成一层路线配方。未测人工维护或排障用时。
 

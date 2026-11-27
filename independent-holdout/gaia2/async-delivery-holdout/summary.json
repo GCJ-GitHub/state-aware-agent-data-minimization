@@ -1,0 +1,472 @@
+{
+  "planned": 45,
+  "recorded": 45,
+  "complete": true,
+  "exceptions": {},
+  "all": {
+    "prepare_table": {
+      "assigned_rows": 15,
+      "native_first_cancel": 12,
+      "read_prepared": 13,
+      "model_received_disposition": 6,
+      "runtime_errors": 0,
+      "budget_exhausted": 5,
+      "business_successes": 4,
+      "excess_deliveries": 3,
+      "success_with_excess": 0,
+      "success_with_excess_over_successes": [
+        0,
+        4
+      ],
+      "success_with_excess_over_observed_successes": [
+        0,
+        0
+      ],
+      "success_with_excess_over_assignments": [
+        0,
+        15
+      ],
+      "false_denials_over_valid_observed": [
+        0,
+        3
+      ],
+      "success_after_denial": [
+        0,
+        0
+      ],
+      "calls_after_disposition_total": 43,
+      "calls_after_disposition": {
+        "n": 6,
+        "median": 6.0,
+        "p95": 11.75
+      },
+      "calls_after_denial": {
+        "n": 0
+      },
+      "latency_ms": {
+        "prepare_to_reply_ms": {
+          "n": 6,
+          "median": 44198.457395,
+          "p95": 89542.647635
+        },
+        "report_hold_ms": {
+          "n": 6,
+          "median": 24513.592979,
+          "p95": 28427.482032
+        },
+        "event_observed_to_reply_ms": {
+          "n": 6,
+          "median": 0.073583,
+          "p95": 36180.955802
+        },
+        "decision_ms": {
+          "n": 6,
+          "median": 0.00475,
+          "p95": 0.00875
+        }
+      }
+    },
+    "delivery_table": {
+      "assigned_rows": 15,
+      "native_first_cancel": 15,
+      "read_prepared": 15,
+      "model_received_disposition": 9,
+      "runtime_errors": 0,
+      "budget_exhausted": 1,
+      "business_successes": 8,
+      "excess_deliveries": 0,
+      "success_with_excess": 0,
+      "success_with_excess_over_successes": [
+        0,
+        8
+      ],
+      "success_with_excess_over_observed_successes": [
+        0,
+        3
+      ],
+      "success_with_excess_over_assignments": [
+        0,
+        15
+      ],
+      "false_denials_over_valid_observed": [
+        0,
+        5
+      ],
+      "success_after_denial": [
+        2,
+        4
+      ],
+      "calls_after_disposition_total": 105,
+      "calls_after_disposition": {
+        "n": 9,
+        "median": 11,
+        "p95": 21.0
+      },
+      "calls_after_denial": {
+        "n": 4,
+        "median": 6.5,
+        "p95": 8.0
+      },
+      "latency_ms": {
+        "prepare_to_reply_ms": {
+          "n": 9,
+          "median": 36384.838709,
+          "p95": 58181.38245
+        },
+        "report_hold_ms": {
+          "n": 9,
+          "median": 23870.798792,
+          "p95": 27157.924217
+        },
+        "event_observed_to_reply_ms": {
+          "n": 9,
+          "median": 0.123083,
+          "p95": 0.315358
+        },
+        "decision_ms": {
+          "n": 9,
+          "median": 0.04925,
+          "p95": 0.260675
+        }
+      }
+    },
+    "narrow_contract": {
+      "assigned_rows": 15,
+      "native_first_cancel": 15,
+      "read_prepared": 15,
+      "model_received_disposition": 9,
+      "runtime_errors": 0,
+      "budget_exhausted": 2,
+      "business_successes": 7,
+      "excess_deliveries": 0,
+      "success_with_excess": 0,
+      "success_with_excess_over_successes": [
+        0,
+        7
+      ],
+      "success_with_excess_over_observed_successes": [
+        0,
+        2
+      ],
+      "success_with_excess_over_assignments": [
+        0,
+        15
+      ],
+      "false_denials_over_valid_observed": [
+        0,
+        5
+      ],
+      "success_after_denial": [
+        1,
+        4
+      ],
+      "calls_after_disposition_total": 94,
+      "calls_after_disposition": {
+        "n": 9,
+        "median": 9,
+        "p95": 20.8
+      },
+      "calls_after_denial": {
+        "n": 4,
+        "median": 5.0,
+        "p95": 7.55
+      },
+      "latency_ms": {
+        "prepare_to_reply_ms": {
+          "n": 9,
+          "median": 38233.712292,
+          "p95": 124900.0697
+        },
+        "report_hold_ms": {
+          "n": 9,
+          "median": 22751.276667,
+          "p95": 29636.4914
+        },
+        "event_observed_to_reply_ms": {
+          "n": 9,
+          "median": 0.113583,
+          "p95": 33960.951242
+        },
+        "decision_ms": {
+          "n": 9,
+          "median": 0.046583,
+          "p95": 0.2715
+        }
+      }
+    }
+  },
+  "matched_tasks_seeds": [
+    [
+      "0631_dt84zx45n1yi4idssov7y0h0dwgtklu5",
+      19
+    ],
+    [
+      "0631_dt84zx45n1yi4idssov7y0h0dwgtklu5",
+      421
+    ],
+    [
+      "0947_ii9867jghg06uu9wf7e8wtq8lys4al51",
+      19
+    ],
+    [
+      "0947_ii9867jghg06uu9wf7e8wtq8lys4al51",
+      113
+    ],
+    [
+      "0947_ii9867jghg06uu9wf7e8wtq8lys4al51",
+      421
+    ]
+  ],
+  "matched": {
+    "prepare_table": {
+      "assigned_rows": 5,
+      "native_first_cancel": 5,
+      "read_prepared": 5,
+      "model_received_disposition": 5,
+      "runtime_errors": 0,
+      "budget_exhausted": 1,
+      "business_successes": 0,
+      "excess_deliveries": 2,
+      "success_with_excess": 0,
+      "success_with_excess_over_successes": [
+        0,
+        0
+      ],
+      "success_with_excess_over_observed_successes": [
+        0,
+        0
+      ],
+      "success_with_excess_over_assignments": [
+        0,
+        5
+      ],
+      "false_denials_over_valid_observed": [
+        0,
+        3
+      ],
+      "success_after_denial": [
+        0,
+        0
+      ],
+      "calls_after_disposition_total": 39,
+      "calls_after_disposition": {
+        "n": 5,
+        "median": 8,
+        "p95": 11.8
+      },
+      "calls_after_denial": {
+        "n": 0
+      },
+      "latency_ms": {
+        "prepare_to_reply_ms": {
+          "n": 5,
+          "median": 40522.386166,
+          "p95": 87345.854191
+        },
+        "report_hold_ms": {
+          "n": 5,
+          "median": 22462.668959,
+          "p95": 28503.968209
+        },
+        "event_observed_to_reply_ms": {
+          "n": 5,
+          "median": 0.087958,
+          "p95": 38593.0133
+        },
+        "decision_ms": {
+          "n": 5,
+          "median": 0.005208,
+          "p95": 0.0088
+        }
+      }
+    },
+    "delivery_table": {
+      "assigned_rows": 5,
+      "native_first_cancel": 5,
+      "read_prepared": 5,
+      "model_received_disposition": 5,
+      "runtime_errors": 0,
+      "budget_exhausted": 0,
+      "business_successes": 0,
+      "excess_deliveries": 0,
+      "success_with_excess": 0,
+      "success_with_excess_over_successes": [
+        0,
+        0
+      ],
+      "success_with_excess_over_observed_successes": [
+        0,
+        0
+      ],
+      "success_with_excess_over_assignments": [
+        0,
+        5
+      ],
+      "false_denials_over_valid_observed": [
+        0,
+        3
+      ],
+      "success_after_denial": [
+        0,
+        2
+      ],
+      "calls_after_disposition_total": 47,
+      "calls_after_disposition": {
+        "n": 5,
+        "median": 11,
+        "p95": 14.2
+      },
+      "calls_after_denial": {
+        "n": 2,
+        "median": 5.0,
+        "p95": 5.0
+      },
+      "latency_ms": {
+        "prepare_to_reply_ms": {
+          "n": 5,
+          "median": 32812.169084,
+          "p95": 44581.50975
+        },
+        "report_hold_ms": {
+          "n": 5,
+          "median": 19864.392834,
+          "p95": 27476.307026
+        },
+        "event_observed_to_reply_ms": {
+          "n": 5,
+          "median": 0.236417,
+          "p95": 0.336867
+        },
+        "decision_ms": {
+          "n": 5,
+          "median": 0.177209,
+          "p95": 0.2854
+        }
+      }
+    },
+    "narrow_contract": {
+      "assigned_rows": 5,
+      "native_first_cancel": 5,
+      "read_prepared": 5,
+      "model_received_disposition": 5,
+      "runtime_errors": 0,
+      "budget_exhausted": 0,
+      "business_successes": 0,
+      "excess_deliveries": 0,
+      "success_with_excess": 0,
+      "success_with_excess_over_successes": [
+        0,
+        0
+      ],
+      "success_with_excess_over_observed_successes": [
+        0,
+        0
+      ],
+      "success_with_excess_over_assignments": [
+        0,
+        5
+      ],
+      "false_denials_over_valid_observed": [
+        0,
+        3
+      ],
+      "success_after_denial": [
+        0,
+        2
+      ],
+      "calls_after_disposition_total": 40,
+      "calls_after_disposition": {
+        "n": 5,
+        "median": 9,
+        "p95": 10.8
+      },
+      "calls_after_denial": {
+        "n": 2,
+        "median": 5.0,
+        "p95": 5.0
+      },
+      "latency_ms": {
+        "prepare_to_reply_ms": {
+          "n": 5,
+          "median": 37001.181042,
+          "p95": 124003.413192
+        },
+        "report_hold_ms": {
+          "n": 5,
+          "median": 19479.67275,
+          "p95": 28005.601133
+        },
+        "event_observed_to_reply_ms": {
+          "n": 5,
+          "median": 0.086791,
+          "p95": 34867.4156
+        },
+        "decision_ms": {
+          "n": 5,
+          "median": 0.046583,
+          "p95": 0.303958
+        }
+      }
+    }
+  },
+  "matched_deltas_vs_prepare_table": {
+    "delivery_table": {
+      "calls_after_disposition": {
+        "n": 5,
+        "median": 1,
+        "p95": 5.8
+      },
+      "latency_ms": {
+        "prepare_to_reply_ms": {
+          "n": 5,
+          "median": -15062.359541,
+          "p95": 7745.053483
+        },
+        "report_hold_ms": {
+          "n": 5,
+          "median": -3456.266167,
+          "p95": 23854.16321
+        },
+        "event_observed_to_reply_ms": {
+          "n": 5,
+          "median": 0.029749,
+          "p95": 0.200359
+        },
+        "decision_ms": {
+          "n": 5,
+          "median": 0.174084,
+          "p95": 0.281792
+        }
+      }
+    },
+    "narrow_contract": {
+      "calls_after_disposition": {
+        "n": 5,
+        "median": 1,
+        "p95": 1.8
+      },
+      "latency_ms": {
+        "prepare_to_reply_ms": {
+          "n": 5,
+          "median": -9128.698292,
+          "p95": 75266.575892
+        },
+        "report_hold_ms": {
+          "n": 5,
+          "median": 0.089501,
+          "p95": 3814.325667
+        },
+        "event_observed_to_reply_ms": {
+          "n": 5,
+          "median": -0.004624,
+          "p95": 28619.073733
+        },
+        "decision_ms": {
+          "n": 5,
+          "median": 0.043458,
+          "p95": 0.29915
+        }
+      }
+    }
+  }
+}

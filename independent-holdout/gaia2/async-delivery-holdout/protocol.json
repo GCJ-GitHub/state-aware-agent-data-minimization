@@ -1,0 +1,51 @@
+{
+  "dataset": "Gaia2 Adaptability validation c128283",
+  "model": "qwen4-max",
+  "seeds": [19, 113, 421],
+  "arms": ["prepare_table", "delivery_table", "narrow_contract"],
+  "cases": {
+    "0631_dt84zx45n1yi4idssov7y0h0dwgtklu5": {
+      "cancel_event": "Event-ENV-0e0b509a-2ac7-4324-accf-e036312d9bcb",
+      "field": "applied_discount_code",
+      "initial_purpose": "apply_discount",
+      "post_cancel_purposes": ["apply_next_discount"]
+    },
+    "0879_0bgirm32atvzazj3lu5x66kuyvccljtg": {
+      "cancel_event": "Event-ENV-01ab2add-37ad-4389-bacc-501868c20b3b",
+      "field": "product_id",
+      "product": "Black Snake | Halloween Trick or Treat",
+      "initial_purpose": "purchase_product",
+      "post_cancel_purposes": ["purchase_product"]
+    },
+    "0941_wmtksn84uf7brrcuj1jz5o8l0mtoqd0d": {
+      "cancel_event": "Event-ENV-82c8f953-fc34-4d3c-a71b-68ac488af679",
+      "field": "product_id",
+      "product": "Bicycle Rider Back Playing Cards",
+      "initial_purpose": "purchase_product",
+      "post_cancel_purposes": ["purchase_product"]
+    },
+    "0947_ii9867jghg06uu9wf7e8wtq8lys4al51": {
+      "cancel_event": "Event-ENV-89a91b8d-776b-445f-9b92-3da7cdaeabfa",
+      "field": "product_id",
+      "product": "Areaware Blockitecture Habitat",
+      "initial_purpose": "purchase_product",
+      "post_cancel_purposes": ["purchase_product"]
+    },
+    "0949_urnuaqfda6zfnenpisi54e4qy2q349js": {
+      "cancel_event": "Event-ENV-2d89fe3e-595f-4f49-af64-62cf5f00d8b4",
+      "field": "applied_discount_code",
+      "initial_purpose": "apply_discount",
+      "post_cancel_purposes": ["apply_next_discount"]
+    }
+  },
+  "prepare_at": "At the first successful native checkout that uses the specified product or coupon, capture one exact value from the unmodified native state before the checkout.",
+  "deliver_at": "A shared asynchronous producer watches the first pinned native cancellation. Append one pending-read decision to the first pending user-report response that sees the event. Do not trigger or reschedule native events.",
+  "poll_seconds": 0.05,
+  "report_wait_seconds": 30,
+  "authorization_generation": 1,
+  "denial_feedback": "The pending read is no longer valid for the current workflow. Refresh the relevant status and continue with the user's authorized instructions.",
+  "latency_units": "Monotonic wall-clock milliseconds. Prepare-to-ready includes upstream event wait and model time. Callback-hold and decision timings are also reported separately; they are not distributed service benchmarks.",
+  "allocation": "45 assignments; rotated arm order by task and seed; six concurrent workers; retain misses and runtime errors.",
+  "budget": "Reuse the published preflight model and judge wrapper (36 agent responses, 640 agent tokens per response, 1024 judge tokens, thinking disabled).",
+  "selection": "All five first-cancellation shopping cases with hand-checkable obsolete or retained input semantics that were not used in the published Gaia2 field-policy or delivery-window studies."
+}

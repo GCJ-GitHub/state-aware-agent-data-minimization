@@ -5,6 +5,7 @@
 - [Delivery-time guard, safety property and recovery](method.tex)
 - [Evaluation organized around three research questions](evaluation.tex)
 - [Appendices with experimental protocols and full results](evaluation-details.tex) · [Gaia2 and refund rerun tables](timing-refund-details.tex)
+- [Gaia2 asynchronous follow-up appendix](async-gaia-details.tex) · [Frozen artifact and replay commands](../independent-holdout/gaia2/async-delivery-holdout/README.md)
 - [Autonomous comparison protocol](autonomous-protocol.tex)
 - [Strong baseline, maintenance and model diagnostics](completed-followups.tex)
 - [AirGap-style experiment](airgap-results.tex) · [Query-order and enforcement ablation](factorial-results.tex)
@@ -17,6 +18,8 @@ The 16-page draft opens with a matched pair of controlled retail replays. Figure
 Section 3.1 uses the replay to explain four conditions at delivery. Equation (6) encodes them as request scope, current plan admissibility, step readiness, and an exact match to the missing fields defined in Equation (5). The order becomes delivered at turn 3, so the address-change plan fails the admissibility check. Algorithm 1 applies the common predicate to the current snapshot and checks grant validity in contract mode under Equation (8). Algorithm 2 describes how the agent refreshes state and continues after a denial. The wallet-refund example illustrates grant version binding and reuse of applicable verification records. [Method source](method.tex)
 
 Sections 4.1–4.3 examine excess delivery despite correct task outcomes, the timing of the delivery check, and the recovery cost of version binding. The appendices start on page 9 and contain full tables, protocols, ablations and diagnostics.
+
+The asynchronous follow-up in Section 4.2 covers 45 runs on five additional Gaia2 tasks. In the five matched triplets reaching the delivery window, the preparation-time table releases two stale values and both delivery-time arms release zero. Appendix A.3 reports all-assignment denominators, incorrect denials, calls and timing. The retail comparison remains the evidence for excess delivery despite a correct task outcome.
 
 ## Build
 

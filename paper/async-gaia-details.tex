@@ -1,0 +1,40 @@
+\subsection{Additional Gaia2 tasks with asynchronous delivery}
+\label{sec:gaia-async-followup}
+
+We select five public Adaptability tasks with upstream shopping cancellations (0631, 0879, 0941, 0947 and 0949). They were included in the reachability study and were held out from the earlier field-policy and delivery-window comparisons. We retain the user requests, native tools, cancellation dependencies and upstream scorer. Before the first successful checkout using the selected input, a shared adapter prepares a read of one exact field. A background worker waits for the designated native cancellation. The adapter attaches the pending result or denial to the user-report tool response once the event is observed. It waits up to 30 seconds per eligible report and leaves the native event schedule intact. Three seeds per task and arm give 45 assignments with Qwen4-Max. All assignments use a 36-response agent budget.
+
+We freeze the field rules and scoring labels before running the model. For tasks 0631 and 0949, the replacement purchase uses the next discount or, where permitted, no discount. The old applied code is outside the replacement step's field scope. For the other three tasks, the replacement still includes the selected product, so its catalog identifier remains in scope. This label concerns active field scope, including identifiers the model could have received earlier. The preparation-time table uses the decision made when the read starts. The delivery-time table checks the current purpose and field. The narrow contract adds continuity of the bound authorization and the selected native field identity. The cohort uses a fixed authorization generation. These tasks exercise changed field scope and stable field identity under cancellation.
+
+\begin{table*}[t]
+\centering
+\small
+\begin{tabular}{@{}lrrr@{}}
+\toprule
+Measure & Preparation-time table & Delivery-time table & Narrow contract\\
+\midrule
+\multicolumn{4}{@{}l}{\normalsize\textbf{All assignments}}\\
+Upstream task passes & 4/15 & 8/15 & 7/15\\
+Native cancellation observed & 12/15 & 15/15 & 15/15\\
+Pending reply or denial in model input & 6/15 & 9/15 & 9/15\\
+Stale replies, among observed dispositions & 3/6 & 0/9 & 0/9\\
+Stale replies among all task passes & 0/4 & 0/8 & 0/7\\
+Stale replies among task passes in window & -- & 0/3 & 0/2\\
+False denials, among observed in-scope requests & 0/3 & 0/5 & 0/5\\
+Task passes after observed denial & -- & 2/4 & 1/4\\
+\addlinespace
+\multicolumn{4}{@{}l}{\normalsize\textbf{Five matched triplets reaching the model in all arms}}\\
+Upstream task passes & 0/5 & 0/5 & 0/5\\
+Stale replies & 2 & 0 & 0\\
+Native calls after disposition & 39 & 47 & 40\\
+Median preparation-to-reply time (s) & 40.52 & 32.81 & 37.00\\
+Median report-to-reply hold time (s) & 22.46 & 19.86 & 19.48\\
+Median local decision time (ms) & 0.005 & 0.177 & 0.047\\
+\bottomrule
+\end{tabular}
+\caption{Asynchronous Gaia2 follow-up. An observed disposition is a reply or denial appearing in model input after native cancellation. All assignments receive an upstream verdict. The preparation-time arm has zero task passes among observed dispositions, so the corresponding conditional rate is undefined.}
+\label{tab:gaia-async-followup}
+\end{table*}
+
+Table~\ref{tab:gaia-async-followup} separates the full assignment and matched denominators. The adapter produces 15 additional decisions for which the reply or denial is absent from recorded model input. Only 24 dispositions reach the model. The five matched triplets comprise two repeats of task 0631 and three of task 0947. In those triplets, both delivery-time arms deny the two obsolete reads and allow the three retained identifiers. In the full preparation-time arm, all three stale deliveries come from task 0631 and occur in failed runs. Every preparation-time success occurs outside the observed delivery window.
+
+Calls after disposition combine ordinary continuation and recovery. Among the two matched denials per delivery-time arm, the median is five native calls for each arm. Preparation-to-reply and report-to-reply times include the event wait and scheduling in this adapter. The local decision timer covers the policy check and reply construction. These small, timing-sensitive samples describe the experiment's execution costs. Production connector latency and authorization revocation require separate measurements.

@@ -1,0 +1,27 @@
+{
+  "0603_removed_from_cohort": "This older pilot case is excluded.",
+  "after_first_native_cancel": {
+    "0631_dt84zx45n1yi4idssov7y0h0dwgtklu5": {
+      "allow": false,
+      "reason": "The user explicitly asks for the next best discount when the placed order is cancelled. The exact key already used on the cancelled order is outside the new purchase step's input scope."
+    },
+    "0879_0bgirm32atvzazj3lu5x66kuyvccljtg": {
+      "allow": true,
+      "reason": "Reorder the same three products, changing quantities for selected items. The exact catalog product identity for Black Snake is still a legitimate input to locating variants."
+    },
+    "0941_wmtksn84uf7brrcuj1jz5o8l0mtoqd0d": {
+      "allow": true,
+      "reason": "The replacement order must keep the original products even when a contact requests additional items. The playing-card product identity remains in scope."
+    },
+    "0947_ii9867jghg06uu9wf7e8wtq8lys4al51": {
+      "allow": true,
+      "reason": "Immediately after the shopping cancellation, the task calls for another variant of the same product. The product-level identifier remains in scope. The separate later calendar event is outside this probe."
+    },
+    "0949_urnuaqfda6zfnenpisi54e4qy2q349js": {
+      "allow": false,
+      "reason": "Following cancellation of the discounted order, the task calls for the next largest code or no code. The old exact key has already served its purpose."
+    }
+  },
+  "scope": "Score only the one pending reply after the pinned event. A previously observed value can be redelivered. A retained product ID is allowed by active-field scope; this metric makes no assertion that a duplicate value is needed by a cache-aware policy.",
+  "success_source": "Unchanged Gaia2 upstream benchmark success. Report success with excess as a count over both all known successes and all assignments. Also retain window-matched denominators."
+}

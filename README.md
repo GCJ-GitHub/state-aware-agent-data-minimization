@@ -41,6 +41,12 @@
 
 [实验正文 LaTeX](paper/evaluation.tex) · [附录 LaTeX](paper/evaluation-details.tex) · [Gaia2 与退款明细表](paper/timing-refund-details.tex)
 
+### RQ2 补充：公开任务上的异步交付
+
+在五道 Gaia2 公开任务上跑了 **45 次 Qwen4-Max 对照**，保留原生取消事件和业务判分，三组共用挂起回包适配。五个三组都命中窗口的匹配对照里，读准备时检查放行 **2 次旧值**，交付前路线表和窄契约均为 **0 次**。三组均保留仍在当前路线范围内的三个商品 ID。读准备组全量观测到的三次旧值交付都发生在失败运行里，四次成功都未命中窗口。「任务办对了，数据却多给了」仍由上面的 τ-bench 对照支撑。
+
+[实验报告与完整分母](independent-holdout/gaia2/async-delivery-holdout/REPORT.md) · [运行、冻结和复核](independent-holdout/gaia2/async-delivery-holdout/README.md) · [逐次结果](independent-holdout/gaia2/async-delivery-holdout/results.jsonl) · [论文附录 A.3](paper/async-gaia-details.tex)
+
 ## 讨论与结论
 
 - **跨模型复现。** 在退款和物流任务中，Qwen3.8-Flash 与 Qwen4-Max 的自行按需组各交付 144 个过时字段，交付前校验都降到 0。两种模型分别有 119/120 和 120/120 次读被拦后的业务恢复。

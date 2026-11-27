@@ -7,7 +7,7 @@
     "paper/figures/mechanism.pdf": "72f64b97b37868e4ac3a3d8d6b47fda52205e81d02e9db4be1afd92cc743ca2d",
     "paper/figures/refund-sequence.pdf": "f6a0e7b6739184f2e27f265fac27956807c8b8795bc088cbaf22bd5c714431dd",
     "paper/figures/strong-call-stages.pdf": "40a82b0c48226a2eb925619a92229d5b37fcc196839a099b183e464c53d3e3d3",
-    "paper/paper.pdf": "b23fbc8f2c2463878766d113da3b21603f2b831b957b42ca8f56f74006320919"
+    "paper/paper.pdf": "52a5d60e83d030cdd29e0cb51aa8ec85bab9c6bf6bd01c4d93e4a3b43e5d7f3f"
   },
   "reviewed_figure_png_sha256": {
     "paper/figures/tau-bench-return-trace.png": "08f82a277d8a103fb1a961723724f1efbb35ad6ed002d985ed4f884f1a2cd4af"
@@ -27,7 +27,7 @@
     "AIRGAP-R-THINKING.md": "33119bb48ad8ad741e43a992c196fd7ed1c71300b00529e63d0cdf57c0ea7da0",
     "MAAS-FOUR-MODELS.md": "76a165bfa78b7b03371e1a7fd11c6e491aaa6443e89b2984bae0587df25d7b09",
     "PUBLICATION_CHANGES.json": "49d949fbde58988514ca5901f89d423679dbda682f0b07ca21215082dbb95899",
-    "README.md": "528c5c2881522eb9cfaf73d0122a66979f9512f299c34e2534d01b2743140b51",
+    "README.md": "c7f3fda51e730a2ee738af988ef2738388924c0e312abbe40641460ad32e84a6",
     "REFUND-RECOVERY-HOLDOUT.md": "a50610de9cf33909c25b1e6ae2ce90055e5d1f8245fcb60564b9f3e01d575713",
     "REFUND-RECOVERY.md": "e31dbf02b9d924465f610194ad26cae0772ccdbfc208f87f21c3ec2768824f1e",
     "REFUND-RELEASE-TIMING.md": "ff94549cc608548527a9f7e14d5c14cafe9cf235abd45a81867b1ed045ecdd50",
@@ -112,7 +112,7 @@
     "docs/CURRENT_PROGRESS.md": "ab7b83419638e94a63c318a0c0fd3db29bb778bd57608e71bb9f575a3e680d87",
     "docs/CURRENT_REPRODUCIBILITY.md": "38196bc2f79cd3695a9f698c03405c262334a577700e3ad8f4d0d62325ace513",
     "docs/EXPERIMENTS.md": "e2ff3e2458f8bd3481c3888a47daaec5dd8d5982a44e6d23fbf8a4be67d7db74",
-    "docs/LATEST_RESULTS.md": "46bb2b945c8d76a0a3adfb7ba2ace453d2592493c724d6d5a44833d4bd9c6004",
+    "docs/LATEST_RESULTS.md": "80b4b595687cfc95395cf3155d81e9bdeb6a61ec86ed2f9491150540fa351351",
     "docs/PAPER_IDEA.md": "3ebabccc74696528d28c1330c058011ec1c7ed69ed5a321856663deedca0dee0",
     "docs/REPRODUCIBILITY.md": "1eba81ef4125e6509456e800fd504d1d4ca5118e64028f43c91755f5483f2c47",
     "docs/RESEARCH_REPORT.md": "e539f39db45318002a6a1ac099806f3d8e028d93c63cf4b08ad7754b4ee1f814",
@@ -295,7 +295,7 @@
     "orders-release-timing.json": "7229d87a7db28d3f456612712e2002fab4a34509471252bd075e6e7b04adbfb3",
     "orders-round10.json": "c27d9b2912c1ef61400201a3cce3df968428f8bda395260be389d42ae024875e",
     "orders-round6.json": "b6ff46955eda1942f9ab093fe86f210503682f7fc9051822461e5e91fd2e17d6",
-    "paper/README.md": "3faa68332ec9db24fc3de082606f80299316637544ddca8622b2d430c4936cd7",
+    "paper/README.md": "69d857994493a0cac24fed210e2a12ce4453c7406d224716e1b3c6ecd1d86993",
     "paper/airgap-results.tex": "816be4990449b3cc26f682caf3403cd7640d86538984ee2f9a65aa496f36d23f",
     "paper/autonomous-protocol.tex": "e31d5900923ca6dd085060c6daa65d4ca841a2f35a507c67802c2ac1c9cb7317",
     "paper/autonomous_rows.tex": "35b043b1b7fdf9c52df2f8306531ea571497fa93bfce7a1992d001fe2d163344",
@@ -316,8 +316,8 @@
     "paper/figures/strong-call-stages.pdf": "40a82b0c48226a2eb925619a92229d5b37fcc196839a099b183e464c53d3e3d3",
     "paper/make_figures.py": "865eed8ecdc69200be695c3982383e3ddb3803a05435edd09eb1f08134c99fc7",
     "paper/method.tex": "d543b7b9194f2027f5a3341852d2a44a7fe944eea5167b0d18c49f778886cf27",
-    "paper/paper.pdf": "b23fbc8f2c2463878766d113da3b21603f2b831b957b42ca8f56f74006320919",
-    "paper/paper.tex": "72552357d44b661b0a5a67243e0eb4fa5956d10ec63ba825b5f51d1bf3cdc5c0",
+    "paper/paper.pdf": "52a5d60e83d030cdd29e0cb51aa8ec85bab9c6bf6bd01c4d93e4a3b43e5d7f3f",
+    "paper/paper.tex": "e2c151efc8bc92f10e7368ff8bc47091ffc59322d182b8fe7620c5133b5e87cb",
     "paper/references.bib": "ef40a3ff046152db35dd90f0f542835f6d47439ba5d3de87458cc307487da4ff",
     "paper/refund-maintenance.tex": "d4404606e1493cd48ae25ad9fb11c1d0c28d80482a78e7687f56359c126de50e",
     "paper/scripted_rows.tex": "9d0e97a9856563f0f2aeff627984f0a52008593fd3adf40eb74ec6cce08264ed",
@@ -592,7 +592,18 @@
     "paper/figures/tau-bench-return-trace.png": "08f82a277d8a103fb1a961723724f1efbb35ad6ed002d985ed4f884f1a2cd4af",
     "paper/figures/tau-bench-return-trace.svg": "58e068fa83d7a4d210ffa52be025c636066dce89566723da2a1a757b12655a35",
     "paper/evaluation-details.tex": "50ef05050e58de6a3d562cd3a0b42e2648493c8c6dca63bb1777189624fa53bd",
-    "paper/evaluation.tex": "ab87533a14a9f72c99700a26922886fc85a77e0f616d0dfe0f1c1c024d9fbfd2",
-    "paper/timing-refund-details.tex": "26ba82dc08f3b3da5ab2ed15a59366cf85130e541da10734b9a19f73a2dee5d5"
+    "paper/evaluation.tex": "382d3bb338dd861d644d2ca5fa6a02a71f8cdea5a178989eed0dd3f9dbf09640",
+    "paper/timing-refund-details.tex": "8c630bb39b0965525f424b8a902490cc725cfd1afe5279776c432f30c117cda9",
+    "independent-holdout/gaia2/async-delivery-holdout/EXECUTION_FREEZE.sha256": "636e488902dfc229ba5866f115ab9fda7c835714c85ac343dcb7972283e88504",
+    "independent-holdout/gaia2/async-delivery-holdout/FREEZE.sha256": "3776be31df9e8d88914e6972df4f4b9d1e193dfbb7410deb08bd040d0be04994",
+    "independent-holdout/gaia2/async-delivery-holdout/README.md": "bf8ae82bdecd286c20f1ef3220cb1e216d644a8f77de40f2a9ce32c0ce01acb8",
+    "independent-holdout/gaia2/async-delivery-holdout/REPORT.md": "bf6b99174b7d205e7050c5022f9381961bfc4efd536833b9d42efcfbe7edceeb",
+    "independent-holdout/gaia2/async-delivery-holdout/gold.json": "f8978b5f8cd2a4c7a5b66e5444bba8b28f7af7340180d99eedce9367a5c6e335",
+    "independent-holdout/gaia2/async-delivery-holdout/protocol.json": "d101b5240507e4c66b839db4992249c26c1f6d6a778703ca7f6cce81c43e6517",
+    "independent-holdout/gaia2/async-delivery-holdout/results.jsonl": "19eaaa3d5c8cc0bd04ecf89ed8b3dc14049efe224700c003f7c8a0c60dabea3c",
+    "independent-holdout/gaia2/async-delivery-holdout/run.py": "5919de8c16103d6ab700c15a915b2fb6e8c88d5388a893d272a293e62f8c63cb",
+    "independent-holdout/gaia2/async-delivery-holdout/summarize.py": "b7c528ab3c36a2e13da71ca992390fb471b67f98d5240d3ade0a02efcb81bb57",
+    "independent-holdout/gaia2/async-delivery-holdout/summary.json": "dcde3100bd1518db9aa25f5c3811dbafcab2a27ad080626b3c7b7bbf64d11e81",
+    "paper/async-gaia-details.tex": "66189f4aeb90d86747ccf5073c5d3044d45a8b22a6067d83c797bcc7a63e776f"
   }
 }
