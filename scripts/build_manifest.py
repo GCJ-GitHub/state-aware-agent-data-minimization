@@ -9,7 +9,7 @@ p.add_argument('--write',action='store_true',help='Explicitly issue fingerprints
 a=p.parse_args()
 if not a.write:raise SystemExit('Review changes first; --write issues a NEW public snapshot manifest.')
 manifest=root/'PUBLICATION_MANIFEST.json'
-reviewed_pdfs=json.loads(manifest.read_text()).get('reviewed_pdf_sha256', {}) if manifest.exists() else {}
+previous=json.loads(manifest.read_text()) if manifest.exists() else {}
 files={}
 for f in sorted(root.rglob('*')):
     rel=f.relative_to(root)
@@ -19,6 +19,7 @@ for f in sorted(root.rglob('*')):
     files[str(rel)]=hashlib.sha256(f.read_bytes()).hexdigest()
 manifest.write_text(json.dumps({'kind':'sanitized-publication-snapshot',
   'note':'Checks current published bytes. Historical freeze hashes describe the original local execution, not redacted sources.',
-  'reviewed_pdf_sha256':reviewed_pdfs,
+  'reviewed_pdf_sha256':previous.get('reviewed_pdf_sha256', {}),
+  'reviewed_figure_png_sha256':previous.get('reviewed_figure_png_sha256', {}),
   'sha256':files},ensure_ascii=False,indent=2)+'\n')
 print('PUBLICATION_MANIFEST_WRITTEN',len(files))

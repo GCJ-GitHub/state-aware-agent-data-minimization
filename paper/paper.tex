@@ -25,7 +25,16 @@ An agent can complete a task correctly after receiving sensitive data it no long
 \end{abstract}
 
 \section{Introduction}
-A shopping agent completes the requested return. By then, the model has also received six address fields it no longer needs. In this trace from our controlled replay using $\tau$-bench retail tools~\cite{taubench}, the user asks the agent to update the shipping address if the order is still pending and to initiate a return if it has been delivered. The agent prepares an address read while the order is pending. Before the tool releases the values, the simulator marks the order delivered. The read still returns the address. The confirmation check subsequently rejects the address update, so the agent refreshes the order state and switches to the authorized return.
+A shopping agent completes the requested return. By then, the model has also received six address fields it no longer needs. Figure~\ref{fig:retail-return-trace} shows two matched runs from our controlled replay using $\tau$-bench retail tools~\cite{taubench}. The user asks the agent to change the shipping address if the order is pending and to initiate a return if it has been delivered. In both runs, the agent prepares the address read at turn~2. At turn~3, the simulator marks the order delivered just before the tool replies.
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{figures/tau-bench-return-trace.png}
+\caption{Paired $\tau$-bench retail replay with Qwen4-Max, using the same task and seed. The order becomes delivered at turn~3 before the address reply. (a) Agent-directed reading releases six raw shipping-address fields into the model context. The later confirmation check rejects the address change, and the agent completes the return at turn~10. (b) The contract verifier checks the read at delivery, withholds all six values, and returns replanning guidance. The agent completes the return at turn~9.}
+\label{fig:retail-return-trace}
+\end{figure*}
+
+With agent-directed reading, the six raw address values enter the model at turn~3. The confirmation check then rejects the address change. With delivery-time checking, the connector withholds the values at turn~3 and tells the agent to replan. Both agents refresh the order status and complete the return, at turn~10 and turn~9, respectively.
 
 The user's authorization stays the same throughout this trace. What changes is the reason for delivering the address: the address-update step is no longer available. Upfront minimization, as in AirGapAgent~\cite{airgap}, limits the data initially available to the model and provides a path for escalation. Our trace exposes a later decision, after a read has already been prepared. If the reason for a sensitive read disappears before its reply arrives, can the platform withhold the raw value and still let the agent finish the task?
 

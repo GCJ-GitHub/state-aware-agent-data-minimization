@@ -29,6 +29,9 @@ paper_pdfs = {
 publication = json.loads((root/'PUBLICATION_MANIFEST.json').read_text())
 reviewed_pdf_digests = publication.get('reviewed_pdf_sha256', {})
 pdfs_verified = 0
+figure_png = 'paper/figures/tau-bench-return-trace.png'
+reviewed_figure_digest = publication.get('reviewed_figure_png_sha256', {}).get(figure_png)
+figures_verified = 0
 
 
 def check_text(name,text):
@@ -51,6 +54,13 @@ for f in root.rglob('*'):
         else:
             pdfs_verified += 1
         continue
+    if name == figure_png:
+        data = f.read_bytes()
+        if not data.startswith(b'\x89PNG\r\n\x1a\n') or hashlib.sha256(data).hexdigest() != reviewed_figure_digest:
+            failures.append((name, 'unreviewed_figure_png'))
+        else:
+            figures_verified += 1
+        continue
     if name in archive_paths:
         entry=archive_paths[name]
         if hashlib.sha256(f.read_bytes()).hexdigest()!=entry['sha256']:
@@ -70,4 +80,4 @@ for f in root.rglob('*'):
 if failures:
     for filename,label in failures:print(filename,label)
     raise SystemExit(1)
-print('SECRET_SCAN_PASSED',scanned,'text files/members;',archives_scanned,'archives validated;', pdfs_verified, 'reviewed PDF hashes validated; no matched values printed')
+print('SECRET_SCAN_PASSED',scanned,'text files/members;',archives_scanned,'archives validated;', pdfs_verified, 'reviewed PDF hashes validated;', figures_verified, 'reviewed PNG hashes validated; no matched values printed')

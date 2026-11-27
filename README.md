@@ -6,9 +6,11 @@
 
 **任务办对了，数据却多给了。** 在一次 τ-bench 零售回放中，Agent 准备读取收货地址时，订单还可以改址。工具返回前，模拟环境把订单标记为已送达。Agent 后来正确办了退货，但六个已经用不上的地址字段仍随旧请求进入了模型上下文。用户授权没有变化，变化的是这一步取数的理由。
 
+**图 1** 并排展示同一任务、同一种子的两条轨迹。第 3 轮，自行按需组把六个地址原值交给模型，交付前校验组拦下了这些值。两组都办成了退货，分别在第 10 轮和第 9 轮。 [图 1 预览](paper/figures/tau-bench-return-trace.png) · [SVG 矢量稿](paper/figures/tau-bench-return-trace.svg)
+
 论文研究如何在原值进入模型前重验当前路线、步骤条件和字段必要性。读取被拒绝时，连接器在反馈中提供拒绝原因和可继续的选项。Agent 自行调用工具刷新状态、调整路线、复用仍有效的核验和已完成事项，或者在没有授权路线时安全停止。
 
-[论文 PDF](paper/paper.pdf) · [LaTeX 源码](paper/paper.tex) · [引言轨迹与复放](external-retail-study/README.md#引言中的回放轨迹) · [实验代码](external_retail_study.py) · [结果与计分](external-retail-study/REPORT.md)
+[论文 PDF](paper/paper.pdf) · [LaTeX 源码](paper/paper.tex) · [图 1 实验轨迹与离线复放](external-retail-study/README.md#引言中的回放轨迹) · [实验代码](external_retail_study.py) · [结果与计分](external-retail-study/REPORT.md)
 
 ## 三项贡献
 

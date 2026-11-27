@@ -7,7 +7,10 @@
     "paper/figures/mechanism.pdf": "72f64b97b37868e4ac3a3d8d6b47fda52205e81d02e9db4be1afd92cc743ca2d",
     "paper/figures/refund-sequence.pdf": "f6a0e7b6739184f2e27f265fac27956807c8b8795bc088cbaf22bd5c714431dd",
     "paper/figures/strong-call-stages.pdf": "40a82b0c48226a2eb925619a92229d5b37fcc196839a099b183e464c53d3e3d3",
-    "paper/paper.pdf": "577ba1f83f57135793fc47e4201590b14f8556efefc01aa61f7ed7cc7809ddd0"
+    "paper/paper.pdf": "e6a834c296201be7d49a6db7ce508aefae1edb05ac547d1830948781fc8d9b02"
+  },
+  "reviewed_figure_png_sha256": {
+    "paper/figures/tau-bench-return-trace.png": "08f82a277d8a103fb1a961723724f1efbb35ad6ed002d985ed4f884f1a2cd4af"
   },
   "sha256": {
     ".env.example": "af1c4e3ed70ac800116d05004498bd6c1c849518345e64caa5e2224e2e5cc9d7",
@@ -24,7 +27,7 @@
     "AIRGAP-R-THINKING.md": "33119bb48ad8ad741e43a992c196fd7ed1c71300b00529e63d0cdf57c0ea7da0",
     "MAAS-FOUR-MODELS.md": "76a165bfa78b7b03371e1a7fd11c6e491aaa6443e89b2984bae0587df25d7b09",
     "PUBLICATION_CHANGES.json": "49d949fbde58988514ca5901f89d423679dbda682f0b07ca21215082dbb95899",
-    "README.md": "1055aa92c58e8a7f27fd01e13734bb58177742a6d8d843cc3ca4e4b7dd9517e9",
+    "README.md": "deb1e408cc1f7bc2dbbf8e2aae066b1ff7439d370650115015d0b0cb188ce010",
     "REFUND-RECOVERY-HOLDOUT.md": "a50610de9cf33909c25b1e6ae2ce90055e5d1f8245fcb60564b9f3e01d575713",
     "REFUND-RECOVERY.md": "e31dbf02b9d924465f610194ad26cae0772ccdbfc208f87f21c3ec2768824f1e",
     "REFUND-RELEASE-TIMING.md": "ff94549cc608548527a9f7e14d5c14cafe9cf235abd45a81867b1ed045ecdd50",
@@ -120,7 +123,7 @@
     "docs/history/FIRST-ROUND-README.md": "9661c83fa2fa79ead0b379c3313430bc91146e461257bac27dc1a257647669e3",
     "docs/history/README-20261119-SNAPSHOT.md": "8e48b0baa0bb11eb7ce56bfe003ad053cc01c6387247c5f170a135a2f1be6386",
     "docs/idea-evidence-20261123.json": "571a92e6c63a2b9ccf5441a31913510791081dea6fc588dbe8c342dfa213e711",
-    "external-retail-study/README.md": "6c0b625bc0a97d0a705d76703c8e10114a7665ae396c893643fdc3ff26230820",
+    "external-retail-study/README.md": "3492eb7544ebbf6a0b75c47d9522d0b2618a4c4bb6a3692dce2fb3399341d638",
     "external-retail-study/REPORT.md": "806db4b786d7b28ff3e6b21f6589768cb33fc705f0f52e2998723228f25a425c",
     "external-retail-study/audit.json": "9d88673270d019e922467c2dc51d64492919b8ee3fca549c75bd324e63dc5aa9",
     "external-retail-study/freeze.json": "6070b506a2f1562903c2eeaa0487246485348e6aa998f60a299beb6404f53dbf",
@@ -292,7 +295,7 @@
     "orders-release-timing.json": "7229d87a7db28d3f456612712e2002fab4a34509471252bd075e6e7b04adbfb3",
     "orders-round10.json": "c27d9b2912c1ef61400201a3cce3df968428f8bda395260be389d42ae024875e",
     "orders-round6.json": "b6ff46955eda1942f9ab093fe86f210503682f7fc9051822461e5e91fd2e17d6",
-    "paper/README.md": "5f35c540ece5bc51c55e3bf36e40476cdbaf6079bd500abe89bf75ef4c340cc7",
+    "paper/README.md": "54feaf175567f9a712bcf836bd1124ede5a0aa77cfaa4e72b911856229812e5d",
     "paper/airgap-results.tex": "816be4990449b3cc26f682caf3403cd7640d86538984ee2f9a65aa496f36d23f",
     "paper/autonomous-protocol.tex": "e31d5900923ca6dd085060c6daa65d4ca841a2f35a507c67802c2ac1c9cb7317",
     "paper/autonomous_rows.tex": "35b043b1b7fdf9c52df2f8306531ea571497fa93bfce7a1992d001fe2d163344",
@@ -313,8 +316,8 @@
     "paper/figures/strong-call-stages.pdf": "40a82b0c48226a2eb925619a92229d5b37fcc196839a099b183e464c53d3e3d3",
     "paper/make_figures.py": "865eed8ecdc69200be695c3982383e3ddb3803a05435edd09eb1f08134c99fc7",
     "paper/method.tex": "5fcdbcc290f282b5922e2fa1d35f73ba7ffbf0daa3d121ce06f4a74dc4678278",
-    "paper/paper.pdf": "577ba1f83f57135793fc47e4201590b14f8556efefc01aa61f7ed7cc7809ddd0",
-    "paper/paper.tex": "0caa5af74bf0a564cf62788a893aa6a95e085bb5910db26ab6e5d0771849681d",
+    "paper/paper.pdf": "e6a834c296201be7d49a6db7ce508aefae1edb05ac547d1830948781fc8d9b02",
+    "paper/paper.tex": "e4f93fe9a8c167e607d72dbcac417d4949e5ab2c86b65866009f5fcec8544381",
     "paper/references.bib": "ef40a3ff046152db35dd90f0f542835f6d47439ba5d3de87458cc307487da4ff",
     "paper/refund-maintenance.tex": "10c62ba17c551703e168f0784f3ab7074a55ef3d0c75485db196edda14c66a90",
     "paper/scripted_rows.tex": "9d0e97a9856563f0f2aeff627984f0a52008593fd3adf40eb74ec6cce08264ed",
@@ -478,7 +481,7 @@
     "route-table-comparison/trace.json": "06f46d14cbf2833ad31dd5b01095ecdce53da0e66cf98e478e2231a3370cc462",
     "run.py": "287e89de5ae14d2fd927238802f108bdf081fb859f8aad32c2905040c1c2f438",
     "scripts/audit_holdout_with_interruptions.py": "b37e5708f31eb57d8bd8b2ff3bb29a8e58d0ea1be79f7fe03b26a3322d005ab8",
-    "scripts/build_manifest.py": "6a1c30ae0c74a724d764d340b0843c3879036660221a8c6afc023e3d9fb701ff",
+    "scripts/build_manifest.py": "dad7b0a407adb24628d3f3f547c66d12dcbe5f5285a66ce032c697b4dbc73751",
     "scripts/check_holdout_state_ledger.py": "7fe23836eb77ae616c83a40ac6c011f1d14ea00570500c973e214008ae23fa1f",
     "scripts/check_necessity_factorial_results.py": "a9af5866714d3184e561cedb60dfcf9481f94999e8e73dfd11f9fb201dc9ad5e",
     "scripts/check_necessity_holdout_results.py": "21d4884d3d1a3a3ecffbf19b24db0cd45eedd0c63c9fa2c3bd8db480b5f01a4f",
@@ -493,7 +496,7 @@
     "scripts/run_logistics_signature.py": "218034afe35d741ab4200d4ddd7a3cb59d14c045bb29ef06289d84bd580c5fdc",
     "scripts/run_necessity_prototype.py": "40775924dd59e30b2f3ec6fe6c768230c53aff7048e17b4148b5962b24712dc1",
     "scripts/run_route_table_comparison.py": "5d639b4a180fcf05815ab24a90a790a00c3ab61197a5a6118e530152157a2fc5",
-    "scripts/secret_scan.py": "12d8188dd73fac0d98d262b39fea9cd73502930126364f0bbafe6cdeba1efc27",
+    "scripts/secret_scan.py": "6fb181a3cb1d26b9522b6012a8762dbc7345d99b03701b56147c9b6720b360de",
     "scripts/verify_artifacts.py": "97b6e1e8866c4a6ec0696f91eb45028c397055a2a63d49e68fb533432d3d89f4",
     "scripts/verify_current_progress.py": "c7c5c3ddb27cefc37cfea58c29201f5ced21f9ea3fc029cc92f3ff608db8a6e7",
     "state-holdout-cross-model/REPORT.md": "3e3f8855ef58b9fe2095d2ca2fb7d22a514e8d9813535b91adbe957955815c83",
@@ -585,6 +588,8 @@
     "tool-channel-failure-retest/summary.json": "cfde88548afd503e3b794974789db956cf2d25bde73a80fedb6a2f0ad9e321b6",
     "tool-channel-failure-retest/tasks.json": "4c6c7dbad1d2bb4f1f7c3c575bda593791296fc92b8c5e0a50900f0011f33bf4",
     "tool-channel-failure-retest/traces.jsonl": "b868630957af41976e8fe63930d14f3208a165df8d1d7daa7905e0a2dd35bdbc",
-    "tool_channel_failure_retest.py": "012700129ba43be033e6766813d973e17a00a88efb37570e7d439d6280cd2704"
+    "tool_channel_failure_retest.py": "012700129ba43be033e6766813d973e17a00a88efb37570e7d439d6280cd2704",
+    "paper/figures/tau-bench-return-trace.png": "08f82a277d8a103fb1a961723724f1efbb35ad6ed002d985ed4f884f1a2cd4af",
+    "paper/figures/tau-bench-return-trace.svg": "58e068fa83d7a4d210ffa52be025c636066dce89566723da2a1a757b12655a35"
   }
 }

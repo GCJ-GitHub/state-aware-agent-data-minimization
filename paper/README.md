@@ -1,6 +1,7 @@
 # State-Aware Data Minimization for Tool-Using Agents
 
 - [Latest compiled paper](paper.pdf) · [LaTeX source](paper.tex) · [Bibliography](references.bib)
+- [Figure 1 preview](figures/tau-bench-return-trace.png) · [SVG artwork](figures/tau-bench-return-trace.svg) · [Paired traces and offline replay](../external-retail-study/README.md#引言中的回放轨迹)
 - [Delivery-time guard, safety property and recovery](method.tex)
 - [Autonomous comparison protocol](autonomous-protocol.tex)
 - [Strong baseline, maintenance and model diagnostics](completed-followups.tex)
@@ -9,11 +10,11 @@
 - [Gaia2 delivery window, narrow grants, and maintenance](refund-maintenance.tex)
 - [Full experiment index and current conclusions](../docs/LATEST_RESULTS.md)
 
-This twelve-page anonymous conference draft opens with a controlled retail replay. The agent completes the requested return, and the model also receives six shipping-address fields it no longer needs. An order-status change invalidates the read before delivery, while user authorization stays fixed. The paper studies how a connector can withhold such values and still let the agent recover. The evaluation compares delivery-time checks across models and tool environments, and measures the recovery cost of binding reads to specific evidence versions. The [opening trace and replay instructions](../external-retail-study/README.md#引言中的回放轨迹) link the example to the archived run.
+This anonymous conference draft opens with a matched pair of controlled retail replays. Figure 1 shows how an order-status change at turn 3 leaves six unnecessary address values in the model context with agent-directed reads. The contract verifier withholds those values before delivery. Both runs complete the return. The evaluation compares delivery-time checks across models and tool environments, and measures the recovery cost of binding reads to specific evidence versions.
 
 ## Build
 
-Run from this directory with Tectonic or a compatible LaTeX distribution. The checked-in vector figures are ready for the build. No provider or model is invoked.
+Run from this directory with Tectonic or a compatible LaTeX distribution. The checked-in figure files include the PNG used in Figure 1 and its editable SVG. Compilation runs locally.
 
 ```bash
 tectonic paper.tex
