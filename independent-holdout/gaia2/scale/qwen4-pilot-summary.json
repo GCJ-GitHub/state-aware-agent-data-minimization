@@ -1,0 +1,108 @@
+{
+  "planned": 18,
+  "recorded": 18,
+  "runtime_errors": 0,
+  "cases_recorded": 2,
+  "upstream_pass": 6,
+  "any_authored_event": 7,
+  "all_authored_events": 7,
+  "field_scored_runs": 7,
+  "stale_fields": 0,
+  "tool_calls": 398,
+  "post_switch_calls": 29,
+  "denied_runs": 0,
+  "after_first_denial_calls": null,
+  "http_statuses": {
+    "200": 516,
+    "429": 98
+  },
+  "by_arm": {
+    "agent": {
+      "recorded": 6,
+      "runtime_errors": 0,
+      "cases_recorded": 2,
+      "upstream_pass": 2,
+      "any_authored_event": 2,
+      "all_authored_events": 2,
+      "field_scored_runs": 2,
+      "stale_fields": 0,
+      "tool_calls": 136,
+      "post_switch_calls": 9,
+      "denied_runs": 0,
+      "after_first_denial_calls": null,
+      "http_statuses": {
+        "200": 166,
+        "429": 25
+      }
+    },
+    "contract": {
+      "recorded": 6,
+      "runtime_errors": 0,
+      "cases_recorded": 2,
+      "upstream_pass": 2,
+      "any_authored_event": 3,
+      "all_authored_events": 3,
+      "field_scored_runs": 3,
+      "stale_fields": 0,
+      "tool_calls": 133,
+      "post_switch_calls": 10,
+      "denied_runs": 0,
+      "after_first_denial_calls": null,
+      "http_statuses": {
+        "200": 176,
+        "429": 48
+      }
+    },
+    "table": {
+      "recorded": 6,
+      "runtime_errors": 0,
+      "cases_recorded": 2,
+      "upstream_pass": 2,
+      "any_authored_event": 2,
+      "all_authored_events": 2,
+      "field_scored_runs": 2,
+      "stale_fields": 0,
+      "tool_calls": 129,
+      "post_switch_calls": 10,
+      "denied_runs": 0,
+      "after_first_denial_calls": null,
+      "http_statuses": {
+        "200": 174,
+        "429": 25
+      }
+    }
+  },
+  "matched_all_arms_switched": 1,
+  "matched_pairs": {
+    "table_minus_agent": [
+      {
+        "case": "0863_77j2gnywa1mxhzecvsrep6ejbvj2tzra",
+        "seed": 421,
+        "stale_fields_delta": 0,
+        "post_switch_calls_delta": 1
+      }
+    ],
+    "contract_minus_agent": [
+      {
+        "case": "0863_77j2gnywa1mxhzecvsrep6ejbvj2tzra",
+        "seed": 421,
+        "stale_fields_delta": 0,
+        "post_switch_calls_delta": 0
+      }
+    ],
+    "contract_minus_table": [
+      {
+        "case": "0863_77j2gnywa1mxhzecvsrep6ejbvj2tzra",
+        "seed": 113,
+        "stale_fields_delta": 0,
+        "post_switch_calls_delta": 0
+      },
+      {
+        "case": "0863_77j2gnywa1mxhzecvsrep6ejbvj2tzra",
+        "seed": 421,
+        "stale_fields_delta": 0,
+        "post_switch_calls_delta": -1
+      }
+    ]
+  }
+}

@@ -6,9 +6,10 @@
 - [Strong baseline, maintenance and model diagnostics](completed-followups.tex)
 - [AirGap-style experiment](airgap-results.tex) · [Query-order and enforcement ablation](factorial-results.tex)
 - [External retail transfer study](external-retail.tex)
+- [Gaia2 delivery window, narrow grants, and maintenance](refund-maintenance.tex)
 - [Full experiment index and current conclusions](../docs/LATEST_RESULTS.md)
 
-This twelve-page anonymous conference draft uses two hosted model aliases and five matched model-dependent comparisons. Qwen4-Max contributes 2,736 formal runs. An additional 270-run transfer study uses pinned Sierra tau-bench retail tools and researcher-designed state pairs. It also reports scripted rule-maintenance and audit studies and a separate terminal-feedback diagnostic. The manuscript specifies when a read justification expires, implements a shared denial and recovery path, and evaluates field release and recovery costs. A refreshed composable route table and a versioned contract backend both achieve zero excess reads in the direct comparisons. The discussion separates replication across two hosted models from transfer to the retail tools on Qwen4-Max. It explains when current-state revalidation can accept a read and when version binding requires a fresh grant. The independent-author study awaits task pairs, state changes, and gold criteria. It will test the frozen policies on excess delivery, correct completion or safe stopping, and recovery cost.
+This twelve-page anonymous conference draft studies how the reason for reading a field can expire before the value is delivered. The evaluation retains the hosted-model and retail tool comparisons, adds a controlled delivery window on public Gaia2 tasks, and separates delivery-time checks from the scope of version binding. In a five-scenario refund rerun, narrow binding removed three avoidable denials and twelve tool calls while matching the strengthened route table. A separate scripted rule-change comparison found equal authored changes, regression scope and audit coverage under shared tooling. The full Gaia2 reachability run and the limitations of the controlled studies are recorded in the experiment index.
 
 ## Build
 

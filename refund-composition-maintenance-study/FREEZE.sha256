@@ -1,0 +1,7 @@
+2ad2edd42e3bc431dbe2c307322a67cfb27ea83de3b3257fd80cd5c4d49a7341  run.py
+f7f963ad5e56d5d2b73cfe4b654628ff894747e1cf16d2d099ba4de3830f5c40  rules.json
+a210412e344157cd4da1927efa7e23008dbe0d60b487ae8e47bacc1de7804eb1  ../refund-state-return-study/selective-contract/run.py
+3e427d02e35b412aabbbe0e45080e8b838970207078d42b3baef4c2e231c1353  ../refund-state-return-study/selective-contract/FREEZE.sha256
+ec513b8ec1c290541b51287fd822be89bed7cd8ee25323ef3836b9324f980b73  ../necessity_v2/core.py
+dcc8f2b55aaca150e8d0e338f5d6ba5ff980c90a6d6162677082342debfdb750  ../necessity_v2/composable_routes.py
+4a66c7bf60793339fb684fb26019f5fe3be8259499f3d7f662eba94f2d97235b  ../necessity_v2/route_baseline.py

@@ -26,3 +26,7 @@ Eugene Bagdasarian、Ren Yi、Sahra Ghalebikesabi、Peter Kairouz、Marco Grutes
 ## 原创材料
 
 原创代码、非上游数据生成的物流/退款/预约模拟任务及研究说明归仓库作者管理。尚未为这些材料指定通用开源许可证，不以本声明替代所有者的许可选择。第三方数据继续使用其自身声明。
+
+## Gaia2 Adaptability
+
+实验使用 Meta Agents Research Environments 发布的 [Gaia2 Adaptability validation 数据](https://huggingface.co/datasets/meta-agents-research-environments/gaia2/tree/c128283/adaptability)，公开数据卡标注 CC BY 4.0。上游任务、模拟应用数据、事件和原生业务判分归上游。完整验证集的源文件、版本和 SHA-256 见[数据说明](independent-holdout/gaia2/DATA.md)。随仓库发布的是任务索引与本研究的结果、事件命中统计和工具名轨迹。受控交付窗口和字段评分由本研究定义。官方 ARE 运行器从其上游仓库按固定提交安装。

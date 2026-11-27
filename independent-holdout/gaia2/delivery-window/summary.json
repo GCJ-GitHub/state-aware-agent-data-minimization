@@ -1,0 +1,187 @@
+{
+  "planned": 27,
+  "completed": 27,
+  "all_runs_by_arm": {
+    "agent": {
+      "assigned": 9,
+      "passed_upstream": 8,
+      "runtime_or_transport_errors": 0,
+      "started_probe": 9,
+      "crossed_before_delivery": 8,
+      "reply_reached_model": 8,
+      "stale_fields_to_model": 8,
+      "denials_reached_model": 0,
+      "denials_recovered": 0,
+      "native_tool_calls_after_denial": 0
+    },
+    "table": {
+      "assigned": 9,
+      "passed_upstream": 9,
+      "runtime_or_transport_errors": 0,
+      "started_probe": 9,
+      "crossed_before_delivery": 9,
+      "reply_reached_model": 9,
+      "stale_fields_to_model": 9,
+      "denials_reached_model": 0,
+      "denials_recovered": 0,
+      "native_tool_calls_after_denial": 0
+    },
+    "contract": {
+      "assigned": 9,
+      "passed_upstream": 8,
+      "runtime_or_transport_errors": 0,
+      "started_probe": 9,
+      "crossed_before_delivery": 8,
+      "reply_reached_model": 8,
+      "stale_fields_to_model": 0,
+      "denials_reached_model": 8,
+      "denials_recovered": 8,
+      "native_tool_calls_after_denial": 60
+    }
+  },
+  "matched_triplets": 7,
+  "matched_by_arm": {
+    "agent": {
+      "assigned": 7,
+      "passed_upstream": 7,
+      "runtime_or_transport_errors": 0,
+      "started_probe": 7,
+      "crossed_before_delivery": 7,
+      "reply_reached_model": 7,
+      "stale_fields_to_model": 7,
+      "denials_reached_model": 0,
+      "denials_recovered": 0,
+      "native_tool_calls_after_denial": 0,
+      "native_tool_calls": 96,
+      "native_tool_calls_after_switch": 52
+    },
+    "table": {
+      "assigned": 7,
+      "passed_upstream": 7,
+      "runtime_or_transport_errors": 0,
+      "started_probe": 7,
+      "crossed_before_delivery": 7,
+      "reply_reached_model": 7,
+      "stale_fields_to_model": 7,
+      "denials_reached_model": 0,
+      "denials_recovered": 0,
+      "native_tool_calls_after_denial": 0,
+      "native_tool_calls": 96,
+      "native_tool_calls_after_switch": 53
+    },
+    "contract": {
+      "assigned": 7,
+      "passed_upstream": 7,
+      "runtime_or_transport_errors": 0,
+      "started_probe": 7,
+      "crossed_before_delivery": 7,
+      "reply_reached_model": 7,
+      "stale_fields_to_model": 0,
+      "denials_reached_model": 7,
+      "denials_recovered": 7,
+      "native_tool_calls_after_denial": 55,
+      "native_tool_calls": 98,
+      "native_tool_calls_after_switch": 55
+    }
+  },
+  "matched_rows": [
+    {
+      "case": "0863_77j2gnywa1mxhzecvsrep6ejbvj2tzra",
+      "seed": 113,
+      "after_switch_calls": {
+        "agent": 4,
+        "table": 5,
+        "contract": 5
+      },
+      "success": {
+        "agent": true,
+        "table": true,
+        "contract": true
+      }
+    },
+    {
+      "case": "0913_kip4smczj5eirm6q7y2cj7zbf2390b37",
+      "seed": 19,
+      "after_switch_calls": {
+        "agent": 8,
+        "table": 8,
+        "contract": 10
+      },
+      "success": {
+        "agent": true,
+        "table": true,
+        "contract": true
+      }
+    },
+    {
+      "case": "0913_kip4smczj5eirm6q7y2cj7zbf2390b37",
+      "seed": 113,
+      "after_switch_calls": {
+        "agent": 8,
+        "table": 8,
+        "contract": 8
+      },
+      "success": {
+        "agent": true,
+        "table": true,
+        "contract": true
+      }
+    },
+    {
+      "case": "0913_kip4smczj5eirm6q7y2cj7zbf2390b37",
+      "seed": 421,
+      "after_switch_calls": {
+        "agent": 8,
+        "table": 8,
+        "contract": 8
+      },
+      "success": {
+        "agent": true,
+        "table": true,
+        "contract": true
+      }
+    },
+    {
+      "case": "0924_wfekc3gvbq8mkhwtmygju2exan8hqobr",
+      "seed": 19,
+      "after_switch_calls": {
+        "agent": 8,
+        "table": 8,
+        "contract": 8
+      },
+      "success": {
+        "agent": true,
+        "table": true,
+        "contract": true
+      }
+    },
+    {
+      "case": "0924_wfekc3gvbq8mkhwtmygju2exan8hqobr",
+      "seed": 113,
+      "after_switch_calls": {
+        "agent": 8,
+        "table": 8,
+        "contract": 8
+      },
+      "success": {
+        "agent": true,
+        "table": true,
+        "contract": true
+      }
+    },
+    {
+      "case": "0924_wfekc3gvbq8mkhwtmygju2exan8hqobr",
+      "seed": 421,
+      "after_switch_calls": {
+        "agent": 8,
+        "table": 8,
+        "contract": 8
+      },
+      "success": {
+        "agent": true,
+        "table": true,
+        "contract": true
+      }
+    }
+  ]
+}

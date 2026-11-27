@@ -1,0 +1,10 @@
+{
+  "arms": ["delivery_table", "contract"],
+  "delivery_table": {
+    "initial_order": ["product_id"],
+    "replacement": []
+  },
+  "phase_source": "Original Gaia2 Shopping.cancel_order event. Its presence selects replacement; its absence selects initial_order.",
+  "inheritance": "Reuse the delivery-window cases, seeds, read-start guard, model, budget, native events, judge, reply formatting and denial feedback.",
+  "primary_analysis": "Report all assigned runs, then compare same-case same-seed pairs in which both arms reached the model with the pending reply or denial."
+}

@@ -1,0 +1,171 @@
+{
+  "planned": 18,
+  "completed": 18,
+  "complete": true,
+  "by_arm": {
+    "agent": {
+      "runs": 6,
+      "upstream_successes": 0,
+      "runtime_failures": 0,
+      "budget_exhausted_before_switch": 4,
+      "switch_reached": 0,
+      "stale_fields": 0,
+      "runs_with_stale_fields": 0,
+      "agent_tool_calls": 169,
+      "agent_model_calls": 169,
+      "switch_reached_tool_calls_after_switch": 0,
+      "denials": 0,
+      "denied_runs": 0,
+      "denied_runs_recovered": 0,
+      "denied_runs_tool_calls_after_first_denial": 0
+    },
+    "table": {
+      "runs": 6,
+      "upstream_successes": 0,
+      "runtime_failures": 0,
+      "budget_exhausted_before_switch": 4,
+      "switch_reached": 0,
+      "stale_fields": 0,
+      "runs_with_stale_fields": 0,
+      "agent_tool_calls": 169,
+      "agent_model_calls": 169,
+      "switch_reached_tool_calls_after_switch": 0,
+      "denials": 0,
+      "denied_runs": 0,
+      "denied_runs_recovered": 0,
+      "denied_runs_tool_calls_after_first_denial": 0
+    },
+    "contract": {
+      "runs": 6,
+      "upstream_successes": 0,
+      "runtime_failures": 0,
+      "budget_exhausted_before_switch": 4,
+      "switch_reached": 0,
+      "stale_fields": 0,
+      "runs_with_stale_fields": 0,
+      "agent_tool_calls": 169,
+      "agent_model_calls": 169,
+      "switch_reached_tool_calls_after_switch": 0,
+      "denials": 0,
+      "denied_runs": 0,
+      "denied_runs_recovered": 0,
+      "denied_runs_tool_calls_after_first_denial": 0
+    }
+  },
+  "by_case_and_arm": {
+    "0603_pofr8ljj8zqoeamwjnrvlu23397rqasi": {
+      "agent": {
+        "runs": 3,
+        "upstream_successes": 0,
+        "runtime_failures": 0,
+        "budget_exhausted_before_switch": 1,
+        "switch_reached": 0,
+        "stale_fields": 0,
+        "runs_with_stale_fields": 0,
+        "agent_tool_calls": 61,
+        "agent_model_calls": 61,
+        "switch_reached_tool_calls_after_switch": 0,
+        "denials": 0,
+        "denied_runs": 0,
+        "denied_runs_recovered": 0,
+        "denied_runs_tool_calls_after_first_denial": 0
+      },
+      "table": {
+        "runs": 3,
+        "upstream_successes": 0,
+        "runtime_failures": 0,
+        "budget_exhausted_before_switch": 1,
+        "switch_reached": 0,
+        "stale_fields": 0,
+        "runs_with_stale_fields": 0,
+        "agent_tool_calls": 61,
+        "agent_model_calls": 61,
+        "switch_reached_tool_calls_after_switch": 0,
+        "denials": 0,
+        "denied_runs": 0,
+        "denied_runs_recovered": 0,
+        "denied_runs_tool_calls_after_first_denial": 0
+      },
+      "contract": {
+        "runs": 3,
+        "upstream_successes": 0,
+        "runtime_failures": 0,
+        "budget_exhausted_before_switch": 1,
+        "switch_reached": 0,
+        "stale_fields": 0,
+        "runs_with_stale_fields": 0,
+        "agent_tool_calls": 61,
+        "agent_model_calls": 61,
+        "switch_reached_tool_calls_after_switch": 0,
+        "denials": 0,
+        "denied_runs": 0,
+        "denied_runs_recovered": 0,
+        "denied_runs_tool_calls_after_first_denial": 0
+      }
+    },
+    "0863_77j2gnywa1mxhzecvsrep6ejbvj2tzra": {
+      "agent": {
+        "runs": 3,
+        "upstream_successes": 0,
+        "runtime_failures": 0,
+        "budget_exhausted_before_switch": 3,
+        "switch_reached": 0,
+        "stale_fields": 0,
+        "runs_with_stale_fields": 0,
+        "agent_tool_calls": 108,
+        "agent_model_calls": 108,
+        "switch_reached_tool_calls_after_switch": 0,
+        "denials": 0,
+        "denied_runs": 0,
+        "denied_runs_recovered": 0,
+        "denied_runs_tool_calls_after_first_denial": 0
+      },
+      "table": {
+        "runs": 3,
+        "upstream_successes": 0,
+        "runtime_failures": 0,
+        "budget_exhausted_before_switch": 3,
+        "switch_reached": 0,
+        "stale_fields": 0,
+        "runs_with_stale_fields": 0,
+        "agent_tool_calls": 108,
+        "agent_model_calls": 108,
+        "switch_reached_tool_calls_after_switch": 0,
+        "denials": 0,
+        "denied_runs": 0,
+        "denied_runs_recovered": 0,
+        "denied_runs_tool_calls_after_first_denial": 0
+      },
+      "contract": {
+        "runs": 3,
+        "upstream_successes": 0,
+        "runtime_failures": 0,
+        "budget_exhausted_before_switch": 3,
+        "switch_reached": 0,
+        "stale_fields": 0,
+        "runs_with_stale_fields": 0,
+        "agent_tool_calls": 108,
+        "agent_model_calls": 108,
+        "switch_reached_tool_calls_after_switch": 0,
+        "denials": 0,
+        "denied_runs": 0,
+        "denied_runs_recovered": 0,
+        "denied_runs_tool_calls_after_first_denial": 0
+      }
+    }
+  },
+  "matched_switch_comparisons": {
+    "table_minus_agent": {
+      "both_switched": 0,
+      "post_switch_tool_call_differences": []
+    },
+    "contract_minus_agent": {
+      "both_switched": 0,
+      "post_switch_tool_call_differences": []
+    },
+    "contract_minus_table": {
+      "both_switched": 0,
+      "post_switch_tool_call_differences": []
+    }
+  }
+}

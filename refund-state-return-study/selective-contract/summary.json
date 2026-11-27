@@ -1,0 +1,595 @@
+{
+  "planned": 45,
+  "completed": 45,
+  "complete": true,
+  "by_arm": {
+    "route_table": {
+      "runs": 15,
+      "transport_errors": 0,
+      "correct_commit": 15,
+      "old_reads_tested": 15,
+      "old_reuses": 6,
+      "must_reject": 9,
+      "could_reuse": 6,
+      "false_allow": 0,
+      "false_reject": 0,
+      "denials": 9,
+      "recovered_commits": 9,
+      "fresh_prepares_after_old_delivery": 9,
+      "calls_after_old_delivery": 66,
+      "total_tool_calls": 126
+    },
+    "contract": {
+      "runs": 15,
+      "transport_errors": 0,
+      "correct_commit": 15,
+      "old_reads_tested": 15,
+      "old_reuses": 3,
+      "must_reject": 9,
+      "could_reuse": 6,
+      "false_allow": 0,
+      "false_reject": 3,
+      "denials": 12,
+      "recovered_commits": 12,
+      "fresh_prepares_after_old_delivery": 12,
+      "calls_after_old_delivery": 78,
+      "total_tool_calls": 138
+    },
+    "selective_contract": {
+      "runs": 15,
+      "transport_errors": 0,
+      "correct_commit": 15,
+      "old_reads_tested": 15,
+      "old_reuses": 6,
+      "must_reject": 9,
+      "could_reuse": 6,
+      "false_allow": 0,
+      "false_reject": 0,
+      "denials": 9,
+      "recovered_commits": 9,
+      "fresh_prepares_after_old_delivery": 9,
+      "calls_after_old_delivery": 66,
+      "total_tool_calls": 126
+    }
+  },
+  "by_case": {
+    "temporary_priority_return": {
+      "route_table": {
+        "runs": 3,
+        "transport_errors": 0,
+        "correct_commit": 3,
+        "old_reads_tested": 3,
+        "old_reuses": 3,
+        "must_reject": 0,
+        "could_reuse": 3,
+        "false_allow": 0,
+        "false_reject": 0,
+        "denials": 0,
+        "recovered_commits": 0,
+        "fresh_prepares_after_old_delivery": 0,
+        "calls_after_old_delivery": 6,
+        "total_tool_calls": 18
+      },
+      "contract": {
+        "runs": 3,
+        "transport_errors": 0,
+        "correct_commit": 3,
+        "old_reads_tested": 3,
+        "old_reuses": 0,
+        "must_reject": 0,
+        "could_reuse": 3,
+        "false_allow": 0,
+        "false_reject": 3,
+        "denials": 3,
+        "recovered_commits": 3,
+        "fresh_prepares_after_old_delivery": 3,
+        "calls_after_old_delivery": 18,
+        "total_tool_calls": 30
+      },
+      "selective_contract": {
+        "runs": 3,
+        "transport_errors": 0,
+        "correct_commit": 3,
+        "old_reads_tested": 3,
+        "old_reuses": 3,
+        "must_reject": 0,
+        "could_reuse": 3,
+        "false_allow": 0,
+        "false_reject": 0,
+        "denials": 0,
+        "recovered_commits": 0,
+        "fresh_prepares_after_old_delivery": 0,
+        "calls_after_old_delivery": 6,
+        "total_tool_calls": 18
+      }
+    },
+    "authorization_reissued": {
+      "route_table": {
+        "runs": 3,
+        "transport_errors": 0,
+        "correct_commit": 3,
+        "old_reads_tested": 3,
+        "old_reuses": 0,
+        "must_reject": 3,
+        "could_reuse": 0,
+        "false_allow": 0,
+        "false_reject": 0,
+        "denials": 3,
+        "recovered_commits": 3,
+        "fresh_prepares_after_old_delivery": 3,
+        "calls_after_old_delivery": 18,
+        "total_tool_calls": 30
+      },
+      "contract": {
+        "runs": 3,
+        "transport_errors": 0,
+        "correct_commit": 3,
+        "old_reads_tested": 3,
+        "old_reuses": 0,
+        "must_reject": 3,
+        "could_reuse": 0,
+        "false_allow": 0,
+        "false_reject": 0,
+        "denials": 3,
+        "recovered_commits": 3,
+        "fresh_prepares_after_old_delivery": 3,
+        "calls_after_old_delivery": 18,
+        "total_tool_calls": 30
+      },
+      "selective_contract": {
+        "runs": 3,
+        "transport_errors": 0,
+        "correct_commit": 3,
+        "old_reads_tested": 3,
+        "old_reuses": 0,
+        "must_reject": 3,
+        "could_reuse": 0,
+        "false_allow": 0,
+        "false_reject": 0,
+        "denials": 3,
+        "recovered_commits": 3,
+        "fresh_prepares_after_old_delivery": 3,
+        "calls_after_old_delivery": 18,
+        "total_tool_calls": 30
+      }
+    },
+    "unrelated_note_changed": {
+      "route_table": {
+        "runs": 3,
+        "transport_errors": 0,
+        "correct_commit": 3,
+        "old_reads_tested": 3,
+        "old_reuses": 3,
+        "must_reject": 0,
+        "could_reuse": 3,
+        "false_allow": 0,
+        "false_reject": 0,
+        "denials": 0,
+        "recovered_commits": 0,
+        "fresh_prepares_after_old_delivery": 0,
+        "calls_after_old_delivery": 6,
+        "total_tool_calls": 18
+      },
+      "contract": {
+        "runs": 3,
+        "transport_errors": 0,
+        "correct_commit": 3,
+        "old_reads_tested": 3,
+        "old_reuses": 3,
+        "must_reject": 0,
+        "could_reuse": 3,
+        "false_allow": 0,
+        "false_reject": 0,
+        "denials": 0,
+        "recovered_commits": 0,
+        "fresh_prepares_after_old_delivery": 0,
+        "calls_after_old_delivery": 6,
+        "total_tool_calls": 18
+      },
+      "selective_contract": {
+        "runs": 3,
+        "transport_errors": 0,
+        "correct_commit": 3,
+        "old_reads_tested": 3,
+        "old_reuses": 3,
+        "must_reject": 0,
+        "could_reuse": 3,
+        "false_allow": 0,
+        "false_reject": 0,
+        "denials": 0,
+        "recovered_commits": 0,
+        "fresh_prepares_after_old_delivery": 0,
+        "calls_after_old_delivery": 6,
+        "total_tool_calls": 18
+      }
+    },
+    "bank_reference_rotated": {
+      "route_table": {
+        "runs": 3,
+        "transport_errors": 0,
+        "correct_commit": 3,
+        "old_reads_tested": 3,
+        "old_reuses": 0,
+        "must_reject": 3,
+        "could_reuse": 0,
+        "false_allow": 0,
+        "false_reject": 0,
+        "denials": 3,
+        "recovered_commits": 3,
+        "fresh_prepares_after_old_delivery": 3,
+        "calls_after_old_delivery": 18,
+        "total_tool_calls": 30
+      },
+      "contract": {
+        "runs": 3,
+        "transport_errors": 0,
+        "correct_commit": 3,
+        "old_reads_tested": 3,
+        "old_reuses": 0,
+        "must_reject": 3,
+        "could_reuse": 0,
+        "false_allow": 0,
+        "false_reject": 0,
+        "denials": 3,
+        "recovered_commits": 3,
+        "fresh_prepares_after_old_delivery": 3,
+        "calls_after_old_delivery": 18,
+        "total_tool_calls": 30
+      },
+      "selective_contract": {
+        "runs": 3,
+        "transport_errors": 0,
+        "correct_commit": 3,
+        "old_reads_tested": 3,
+        "old_reuses": 0,
+        "must_reject": 3,
+        "could_reuse": 0,
+        "false_allow": 0,
+        "false_reject": 0,
+        "denials": 3,
+        "recovered_commits": 3,
+        "fresh_prepares_after_old_delivery": 3,
+        "calls_after_old_delivery": 18,
+        "total_tool_calls": 30
+      }
+    },
+    "wallet_stays_available": {
+      "route_table": {
+        "runs": 3,
+        "transport_errors": 0,
+        "correct_commit": 3,
+        "old_reads_tested": 3,
+        "old_reuses": 0,
+        "must_reject": 3,
+        "could_reuse": 0,
+        "false_allow": 0,
+        "false_reject": 0,
+        "denials": 3,
+        "recovered_commits": 3,
+        "fresh_prepares_after_old_delivery": 3,
+        "calls_after_old_delivery": 18,
+        "total_tool_calls": 30
+      },
+      "contract": {
+        "runs": 3,
+        "transport_errors": 0,
+        "correct_commit": 3,
+        "old_reads_tested": 3,
+        "old_reuses": 0,
+        "must_reject": 3,
+        "could_reuse": 0,
+        "false_allow": 0,
+        "false_reject": 0,
+        "denials": 3,
+        "recovered_commits": 3,
+        "fresh_prepares_after_old_delivery": 3,
+        "calls_after_old_delivery": 18,
+        "total_tool_calls": 30
+      },
+      "selective_contract": {
+        "runs": 3,
+        "transport_errors": 0,
+        "correct_commit": 3,
+        "old_reads_tested": 3,
+        "old_reuses": 0,
+        "must_reject": 3,
+        "could_reuse": 0,
+        "false_allow": 0,
+        "false_reject": 0,
+        "denials": 3,
+        "recovered_commits": 3,
+        "fresh_prepares_after_old_delivery": 3,
+        "calls_after_old_delivery": 18,
+        "total_tool_calls": 30
+      }
+    }
+  },
+  "matched_triples": 15,
+  "matched": [
+    {
+      "case": "temporary_priority_return",
+      "seed": 19,
+      "old_read_allowed": {
+        "route_table": true,
+        "contract": false,
+        "selective_contract": true
+      },
+      "correct_commit": {
+        "route_table": true,
+        "contract": true,
+        "selective_contract": true
+      },
+      "calls_after_old_delivery": {
+        "route_table": 2,
+        "contract": 6,
+        "selective_contract": 2
+      }
+    },
+    {
+      "case": "temporary_priority_return",
+      "seed": 113,
+      "old_read_allowed": {
+        "route_table": true,
+        "contract": false,
+        "selective_contract": true
+      },
+      "correct_commit": {
+        "route_table": true,
+        "contract": true,
+        "selective_contract": true
+      },
+      "calls_after_old_delivery": {
+        "route_table": 2,
+        "contract": 6,
+        "selective_contract": 2
+      }
+    },
+    {
+      "case": "temporary_priority_return",
+      "seed": 421,
+      "old_read_allowed": {
+        "route_table": true,
+        "contract": false,
+        "selective_contract": true
+      },
+      "correct_commit": {
+        "route_table": true,
+        "contract": true,
+        "selective_contract": true
+      },
+      "calls_after_old_delivery": {
+        "route_table": 2,
+        "contract": 6,
+        "selective_contract": 2
+      }
+    },
+    {
+      "case": "authorization_reissued",
+      "seed": 19,
+      "old_read_allowed": {
+        "route_table": false,
+        "contract": false,
+        "selective_contract": false
+      },
+      "correct_commit": {
+        "route_table": true,
+        "contract": true,
+        "selective_contract": true
+      },
+      "calls_after_old_delivery": {
+        "route_table": 6,
+        "contract": 6,
+        "selective_contract": 6
+      }
+    },
+    {
+      "case": "authorization_reissued",
+      "seed": 113,
+      "old_read_allowed": {
+        "route_table": false,
+        "contract": false,
+        "selective_contract": false
+      },
+      "correct_commit": {
+        "route_table": true,
+        "contract": true,
+        "selective_contract": true
+      },
+      "calls_after_old_delivery": {
+        "route_table": 6,
+        "contract": 6,
+        "selective_contract": 6
+      }
+    },
+    {
+      "case": "authorization_reissued",
+      "seed": 421,
+      "old_read_allowed": {
+        "route_table": false,
+        "contract": false,
+        "selective_contract": false
+      },
+      "correct_commit": {
+        "route_table": true,
+        "contract": true,
+        "selective_contract": true
+      },
+      "calls_after_old_delivery": {
+        "route_table": 6,
+        "contract": 6,
+        "selective_contract": 6
+      }
+    },
+    {
+      "case": "unrelated_note_changed",
+      "seed": 19,
+      "old_read_allowed": {
+        "route_table": true,
+        "contract": true,
+        "selective_contract": true
+      },
+      "correct_commit": {
+        "route_table": true,
+        "contract": true,
+        "selective_contract": true
+      },
+      "calls_after_old_delivery": {
+        "route_table": 2,
+        "contract": 2,
+        "selective_contract": 2
+      }
+    },
+    {
+      "case": "unrelated_note_changed",
+      "seed": 113,
+      "old_read_allowed": {
+        "route_table": true,
+        "contract": true,
+        "selective_contract": true
+      },
+      "correct_commit": {
+        "route_table": true,
+        "contract": true,
+        "selective_contract": true
+      },
+      "calls_after_old_delivery": {
+        "route_table": 2,
+        "contract": 2,
+        "selective_contract": 2
+      }
+    },
+    {
+      "case": "unrelated_note_changed",
+      "seed": 421,
+      "old_read_allowed": {
+        "route_table": true,
+        "contract": true,
+        "selective_contract": true
+      },
+      "correct_commit": {
+        "route_table": true,
+        "contract": true,
+        "selective_contract": true
+      },
+      "calls_after_old_delivery": {
+        "route_table": 2,
+        "contract": 2,
+        "selective_contract": 2
+      }
+    },
+    {
+      "case": "bank_reference_rotated",
+      "seed": 19,
+      "old_read_allowed": {
+        "route_table": false,
+        "contract": false,
+        "selective_contract": false
+      },
+      "correct_commit": {
+        "route_table": true,
+        "contract": true,
+        "selective_contract": true
+      },
+      "calls_after_old_delivery": {
+        "route_table": 6,
+        "contract": 6,
+        "selective_contract": 6
+      }
+    },
+    {
+      "case": "bank_reference_rotated",
+      "seed": 113,
+      "old_read_allowed": {
+        "route_table": false,
+        "contract": false,
+        "selective_contract": false
+      },
+      "correct_commit": {
+        "route_table": true,
+        "contract": true,
+        "selective_contract": true
+      },
+      "calls_after_old_delivery": {
+        "route_table": 6,
+        "contract": 6,
+        "selective_contract": 6
+      }
+    },
+    {
+      "case": "bank_reference_rotated",
+      "seed": 421,
+      "old_read_allowed": {
+        "route_table": false,
+        "contract": false,
+        "selective_contract": false
+      },
+      "correct_commit": {
+        "route_table": true,
+        "contract": true,
+        "selective_contract": true
+      },
+      "calls_after_old_delivery": {
+        "route_table": 6,
+        "contract": 6,
+        "selective_contract": 6
+      }
+    },
+    {
+      "case": "wallet_stays_available",
+      "seed": 19,
+      "old_read_allowed": {
+        "route_table": false,
+        "contract": false,
+        "selective_contract": false
+      },
+      "correct_commit": {
+        "route_table": true,
+        "contract": true,
+        "selective_contract": true
+      },
+      "calls_after_old_delivery": {
+        "route_table": 6,
+        "contract": 6,
+        "selective_contract": 6
+      }
+    },
+    {
+      "case": "wallet_stays_available",
+      "seed": 113,
+      "old_read_allowed": {
+        "route_table": false,
+        "contract": false,
+        "selective_contract": false
+      },
+      "correct_commit": {
+        "route_table": true,
+        "contract": true,
+        "selective_contract": true
+      },
+      "calls_after_old_delivery": {
+        "route_table": 6,
+        "contract": 6,
+        "selective_contract": 6
+      }
+    },
+    {
+      "case": "wallet_stays_available",
+      "seed": 421,
+      "old_read_allowed": {
+        "route_table": false,
+        "contract": false,
+        "selective_contract": false
+      },
+      "correct_commit": {
+        "route_table": true,
+        "contract": true,
+        "selective_contract": true
+      },
+      "calls_after_old_delivery": {
+        "route_table": 6,
+        "contract": 6,
+        "selective_contract": 6
+      }
+    }
+  ]
+}

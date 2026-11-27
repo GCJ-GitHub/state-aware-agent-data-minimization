@@ -1,0 +1,13 @@
+{
+  "base": {
+    "wallet": ["wallet_ref"],
+    "bank": ["bank_ref", "owner_ref"]
+  },
+  "priority": ["wallet", "bank"],
+  "additions": [
+    {"id": "R1", "paths": ["wallet", "bank"], "when_any": ["enhanced", "large"], "field": "screening_ref", "after": []},
+    {"id": "R2", "paths": ["bank"], "when_any": ["recent"], "field": "beneficiary_ref", "after": ["R1"]},
+    {"id": "R3", "paths": ["wallet", "bank"], "when_any": ["large"], "field": "review_ref", "after": ["R1", "R2"]}
+  ],
+  "flags": ["enhanced", "recent", "large"]
+}

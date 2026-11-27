@@ -1,0 +1,340 @@
+{
+  "qwen4-pilot": {
+    "planned": 18,
+    "recorded": 18,
+    "runtime_errors": 0,
+    "cases_recorded": 2,
+    "upstream_pass": 6,
+    "any_authored_event": 7,
+    "all_authored_events": 7,
+    "field_scored_runs": 7,
+    "stale_fields": 0,
+    "tool_calls": 398,
+    "post_switch_calls": 29,
+    "denied_runs": 0,
+    "after_first_denial_calls": null,
+    "http_statuses": {
+      "200": 516,
+      "429": 98
+    },
+    "by_arm": {
+      "agent": {
+        "recorded": 6,
+        "runtime_errors": 0,
+        "cases_recorded": 2,
+        "upstream_pass": 2,
+        "any_authored_event": 2,
+        "all_authored_events": 2,
+        "field_scored_runs": 2,
+        "stale_fields": 0,
+        "tool_calls": 136,
+        "post_switch_calls": 9,
+        "denied_runs": 0,
+        "after_first_denial_calls": null,
+        "http_statuses": {
+          "200": 166,
+          "429": 25
+        }
+      },
+      "contract": {
+        "recorded": 6,
+        "runtime_errors": 0,
+        "cases_recorded": 2,
+        "upstream_pass": 2,
+        "any_authored_event": 3,
+        "all_authored_events": 3,
+        "field_scored_runs": 3,
+        "stale_fields": 0,
+        "tool_calls": 133,
+        "post_switch_calls": 10,
+        "denied_runs": 0,
+        "after_first_denial_calls": null,
+        "http_statuses": {
+          "200": 176,
+          "429": 48
+        }
+      },
+      "table": {
+        "recorded": 6,
+        "runtime_errors": 0,
+        "cases_recorded": 2,
+        "upstream_pass": 2,
+        "any_authored_event": 2,
+        "all_authored_events": 2,
+        "field_scored_runs": 2,
+        "stale_fields": 0,
+        "tool_calls": 129,
+        "post_switch_calls": 10,
+        "denied_runs": 0,
+        "after_first_denial_calls": null,
+        "http_statuses": {
+          "200": 174,
+          "429": 25
+        }
+      }
+    },
+    "matched_all_arms_switched": 1,
+    "matched_pairs": {
+      "table_minus_agent": [
+        {
+          "case": "0863_77j2gnywa1mxhzecvsrep6ejbvj2tzra",
+          "seed": 421,
+          "stale_fields_delta": 0,
+          "post_switch_calls_delta": 1
+        }
+      ],
+      "contract_minus_agent": [
+        {
+          "case": "0863_77j2gnywa1mxhzecvsrep6ejbvj2tzra",
+          "seed": 421,
+          "stale_fields_delta": 0,
+          "post_switch_calls_delta": 0
+        }
+      ],
+      "contract_minus_table": [
+        {
+          "case": "0863_77j2gnywa1mxhzecvsrep6ejbvj2tzra",
+          "seed": 113,
+          "stale_fields_delta": 0,
+          "post_switch_calls_delta": 0
+        },
+        {
+          "case": "0863_77j2gnywa1mxhzecvsrep6ejbvj2tzra",
+          "seed": 421,
+          "stale_fields_delta": 0,
+          "post_switch_calls_delta": -1
+        }
+      ]
+    }
+  },
+  "local-preflight": {
+    "planned": 4,
+    "recorded": 4,
+    "runtime_errors": 0,
+    "cases_recorded": 2,
+    "upstream_pass": 0,
+    "any_authored_event": 2,
+    "all_authored_events": 2,
+    "field_scored_runs": 0,
+    "stale_fields": null,
+    "tool_calls": 103,
+    "post_switch_calls": 14,
+    "denied_runs": 0,
+    "after_first_denial_calls": null,
+    "http_statuses": {},
+    "by_arm": {
+      "agent": {
+        "recorded": 4,
+        "runtime_errors": 0,
+        "cases_recorded": 2,
+        "upstream_pass": 0,
+        "any_authored_event": 2,
+        "all_authored_events": 2,
+        "field_scored_runs": 0,
+        "stale_fields": null,
+        "tool_calls": 103,
+        "post_switch_calls": 14,
+        "denied_runs": 0,
+        "after_first_denial_calls": null,
+        "http_statuses": {}
+      }
+    }
+  },
+  "qwen4-full-coverage": {
+    "planned": 480,
+    "recorded": 480,
+    "runtime_errors": 5,
+    "cases_recorded": 160,
+    "upstream_pass": 170,
+    "any_authored_event": 342,
+    "all_authored_events": 318,
+    "field_scored_runs": 3,
+    "stale_fields": 0,
+    "tool_calls": 7263,
+    "post_switch_calls": 3178,
+    "denied_runs": 0,
+    "after_first_denial_calls": null,
+    "http_statuses": {
+      "200": 14460,
+      "429": 332,
+      "None": 85
+    },
+    "by_arm": {
+      "agent": {
+        "recorded": 480,
+        "runtime_errors": 5,
+        "cases_recorded": 160,
+        "upstream_pass": 170,
+        "any_authored_event": 342,
+        "all_authored_events": 318,
+        "field_scored_runs": 3,
+        "stale_fields": 0,
+        "tool_calls": 7263,
+        "post_switch_calls": 3178,
+        "denied_runs": 0,
+        "after_first_denial_calls": null,
+        "http_statuses": {
+          "200": 14460,
+          "429": 332,
+          "None": 85
+        }
+      }
+    },
+    "by_seed": {
+      "19": {
+        "recorded": 160,
+        "runtime_errors": 0,
+        "cases_recorded": 160,
+        "upstream_pass": 57,
+        "any_authored_event": 117,
+        "all_authored_events": 109,
+        "field_scored_runs": 1,
+        "stale_fields": 0,
+        "tool_calls": 2472,
+        "post_switch_calls": 1103,
+        "denied_runs": 0,
+        "after_first_denial_calls": null,
+        "http_statuses": {
+          "200": 4960,
+          "429": 121
+        }
+      },
+      "113": {
+        "recorded": 160,
+        "runtime_errors": 0,
+        "cases_recorded": 160,
+        "upstream_pass": 59,
+        "any_authored_event": 123,
+        "all_authored_events": 113,
+        "field_scored_runs": 1,
+        "stale_fields": 0,
+        "tool_calls": 2512,
+        "post_switch_calls": 1088,
+        "denied_runs": 0,
+        "after_first_denial_calls": null,
+        "http_statuses": {
+          "200": 4888,
+          "429": 99
+        }
+      },
+      "421": {
+        "recorded": 160,
+        "runtime_errors": 5,
+        "cases_recorded": 160,
+        "upstream_pass": 54,
+        "any_authored_event": 102,
+        "all_authored_events": 96,
+        "field_scored_runs": 1,
+        "stale_fields": 0,
+        "tool_calls": 2279,
+        "post_switch_calls": 987,
+        "denied_runs": 0,
+        "after_first_denial_calls": null,
+        "http_statuses": {
+          "200": 4612,
+          "429": 112,
+          "None": 85
+        }
+      }
+    },
+    "cases_with_three_repeats": 160,
+    "cases_with_any_success": 87,
+    "cases_with_any_event": 141,
+    "cases_with_three_successes": 27,
+    "transport_retries": {
+      "recorded": 5,
+      "runtime_errors": 0,
+      "cases_recorded": 5,
+      "upstream_pass": 3,
+      "any_authored_event": 5,
+      "all_authored_events": 5,
+      "field_scored_runs": 0,
+      "stale_fields": null,
+      "tool_calls": 84,
+      "post_switch_calls": 37,
+      "denied_runs": 0,
+      "after_first_denial_calls": null,
+      "http_statuses": {
+        "200": 167
+      }
+    },
+    "after_transport_retry": {
+      "recorded": 480,
+      "runtime_errors": 0,
+      "cases_recorded": 160,
+      "upstream_pass": 173,
+      "any_authored_event": 347,
+      "all_authored_events": 323,
+      "field_scored_runs": 3,
+      "stale_fields": 0,
+      "tool_calls": 7347,
+      "post_switch_calls": 3215,
+      "denied_runs": 0,
+      "after_first_denial_calls": null,
+      "http_statuses": {
+        "200": 14560,
+        "429": 331,
+        "None": 3
+      },
+      "by_seed": {
+        "19": {
+          "recorded": 160,
+          "runtime_errors": 0,
+          "cases_recorded": 160,
+          "upstream_pass": 57,
+          "any_authored_event": 117,
+          "all_authored_events": 109,
+          "field_scored_runs": 1,
+          "stale_fields": 0,
+          "tool_calls": 2472,
+          "post_switch_calls": 1103,
+          "denied_runs": 0,
+          "after_first_denial_calls": null,
+          "http_statuses": {
+            "200": 4960,
+            "429": 121
+          }
+        },
+        "113": {
+          "recorded": 160,
+          "runtime_errors": 0,
+          "cases_recorded": 160,
+          "upstream_pass": 59,
+          "any_authored_event": 123,
+          "all_authored_events": 113,
+          "field_scored_runs": 1,
+          "stale_fields": 0,
+          "tool_calls": 2512,
+          "post_switch_calls": 1088,
+          "denied_runs": 0,
+          "after_first_denial_calls": null,
+          "http_statuses": {
+            "200": 4888,
+            "429": 99
+          }
+        },
+        "421": {
+          "recorded": 160,
+          "runtime_errors": 0,
+          "cases_recorded": 160,
+          "upstream_pass": 57,
+          "any_authored_event": 107,
+          "all_authored_events": 101,
+          "field_scored_runs": 1,
+          "stale_fields": 0,
+          "tool_calls": 2363,
+          "post_switch_calls": 1024,
+          "denied_runs": 0,
+          "after_first_denial_calls": null,
+          "http_statuses": {
+            "200": 4712,
+            "429": 111,
+            "None": 3
+          }
+        }
+      },
+      "cases_with_any_success": 88,
+      "cases_with_any_event": 141
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "dataset_sha256": "e449bf40b5dbb26df844c23c62e8ea94ee313ea6dd13d4aedb730fd8c1a6230e",
+  "upstream_commit": "a9fd2edccb4bc7e22fbf45c8482a5fef30a2a5a4",
+  "model": "qwen3:8b",
+  "context_tokens": 32768,
+  "agent_max_tokens": 640,
+  "judge_max_tokens": 1024,
+  "max_agent_model_responses_per_episode": 36,
+  "simulated_seconds_per_model_response": 1,
+  "seeds": [19, 113, 421],
+  "arms": ["agent", "table", "contract"],
+  "cases": {
+    "0603_pofr8ljj8zqoeamwjnrvlu23397rqasi": {
+      "switch": "Shopping.cancel_order",
+      "reason": "The user says to reorder without a discount after cancellation.",
+      "tracked_fields": "Coupon keys in get_all_discount_codes, discount percentage per queried coupon/item in get_discount_code_info. Prices and prior order history remain available."
+    },
+    "0863_77j2gnywa1mxhzecvsrep6ejbvj2tzra": {
+      "switch": "Shopping.cancel_order",
+      "reason": "The user asked to order a different product after cancellation. The name of the initial product is already in the request.",
+      "retired_product": "Paw Patrol Boys' Group Short Sleeve T-Shirt",
+      "tracked_fields": "Retired catalog product ID, variant ID/price/availability/options from catalog read tools. Prior order records are left out of this rule so agents can check what happened to the original order."
+    }
+  },
+  "scope": "Count unique newly delivered tracked field identities per episode after the first successful native ENV cancellation. Pre-switch deliveries, previously supplied user text and values recalled without a new tool reply are out of scope. All assigned runs are the main denominator. For recovery tool costs also report switch-triggered and both-arms-triggered denominators.",
+  "recovery_feedback": "The order state changed and this reply would include fields for the previous route. Check the order status and continue the latest authorized route using the remaining tools.",
+  "agent_instruction": "After an app notification, check current business state and follow the latest user-authorized route. Only read fields still needed. If a read is denied, use the feedback and continue with the tools. Complete required actions and use the user messaging tool when the request asks for a status report."
+}

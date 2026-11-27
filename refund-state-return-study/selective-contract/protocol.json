@@ -1,0 +1,6 @@
+{
+  "arms": ["route_table", "contract", "selective_contract"],
+  "inputs": "Inherit all five frozen scenarios, initial state, model, three seeds, response budget, simulator, tools, feedback and business commit criteria from the parent study.",
+  "new_contract": "Bind the bank authorization generation and the versions of exactly the fields named by the grant. Refresh and validate eligibility for the current route at delivery without binding past wallet eligibility versions.",
+  "comparison": "Run all three arms contemporaneously. Count false allows and false denials using the same frozen reuse labels. Pair by scenario and seed."
+}

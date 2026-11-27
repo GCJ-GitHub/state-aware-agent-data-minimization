@@ -1,0 +1,13 @@
+{
+  "cases": {
+    "0913_kip4smczj5eirm6q7y2cj7zbf2390b37": "PIONEER BALLOON COMPANY 41611 B'day Radiance Foil Balloon, 18\", Blue",
+    "0924_wfekc3gvbq8mkhwtmygju2exan8hqobr": "Funko Pop! Animation: Missing Link - Link",
+    "0863_77j2gnywa1mxhzecvsrep6ejbvj2tzra": "Paw Patrol Boys' Group Short Sleeve T-Shirt"
+  },
+  "arms": ["agent", "table", "contract"],
+  "seeds": [19, 113, 421],
+  "request_at": "Before the first native checkout. Prepare one exact old product catalog ID.",
+  "delivery_at": "After first user report and successful original ENV Shopping.cancel_order; wait for native event up to 90 wall seconds.",
+  "denial_feedback": "The old catalog read was denied because the active route changed while the read was pending. Check current order status if needed and continue with the replacement item from your original task.",
+  "metric": "One native exact field, counted once if a fresh held reply reached the agent model input. Prior knowledge of the same value is out of scope."
+}

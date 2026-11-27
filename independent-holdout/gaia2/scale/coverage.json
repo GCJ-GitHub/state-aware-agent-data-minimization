@@ -1,0 +1,1182 @@
+{
+  "0601_mz4dh4tml93gims9dxwrcz7i16t0p5ud": {
+    "event_actions": [
+      "Emails.create_and_add_email",
+      "Emails.create_and_add_email"
+    ],
+    "score_fields": false
+  },
+  "0602_sy6r944liwulln91ravyrcctdirinr0d": {
+    "event_actions": [
+      "Emails.create_and_add_email",
+      "Emails.create_and_add_email"
+    ],
+    "score_fields": false
+  },
+  "0605_dydb3p6l38hpusrecwguna7puzvem294": {
+    "event_actions": [
+      "Chats.create_and_add_message",
+      "Chats.create_and_add_message",
+      "Chats.create_and_add_message"
+    ],
+    "score_fields": false
+  },
+  "0606_54dqfl4ouibqrqlt0q4jql406rd3zww3": {
+    "event_actions": [
+      "Messages.create_and_add_message"
+    ],
+    "score_fields": false
+  },
+  "0607_mo3yh3fqpxo6jdsrdabi02k9p19vyvzx": {
+    "event_actions": [
+      "Chats.create_and_add_message",
+      "Chats.create_and_add_message",
+      "Chats.create_and_add_message",
+      "Chats.create_and_add_message",
+      "Chats.create_and_add_message"
+    ],
+    "score_fields": false
+  },
+  "0603_pofr8ljj8zqoeamwjnrvlu23397rqasi": {
+    "event_actions": [
+      "Shopping.cancel_order"
+    ],
+    "score_fields": true
+  },
+  "0604_ifl4g3s8d6urq1fwtet26rl98sqrsshp": {
+    "event_actions": [
+      "Chats.create_and_add_message",
+      "Chats.create_and_add_message"
+    ],
+    "score_fields": false
+  },
+  "0610_ciifop2jmjyeph0bly3rqpeyz3t2b4lc": {
+    "event_actions": [
+      "Emails.send_email_to_user_only",
+      "Emails.create_and_add_email",
+      "Emails.reply_to_email_from_user",
+      "Emails.send_email_to_user_only",
+      "Emails.create_and_add_email"
+    ],
+    "score_fields": false
+  },
+  "0620_23nfq5tjilb4u29n1o010ew0c35jo843": {
+    "event_actions": [
+      "Chats.create_and_add_message",
+      "Chats.create_and_add_message",
+      "Shopping.update_item"
+    ],
+    "score_fields": false
+  },
+  "0622_cftp478g1x3kbeidx1yu0yjsrippi8b8": {
+    "event_actions": [
+      "Calendar.delete_calendar_event_by_attendee",
+      "Calendar.delete_calendar_event_by_attendee"
+    ],
+    "score_fields": false
+  },
+  "0618_tzjsm881uzdzc8bkicb27xhbwpcqcq3a": {
+    "event_actions": [
+      "Emails.create_and_add_email",
+      "Emails.create_and_add_email",
+      "Emails.create_and_add_email"
+    ],
+    "score_fields": false
+  },
+  "0612_nxnlsgo0crpgkmib1mkfbcg744f1u09k": {
+    "event_actions": [
+      "Emails.reply_to_email_from_user",
+      "Emails.reply_to_email_from_user",
+      "Emails.reply_to_email_from_user"
+    ],
+    "score_fields": false
+  },
+  "0619_tgha7t9yspde6hqhw3u744d5mrhvl923": {
+    "event_actions": [
+      "Emails.create_and_add_email",
+      "Emails.create_and_add_email"
+    ],
+    "score_fields": false
+  },
+  "0613_yizeir0okkaixm3wd7s6o0j9u94uy4e1": {
+    "event_actions": [
+      "Emails.reply_to_email_from_user",
+      "Emails.reply_to_email_from_user",
+      "Messages.create_and_add_message",
+      "Messages.create_and_add_message"
+    ],
+    "score_fields": false
+  },
+  "0609_jr2fzcfh1djfbvefc5ths7vgy75z27tv": {
+    "event_actions": [
+      "Calendar.add_calendar_event_by_attendee",
+      "Calendar.add_calendar_event_by_attendee"
+    ],
+    "score_fields": false
+  },
+  "0624_u8fx1mox9nkpxmy0tlmnibgjmklrxknr": {
+    "event_actions": [
+      "Emails.reply_to_email_from_user"
+    ],
+    "score_fields": false
+  },
+  "0611_xz3gx15p5p2iffhdg8eqs0uj83eecplm": {
+    "event_actions": [
+      "Chats.create_and_add_message",
+      "Chats.create_and_add_message"
+    ],
+    "score_fields": false
+  },
+  "0615_jm4ojcw236ntst78utcy7lbavn40o141": {
+    "event_actions": [
+      "Calendar.add_calendar_event_by_attendee",
+      "Calendar.add_calendar_event_by_attendee",
+      "Calendar.add_calendar_event_by_attendee"
+    ],
+    "score_fields": false
+  },
+  "0616_ewvwwn0b9kt8urb5oa6sh2ui5w1xi6tt": {
+    "event_actions": [
+      "Emails.send_email_to_user_only",
+      "Emails.reply_to_email_from_user"
+    ],
+    "score_fields": false
+  },
+  "0630_dtpdnzfw3exlo58hz9vgo20jvpr7fikk": {
+    "event_actions": [
+      "Cabs.update_ride_status"
+    ],
+    "score_fields": false
+  },
+  "0614_yzmzb36qco7njtczpzak22osfmpsc5b7": {
+    "event_actions": [
+      "Emails.create_and_add_email",
+      "Emails.create_and_add_email",
+      "Emails.create_and_add_email",
+      "Emails.create_and_add_email"
+    ],
+    "score_fields": false
+  },
+  "0608_f9dnksx1xvs5mvxg8qcax32clsp3b3bo": {
+    "event_actions": [
+      "Emails.create_and_add_email",
+      "Emails.create_and_add_email"
+    ],
+    "score_fields": false
+  },
+  "0634_vl1sn9gyr68c5hgigh6r2aoutdgo5pjd": {
+    "event_actions": [
+      "Messages.create_and_add_message",
+      "Messages.create_and_add_message"
+    ],
+    "score_fields": false
+  },
+  "0626_cw20wcc87i9wq2c7i5yun18bbsybo9yr": {
+    "event_actions": [
+      "Emails.reply_to_email_from_user",
+      "Emails.create_and_add_email"
+    ],
+    "score_fields": false
+  },
+  "0631_dt84zx45n1yi4idssov7y0h0dwgtklu5": {
+    "event_actions": [
+      "Shopping.cancel_order",
+      "Shopping.cancel_order"
+    ],
+    "score_fields": false
+  },
+  "0621_uuah385lesh5u44896fr450ntypjb8ge": {
+    "event_actions": [
+      "Emails.send_email_to_user_only",
+      "Emails.reply_to_email_from_user",
+      "Calendar.delete_calendar_event_by_attendee"
+    ],
+    "score_fields": false
+  },
+  "0637_wz3bcrlckr0fmca6xlgc3grjipbvgr0p": {
+    "event_actions": [
+      "Chats.create_and_add_message",
+      "Chats.create_and_add_message"
+    ],
+    "score_fields": false
+  },
+  "0639_b8jmhd3n7gjyw99jd3rhcmbea4baqfqg": {
+    "event_actions": [
+      "Calendar.add_calendar_event_by_attendee",
+      "Calendar.add_calendar_event_by_attendee"
+    ],
+    "score_fields": false
+  },
+  "0636_rmskjxrfmi05z4zftlr3li5tr96qxeas": {
+    "event_actions": [
+      "Messages.create_and_add_message",
+      "Messages.create_and_add_message",
+      "Messages.create_and_add_message"
+    ],
+    "score_fields": false
+  },
+  "0635_mmp4hksqjnf1g52oexxaxmntjix11g2l": {
+    "event_actions": [
+      "Chats.create_and_add_message",
+      "Messages.create_and_add_message",
+      "Messages.create_and_add_message"
+    ],
+    "score_fields": false
+  },
+  "0643_750ea4udiytzv2211crwkewkhydnq5lx": {
+    "event_actions": [
+      "Calendar.delete_calendar_event_by_attendee",
+      "Calendar.delete_calendar_event_by_attendee"
+    ],
+    "score_fields": false
+  },
+  "0642_lcg7nwyas88r8922cbukfa94im976c2x": {
+    "event_actions": [
+      "Emails.reply_to_email_from_user",
+      "Emails.reply_to_email_from_user",
+      "Emails.reply_to_email_from_user"
+    ],
+    "score_fields": false
+  },
+  "0644_2zmiyh1q3stoa9243ctp7ygwq87ffvkx": {
+    "event_actions": [
+      "Emails.reply_to_email_from_user"
+    ],
+    "score_fields": false
+  },
+  "0648_qkgzqw6onw3bu26tp9wepkjfsn4r2l8d": {
+    "event_actions": [
+      "Messages.create_and_add_message",
+      "Messages.create_and_add_message"
+    ],
+    "score_fields": false
+  },
+  "0646_qef4b0bzewo5qfffljf0sgxeelm2zcbl": {
+    "event_actions": [
+      "Emails.reply_to_email_from_user",
+      "Emails.send_email_to_user_only",
+      "Emails.create_and_add_email"
+    ],
+    "score_fields": false
+  },
+  "0645_gbj8otuliajhbbuncqqie6i64yv36egn": {
+    "event_actions": [
+      "Emails.reply_to_email_from_user",
+      "Emails.send_email_to_user_only"
+    ],
+    "score_fields": false
+  },
+  "0654_twn8m4w9f4yix6f7zh8kn2bpiwr84vk0": {
+    "event_actions": [
+      "Calendar.delete_calendar_event_by_attendee",
+      "Calendar.delete_calendar_event_by_attendee"
+    ],
+    "score_fields": false
+  },
+  "0638_qcto4jn2nd340bdgeuieam0zp8mjk2x1": {
+    "event_actions": [
+      "Emails.reply_to_email_from_user",
+      "Emails.reply_to_email_from_user",
+      "Calendar.add_calendar_event_by_attendee",
+      "Emails.reply_to_email_from_user"
+    ],
+    "score_fields": false
+  },
+  "0662_cm1b7w51hntwqlgxs3vjxfyigezahf5o": {
+    "event_actions": [
+      "Messages.create_and_add_message",
+      "Messages.create_and_add_message",
+      "Messages.create_and_add_message"
+    ],
+    "score_fields": false
+  },
+  "0663_c4rhds3gn4hecrdzan4k442j69gsgzsl": {
+    "event_actions": [
+      "Calendar.delete_calendar_event_by_attendee",
+      "Calendar.delete_calendar_event_by_attendee"
+    ],
+    "score_fields": false
+  },
+  "0647_aakouu8f2upgc0zggnclrosoqdhc8gup": {
+    "event_actions": [
+      "Emails.create_and_add_email",
+      "Emails.create_and_add_email"
+    ],
+    "score_fields": false
+  },
+  "0656_3drd9ztjpzcq0jv0akdvfqfubkgwkove": {
+    "event_actions": [
+      "Emails.send_email_to_user_only",
+      "Emails.create_and_add_email"
+    ],
+    "score_fields": false
+  },
+  "0651_wj9ojjy0vyhg1x5ocia1s0828z2emu8n": {
+    "event_actions": [
+      "Calendar.add_calendar_event_by_attendee",
+      "Calendar.add_calendar_event_by_attendee"
+    ],
+    "score_fields": false
+  },
+  "0664_f1wk211hccak1x2i2yp4zfu50rh2k1av": {
+    "event_actions": [
+      "Emails.reply_to_email_from_user",
+      "Emails.reply_to_email_from_user"
+    ],
+    "score_fields": false
+  },
+  "0625_0ks0aepjjmzjfqpzdm570w2nnwo6pg15": {
+    "event_actions": [
+      "Calendar.add_calendar_event_by_attendee",
+      "Calendar.add_calendar_event_by_attendee",
+      "Calendar.add_calendar_event_by_attendee",
+      "Calendar.add_calendar_event_by_attendee"
+    ],
+    "score_fields": false
+  },
+  "0640_wmhimcz5k59llrdgf6g0fkqppmruk82b": {
+    "event_actions": [
+      "Emails.create_and_add_email",
+      "Emails.reply_to_email_from_user"
+    ],
+    "score_fields": false
+  },
+  "0665_wa4ul66wyinqf8ulxowdjgf6jts7lxu3": {
+    "event_actions": [
+      "Messages.create_and_add_message"
+    ],
+    "score_fields": false
+  },
+  "0657_ckq67khpa3sgw4jynmjz00j70m93xd2l": {
+    "event_actions": [
+      "Emails.create_and_add_email"
+    ],
+    "score_fields": false
+  },
+  "0658_mx62nptyc2l15aoa2nbmztuqfljq14uf": {
+    "event_actions": [
+      "Emails.create_and_add_email",
+      "Emails.create_and_add_email"
+    ],
+    "score_fields": false
+  },
+  "0653_vsec8bpjbdf8gz2yiiuap0aaixcd2whj": {
+    "event_actions": [
+      "Emails.create_and_add_email",
+      "Emails.send_email_to_user_only",
+      "Emails.send_email_to_user_only"
+    ],
+    "score_fields": false
+  },
+  "0667_8o4d7q44ig0ej3hrl5vzxylde7t2s72u": {
+    "event_actions": [
+      "Emails.reply_to_email_from_user",
+      "Emails.send_email_to_user_only",
+      "Emails.reply_to_email_from_user",
+      "Emails.send_email_to_user_only"
+    ],
+    "score_fields": false
+  },
+  "0666_2dsmofbug7ytmczfxa1a7y8xch0suuzh": {
+    "event_actions": [
+      "Messages.create_and_add_message",
+      "Messages.create_and_add_message",
+      "Messages.create_and_add_message"
+    ],
+    "score_fields": false
+  },
+  "0670_hfkpojfb4myigbc32a5xl6zcv249alao": {
+    "event_actions": [
+      "Emails.reply_to_email_from_user",
+      "Emails.reply_to_email_from_user",
+      "Emails.send_email_to_user_only"
+    ],
+    "score_fields": false
+  },
+  "0660_l3y0egytbn6wqk388pgjllndgy1eeckw": {
+    "event_actions": [
+      "Messages.create_and_add_message",
+      "Messages.create_and_add_message"
+    ],
+    "score_fields": false
+  },
+  "0649_gp4sofsqx8szhnsbwg7bqv4isvgpb7sw": {
+    "event_actions": [
+      "Emails.send_email_to_user_only",
+      "Emails.create_and_add_email"
+    ],
+    "score_fields": false
+  },
+  "0669_495klcxaz8n9goiax1lueczgn1p5w2qs": {
+    "event_actions": [
+      "Emails.reply_to_email_from_user",
+      "Emails.reply_to_email_from_user",
+      "Emails.reply_to_email_from_user"
+    ],
+    "score_fields": false
+  },
+  "0659_xpfi0s9ueivppstn8gps8ig8h8nnrjn9": {
+    "event_actions": [
+      "Emails.send_email_to_user_only",
+      "Emails.send_email_to_user_only",
+      "Emails.reply_to_email_from_user"
+    ],
+    "score_fields": false
+  },
+  "0672_m8t96v4a0xtg6841o3opog01kt811l8z": {
+    "event_actions": [
+      "Emails.send_email_to_user_only",
+      "Emails.reply_to_email_from_user"
+    ],
+    "score_fields": false
+  },
+  "0686_g7xymw4gh5ccwcdpn1rqqnni2jli2g25": {
+    "event_actions": [
+      "Messages.create_and_add_message",
+      "Messages.create_and_add_message"
+    ],
+    "score_fields": false
+  },
+  "0677_zneihwsxs6i9lcuqz2vb8naly0gvuv2a": {
+    "event_actions": [
+      "Emails.reply_to_email_from_user",
+      "Emails.reply_to_email_from_user",
+      "Emails.reply_to_email_from_user",
+      "Shopping.update_item"
+    ],
+    "score_fields": false
+  },
+  "0691_aw5sqbzfv1bjmj3vmxwpxmj0l3rx5br2": {
+    "event_actions": [
+      "Emails.reply_to_email_from_user",
+      "Emails.create_and_add_email"
+    ],
+    "score_fields": false
+  },
+  "0673_ogqcmwevz8lm7rmnaxh65h6wptk8gvhe": {
+    "event_actions": [
+      "Emails.reply_to_email_from_user",
+      "Emails.reply_to_email_from_user",
+      "Emails.reply_to_email_from_user"
+    ],
+    "score_fields": false
+  },
+  "0678_7xyadypwtak671mva24hj4xbd1gqdlcx": {
+    "event_actions": [
+      "Chats.create_and_add_message",
+      "Chats.create_and_add_message"
+    ],
+    "score_fields": false
+  },
+  "0674_gpobsf5zguv030t7z2uxpj0mmd8gt0t0": {
+    "event_actions": [
+      "Emails.send_email_to_user_only",
+      "Emails.reply_to_email_from_user"
+    ],
+    "score_fields": false
+  },
+  "0687_p9ddvrdogimp0tgvt5046f2i3uer0lwa": {
+    "event_actions": [
+      "Emails.create_and_add_email",
+      "Emails.create_and_add_email"
+    ],
+    "score_fields": false
+  },
+  "0688_bh6lb3cy4ipoi0ew3yy1kufgabt12r87": {
+    "event_actions": [
+      "Messages.create_and_add_message",
+      "Messages.create_and_add_message",
+      "Messages.create_and_add_message",
+      "Messages.create_and_add_message",
+      "Messages.create_and_add_message"
+    ],
+    "score_fields": false
+  },
+  "0682_1uar8bic22j0mqn5dcobx595b7227d1y": {
+    "event_actions": [
+      "Emails.create_and_add_email",
+      "Emails.create_and_add_email",
+      "Emails.reply_to_email_from_user"
+    ],
+    "score_fields": false
+  },
+  "0684_czfzxqol5wzfbed4rk9l2zcys6i2cbjt": {
+    "event_actions": [
+      "Emails.create_and_add_email",
+      "Emails.send_email_to_user_only"
+    ],
+    "score_fields": false
+  },
+  "0680_wmve2jrtqqqxwe54zykox0z7ipt59rgg": {
+    "event_actions": [
+      "Emails.reply_to_email_from_user",
+      "Emails.reply_to_email_from_user"
+    ],
+    "score_fields": false
+  },
+  "0676_6xd4atv0d4vcqppx40utwoskts52vzvb": {
+    "event_actions": [
+      "Emails.send_email_to_user_only",
+      "Emails.send_email_to_user_only",
+      "Emails.reply_to_email_from_user"
+    ],
+    "score_fields": false
+  },
+  "0690_1b9hg1u36ugt0cnr2ksoeabyob36ofbx": {
+    "event_actions": [
+      "Chats.create_and_add_message",
+      "Chats.create_and_add_message"
+    ],
+    "score_fields": false
+  },
+  "0675_t1zb3c21mvtsarrh5ndc890wfq4t618r": {
+    "event_actions": [
+      "Chats.create_and_add_message",
+      "Chats.create_and_add_message",
+      "Chats.create_and_add_message",
+      "Chats.create_and_add_message"
+    ],
+    "score_fields": false
+  },
+  "0692_0titoqjx5uvsesykkno5fxxjccpdd827": {
+    "event_actions": [
+      "Messages.create_and_add_message",
+      "Messages.create_and_add_message"
+    ],
+    "score_fields": false
+  },
+  "0707_i706q09ixk7eh1bghozdtp5b7mz9jb7n": {
+    "event_actions": [
+      "Calendar.delete_calendar_event_by_attendee",
+      "Calendar.delete_calendar_event_by_attendee",
+      "Calendar.delete_calendar_event_by_attendee"
+    ],
+    "score_fields": false
+  },
+  "0701_vmapv8jm29lndnxu3e0hmxz4nq9v2pza": {
+    "event_actions": [
+      "Chats.create_and_add_message",
+      "Chats.create_and_add_message",
+      "Chats.create_and_add_message"
+    ],
+    "score_fields": false
+  },
+  "0699_lt56m9qzd9t14dp58spmpaybf4el4h4k": {
+    "event_actions": [
+      "Emails.send_email_to_user_only",
+      "Emails.send_email_to_user_only",
+      "Emails.send_email_to_user_only"
+    ],
+    "score_fields": false
+  },
+  "0704_lui2dl8fcrr4qp8syekzbkaaj1s0o1ce": {
+    "event_actions": [
+      "Emails.send_email_to_user_only",
+      "Emails.send_email_to_user_only",
+      "Emails.send_email_to_user_only"
+    ],
+    "score_fields": false
+  },
+  "0863_77j2gnywa1mxhzecvsrep6ejbvj2tzra": {
+    "event_actions": [
+      "Shopping.cancel_order"
+    ],
+    "score_fields": true
+  },
+  "0698_pkyb3pflukov2hhnolhiv5cs9rfkf5tr": {
+    "event_actions": [
+      "Emails.reply_to_email_from_user",
+      "Emails.reply_to_email_from_user",
+      "Emails.reply_to_email_from_user"
+    ],
+    "score_fields": false
+  },
+  "0703_e6nz1ppwdudnjel0ojtznkulnfeqewot": {
+    "event_actions": [
+      "Emails.reply_to_email_from_user",
+      "Emails.reply_to_email_from_user",
+      "Emails.reply_to_email_from_user"
+    ],
+    "score_fields": false
+  },
+  "0709_gsfrbf2asw3amyt6tngt58pn9iwopo3u": {
+    "event_actions": [
+      "Emails.reply_to_email_from_user"
+    ],
+    "score_fields": false
+  },
+  "0702_j5wq87el1nyh1yyjwsjdcjof2tqrwi8w": {
+    "event_actions": [
+      "Emails.reply_to_email_from_user",
+      "Emails.create_and_add_email"
+    ],
+    "score_fields": false
+  },
+  "0708_thz5554bjkctrj16gms5gbm1hgt64ubv": {
+    "event_actions": [
+      "Emails.send_email_to_user_only",
+      "Emails.send_email_to_user_only",
+      "Emails.reply_to_email_from_user",
+      "Emails.reply_to_email_from_user"
+    ],
+    "score_fields": false
+  },
+  "0860_eb73aw922n6616jbjhv4clst7899rlwa": {
+    "event_actions": [
+      "Calendar.delete_calendar_event_by_attendee"
+    ],
+    "score_fields": false
+  },
+  "0862_b078fyjbqz9gdr1oere8025xpu9wg5sc": {
+    "event_actions": [
+      "Emails.reply_to_email_from_user",
+      "Emails.reply_to_email_from_user",
+      "Emails.reply_to_email_from_user",
+      "Emails.reply_to_email_from_user"
+    ],
+    "score_fields": false
+  },
+  "0864_t919667iik8znxy567rbje8zxnqxs7q7": {
+    "event_actions": [
+      "Emails.reply_to_email_from_user",
+      "Emails.reply_to_email_from_user",
+      "Emails.reply_to_email_from_user"
+    ],
+    "score_fields": false
+  },
+  "0696_b39cceovqwq08978gues62vz510h1oko": {
+    "event_actions": [
+      "Emails.create_and_add_email",
+      "Emails.create_and_add_email",
+      "Emails.create_and_add_email"
+    ],
+    "score_fields": false
+  },
+  "0700_mubpxjo0yifsfjiu1knon2rqnqhy83kq": {
+    "event_actions": [
+      "Messages.create_and_add_message",
+      "Messages.create_and_add_message"
+    ],
+    "score_fields": false
+  },
+  "0697_sn451pnnoz19j0o0fylr8onyo828f3tn": {
+    "event_actions": [
+      "Emails.reply_to_email_from_user",
+      "Emails.reply_to_email_from_user",
+      "Emails.reply_to_email_from_user"
+    ],
+    "score_fields": false
+  },
+  "0871_1ymzmr2fyy0guhqalb0zhah76x78k1vq": {
+    "event_actions": [
+      "Messages.create_and_add_message",
+      "Messages.create_and_add_message",
+      "Messages.create_and_add_message"
+    ],
+    "score_fields": false
+  },
+  "0874_jwipcum33yrsye0s1vuidtqtpg6jcly1": {
+    "event_actions": [
+      "Calendar.delete_calendar_event_by_attendee",
+      "Calendar.delete_calendar_event_by_attendee"
+    ],
+    "score_fields": false
+  },
+  "0859_0955qpz7w3j9ib9vml2osvr8fxjzswxs": {
+    "event_actions": [
+      "Emails.reply_to_email_from_user",
+      "Emails.reply_to_email_from_user",
+      "Emails.reply_to_email_from_user"
+    ],
+    "score_fields": false
+  },
+  "0876_vhdis3c0sjtbyfig6jbhubt9eygu283b": {
+    "event_actions": [
+      "Cabs.update_ride_status"
+    ],
+    "score_fields": false
+  },
+  "0875_1lmp7uq92664b5yejli3c86encxlquwz": {
+    "event_actions": [
+      "Messages.create_and_add_message",
+      "Cabs.update_ride_status"
+    ],
+    "score_fields": false
+  },
+  "0865_uewqhv9xlg9bg9ggsfdnrecvgj8xcmkm": {
+    "event_actions": [
+      "Calendar.delete_calendar_event_by_attendee"
+    ],
+    "score_fields": false
+  },
+  "0872_zoudeqtmp59oz678evegh3xmf2tlahb1": {
+    "event_actions": [
+      "Calendar.add_calendar_event_by_attendee"
+    ],
+    "score_fields": false
+  },
+  "0886_mewr5qqyy99ep0knd1c4bb58z4oogm2b": {
+    "event_actions": [
+      "Calendar.add_calendar_event_by_attendee",
+      "Calendar.add_calendar_event_by_attendee",
+      "Calendar.add_calendar_event_by_attendee",
+      "Calendar.add_calendar_event_by_attendee"
+    ],
+    "score_fields": false
+  },
+  "0870_jlczezv7tauo4495lc19a6fg0tnjibvh": {
+    "event_actions": [
+      "Calendar.delete_calendar_event_by_attendee",
+      "Calendar.delete_calendar_event_by_attendee"
+    ],
+    "score_fields": false
+  },
+  "0879_0bgirm32atvzazj3lu5x66kuyvccljtg": {
+    "event_actions": [
+      "Shopping.cancel_order"
+    ],
+    "score_fields": false
+  },
+  "0878_2mw8ul0xxgkyhuquxqhvwbsddocvo4fw": {
+    "event_actions": [
+      "Messages.create_and_add_message"
+    ],
+    "score_fields": false
+  },
+  "0880_1aeo5r6r2dfv8ix1viup0311nznv3ke8": {
+    "event_actions": [
+      "Cabs.update_ride_status",
+      "Messages.create_and_add_message",
+      "Messages.create_and_add_message"
+    ],
+    "score_fields": false
+  },
+  "0882_ny7zkoyboiurvvuzctmyuavdc9icpk91": {
+    "event_actions": [
+      "Calendar.delete_calendar_event_by_attendee",
+      "Calendar.delete_calendar_event_by_attendee",
+      "Calendar.delete_calendar_event_by_attendee"
+    ],
+    "score_fields": false
+  },
+  "0885_xprway7wdx5vwlrh2upaefyi7qkmzy6b": {
+    "event_actions": [
+      "Cabs.cancel_ride"
+    ],
+    "score_fields": false
+  },
+  "0867_ugb1wsja6vzxlce5gz3r4is4ik5tmnq2": {
+    "event_actions": [
+      "Emails.reply_to_email_from_user",
+      "Emails.reply_to_email_from_user"
+    ],
+    "score_fields": false
+  },
+  "0868_cr1csiqq8w6hm79fcof54tg3y038lbpt": {
+    "event_actions": [
+      "Calendar.delete_calendar_event_by_attendee",
+      "Calendar.delete_calendar_event_by_attendee"
+    ],
+    "score_fields": false
+  },
+  "0888_51l8dcuw8jy68uqr68f725b0mk479ar2": {
+    "event_actions": [
+      "Messages.create_and_add_message",
+      "Messages.create_and_add_message"
+    ],
+    "score_fields": false
+  },
+  "0883_20h78i8ptuul6yuhk6cke8lzvmp929c2": {
+    "event_actions": [
+      "Calendar.delete_calendar_event_by_attendee",
+      "Calendar.delete_calendar_event_by_attendee",
+      "Calendar.delete_calendar_event_by_attendee"
+    ],
+    "score_fields": false
+  },
+  "0895_qztiuqoxt8e8m13eot02s9umjxkfx8v3": {
+    "event_actions": [
+      "Calendar.delete_calendar_event_by_attendee"
+    ],
+    "score_fields": false
+  },
+  "0894_h7puknzg8w4z1zx470pupa6fdl5tseg8": {
+    "event_actions": [
+      "Emails.create_and_add_email",
+      "Emails.create_and_add_email"
+    ],
+    "score_fields": false
+  },
+  "0899_c60ap7b4g1fyrp4oy73so7pifq7xhuw6": {
+    "event_actions": [
+      "Calendar.delete_calendar_event_by_attendee",
+      "Calendar.delete_calendar_event_by_attendee"
+    ],
+    "score_fields": false
+  },
+  "0890_p76cdsnqnnh13rpy12z7sj6f55ngiqdy": {
+    "event_actions": [
+      "Messages.create_and_add_message",
+      "Messages.create_and_add_message",
+      "Messages.create_and_add_message",
+      "Messages.create_and_add_message"
+    ],
+    "score_fields": false
+  },
+  "0889_9q80g77sgsgo9mtf8vh3i2pzjm7gwjdk": {
+    "event_actions": [
+      "Chats.create_and_add_message",
+      "Chats.create_and_add_message"
+    ],
+    "score_fields": false
+  },
+  "0892_b2dgv8tqb7y7xmgso10xkbgbjoeifuwt": {
+    "event_actions": [
+      "Emails.reply_to_email_from_user",
+      "Emails.send_email_to_user_only"
+    ],
+    "score_fields": false
+  },
+  "0898_h47f9xaz8othydwkcxky3us1ucsllkl0": {
+    "event_actions": [
+      "Messages.create_and_add_message",
+      "Messages.create_and_add_message",
+      "Messages.create_and_add_message"
+    ],
+    "score_fields": false
+  },
+  "0896_blogrl906ha2k8gbrybxnpcz9bowyi83": {
+    "event_actions": [
+      "Cabs.update_ride_status"
+    ],
+    "score_fields": false
+  },
+  "0881_mduqmxz8ehigao1nde23ph2oeyeqqo2z": {
+    "event_actions": [
+      "Cabs.cancel_ride"
+    ],
+    "score_fields": false
+  },
+  "0897_olr93i1514ceb7b9j8vx1whl8ac156ij": {
+    "event_actions": [
+      "Cabs.cancel_ride"
+    ],
+    "score_fields": false
+  },
+  "0891_orvr2n92xivf9rm5s6ih12473ypo6t18": {
+    "event_actions": [
+      "Calendar.add_calendar_event_by_attendee",
+      "Emails.reply_to_email_from_user"
+    ],
+    "score_fields": false
+  },
+  "0900_98c6k6847l8dq2a0b640zhq9375polep": {
+    "event_actions": [
+      "Emails.reply_to_email_from_user",
+      "Emails.reply_to_email_from_user"
+    ],
+    "score_fields": false
+  },
+  "0884_bsp7k7t8vx7xntlobdlg4ph26tyfrc2u": {
+    "event_actions": [
+      "Messages.create_and_add_message",
+      "Messages.create_and_add_message"
+    ],
+    "score_fields": false
+  },
+  "0911_eg50p4f1ahp9skg9gnv0mfg1a8dtlm33": {
+    "event_actions": [
+      "Emails.reply_to_email_from_user",
+      "Messages.create_and_add_message"
+    ],
+    "score_fields": false
+  },
+  "0906_w0obmcfkf49ac3pynm0mr3cc14upscut": {
+    "event_actions": [
+      "Calendar.add_calendar_event_by_attendee",
+      "Calendar.add_calendar_event_by_attendee"
+    ],
+    "score_fields": false
+  },
+  "0914_y70s9nda9x1kae513hc6vs39oi568yak": {
+    "event_actions": [
+      "Calendar.delete_calendar_event_by_attendee",
+      "Calendar.delete_calendar_event_by_attendee"
+    ],
+    "score_fields": false
+  },
+  "0916_dniwu8k32oxma8fyul0hxk4k0388fu5t": {
+    "event_actions": [
+      "Messages.create_and_add_message",
+      "Messages.create_and_add_message"
+    ],
+    "score_fields": false
+  },
+  "0932_5jfayayraae5kkh471epw5qhdjb6c5sl": {
+    "event_actions": [
+      "Calendar.delete_calendar_event_by_attendee",
+      "Calendar.delete_calendar_event_by_attendee",
+      "Calendar.delete_calendar_event_by_attendee",
+      "Chats.create_and_add_message"
+    ],
+    "score_fields": false
+  },
+  "0902_nr5dyc9smzyyylzduhtvdgheve0z7934": {
+    "event_actions": [
+      "Emails.reply_to_email_from_user",
+      "Emails.reply_to_email_from_user",
+      "Chats.create_and_add_message"
+    ],
+    "score_fields": false
+  },
+  "0904_gocwz8pnoivooay3vsx1i8aoe729yep5": {
+    "event_actions": [
+      "Calendar.delete_calendar_event_by_attendee",
+      "Calendar.delete_calendar_event_by_attendee",
+      "Emails.reply_to_email_from_user",
+      "Calendar.add_calendar_event_by_attendee",
+      "Calendar.add_calendar_event_by_attendee"
+    ],
+    "score_fields": false
+  },
+  "0927_ox4f2a4q0zjrgo92ach8m88gdyzxkavq": {
+    "event_actions": [
+      "Emails.reply_to_email_from_user",
+      "Emails.reply_to_email_from_user"
+    ],
+    "score_fields": false
+  },
+  "0909_q04sd2kko687gwcdg4liz0dr07kqkqbw": {
+    "event_actions": [
+      "Calendar.add_calendar_event_by_attendee",
+      "Calendar.add_calendar_event_by_attendee"
+    ],
+    "score_fields": false
+  },
+  "0923_2wfq9q28b9s3133ql6wi1tkjvovrobwi": {
+    "event_actions": [
+      "Emails.reply_to_email_from_user",
+      "Emails.reply_to_email_from_user"
+    ],
+    "score_fields": false
+  },
+  "0921_92cwy9d3m4rlm3x8ifmm7fkey975fqkq": {
+    "event_actions": [
+      "Emails.reply_to_email_from_user",
+      "Emails.reply_to_email_from_user",
+      "Emails.reply_to_email_from_user"
+    ],
+    "score_fields": false
+  },
+  "0918_8kzhquq1fm25r7w0lgnus7u33g2023yx": {
+    "event_actions": [
+      "Emails.reply_to_email_from_user",
+      "Calendar.delete_calendar_event_by_attendee"
+    ],
+    "score_fields": false
+  },
+  "0930_bs9rikfk9v9px9kdy0b7ztru657zreek": {
+    "event_actions": [
+      "Emails.send_email_to_user_only",
+      "Chats.create_and_add_message",
+      "Chats.create_and_add_message"
+    ],
+    "score_fields": false
+  },
+  "0933_38le5i2xsht8at8egwlg15ptvqdu585f": {
+    "event_actions": [
+      "Emails.send_email_to_user_only",
+      "Emails.reply_to_email_from_user"
+    ],
+    "score_fields": false
+  },
+  "0915_bwqox01mr92tspli792rfqe2cepxeq89": {
+    "event_actions": [
+      "Emails.reply_to_email_from_user",
+      "Emails.reply_to_email_from_user"
+    ],
+    "score_fields": false
+  },
+  "0913_kip4smczj5eirm6q7y2cj7zbf2390b37": {
+    "event_actions": [
+      "Shopping.cancel_order",
+      "Calendar.delete_calendar_event_by_attendee"
+    ],
+    "score_fields": false
+  },
+  "0907_o8lhhq00pjqngpvp00cu0ireperv6ssu": {
+    "event_actions": [
+      "Emails.reply_to_email_from_user",
+      "Emails.reply_to_email_from_user"
+    ],
+    "score_fields": false
+  },
+  "0910_4matypzvi03is4q0ep163xzp833mzfhh": {
+    "event_actions": [
+      "Emails.reply_to_email_from_user"
+    ],
+    "score_fields": false
+  },
+  "0924_wfekc3gvbq8mkhwtmygju2exan8hqobr": {
+    "event_actions": [
+      "Shopping.cancel_order"
+    ],
+    "score_fields": false
+  },
+  "0908_97uwxi3oz3gr2si1b6hp7ffw8b1f80pn": {
+    "event_actions": [
+      "Messages.create_and_add_message",
+      "Messages.create_and_add_message"
+    ],
+    "score_fields": false
+  },
+  "0931_ha2x782vyitu49yq45xaa5kahi7hg9rx": {
+    "event_actions": [
+      "Messages.create_and_add_message",
+      "Messages.create_and_add_message",
+      "Messages.create_and_add_message"
+    ],
+    "score_fields": false
+  },
+  "0929_gnj6ea1qobi8dn9joe3rf3p8zkj3fnge": {
+    "event_actions": [
+      "Emails.reply_to_email_from_user",
+      "Emails.reply_to_email_from_user",
+      "Chats.create_and_add_message"
+    ],
+    "score_fields": false
+  },
+  "0928_ihbgtmf866yart8bkcrrqqvjnx9eh1bo": {
+    "event_actions": [
+      "Emails.reply_to_email_from_user",
+      "Emails.reply_to_email_from_user"
+    ],
+    "score_fields": false
+  },
+  "0919_fskx5wzzqrbduz27rkrosdjxtxod5ede": {
+    "event_actions": [
+      "Cabs.update_ride_status",
+      "Cabs.cancel_ride"
+    ],
+    "score_fields": false
+  },
+  "0917_wyfwulm018zdh4m9xw59mzmw3zgl0k5l": {
+    "event_actions": [
+      "Messages.create_and_add_message",
+      "Messages.create_and_add_message",
+      "Messages.create_and_add_message"
+    ],
+    "score_fields": false
+  },
+  "0920_qsar1af6etvq8fud2e0khyy3g5ay8lfk": {
+    "event_actions": [
+      "Cabs.cancel_ride"
+    ],
+    "score_fields": false
+  },
+  "0926_0ia7wtsv7hi4ifzdwanf230dp3egimqf": {
+    "event_actions": [
+      "Calendar.add_calendar_event_by_attendee",
+      "Calendar.delete_calendar_event_by_attendee"
+    ],
+    "score_fields": false
+  },
+  "0905_l3bugrndhn72gal5rh0xdhcfw7ahwdb9": {
+    "event_actions": [
+      "Calendar.delete_calendar_event_by_attendee",
+      "Calendar.delete_calendar_event_by_attendee"
+    ],
+    "score_fields": false
+  },
+  "0936_udu5sabfyk4f149l3yoxqvfk728ouzph": {
+    "event_actions": [
+      "Calendar.delete_calendar_event_by_attendee",
+      "Calendar.delete_calendar_event_by_attendee",
+      "Calendar.delete_calendar_event_by_attendee",
+      "Cabs.update_ride_status"
+    ],
+    "score_fields": false
+  },
+  "0934_99zgszdgzsqhouza9b9zxf6uyalahvth": {
+    "event_actions": [
+      "Calendar.delete_calendar_event_by_attendee",
+      "Calendar.delete_calendar_event_by_attendee"
+    ],
+    "score_fields": false
+  },
+  "0937_nrl2qrvpwiq9mby9qwcajt1yafjeygbi": {
+    "event_actions": [
+      "Messages.create_and_add_message",
+      "Messages.create_and_add_message",
+      "Messages.create_and_add_message"
+    ],
+    "score_fields": false
+  },
+  "0938_c0z8k5bduwb35otlxlk83v2ax8h9ruep": {
+    "event_actions": [
+      "Shopping.update_order_status",
+      "Shopping.update_order_status",
+      "Shopping.update_order_status"
+    ],
+    "score_fields": false
+  },
+  "0935_azpbpkj21ocr198mtyfz1dbw37wvyjel": {
+    "event_actions": [
+      "Emails.reply_to_email_from_user",
+      "Calendar.delete_calendar_event_by_attendee"
+    ],
+    "score_fields": false
+  },
+  "0939_81gl1ikfo8vxdghpe4sqxlb5vzg1971y": {
+    "event_actions": [
+      "Emails.reply_to_email_from_user",
+      "Emails.reply_to_email_from_user"
+    ],
+    "score_fields": false
+  },
+  "0941_wmtksn84uf7brrcuj1jz5o8l0mtoqd0d": {
+    "event_actions": [
+      "Emails.reply_to_email_from_user",
+      "Shopping.cancel_order",
+      "Shopping.update_item"
+    ],
+    "score_fields": false
+  },
+  "0942_ittipbqa3jcxj9dgt8loojtlh354c1i2": {
+    "event_actions": [
+      "Messages.create_and_add_message",
+      "Emails.send_email_to_user_only"
+    ],
+    "score_fields": false
+  },
+  "0947_ii9867jghg06uu9wf7e8wtq8lys4al51": {
+    "event_actions": [
+      "Shopping.cancel_order",
+      "Calendar.delete_calendar_event_by_attendee",
+      "Emails.create_and_add_email"
+    ],
+    "score_fields": false
+  },
+  "0944_pivnn6sy5oe8huz2lxzhyex22eyvb22l": {
+    "event_actions": [
+      "Calendar.delete_calendar_event_by_attendee",
+      "Calendar.delete_calendar_event_by_attendee",
+      "Calendar.delete_calendar_event_by_attendee"
+    ],
+    "score_fields": false
+  },
+  "0940_0obvk9h6p47p5f65f7de9lgkt3uva1lb": {
+    "event_actions": [
+      "Calendar.delete_calendar_event_by_attendee",
+      "Calendar.delete_calendar_event_by_attendee",
+      "Calendar.delete_calendar_event_by_attendee"
+    ],
+    "score_fields": false
+  },
+  "0949_urnuaqfda6zfnenpisi54e4qy2q349js": {
+    "event_actions": [
+      "Shopping.cancel_order"
+    ],
+    "score_fields": false
+  }
+}

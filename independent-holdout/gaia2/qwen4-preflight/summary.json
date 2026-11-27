@@ -1,0 +1,38 @@
+{
+  "model": "qwen4-max",
+  "runs": 4,
+  "passed_reachability_gate": true,
+  "upstream_successes": 4,
+  "switches": 4,
+  "tool_calls": 56,
+  "post_switch_tool_calls": 32,
+  "gateway_or_runtime_failures": 0,
+  "by_case": {
+    "0913_kip4smczj5eirm6q7y2cj7zbf2390b37": {
+      "runs": 2,
+      "switches": 2,
+      "upstream_successes": 2,
+      "tool_calls": [
+        13,
+        13
+      ],
+      "post_switch_tool_calls": [
+        8,
+        8
+      ]
+    },
+    "0924_wfekc3gvbq8mkhwtmygju2exan8hqobr": {
+      "runs": 2,
+      "switches": 2,
+      "upstream_successes": 2,
+      "tool_calls": [
+        15,
+        15
+      ],
+      "post_switch_tool_calls": [
+        8,
+        8
+      ]
+    }
+  }
+}

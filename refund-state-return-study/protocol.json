@@ -1,0 +1,57 @@
+{
+  "model": "qwen4-max",
+  "arms": [
+    "route_table",
+    "contract"
+  ],
+  "seeds": [
+    19,
+    113,
+    421
+  ],
+  "request": "Please refund this simulated order once. Use the wallet if it is currently available, otherwise refund to the authorized bank account. Confirm the active refund step before executing. After completion, reply without repeating private values.",
+  "cases": {
+    "temporary_priority_return": {
+      "events": [
+        "wallet_online",
+        "wallet_offline"
+      ],
+      "reuse": true,
+      "target": "bank"
+    },
+    "authorization_reissued": {
+      "events": [
+        "wallet_online",
+        "consent_revoked",
+        "consent_reissued",
+        "wallet_offline"
+      ],
+      "reuse": false,
+      "target": "bank"
+    },
+    "unrelated_note_changed": {
+      "events": [
+        "case_note_changed"
+      ],
+      "reuse": true,
+      "target": "bank"
+    },
+    "bank_reference_rotated": {
+      "events": [
+        "bank_reference_rotated"
+      ],
+      "reuse": false,
+      "target": "bank"
+    },
+    "wallet_stays_available": {
+      "events": [
+        "wallet_online"
+      ],
+      "reuse": false,
+      "target": "wallet"
+    }
+  },
+  "reuse_rule": "On delivery, allow a pending old read only when the selected route currently calls for the same fields, their values are unchanged, and the original authorization has never been revoked. A temporary change of preference does not revoke the authorization.",
+  "shared_checks": "Both arms refresh current route eligibility before delivery, verify authoritative per-field value versions and the original bank authorization epoch, and share refund confirmation and commit checks.",
+  "unrelated_note": "A change to internal case_note has no impact on route, required fields or consent."
+}

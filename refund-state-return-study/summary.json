@@ -1,0 +1,313 @@
+{
+  "planned": 30,
+  "completed": 30,
+  "complete": true,
+  "by_arm": {
+    "route_table": {
+      "runs": 15,
+      "transport_errors": 0,
+      "old_read_tested": 15,
+      "old_reused": 6,
+      "false_allow": 0,
+      "false_reject": 0,
+      "correct_commit": 15,
+      "old_denials": 9,
+      "successful_recovery_commits": 9,
+      "tools_after_old_delivery": 66,
+      "tools_after_old_denial": 54,
+      "tool_calls": 126,
+      "fresh_prepares_after_old_delivery": 9
+    },
+    "contract": {
+      "runs": 15,
+      "transport_errors": 0,
+      "old_read_tested": 15,
+      "old_reused": 3,
+      "false_allow": 0,
+      "false_reject": 3,
+      "correct_commit": 15,
+      "old_denials": 12,
+      "successful_recovery_commits": 12,
+      "tools_after_old_delivery": 78,
+      "tools_after_old_denial": 72,
+      "tool_calls": 138,
+      "fresh_prepares_after_old_delivery": 12
+    }
+  },
+  "by_case": {
+    "temporary_priority_return": {
+      "expected_reuse": true,
+      "target": "bank",
+      "reference_event_ledger": [
+        {
+          "kind": "wallet_online",
+          "bank_authorized": true,
+          "wallet_available": true,
+          "consent_epoch": 1
+        },
+        {
+          "kind": "wallet_offline",
+          "bank_authorized": true,
+          "wallet_available": false,
+          "consent_epoch": 1
+        }
+      ],
+      "matched_pairs": 3,
+      "by_arm": {
+        "route_table": {
+          "runs": 3,
+          "transport_errors": 0,
+          "old_read_tested": 3,
+          "old_reused": 3,
+          "false_allow": 0,
+          "false_reject": 0,
+          "correct_commit": 3,
+          "old_denials": 0,
+          "successful_recovery_commits": 0,
+          "tools_after_old_delivery": 6,
+          "tools_after_old_denial": 0,
+          "tool_calls": 18,
+          "fresh_prepares_after_old_delivery": 0
+        },
+        "contract": {
+          "runs": 3,
+          "transport_errors": 0,
+          "old_read_tested": 3,
+          "old_reused": 0,
+          "false_allow": 0,
+          "false_reject": 3,
+          "correct_commit": 3,
+          "old_denials": 3,
+          "successful_recovery_commits": 3,
+          "tools_after_old_delivery": 18,
+          "tools_after_old_denial": 18,
+          "tool_calls": 30,
+          "fresh_prepares_after_old_delivery": 3
+        }
+      },
+      "matched_post_delivery_call_differences_contract_minus_table": [
+        4,
+        4,
+        4
+      ]
+    },
+    "authorization_reissued": {
+      "expected_reuse": false,
+      "target": "bank",
+      "reference_event_ledger": [
+        {
+          "kind": "wallet_online",
+          "bank_authorized": true,
+          "wallet_available": true,
+          "consent_epoch": 1
+        },
+        {
+          "kind": "consent_revoked",
+          "bank_authorized": false,
+          "wallet_available": true,
+          "consent_epoch": 2
+        },
+        {
+          "kind": "consent_reissued",
+          "bank_authorized": true,
+          "wallet_available": true,
+          "consent_epoch": 3
+        },
+        {
+          "kind": "wallet_offline",
+          "bank_authorized": true,
+          "wallet_available": false,
+          "consent_epoch": 3
+        }
+      ],
+      "matched_pairs": 3,
+      "by_arm": {
+        "route_table": {
+          "runs": 3,
+          "transport_errors": 0,
+          "old_read_tested": 3,
+          "old_reused": 0,
+          "false_allow": 0,
+          "false_reject": 0,
+          "correct_commit": 3,
+          "old_denials": 3,
+          "successful_recovery_commits": 3,
+          "tools_after_old_delivery": 18,
+          "tools_after_old_denial": 18,
+          "tool_calls": 30,
+          "fresh_prepares_after_old_delivery": 3
+        },
+        "contract": {
+          "runs": 3,
+          "transport_errors": 0,
+          "old_read_tested": 3,
+          "old_reused": 0,
+          "false_allow": 0,
+          "false_reject": 0,
+          "correct_commit": 3,
+          "old_denials": 3,
+          "successful_recovery_commits": 3,
+          "tools_after_old_delivery": 18,
+          "tools_after_old_denial": 18,
+          "tool_calls": 30,
+          "fresh_prepares_after_old_delivery": 3
+        }
+      },
+      "matched_post_delivery_call_differences_contract_minus_table": [
+        0,
+        0,
+        0
+      ]
+    },
+    "unrelated_note_changed": {
+      "expected_reuse": true,
+      "target": "bank",
+      "reference_event_ledger": [
+        {
+          "kind": "case_note_changed",
+          "bank_authorized": true,
+          "wallet_available": false,
+          "consent_epoch": 1
+        }
+      ],
+      "matched_pairs": 3,
+      "by_arm": {
+        "route_table": {
+          "runs": 3,
+          "transport_errors": 0,
+          "old_read_tested": 3,
+          "old_reused": 3,
+          "false_allow": 0,
+          "false_reject": 0,
+          "correct_commit": 3,
+          "old_denials": 0,
+          "successful_recovery_commits": 0,
+          "tools_after_old_delivery": 6,
+          "tools_after_old_denial": 0,
+          "tool_calls": 18,
+          "fresh_prepares_after_old_delivery": 0
+        },
+        "contract": {
+          "runs": 3,
+          "transport_errors": 0,
+          "old_read_tested": 3,
+          "old_reused": 3,
+          "false_allow": 0,
+          "false_reject": 0,
+          "correct_commit": 3,
+          "old_denials": 0,
+          "successful_recovery_commits": 0,
+          "tools_after_old_delivery": 6,
+          "tools_after_old_denial": 0,
+          "tool_calls": 18,
+          "fresh_prepares_after_old_delivery": 0
+        }
+      },
+      "matched_post_delivery_call_differences_contract_minus_table": [
+        0,
+        0,
+        0
+      ]
+    },
+    "bank_reference_rotated": {
+      "expected_reuse": false,
+      "target": "bank",
+      "reference_event_ledger": [
+        {
+          "kind": "bank_reference_rotated",
+          "bank_authorized": true,
+          "wallet_available": false,
+          "consent_epoch": 1
+        }
+      ],
+      "matched_pairs": 3,
+      "by_arm": {
+        "route_table": {
+          "runs": 3,
+          "transport_errors": 0,
+          "old_read_tested": 3,
+          "old_reused": 0,
+          "false_allow": 0,
+          "false_reject": 0,
+          "correct_commit": 3,
+          "old_denials": 3,
+          "successful_recovery_commits": 3,
+          "tools_after_old_delivery": 18,
+          "tools_after_old_denial": 18,
+          "tool_calls": 30,
+          "fresh_prepares_after_old_delivery": 3
+        },
+        "contract": {
+          "runs": 3,
+          "transport_errors": 0,
+          "old_read_tested": 3,
+          "old_reused": 0,
+          "false_allow": 0,
+          "false_reject": 0,
+          "correct_commit": 3,
+          "old_denials": 3,
+          "successful_recovery_commits": 3,
+          "tools_after_old_delivery": 18,
+          "tools_after_old_denial": 18,
+          "tool_calls": 30,
+          "fresh_prepares_after_old_delivery": 3
+        }
+      },
+      "matched_post_delivery_call_differences_contract_minus_table": [
+        0,
+        0,
+        0
+      ]
+    },
+    "wallet_stays_available": {
+      "expected_reuse": false,
+      "target": "wallet",
+      "reference_event_ledger": [
+        {
+          "kind": "wallet_online",
+          "bank_authorized": true,
+          "wallet_available": true,
+          "consent_epoch": 1
+        }
+      ],
+      "matched_pairs": 3,
+      "by_arm": {
+        "route_table": {
+          "runs": 3,
+          "transport_errors": 0,
+          "old_read_tested": 3,
+          "old_reused": 0,
+          "false_allow": 0,
+          "false_reject": 0,
+          "correct_commit": 3,
+          "old_denials": 3,
+          "successful_recovery_commits": 3,
+          "tools_after_old_delivery": 18,
+          "tools_after_old_denial": 18,
+          "tool_calls": 30,
+          "fresh_prepares_after_old_delivery": 3
+        },
+        "contract": {
+          "runs": 3,
+          "transport_errors": 0,
+          "old_read_tested": 3,
+          "old_reused": 0,
+          "false_allow": 0,
+          "false_reject": 0,
+          "correct_commit": 3,
+          "old_denials": 3,
+          "successful_recovery_commits": 3,
+          "tools_after_old_delivery": 18,
+          "tools_after_old_denial": 18,
+          "tool_calls": 30,
+          "fresh_prepares_after_old_delivery": 3
+        }
+      },
+      "matched_post_delivery_call_differences_contract_minus_table": [
+        0,
+        0,
+        0
+      ]
+    }
+  }
+}

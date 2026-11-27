@@ -1,0 +1,14 @@
+{
+  "model": "qwen4-max",
+  "cases": [
+    "0913_kip4smczj5eirm6q7y2cj7zbf2390b37",
+    "0924_wfekc3gvbq8mkhwtmygju2exan8hqobr"
+  ],
+  "arm": "agent",
+  "seeds": [
+    19,
+    113
+  ],
+  "switch": "Shopping.cancel_order",
+  "minimum_reachability": "Each development case must reach the original cancellation in both repetitions before using this configuration for a formal privacy comparison."
+}
