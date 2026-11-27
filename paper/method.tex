@@ -1,10 +1,21 @@
 \section{Delivery-time minimization}
 \label{sec:method}
 
-\subsection{Running example and enforcement boundary}
-The user asks for one refund, preferring the wallet and authorizing the bank as fallback if the wallet is unavailable. A trusted status response initially marks the wallet unavailable and the bank available. The agent proposes the bank route. Its pending account verification step needs an account reference and an owner reference. Before those references enter model context, the wallet recovers. Both backends deny the old request and give the agent the same safe recovery options. The agent then proposes the wallet route, reads its wallet reference and obtains the required confirmation before executing the refund (Figure~\ref{fig:refund-sequence}).
+\subsection{Four checks before releasing a tool reply}
+\label{sec:four-checks}
+In the $\tau$-bench replay (Figure~\ref{fig:retail-return-trace}), the agent prepares an address read at turn~2 while the order is pending. By the reply at turn~3, the order has been delivered. Before returning any raw values, the connector checks four conditions against the current state.
 
-The agent controls which actions and fields it requests. The connector controls which raw values cross into model context. Above that boundary, both backends expose the same user authorization, route preferences, status queries, approval policy and recovery interface. Below it, the \emph{refreshed route table} composes reusable route recipes and evaluates route, prerequisite and field rules from the current snapshot. The \emph{contract verifier} derives step requirements from tool contracts, binds a read grant to its supporting evidence and revalidates it at delivery. The stores and trusted state interface are shared. Figure~\ref{fig:mechanism} locates each decision and the common release point.
+\begin{enumerate}
+\setlength{\itemsep}{1pt}
+\item \textbf{Request scope.} Match the resource, plan session, and step for which the read was prepared.
+\item \textbf{Current plan.} Check that the plan still satisfies the user's authorization and preferences given current business evidence.
+\item \textbf{Step readiness.} Check that the step is pending and that its prerequisites and any applicable approvals hold.
+\item \textbf{Field necessity.} Require exactly the fields still missing for the step.
+\end{enumerate}
+
+All four conditions must hold. At turn~3, the request still names the same order, but delivery makes the address-change plan ineligible. That alone is enough to withhold the address. The denial returns a reason and options for continuing. The agent refreshes the order status, selects the return, and requests the item identifiers and payment-method reference instead. The connector controls release of raw data, and the agent chooses and issues the next tool call.
+
+Figure~\ref{fig:mechanism} shows two implementations of this boundary. The \emph{refreshed route table} resolves the current route and its requirements from reusable recipes. The \emph{contract verifier} derives step requirements from tool contracts and also validates a previously issued read grant. Both use the same authorization, state, confirmation and recovery interfaces. The next two sections turn the four checks into a plan test and a release predicate.
 
 \begin{figure*}[t]
 \centering
@@ -30,21 +41,24 @@ A_t &=
 \emptyset, & Q_t\ne\emptyset .
 \end{cases}\label{eq:admissible}
 \end{align}
-The agent proposes a plan. The backend checks whether it is in $A_t$. If $Q_t$ is nonempty, status evidence for those unresolved plans must be obtained first. For example, confirmed bank availability alone does not establish fallback while wallet availability is unknown. Evidence of wallet unavailability excludes the wallet plan and can make the bank plan admissible.
+The agent proposes a plan, and the connector tests its membership in $A_t$. If $Q_t$ is nonempty, the connector identifies the status evidence the agent needs to obtain. In Figure~\ref{fig:retail-return-trace}, trusted evidence that the order is delivered excludes the address-change plan. The user's conditional authorization and the evidence for return determine whether the return belongs to $A_t$.
 
 \subsection{Deciding what to release}
 Write $X_t=(E_t,\eta_t,\nu_t,H_t,M_t,L_t)$ for a trusted snapshot. Here $\eta_t$ and $\nu_t$ map predicates and values to versions with fresh identifiers on update, $H_t$ holds verification records, $M_t$ holds fields already delivered at their current version, and $L_t$ is the ledger of committed effects. Let $s$ denote a plan session on resource $r$, with plan $p_s$. For an enabled step $a$ in that session, the missing raw fields are
 \begin{equation}
 D_t(a)=R_a\setminus M_t.\label{eq:missing}
 \end{equation}
-An enabled step is pending, has its prerequisites satisfied and respects confirmation requirements applicable at that step. For the two backends we use the following common release predicate. $S$ is the set of fields in the request, after rejecting duplicate field identifiers. Scope checks the resource, session and step.
+Let $S$ be the requested field set after rejecting duplicate field identifiers. The four conditions in Section~\ref{sec:four-checks} correspond, in order, to $\mathrm{Scope}(r,s,a)$, membership of $p_s$ in $A_t$, $\mathrm{Enabled}_t(s,a)$, and equality of $S$ and $D_t(a)$. An enabled step is pending, has its prerequisites satisfied and respects any confirmation required at that step. Both backends apply the same release predicate:
 \begin{align}
 \mathrm{Allow}_t(r,s,a,S)={}&
 \mathrm{Scope}(r,s,a) \land p_s\in A_t \notag\\
  &{}\land\mathrm{Enabled}_t(s,a)
  \land S=D_t(a).\label{eq:common-guard}
 \end{align}
-The route table refreshes $X_t$ for each read, resolves the matching route recipe and applies Eq.~\eqref{eq:common-guard} using its field and prerequisite rules. A contract read first obtains a single-use grant
+Algorithm~1 evaluates Eq.~\eqref{eq:common-guard} against a fresh delivery snapshot. The route table resolves the matching recipe and applies its field and prerequisite rules. In the retail replay, the address-change plan is absent from $A_t$ at turn~3, so the predicate fails even though the order and request identifiers match.
+
+\subsection{Version binding for prepared reads}
+A contract read first obtains a single-use grant
 \begin{equation}
 g=(r,s,a,D_i(a),\sigma_s,\nu_i|_{D_i(a)}),\label{eq:grant}
 \end{equation}
@@ -54,7 +68,9 @@ where $i$ is the issue time and $\sigma_s$ holds the predicate versions captured
  &{}\land\eta_t|_{\mathrm{dom}(\sigma_s)}=\sigma_s
  \land\nu_t|_S=\nu_i|_S .\label{eq:grant-valid}
 \end{align}
-$\mathrm{Match}$ binds the request to the grant's scope and field set. The current plan check remains necessary because resolving a previously unknown predicate can change $A_t$ without changing an entry recorded in $\sigma_s$. A tracked change can also invalidate the grant while the same plan remains admissible. The refreshed table can allow such a read when the current step and requested fields still satisfy its rules.
+$\mathrm{Match}$ binds the request to the grant's scope and field set. The current plan check remains necessary because resolving a previously unknown predicate can change $A_t$ without changing an entry recorded in $\sigma_s$.
+
+Figure~\ref{fig:refund-sequence} illustrates version binding in a wallet-first refund. While the wallet is unavailable, the agent prepares to read the bank account and owner references for verification. The wallet recovers before the reply. The current-plan check now excludes the bank route, and the original grant also fails its version check. If the route remains admissible after a change to tracked evidence, the two checks can give different answers. The route table can allow a still-needed read, while the contract requires a fresh grant. The narrower binding tested in Section~\ref{sec:rq-cost} tracks the bank authorization generation and requested field versions. It continues to check current route eligibility at delivery.
 
 \begin{figure*}[t]
 \centering
@@ -67,7 +83,7 @@ $\mathrm{Match}$ binds the request to the grant's scope and field set. The curre
 \textbf{Proposition 1 (necessity at delivery).}
 Assume (i) all raw reads in scope pass through the trusted connector, (ii) authorized routes and step-field rules faithfully specify business prerequisites and required fields, and (iii) the authorization check and value release are evaluated against the same current snapshot. If either backend releases any raw fields for a step, the step is enabled on a currently admissible plan and the released fields are exactly its missing required set $D_t(a)$. In contract mode, changing a tracked predicate or bound field version invalidates the old grant.
 
-\emph{Proof.} For every release, Eq.~\eqref{eq:common-guard} requires membership in $A_t$, scope, step eligibility and equality to $D_t(a)$. By (iii), the released values correspond to that same snapshot. A failed conjunct yields a denial with no raw values. The contract verifier also requires both version equalities in Eq.~\eqref{eq:grant-valid}. A changed bound version makes its equality false. In the refund trace, the wallet recovery removes the bank plan from $A_t$ and changes the wallet predicate version in the bank grant. Thus either backend denies the old read.\hfill\rule{.6ex}{.6ex}
+\emph{Proof.} For every release, Eq.~\eqref{eq:common-guard} requires membership in $A_t$, scope, step eligibility and equality to $D_t(a)$. By (iii), the released values correspond to that same snapshot. A failed conjunct yields a denial with no raw values. The contract verifier also requires both version equalities in Eq.~\eqref{eq:grant-valid}. A changed bound version makes its equality false.\hfill\rule{.6ex}{.6ex}
 
 The evaluated simulator processes validation and delivery sequentially. A concurrent connector needs an atomic conditional read or an equivalent version-checked transaction before this property applies. The result concerns release of raw values via the connector. It leaves inference from status signals, reuse of already delivered values and disclosure in model output outside the guarantee.
 
@@ -80,25 +96,25 @@ G_{\mathrm{left}} &= G\setminus\mathrm{Done}(L).\label{eq:remaining}
 \end{align}
 Verification reuse requires the same resource and an allowed purpose, plus current relevant versions. Here $M'$ changes what may be treated as current by the connector. It does not erase earlier model context. The ledger stays fixed during replanning. Subsequent successful business operations can extend it. If no authorized continuation exists, the agent stops, or asks for new consent only when the shared approval policy permits it.
 
-In the worked refund trace, the ledger has no committed refund when the bank read fails. The agent selects the wallet and issues new calls, and only the wallet reference is delivered. In a separate reuse case, an earlier identity verification can carry across the route change if Eq.~\eqref{eq:reuse} holds. The scripted adapters implement reuse for supported verification records and business effects.
+In the refund example, the denied bank read leaves the refund goal open. The agent switches to the wallet and requests the wallet reference. In a separate refund reuse case, an identity check completed under the old plan can also satisfy the new route if it still applies to the same resource and purpose at the relevant versions, as specified by Eq.~\eqref{eq:reuse}. This retains a valid verification record across replanning. The scripted adapters implement reuse for supported verification records and business effects. Algorithm~2 gives the agent's continuation steps.
 
 \begin{table}[t]
 \small
 \centering
 \begin{minipage}{.98\columnwidth}
 \hrule\vspace{4pt}
-\textbf{Algorithm 1. Select and read}\\[2pt]
+\textbf{Algorithm 1. Select a plan and check delivery}\\[2pt]
 \textbf{Select:} derive candidates for remaining goals\\
-\quad compute $Q_t$ and $A_t$ (Eqs.~\ref{eq:unresolved}--\ref{eq:admissible})\\
-\quad \textbf{if} $Q_t\ne\emptyset$: request status evidence\\
-\quad \textbf{if} $A_t=\emptyset$ and $Q_t=\emptyset$: report no route\\
-\quad validate the agent's proposed plan against $A_t$\\
+\hspace*{.75em} compute $Q_t$ and $A_t$ (Eqs.~\ref{eq:unresolved}--\ref{eq:admissible})\\
+\hspace*{.75em} \textbf{if} $Q_t\ne\emptyset$: return needed status checks\\
+\hspace*{.75em} \textbf{if} $A_t=\emptyset$ and $Q_t=\emptyset$: report no route\\
+\hspace*{.75em} accept the proposed plan only if it belongs to $A_t$\\
 \textbf{Prepare (contract):} issue the grant (Eq.~\ref{eq:grant})\\
-\textbf{Read:} obtain the delivery snapshot\\
-\quad table: resolve the current recipe and check Eq.~\eqref{eq:common-guard}\\
-\quad contract: check Eqs.~\eqref{eq:common-guard} and \eqref{eq:grant-valid}\\
-\quad \textbf{if} a check fails: deny with safe feedback\\
-\quad release permitted values and consume any grant
+\textbf{Deliver:} refresh state and resolve requirements\\
+\hspace*{.75em} check scope, plan, step and fields (Eq.~\eqref{eq:common-guard})\\
+\hspace*{.75em} validate the grant in contract mode (Eq.~\eqref{eq:grant-valid})\\
+\hspace*{.75em} \textbf{if} a check fails: deny and return recovery options\\
+\hspace*{.75em} \textbf{otherwise}: release the fields and consume any grant
 \vspace{4pt}\hrule
 \end{minipage}
 \end{table}
@@ -110,11 +126,11 @@ In the worked refund trace, the ledger has no committed refund when the bank rea
 \hrule\vspace{4pt}
 \textbf{Algorithm 2. Continue after a denied read}\\[2pt]
 \textbf{Agent:} refresh status using a permitted tool\\
-\quad use the backend's valid records and remaining goals\\
-\quad query unresolved evidence if needed\\
-\quad \textbf{if} no authorized continuation: stop or seek consent\\
-\quad propose a plan and issue fresh calls for its missing inputs\\
-\quad confirm as required, then call the business action\\
+\hspace*{.75em} use valid records and remaining goals\\
+\hspace*{.75em} query unresolved evidence if needed\\
+\hspace*{.75em} \textbf{if} no authorized continuation: stop or seek consent\\
+\hspace*{.75em} propose a plan and request its missing inputs\\
+\hspace*{.75em} confirm as required, then call the business action\\
 \textbf{Backend:} check prerequisites and record committed effects
 \vspace{4pt}\hrule
 \end{minipage}
